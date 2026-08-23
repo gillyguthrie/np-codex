@@ -18,6 +18,8 @@
 - [masteries.json](https://raw.githubusercontent.com/gillyguthrie/np-codex/main/data/masteries.json): ~890 mastery records (~730 KB). `raw_text` is authoritative.
 - [birthsigns.json](https://raw.githubusercontent.com/gillyguthrie/np-codex/main/data/birthsigns.json), [races.json](https://raw.githubusercontent.com/gillyguthrie/np-codex/main/data/races.json): 0.8 dev rework tables.
 - [vanilla_ref.json](https://raw.githubusercontent.com/gillyguthrie/np-codex/main/data/vanilla_ref.json): vanilla Morrowind equipment parsed from the game ESMs (~900 KB) — for NP-vs-vanilla comparisons; ar_base is the skill-30 ESM convention (see _meta.conventions), never a valid NP value.
+- [alchemy.json](https://raw.githubusercontent.com/gillyguthrie/np-codex/main/data/alchemy.json): alchemy ingredients — 126 vanilla (ESM-parsed baseline) + NP-custom as captured; effects listed in reveal order.
+- [vanilla_processes.json](https://raw.githubusercontent.com/gillyguthrie/np-codex/main/data/vanilla_processes.json): how VANILLA alchemy/enchanting/repair work (ESM GMST constants + engine-documented formulas) — the baseline for diffing NP's modified processes; NP enchanting answers come from enchanting.json.
 - [camps_events.json](https://raw.githubusercontent.com/gillyguthrie/np-codex/main/data/camps_events.json): camps, bosses, events (era-tagged).
 - [enchanting.json](https://raw.githubusercontent.com/gillyguthrie/np-codex/main/data/enchanting.json): self-enchant ceilings + Infusion Anvil (era-tagged).
 - [archetypes.json](https://raw.githubusercontent.com/gillyguthrie/np-codex/main/data/archetypes.json): community builds — check `cost_semantics` before summing costs.
