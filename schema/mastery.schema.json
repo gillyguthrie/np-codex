@@ -1,0 +1,40 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "$id": "mastery.schema.json",
+  "title": "masteries.json",
+  "type": "object",
+  "properties": {
+    "_meta": { "type": "object" },
+    "sources": { "type": "object", "additionalProperties": { "$ref": "common.schema.json#/definitions/source" } },
+    "masteries": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "properties": {
+          "id": { "$ref": "common.schema.json#/definitions/id" },
+          "name": { "type": "string" },
+          "captured": { "type": "boolean" },
+          "section": { "type": "string" },
+          "family": { "type": ["string", "null"], "description": "Family slug for multi-rank masteries; ranks stack additively (sum of owned ranks)." },
+          "rank": { "type": ["integer", "null"] },
+          "affinity": { "type": ["string", "null"] },
+          "cost": { "$ref": "common.schema.json#/definitions/sourcedValue" },
+          "requires": {
+            "type": "object",
+            "properties": {
+              "level": { "type": ["integer", "null"] },
+              "attributes": { "type": "object", "additionalProperties": { "type": "integer" } },
+              "masteries": { "type": "array", "items": { "type": "string" }, "description": "IDs of prerequisite masteries" },
+              "other": { "type": ["string", "null"], "description": "Verbatim requirement text not expressible above (race/sign/beast gates)" }
+            }
+          },
+          "raw_text": { "type": "string", "description": "Verbatim effect text from the source. Authoritative over parsed effects." },
+          "effects": { "type": "array", "items": { "$ref": "common.schema.json#/definitions/effect" } },
+          "src": { "type": "string" }
+        },
+        "required": ["id", "name", "captured", "section", "src"]
+      }
+    }
+  },
+  "required": ["sources", "masteries"]
+}

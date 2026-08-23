@@ -1,0 +1,32 @@
+<!-- GENERATED from data/open_questions.json by tools/generate_docs.py — do not hand-edit. -->
+
+# Open Questions
+
+Known unknowns and provisional values. Check here before treating an absence as an oversight.
+
+- **Melding Construct AR % per rank** [provisional-value-in-use]: The +4%/rank (+20% at rank 5) figure comes from a single item reading. One fully-specced in-game reading validates or corrects it.
+- **Health-Factor mastery interaction with the L60 HP ratio** [open]: How +0.2-class Health Factor lines combine with the effective spec ratio (additive to the ratio per dev structure, but magnitude unvalidated at L60).
+- **Combat HP ratio 3.6 unvalidated** [open]: Stealth 2.8 validated exact and Magic 2.2 within 1 HP; no Combat-spec L60 measurement on file. Also: Magic 2.2 vs 2.19 rounding.
+- **Piece AR at armor skill above 100** [open-anomaly]: Item-fortified skill scales linearly (verified at 105/118), but one observed character with mastery-raised skill 125 shows a piece reading as if the +25 counts double (250 vs linear 208). Candidate causes: CM-sourced skill points scaling differently, another skill contributing, or an unidentified mechanic. Linear is the well-verified model; tools may underestimate for cap-raised characters until resolved.
+- **Is the Atronach magicka drain live in the current era?** [open]: Dev-described drain (5% of max, per the 0.8 doc line 'Damage Magicka on Self') confirmed as a 2023 nerf; current-era status unconfirmed. Stopwatch test: Atronach character, full bar, stand still 60s.
+- **Native health regen** [open]: No evidence of any native health regen (vanilla has none); one stopwatch test at partial health settles it.
+- **Unexplained magicka/fatigue surplus on one measured character** [open]: One measured L60 Dunmer werewolf character shows a stable 3.85x INT magicka slope (predicted 2.2 for race+sign) and +126 max fatigue over the model — likely one hidden passive package explains both. No matching mastery/racial found in the catalog; werewolf passives on file don't include magicka. Next step: read the character's active-effects Fortify Maximum Magicka lines.
+- **Possible level factor on the 1x INT magicka base** [open]: A level-1 character read 0.9x INT naked — below the 1x base. Level factor, or sign/racial detail; needs the character's birthsign and one mid-level reading.
+- **Fatigue level-bonus curve between L1 (+1) and L60 (+55)** [open]: One mid-level naked reading pins the curve (candidate: floor(0.9 x level) + 1).
+- **Masteries added after the wiki snapshot** [known-gap]: Jan-2026 combat AoE masteries 'Rend' and 'Cleave', a claimed 'Combo Focus 4' (wiki has ranks 1-3), and an unidentified 'Destruction max [75]' mastery are absent from the catalog — stubs exist in masteries.json. Fix: capture /cm in-game or a fresh wiki save.
+- **Do enchant magnitude ceilings scale with anvil-upgraded EV?** [open]: If linear, +55 EV on jewelry/clothing would roughly triple ring enchant ceilings. One test enchant on an upgraded blank settles it.
+- **Grand Belt self-enchant baseline** [open]: No enchanted belt example observed; inferred ~29 (shirt-class), unverified.
+- **Is the re-equip-during-enchant EV trick still live?** [open]: Historically reached 47 pts on a ~20-24 EV ring; possibly patched since.
+- **Terminology: 'CM points' vs the 1500-cap mastery-point pool** [open]: Smaller 'CM cap' figures (125/175) appear alongside the 25xlevel pool in community usage; whether these describe one pool or two systems is not explicitly stated anywhere on file.
+- **Rehabilitator Anja refunds vs the free L60 Ergalla respec** [open]: Same mechanism, complementary, or one superseded? Both treated as valid until reconciled.
+- **Do purchased birthsign-gated masteries (120 pts) refund on birthsign change?** [open]
+- **Boss Sanctuary/crit scaling when event-buffed** [open]: One adjacent 2020 claim says world-boss event scaling manifests mainly as resistances.
+- **Emperor Crab resistance drift across patches** [open]: Fresh in-game check advised before relying on older resist values.
+- **Focused Strike linear proc model verification** [provisional-value-in-use]: proc% = 0.30 x Agility is an expert player statement adopted as working truth; a one-time in-game count-test would confirm the linear model and the ~334 threshold.
+- **Hit damage formula on NP** [provisional-value-in-use]: best_strike_max x (STR+50)/100 is vanilla-structure, adopted by community tools; not formally validated on NP. Condition/armor-reduction interaction with DISPLAYED AR also unverified.
+- **When/why the planned level cap 100 became 60** [open]: Historical curiosity; 60 is definitively current.
+- **Vampire bloodline passive magnitudes** [known-gap]: Bloodlines carry substantial passive buffs; magnitudes not yet captured (wiki page pending ingest).
+- **Speed cap 350 vs 175** [contested]: See contradictions c:speed-cap.
+- **House abandonment rule** [contested]: See contradictions c:house-abandonment.
+- **Enchanted-item recharge mechanics** [contested]: See contradictions c:enchant-recharge.
+- **Which vanilla items NP has modified** [open]: items.json now carries origin_game (vanilla / np-custom) classified against the actual game ESM rosters. Known so far from tooltip-vs-ESM comparison: NP buffed max damage on several artifacts (e.g. Sunder 60->70, Goldbrand 45->50, Hopesfire 55->70, Eltonbrand 55->60, Skull Crusher 50->60) and changed Mantle of Woe's magicka multiplier (0.5x -> 5.0x INT); Wraithguard/Marara's Ring Reflect 20->10 unverified. Systematically flagging vanilla-modified items is future work.

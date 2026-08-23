@@ -1,0 +1,45 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "$id": "common.schema.json",
+  "title": "Shared definitions for np-kb data files",
+  "definitions": {
+    "sourcedValue": {
+      "description": "A load-bearing value: populated with a source ref, or explicitly null with a status. Never blank-filled.",
+      "type": "object",
+      "properties": {
+        "value": {},
+        "src": { "type": "string" },
+        "status": { "enum": ["ok", "unknown", "provisional", "contested", "not-stated"] },
+        "note": { "type": "string" }
+      },
+      "anyOf": [
+        { "required": ["value", "src"] },
+        { "properties": { "value": { "type": "null" } }, "required": ["value", "status"] }
+      ]
+    },
+    "source": {
+      "type": "object",
+      "properties": {
+        "origin": { "enum": ["dev-doc", "wiki", "discord-public", "in-game-tooltip", "in-game-measured", "player-reported", "community-dataset"] },
+        "channel": { "type": ["string", "null"], "description": "Public channel or wiki page name only. Private channels must never appear." },
+        "url": { "type": ["string", "null"] },
+        "date": { "type": ["string", "null"] },
+        "confidence": { "enum": ["dev-stated", "measured", "player-reported", "provisional", "contested"] }
+      },
+      "required": ["origin", "confidence"]
+    },
+    "effect": {
+      "description": "A parsed effect referencing effects_vocab.json by key.",
+      "type": "object",
+      "properties": {
+        "key": { "type": "string" },
+        "magnitude": { "type": ["number", "null"] },
+        "magnitude_max": { "type": ["number", "null"], "description": "For min-max rolls" },
+        "delivery": { "enum": ["constant", "on-strike", "on-use", "timed", "triggered-spell", "skill-only", "unmodeled"] },
+        "raw_text": { "type": "string" }
+      },
+      "required": ["key", "delivery"]
+    },
+    "id": { "type": "string", "pattern": "^[a-z]+:[a-z0-9-]+$" }
+  }
+}

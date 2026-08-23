@@ -1,0 +1,410 @@
+{
+  "_meta": {
+    "description": "NP server lore",
+    "migrated": "2026-08-22"
+  },
+  "sources": {
+    "discord-anecdote": {
+      "origin": "discord-public",
+      "channel": "player-notes",
+      "url": null,
+      "date": null,
+      "confidence": "player-reported"
+    },
+    "discord-tested": {
+      "origin": "discord-public",
+      "channel": "player-notes",
+      "url": null,
+      "date": null,
+      "confidence": "measured"
+    },
+    "discord-speculation": {
+      "origin": "discord-public",
+      "channel": "player-notes",
+      "url": null,
+      "date": null,
+      "confidence": "provisional"
+    },
+    "discord-dev": {
+      "origin": "discord-public",
+      "channel": "player-notes",
+      "url": null,
+      "date": null,
+      "confidence": "dev-stated"
+    },
+    "discord-contested": {
+      "origin": "discord-public",
+      "channel": "player-notes",
+      "url": null,
+      "date": null,
+      "confidence": "contested"
+    },
+    "ingame-text": {
+      "origin": "in-game-tooltip",
+      "channel": null,
+      "url": null,
+      "date": null,
+      "confidence": "measured"
+    }
+  },
+  "entries": [
+    {
+      "id": "lore:morag-tong-helmet-npcs",
+      "topic": "Morag Tong helmet NPCs",
+      "summary": "Three NPCs on the server wear the Morag Tong helmet, with notes on their services and whether they are safe to kill.",
+      "facts": [
+        {"statement": "Three NPCs on the server wear the Morag Tong helmet: Vaveli Dralas, Namanian Facian, and Taros Dral.", "src": "discord-anecdote"},
+        {"statement": "Namanian Facian sells spells but offers no other notable services.", "src": "discord-anecdote"},
+        {"statement": "Taros Dral is the NPC who initiates Mephala's Morag Tong quest.", "src": "discord-anecdote"},
+        {"statement": "Vaveli Dralas and Namanian Facian are non-essential NPCs and safe to kill.", "src": "discord-anecdote"},
+        {"statement": "A same-day post named the NPC 'Vaveli Dravan' (believed safe to kill since she appears to offer no quest or trade); the Dralas vs. Dravan name discrepancy is likely a spelling inconsistency in player notes rather than two NPCs.", "src": "discord-speculation"}
+      ],
+      "src": "discord-anecdote"
+    },
+    {
+      "id": "lore:bone-thrall-appearance",
+      "topic": "Bone Thrall appearance",
+      "summary": "In-game visual description of the Bone Thrall creature.",
+      "facts": [
+        {"statement": "Bone thralls appear in-game as a gold-robed skeletal figure with detached bone arms floating around its upper body and head.", "src": "discord-anecdote"}
+      ],
+      "src": "discord-anecdote"
+    },
+    {
+      "id": "lore:fort-frostmoth-and-fort-firemoth",
+      "topic": "Fort Frostmoth and Fort Firemoth",
+      "summary": "Two similarly named forts that come from different plugins and should not be confused.",
+      "facts": [
+        {"statement": "Fort Frostmoth is located on Solstheim.", "src": "discord-anecdote"},
+        {"statement": "Fort Frostmoth and Fort Firemoth are two different plugins and should not be confused with each other.", "src": "discord-dev"}
+      ],
+      "src": "discord-dev"
+    },
+    {
+      "id": "lore:threads-of-the-webspinner",
+      "topic": "27 Threads of the Webspinner",
+      "summary": "Quest-structure note about the 27 Threads of the Webspinner (Sanguine) questline.",
+      "facts": [
+        {"statement": "In the 27 Threads of the Webspinner (Sanguine) questline, the one 'contact' step is the only quest stage that does not require going out to kill someone.", "src": "discord-tested"}
+      ],
+      "src": "discord-tested"
+    },
+    {
+      "id": "lore:werewolf-base-stats",
+      "topic": "Werewolf base stats",
+      "summary": "The UESP wiki's werewolf stat multipliers are inaccurate; correct values were pulled directly from the Construction Set.",
+      "facts": [
+        {"statement": "The UESP wiki page on Werewolves is inaccurate; a player posted the actual base werewolf stat multipliers pulled directly from the Construction Set (Gameplay -> Settings -> Gameplay tab) as the correct reference.", "src": "discord-tested"}
+      ],
+      "src": "discord-tested"
+    },
+    {
+      "id": "lore:house-hlaalu-amends",
+      "topic": "House Hlaalu amends",
+      "summary": "Regaining standing with House Hlaalu does not require gold; amends are paid 'in nature' to Crassius Curio via a bribery/dialogue scene.",
+      "facts": [
+        {"statement": "You can make amends with House Hlaalu (regain standing) even without carrying gold; amends are instead paid 'in nature' to Crassius Curio via the bribery/dialogue scene, not gold.", "src": "discord-anecdote"},
+        {"statement": "Verbatim dialogue from the scene: \"You want me to be your sponsor in House Hlaalu? I thought you'd never ask... But first, I want to see who I'm dealing with. Show Uncle Crassius what you have to offer. That's right, don't be shy.\"", "src": "ingame-text"}
+      ],
+      "src": "discord-anecdote"
+    },
+    {
+      "id": "lore:caldera-directions-leprechaun-event",
+      "topic": "Caldera directions (Leprechaun event)",
+      "summary": "The Leprechaun event NPC gives wrong directions to Caldera; misleading quest directions are a known vanilla Morrowind pattern.",
+      "facts": [
+        {"statement": "Caldera is located north of Balmora, not east — correcting the in-game NPC's directions for the Leprechaun event.", "src": "discord-anecdote"},
+        {"statement": "The server dev noted this isn't unprecedented: multiple vanilla Morrowind quests are known to give incorrect or misleading directions, like the drunken Nord for the Leprechaun event.", "src": "discord-dev"}
+      ],
+      "src": "discord-anecdote"
+    },
+    {
+      "id": "lore:twin-lamps-slave-quest",
+      "topic": "Twin Lamps slave quest",
+      "summary": "Slave counts, fastest camps, and rewards for the Twin Lamps questline.",
+      "facts": [
+        {"statement": "The Twin Lamps quest requires freeing 21 slaves total; fastest camps are Rotheran (11), Hlormaren (9), Sinsibadon (6), and Minabi (6); freeing 30 slaves yields 3 skill books.", "src": "discord-anecdote"},
+        {"statement": "Dren Plantation and under the Telvanni canton in Vivec also have a good number of easily-accessed slaves with keys.", "src": "discord-anecdote"}
+      ],
+      "src": "discord-anecdote"
+    },
+    {
+      "id": "lore:duvianus-platorius",
+      "topic": "Duvianus Platorius",
+      "summary": "The quest interaction with Duvianus Platorius can be resolved by lying.",
+      "facts": [
+        {"statement": "The quest/NPC interaction involving Duvianus Platorius can be resolved simply by lying to him, rather than needing to bribe or kill him.", "src": "discord-tested"}
+      ],
+      "src": "discord-tested"
+    },
+    {
+      "id": "lore:azura-star-akulakhan-fan-theory",
+      "topic": "Azura Star / Akulakhan fan theory",
+      "summary": "Fan lore theory connecting an Azura Star, Almalexia's soul, Akulakhan, and the Landfall.",
+      "facts": [
+        {"statement": "Fan lore theory (not confirmed): an Azura Star containing Almalexia's soul was used as a substitute for the Heart of Lorkhan by the Nerevarine for Akulakhan, to fight Numidium during the Landfall in the 5th era.", "src": "discord-speculation"}
+      ],
+      "src": "discord-speculation"
+    },
+    {
+      "id": "lore:mad-god-quest-first-completion",
+      "topic": "Mad God quest first completion",
+      "summary": "Server-history note on the first full completion of the Mad God quest.",
+      "facts": [
+        {"statement": "The server dev believes a particular player was the first to complete the Mad God quest entirely on the server (as of 2023-01-04).", "src": "discord-dev"}
+      ],
+      "src": "discord-dev"
+    },
+    {
+      "id": "lore:legacy-content-and-secret-islands",
+      "topic": "Legacy content and secret islands",
+      "summary": "Server-history notes on items implemented by a former content creator, and the unfinished secret islands.",
+      "facts": [
+        {"statement": "A former community content creator (not a tes3mp developer) implemented items and content in-game before leaving the tes3mp scene; the server admin (also not a tes3mp developer) said he'd rather not remove every one of those items, because he doesn't want to field player complaints and be expected to compensate players for it, noting that has happened before.", "src": "discord-dev"},
+        {"statement": "The secret islands were made by that former content creator but never finished; it was speculated that if the idea had been finished, the islands probably wouldn't have ended up being kept secret.", "src": "discord-speculation"}
+      ],
+      "src": "discord-dev"
+    },
+    {
+      "id": "lore:fishing-feature-port",
+      "topic": "Fishing feature port",
+      "summary": "Status note on the Fishing feature across server versions.",
+      "facts": [
+        {"statement": "As of 2022-08-04, Fishing (a feature from server version 0.7) had not yet been ported to version 0.8.", "src": "discord-anecdote"}
+      ],
+      "src": "discord-anecdote"
+    },
+    {
+      "id": "lore:saviors-hide-availability",
+      "topic": "Savior's Hide availability",
+      "summary": "The Savior's Hide artifact is currently unobtainable on the server.",
+      "facts": [
+        {"statement": "The Savior's Hide artifact is currently completely unavailable on the server; other vanilla artifacts were considered for relocation to add challenge, but the server dev ultimately did not move them.", "src": "discord-anecdote"}
+      ],
+      "src": "discord-anecdote"
+    },
+    {
+      "id": "lore:bipolar-blade",
+      "topic": "Bipolar Blade",
+      "summary": "A joke weapon with self-negating enchantments, made for the Tribunal museum-donation quest step.",
+      "facts": [
+        {"statement": "The Bipolar Blade was made specifically for the Tribunal main-quest step where you donate artifacts for free to get the Trueflame piece from the museum curator.", "src": "discord-anecdote"},
+        {"statement": "There is a chance to fail the Tribunal museum-donation quest, which is part of why the Bipolar Blade isn't the best item to use for it.", "src": "discord-anecdote"},
+        {"statement": "Verbatim in-game description: \"Two smiths on opposite ends of Tamriel created each half of the blade, unaware of the other, with the hope that no one man, save the owner of the blade, would know its true power. Unfortunately, the smiths were not given enough instruction, and created halves with enchantments that completely negated each other. A person struck with this weapon will not attack you (because of the calming spell) meaning that subsequent attacks will be considered assault if you are in town even if your enemy attacked you first. 'It's sort of valuable, I guess, except that no one has ever wanted it'\"", "src": "ingame-text"},
+        {"statement": "Its enchantment: Frenzy Humanoid 30pts for 15sec on Touch; Calm Humanoid 30pts for 15sec on Touch.", "src": "ingame-text"}
+      ],
+      "src": "discord-anecdote"
+    },
+    {
+      "id": "lore:trueflame-hopesfire-spear-of-the-hunter",
+      "topic": "Trueflame, Hopesfire, Spear of the Hunter",
+      "summary": "Same-model counterpart weapons and why certain DLC artifacts are unobtainable.",
+      "facts": [
+        {"statement": "A screenshot showed a player carrying items literally named 'Infernal Blade' and 'Voltaic Spear', plus what appears to be a Hopesfire-model weapon, leading to speculation that other rare boss drops might be same-model counterparts to the artifacts Trueflame and Hopesfire.", "src": "discord-speculation"},
+        {"statement": "The Spear of the Hunter is unobtainable because, like Hopesfire and Trueflame, it requires completing its DLC main quest, which is broken since Antonius is missing and the werewolf disease doesn't work.", "src": "discord-anecdote"}
+      ],
+      "src": "discord-anecdote"
+    },
+    {
+      "id": "lore:wraithguard-and-zero-sum-gauntlet",
+      "topic": "Wraithguard and Zero Sum Gauntlet",
+      "summary": "The backpath left Wraithguard, its texture quirk, the Jury-Rigged perk, and a contested Zero Sum Gauntlet recipe.",
+      "facts": [
+        {"statement": "Completing the 'backpath' and talking to Vivec gives the player a left Wraithguard rather than it spawning on the map.", "src": "discord-anecdote"},
+        {"statement": "The two obtainable Wraithguards share the same enchantment except the 'Jury-Rigged' perk, which is only on the left-hand one.", "src": "discord-anecdote"},
+        {"statement": "Before being upgraded by Yagrum Bagarn, the left Wraithguard obtained via the backdoor route is textured as a plain daedric gauntlet rather than the actual wraithguard model.", "src": "discord-anecdote"},
+        {"statement": "This is believed to be an unintentional Bethesda mistake reusing the daedric gauntlet model, since a pluginless texture fix for the left Wraithguard would also change the regular daedric gauntlets, as they share the same base model; after debate, the conclusion reached was that it's certainly not intentional.", "src": "discord-speculation"},
+        {"statement": "Zero Sum Gauntlet recipe (conflicting claims): one player states you need BOTH Wraithguards (not just the better one) in your inventory for it to appear automatically; another player replied in the same thread contradicting this, stating only the 'cooler' Wraithguard plus the associated weapons are needed, not both Wraithguards.", "src": "discord-contested"}
+      ],
+      "src": "discord-anecdote"
+    },
+    {
+      "id": "lore:frozenmourn",
+      "topic": "Frozenmourn",
+      "summary": "A sword with a 450 Frost DMG proc apparently gated by target frost resistance; its swing type was a dev mistake and its spelling is intentional.",
+      "facts": [
+        {"statement": "The Frozenmourn sword can proc '450 Frost DMG'; the proc appears gated by target frost resistance — it failed to proc against a target with '70% frost resistance' but proc'd immediately against a target with '30%' resistance, and continued proc'ing '450 Frost dmg' even after that target's frost resistance was lowered to '0%'.", "src": "discord-tested"},
+        {"statement": "The server dev acknowledged Frozenmourn's weapon swing type (slash instead of chop) was a mistake ('Whoops') and said he'd swap it in the next update.", "src": "discord-dev"},
+        {"statement": "The server dev confirmed the spelling 'Frozenmourn' (rather than 'Frozenmourne') is intentional, not a typo.", "src": "discord-dev"}
+      ],
+      "src": "discord-tested"
+    },
+    {
+      "id": "lore:jacks-ripper-and-icy-jack",
+      "topic": "Jack's Ripper and Icy Jack",
+      "summary": "The unique long blade Jack's Ripper, its Bone Thrall summon, and the familiars and drops tied to the boss Jack (Icy Jack).",
+      "facts": [
+        {"statement": "Jack's Ripper is a unique long blade whose on-hit effect summons a Bone Thrall that visually resembles Jack (the boss); the exact summon trigger is unclear.", "src": "discord-tested"},
+        {"statement": "The Bone Thrall may also dispel summoned Dremora, though not immediately (speculation); it should attack but currently doesn't — the server dev acknowledged this as a bug to look into.", "src": "discord-dev"},
+        {"statement": "The Lich, Bonelord, and Skeleton familiars come from the boss 'Jack' (Icy Jack); Bonewolf and Lich King familiars are speculated (unconfirmed) to also be rare drops from Jack.", "src": "discord-anecdote"},
+        {"statement": "Icy Jack's drop table was updated to add the Starfrost Cuirass alongside its existing Ice Armor and Glacier Splitter drops.", "src": "discord-tested"}
+      ],
+      "src": "discord-anecdote"
+    },
+    {
+      "id": "lore:jacks-halloween-drop-table",
+      "topic": "Jack's Halloween drop table",
+      "summary": "The event NPC Jack's Halloween drop table mixes returning old-event drops with new items; some listed details were later corrected as bugs.",
+      "facts": [
+        {"statement": "The event NPC 'Jack's' Halloween drop table also includes returning old-event drops — masks of vanilla NPCs including Jim Stacey, Fargoth, Divayth Fyr, Helseth, Barenziah, and Caius Cosades, plus the unused 'Wings of the Queen of Bats' artifact — alongside new items like the Witches' Broom (grants flight when drawn).", "src": "discord-anecdote"},
+        {"statement": "Several details in that drop list were later corrected by the server dev as bugs — the Daedric Longspear was meant to be two-handed, not one-handed, and the Ring of Namira's item/equipment slot was also bugged.", "src": "discord-dev"}
+      ],
+      "src": "discord-anecdote"
+    },
+    {
+      "id": "lore:daedric-face-masks",
+      "topic": "Daedric Face masks",
+      "summary": "Speculation that the three Daedric face helmets are designed to resemble Tribunal-era figures.",
+      "facts": [
+        {"statement": "The three Daedric face helmets (Terror, Inspiration, God) are speculated to be designed to resemble the masks of the Tribunal.", "src": "discord-speculation"},
+        {"statement": "Initial guess: Face of Inspiration resembles Almalexia and Face of God resembles Vivec — corrected the next day: Face of Terror actually resembles Nerevar, though it somewhat resembles Sotha Sil's mask too.", "src": "discord-speculation"}
+      ],
+      "src": "discord-speculation"
+    },
+    {
+      "id": "lore:daedric-sanctuary-amulet-leftover",
+      "topic": "Daedric Sanctuary Amulet and freeze-bug amulet",
+      "summary": "The game-freezing amulet is unrelated to the Daedric Sanctuary Amulet and is likely a vanilla beta leftover.",
+      "facts": [
+        {"statement": "The item that freezes the game on use is different from and unrelated to the Daedric Sanctuary Amulet. That other amulet is likely a vanilla beta leftover: originally, killing Lord Dregas Volar let you loot a teleport amulet from him to get back to Tel Fyr, but this was changed to an instant teleport on his death, and Bethesda seemingly never removed the old amulet from his inventory.", "src": "discord-anecdote"}
+      ],
+      "src": "discord-anecdote"
+    },
+    {
+      "id": "lore:daedric-longspear-origin",
+      "topic": "Daedric Longspear origin",
+      "summary": "The Daedric Longspear comes from Morrowind's unused BSA files.",
+      "facts": [
+        {"statement": "The Daedric Longspear comes from Morrowind's unused BSA files and was never actually implemented in the base game; there is also an unused Dwemer longspear model in those same unused files.", "src": "discord-anecdote"}
+      ],
+      "src": "discord-anecdote"
+    },
+    {
+      "id": "lore:pulverizer",
+      "topic": "Pulverizer",
+      "summary": "The Pulverizer has no hidden effect and its planned boss-drop placement was never implemented.",
+      "facts": [
+        {"statement": "The Pulverizer has no hidden effect — it was originally planned to be added to a boss's drop table but never implemented, due to an issue with spell-casting creatures.", "src": "discord-dev"}
+      ],
+      "src": "discord-dev"
+    },
+    {
+      "id": "lore:bthuangths-harvester",
+      "topic": "Bthuangth's Harvester",
+      "summary": "Bthuangth's Harvester is no longer obtainable from its vanilla spawn point.",
+      "facts": [
+        {"statement": "Bthuangth's Harvester is no longer obtainable from its original vanilla spawn point in Dandera Selaro's house in Ald-Ruhn, because that house is now player housing.", "src": "discord-tested"}
+      ],
+      "src": "discord-tested"
+    },
+    {
+      "id": "lore:white-mournhold-robes",
+      "topic": "White Mournhold robes",
+      "summary": "White (Mournhold) robes were originally extremely rare on the server.",
+      "facts": [
+        {"statement": "White (Mournhold) robes were originally very rare on the server, with only about 3-4 in existence, because they came from Mournhold during a short period when it was open.", "src": "discord-anecdote"}
+      ],
+      "src": "discord-anecdote"
+    },
+    {
+      "id": "lore:spiffcorp-joke-loot-site",
+      "topic": "SpiffCorp joke loot site",
+      "summary": "An underwater joke-themed dive site strewn with 'SpiffCorp (TM) industrial waste' bottles.",
+      "facts": [
+        {"statement": "An underwater site is strewn with numerous 'SpiffCorp (TM) industrial waste' bottle items (each worth 194 gold, Fortify Intelligence 65 pts for 195 secs) — apparently a joke-themed loot/dive site.", "src": "discord-tested"}
+      ],
+      "src": "discord-tested"
+    },
+    {
+      "id": "lore:town-named-cocktails",
+      "topic": "Town-named cocktails",
+      "summary": "The confirmed set of town-named cocktail items, per polling of players who obtained them.",
+      "facts": [
+        {"statement": "Based on asking many players who obtained cocktails what they got, the confirmed-to-exist town-named cocktails are: Balmora, Aldruhn, Pelagiad, Dagon Fel, Suran, and Sadrith Mora.", "src": "discord-anecdote"},
+        {"statement": "It is speculated that neither a Tel Mora nor a Gnisis cocktail exists.", "src": "discord-speculation"}
+      ],
+      "src": "discord-anecdote"
+    },
+    {
+      "id": "lore:lucky-dice",
+      "topic": "Lucky Dice",
+      "summary": "A physically tiny dropped item; despite its name, carrying it does not raise Luck.",
+      "facts": [
+        {"statement": "The Lucky Dice is a physically tiny dropped item, barely visible on the ground (a player circled it in red for scale against a standing character).", "src": "discord-anecdote"},
+        {"statement": "Its scale/size cannot be changed and always stays tiny — this clarifies confusion with the unrelated, resizable Dwemer quest cube.", "src": "discord-anecdote"},
+        {"statement": "A player initially speculated it might boost Luck based on 10 favorable-seeming test rolls while carrying it (72, 3, 31, 96, 41, 19, 3, 90, 81, 10) — but this was later tested and refuted: a 'Lucky'-named item does not raise the Luck attribute simply by being carried in inventory, despite its name.", "src": "discord-tested"}
+      ],
+      "src": "discord-anecdote"
+    },
+    {
+      "id": "lore:golden-prayer-robe",
+      "topic": "Golden Prayer Robe",
+      "summary": "Stats of a robe speculated to be a previously undiscovered item.",
+      "facts": [
+        {"statement": "Golden Prayer Robe: Weight 3, Value 6198, Constant Effect: Fortify Attribute Willpower 15 pts, Restore Health, Restore Magicka — speculated by a player to possibly be a previously unfound/undiscovered item.", "src": "discord-speculation"}
+      ],
+      "src": "discord-speculation"
+    },
+    {
+      "id": "lore:gertrude-and-morroween-hide-shirts",
+      "topic": "Gertrude Hide Shirt and Morroween Hide Shirt",
+      "summary": "Two similarly named but distinct unenchanted St. Aralor shirts, from different event sources, that differ in model.",
+      "facts": [
+        {"statement": "A clothing item was first referred to as 'Gertrude Hide Shirt', but a merchant listing later named it 'Morroween Hide Shirt', initially suggesting a naming error — it turned out both names are real, distinct items.", "src": "discord-anecdote"},
+        {"statement": "Gertrude (a separate event NPC/boss) drops its own 'Gertrude Hide Shirt', also an unenchanted Shirt of St. Aralor, distinct from the Morroween Hide Shirt.", "src": "discord-anecdote"},
+        {"statement": "Despite both being unenchanted St. Aralor shirts, the two differ in model — the Morroween version is missing the wrist part that the Gertrude version has; the server dev had suggested equipping the two shirts to check for a difference after they were claimed to be identical.", "src": "discord-tested"}
+      ],
+      "src": "discord-anecdote"
+    },
+    {
+      "id": "lore:enchanted-ring-color-variety",
+      "topic": "Enchanted ring color variety",
+      "summary": "Illusion and Alteration enchanted rings each render in distinct colored ring models.",
+      "facts": [
+        {"statement": "Enchanted Illusion rings (Light, Sanctuary, Invisibility, Chameleon) each render as a differently colored ring model, making Illusion the school with the most enchantment color variety among rings.", "src": "discord-anecdote"},
+        {"statement": "Enchanted Alteration rings (Levitate, Open, Jump, Feather) similarly each have 4 distinct colored shades.", "src": "discord-anecdote"}
+      ],
+      "src": "discord-anecdote"
+    },
+    {
+      "id": "lore:talking-mudcrab-merchant-and-guidebook-excerpts",
+      "topic": "Talking Mudcrab Merchant and guidebook excerpts",
+      "summary": "Players shared excerpts from an official Morrowind guidebook, including the location of the drunken Talking Mudcrab Merchant.",
+      "facts": [
+        {"statement": "Guidebook excerpt: \"The Talking Mudcrab Merchant — Make that the drunken talking mudcrab merchant. It's northeast of Bal Fell — on an island directly across from the entrance to the Releth Ancestral Tomb. It's pretty funny, and it actually does sell stuff. Namely, booze!\"", "src": "discord-anecdote"},
+        {"statement": "A photographed guidebook page titled 'Morrowind Miscellaneous' includes a 'Stupid Player Tricks' section about using stacks of the 90-plus copies of 'The Antecedents', 'Lives of Saints', and 'The Consolation of Prayer' as stepping-stone paths across lava pools.", "src": "discord-anecdote"},
+        {"statement": "A player also pasted the title text of 'A POCKET GUIDE to THE EMPIRE and its environs', promulgated under the Authority of the Imperial Geographical Society, 3E 432.", "src": "discord-anecdote"}
+      ],
+      "src": "discord-anecdote"
+    },
+    {
+      "id": "lore:fishing-flavor-notes",
+      "topic": "Fishing flavor notes",
+      "summary": "In-game fishing flavor texts hinting at best fishing conditions and a giant sea creature.",
+      "facts": [
+        {"statement": "In-game fishing note (verbatim): \"A friendly tip from one fisherman to another: They say fishing is best at dusk or dawn, especially when its foggy or overcast. But I say be weary of thunder, you're basically a walking lightning rod, and no giant fish or dreugh is worth 10,000 volts coursing through your body! - a friend\"", "src": "ingame-text"},
+        {"statement": "In-game fishing note (verbatim): \"Did my eyes deceive me? Surely I was just seeing things - but I could have swore I saw some sort of giant creature in the open sea during our ride to Solstheim... I'm beginning to think I've been fishing too long, my eyes must be playing tricks on me. What do they put in this top-tier bait, anyway?\"", "src": "ingame-text"}
+      ],
+      "src": "ingame-text"
+    },
+    {
+      "id": "lore:frostguard-robe",
+      "topic": "Frostguard Robe",
+      "summary": "Stats line for the Frostguard Robe (Helseth's Robe).",
+      "facts": [
+        {"statement": "Frostguard Robe (Helseth's Robe) — 3.0 / 78 / 1 — Worn by King Hlaalu Helseth.", "src": "ingame-text"}
+      ],
+      "src": "ingame-text"
+    },
+    {
+      "id": "lore:grim-looking-man",
+      "topic": "The Grim Looking Man",
+      "summary": "Player-authored roleplay/fan lore about a Mephala-devoted figure seen at the Earthly Delights Gentleman's Club in Suran; not official game text.",
+      "facts": [
+        {"statement": "Player-authored fan lore describes the 'Grim Looking Man' lurking in back-corner alleyways and occasionally spotted at the Earthly Delights Gentleman's Club in Suran, reciting a Chimer-language prayer to Mephala ('Lady of Whispers... Mistress of Secrets... Mother of Spiders').", "src": "discord-anecdote"},
+        {"statement": "In the fan lore, he descends from a family of high believers of Mephala who fled to Suran and hid after the Night Mother painted 'MORAG TONG' in the blood of the murdered Potentate Versidue Shaie; set in 3E 426, he is said to still uphold family traditions within the Morag Tong Guild, and is best reached at the Earthly Delights Gentleman's Club in Suran. This reads as player-authored roleplay/fan-fiction, not vanilla game text.", "src": "discord-anecdote"}
+      ],
+      "src": "discord-anecdote"
+    }
+  ]
+}

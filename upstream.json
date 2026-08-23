@@ -1,0 +1,8 @@
+{
+  "repo": "https://github.com/Skooma-Breath/NP-Server-Items.git",
+  "data_file": "items_data.json",
+  "images_dir": "images",
+  "last_ingested_commit": "8002bb6c06d6f6ea9f2b75f410de8446e879900c",
+  "ingested_date": "2026-08-23",
+  "credit": "NP-Server-Items community dataset by Skooma Breath, used with permission"
+}

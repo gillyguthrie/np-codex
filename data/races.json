@@ -1,0 +1,70 @@
+{
+  "_meta": {
+    "description": "NP 0.8 racials — complete dev-authored rework, verbatim. All 10 races differ from vanilla; vanilla_note preserves the original for orientation only (NOT authoritative on NP).",
+    "migrated": "2026-08-22"
+  },
+  "sources": {
+    "s-devdoc": {"origin": "dev-doc", "channel": "0.8 Information: racial-changes", "url": null, "date": "2022-05-10", "confidence": "dev-stated"}
+  },
+  "races": [
+    {"id": "race:argonian", "name": "Argonian", "src": "s-devdoc",
+     "abilities": [
+       {"name": "Water Breathing", "kind": "spell", "raw_text": "Water Breathing for 120 secs on self (0 Magicka Cost, Always Succeeds).", "effects": [{"key": "water-breathing", "magnitude": null, "delivery": "triggered-spell", "raw_text": "Water Breathing for 120 secs on self"}]},
+       {"name": "Child of the Root", "kind": "passive", "raw_text": "Resist Poison 45, Resist Disease 30 pts resist poison on self.", "effects": [{"key": "poison", "magnitude": 45, "delivery": "constant", "raw_text": "Resist Poison 45"}, {"key": "disease", "magnitude": 30, "delivery": "constant", "raw_text": "Resist Disease 30 pts"}]},
+       {"name": "Amphibious", "kind": "passive", "raw_text": "Swift Swim 35 pts on self.", "effects": [{"key": "swift-swim", "magnitude": 35, "delivery": "constant", "raw_text": "Swift Swim 35 pts on self"}]}],
+     "vanilla_note": "Original: Water Breathing spell 5 magicka; Immune to Poison (Resist Poison 100); Resist Disease 75."},
+    {"id": "race:breton", "name": "Breton", "src": "s-devdoc",
+     "abilities": [
+       {"name": "Dragon Skin", "kind": "power", "raw_text": "Shield 150 pts for 15 secs on self, Power.", "effects": [{"key": "shield", "magnitude": 150, "delivery": "triggered-spell", "raw_text": "Shield 150 pts for 15 secs on self"}]},
+       {"name": "Half-Blood", "kind": "passive", "raw_text": "Fortify Willpower 15 pts on self. Resist magicka 15 pts on self. Resist paralysis 15 pts on self.", "effects": [{"key": "wil", "magnitude": 15, "delivery": "constant", "raw_text": "Fortify Willpower 15 pts on self"}, {"key": "rmag", "magnitude": 15, "delivery": "constant", "raw_text": "Resist magicka 15 pts on self"}, {"key": "para", "magnitude": 15, "delivery": "constant", "raw_text": "Resist paralysis 15 pts on self"}]},
+       {"name": "Magicka Bonus", "kind": "passive", "raw_text": "Fortify Maximum Magicka 0.5x INT on self (no change from vanilla).", "effects": [{"key": "magmult", "magnitude": 0.5, "delivery": "constant", "raw_text": "Fortify Maximum Magicka 0.5x INT"}]}],
+     "vanilla_note": "Original: Dragon Skin Shield 50/60s; Resist Magicka 50; Magicka Bonus 0.5x INT."},
+    {"id": "race:dunmer", "name": "Dark Elf", "src": "s-devdoc",
+     "abilities": [
+       {"name": "Ill-Fated", "kind": "passive", "raw_text": "Resist Fire 35 pts on self. Sanctuary 25 pts on self.", "effects": [{"key": "fire", "magnitude": 35, "delivery": "constant", "raw_text": "Resist Fire 35 pts on self"}, {"key": "sanc", "magnitude": 25, "delivery": "constant", "raw_text": "Sanctuary 25 pts on self"}]},
+       {"name": "Ancestor Guardian", "kind": "power", "raw_text": "Sanctuary 100 pts on self for 15 secs. Fire Shield 50 pts on self for 15 secs.", "effects": [{"key": "sanc", "magnitude": 100, "delivery": "triggered-spell", "raw_text": "Sanctuary 100 pts on self for 15 secs"}, {"key": "fire-shield", "magnitude": 50, "delivery": "triggered-spell", "raw_text": "Fire Shield 50 pts on self for 15 secs"}]}],
+     "vanilla_note": "Original: Resist Fire 75; Ancestor Guardian Sanctuary 50/60s."},
+    {"id": "race:altmer", "name": "High Elf", "src": "s-devdoc",
+     "abilities": [
+       {"name": "Cleanse", "kind": "power", "raw_text": "Dispel 100 pts on self in 15 ft for 1 sec.", "effects": [{"key": "dispel", "magnitude": 100, "delivery": "triggered-spell", "raw_text": "Dispel 100 pts on self in 15 ft for 1 sec"}]},
+       {"name": "Pure-Blood", "kind": "passive", "raw_text": "Fortify Intelligence 25 pts on self. Resist disease 15 pts on self. Weakness to shock/frost 15 pts on self. Weakness to fire/magicka 25 pts on self.", "effects": [{"key": "int", "magnitude": 25, "delivery": "constant", "raw_text": "Fortify Intelligence 25 pts on self"}, {"key": "disease", "magnitude": 15, "delivery": "constant", "raw_text": "Resist disease 15 pts on self"}, {"key": "shock", "magnitude": -15, "delivery": "constant", "raw_text": "Weakness to shock 15 pts"}, {"key": "frost", "magnitude": -15, "delivery": "constant", "raw_text": "Weakness to frost 15 pts"}, {"key": "fire", "magnitude": -25, "delivery": "constant", "raw_text": "Weakness to fire 25 pts"}, {"key": "rmag", "magnitude": -25, "delivery": "constant", "raw_text": "Weakness to magicka 25 pts"}]},
+       {"name": "Enchanting Focus", "kind": "power", "raw_text": "Fortify Enchant 35 pts on self for 120 secs.", "effects": [{"key": "fortify-enchant", "magnitude": 35, "delivery": "triggered-spell", "raw_text": "Fortify Enchant 35 pts on self for 120 secs"}]},
+       {"name": "Clouded Thoughts", "kind": "power", "raw_text": "Sound 50 pts on target for 15 secs.", "effects": [{"key": "sound", "magnitude": 50, "delivery": "triggered-spell", "raw_text": "Sound 50 pts on target for 15 secs"}]},
+       {"name": "Condescending Tone", "kind": "power", "raw_text": "Demoralize Humanoid 25 to 75 pts on target for 10 secs.", "effects": [{"key": "demoralize", "magnitude": 25, "magnitude_max": 75, "delivery": "triggered-spell", "raw_text": "Demoralize Humanoid 25 to 75 pts on target for 10 secs"}]},
+       {"name": "Magicka Bonus", "kind": "passive", "raw_text": "Fortify Maximum Magicka 1.5x INT on self.", "effects": [{"key": "magmult", "magnitude": 1.5, "delivery": "constant", "raw_text": "Fortify Maximum Magicka 1.5x INT on self"}]}],
+     "vanilla_note": "Original: Resist Disease 75; Weakness to Shock 25 / Frost 25 / Fire 50 / Magicka 50; Magicka Bonus 1.5x INT."},
+    {"id": "race:imperial", "name": "Imperial", "src": "s-devdoc",
+     "abilities": [
+       {"name": "Diplomatic Voice", "kind": "power", "raw_text": "Charm 50 to 100 pts on target for 30 secs. Fortify Speechcraft 35 pts on self for 30 secs. Fortify Mercantile 35 pts on self for 30 secs.", "effects": [{"key": "charm", "magnitude": 50, "magnitude_max": 100, "delivery": "triggered-spell", "raw_text": "Charm 50 to 100 pts on target for 30 secs"}]},
+       {"name": "Colovian Heritage", "kind": "passive", "raw_text": "Fortify Personality 15 pts on self. Resist Paralysis 15 pts on self. Fortify Attack 15 pts on self.", "effects": [{"key": "per", "magnitude": 15, "delivery": "constant", "raw_text": "Fortify Personality 15 pts on self"}, {"key": "para", "magnitude": 15, "delivery": "constant", "raw_text": "Resist Paralysis 15 pts on self"}, {"key": "attack", "magnitude": 15, "delivery": "constant", "raw_text": "Fortify Attack 15 pts on self"}]}],
+     "vanilla_note": "Original: Voice of the Emperor (Charm 25-50/15s); Star of the West (Absorb Fatigue 200/1s)."},
+    {"id": "race:khajiit", "name": "Khajiit", "src": "s-devdoc",
+     "abilities": [
+       {"name": "Ziz Kurah", "kind": "passive", "raw_text": "Fortify Acrobatics 15 pts on self. Fortify Athletics 15 pts on self. Fortify Hand-to-hand 15 pts on self.", "effects": [{"key": "fortify-skill", "magnitude": 15, "delivery": "skill-only", "raw_text": "Fortify Acrobatics/Athletics/Hand-to-hand 15 pts each on self"}]},
+       {"name": "Eye of Night", "kind": "spell", "raw_text": "Night Eye 50 pts on self for 120 secs (0 Magicka Cost, Always Succeeds).", "effects": [{"key": "night-eye", "magnitude": 50, "delivery": "triggered-spell", "raw_text": "Night Eye 50 pts on self for 120 secs"}]}],
+     "vanilla_note": "Original: Eye of Fear (Demoralize 100/30s); Eye of Night 50 pts 30s."},
+    {"id": "race:nord", "name": "Nord", "src": "s-devdoc",
+     "abilities": [
+       {"name": "Frostburn", "kind": "power", "raw_text": "Frost Shield 50 pts on self for 15 secs.", "effects": [{"key": "frost-shield", "magnitude": 50, "delivery": "triggered-spell", "raw_text": "Frost Shield 50 pts on self for 15 secs"}]},
+       {"name": "Woad", "kind": "power", "raw_text": "Shield 300 pts on self for 6 secs.", "effects": [{"key": "shield", "magnitude": 300, "delivery": "triggered-spell", "raw_text": "Shield 300 pts on self for 6 secs"}]},
+       {"name": "Warcry", "kind": "power", "raw_text": "Silence on touch in 15 ft for 6 secs.", "effects": [{"key": "silence", "magnitude": null, "delivery": "triggered-spell", "raw_text": "Silence on touch in 15 ft for 6 secs"}]},
+       {"name": "Blood of Ysgramor", "kind": "passive", "raw_text": "Fortify Axe 15 pts on self. Resist frost 35 pts on self.", "effects": [{"key": "fortify-skill", "magnitude": 15, "delivery": "skill-only", "raw_text": "Fortify Axe 15 pts on self"}, {"key": "frost", "magnitude": 35, "delivery": "constant", "raw_text": "Resist frost 35 pts on self"}]}],
+     "vanilla_note": "Original: Thunder Fist (Frost Damage 25 touch); Woad Shield 30/60s; Resist Shock 50; Immune to Frost (Resist Frost 100)."},
+    {"id": "race:orc", "name": "Orc", "src": "s-devdoc",
+     "abilities": [
+       {"name": "Orsimer Rage", "kind": "power", "raw_text": "Fortify Health 50 pts on self for 30 secs. Fortify Fatigue 200 pts on self for 30 secs. Fortify Attack 75 pts on self for 30 secs. Drain Agility 100 pts on self for 30 secs. Drain Willpower 100 pts on self for 30 secs.", "effects": [{"key": "attack", "magnitude": 75, "delivery": "triggered-spell", "raw_text": "Fortify Attack 75 pts on self for 30 secs"}]},
+       {"name": "Might of Trinimac", "kind": "passive", "raw_text": "Resist Magicka 25 pts on self. Fortify Attack 15 pts on self. Fortify Endurance 15 pts on self.", "effects": [{"key": "rmag", "magnitude": 25, "delivery": "constant", "raw_text": "Resist Magicka 25 pts on self"}, {"key": "attack", "magnitude": 15, "delivery": "constant", "raw_text": "Fortify Attack 15 pts on self"}, {"key": "end", "magnitude": 15, "delivery": "constant", "raw_text": "Fortify Endurance 15 pts on self"}]}],
+     "vanilla_note": "Original: Berserk power; Resist Magicka 25. Related dev statement: the Orc 'Orcish Brute' racial perk (HPMod +1) converts Endurance into bonus HP like the Hearty line."},
+    {"id": "race:redguard", "name": "Redguard", "src": "s-devdoc",
+     "abilities": [
+       {"name": "Adrenaline Rush", "kind": "power", "raw_text": "Fortify Agility 25 pts on self for 30 secs. Fortify Strength 25 pts on self for 30 secs. Fortify Speed 25 pts on self for 30 secs. Fortify Endurance 25 pts on self for 30 secs. Fortify Health 50 pts on self for 30 secs.", "effects": [{"key": "hp", "magnitude": 50, "delivery": "triggered-spell", "raw_text": "Fortify Health 50 pts on self for 30 secs"}]},
+       {"name": "Yokudan Tenacity", "kind": "passive", "raw_text": "Resist poison 25 pts on self. Resist disease 15 pts on self.", "effects": [{"key": "poison", "magnitude": 25, "delivery": "constant", "raw_text": "Resist poison 25 pts on self"}, {"key": "disease", "magnitude": 15, "delivery": "constant", "raw_text": "Resist disease 15 pts on self"}]},
+       {"name": "Desert Traveler", "kind": "passive", "raw_text": "Feather 25 pts on self. Fortify athletics 10 pts on self.", "effects": [{"key": "feather", "magnitude": 25, "delivery": "constant", "raw_text": "Feather 25 pts on self"}, {"key": "fortify-skill", "magnitude": 10, "delivery": "skill-only", "raw_text": "Fortify athletics 10 pts on self"}]}],
+     "vanilla_note": "Original: Adrenaline Rush (50-pt fortifies, 25 HP); Resist Poison 75; Resist Disease 75."},
+    {"id": "race:bosmer", "name": "Wood Elf", "src": "s-devdoc",
+     "abilities": [
+       {"name": "Call of the Hunter", "kind": "passive", "raw_text": "Fortify Marksman 10 pts on self. Fortify Sneak 10 pts on self.", "effects": [{"key": "fortify-skill", "magnitude": 10, "delivery": "skill-only", "raw_text": "Fortify Marksman/Sneak 10 pts each on self"}]},
+       {"name": "Y'ffre's Gift", "kind": "passive", "raw_text": "Resist Disease 25 pts on self. Fortify Agility 15 pts on self.", "effects": [{"key": "disease", "magnitude": 25, "delivery": "constant", "raw_text": "Resist Disease 25 pts on self"}, {"key": "agi", "magnitude": 15, "delivery": "constant", "raw_text": "Fortify Agility 15 pts on self"}]}],
+     "vanilla_note": "Original: Beast Tongue (Command Creature 5/600s); Resist Disease 75."}
+  ]
+}

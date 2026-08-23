@@ -1,0 +1,61 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "$id": "item.schema.json",
+  "title": "items.json",
+  "type": "object",
+  "properties": {
+    "_meta": { "type": "object" },
+    "sources": { "type": "object", "additionalProperties": { "$ref": "common.schema.json#/definitions/source" } },
+    "items": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "properties": {
+          "id": { "$ref": "common.schema.json#/definitions/id" },
+          "name": { "type": "string" },
+          "aliases": { "type": "array", "items": { "type": "string" } },
+          "captured": { "type": "boolean", "description": "false = known to exist, stats not yet captured (stub)" },
+          "item_kind": { "enum": ["server-unique", "quest-artifact", "event", "generic"] },
+          "origin_game": { "enum": ["vanilla", "np-custom"], "description": "vanilla = name exists in base Morrowind/Tribunal/Bloodmoon data (NP may still have modified stats); np-custom = server-created" },
+          "category": { "enum": ["armor", "clothing", "jewelry", "weapon", "accessory", "other"] },
+          "slot": { "type": ["string", "null"] },
+          "armor_class": { "enum": ["light", "medium", "heavy", null] },
+          "side": { "enum": ["left", "right", null] },
+          "pair_group": { "type": ["string", "null"] },
+          "req": { "type": "object", "properties": { "level": { "type": ["integer", "null"] }, "class": { "type": ["string", "null"] } } },
+          "ar": { "$ref": "common.schema.json#/definitions/sourcedValue" },
+          "weapon": {
+            "type": ["object", "null"],
+            "properties": {
+              "wtype": { "type": ["string", "null"] },
+              "hands": { "type": ["integer", "null"] },
+              "dmg": { "type": ["object", "null"] },
+              "speed_pct": { "$ref": "common.schema.json#/definitions/sourcedValue" },
+              "range_ft": { "type": ["number", "null"] }
+            }
+          },
+          "weight": { "$ref": "common.schema.json#/definitions/sourcedValue" },
+          "value_gold": { "$ref": "common.schema.json#/definitions/sourcedValue" },
+          "condition": { "type": ["string", "null"] },
+          "effects": { "type": "array", "items": { "$ref": "common.schema.json#/definitions/effect" } },
+          "hidden_effects": {
+            "type": "object",
+            "properties": {
+              "status": { "enum": ["none", "known", "suspected", "unknown"] },
+              "effects": { "type": "array", "items": { "$ref": "common.schema.json#/definitions/effect" } },
+              "raw_text": { "type": ["string", "null"] }
+            },
+            "required": ["status"]
+          },
+          "location": { "type": ["string", "null"] },
+          "drop_notes": { "type": ["string", "null"] },
+          "image": { "type": ["string", "null"] },
+          "src": { "type": "string" },
+          "notes": { "type": ["string", "null"] }
+        },
+        "required": ["id", "name", "captured", "item_kind", "category", "src"]
+      }
+    }
+  },
+  "required": ["sources", "items"]
+}
