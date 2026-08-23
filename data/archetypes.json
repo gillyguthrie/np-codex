@@ -2,7 +2,10 @@
  "_meta": {
   "description": "Community build archetypes for the NP server, depersonalized from public build-forum posts",
   "migrated": "2026-08-22",
-  "caveat": "Point costs and numbers are as claimed by build authors (player-reported) unless noted; the anvil upgrade system was reworked twice — only Aug-2026-era anvil values are current."
+  "caveat": "Point costs and numbers are as claimed by build authors (player-reported) unless noted; the anvil upgrade system was reworked twice — only Aug-2026-era anvil values are current.",
+  "field_notes": {
+   "cost_semantics": "How masteries[].claimed_cost reads: 'per-mastery' = each entry is that mastery's own claimed cost (summable); 'cumulative' = each entry is the author's running total — the FINAL entry is the build's total, never sum the array."
+  }
  },
  "sources": {
   "s-builds-forum": {
@@ -115,7 +118,8 @@
    "reception_notes": "A commenter suggested adding Arm of the Sun (30-90 dmg per swing, boosted by destruction). A low-credibility comment claimed the build can be one-shot by Were-Hunter players in PvP.",
    "date_posted": "2025-02-19",
    "era_notes": "Feb 2025 — predates the anvil rework (Nov 2025-Jan 2026). Some supporting data was posted as image attachments.",
-   "src": "s-builds-forum"
+   "src": "s-builds-forum",
+   "cost_semantics": "per-mastery"
   },
   {
    "id": "arch:werewolf-general",
@@ -173,7 +177,8 @@
    "reception_notes": "Praised in-thread as an excellent guide.",
    "date_posted": "2025-09-28",
    "era_notes": "Sep 2025. Some supporting data in image attachments.",
-   "src": "s-builds-forum"
+   "src": "s-builds-forum",
+   "cost_semantics": "per-mastery"
   },
   {
    "id": "arch:dunmer-tank",
@@ -190,7 +195,8 @@
    "reception_notes": "Commenters advised skipping heavy armor CMs in favor of raw HP CMs with gear-based resists, called Lord a very weird sign pick, and warned that birthsign powers have extremely long cooldowns.",
    "date_posted": "2026-03-19",
    "era_notes": "Mar 2026 — current meta at time of capture.",
-   "src": "s-builds-forum"
+   "src": "s-builds-forum",
+   "cost_semantics": "per-mastery"
   },
   {
    "id": "arch:infusion-anvil-showcase",
@@ -207,7 +213,8 @@
    "reception_notes": "Commenters posted 'full perfect... all yellow upgrades' example items.",
    "date_posted": "2025-11-08",
    "era_notes": "The anvil/upgrade system was reworked twice (Nov 2025 wipe of OP items, Jan 2026 rebalance); only Aug-2026-era statements reflect current values. Current upgrade potential documented in player-notes message 1472146970419134575. Most examples are image attachments.",
-   "src": "s-builds-forum"
+   "src": "s-builds-forum",
+   "cost_semantics": "per-mastery"
   },
   {
    "id": "arch:zero-cm-spear",
@@ -224,7 +231,8 @@
    "reception_notes": "Endorsed by experienced players as a PSA: low setup with agility/luck achieves great exp at Dreugh; a tester confirmed 150/150/100 sanctuary is not hit-immunity.",
    "date_posted": "2025-03-24",
    "era_notes": "March 2025 — predates the anvil rework (Nov 2025-Jan 2026); essence-conversion change was recent at the time.",
-   "src": "s-builds-forum"
+   "src": "s-builds-forum",
+   "cost_semantics": "per-mastery"
   },
   {
    "id": "arch:no-gear-beginner-monk",
@@ -277,7 +285,8 @@
    "reception_notes": "Single experienced responder supplied the whole plan and linked wiki/faction resources.",
    "date_posted": "2025-12-27",
    "era_notes": "Dec 2025 — inside the anvil rework window, but CM-based advice is largely rework-insensitive.",
-   "src": "s-builds-forum"
+   "src": "s-builds-forum",
+   "cost_semantics": "per-mastery"
   },
   {
    "id": "arch:animator-summoner",
@@ -335,7 +344,8 @@
    "reception_notes": "Commenters ran an extended reality-check: buff stacking is capped by the server, summons occasionally attack party members, and casters wall summons; the long-run verdict was that summons are cool but only marginally effective for endgame content. One tester reported a buffed summon tanking groups of 4-5 Ogrims fine.",
    "date_posted": "2025-05-24",
    "era_notes": "Started May 2025 (pre-anvil-rework); Animator was then one of the newest summon additions and 'things change quite a bit'. The final marginal-effectiveness verdict is from Jan 2026, post-rework.",
-   "src": "s-builds-forum"
+   "src": "s-builds-forum",
+   "cost_semantics": "per-mastery"
   },
   {
    "id": "arch:ascetic-augmenter",
@@ -417,8 +427,8 @@
      "claimed_cost": 1125
     },
     {
-     "id": "mastery:talos-s-blessing-5",
-     "name": "Talos's Blessing 5",
+     "id": "mastery:talos-blessing-5",
+     "name": "Talos' Blessing 5",
      "claimed_cost": 1200
     },
     {
@@ -448,7 +458,8 @@
    "reception_notes": "A commenter recommended fortify-acrobatics over slowfall for jump travel: slowfall destroys momentum and restricts jump distance, while 125+ Acrobatics prevents fall damage (fortify acro 1 sec to the /inspect cap, recast jump before landing).",
    "date_posted": "2026-02-03",
    "era_notes": "Feb 2026 — post-anvil-rework; the no-equipment design is anvil-insensitive anyway. Mastery numbers listed are the author's cumulative running totals (final 1500), not per-mastery costs.",
-   "src": "s-builds-forum"
+   "src": "s-builds-forum",
+   "cost_semantics": "cumulative"
   },
   {
    "id": "arch:ascetic-battlemonk",
@@ -551,7 +562,8 @@
    "reception_notes": null,
    "date_posted": "2026-01-29",
    "era_notes": "Late Jan 2026 — tail end of the anvil rework window; superseded days later by the same build line's completed 'Augmenter' version. Mastery numbers are cumulative running totals (final 1400), not per-mastery costs.",
-   "src": "s-builds-forum"
+   "src": "s-builds-forum",
+   "cost_semantics": "cumulative"
   },
   {
    "id": "arch:bow-ranger",
@@ -568,7 +580,8 @@
    "reception_notes": "Several experienced players supplied step-by-step gear upgrades and spell-crafting coaching, and signed off on the final setup as solid.",
    "date_posted": "2025-07-14",
    "era_notes": "July 2025 — predates the anvil rework (Nov 2025-Jan 2026); crafted-gear and enchanting advice may be outdated post-rework. Some options shown only in image attachments.",
-   "src": "s-builds-forum"
+   "src": "s-builds-forum",
+   "cost_semantics": "per-mastery"
   },
   {
    "id": "arch:chain-casting-hybrid",
@@ -621,7 +634,8 @@
    "reception_notes": "One camp argued maxed-destruction vanilla nukes clear as fast or faster; experienced testers demonstrated one-shot Frost Giant clears with Sorcerous Maelstrom at 350 destruction, and a video demo of chaincasting Frost Giants was later posted.",
    "date_posted": "2025-02-24",
    "era_notes": "Feb-Mar 2025 core discussion predates the anvil rework; the video demo (Dec 2025) is from within the rework window. Damage figures and weapon stats may be stale.",
-   "src": "s-builds-forum"
+   "src": "s-builds-forum",
+   "cost_semantics": "per-mastery"
   },
   {
    "id": "arch:imperial-champion-longblade",
@@ -699,7 +713,8 @@
    "reception_notes": "One expert questioned building around long blade skill and suggested Tower over Warrior; another endorsed the build ('a nice champion setup') and suggested swapping God Touched / Combo Focus 4 / Bulging Muscles 4 for Vital Body 4-5, Chiseled Body 1-3 and Combat Readiness 1-3, considering Warrior Affinity's Rend or Paladin's Smite Undead 1, plus various gear alternatives (Zin belt, Wind Golem Legs, fish boss boots, Cowl of Druid, an endowed +44 speed robe).",
    "date_posted": "2026-05-02",
    "era_notes": "May 2026 — post-anvil-rework; 'fully upgraded' items refer to the current-era upgrade system. Renamed from a character-named thread to a generic archetype.",
-   "src": "s-builds-forum"
+   "src": "s-builds-forum",
+   "cost_semantics": "per-mastery"
   },
   {
    "id": "arch:qol-support",
@@ -722,7 +737,8 @@
    "reception_notes": "Commenters thanked the author for the trick-shot training method; one asked whether mana cost mattered for leveling (answered with the school-selection mechanics).",
    "date_posted": "2025-02-19",
    "era_notes": "Feb-Jun 2025 — predates the anvil rework; mastery/gear screenshots and spell details are mostly in images.",
-   "src": "s-builds-forum"
+   "src": "s-builds-forum",
+   "cost_semantics": "per-mastery"
   },
   {
    "id": "arch:vampire-burglar",
@@ -755,7 +771,8 @@
    "reception_notes": "A commenter probed the gold-per-hour math, prompting the author to revise the estimate downward; a low-credibility jab at the guide's formatting carried no substantive critique.",
    "date_posted": "2026-07-25",
    "era_notes": "July 2026 — post-anvil-rework; 'upgraded stuff' means current-era figures.",
-   "src": "s-builds-forum"
+   "src": "s-builds-forum",
+   "cost_semantics": "per-mastery"
   },
   {
    "id": "arch:hero-pve",
@@ -793,7 +810,8 @@
    "reception_notes": "Experienced commenters posted an example build and popular-gear images, recommended planning CM spending in a spreadsheet, and debated Furious Strikes before agreeing it was skippable.",
    "date_posted": "2025-05-25",
    "era_notes": "May 2025 — pre-rework; ability evaluations are patch-sensitive (Rampage nerf referenced secondhand). Recommended CM plan and gear list live in image attachments.",
-   "src": "s-builds-forum"
+   "src": "s-builds-forum",
+   "cost_semantics": "per-mastery"
   },
   {
    "id": "arch:new-player-summoner-qa",
@@ -810,7 +828,8 @@
    "reception_notes": "Two experienced players provided extensive onboarding answers; they disagreed on trainer limits (5 vs 10 trainings per day, plus 5 from players).",
    "date_posted": "2025-04-13",
    "era_notes": "April 2025 — pre-rework; training limits, loot brackets and CM-economy figures may have changed, and progression routes were already shifting at the time.",
-   "src": "s-builds-forum"
+   "src": "s-builds-forum",
+   "cost_semantics": "per-mastery"
   },
   {
    "id": "arch:ninja-jack-of-all-trades",
@@ -873,7 +892,8 @@
    "reception_notes": "Birthsign debate: one commenter argued Steed is only good early and Tower has one of the best birthsign mastery powers; another jokingly insisted Steed.",
    "date_posted": "2025-02-19",
    "era_notes": "Feb 2025 — the Ninja MC was newly added then; predates the anvil rework. Gear set and resistance totals are in image attachments.",
-   "src": "s-builds-forum"
+   "src": "s-builds-forum",
+   "cost_semantics": "per-mastery"
   },
   {
    "id": "arch:stealth-bravo",
@@ -906,7 +926,8 @@
    "reception_notes": "Three experienced players gave detailed CM plans (Brawn 5, Quickness 4-5, Vital Body 5; drop Elven Grace/Hold Breath/Godborn/Return Home; Nimbleness 3), gear-swap set recommendations, and enchant layouts; Elven Grace was called wasted points.",
    "date_posted": "2025-08-08",
    "era_notes": "Aug 2025 — pre-rework era gear values. Actual CM allocations and gear stats live almost entirely in screenshots. Renamed from a character-named thread to a generic archetype.",
-   "src": "s-builds-forum"
+   "src": "s-builds-forum",
+   "cost_semantics": "per-mastery"
   },
   {
    "id": "arch:shadowknight-int-hybrid",
@@ -939,7 +960,8 @@
    "reception_notes": "A commenter pointed out that reflecting during a combo breaks the combo, leading the author to remove reflect; another pointed to a different player's Shadowknight build as reference.",
    "date_posted": "2026-05-04",
    "era_notes": "May 2026 — post-anvil-rework. Renamed from a character-named thread to a generic archetype.",
-   "src": "s-builds-forum"
+   "src": "s-builds-forum",
+   "cost_semantics": "per-mastery"
   },
   {
    "id": "arch:khajiit-vampire-ninja",
@@ -962,7 +984,8 @@
    "reception_notes": "Strongly endorsed: vampires called probably the most powerful for the least CMs due to Frenzy plus combos with a fast dagger; rated 10/10 on cosmetics.",
    "date_posted": "2026-05-04",
    "era_notes": "May 2026 — post-anvil-rework ('now with weapon EV upgrades'). Renamed from a character-named thread to a generic archetype.",
-   "src": "s-builds-forum"
+   "src": "s-builds-forum",
+   "cost_semantics": "per-mastery"
   },
   {
    "id": "arch:jackslayer-mage",
@@ -1030,7 +1053,8 @@
    "reception_notes": "Experienced players ran a weeks-long collaborative damage-testing dialogue, ultimately concluding chain casting on this boss is mediocre compared to sustained combos, while confirming the numbers above.",
    "date_posted": "2025-09-30",
    "era_notes": "Sep-Oct 2025 — pre-rework, and specific to the 2025 Jack season; the boss 'tends to get some tweaks every year' and combo-special damage was already nerfed vs the prior year.",
-   "src": "s-builds-forum"
+   "src": "s-builds-forum",
+   "cost_semantics": "per-mastery"
   },
   {
    "id": "arch:nordic-strongman",
@@ -1123,7 +1147,8 @@
    "reception_notes": "A new player asked what frozenmourn is (the wiki being out of date); a commenter answered with a link. No critique of the build itself.",
    "date_posted": "2025-10-01",
    "era_notes": "Oct 2025 — pre-rework; gear/damage figures may not reflect later EV/AR upgrade mechanics.",
-   "src": "s-builds-forum"
+   "src": "s-builds-forum",
+   "cost_semantics": "per-mastery"
   },
   {
    "id": "arch:tomb-raider-sorcerer",
@@ -1211,7 +1236,8 @@
    "reception_notes": "A commenter questioned enchanting-cap points over HP/resists (driving the respec) and was surprised enchanting worked without int/luck caps; another endorsed the build ('chain casting is certainly the most interactive/engaging way') and offered gear swaps.",
    "date_posted": "2026-03-19",
    "era_notes": "March 2026 — post-anvil-rework; the ~130 EV clothes cap reflects post-rework enchanting. Masteries and total are from the final respec.",
-   "src": "s-builds-forum"
+   "src": "s-builds-forum",
+   "cost_semantics": "per-mastery"
   },
   {
    "id": "arch:arcane-were-hunter-strength",
@@ -1289,7 +1315,8 @@
    "reception_notes": "Deep expert engagement on weapon choice and chain-cast math, including authoritative corrections from server staff (who also advised taking Bulging Muscles 4 — adopted); the build was endorsed as likely to shine in the Tomb. A low-credibility comment disputed the Katana of Severing restriction.",
    "date_posted": "2025-08-19",
    "era_notes": "Aug 2025 — pre-rework; the chain-cast factors and Molten Silver tooltip are from this era, shortly after a mastery update that added Bulging Muscles etc. Renamed from a character-named thread to a generic archetype.",
-   "src": "s-builds-forum"
+   "src": "s-builds-forum",
+   "cost_semantics": "per-mastery"
   },
   {
    "id": "arch:adventurer-new-player",
@@ -1417,7 +1444,8 @@
    "reception_notes": "A commenter corrected the attribute-leveling section (auto-100 at level 60) and suggested the dispel-potion refinement.",
    "date_posted": "2026-01-09",
    "era_notes": "Jan 2026 — inside the anvil rework window, though the build doesn't touch anvil mechanics; the guide's leveling section was outdated on arrival.",
-   "src": "s-builds-forum"
+   "src": "s-builds-forum",
+   "cost_semantics": "per-mastery"
   },
   {
    "id": "arch:upgrader-enchanter",
@@ -1489,8 +1517,8 @@
      "claimed_cost": 50
     },
     {
-     "id": "mastery:bulging-muslces-4",
-     "name": "Bulging Muslces 4",
+     "id": "mastery:bulging-muscles-4",
+     "name": "Bulging Muscles 4",
      "claimed_cost": 50
     },
     {
@@ -1510,7 +1538,8 @@
    "reception_notes": "A commenter asked how tradeskills influence upgrades (answer: details not fully known, discovered by testing); another asked only for character cosmetics pictures.",
    "date_posted": "2026-07-17",
    "era_notes": "July 2026 — well after the anvil rework; the build exists specifically for the post-rework anvil, and the author admits upgrade-roll mechanics are not fully known.",
-   "src": "s-builds-forum"
+   "src": "s-builds-forum",
+   "cost_semantics": "per-mastery"
   }
  ]
 }

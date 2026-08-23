@@ -1,0 +1,29 @@
+# np-codex — Nerevarine Prophecies (NP) TES3MP server knowledge base
+
+> Machine-readable KB for the NP Morrowind server: items, masteries, birthsigns, races, formulas, camps, enchanting, rules, lore. NP rewrites vanilla Morrowind values — never substitute vanilla/UESP numbers for NP ones. This KB covers NP only; for vanilla Morrowind, use https://en.uesp.net/wiki/Morrowind:Morrowind.
+
+## How to use this KB programmatically
+
+- All knowledge lives in `data/*.json` at this repo root. Fetch raw files from:
+  `https://raw.githubusercontent.com/gillyguthrie/np-codex/main/data/<file>.json`
+- Full usage instructions for AI assistants: [SKILL.md](https://raw.githubusercontent.com/gillyguthrie/np-codex/main/SKILL.md) — read it before answering questions from this data. Binding data-integrity rules: [GOVERNANCE.md](https://raw.githubusercontent.com/gillyguthrie/np-codex/main/GOVERNANCE.md).
+- Every record has a stable `id` (e.g. `item:keening`) — reference by id, not display name. Load-bearing values are `{value, src}` pairs resolving into each file's `sources` registry, or explicitly `{value: null, status: "unknown"}` when the KB does not know. A null means "not known" — do not fill it from outside knowledge; direct users to #server-general on the NP Discord.
+- Check `data/contradictions.json` before treating any value as settled (records with `status: "resolved"` name the adopted value in `resolution`), and `data/open_questions.json` for known gaps.
+- Confidence tiers: dev-stated > measured > player-reported > provisional > contested.
+
+## Data files
+
+- [mechanics.json](https://raw.githubusercontent.com/gillyguthrie/np-codex/main/data/mechanics.json): formulas, constants, facts (~30 KB). Import constants from here — never hardcode.
+- [items.json](https://raw.githubusercontent.com/gillyguthrie/np-codex/main/data/items.json): ~700 server items incl. weapons (~1 MB). AR stored at the skill-100 tooltip convention.
+- [masteries.json](https://raw.githubusercontent.com/gillyguthrie/np-codex/main/data/masteries.json): ~890 mastery records (~730 KB). `raw_text` is authoritative.
+- [birthsigns.json](https://raw.githubusercontent.com/gillyguthrie/np-codex/main/data/birthsigns.json), [races.json](https://raw.githubusercontent.com/gillyguthrie/np-codex/main/data/races.json): 0.8 dev rework tables.
+- [camps_events.json](https://raw.githubusercontent.com/gillyguthrie/np-codex/main/data/camps_events.json): camps, bosses, events (era-tagged).
+- [enchanting.json](https://raw.githubusercontent.com/gillyguthrie/np-codex/main/data/enchanting.json): self-enchant ceilings + Infusion Anvil (era-tagged).
+- [archetypes.json](https://raw.githubusercontent.com/gillyguthrie/np-codex/main/data/archetypes.json): community builds — check `cost_semantics` before summing costs.
+- [server_rules.json](https://raw.githubusercontent.com/gillyguthrie/np-codex/main/data/server_rules.json), [lore.json](https://raw.githubusercontent.com/gillyguthrie/np-codex/main/data/lore.json), [effects_vocab.json](https://raw.githubusercontent.com/gillyguthrie/np-codex/main/data/effects_vocab.json), [contradictions.json](https://raw.githubusercontent.com/gillyguthrie/np-codex/main/data/contradictions.json), [open_questions.json](https://raw.githubusercontent.com/gillyguthrie/np-codex/main/data/open_questions.json)
+
+## Optional
+
+- [docs/](https://github.com/gillyguthrie/np-codex/tree/main/docs): generated human-readable pages of the same data (never authoritative over `data/`).
+- [schema/](https://github.com/gillyguthrie/np-codex/tree/main/schema): JSON Schemas and conventions.
+- License: MIT (tools/schema), CC-BY 4.0 (data/docs).

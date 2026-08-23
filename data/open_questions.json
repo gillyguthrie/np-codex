@@ -161,6 +161,41 @@
    "status": "open",
    "date": "2026-08-23",
    "detail": "items.json now carries origin_game (vanilla / np-custom) classified against the actual game ESM rosters. Known so far from tooltip-vs-ESM comparison: NP buffed max damage on several artifacts (e.g. Sunder 60->70, Goldbrand 45->50, Hopesfire 55->70, Eltonbrand 55->60, Skull Crusher 50->60) and changed Mantle of Woe's magicka multiplier (0.5x -> 5.0x INT); Wraithguard/Marara's Ring Reflect 20->10 unverified. Systematically flagging vanilla-modified items is future work."
+  },
+  {
+   "id": "q:weapon-speed-attack-rate",
+   "topic": "Weapon speed% to attacks-per-second conversion",
+   "status": "open",
+   "detail": "The KB stores speed_pct per weapon but has no formula converting it into swing rate, so cross-weapon DPS comparisons (e.g. Keening 250% vs Sunder 150%) are directional only. Resolution: time N swings of two weapons with known speed% at fixed conditions.",
+   "date": "2026-08-23"
+  },
+  {
+   "id": "q:missing-masteries-archetype-cited",
+   "topic": "Masteries cited by build posts but absent from the wiki capture",
+   "status": "open",
+   "detail": "'Champion Master Class' (arch:ascetic-augmenter) and 'Disenchant' (arch:upgrader-enchanter) are claimed in community build posts but have no wiki-captured record — cost/effects/requirements unknown. Stubs added to masteries.json. Resolution: in-game tooltip screenshots or a newer wiki dump.",
+   "date": "2026-08-23"
+  },
+  {
+   "id": "q:player-theft-rules",
+   "topic": "Rules on stealing from / pickpocketing other players",
+   "status": "open",
+   "detail": "server_rules.json covers PvP griefing and exploit bans but says nothing about pickpocketing, looting player corpses, or taking from player homes/containers. Unknown whether it is permitted, banned, or mechanically impossible. Resolution: ask staff in Discord and capture the answer with a date.",
+   "date": "2026-08-23"
+  },
+  {
+   "id": "q:elemental-camp-level-ranges",
+   "topic": "Recommended level ranges for the elemental tier-1 / event camps",
+   "status": "open",
+   "detail": "The grind-camp level-range table doesn't cover the elemental atronach camps or event camps (e.g. the 2026 Infernal Flame camp). Only qualitative difficulty signals exist (resist-stack requirements, death reports). Resolution: collect community consensus per camp with dates.",
+   "date": "2026-08-23"
+  },
+  {
+   "id": "q:race-base-stats",
+   "topic": "Racial base attributes / skill bonuses",
+   "status": "open",
+   "detail": "races.json captures the 0.8 rework special abilities only — no base attribute or skill-bonus tables. Unknown whether NP kept vanilla racial base stats or reworked them. Resolution: dev doc check or per-race fresh-character readings.",
+   "date": "2026-08-23"
   }
  ]
 }

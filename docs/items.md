@@ -689,7 +689,7 @@ Total: 704 items.
 | White Wind Pauldron (Left) | server-unique | pauldron /left | 87.5 | 4.0 | agi 15.0; end 50.0; mag 90.0; fire -40.0 | unknown |
 | White Wind Pauldron (Right) | server-unique | pauldron /right | 87.5 | 4.0 | agi 15.0; end 50.0; mag 90.0; fire -40.0 | unknown |
 | White Wind Tunic | server-unique | cuirass | 100 | 12.0 | int 50; wil 15; mag 125; disease -40 | unknown |
-| Whitefang | server-unique | weapon | — (unknown) | 30.0 | attack 50 | Equipping the sword summons Wolf Fang, a snow wolf spirit to fight by your side using a frost spell (15-30 pts for 1 sec) | Equipping the sword summons Wolf Fang, a snow wolf spirit to fight by your side using a frost spell (15-30 pts for 1 sec) |
+| Whitefang | server-unique | weapon | — (unknown) | 30.0 | light 35 [on-strike]; paralyze  [on-strike]; attack 50 [on-strike] | Equipping the sword summons Wolf Fang, a snow wolf spirit to fight by your side using a frost spell (15-30 pts for 1 sec) | Equipping the sword summons Wolf Fang, a snow wolf spirit to fight by your side using a frost spell (15-30 pts for 1 sec) |
 | Whitewalker | server-unique · vanilla | robe | — (unknown) | 3 | cham 50 | unknown |
 | Wind Golem Boots | server-unique | feet | 195 | 20.0 | end 10; hp 90; mag 30; fat 50; agi 30 | unknown |
 | Wind Golem Breastplate | server-unique | cuirass | 238 | 35.0 | str 30; end 10; hp 90; mag 30; fat 50 | unknown |

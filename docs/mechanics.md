@@ -78,7 +78,7 @@ Skill 100 -> 65; empty or clothing-filled armor slots count at this value. Conse
 
 ### Character sheet AR  
 `sheetAR = floor(sum(slot_tooltip_AR x slot_weight)) [+ flat Shield effects + flat Armor Bonus masteries]`  
-Slot weights: const:ar-slot-weight-*. Validated 18/18 exact across two characters at armor skills 100 and 118. Armor condition scales AR down as it degrades (confirmed). Piece AR at skill >100 from mastery cap-raises may scale non-linearly — open anomaly q:piece-ar-above-100.
+Slot weights: const:ar-slot-weight-*. Validated 18/18 exact across two characters at armor skills 100 and 118. Armor condition scales AR down as it degrades (confirmed). Piece AR at skill >100 from mastery cap-raises may scale non-linearly — open anomaly q:piece-ar-above-100. Tool authors: there is no enumerated registry of which masteries grant flat Armor Bonus — find them by searching masteries.json raw_text for 'Armor Bonus'; treat that list as player-curated until a registry exists.
 
 ### Dodge chance  
 `dodge = sum(mastery_dodge_bonuses) - spec_penalty`  

@@ -1,57 +1,187 @@
 {
-  "_meta": {"description": "Known conflicting sources. Both values are kept, dated; later info supersedes but never deletes earlier info. Tools must present unresolved entries as contested, never flatly.", "migrated": "2026-08-22"},
-  "sources": {
-    "s-dev": {"origin": "dev-doc", "channel": "public developer statements (Discord)", "url": null, "date": null, "confidence": "dev-stated"},
-    "s-player": {"origin": "discord-public", "channel": "player-notes", "url": null, "date": null, "confidence": "player-reported"},
-    "s-measured": {"origin": "in-game-measured", "channel": null, "url": null, "date": "2026-08", "confidence": "measured"}
+ "_meta": {
+  "description": "Known conflicting sources. Both values are kept, dated; later info supersedes but never deletes earlier info. Tools must present unresolved entries as contested, never flatly.",
+  "migrated": "2026-08-22"
+ },
+ "sources": {
+  "s-dev": {
+   "origin": "dev-doc",
+   "channel": "public developer statements (Discord)",
+   "url": null,
+   "date": null,
+   "confidence": "dev-stated"
   },
-  "contradictions": [
-    {"id": "c:atronach-magmult", "subject": "sign:atronach", "topic": "Atronach Fortify Maximum Magicka multiplier", "status": "resolved",
-     "positions": [
-       {"value": "1.25x INT", "src": "s-dev", "date": "2022-05-10", "note": "0.8 dev doc, verbatim"},
-       {"value": "1.2x INT", "src": "s-measured", "date": "2026-08-21", "note": "in-game tooltip, screenshot-verbatim ('Wombburn 1.2x INT')"}
-     ],
-     "resolution": "The in-game tooltip (1.2) is adopted as truth for computation; the doc value may be outdated or the shipped value differs from the doc. mechanics const:magicka-mult-atronach = 1.2."},
-    {"id": "c:speed-cap", "subject": "const:speed-cap", "topic": "Maximum attainable Speed", "status": "unresolved",
-     "positions": [
-       {"value": "350 with Speed perks", "src": "s-player", "date": "2021-02-01"},
-       {"value": "175 default cap at L60 without CM investment", "src": "s-player", "date": "2024-09-11", "note": "later and more specific; may reflect a system change"}
-     ]},
-    {"id": "c:training-per-day", "subject": "const:npc-training-per-day", "topic": "NPC training sessions per day", "status": "resolved",
-     "positions": [
-       {"value": "5 per earth day", "src": "s-dev", "date": "2022-05-10", "note": "0.8 notable-changes doc"},
-       {"value": "10 per day (+5 from players)", "src": "s-player", "note": "new-player-thread claim"}
-     ],
-     "resolution": "Dev doc wins: 5 per earth day."},
-    {"id": "c:house-abandonment", "subject": "fact:house-abandonment", "topic": "House repossession rule", "status": "unresolved",
-     "positions": [
-       {"value": "removed if not entered for 4 weeks (timer updates only on entering)", "src": "s-dev", "date": "2019-08-13"},
-       {"value": "repossessed if under 10 hours playtime per month", "src": "s-player", "date": "2020-04-14"}
-     ],
-     "note": "The dev-stated 4-week entry rule should be treated as authoritative pending further data."},
-    {"id": "c:enchant-recharge", "subject": "ench:one-charge-110", "topic": "Do enchanted items recharge without soul gems?", "status": "unresolved",
-     "positions": [
-       {"value": "No passive recharge since 0.8; filled soul gems required", "src": "s-dev", "date": "2022-05-10"},
-       {"value": "Items recharge naturally based on the wearer's Enchant skill (effectively infinite charges at 110)", "src": "s-player", "date": "2020-10-29", "note": "multiple corroborations 2019-2022, some predating 0.8"}
-     ],
-     "note": "Possibly skill-gated recharge vs passive recharge being different things, or a pre/post-0.8 change. One in-game test settles it."},
-    {"id": "c:hp-ratio-vs-lua", "subject": "formula:hp", "topic": "HP spec ratios (3.6/2.8/2.2) vs dev Lua multipliers (1.14/1.033/1.077)", "status": "resolved",
-     "positions": [
-       {"value": "Lua spec multipliers 1.14/1.033/1.077", "src": "s-dev", "date": "2021-02-26"},
-       {"value": "Effective L60 ratios 3.6/2.8/2.2", "src": "s-measured", "date": "2026-08-21"}
-     ],
-     "resolution": "Both describe the same system: the Lua multipliers are the spec factor inside it; the effective ratios fold in the remaining layers. Validated exact (Stealth) and within 1 HP (Magic). Combat 3.6 still unvalidated; Magic 2.2-vs-2.19 rounding open."},
-    {"id": "c:anvil-armor-ar", "subject": "const:anvil-armor-ar-multiplier", "topic": "Anvil max armor AR gain", "status": "unresolved",
-     "positions": [
-       {"value": "+42 AR flat (estimated)", "src": "s-player", "date": "2026-02"},
-       {"value": "x1.54 piece AR (one measured fresh-vs-maxed pair at matched skill/condition)", "src": "s-measured", "date": "2026-08-22"}
-     ],
-     "note": "The measured pair (+135 tooltip) does not match the flat estimate; mechanism (flat/base/multiplier) unresolved."},
-    {"id": "c:vampire-ancient-bloodline-rmag", "subject": "sign:atronach", "topic": "Ancient Bloodline magicka-resistance penalty", "status": "resolved",
-     "positions": [
-       {"value": "-100 magicka resistance", "src": "s-player", "note": "one wiki passage"},
-       {"value": "-20 Fire and -20 Magicka Resistance (cumulative -30/-30 with Daywalker)", "src": "s-player", "note": "wiki catalog row, corroborated by an independent 2025 community summary"}
-     ],
-     "resolution": "Catalog row adopted (-20/-20). A 2023 dev musing with different numbers was pre-ship planning, superseded by shipped values."}
-  ]
+  "s-player": {
+   "origin": "discord-public",
+   "channel": "player-notes",
+   "url": null,
+   "date": null,
+   "confidence": "player-reported"
+  },
+  "s-measured": {
+   "origin": "in-game-measured",
+   "channel": null,
+   "url": null,
+   "date": "2026-08",
+   "confidence": "measured"
+  }
+ },
+ "contradictions": [
+  {
+   "id": "c:atronach-magmult",
+   "subject": "sign:atronach",
+   "topic": "Atronach Fortify Maximum Magicka multiplier",
+   "status": "resolved",
+   "positions": [
+    {
+     "value": "1.25x INT",
+     "src": "s-dev",
+     "date": "2022-05-10",
+     "note": "0.8 dev doc, verbatim"
+    },
+    {
+     "value": "1.2x INT",
+     "src": "s-measured",
+     "date": "2026-08-21",
+     "note": "in-game tooltip, screenshot-verbatim ('Wombburn 1.2x INT')"
+    }
+   ],
+   "resolution": "The in-game tooltip (1.2) is adopted as truth for computation; the doc value may be outdated or the shipped value differs from the doc. mechanics const:magicka-mult-atronach = 1.2."
+  },
+  {
+   "id": "c:speed-cap",
+   "subject": "const:speed-cap",
+   "topic": "Maximum attainable Speed",
+   "status": "unresolved",
+   "positions": [
+    {
+     "value": "350 with Speed perks",
+     "src": "s-player",
+     "date": "2021-02-01"
+    },
+    {
+     "value": "175 default cap at L60 without CM investment",
+     "src": "s-player",
+     "date": "2024-09-11",
+     "note": "later and more specific; may reflect a system change"
+    }
+   ]
+  },
+  {
+   "id": "c:training-per-day",
+   "subject": "const:npc-training-per-day",
+   "topic": "NPC training sessions per day",
+   "status": "resolved",
+   "positions": [
+    {
+     "value": "5 per earth day",
+     "src": "s-dev",
+     "date": "2022-05-10",
+     "note": "0.8 notable-changes doc"
+    },
+    {
+     "value": "10 per day (+5 from players)",
+     "src": "s-player",
+     "note": "new-player-thread claim"
+    }
+   ],
+   "resolution": "Dev doc wins: 5 per earth day."
+  },
+  {
+   "id": "c:house-abandonment",
+   "subject": "fact:house-abandonment",
+   "topic": "House repossession rule",
+   "status": "unresolved",
+   "positions": [
+    {
+     "value": "removed if not entered for 4 weeks (timer updates only on entering)",
+     "src": "s-dev",
+     "date": "2019-08-13"
+    },
+    {
+     "value": "repossessed if under 10 hours playtime per month",
+     "src": "s-player",
+     "date": "2020-04-14"
+    }
+   ],
+   "note": "The dev-stated 4-week entry rule should be treated as authoritative pending further data."
+  },
+  {
+   "id": "c:enchant-recharge",
+   "subject": "ench:one-charge-110",
+   "topic": "Do enchanted items recharge without soul gems?",
+   "status": "unresolved",
+   "positions": [
+    {
+     "value": "No passive recharge since 0.8; filled soul gems required",
+     "src": "s-dev",
+     "date": "2022-05-10"
+    },
+    {
+     "value": "Items recharge naturally based on the wearer's Enchant skill (effectively infinite charges at 110)",
+     "src": "s-player",
+     "date": "2020-10-29",
+     "note": "multiple corroborations 2019-2022, some predating 0.8"
+    }
+   ],
+   "note": "Possibly skill-gated recharge vs passive recharge being different things, or a pre/post-0.8 change. One in-game test settles it."
+  },
+  {
+   "id": "c:hp-ratio-vs-lua",
+   "subject": "formula:hp",
+   "topic": "HP spec ratios (3.6/2.8/2.2) vs dev Lua multipliers (1.14/1.033/1.077)",
+   "status": "resolved",
+   "positions": [
+    {
+     "value": "Lua spec multipliers 1.14/1.033/1.077",
+     "src": "s-dev",
+     "date": "2021-02-26"
+    },
+    {
+     "value": "Effective L60 ratios 3.6/2.8/2.2",
+     "src": "s-measured",
+     "date": "2026-08-21"
+    }
+   ],
+   "resolution": "Both describe the same system: the Lua multipliers are the spec factor inside it; the effective ratios fold in the remaining layers. Validated exact (Stealth) and within 1 HP (Magic). Combat 3.6 still unvalidated; Magic 2.2-vs-2.19 rounding open."
+  },
+  {
+   "id": "c:anvil-armor-ar",
+   "subject": "const:anvil-armor-ar-multiplier",
+   "topic": "Anvil max armor AR gain",
+   "status": "unresolved",
+   "positions": [
+    {
+     "value": "+42 AR flat (estimated)",
+     "src": "s-player",
+     "date": "2026-02"
+    },
+    {
+     "value": "x1.54 piece AR (one measured fresh-vs-maxed pair at matched skill/condition)",
+     "src": "s-measured",
+     "date": "2026-08-22"
+    }
+   ],
+   "note": "The measured pair (+135 tooltip) does not match the flat estimate; mechanism (flat/base/multiplier) unresolved."
+  },
+  {
+   "id": "c:vampire-ancient-bloodline-rmag",
+   "subject": "mastery:ancient-bloodline",
+   "topic": "Ancient Bloodline magicka-resistance penalty",
+   "status": "resolved",
+   "positions": [
+    {
+     "value": "-100 magicka resistance",
+     "src": "s-player",
+     "note": "one wiki passage"
+    },
+    {
+     "value": "-20 Fire and -20 Magicka Resistance (cumulative -30/-30 with Daywalker)",
+     "src": "s-player",
+     "note": "wiki catalog row, corroborated by an independent 2025 community summary"
+    }
+   ],
+   "resolution": "Catalog row adopted (-20/-20). A 2023 dev musing with different numbers was pre-ship planning, superseded by shipped values."
+  }
+ ]
 }

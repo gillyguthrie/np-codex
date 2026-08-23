@@ -30072,6 +30072,42 @@
    "effects": [],
    "src": "s-gap",
    "note": "Claimed in a community build; wiki catalog has only ranks 1-3 — possible post-wiki addition, not yet captured."
+  },
+  {
+   "id": "mastery:champion-master-class",
+   "name": "Champion Master Class",
+   "captured": false,
+   "section": "Combat Master Classes:",
+   "family": null,
+   "rank": null,
+   "affinity": null,
+   "cost": {
+    "value": null,
+    "status": "unknown"
+   },
+   "requires": {},
+   "raw_text": "",
+   "effects": [],
+   "src": "s-gap",
+   "note": "Cited by arch:ascetic-augmenter (2026-02 build post, claimed running-total cost). Cost/effects/requirements not yet captured — see open_questions q:missing-masteries-archetype-cited."
+  },
+  {
+   "id": "mastery:disenchant",
+   "name": "Disenchant",
+   "captured": false,
+   "section": "Skill Masteries",
+   "family": null,
+   "rank": null,
+   "affinity": null,
+   "cost": {
+    "value": null,
+    "status": "unknown"
+   },
+   "requires": {},
+   "raw_text": "",
+   "effects": [],
+   "src": "s-gap",
+   "note": "Cited by arch:upgrader-enchanter (claimed cost 25). Not in the wiki capture — see open_questions q:missing-masteries-archetype-cited."
   }
  ]
 }

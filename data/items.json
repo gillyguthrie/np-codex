@@ -30439,20 +30439,35 @@
    },
    "condition": "6400/6400",
    "location": "Jiubsmas",
-   "drop_notes": null,
+   "drop_notes": "\"Jiubsmas\" is the server's winter holiday event (see event:winter-holiday-new-life-festival) — event-limited availability.",
    "image": "items/whitefang.png",
    "src": "s-posted",
-   "notes": null,
+   "notes": "Effect delivery corrected 2026-08-23: earlier curation listed Fortify Attack 50 as constant; the posted tooltip text is a timed 30-sec effect (with Light + Paralyze on Target — an on-strike enchant set).",
    "ar": {
     "value": null,
     "status": "unknown"
    },
    "effects": [
     {
+     "key": "light",
+     "magnitude": 35,
+     "delivery": "on-strike",
+     "duration_sec": 30,
+     "raw_text": "Light 35 pts for 30 secs on Target"
+    },
+    {
+     "key": "paralyze",
+     "magnitude": null,
+     "delivery": "on-strike",
+     "duration_sec": 1,
+     "raw_text": "Paralyze for 1 sec on Target"
+    },
+    {
      "key": "attack",
      "magnitude": 50,
-     "delivery": "constant",
-     "raw_text": "attack=50 (curated)"
+     "delivery": "on-strike",
+     "duration_sec": 30,
+     "raw_text": "Fortify Attack 50 pts for 30 secs on Self"
     }
    ],
    "effects_raw_posted": [

@@ -1,5 +1,24 @@
 # Changelog
 
+## 2026-08-23 — v0.2.1 persona-test round 2
+- camps_events.json: the winter event now carries its community name — **"Jiubsmas"** — as an alias, with the ornament-quest / event-limited-drops note; items whose location reads "Jiubsmas" (e.g. Whitefang) now cross-reference it via drop_notes.
+- open_questions.json: + `q:player-theft-rules` (rules are silent on pickpocketing/looting other players), `q:elemental-camp-level-ranges` (no level guidance for atronach/event camps), `q:race-base-stats` (races.json has abilities only — no base attribute/skill tables).
+- mechanics.json: `formula:sheet-ar` note tells tool authors how to locate flat Armor Bonus masteries (no enumerated registry yet).
+- SKILL.md: era preference clarified as data-currency, not advice (fit recommendations to the player's level/goals); speculative-fragments handling added to rule 3 (label speculation, never stitch it into an established-sounding answer). `np-codex.skill` repackaged.
+
+## 2026-08-23 — v0.2.1 skill-test fixes
+- birthsigns.json: Atronach Wombburn `magmult` effect now carries the **adopted** 1.2× value (dev-doc 1.25× kept verbatim in raw_text with an editorial resolution note) — resolves the two-pass answer where single-file readers computed with the superseded figure.
+- contradictions.json: `c:vampire-ancient-bloodline-rmag` subject corrected from `sign:atronach` to `mastery:ancient-bloodline` (copy-paste error).
+- SKILL.md rule 4 rewritten: resolved contradictions are reported as their adopted value, only unresolved ones as contested. `np-codex.skill` repackaged to match.
+
+## 2026-08-23 — v0.2.1 persona-test round (3 simulated users, 10 questions)
+- items.json: **Whitefang** effects corrected — Fortify Attack 50 was curated as constant but the posted tooltip is a timed 30-sec on-strike effect (full Light/Paralyze/Attack enchant set now parsed). `light` added to effects_vocab.
+- archetypes.json: new machine-readable `cost_semantics` field on every record (`per-mastery` = summable, `cumulative` = running total, read the final entry) — prevents the 15,275-point mis-sum on the Ascetic builds; two mis-spelled mastery references fixed (`bulging-muscles-4`, `talos-blessing-5`).
+- masteries.json: stubs added for **Champion Master Class** and **Disenchant** (cited by build posts, absent from the wiki capture) → new open question `q:missing-masteries-archetype-cited`.
+- camps_events.json: both fire camps now carry `status` + disambiguation notes (long-standing Nchuleftingth camp vs the 2026 Infernal Flame event camp).
+- open_questions.json: + `q:weapon-speed-attack-rate` (no speed%→swing-rate formula, blocks exact DPS comparisons).
+- SKILL.md policy: the codex is **NP-only** — vanilla lore/stats questions are referred to the UESP Morrowind wiki; unknown values and missing item locations are referred to **#server-general on the NP Discord**; item-location questions answer from the `location`/`drop_notes` fields; file map now carries sizes + fetch-economy guidance; archetype `cost_semantics` and camp-era rules added. `np-codex.skill` repackaged.
+
 ## 2026-08-22 — v0.1.0 initial migration
 - Repo scaffolded: governance, schemas, tools, data layout.
 - (entries appended per migration batch below)

@@ -1,711 +1,1634 @@
 {
-  "_meta": {
-    "description": "NP server camps, world bosses, and events",
-    "migrated": "2026-08-22"
+ "_meta": {
+  "description": "NP server camps, world bosses, and events",
+  "migrated": "2026-08-22"
+ },
+ "sources": {
+  "np-dev": {
+   "origin": "dev-doc",
+   "channel": null,
+   "url": null,
+   "date": null,
+   "confidence": "dev-stated",
+   "note": "Statements by the server dev, 2019-2024"
   },
-  "sources": {
-    "np-dev": {"origin": "dev-doc", "channel": null, "url": null, "date": null, "confidence": "dev-stated", "note": "Statements by the server dev, 2019-2024"},
-    "np-player-tested": {"origin": "in-game-measured", "channel": "player-notes", "url": null, "date": null, "confidence": "measured", "note": "Player-tested / in-game verified claims, 2020-2025"},
-    "np-player-notes": {"origin": "discord-public", "channel": "player-notes", "url": null, "date": null, "confidence": "player-reported", "note": "Player anecdotes and reports, 2019-2026"},
-    "np-speculation": {"origin": "discord-public", "channel": "player-notes", "url": null, "date": null, "confidence": "provisional", "note": "Speculation, hearsay, and unverified claims"},
-    "np-contested": {"origin": "discord-public", "channel": "player-notes", "url": null, "date": null, "confidence": "contested", "note": "Claims with flagged conflicts, disputes, or changes over time"},
-    "np-wiki": {"origin": "wiki", "channel": "community wiki", "url": null, "date": null, "confidence": "player-reported", "note": "Community-wiki-sourced tables"},
-    "igc-2026-08": {"origin": "player-reported", "channel": "in-game-chat", "url": null, "date": "2026-08-20", "confidence": "player-reported", "note": "In-game chat relay covering 2026-08-01 to 2026-08-19, plus public server channel context"},
-    "igc-2026-08-measured": {"origin": "in-game-measured", "channel": "in-game-chat", "url": null, "date": "2026-08-20", "confidence": "measured", "note": "Combat numbers observed in game, from the 2026-08 chat relay"},
-    "server-general-2026": {"origin": "discord-public", "channel": "server-general", "url": null, "date": null, "confidence": "player-reported", "note": "Public server-general channel, 2025-2026 meta context"}
+  "np-player-tested": {
+   "origin": "in-game-measured",
+   "channel": "player-notes",
+   "url": null,
+   "date": null,
+   "confidence": "measured",
+   "note": "Player-tested / in-game verified claims, 2020-2025"
   },
-  "camps": [
+  "np-player-notes": {
+   "origin": "discord-public",
+   "channel": "player-notes",
+   "url": null,
+   "date": null,
+   "confidence": "player-reported",
+   "note": "Player anecdotes and reports, 2019-2026"
+  },
+  "np-speculation": {
+   "origin": "discord-public",
+   "channel": "player-notes",
+   "url": null,
+   "date": null,
+   "confidence": "provisional",
+   "note": "Speculation, hearsay, and unverified claims"
+  },
+  "np-contested": {
+   "origin": "discord-public",
+   "channel": "player-notes",
+   "url": null,
+   "date": null,
+   "confidence": "contested",
+   "note": "Claims with flagged conflicts, disputes, or changes over time"
+  },
+  "np-wiki": {
+   "origin": "wiki",
+   "channel": "community wiki",
+   "url": null,
+   "date": null,
+   "confidence": "player-reported",
+   "note": "Community-wiki-sourced tables"
+  },
+  "igc-2026-08": {
+   "origin": "player-reported",
+   "channel": "in-game-chat",
+   "url": null,
+   "date": "2026-08-20",
+   "confidence": "player-reported",
+   "note": "In-game chat relay covering 2026-08-01 to 2026-08-19, plus public server channel context"
+  },
+  "igc-2026-08-measured": {
+   "origin": "in-game-measured",
+   "channel": "in-game-chat",
+   "url": null,
+   "date": "2026-08-20",
+   "confidence": "measured",
+   "note": "Combat numbers observed in game, from the 2026-08 chat relay"
+  },
+  "server-general-2026": {
+   "origin": "discord-public",
+   "channel": "server-general",
+   "url": null,
+   "date": null,
+   "confidence": "player-reported",
+   "note": "Public server-general channel, 2025-2026 meta context"
+  }
+ },
+ "camps": [
+  {
+   "id": "camp:mudcrab-camp",
+   "name": "Mudcrab Camp (Emperor Crab)",
+   "camp_type": "creature grind camp / world boss",
+   "location": "Small chain of islands southeast (isle south) of Seyda Neen",
+   "mobs": [
+    "Mudcrab"
+   ],
+   "bosses": [
     {
-      "id": "camp:mudcrab-camp",
-      "name": "Mudcrab Camp (Emperor Crab)",
-      "camp_type": "creature grind camp / world boss",
-      "location": "Small chain of islands southeast (isle south) of Seyda Neen",
-      "mobs": ["Mudcrab"],
-      "bosses": [
-        {
-          "name": "Emperor Crab",
-          "notable_drops": ["Shield of the Crab God (rarest)", "Treachery glove (left)", "Deceit glove (right)", "Ring of Raven Eye", "Mudcrab Tome", "25 crab meat", "gems", "15 tokens (every time)", "Auriel's Shield (observed 2020)"],
-          "notes": "Tier 2 world boss. Observed respawning after 3-4 hours, longer than other bosses. Can reset if it wanders about 100 feet from its spawn point, respawning at the spawn spot with full HP; the server dev said the reset is probably related to its large size, similar to the Skree boss."
-        }
-      ],
-      "mechanics": [
-        {"statement": "Regular mobs drop crab meat, gems, tokens (rarely), and mudcrab familiar tomes (rarely).", "src": "np-player-tested"},
-        {"statement": "Level range 1-11 (Beginner); quest-giver Shel Collector Doril at Arrille's Tradehouse in Seyda Neen trades 3 Mudcrab Shells for 22 Gold and 1,960 EXP; approx. 206 EXP per mob.", "src": "np-player-notes"},
-        {"statement": "Original resistances observed (2020-10): 100% magicka resist (weakness-to-magicka stacking does not work), 100% or near-100% poison resist, and around 25% reflect; shock and melee damage are noticeably more effective than frost, while fire performs about the same as melee.", "src": "np-player-tested"},
-        {"statement": "Using 3 shock rings each doing 100 damage over 2 seconds plus a melee player using Umbra, killing the Emperor Crab took about 40 minutes and roughly 3500 ring casts.", "src": "np-player-tested"},
-        {"statement": "Flagged change over time: the boss's resistances appear to have changed - poison, weakness, and absorb health effects are now always resisted, whereas it was previously killable much faster (one player reported nuking it to death in about 2 hits before the change).", "src": "np-contested"},
-        {"statement": "The server dev speculated that levitation plus an aerial attack might help prevent the boss from resetting/escaping during the fight.", "src": "np-dev"},
-        {"statement": "Recommended kill setups: exquisite rings enchanted with target frost damage 100pts on 10ft for as many seconds as the enchant can hold; or 110 Enchant skill plus around 10 rings enchanted with shock damage. A nuke ring setup of this kind works on every boss except Lavastorm, where a dedicated weakness ring might work better (untested).", "src": "np-player-notes"},
-        {"statement": "Because the boss is tough to solo for lower-level players, announcing it in chat and partying up shares the token drop; experienced players can solo it but it is tedious. World-boss difficulty scaling mainly manifests as resistances, and only the Emperor Crab has significant resistances.", "src": "np-player-notes"}
-      ],
-      "era": null,
-      "src": "np-player-tested"
-    },
-    {
-      "id": "camp:red-wolf-camp",
-      "name": "Red Wolf Camp",
-      "camp_type": "creature grind camp",
-      "location": "West of Pelagiad on the road to Balmora",
-      "mobs": ["Red Wolf"],
-      "bosses": [
-        {"name": "Ol' Fangtooth", "notable_drops": [], "notes": "Confirmed grind-camp boss (also written Ole' Fangtooth)."}
-      ],
-      "mechanics": [
-        {"statement": "Level range 12-20 (Low End); quest-giver Corison Dalvilu at the Halfway Tavern in Pelagiad trades 4 Chipped Wolf Claws for 56,000 EXP; approx. 1-3k EXP per mob.", "src": "np-player-notes"},
-        {"statement": "Per the community wiki, Red Wolves are intended for levels 12-20 via the Corison Dalvilu quest at the Halfway Tavern in Pelagiad.", "src": "np-wiki"},
-        {"statement": "Rated entry/novice level in community difficulty tiering.", "src": "np-player-notes"}
-      ],
-      "era": null,
-      "src": "np-player-notes"
-    },
-    {
-      "id": "camp:kagouti-camp",
-      "name": "Kagouti Camp",
-      "camp_type": "creature grind camp",
-      "location": "South of Balmora, across the river from Shulk Egg Mine; a newer Kagouti camp also sits next to a Shalk camp south-southwest of Vos",
-      "mobs": ["Kagouti"],
-      "bosses": [
-        {"name": "Rudy Kagouti", "notable_drops": [], "notes": "Camp boss."}
-      ],
-      "mechanics": [
-        {"statement": "Level range 21-29 (Low End); quest-giver Corison Dalvilu at the Halfway Tavern in Pelagiad trades 4 Thick Kagouti Hide for 177,600 EXP; approx. 8k EXP per mob.", "src": "np-player-notes"},
-        {"statement": "Per the community wiki, Kagoutis are intended for levels 21-29 via the Corison Dalvilu quest at the Halfway Tavern in Pelagiad.", "src": "np-wiki"},
-        {"statement": "Disputed tankiness claim: a player exaggerated that camp mobs have 10k HP for only 3k-4k exp; the server dev responded that Kagouti Camp mobs do not actually have 10,000 HP, and camps overall die much faster when players group up and grind together.", "src": "np-contested"},
-        {"statement": "Camp mobs give the same MP (experience) as normal overworld Kagouti despite having much more HP, and suffer from the same desync issues seen at other camps.", "src": "np-player-tested"},
-        {"statement": "Shalk and Kagouti camps drop quest items that can be turned in for 3 tokens a pop, or 6 with a todd's boon.", "src": "np-player-notes"},
-        {"statement": "Color-coded red on the shared community camp map.", "src": "np-player-notes"}
-      ],
-      "era": null,
-      "src": "np-player-tested"
-    },
-    {
-      "id": "camp:shalk-camp",
-      "name": "Shalk Camp",
-      "camp_type": "creature grind camp",
-      "location": "South-southwest of Vos, right next to a newer Kagouti camp",
-      "mobs": ["Shalk"],
-      "bosses": [],
-      "mechanics": [
-        {"statement": "Drops quest items that can be turned in for 3 tokens a pop, or 6 with a todd's boon.", "src": "np-player-notes"}
-      ],
-      "era": null,
-      "src": "np-player-tested"
-    },
-    {
-      "id": "camp:skeleton-camp",
-      "name": "Skeleton Camp",
-      "camp_type": "creature grind camp",
-      "location": "East of Urshilaku Camp",
-      "mobs": ["Skeleton", "Skeleton Prophet"],
-      "bosses": [],
-      "mechanics": [
-        {"statement": "Level range 31-39 (Mid-High End); quest-giver Sergeant Strugol west of the camp trades 4 Insignia Rings for 395,000 EXP; approx. 60k EXP per mob.", "src": "np-player-notes"},
-        {"statement": "Skeleton and Ogrim camp mobs have a bit more HP than Kagouti camp mobs, per the server dev.", "src": "np-dev"},
-        {"statement": "Skeletons at camps are believed to cast Absorb HP.", "src": "np-speculation"},
-        {"statement": "The invisible-mesh helmet trick requires a rare drop from the Skeleton Prophets at this camp.", "src": "np-player-notes"},
-        {"statement": "Color-coded white on the shared community camp map.", "src": "np-player-notes"},
-        {"statement": "Bthuand is a skeleton-mob hub with Hive Scribs within its ruins - possibly a separate/earlier skeleton-mob location from this camp.", "src": "np-player-notes"}
-      ],
-      "era": null,
-      "src": "np-player-tested"
-    },
-    {
-      "id": "camp:ogrim-camp",
-      "name": "Ogrim Camp",
-      "camp_type": "creature grind camp",
-      "location": "Southeast (also described as east) of Valenvaryon Stronghold",
-      "mobs": ["Ogrim"],
-      "bosses": [],
-      "mechanics": [
-        {"statement": "Level range 46+ (Mid End); quest-giver Tribeorsimer Agrum on the coast northwest of the camp trades 4 Tribal Rings for 1,156,531 EXP; approx. 90k EXP per mob.", "src": "np-player-notes"},
-        {"statement": "Skeleton and Ogrim camp mobs have a bit more HP than Kagouti camp mobs, per the server dev.", "src": "np-dev"},
-        {"statement": "Can generally be cleared with a default nuke method.", "src": "np-speculation"},
-        {"statement": "Color-coded green on the shared community camp map.", "src": "np-player-notes"},
-        {"statement": "Assurnabitashpi is a hub of Clannfears and Ogrims - possibly a separate/earlier ogrim-mob location from this camp.", "src": "np-player-notes"}
-      ],
-      "era": null,
-      "src": "np-player-tested"
-    },
-    {
-      "id": "camp:winged-twilight-camp",
-      "name": "Winged Twilight Camp (Bird Camp)",
-      "camp_type": "creature grind camp",
-      "location": "Ald Redaynia (also listed as Ald Redanya), an island north of Urshilaku Camp",
-      "mobs": ["Winged Twilight"],
-      "bosses": [
-        {
-          "name": "Twilight Matriarch (Twilight camp boss)",
-          "notable_drops": [],
-          "notes": "Casts a blind effect plus a damage nuke with a Fire Resistance debuff attached; described as essentially a weaker version of the Morroween Jack boss - less health, and it floats."
-        }
-      ],
-      "mechanics": [
-        {"statement": "Camp mobs cast Paralyze (duration unknown).", "src": "np-speculation"},
-        {"statement": "High End level range; approx. 90k EXP per mob.", "src": "np-player-notes"},
-        {"statement": "Along with the Hunger camp, this camp is much harder than the other creature camps (Kagouti, Skeleton, Ogrim, Mudcrab).", "src": "np-player-tested"}
-      ],
-      "era": null,
-      "src": "np-player-notes"
-    },
-    {
-      "id": "camp:hunger-camp",
-      "name": "Hunger Camp",
-      "camp_type": "creature grind camp",
-      "location": "South of Falensarano on the Ashen Hills",
-      "mobs": ["Hunger"],
-      "bosses": [],
-      "mechanics": [
-        {"statement": "Level range 46+ (Mid-High End); quest-giver Eats-in-Shadows outside Andules Tomb trades 4 Hunger Leg Tibia for 957k EXP.", "src": "np-player-notes"},
-        {"statement": "The Absorb HP effect used by Hungers reflects for 225 for 3; the base magic resistance of Hungers is unknown.", "src": "np-player-notes"},
-        {"statement": "Hungers are believed to use Absorb HP.", "src": "np-speculation"},
-        {"statement": "Along with the Winged Twilight camp, this camp is much harder than the other creature camps (Kagouti, Skeleton, Ogrim, Mudcrab).", "src": "np-player-tested"}
-      ],
-      "era": null,
-      "src": "np-player-notes"
-    },
-    {
-      "id": "camp:druid-camp",
-      "name": "Druid Camp (Unkempt Druids)",
-      "camp_type": "creature grind camp",
-      "location": "West of Ahemmusa Camp; the Druid boss is located next to Tel Vos",
-      "mobs": ["Unkempt Druid"],
-      "bosses": [
-        {"name": "Druid boss", "notable_drops": [], "notes": "Casts a nasty shock spell; located next to Tel Vos."}
-      ],
-      "mechanics": [
-        {"statement": "Mid-High End level range; approx. 65k EXP per mob.", "src": "np-player-notes"},
-        {"statement": "Druids die in about one spell cycle, contrasted with the much tankier Aleft robotic enemies.", "src": "np-player-notes"},
-        {"statement": "The Druids can reportedly deal around 300 poison damage with no resists (secondhand, unverified).", "src": "np-speculation"},
-        {"statement": "Can generally be cleared with a default nuke method.", "src": "np-speculation"},
-        {"statement": "Tied to the Were-Hunter questline, like the Scions camp.", "src": "np-player-notes"}
-      ],
-      "era": null,
-      "src": "np-player-notes"
-    },
-    {
-      "id": "camp:scions-camp",
-      "name": "Scions Camp",
-      "camp_type": "creature camp (questline-tied)",
-      "location": "Reported northwest of Suran above the lake; conflicting reports place a scion cave at the map location labeled Blood Matron's Crypt, and another listing places it in a cave northeast of Moonmoth Fort - the corpus does not resolve these discrepancies",
-      "mobs": ["Scion"],
-      "bosses": [],
-      "mechanics": [
-        {"statement": "Tied to the Were-Hunter questline; the server dev confirmed the camp location is intentionally kept off the main creature-camp map/wiki since it is questline content rather than a normal XP-grinding camp, though it can still be grinded.", "src": "np-dev"},
-        {"statement": "Listed as High-High End level range.", "src": "np-player-notes"},
-        {"statement": "Location conflict flagged: northwest of Suran above the lake vs. the Blood Matron's Crypt map label vs. a cave northeast of Moonmoth Fort; unresolved.", "src": "np-contested"}
-      ],
-      "era": null,
-      "src": "np-player-notes"
-    },
-    {
-      "id": "camp:aleft-camp",
-      "name": "Aleft Camp (Automatons / Dwemer)",
-      "camp_type": "creature grind camp",
-      "location": "At Aleft, south of Gnaar Mok",
-      "mobs": ["Dwemer automaton"],
-      "bosses": [],
-      "mechanics": [
-        {"statement": "Level range 46+ (Mid-High End); quest-giver Tinkerer Amaund at Gnaar Mok trades 4 Bronze Sprockets for 862k EXP; approx. 110k EXP per mob.", "src": "np-player-notes"},
-        {"statement": "Farming the camp (killing its 16 creatures and tenderizing bodies each round) yields around 25 Scrap Metal on average per round.", "src": "np-player-tested"},
-        {"statement": "Even with The Luck buff active, farming yielded only about 3 Bronze Sprockets a round on average, prompting suspicion the drop rate was nerfed or a boost was not applying.", "src": "np-player-tested"},
-        {"statement": "The robotic enemies are notably tanky compared to camps like Druids; farming efficiently mainly makes sense with The Luck buff and Magicka potions to chug.", "src": "np-player-notes"},
-        {"statement": "Can generally be cleared with a default nuke method.", "src": "np-speculation"},
-        {"statement": "Adept-level difficulty; dangerous even to mid-level-geared characters.", "src": "np-player-notes"}
-      ],
-      "era": null,
-      "src": "np-player-notes"
-    },
-    {
-      "id": "camp:dreugh-camp",
-      "name": "Dreugh Camp",
-      "camp_type": "creature grind camp",
-      "location": "Koal Cave near Gnisis",
-      "mobs": ["Dreugh"],
-      "bosses": [],
-      "mechanics": [
-        {"statement": "Mid-High End level range; approx. 150k EXP per mob.", "src": "np-player-notes"},
-        {"statement": "Dreugh are farmed in melee via Bravo or Minstrel builds.", "src": "np-speculation"},
-        {"statement": "Ghost-like weapon items sometimes visible (but not lootable) at the cave are weapons the Dreugh NPCs internally use; they appear when the server desyncs, are not intended as player loot, and one that was successfully looted disappeared immediately.", "src": "np-player-notes"},
-        {"statement": "Expert-level difficulty; drops level 50/60 items.", "src": "np-player-notes"},
-        {"statement": "As of 2026, the dreugh cave remains the XP meta (approx. best XP camp) versus the new fire camp, which is a drops camp.", "src": "igc-2026-08"}
-      ],
-      "era": null,
-      "src": "np-player-notes"
-    },
-    {
-      "id": "camp:frost-giant-camp",
-      "name": "Frost Giant Camp",
-      "camp_type": "creature grind camp / world boss",
-      "location": "West of Skaal Village (Solstheim)",
-      "mobs": ["Frost Giant"],
-      "bosses": [
-        {
-          "name": "Frost giant boss",
-          "notable_drops": [],
-          "notes": "Can one-shot for over 1000 HP while standard healing spells are capped at 100 points per second, making a dedicated healer alone insufficient. Has a spell-speed increase, but a fast enough character can dodge many of its spells. Demoralize can make it flee until it gets stuck on terrain."
-        }
-      ],
-      "mechanics": [
-        {"statement": "Level range 56+ (High-High End); quest-giver Giant Slayer Derkev at Skaal Village trades 3 Frost Giant Shields for 1.5m EXP; quest-giver Leigh Roses at the Altar of Thrond trades 4 Frost Giant Glyphs for 1.8m EXP; approx. 175k EXP per mob.", "src": "np-player-notes"},
-        {"statement": "A wiki-sourced Collection Quests table lists the Frost Giant Camp turn-in: Frost Giant Glyph x4 to Leigh Roses at the Altar of Thrond grants Mastery XP 1,800,000 (same value as the 1.8m EXP figure, only phrased differently).", "src": "np-wiki"},
-        {"statement": "The server dev recalled that frost giants used to have a pre-cast travel speed boost, based on what he had been told.", "src": "np-dev"},
-        {"statement": "Suggested tactics (speculative): use Banish/Reflect and Arcana Overload to strip the boss's defenses, then apply movement-denial effects; or spam healing potions while keeping a Dispel potion hotkeyed.", "src": "np-speculation"},
-        {"statement": "Frost Giants are farmed as werewolf or via chain-cast.", "src": "np-speculation"},
-        {"statement": "Decrepit Cage rare-drop source is contested: after farming billions of xp at the Frost Giant camp (and watching another player farm 100 billion xp there) without a single drop, one player eventually obtained one from the boss Cursebone; a second player also only ever saw Decrepit Cage drop once, from Cursebone. A third player farmed roughly half a dozen Ravenback Prophet bosses without seeing it, ruling out Ravenback Prophet but not further confirming Cursebone.", "src": "np-contested"}
-      ],
-      "era": null,
-      "src": "np-player-notes"
-    },
-    {
-      "id": "camp:blood-matrons-crypt",
-      "name": "Blood Matron's Crypt",
-      "camp_type": "dungeon grind camp",
-      "location": "North of Saren Ancestral Tomb, near Missamsi and Sulipund",
-      "mobs": [],
-      "bosses": [
-        {"name": "Blood Matron crypt boss", "notable_drops": [], "notes": "Reflect works against it, but killing things this way can take about a half hour."}
-      ],
-      "mechanics": [
-        {"statement": "Ranked as one of the hardest camps (tier 12 of 13); not recommended below level 60 without gear prep.", "src": "np-player-notes"},
-        {"statement": "Can generally be cleared with a default nuke method.", "src": "np-speculation"}
-      ],
-      "era": null,
-      "src": "np-player-tested"
-    },
-    {
-      "id": "camp:tomb-of-the-desiccator",
-      "name": "Tomb of the Desiccator (Dry Tomb)",
-      "camp_type": "dungeon grind camp",
-      "location": "On an island roughly between Drethan Ancestral Tomb and Setus Egg Mine, southwest of Sanni",
-      "mobs": [],
-      "bosses": [
-        {"name": "Zin the Dessicato", "notable_drops": [], "notes": "Has an associated grind camp, contrary to an initial guide draft that omitted it."}
-      ],
-      "mechanics": [
-        {"statement": "Ranked as the hardest camp (tier 13 of 13).", "src": "np-player-notes"},
-        {"statement": "Rumored (secondhand, unconfirmed) to favor a double or triple werewolf setup for farming.", "src": "np-speculation"}
-      ],
-      "era": null,
-      "src": "np-player-tested"
-    },
-    {
-      "id": "camp:frost-atronach-camp-addadshashanammu",
-      "name": "Frost Atronach Camp (Addadshashanammu)",
-      "camp_type": "elemental tier-1 world boss camp",
-      "location": "Addadshashanammu, Bitter Coast Region",
-      "mobs": ["Frost Atronach"],
-      "bosses": [
-        {
-          "name": "Icy Jack",
-          "notable_drops": ["The Shining Polaris (rarest, Long Blade 1H)", "Starfrost Cuirass", "Ice Armor Set", "unenchanted Ice Armor Greaves", "Frost Atronach Tome", "5 Tokens (every time)"],
-          "notes": "Giant Frost Atronach. The server dev confirmed it is intentional that Icy Jack does not drop a corresponding rare weapon (unlike Gertrude, Inferno, and Shadowgale)."
-        },
-        {
-          "name": "Gertrude",
-          "notable_drops": ["Glacier Splitter (Axe 1H)", "Frost Eyed Leather Tunic", "Chilling Fur Tunic", "Bear Armor Set", "Gertrude Shirt", "Grizzly Bear Tome", "5 Tokens (every time)"],
-          "notes": "Giant Bear, secondary boss at the same camp. The server dev confirmed Glacier Splitter is a Gertrude drop."
-        }
-      ],
-      "mechanics": [
-        {"statement": "One of the original (2020-era) elemental tier-1 world boss camps. Bosses drop five server tokens and lesser items (raw stalhrim, bear pelts, fire and frost salts). As of 2020-03-10 there were THREE extremely rare item drops total across the elemental camps, of which only the Voltaic Spear was then known.", "src": "np-player-tested"},
-        {"statement": "The server dev confirmed the ice camp has 3 custom armor pieces beyond the basic Ice Armor drops, and that 3 armor pieces were missing from the documented ice camp drop chart at the time; he also noted there are a lot of possible armor pieces that can drop from camp bosses.", "src": "np-dev"},
-        {"statement": "Boss atronachs at a farming camp respawn 1 hour after being killed.", "src": "np-player-notes"},
-        {"statement": "Ice camp has the best raw token farming rate because the spawns are clustered close together.", "src": "np-player-notes"},
-        {"statement": "An early report attributed a secondary ice-camp boss called Bishop-O with Adamantium armor drops; this was later corrected - Bishop O-5 belongs to the storm camp at Ebernanit.", "src": "np-contested"}
-      ],
-      "era": null,
-      "src": "np-player-tested"
-    },
-    {
-      "id": "camp:fire-atronach-camp-nchuleftingth",
-      "name": "Fire Atronach Camp (north of Nchuleftingth)",
-      "camp_type": "elemental tier-1 world boss camp",
-      "location": "Molag Amur Region, north of Nchuleftingth. History: first identified near Erabenimsun Camp / at Mzanchend, then reported relocated to just SE of Galom Daeus and SW of Shushan (2020-02-27), with the settled chart location north of Nchuleftingth",
-      "mobs": ["Flame Atronach"],
-      "bosses": [
-        {
-          "name": "Inferno",
-          "notable_drops": ["Infernal Blade (rarest, Long Blade 1H)", "Scorched Earth (Blunt 1H; Ebony Mace: on strike Weakness to Fire 15% for 10s, touch Fire damage 10 to 5pts, self Resist Fire 15% for 10s)", "Flame Etched Chestguard (Royal Guard cuirass, heavy armor, CE Resist Fire 15%, Fortify Endurance 20pts, Fortify Strength 17pts)", "Fire Newt Splint (Imperial Templar cuirass with Her Hands pauldrons, light armor, CE Resist Fire 15%, Fortify Intelligence 30pts, Fortify Willpower 7pts)", "Firedweller's Tunic (Gah Julan cuirass, medium armor, Resist Fire 15%, Fortify Strength 25pts, Fortify Agility 12pts)", "Flame Atronach Tome", "5 tokens (every time)"],
-          "notes": "Giant Fire Atronach."
-        },
-        {
-          "name": "Matches",
-          "notable_drops": ["Nordic Mail Armor Set", "5 tokens (every time)"],
-          "notes": "Miniature/small Flame Atronach. Cannot drop a unique enchanted weapon (armor only), confirmed intentional by the server dev."
-        }
-      ],
-      "mechanics": [
-        {"statement": "Each camp boss drops 5 tokens and lots of gems; grouping up is recommended to get the most out of the tokens.", "src": "np-player-tested"},
-        {"statement": "An early guess from a dev video mapped the Infernal Blade to the flame atronach boss, another ultra-rare weapon to the frost atronach boss, and the Voltaic Spear to the storm atronach boss.", "src": "np-speculation"}
-      ],
-      "era": null,
-      "src": "np-player-tested"
-    },
-    {
-      "id": "camp:storm-atronach-camp-ebernanit",
-      "name": "Storm Atronach Camp (Ebernanit)",
-      "camp_type": "elemental tier-1 world boss camp",
-      "location": "Ebernanit, Ashlands Region",
-      "mobs": ["Storm Atronach"],
-      "bosses": [
-        {
-          "name": "Shadowgale",
-          "notable_drops": ["Voltaic Spear (rarest)", "Vortex Scimitar (Ebony Scimitar; on strike Weakness to Shock 15% for 10s, touch Shock damage 10 to 5pts, self Resist Shock 15%)", "Wind Golem Breastplate (Duke's Guard cuirass model, heavy armor, Resist Shock 15%, Fortify Endurance 30pts, Fortify Strength 7pts)", "Skystrider Tunic (Imperial Dragon Scale, medium armor, CE Resist Shock 15%, Fortify Strength 20pts, Fortify Agility 17pts)", "White Wind Tunic (Indoril-looking but Light Armor, CE Resist Shock 15%, Fortify Intelligence 25, Fortify Willpower 12)", "Storm Atronach Tome", "5 Tokens (every time)"],
-          "notes": "Giant Storm Atronach. Originally charted as Stormgale; renamed Shadowgale in the revised (dev-corrected) boss chart of 2020-03-11."
-        },
-        {
-          "name": "Bishop O-5",
-          "notable_drops": ["Adamantium Armor Set", "Steam Centurion Tome", "5 Tokens (every time)"],
-          "notes": "Giant Dwemer Centurion, secondary boss. Drops armor only - no unique enchanted weapon, confirmed intentional by the server dev. Early reports misattributed it to the ice camp."
-        }
-      ],
-      "mechanics": [
-        {"statement": "The server dev confirmed the Storm Atronach camp is meant to have a mini-boss like the Fire and Frost camps, but said (2020-02-28) he did not think it was spawning correctly and needed to look into it.", "src": "np-dev"},
-        {"statement": "Confirmed spawn areas (2020-05-02): Icy Jack and Gertrude both spawn near Addadshashanammu (Bitter Coast); Inferno and Matches both spawn north of Nchuleftingth (Molag Amur); Shadowgale and Bishop O-5 both spawn near Ebernanit (Ashlands).", "src": "np-player-tested"}
-      ],
-      "era": null,
-      "src": "np-player-tested"
-    },
-    {
-      "id": "camp:roach-dremora-camp",
-      "name": "Roach / Dremora Camp (Kushtashpi)",
-      "camp_type": "creature grind camp / world boss",
-      "location": "Kushtashpi (also written Kushtapi)",
-      "mobs": ["Dremora"],
-      "bosses": [
-        {
-          "name": "Roach",
-          "notable_drops": ["Obliterator (rarest, Long Blade 1H; 100 EP enchant points, base Condition 3000/3000, Value 35000)", "Last Resort", "Runeblade (90 EP enchant points)", "Stone Edge (Long Blade 2H)", "Breastplate of Disbelief (Cuirass)", "Subligar Of Loathing (Greaves)", "Slayer's Set", "Dremora Familiar Tome"],
-          "notes": "Tier 3 boss. Has levitation available but the server dev does not think he uses it."
-        }
-      ],
-      "mechanics": [
-        {"statement": "Boss respawn timers server-wide range from 2 to 8 hours depending on the boss.", "src": "np-player-notes"},
-        {"statement": "Subligar Of Loathing, the Slayer's Set, and Breastplate of Disbelief can also drop from regular (non-boss) Dremora at the camp, not just from the Roach boss - camp uniques can drop from trash mobs, not only the named boss.", "src": "np-player-tested"},
-        {"statement": "Camp uniques documented while the camp was WIP: a Rotting Hide armor set, Slayer's pauldrons and bracer, Deadroth Hide Tunic (Value 21300), Belt of Divine Power (Value 17500, Fortify Strength 60 pts), Ring of the Creator, Silken Ring (Fortify Magicka 200 pts but drains Strength/Endurance/Agility/Willpower 15 pts each), and Staff of Secrets (Fortify Speed 30 pts, Fortify Magicka 150 pts).", "src": "np-player-tested"},
-        {"statement": "Daedric tower shields do not drop from the separate fishing-boss camp; at a high enough player level a Golden Saint spawns once per server reset at Kushtapi.", "src": "np-player-notes"}
-      ],
-      "era": null,
-      "src": "np-player-tested"
-    },
-    {
-      "id": "camp:golden-saint-daedric-camp",
-      "name": "Golden Saint Spawns (Daedric Camp NNW of Cavern of the Incarnate)",
-      "camp_type": "high-level spawn farming spot",
-      "location": "Daedric camp north-northwest of the Cavern of the Incarnate",
-      "mobs": ["Golden Saint"],
-      "bosses": [],
-      "mechanics": [
-        {"statement": "Golden Saints spawn fairly reliably at a few spots once players are a high enough level; some spots have a respawn timer of roughly 45 minutes. Repeated grinding confirmed the timer at this camp is 45 to an hour.", "src": "np-player-tested"},
-        {"statement": "Golden Saints on this server are equipped with fixed Sun Shields (a weaker Auriel's Shield) and an unlootable sword.", "src": "np-player-notes"}
-      ],
-      "era": null,
-      "src": "np-player-tested"
-    },
-    {
-      "id": "camp:skree-cavern-of-the-incarnate",
-      "name": "Skree (Cavern of the Incarnate)",
-      "camp_type": "world boss location / farming spot",
-      "location": "Cavern of the Incarnate, Valley of the Wind",
-      "mobs": ["Cliff Racer"],
-      "bosses": [
-        {
-          "name": "Skree",
-          "notable_drops": ["Skree's Plume (rarest, Short Blade 1H)", "Stormfang (Long Blade 2H)", "Racerbreak (Short Blade 1H)", "Haakon's Lucky Break (Blunt 2H)", "Whitewalker Robes", "The Watchman's Eye", "Cliffracer Tome", "25 Tokens (every time)"],
-          "notes": "Tier 2 boss. The server dev noted Skree has a large-size reset/respawn issue similar to the Emperor Crab (wandering too far from spawn resets it)."
-        }
-      ],
-      "mechanics": [
-        {"statement": "The Valley of the Wind / Cavern of the Incarnate area is a good farming spot for gems and cliff racer plumes due to unusually high cliff racer density, worth visiting despite the danger.", "src": "np-player-notes"}
-      ],
-      "era": null,
-      "src": "np-player-notes"
-    },
-    {
-      "id": "camp:fishing-boss-spawns",
-      "name": "Fishing Bosses (Dreughnaught and Lil Snappa)",
-      "camp_type": "fishing-summoned world bosses",
-      "location": "Summoned while fishing during rain/storm; observed at Suran (2021) and in the wilderness region between Khuul and Solstheim (2025); a known fish-boss spot is at approximately map coordinates -22, -13 in the Wilderness region, west of Ebonheart and south of Fort Frost",
-      "mobs": [],
-      "bosses": [
-        {
-          "name": "Dreughnaught",
-          "notable_drops": ["Dreugh Stalker Helm", "Monstrous Claw", "Ancient Amulet Mould", "Dreugh Familiar Tome", "0-150 tokens", "23 dreugh wax and 50 tokens on one observed kill (no unique that time)"],
-          "notes": "Tier 2; biggest fishing-spawned boss encountered, physically clipping into terrain due to its size. Hit a player for 600 damage in a single strike (2021). 2025 re-observation (flagged as possibly a mechanic revision): spawned around 7:44 AM; hits for roughly 800-1k melee damage; once hit, blinds the player and inverts their movement controls (camera unaffected) for about 10 seconds; the player cannot surface above water once engaged; attacks can be dodged by circling it while landing perfect combos."
-        },
-        {
-          "name": "Lil Snappa",
-          "notable_drops": ["Giant Fang", "Ancient Ring Mould", "Slaughterfish Familiar Tome", "0-150 tokens", "150 tokens on one observed kill"],
-          "notes": "Tier 2 second fishing boss. 2025 observation: spawned around 7 PM at the same location as Dreughnaught; deals similar melee damage but applies poison (roughly 40 total damage at 70% resist, lasting about 2 minutes) instead of blindness, and also inverts controls; its large hitbox and erratic attack animations make perfect combos harder to land."
-        }
-      ],
-      "mechanics": [
-        {"statement": "Both fishing bosses appear to respawn roughly every 5 hours and seem to only spawn during dawn/dusk (about 6-9 AM/PM); the invert-controls effect can sometimes bug out and leave the player unable to move, and occasionally seems to trigger just from being near the boss rather than only from being hit.", "src": "np-speculation"},
-        {"statement": "Fishing bosses can be killed using ground-target nuke spells, but bosses can partially clip through the floor; on-touch spells are safer in case of clipping or when fighting near NPCs.", "src": "np-player-tested"},
-        {"statement": "Per in-game chat, a fish boss spawn requires being a high-level fisherman using Master Bait and a good rod plus a special rod wiggle technique.", "src": "np-player-notes"}
-      ],
-      "era": null,
-      "src": "np-player-tested"
-    },
-    {
-      "id": "camp:infernal-flame-atronach-camp",
-      "name": "Infernal Flame Atronach Camp (2026 Fire Camp)",
-      "camp_type": "creature drops camp / world bosses",
-      "location": "West of the Erabenimsum camp / north of Molag Mar; free teleport via Berene clan amulet",
-      "mobs": ["Infernal Flame Atronach"],
-      "bosses": [
-        {
-          "name": "Blaze",
-          "notable_drops": ["Infernal Blade (85 top damage, upgraded up to 115)", "top-damage sorcerer staff", "Incandescent Dagger (confirmed hidden proc per server-items)"],
-          "notes": "The big boss. Hit a player for 382 fire dmg THROUGH 85% resist - that hit was fire damage, not physical."
-        },
-        {
-          "name": "Cinder",
-          "notable_drops": [],
-          "notes": "The small boss; spawns approximately 2x as often as Blaze. One observed respawn took less than 4 hours, but the respawn timer is always random, so it will not always be under 4 hours."
-        }
-      ],
-      "mechanics": [
-        {"statement": "Camp opened 2026-08-02.", "src": "igc-2026-08"},
-        {"statement": "Boss spawns are semi random, 4-8 hours+.", "src": "igc-2026-08"},
-        {"statement": "Camp mobs cast -70 Weakness to Fire on the player, plus reflect/absorb magic.", "src": "igc-2026-08"},
-        {"statement": "The boss hit a player for 382 fire dmg through 85% resist.", "src": "igc-2026-08-measured"},
-        {"statement": "Described by a player as the hardest camp in the game.", "src": "igc-2026-08"},
-        {"statement": "XP is approx. 180k per atronach - it is a DROPS camp, not an XP camp (the dreugh cave remains the XP meta).", "src": "igc-2026-08"},
-        {"statement": "Required prep (community consensus, Aug 2026): fire resist 85-100%+ - because of the -70 weakness debuff, resist 85 becomes 15 when debuffed unless over-cap slack absorbs it; a raw resist stack should exceed 155 to stay capped while debuffed. Example raw fire stack: 35 racial + 75 Ebony Mail + 30 Denstagmer + 25 Fireproof = 165, which stays 85+ through the debuff.", "src": "igc-2026-08"},
-        {"statement": "Required prep: Resist Magicka plus dispel access for their casts; the mobs' reflect/absorb magic punishes the player's own casting, while melee-proc builds (no cast) are unaffected.", "src": "igc-2026-08"},
-        {"statement": "Required prep: heavy potion use; expect deaths (one player reported 30+).", "src": "igc-2026-08"},
-        {"statement": "Known drops over 3 weeks of chat: Flame Mail set, Lava set, a stealth set, Scorched pieces (Lv.60 Combat tags), Incandescent Dagger (Blaze), Infernal Blade (Blaze), top sorcerer staff (Blaze), Flame Atronach summon tome (approx. 100k trade value), effigies, elemental flame dust, and fire salts (flooding the market).", "src": "igc-2026-08"},
-        {"statement": "Attack profile: the atronach mobs do not hit like a truck in melee - the threat is fire spell spam, which hits at any range; melee range is not the main risk, so dagger closeness costs little at this camp. Resist stack plus over-cap slack against the -70 debuff is the defense. A reach alternative if melee retaliation ever matters: Arm of the Sun, 175%/10.8ft.", "src": "igc-2026-08"},
-        {"statement": "The camp drops its own +80 Short Blade gear; farming Cinder between Blaze spawn windows is a viable pattern.", "src": "igc-2026-08"}
-      ],
-      "era": "2026-08",
-      "src": "igc-2026-08"
+     "name": "Emperor Crab",
+     "notable_drops": [
+      "Shield of the Crab God (rarest)",
+      "Treachery glove (left)",
+      "Deceit glove (right)",
+      "Ring of Raven Eye",
+      "Mudcrab Tome",
+      "25 crab meat",
+      "gems",
+      "15 tokens (every time)",
+      "Auriel's Shield (observed 2020)"
+     ],
+     "notes": "Tier 2 world boss. Observed respawning after 3-4 hours, longer than other bosses. Can reset if it wanders about 100 feet from its spawn point, respawning at the spawn spot with full HP; the server dev said the reset is probably related to its large size, similar to the Skree boss."
     }
-  ],
-  "events": [
+   ],
+   "mechanics": [
     {
-      "id": "event:morroween",
-      "name": "Morroween (Halloween Event)",
-      "schedule": "October (Halloween season); the Jack boss spawns once per night in Balmora at the 9th hour of in-game night - roughly once every 48 minutes of real time; later measured as spawning at 9pm in-game and despawning at 6am, respawning roughly every 50 minutes (48 minutes theoretical on vanilla timescale, ~51 minutes observed)",
-      "mechanics": [
-        {"statement": "Trick-or-treat NPCs are known to spawn in: Sadrith Mora, Molag Mar, Suran, Vivec, Ebonheart, Pelagiad, Seyda Neen, Hla Oad, Gnaar Mok, Gnisis, Khuul, Ald Ruhn, Caldera (outside Ghorak Manor), Dagon Fel, Vos (at the tradehouse), and Tel Mora. They are easier to spot at night because they glow red.", "src": "np-player-notes"},
-        {"statement": "Activating all the graves/caskets around Balmora grants a special title (Spooktober). Casket locations include: one in front of the Fighters Guild, one near the Wise Woman's house, one near the Thieves Guild, one near Caius's house, and the rest near the Temple. Later described as 21 total Halloween caskets in Balmora (8 in the East part of town, 13 in the West), granting the titles Mortician and Undertaker.", "src": "np-player-notes"},
-        {"statement": "You need to be in a group for everyone in it to get Story Teller points from a Jack kill.", "src": "np-player-notes"},
-        {"statement": "The Now You Know Jack achievement (surviving Jack's attack on Balmora) was obtainable in 2022 when Jack attacked Balmora directly, NOT obtainable in 2023 when Jack moved to his own realm, and obtainable again in 2024 even though Jack still attacks from his own realm.", "src": "np-contested"},
-        {"statement": "If the Jack boss gets stuck while phased (ghost mode) because the totems have disappeared, having everyone leave the cell and re-enter seems to un-bug the totems.", "src": "np-player-tested"},
-        {"statement": "An efficient trick-or-treat travel route (Strider to Vivec/Molag Mar/Suran, jump to Pelagiad, jump to Seyda Neen, Strider to Gnisis/Khuul, boat around Dagon Fel/Tel Mora/Vos/Sadrith Mora/Ebonheart/Hla Oad/Gnaar Mok, jump to Ald Ruhn, mage-teleport to Caldera) costs under 500 gold total with high Personality.", "src": "np-player-tested"},
-        {"statement": "Jack has a normal shield effect and some reflect; damage-attribute rings landed with little reflected, suggesting his reflect is not very high. Avoid self-cast offensive enchants/spells that could reflect and kill you; if you fully resist the element you attack with, his reflect cannot hurt you back with it.", "src": "np-player-tested"},
-        {"statement": "Weakness-to-magicka/Absorb-health ring spam had no noticeable effect on Jack; weakness-effect stacking does not work on him, but a Weakness to Magicka + Absorb Health + Damage Health enchant combo still deals damage. He seems to resist magic effects fairly well.", "src": "np-player-tested"},
-        {"statement": "Hitting Jack seems to require higher Agility/weapon skill: a character with 45 Agility/81 skill was missing him, while 126 Agility/110 skill hit reliably.", "src": "np-player-tested"},
-        {"statement": "Jack did not appear to regenerate health during the fight, and he has a kill/despawn timer - he goes invisible for a while (undetectable even with Detect Creature) then disappears.", "src": "np-player-tested"},
-        {"statement": "Removing spam/AoE quickkey items before landing the killing blow helps avoid accidentally killing your whole party via reflect.", "src": "np-player-tested"},
-        {"statement": "Nordic Silver Spears with Magicka Weakness plus a weakness-spam build took Jack down in about 1 minute 30 seconds; landing even a few hits at the very start counts for participation loot.", "src": "np-player-tested"},
-        {"statement": "Due to desync, Jack's displayed health can lag behind actual health - players sometimes see him die at what looks like half HP remaining, and the desync can cause missed loot. The server dev confirmed Jack's health was too high (2021) because a health change was not accommodated alongside a related mechanic change, and said it would be nerfed slightly on the next reset.", "src": "np-dev"},
-        {"statement": "If a group attacks Jack continuously, he gets stagger-locked and cannot cast his attack spell. Casting Demoralize on Jack causes him to flee.", "src": "np-player-notes"},
-        {"statement": "Jack is not resistant to Fire, making it the best element to use against him.", "src": "np-player-notes"},
-        {"statement": "Decrepit Bones from Jack can be fed to Horky at the Balmora River for masks or Gastric Cloud; each reward's price starts at 5 bones and increases by 5 bones for every additional item of that type already obtained; bones cannot be spent after the event ends. The gastric cloud acts like the sparkler item but applies a poison effect instead.", "src": "np-player-notes"},
-        {"statement": "During the 2020 event, petting Horky through the interaction menu gives the option to buy racial masks and the fart wand, while hugging him unlocks a separate, larger purchasable inventory (masks, weapons, clothing, familiar tomes).", "src": "np-player-tested"},
-        {"statement": "A special-event item cannot be handed off to another player after the fact; the intended recipient's character had to be online during the original event to receive it (server dev, regarding a sparkler event item).", "src": "np-dev"},
-        {"statement": "If the event's rare unique item drop is not obtained by many players in a given year, it may return the next Halloween (speculation).", "src": "np-speculation"}
-      ],
-      "drops": [
-        "8-28 Decrepit Bones (always)",
-        "Morroween Hide Shirt (semi-rare; 75 enchant capacity)",
-        "Wings of the Queen of Bats (semi-rare; two-handed axe with drain-health-on-strike enchantment)",
-        "Unenchanted Daedric Longspear (semi-rare; 11.8ft reach, 10-50 damage)",
-        "Ring of Namira (rare; constant 15% reflect)",
-        "Bonekeeper Chestguard (very rare; medium armor that summons a skeleton minion with a daedric weapon for 10 seconds when the wearer is hit, 15-second cooldown between summons)"
-      ],
-      "src": "np-player-tested"
+     "statement": "Regular mobs drop crab meat, gems, tokens (rarely), and mudcrab familiar tomes (rarely).",
+     "src": "np-player-tested"
     },
     {
-      "id": "event:winter-holiday-new-life-festival",
-      "name": "Winter Holiday Event (New Life Festival)",
-      "schedule": "December holiday season; ornament quest repeatable once per day during the event",
-      "mechanics": [
-        {"statement": "The Uncle Sweetshare quest hides ornaments in Seyda Neen, Pelagiad, Tel Mora, Gnisis, Dagon Fel, Caldera, and Suran; ornaments are instanced per player, and the quest is repeatable once per day (dev-stated). Not all ornaments are literally on the decorated trees - some are hidden elsewhere in the town area.", "src": "np-dev"},
-        {"statement": "Dev-acknowledged bug (2020): a pickable ornament located inside Uncle Sweetshare's own house was only meant as a non-pickable visual example (sourced from Balmora's tree) and is pickable due to an oversight; a fix was planned for the upcoming server reset. Only the Tel Mora tree and his house tree actually held pickable ornaments that year.", "src": "np-dev"},
-        {"statement": "The quest can be completed twice, including once on an alt account; for the alt farming trick, give the alt about 2k gold and a broom, and make sure the alt starts the quest first.", "src": "np-player-notes"},
-        {"statement": "The ornament quest is repeatable, but each individual ornament pickup is only available once per quest activation; you can pick up the quest multiple times without turning it in, but ornaments do not respawn until the active quest is turned in (confirmed as intended by the server dev).", "src": "np-dev"},
-        {"statement": "There is no title associated with looting the winter-event snowball mounds (dev-stated).", "src": "np-dev"},
-        {"statement": "Silt Striders could not be recalled during the winter event; recall was restored once the event ended (dev-stated).", "src": "np-dev"},
-        {"statement": "Ornament spawn locations for a given run of the event were not changed and were the same as in server version 0.7 (dev-stated, 2022).", "src": "np-dev"},
-        {"statement": "Doing large numbers of ornament runs (e.g. 200 of them) in search of a specific item is probably not worth it.", "src": "np-player-tested"},
-        {"statement": "Speedrun route: Silt Strider/boat/Divine/Almsivi/Recall travel through Balmora, Suran, Seyda Neen, Pelagiad, Gnisis, Khuul, Dagon Fel, Tel Mora, Caldera, and back to Balmora; an optimized variant teleports/taxis from Suran instead of Seyda Neen. Total time for the optimized ornament-collection route is around 1:15. A route variant using the Berne amulet to warp to Galom Daeus is largely the same speed, saving only about 1 second at the very end; the jump-and-pickup from Greensch to the Caldera ornament takes about 12 seconds. An alternate Mark/Recall + propylon route reaches about three minutes with substantial running.", "src": "np-player-tested"},
-        {"statement": "The present pool increases over the years, and items obtainable only through this event remain available indefinitely in future years; as of the end of the 2021 event the server dev believed there were probably still a couple of undiscovered items in the pool.", "src": "np-dev"},
-        {"statement": "2024 (New Life Festival): every Gift Voucher trades for 1 present at a holiday tree (random items); unlike some previous years, every present has an equal chance of loot, and each present also grants 5 wrapping paper, tradeable at the recycler for items you did not get from presents.", "src": "np-player-notes"},
-        {"statement": "2024 voucher sources: the Mizer near the bank (one-time quest, rewarding 25 vouchers and an exclusive 10-slot bag - highly recommended), Horky and Grandfather Frost (daily quests), and Da Greensh (daily for most of the month, unlimited from the 25th onward).", "src": "np-player-notes"},
-        {"statement": "Grandfather Frost gives potions granting 2.5x Combat Mastery XP for 4 hours; the timer only counts down while sleeping or traveling, does not reset if you die, and pauses when you log off. This is the highest XP-multiplier potion available.", "src": "np-player-notes"},
-        {"statement": "50 wrapping paper is a steep cost for Cheer currency, but you can get 1 free wrapping paper daily by visiting Grandfather Frost. Cheer currency and the recipes ranked below the SM Retort and above Blue Fire cannot be obtained from presents and must be bought from the recycler; those recipes are obtainable from purchasable holiday loot caches.", "src": "np-player-notes"},
-        {"statement": "Making a brand-new character and doing every available holiday quest in a single day yielded around 40 vouchers, which converted to 200 wrapping paper.", "src": "np-player-tested"},
-        {"statement": "Farming ornament runs for the 2024 event produced 4,000+ Torn Wrapping Paper wraps per one estimate; an accompanying screenshot shows a large total reading approximately 823346, though the crop makes the exact figure/label uncertain.", "src": "np-contested"}
-      ],
-      "drops": [
-        "Large Bag of Goodies: can yield SecretMaster's Mortar and Pestle",
-        "Large Crate of Goodies (weapons pool): Infernal Blade, Eltonbrand, Voltaic Spear, Skee's Plume, the Obliterator, Spear of the Hunt, Aevar's Mace, Bipolar Blade, Hammer of Might (a 110 dmg hammer)",
-        "Large Crate of Curiosities: random gold between 10k-50k, Black Soul Gems; believed source of the 1500-soul soul gems",
-        "Large Chest of Goodies (armor pool): preenchanted Snow Wolf and Snow Bear armor pieces, a bear helm with Constant Effect Detect Animal, Helm of Tohan (medium armor, 150 enchant value), Shield of the Crab God",
-        "Small Chest of Goodies (clothing/jewelry pool): Ring of Hircine; players suspected other artifact rings like Barilzar's Mazed Band may drop too (speculation)"
-      ],
-      "src": "np-player-tested"
+     "statement": "Level range 1-11 (Beginner); quest-giver Shel Collector Doril at Arrille's Tradehouse in Seyda Neen trades 3 Mudcrab Shells for 22 Gold and 1,960 EXP; approx. 206 EXP per mob.",
+     "src": "np-player-notes"
     },
     {
-      "id": "event:hearts-day",
-      "name": "Heart's Day / Valentine's Event",
-      "schedule": "Mid-February; in 2025 the 2x Combat Mastery and 2x Tradeskill Mastery bonus ran for Heart's Day and the following week",
-      "mechanics": [
-        {"statement": "The only NPCs you can turn Valentine's event arrows in to are Romieyo and Horky (dev-stated). Players can pet the NPC Horky. Horky will talk to you roughly every 60-80 seconds for reward redemption pacing.", "src": "np-dev"},
-        {"statement": "Arrow turn-in tiers (2021, several dev-confirmed): 1 arrow = a 50pts Personality boost for 30 mins cast by Horky; 3 arrows = Love Potion no.9 (a separate reward from the 1-arrow buff); 5 arrows = Lovers Ring; 7 arrows = Hearts Day Bouquet; 10 arrows = Hearts Day Ring; 20 arrows = The Lover's Robe (50 EP); 25 arrows = The Lover's Shirt (75 EP, dev-corrected from a guess of 20 arrows); 30 arrows = Heart Day Furniture. Items requiring more than 10 arrows were the new items added in that update's iteration.", "src": "np-dev"},
-        {"statement": "Conflict flagged: a 2020 report said the Lover's Ring cost 10 arrows, while the dev-stated 2021 table lists it at 5 arrows - likely a year-over-year change in the reward table rather than an error, since new higher-tier items were separately noted as added.", "src": "np-contested"},
-        {"statement": "The Heart Sleeve Shield item is a Heart's Day event reward.", "src": "np-player-notes"},
-        {"statement": "2025: three achievements - Wherefore Art Thou Romieyo? (log in during the event), How Romatic! (help Romieyo; grants title Hopeless Romatic), and How Sweet! (trade Heart Candy; grants title Sweetheart) - plus a set of No-Trade reward items: Love Potion No. 9, Heart Sleeve Shield, Ring of Adoration, Ring of Devotion, Ring of Love, The Lover's Robe, The Lover's Shirt, The Lovers Vest, Heart's Day Bouquet, Lover's Arrow x6, and a non-No-Trade Redware Lamp.", "src": "np-player-tested"},
-        {"statement": "2025: during Heart's Day, creatures around the world can drop Lovely Flowers (No Trade); one player observed roughly an 80% drop rate while playing under The Luck birthsign, though unsure whether the sign was the cause.", "src": "np-speculation"},
-        {"statement": "2025: giving 12 Lovely Roses to Romieyo (Balmora, behind the Lucky Lockup) yields 1 Heart Candy (No Trade); Jeweliette (Balmora, outside Milie Hastien: Fine Clothier) runs the Hearts Day Candy Exchange where Heart Candy can be traded for event items.", "src": "np-player-tested"}
-      ],
-      "drops": ["Lover's Ring", "Love Potion no.9", "Hearts Day Bouquet", "Hearts Day Ring", "The Lover's Robe (50 EP)", "The Lover's Shirt (75 EP)", "Heart Day Furniture", "Heart Sleeve Shield", "Lovely Flowers (No Trade, world creature drop, 2025)", "Heart Candy (No Trade, 2025)"],
-      "src": "np-dev"
+     "statement": "Original resistances observed (2020-10): 100% magicka resist (weakness-to-magicka stacking does not work), 100% or near-100% poison resist, and around 25% reflect; shock and melee damage are noticeably more effective than frost, while fire performs about the same as melee.",
+     "src": "np-player-tested"
     },
     {
-      "id": "event:eggstreme-egghunt",
-      "name": "Eggstreme Egghunt (Spring/Easter Event)",
-      "schedule": "Spring (Easter season)",
-      "mechanics": [
-        {"statement": "An Exquisite Kwama Warrior boss spawns in the middle of Balmora at the Odai River once a player collects all 150 Exquisite Kwama Eggs. Only one can be summoned/alive at a time; the server dev confirmed only one spawn is allowed per account, though players can use alts to trigger more spawns.", "src": "np-dev"},
-        {"statement": "Dev-acknowledged bug (2020): the egg-count script had a bug (from when the dev was new to Lua) that let a second warrior spawn after collecting eggs beyond the initial 150; it was not fixed that year since the event was nearly over, with a full script rewrite planned for the following year.", "src": "np-dev"},
-        {"statement": "Only a Detect Key spell/enchant reveals hidden egg locations on the local map (available at Sirilonwe in the Vivec Mages Guild); a generic 300ft Detect enchant was tested and did not show eggs.", "src": "np-player-tested"},
-        {"statement": "The NPC Dusty is located near the Abaesen-Pulu Egg Mine and reportedly must be approached with weapons sheathed or he disappears; a subsequent attempt by another player following this method still failed to find him (unverified).", "src": "np-speculation"}
-      ],
-      "drops": [
-        "Kwama Sundas Shoes (Drain Acrobatics 35pts Constant Effect, with a unique Bunnyhopping ability - jumping automatically when moving)",
-        "Daedric Sanctuary Amulet (teleports to Magas Volar; otherwise unobtainable on the server)",
-        "Kwama Sundas Gloves (25 Enchant Points, 5 more than regular Exquisite Gloves)",
-        "Golden Kwama Egg (unique Golden Egg quest-item variant worth 10000 Gold)",
-        "Flame/Shock/Frost/Poison/Magickguard Robes and Small/Large Kwama Eggs (considered the worst rewards - common vanilla items)"
-      ],
-      "src": "np-player-notes"
+     "statement": "Using 3 shock rings each doing 100 damage over 2 seconds plus a melee player using Umbra, killing the Emperor Crab took about 40 minutes and roughly 3500 ring casts.",
+     "src": "np-player-tested"
     },
     {
-      "id": "event:st-rapticks-day",
-      "name": "St. Raptick's / St. Patrick's Day Event (The Luck)",
-      "schedule": "The week of St. Patrick's Day (March)",
-      "mechanics": [
-        {"statement": "The Luck is a limited-time event buff item obtainable only during the week of St. Patrick's Day, capped at 3 gems per character per year via a quest reward; holding unused gems across multiple years lets a player stockpile more than 3 at once.", "src": "np-player-notes"},
-        {"statement": "Using The Luck grants the user and nearby party members double Mastery XP gain and doubled rare loot drops for 168 hours of played time (the timer does not count down while offline), and the effect is lost on death.", "src": "np-player-notes"},
-        {"statement": "2026 notes: Enchanted Shamrock spawns for levels 1-20 in Bitter Coast/Ascadian Isles (St. Rapti spawns there too); Bewitched Shamrock spawns for roughly levels 21-49(ish) in West Gash/Sheogorad; Miraculous Shamrock spawns for roughly levels 50-60(ish) in Grazelands/Azura's Coast; the NPC Elona tells the player which Shamrock type they need. To obtain the Pack Rat familiar, a player must collect all three pieces of the permit.", "src": "np-player-notes"}
-      ],
-      "drops": ["The Luck (buff gem, max 3 per character per year)", "Pack Rat familiar (requires all three permit pieces)"],
-      "src": "np-player-notes"
+     "statement": "Flagged change over time: the boss's resistances appear to have changed - poison, weakness, and absorb health effects are now always resisted, whereas it was previously killable much faster (one player reported nuking it to death in about 2 hits before the change).",
+     "src": "np-contested"
     },
     {
-      "id": "event:july-4th",
-      "name": "July 4th Event",
-      "schedule": "Around July 4th; the 2020 edition ran for 3 days",
-      "mechanics": [
-        {"statement": "Previous years just distributed Experimental Dwemer Explosives; the 2020 event had different/bigger event drops.", "src": "np-dev"}
-      ],
-      "drops": ["Experimental Dwemer Explosives (earlier years)"],
-      "src": "np-dev"
+     "statement": "The server dev speculated that levitation plus an aerial attack might help prevent the boss from resetting/escaping during the fight.",
+     "src": "np-dev"
     },
     {
-      "id": "event:fishing-tournament",
-      "name": "Fishing Events / Weekly Fishing Tournament",
-      "schedule": "Weekly tournament; periodic fishing events",
-      "mechanics": [
-        {"statement": "Biggest-fish reports: 8.9 lbs in one report; around 15 lbs in another (roughly where tournament winners have landed); one player's biggest catch was 15.4 lbs.", "src": "np-player-notes"},
-        {"statement": "The Outstanding Rod was earned by the top 3 players in the weekly fishing tournament, and it let one such player catch a fish weighing 10.3 lb, surpassing the previous 10 lb weight cap.", "src": "np-player-tested"},
-        {"statement": "Handing in consecutive fish to Horky during a fishing event unlocks the achievement Now THIS Is Fireracing and the title Fire Chaser.", "src": "np-player-tested"},
-        {"statement": "A Fish Boss has a marked spawn location in the West Gash Region (shown on the minimap).", "src": "np-player-notes"}
-      ],
-      "drops": ["Outstanding Rod (top 3 weekly tournament reward)"],
-      "src": "np-player-notes"
+     "statement": "Recommended kill setups: exquisite rings enchanted with target frost damage 100pts on 10ft for as many seconds as the enchant can hold; or 110 Enchant skill plus around 10 rings enchanted with shock damage. A nuke ring setup of this kind works on every boss except Lavastorm, where a dedicated weakness ring might work better (untested).",
+     "src": "np-player-notes"
     },
     {
-      "id": "event:anniversary",
-      "name": "NP Anniversary Event",
-      "schedule": "Recurs roughly yearly; stated (Nov 2024) to recur about half a year after that statement",
-      "mechanics": [
-        {"statement": "An extra respec is tied to the anniversary event (dev-stated).", "src": "np-dev"}
-      ],
-      "drops": [],
-      "src": "np-dev"
-    },
-    {
-      "id": "event:assassination-attempt",
-      "name": "Assassination Attempt (Quest Event)",
-      "schedule": null,
-      "mechanics": [
-        {"statement": "The quest event now successfully spawns the assassins (previously apparently bugged/not spawning), as of 2023-01.", "src": "np-player-tested"}
-      ],
-      "drops": [],
-      "src": "np-player-tested"
-    },
-    {
-      "id": "event:silt-strider-popup-mystery",
-      "name": "Silt Strider Popup Mystery / Wild Mini-Strider (ARG-style Event)",
-      "schedule": null,
-      "mechanics": [
-        {"statement": "A known location east of Seyda Neen (matching a hint from the server dev) reliably triggers a silt strider popup with the silt strider moan sound every time the player passes through; players believe the popup probably does nothing functional.", "src": "np-player-notes"},
-        {"statement": "The Wild Mini-Strider spawns in the mountains near the popup location - actually above the mine, not at the initially marked location - but attempts to tame it crashed the server at the time. It stopped fleeing after players stopped approaching it with hands out (which scares it).", "src": "np-player-tested"},
-        {"statement": "Per the last dev hint about the mystery, equipment skills come later - for now players just need spoons in their inventory.", "src": "np-dev"}
-      ],
-      "drops": [],
-      "src": "np-player-notes"
-    },
-    {
-      "id": "event:new-merchants-2019",
-      "name": "New Merchants Event (2019)",
-      "schedule": "2019-01",
-      "mechanics": [
-        {"statement": "Seven new merchants were added to the server; known locations include two near the smith at Underskar in Ald'ruhn and one near the council house in Balmora.", "src": "np-player-notes"},
-        {"statement": "One of the new merchants may be found in the Foreign District in Vivec, and another is reportedly located near the Transport/Guild Guide area in Ebonheart (initially misreported as Mournhold) - both unconfirmed.", "src": "np-speculation"}
-      ],
-      "drops": [],
-      "src": "np-player-notes"
+     "statement": "Because the boss is tough to solo for lower-level players, announcing it in chat and partying up shares the token drop; experienced players can solo it but it is tedious. World-boss difficulty scaling mainly manifests as resistances, and only the Emperor Crab has significant resistances.",
+     "src": "np-player-notes"
     }
-  ],
-  "facts": [
-    {"id": "cfact:camp-difficulty-ranking-1-13", "topic": "camp difficulty", "statement": "Rough camp difficulty ranking (1=easiest, 13=hardest) per a 2025-05 player list: 1 mudcrab, 2 redwolf, 3 kagouti (easy, doable early); 4 skeleton, 5 aleft (dwemer), 6 ogrims, 7 hunger, 8 twilight, 9 druid (similar difficulty, roughly level 40-50, mainly needing magic resistances); 10 frost giant, 11 dreugh, 12 blood matrons crypt, 13 Tomb of the dessicator (hit hard and/or have high resistances/reflect, not recommended below level 60 without gear prep).", "src": "np-player-notes"},
-    {"id": "cfact:camp-tiering-entry-adept-expert", "topic": "camp difficulty", "statement": "Camps/bosses can also be tiered as: entry/novice level includes the Red Wolf camp; adept level includes Aleft (dangerous even to mid-level-geared characters); expert level includes camps dropping level 50/60 items such as Dreugh, Druids, and Tomb (of the Snow Prince).", "src": "np-player-notes"},
-    {"id": "cfact:grind-camps-purpose", "topic": "camp design", "statement": "Grind camps exist so players can farm MXP, intended primarily as post-level-60 progression content.", "src": "np-player-notes"},
-    {"id": "cfact:camp-level-range-table", "topic": "camp level ranges", "statement": "A compiled level-range table (2024-08) lists: Mudcrabs 1-11 (Beginner), Red Wolves 12-20 (Low End), Kagoutis 21-29 (Low End), Skeletons 31-39 (Mid-High End), Ogrims 46+ (Mid End), Twilight Matriarchs (High End), Druids (Mid-High End), Hungers 46+ (Mid-High End), Automatons/Aleft 46+ (Mid-High End), Frost Giants 56+ (High-High End), Scions (High-High End), Horrors (High-High End), Dreughs (Mid-High End).", "src": "np-player-notes"},
-    {"id": "cfact:community-camp-maps", "topic": "camp maps", "statement": "Multiple community-made maps track camp locations over time: one map went through versions v1-v5 between 2023-02-23 and 2024-03-02, progressively adding Gertrude, Mudcrab, Kagouti, Hunger, Skeleton, Ogrim, Winged Twilight, Dwemer Centurion, Ole' Fangtooth, Red Wolf, Frost Giant, Muck Dreugh, and Unkempt Druid camps. Updated compilations from 2024-09-24 and 2025-05-02 mark substantially the same full roster across Vvardenfell and the northern Solstheim/Sheogorad island, plus Blood Matron's Crypt and Tomb of the Desiccator.", "src": "np-player-notes"},
-    {"id": "cfact:six-boss-map-2020", "topic": "world bosses", "statement": "A 2020 map pins the approximate locations of all six then-known server bosses (Icy Jack, Gertrude, Inferno, Matches, Shadowgale, Bishop O-5) across Vvardenfell.", "src": "np-player-notes"},
-    {"id": "cfact:confirmed-grind-camp-bosses", "topic": "world bosses", "statement": "Confirmed grind-camp bosses include Gertrude, Ol' Fangtooth, and Zin the Dessicato.", "src": "np-player-notes"},
-    {"id": "cfact:boss-respawn-2-8-hours", "topic": "boss respawns", "statement": "Boss respawn timers server-wide range from 2 to 8 hours depending on the boss.", "src": "np-player-notes"},
-    {"id": "cfact:static-item-respawn-random", "topic": "respawn timers", "statement": "The server dev confirmed the respawn timer for fixed/static item spawns (e.g. Daedric Greaves at Dren Plantation) is random rather than fixed.", "src": "np-dev"},
-    {"id": "cfact:glitched-boss-spawns", "topic": "camp bugs", "statement": "The server dev said camp bosses dropping nothing at all should not normally happen and indicates a glitched spawn. Rarely, a camp boss monster shrinks in size and visually blends in with the regular mob NPCs.", "src": "np-dev"},
-    {"id": "cfact:camp-boss-hp-estimate", "topic": "boss stats", "statement": "An early (2020) camp boss HP estimate was roughly ~1000 hp (speculation).", "src": "np-speculation"},
-    {"id": "cfact:boss-fight-friendly-fire", "topic": "boss fight tactics", "statement": "It is easy to accidentally hit another player at the newer boss fights, especially the newer fire boss, when minion waves respawn and players scatter to kill them.", "src": "np-player-notes"},
-    {"id": "cfact:boss-fight-add-management", "topic": "boss fight tactics", "statement": "At the newer bosses, having one player spam Calm on nearby mobs keeps them from attacking the group, letting parties of 4 or fewer manage adds safely; a mage can use fortify summons so their summoned creatures take the aggro of nearby mobs. Players also kill respawning minions partly to reduce lag caused by their AI.", "src": "np-player-notes"},
-    {"id": "cfact:camps-magicka-items", "topic": "camp loot", "statement": "Creature camps have added many new items that boost magicka (dev-stated).", "src": "np-dev"},
-    {"id": "cfact:glamour-crafting", "topic": "camp loot", "statement": "A boss/camp drop can be used to craft glamour items that make armor pieces (e.g. greaves, helm) turn invisible when worn.", "src": "np-player-notes"},
-    {"id": "cfact:storyteller-bosses-at-grindcamps", "topic": "storyteller", "statement": "Storyteller-related bosses spawn at the grindcamps, but with rarer spawn rates than the regular grindcamp mobs.", "src": "np-player-notes"},
-    {"id": "cfact:storyteller-commendation-points", "topic": "storyteller", "statement": "Killing a Bulbor grants 25 Commendation Points from the Storyteller, redeemable for goods by talking to him; Commendation Point rewards include custom items (books and a crossbow among them), purchasable stat boosts, and transformations.", "src": "np-player-tested"},
-    {"id": "cfact:frost-claw-strategies", "topic": "boss Frost Claw", "statement": "Reflect works against the camp boss Frost Claw (and the Blood Matron crypt boss), but it can take about a half hour to kill some things with it; reflect is considered an easy strategy against Frost Claw, and some players instead defeat him by nuking his intelligence.", "src": "np-player-tested"},
-    {"id": "cfact:smol-jack-storn-drown", "topic": "Jack variants", "statement": "If Smol Jack spawns, you can lure the NPC Storn into drowning him in a river. These Jack-variant claims are tagged under general camp discussion; their relation to the Morroween event boss Jack is not fully clarified in the source data.", "src": "np-player-tested"},
-    {"id": "cfact:flat-jack-hitbox", "topic": "Jack variants", "statement": "When fighting Flat Jack, his visual model is purely cosmetic - his actual hitbox does not move from where he normally stands.", "src": "np-player-tested"},
-    {"id": "cfact:massama-caverns-glass", "topic": "farming spots", "statement": "Massama Caverns, just southwest of Dissapla Mine, is a glass and silver mine with over a dozen glass deposits and several dozen more silver rocks - one of the better glass-farming spots.", "src": "np-player-notes"},
-    {"id": "cfact:druscathi-looting", "topic": "farming spots", "statement": "Druscathi is a popular looting location where items such as Blood of the Quarra Master potions can be found; it gets looted by others frequently.", "src": "np-player-notes"},
-    {"id": "cfact:vos-wickwheat", "topic": "farming spots", "statement": "Vos has hundreds of wickwheat pickable within a few minutes, plus marshmallow near the water.", "src": "np-player-notes"},
-    {"id": "cfact:mournhold-kwama-eggs", "topic": "farming spots", "statement": "Raiding the basement/storage areas in Mournhold (castle/Temple) yields a healthy stock of Kwama Eggs.", "src": "np-player-notes"},
-    {"id": "cfact:pine-best-wood", "topic": "farming spots", "statement": "Pine trees have much higher density than other tree types, making Pine the best choice for farming wood/resin.", "src": "np-player-tested"},
-    {"id": "cfact:kwama-boss-loot", "topic": "Kwama boss", "statement": "The Kwama boss loot table includes: Golden Kwama Egg, Kwama Gloves (left/right), Kwama Boots (hoppy boots), Minstrel's Lute, various loot bags, Resistance Robes, Large/Small Kwama Eggs, and a Daedric Sanctuary Amulet.", "src": "np-player-notes"},
-    {"id": "cfact:murky-fungus-robe-region", "topic": "fishing loot", "statement": "The community fishing guide book incorrectly lists the Murky Fungus Robe as dropping in the Sheogorad region; a week of fishing there produced none, while an hour of fishing in Bitter Coast produced one.", "src": "np-player-tested"},
-    {"id": "cfact:tel-fyr-amulets", "topic": "farming spots", "statement": "Tel Fyr amulets can be farmed by anyone with access to Dregas Volar.", "src": "np-player-notes"},
-    {"id": "cfact:tusk-farming-rate", "topic": "farming rates", "statement": "Using a nuke ring while auto-running and spam-attacking, a player reported getting 100 tusks in 30 minutes.", "src": "np-player-notes"},
-    {"id": "cfact:special-silt-strider-spawn", "topic": "special spawns", "statement": "A notable silt strider spawns at a fixed location near Seyda Neen, between Addamasartus and Andrano Ancestral Tomb; the spawn location is near the Abaesen-Pulu Egg Mine, east of Andrano Ancestral Tomb, distinct from the regular Silt Strider travel post at Seyda Neen.", "src": "np-player-tested"},
-    {"id": "cfact:mini-strider-easter-egg", "topic": "special spawns", "statement": "There is a hidden mini silt strider easter egg on the map whose location has apparently been sold between players before, similar to how the location of the Daedric Pauldrons was previously sold.", "src": "np-player-notes"},
-    {"id": "cfact:secret-islands-no-reset", "topic": "world mechanics", "statement": "The secret islands reportedly do not reset; the speculated reason is that spamming things like summoned creatures there would be harmful to the server.", "src": "np-speculation"},
-    {"id": "cfact:smuggler-cave-map", "topic": "farming spots", "statement": "Smuggler cave locations were mapped across Vvardenfell, with marked sites near Dagon Fel, the Vos area, Gnisis, Gnaar Mok, the Balmora area, the Pelagiad/Suran area, and Vivec.", "src": "np-player-notes"},
-    {"id": "cfact:events-no-advance-warning", "topic": "events general", "statement": "Server events that grant rare items typically happen on a moment's notice, without advance warning (dev-stated).", "src": "np-dev"},
-    {"id": "cfact:mournhold-bloodmoon-bugs", "topic": "events general", "statement": "The server dev will not fix Mournhold or Bloodmoon quest bugs until TES3MP can sufficiently run those areas smoothly.", "src": "np-dev"},
-    {"id": "cfact:event-books-skill-gains", "topic": "events general", "statement": "Server event books (special skill books given out during events) reportedly grant increased skill gains compared to normal skill books (secondhand, unverified).", "src": "np-speculation"},
-    {"id": "cfact:wria-lightningfoot-quest-spots", "topic": "quest events", "statement": "For Wria Lightningfoot's quest chain, four spots are marked on the map; the numbered order (starting location plus 1st-3rd locations) applies to the first quest, while the 4th location is only needed for the final quest.", "src": "np-player-tested"},
-    {"id": "cfact:lil-green-goblin", "topic": "event NPCs", "statement": "The Lil Green Goblin event NPC (a mini Tribunal-style goblin, aka Leprechaun) spawns along the path between Balmora and Caldera, at the top of a hill. Its pants reward is a misc item rather than equippable armor (which is why it appears at the end of the inventory list), and its weapon and shield generally cannot be looted. The server dev confirmed the pants auto-adding to a player's inventory on kill (without looting) is not scripted/intended, and that its inventory desynced on at least one occasion (nothing lootable), suspected due to random generated loot; the fix is letting the NPC despawn and respawn, sometimes requiring a server reset.", "src": "np-dev"},
-    {"id": "cfact:meta-2026-mage-comboom", "topic": "combat meta 2025-2026", "statement": "The 2025-2026 meta is described as all about mage comboom - weakness-stack mage nukes on buffed Ogrims, solo viable.", "src": "server-general-2026", "era": "2026-08"},
-    {"id": "cfact:meta-2026-dreugh-stealth-pairs", "topic": "combat meta 2025-2026", "statement": "Stealth bravo/minstrel AoE dreugh-cave pairs (approx. 100 Sanctuary / 300 Agility) clear every ~30s, which is the best XP.", "src": "server-general-2026", "era": "2026-08"},
-    {"id": "cfact:meta-2026-melee-combos", "topic": "combat meta 2025-2026", "statement": "Fast-weapon combo melee achieves 2K+ combo crits; a vampire Frenzy+Feed+Focused Strike setup was measured at 1,686 per hit.", "src": "server-general-2026", "era": "2026-08"},
-    {"id": "cfact:jan-2026-rebalance-rend-cleave", "topic": "combat meta 2025-2026", "statement": "A January 2026 rebalance added the combat AoE Combat Masteries Rend and Cleave (post-wiki - a masteries catalog gap; check /cm in game), and free CM resets were issued.", "src": "server-general-2026", "era": "2026-08"}
-  ]
+   ],
+   "era": null,
+   "src": "np-player-tested"
+  },
+  {
+   "id": "camp:red-wolf-camp",
+   "name": "Red Wolf Camp",
+   "camp_type": "creature grind camp",
+   "location": "West of Pelagiad on the road to Balmora",
+   "mobs": [
+    "Red Wolf"
+   ],
+   "bosses": [
+    {
+     "name": "Ol' Fangtooth",
+     "notable_drops": [],
+     "notes": "Confirmed grind-camp boss (also written Ole' Fangtooth)."
+    }
+   ],
+   "mechanics": [
+    {
+     "statement": "Level range 12-20 (Low End); quest-giver Corison Dalvilu at the Halfway Tavern in Pelagiad trades 4 Chipped Wolf Claws for 56,000 EXP; approx. 1-3k EXP per mob.",
+     "src": "np-player-notes"
+    },
+    {
+     "statement": "Per the community wiki, Red Wolves are intended for levels 12-20 via the Corison Dalvilu quest at the Halfway Tavern in Pelagiad.",
+     "src": "np-wiki"
+    },
+    {
+     "statement": "Rated entry/novice level in community difficulty tiering.",
+     "src": "np-player-notes"
+    }
+   ],
+   "era": null,
+   "src": "np-player-notes"
+  },
+  {
+   "id": "camp:kagouti-camp",
+   "name": "Kagouti Camp",
+   "camp_type": "creature grind camp",
+   "location": "South of Balmora, across the river from Shulk Egg Mine; a newer Kagouti camp also sits next to a Shalk camp south-southwest of Vos",
+   "mobs": [
+    "Kagouti"
+   ],
+   "bosses": [
+    {
+     "name": "Rudy Kagouti",
+     "notable_drops": [],
+     "notes": "Camp boss."
+    }
+   ],
+   "mechanics": [
+    {
+     "statement": "Level range 21-29 (Low End); quest-giver Corison Dalvilu at the Halfway Tavern in Pelagiad trades 4 Thick Kagouti Hide for 177,600 EXP; approx. 8k EXP per mob.",
+     "src": "np-player-notes"
+    },
+    {
+     "statement": "Per the community wiki, Kagoutis are intended for levels 21-29 via the Corison Dalvilu quest at the Halfway Tavern in Pelagiad.",
+     "src": "np-wiki"
+    },
+    {
+     "statement": "Disputed tankiness claim: a player exaggerated that camp mobs have 10k HP for only 3k-4k exp; the server dev responded that Kagouti Camp mobs do not actually have 10,000 HP, and camps overall die much faster when players group up and grind together.",
+     "src": "np-contested"
+    },
+    {
+     "statement": "Camp mobs give the same MP (experience) as normal overworld Kagouti despite having much more HP, and suffer from the same desync issues seen at other camps.",
+     "src": "np-player-tested"
+    },
+    {
+     "statement": "Shalk and Kagouti camps drop quest items that can be turned in for 3 tokens a pop, or 6 with a todd's boon.",
+     "src": "np-player-notes"
+    },
+    {
+     "statement": "Color-coded red on the shared community camp map.",
+     "src": "np-player-notes"
+    }
+   ],
+   "era": null,
+   "src": "np-player-tested"
+  },
+  {
+   "id": "camp:shalk-camp",
+   "name": "Shalk Camp",
+   "camp_type": "creature grind camp",
+   "location": "South-southwest of Vos, right next to a newer Kagouti camp",
+   "mobs": [
+    "Shalk"
+   ],
+   "bosses": [],
+   "mechanics": [
+    {
+     "statement": "Drops quest items that can be turned in for 3 tokens a pop, or 6 with a todd's boon.",
+     "src": "np-player-notes"
+    }
+   ],
+   "era": null,
+   "src": "np-player-tested"
+  },
+  {
+   "id": "camp:skeleton-camp",
+   "name": "Skeleton Camp",
+   "camp_type": "creature grind camp",
+   "location": "East of Urshilaku Camp",
+   "mobs": [
+    "Skeleton",
+    "Skeleton Prophet"
+   ],
+   "bosses": [],
+   "mechanics": [
+    {
+     "statement": "Level range 31-39 (Mid-High End); quest-giver Sergeant Strugol west of the camp trades 4 Insignia Rings for 395,000 EXP; approx. 60k EXP per mob.",
+     "src": "np-player-notes"
+    },
+    {
+     "statement": "Skeleton and Ogrim camp mobs have a bit more HP than Kagouti camp mobs, per the server dev.",
+     "src": "np-dev"
+    },
+    {
+     "statement": "Skeletons at camps are believed to cast Absorb HP.",
+     "src": "np-speculation"
+    },
+    {
+     "statement": "The invisible-mesh helmet trick requires a rare drop from the Skeleton Prophets at this camp.",
+     "src": "np-player-notes"
+    },
+    {
+     "statement": "Color-coded white on the shared community camp map.",
+     "src": "np-player-notes"
+    },
+    {
+     "statement": "Bthuand is a skeleton-mob hub with Hive Scribs within its ruins - possibly a separate/earlier skeleton-mob location from this camp.",
+     "src": "np-player-notes"
+    }
+   ],
+   "era": null,
+   "src": "np-player-tested"
+  },
+  {
+   "id": "camp:ogrim-camp",
+   "name": "Ogrim Camp",
+   "camp_type": "creature grind camp",
+   "location": "Southeast (also described as east) of Valenvaryon Stronghold",
+   "mobs": [
+    "Ogrim"
+   ],
+   "bosses": [],
+   "mechanics": [
+    {
+     "statement": "Level range 46+ (Mid End); quest-giver Tribeorsimer Agrum on the coast northwest of the camp trades 4 Tribal Rings for 1,156,531 EXP; approx. 90k EXP per mob.",
+     "src": "np-player-notes"
+    },
+    {
+     "statement": "Skeleton and Ogrim camp mobs have a bit more HP than Kagouti camp mobs, per the server dev.",
+     "src": "np-dev"
+    },
+    {
+     "statement": "Can generally be cleared with a default nuke method.",
+     "src": "np-speculation"
+    },
+    {
+     "statement": "Color-coded green on the shared community camp map.",
+     "src": "np-player-notes"
+    },
+    {
+     "statement": "Assurnabitashpi is a hub of Clannfears and Ogrims - possibly a separate/earlier ogrim-mob location from this camp.",
+     "src": "np-player-notes"
+    }
+   ],
+   "era": null,
+   "src": "np-player-tested"
+  },
+  {
+   "id": "camp:winged-twilight-camp",
+   "name": "Winged Twilight Camp (Bird Camp)",
+   "camp_type": "creature grind camp",
+   "location": "Ald Redaynia (also listed as Ald Redanya), an island north of Urshilaku Camp",
+   "mobs": [
+    "Winged Twilight"
+   ],
+   "bosses": [
+    {
+     "name": "Twilight Matriarch (Twilight camp boss)",
+     "notable_drops": [],
+     "notes": "Casts a blind effect plus a damage nuke with a Fire Resistance debuff attached; described as essentially a weaker version of the Morroween Jack boss - less health, and it floats."
+    }
+   ],
+   "mechanics": [
+    {
+     "statement": "Camp mobs cast Paralyze (duration unknown).",
+     "src": "np-speculation"
+    },
+    {
+     "statement": "High End level range; approx. 90k EXP per mob.",
+     "src": "np-player-notes"
+    },
+    {
+     "statement": "Along with the Hunger camp, this camp is much harder than the other creature camps (Kagouti, Skeleton, Ogrim, Mudcrab).",
+     "src": "np-player-tested"
+    }
+   ],
+   "era": null,
+   "src": "np-player-notes"
+  },
+  {
+   "id": "camp:hunger-camp",
+   "name": "Hunger Camp",
+   "camp_type": "creature grind camp",
+   "location": "South of Falensarano on the Ashen Hills",
+   "mobs": [
+    "Hunger"
+   ],
+   "bosses": [],
+   "mechanics": [
+    {
+     "statement": "Level range 46+ (Mid-High End); quest-giver Eats-in-Shadows outside Andules Tomb trades 4 Hunger Leg Tibia for 957k EXP.",
+     "src": "np-player-notes"
+    },
+    {
+     "statement": "The Absorb HP effect used by Hungers reflects for 225 for 3; the base magic resistance of Hungers is unknown.",
+     "src": "np-player-notes"
+    },
+    {
+     "statement": "Hungers are believed to use Absorb HP.",
+     "src": "np-speculation"
+    },
+    {
+     "statement": "Along with the Winged Twilight camp, this camp is much harder than the other creature camps (Kagouti, Skeleton, Ogrim, Mudcrab).",
+     "src": "np-player-tested"
+    }
+   ],
+   "era": null,
+   "src": "np-player-notes"
+  },
+  {
+   "id": "camp:druid-camp",
+   "name": "Druid Camp (Unkempt Druids)",
+   "camp_type": "creature grind camp",
+   "location": "West of Ahemmusa Camp; the Druid boss is located next to Tel Vos",
+   "mobs": [
+    "Unkempt Druid"
+   ],
+   "bosses": [
+    {
+     "name": "Druid boss",
+     "notable_drops": [],
+     "notes": "Casts a nasty shock spell; located next to Tel Vos."
+    }
+   ],
+   "mechanics": [
+    {
+     "statement": "Mid-High End level range; approx. 65k EXP per mob.",
+     "src": "np-player-notes"
+    },
+    {
+     "statement": "Druids die in about one spell cycle, contrasted with the much tankier Aleft robotic enemies.",
+     "src": "np-player-notes"
+    },
+    {
+     "statement": "The Druids can reportedly deal around 300 poison damage with no resists (secondhand, unverified).",
+     "src": "np-speculation"
+    },
+    {
+     "statement": "Can generally be cleared with a default nuke method.",
+     "src": "np-speculation"
+    },
+    {
+     "statement": "Tied to the Were-Hunter questline, like the Scions camp.",
+     "src": "np-player-notes"
+    }
+   ],
+   "era": null,
+   "src": "np-player-notes"
+  },
+  {
+   "id": "camp:scions-camp",
+   "name": "Scions Camp",
+   "camp_type": "creature camp (questline-tied)",
+   "location": "Reported northwest of Suran above the lake; conflicting reports place a scion cave at the map location labeled Blood Matron's Crypt, and another listing places it in a cave northeast of Moonmoth Fort - the corpus does not resolve these discrepancies",
+   "mobs": [
+    "Scion"
+   ],
+   "bosses": [],
+   "mechanics": [
+    {
+     "statement": "Tied to the Were-Hunter questline; the server dev confirmed the camp location is intentionally kept off the main creature-camp map/wiki since it is questline content rather than a normal XP-grinding camp, though it can still be grinded.",
+     "src": "np-dev"
+    },
+    {
+     "statement": "Listed as High-High End level range.",
+     "src": "np-player-notes"
+    },
+    {
+     "statement": "Location conflict flagged: northwest of Suran above the lake vs. the Blood Matron's Crypt map label vs. a cave northeast of Moonmoth Fort; unresolved.",
+     "src": "np-contested"
+    }
+   ],
+   "era": null,
+   "src": "np-player-notes"
+  },
+  {
+   "id": "camp:aleft-camp",
+   "name": "Aleft Camp (Automatons / Dwemer)",
+   "camp_type": "creature grind camp",
+   "location": "At Aleft, south of Gnaar Mok",
+   "mobs": [
+    "Dwemer automaton"
+   ],
+   "bosses": [],
+   "mechanics": [
+    {
+     "statement": "Level range 46+ (Mid-High End); quest-giver Tinkerer Amaund at Gnaar Mok trades 4 Bronze Sprockets for 862k EXP; approx. 110k EXP per mob.",
+     "src": "np-player-notes"
+    },
+    {
+     "statement": "Farming the camp (killing its 16 creatures and tenderizing bodies each round) yields around 25 Scrap Metal on average per round.",
+     "src": "np-player-tested"
+    },
+    {
+     "statement": "Even with The Luck buff active, farming yielded only about 3 Bronze Sprockets a round on average, prompting suspicion the drop rate was nerfed or a boost was not applying.",
+     "src": "np-player-tested"
+    },
+    {
+     "statement": "The robotic enemies are notably tanky compared to camps like Druids; farming efficiently mainly makes sense with The Luck buff and Magicka potions to chug.",
+     "src": "np-player-notes"
+    },
+    {
+     "statement": "Can generally be cleared with a default nuke method.",
+     "src": "np-speculation"
+    },
+    {
+     "statement": "Adept-level difficulty; dangerous even to mid-level-geared characters.",
+     "src": "np-player-notes"
+    }
+   ],
+   "era": null,
+   "src": "np-player-notes"
+  },
+  {
+   "id": "camp:dreugh-camp",
+   "name": "Dreugh Camp",
+   "camp_type": "creature grind camp",
+   "location": "Koal Cave near Gnisis",
+   "mobs": [
+    "Dreugh"
+   ],
+   "bosses": [],
+   "mechanics": [
+    {
+     "statement": "Mid-High End level range; approx. 150k EXP per mob.",
+     "src": "np-player-notes"
+    },
+    {
+     "statement": "Dreugh are farmed in melee via Bravo or Minstrel builds.",
+     "src": "np-speculation"
+    },
+    {
+     "statement": "Ghost-like weapon items sometimes visible (but not lootable) at the cave are weapons the Dreugh NPCs internally use; they appear when the server desyncs, are not intended as player loot, and one that was successfully looted disappeared immediately.",
+     "src": "np-player-notes"
+    },
+    {
+     "statement": "Expert-level difficulty; drops level 50/60 items.",
+     "src": "np-player-notes"
+    },
+    {
+     "statement": "As of 2026, the dreugh cave remains the XP meta (approx. best XP camp) versus the new fire camp, which is a drops camp.",
+     "src": "igc-2026-08"
+    }
+   ],
+   "era": null,
+   "src": "np-player-notes"
+  },
+  {
+   "id": "camp:frost-giant-camp",
+   "name": "Frost Giant Camp",
+   "camp_type": "creature grind camp / world boss",
+   "location": "West of Skaal Village (Solstheim)",
+   "mobs": [
+    "Frost Giant"
+   ],
+   "bosses": [
+    {
+     "name": "Frost giant boss",
+     "notable_drops": [],
+     "notes": "Can one-shot for over 1000 HP while standard healing spells are capped at 100 points per second, making a dedicated healer alone insufficient. Has a spell-speed increase, but a fast enough character can dodge many of its spells. Demoralize can make it flee until it gets stuck on terrain."
+    }
+   ],
+   "mechanics": [
+    {
+     "statement": "Level range 56+ (High-High End); quest-giver Giant Slayer Derkev at Skaal Village trades 3 Frost Giant Shields for 1.5m EXP; quest-giver Leigh Roses at the Altar of Thrond trades 4 Frost Giant Glyphs for 1.8m EXP; approx. 175k EXP per mob.",
+     "src": "np-player-notes"
+    },
+    {
+     "statement": "A wiki-sourced Collection Quests table lists the Frost Giant Camp turn-in: Frost Giant Glyph x4 to Leigh Roses at the Altar of Thrond grants Mastery XP 1,800,000 (same value as the 1.8m EXP figure, only phrased differently).",
+     "src": "np-wiki"
+    },
+    {
+     "statement": "The server dev recalled that frost giants used to have a pre-cast travel speed boost, based on what he had been told.",
+     "src": "np-dev"
+    },
+    {
+     "statement": "Suggested tactics (speculative): use Banish/Reflect and Arcana Overload to strip the boss's defenses, then apply movement-denial effects; or spam healing potions while keeping a Dispel potion hotkeyed.",
+     "src": "np-speculation"
+    },
+    {
+     "statement": "Frost Giants are farmed as werewolf or via chain-cast.",
+     "src": "np-speculation"
+    },
+    {
+     "statement": "Decrepit Cage rare-drop source is contested: after farming billions of xp at the Frost Giant camp (and watching another player farm 100 billion xp there) without a single drop, one player eventually obtained one from the boss Cursebone; a second player also only ever saw Decrepit Cage drop once, from Cursebone. A third player farmed roughly half a dozen Ravenback Prophet bosses without seeing it, ruling out Ravenback Prophet but not further confirming Cursebone.",
+     "src": "np-contested"
+    }
+   ],
+   "era": null,
+   "src": "np-player-notes"
+  },
+  {
+   "id": "camp:blood-matrons-crypt",
+   "name": "Blood Matron's Crypt",
+   "camp_type": "dungeon grind camp",
+   "location": "North of Saren Ancestral Tomb, near Missamsi and Sulipund",
+   "mobs": [],
+   "bosses": [
+    {
+     "name": "Blood Matron crypt boss",
+     "notable_drops": [],
+     "notes": "Reflect works against it, but killing things this way can take about a half hour."
+    }
+   ],
+   "mechanics": [
+    {
+     "statement": "Ranked as one of the hardest camps (tier 12 of 13); not recommended below level 60 without gear prep.",
+     "src": "np-player-notes"
+    },
+    {
+     "statement": "Can generally be cleared with a default nuke method.",
+     "src": "np-speculation"
+    }
+   ],
+   "era": null,
+   "src": "np-player-tested"
+  },
+  {
+   "id": "camp:tomb-of-the-desiccator",
+   "name": "Tomb of the Desiccator (Dry Tomb)",
+   "camp_type": "dungeon grind camp",
+   "location": "On an island roughly between Drethan Ancestral Tomb and Setus Egg Mine, southwest of Sanni",
+   "mobs": [],
+   "bosses": [
+    {
+     "name": "Zin the Dessicato",
+     "notable_drops": [],
+     "notes": "Has an associated grind camp, contrary to an initial guide draft that omitted it."
+    }
+   ],
+   "mechanics": [
+    {
+     "statement": "Ranked as the hardest camp (tier 13 of 13).",
+     "src": "np-player-notes"
+    },
+    {
+     "statement": "Rumored (secondhand, unconfirmed) to favor a double or triple werewolf setup for farming.",
+     "src": "np-speculation"
+    }
+   ],
+   "era": null,
+   "src": "np-player-tested"
+  },
+  {
+   "id": "camp:frost-atronach-camp-addadshashanammu",
+   "name": "Frost Atronach Camp (Addadshashanammu)",
+   "camp_type": "elemental tier-1 world boss camp",
+   "location": "Addadshashanammu, Bitter Coast Region",
+   "mobs": [
+    "Frost Atronach"
+   ],
+   "bosses": [
+    {
+     "name": "Icy Jack",
+     "notable_drops": [
+      "The Shining Polaris (rarest, Long Blade 1H)",
+      "Starfrost Cuirass",
+      "Ice Armor Set",
+      "unenchanted Ice Armor Greaves",
+      "Frost Atronach Tome",
+      "5 Tokens (every time)"
+     ],
+     "notes": "Giant Frost Atronach. The server dev confirmed it is intentional that Icy Jack does not drop a corresponding rare weapon (unlike Gertrude, Inferno, and Shadowgale)."
+    },
+    {
+     "name": "Gertrude",
+     "notable_drops": [
+      "Glacier Splitter (Axe 1H)",
+      "Frost Eyed Leather Tunic",
+      "Chilling Fur Tunic",
+      "Bear Armor Set",
+      "Gertrude Shirt",
+      "Grizzly Bear Tome",
+      "5 Tokens (every time)"
+     ],
+     "notes": "Giant Bear, secondary boss at the same camp. The server dev confirmed Glacier Splitter is a Gertrude drop."
+    }
+   ],
+   "mechanics": [
+    {
+     "statement": "One of the original (2020-era) elemental tier-1 world boss camps. Bosses drop five server tokens and lesser items (raw stalhrim, bear pelts, fire and frost salts). As of 2020-03-10 there were THREE extremely rare item drops total across the elemental camps, of which only the Voltaic Spear was then known.",
+     "src": "np-player-tested"
+    },
+    {
+     "statement": "The server dev confirmed the ice camp has 3 custom armor pieces beyond the basic Ice Armor drops, and that 3 armor pieces were missing from the documented ice camp drop chart at the time; he also noted there are a lot of possible armor pieces that can drop from camp bosses.",
+     "src": "np-dev"
+    },
+    {
+     "statement": "Boss atronachs at a farming camp respawn 1 hour after being killed.",
+     "src": "np-player-notes"
+    },
+    {
+     "statement": "Ice camp has the best raw token farming rate because the spawns are clustered close together.",
+     "src": "np-player-notes"
+    },
+    {
+     "statement": "An early report attributed a secondary ice-camp boss called Bishop-O with Adamantium armor drops; this was later corrected - Bishop O-5 belongs to the storm camp at Ebernanit.",
+     "src": "np-contested"
+    }
+   ],
+   "era": null,
+   "src": "np-player-tested"
+  },
+  {
+   "id": "camp:fire-atronach-camp-nchuleftingth",
+   "name": "Fire Atronach Camp (north of Nchuleftingth)",
+   "camp_type": "elemental tier-1 world boss camp",
+   "location": "Molag Amur Region, north of Nchuleftingth. History: first identified near Erabenimsun Camp / at Mzanchend, then reported relocated to just SE of Galom Daeus and SW of Shushan (2020-02-27), with the settled chart location north of Nchuleftingth",
+   "mobs": [
+    "Flame Atronach"
+   ],
+   "bosses": [
+    {
+     "name": "Inferno",
+     "notable_drops": [
+      "Infernal Blade (rarest, Long Blade 1H)",
+      "Scorched Earth (Blunt 1H; Ebony Mace: on strike Weakness to Fire 15% for 10s, touch Fire damage 10 to 5pts, self Resist Fire 15% for 10s)",
+      "Flame Etched Chestguard (Royal Guard cuirass, heavy armor, CE Resist Fire 15%, Fortify Endurance 20pts, Fortify Strength 17pts)",
+      "Fire Newt Splint (Imperial Templar cuirass with Her Hands pauldrons, light armor, CE Resist Fire 15%, Fortify Intelligence 30pts, Fortify Willpower 7pts)",
+      "Firedweller's Tunic (Gah Julan cuirass, medium armor, Resist Fire 15%, Fortify Strength 25pts, Fortify Agility 12pts)",
+      "Flame Atronach Tome",
+      "5 tokens (every time)"
+     ],
+     "notes": "Giant Fire Atronach."
+    },
+    {
+     "name": "Matches",
+     "notable_drops": [
+      "Nordic Mail Armor Set",
+      "5 tokens (every time)"
+     ],
+     "notes": "Miniature/small Flame Atronach. Cannot drop a unique enchanted weapon (armor only), confirmed intentional by the server dev."
+    }
+   ],
+   "mechanics": [
+    {
+     "statement": "Each camp boss drops 5 tokens and lots of gems; grouping up is recommended to get the most out of the tokens.",
+     "src": "np-player-tested"
+    },
+    {
+     "statement": "An early guess from a dev video mapped the Infernal Blade to the flame atronach boss, another ultra-rare weapon to the frost atronach boss, and the Voltaic Spear to the storm atronach boss.",
+     "src": "np-speculation"
+    }
+   ],
+   "era": null,
+   "src": "np-player-tested",
+   "status": "long-standing",
+   "note_disambiguation": "Pre-2026 captures, undated. This is the permanent tier-1 elemental camp — NOT the same camp as camp:infernal-flame-atronach-camp (the 2026 'Fire Camp' event west of Erabenimsum). When a player says 'the fire camp' in 2026, they usually mean that one; ask if unclear."
+  },
+  {
+   "id": "camp:storm-atronach-camp-ebernanit",
+   "name": "Storm Atronach Camp (Ebernanit)",
+   "camp_type": "elemental tier-1 world boss camp",
+   "location": "Ebernanit, Ashlands Region",
+   "mobs": [
+    "Storm Atronach"
+   ],
+   "bosses": [
+    {
+     "name": "Shadowgale",
+     "notable_drops": [
+      "Voltaic Spear (rarest)",
+      "Vortex Scimitar (Ebony Scimitar; on strike Weakness to Shock 15% for 10s, touch Shock damage 10 to 5pts, self Resist Shock 15%)",
+      "Wind Golem Breastplate (Duke's Guard cuirass model, heavy armor, Resist Shock 15%, Fortify Endurance 30pts, Fortify Strength 7pts)",
+      "Skystrider Tunic (Imperial Dragon Scale, medium armor, CE Resist Shock 15%, Fortify Strength 20pts, Fortify Agility 17pts)",
+      "White Wind Tunic (Indoril-looking but Light Armor, CE Resist Shock 15%, Fortify Intelligence 25, Fortify Willpower 12)",
+      "Storm Atronach Tome",
+      "5 Tokens (every time)"
+     ],
+     "notes": "Giant Storm Atronach. Originally charted as Stormgale; renamed Shadowgale in the revised (dev-corrected) boss chart of 2020-03-11."
+    },
+    {
+     "name": "Bishop O-5",
+     "notable_drops": [
+      "Adamantium Armor Set",
+      "Steam Centurion Tome",
+      "5 Tokens (every time)"
+     ],
+     "notes": "Giant Dwemer Centurion, secondary boss. Drops armor only - no unique enchanted weapon, confirmed intentional by the server dev. Early reports misattributed it to the ice camp."
+    }
+   ],
+   "mechanics": [
+    {
+     "statement": "The server dev confirmed the Storm Atronach camp is meant to have a mini-boss like the Fire and Frost camps, but said (2020-02-28) he did not think it was spawning correctly and needed to look into it.",
+     "src": "np-dev"
+    },
+    {
+     "statement": "Confirmed spawn areas (2020-05-02): Icy Jack and Gertrude both spawn near Addadshashanammu (Bitter Coast); Inferno and Matches both spawn north of Nchuleftingth (Molag Amur); Shadowgale and Bishop O-5 both spawn near Ebernanit (Ashlands).",
+     "src": "np-player-tested"
+    }
+   ],
+   "era": null,
+   "src": "np-player-tested"
+  },
+  {
+   "id": "camp:roach-dremora-camp",
+   "name": "Roach / Dremora Camp (Kushtashpi)",
+   "camp_type": "creature grind camp / world boss",
+   "location": "Kushtashpi (also written Kushtapi)",
+   "mobs": [
+    "Dremora"
+   ],
+   "bosses": [
+    {
+     "name": "Roach",
+     "notable_drops": [
+      "Obliterator (rarest, Long Blade 1H; 100 EP enchant points, base Condition 3000/3000, Value 35000)",
+      "Last Resort",
+      "Runeblade (90 EP enchant points)",
+      "Stone Edge (Long Blade 2H)",
+      "Breastplate of Disbelief (Cuirass)",
+      "Subligar Of Loathing (Greaves)",
+      "Slayer's Set",
+      "Dremora Familiar Tome"
+     ],
+     "notes": "Tier 3 boss. Has levitation available but the server dev does not think he uses it."
+    }
+   ],
+   "mechanics": [
+    {
+     "statement": "Boss respawn timers server-wide range from 2 to 8 hours depending on the boss.",
+     "src": "np-player-notes"
+    },
+    {
+     "statement": "Subligar Of Loathing, the Slayer's Set, and Breastplate of Disbelief can also drop from regular (non-boss) Dremora at the camp, not just from the Roach boss - camp uniques can drop from trash mobs, not only the named boss.",
+     "src": "np-player-tested"
+    },
+    {
+     "statement": "Camp uniques documented while the camp was WIP: a Rotting Hide armor set, Slayer's pauldrons and bracer, Deadroth Hide Tunic (Value 21300), Belt of Divine Power (Value 17500, Fortify Strength 60 pts), Ring of the Creator, Silken Ring (Fortify Magicka 200 pts but drains Strength/Endurance/Agility/Willpower 15 pts each), and Staff of Secrets (Fortify Speed 30 pts, Fortify Magicka 150 pts).",
+     "src": "np-player-tested"
+    },
+    {
+     "statement": "Daedric tower shields do not drop from the separate fishing-boss camp; at a high enough player level a Golden Saint spawns once per server reset at Kushtapi.",
+     "src": "np-player-notes"
+    }
+   ],
+   "era": null,
+   "src": "np-player-tested"
+  },
+  {
+   "id": "camp:golden-saint-daedric-camp",
+   "name": "Golden Saint Spawns (Daedric Camp NNW of Cavern of the Incarnate)",
+   "camp_type": "high-level spawn farming spot",
+   "location": "Daedric camp north-northwest of the Cavern of the Incarnate",
+   "mobs": [
+    "Golden Saint"
+   ],
+   "bosses": [],
+   "mechanics": [
+    {
+     "statement": "Golden Saints spawn fairly reliably at a few spots once players are a high enough level; some spots have a respawn timer of roughly 45 minutes. Repeated grinding confirmed the timer at this camp is 45 to an hour.",
+     "src": "np-player-tested"
+    },
+    {
+     "statement": "Golden Saints on this server are equipped with fixed Sun Shields (a weaker Auriel's Shield) and an unlootable sword.",
+     "src": "np-player-notes"
+    }
+   ],
+   "era": null,
+   "src": "np-player-tested"
+  },
+  {
+   "id": "camp:skree-cavern-of-the-incarnate",
+   "name": "Skree (Cavern of the Incarnate)",
+   "camp_type": "world boss location / farming spot",
+   "location": "Cavern of the Incarnate, Valley of the Wind",
+   "mobs": [
+    "Cliff Racer"
+   ],
+   "bosses": [
+    {
+     "name": "Skree",
+     "notable_drops": [
+      "Skree's Plume (rarest, Short Blade 1H)",
+      "Stormfang (Long Blade 2H)",
+      "Racerbreak (Short Blade 1H)",
+      "Haakon's Lucky Break (Blunt 2H)",
+      "Whitewalker Robes",
+      "The Watchman's Eye",
+      "Cliffracer Tome",
+      "25 Tokens (every time)"
+     ],
+     "notes": "Tier 2 boss. The server dev noted Skree has a large-size reset/respawn issue similar to the Emperor Crab (wandering too far from spawn resets it)."
+    }
+   ],
+   "mechanics": [
+    {
+     "statement": "The Valley of the Wind / Cavern of the Incarnate area is a good farming spot for gems and cliff racer plumes due to unusually high cliff racer density, worth visiting despite the danger.",
+     "src": "np-player-notes"
+    }
+   ],
+   "era": null,
+   "src": "np-player-notes"
+  },
+  {
+   "id": "camp:fishing-boss-spawns",
+   "name": "Fishing Bosses (Dreughnaught and Lil Snappa)",
+   "camp_type": "fishing-summoned world bosses",
+   "location": "Summoned while fishing during rain/storm; observed at Suran (2021) and in the wilderness region between Khuul and Solstheim (2025); a known fish-boss spot is at approximately map coordinates -22, -13 in the Wilderness region, west of Ebonheart and south of Fort Frost",
+   "mobs": [],
+   "bosses": [
+    {
+     "name": "Dreughnaught",
+     "notable_drops": [
+      "Dreugh Stalker Helm",
+      "Monstrous Claw",
+      "Ancient Amulet Mould",
+      "Dreugh Familiar Tome",
+      "0-150 tokens",
+      "23 dreugh wax and 50 tokens on one observed kill (no unique that time)"
+     ],
+     "notes": "Tier 2; biggest fishing-spawned boss encountered, physically clipping into terrain due to its size. Hit a player for 600 damage in a single strike (2021). 2025 re-observation (flagged as possibly a mechanic revision): spawned around 7:44 AM; hits for roughly 800-1k melee damage; once hit, blinds the player and inverts their movement controls (camera unaffected) for about 10 seconds; the player cannot surface above water once engaged; attacks can be dodged by circling it while landing perfect combos."
+    },
+    {
+     "name": "Lil Snappa",
+     "notable_drops": [
+      "Giant Fang",
+      "Ancient Ring Mould",
+      "Slaughterfish Familiar Tome",
+      "0-150 tokens",
+      "150 tokens on one observed kill"
+     ],
+     "notes": "Tier 2 second fishing boss. 2025 observation: spawned around 7 PM at the same location as Dreughnaught; deals similar melee damage but applies poison (roughly 40 total damage at 70% resist, lasting about 2 minutes) instead of blindness, and also inverts controls; its large hitbox and erratic attack animations make perfect combos harder to land."
+    }
+   ],
+   "mechanics": [
+    {
+     "statement": "Both fishing bosses appear to respawn roughly every 5 hours and seem to only spawn during dawn/dusk (about 6-9 AM/PM); the invert-controls effect can sometimes bug out and leave the player unable to move, and occasionally seems to trigger just from being near the boss rather than only from being hit.",
+     "src": "np-speculation"
+    },
+    {
+     "statement": "Fishing bosses can be killed using ground-target nuke spells, but bosses can partially clip through the floor; on-touch spells are safer in case of clipping or when fighting near NPCs.",
+     "src": "np-player-tested"
+    },
+    {
+     "statement": "Per in-game chat, a fish boss spawn requires being a high-level fisherman using Master Bait and a good rod plus a special rod wiggle technique.",
+     "src": "np-player-notes"
+    }
+   ],
+   "era": null,
+   "src": "np-player-tested"
+  },
+  {
+   "id": "camp:infernal-flame-atronach-camp",
+   "name": "Infernal Flame Atronach Camp (2026 Fire Camp)",
+   "camp_type": "creature drops camp / world bosses",
+   "location": "West of the Erabenimsum camp / north of Molag Mar; free teleport via Berene clan amulet",
+   "mobs": [
+    "Infernal Flame Atronach"
+   ],
+   "bosses": [
+    {
+     "name": "Blaze",
+     "notable_drops": [
+      "Infernal Blade (85 top damage, upgraded up to 115)",
+      "top-damage sorcerer staff",
+      "Incandescent Dagger (confirmed hidden proc per server-items)"
+     ],
+     "notes": "The big boss. Hit a player for 382 fire dmg THROUGH 85% resist - that hit was fire damage, not physical."
+    },
+    {
+     "name": "Cinder",
+     "notable_drops": [],
+     "notes": "The small boss; spawns approximately 2x as often as Blaze. One observed respawn took less than 4 hours, but the respawn timer is always random, so it will not always be under 4 hours."
+    }
+   ],
+   "mechanics": [
+    {
+     "statement": "Camp opened 2026-08-02.",
+     "src": "igc-2026-08"
+    },
+    {
+     "statement": "Boss spawns are semi random, 4-8 hours+.",
+     "src": "igc-2026-08"
+    },
+    {
+     "statement": "Camp mobs cast -70 Weakness to Fire on the player, plus reflect/absorb magic.",
+     "src": "igc-2026-08"
+    },
+    {
+     "statement": "The boss hit a player for 382 fire dmg through 85% resist.",
+     "src": "igc-2026-08-measured"
+    },
+    {
+     "statement": "Described by a player as the hardest camp in the game.",
+     "src": "igc-2026-08"
+    },
+    {
+     "statement": "XP is approx. 180k per atronach - it is a DROPS camp, not an XP camp (the dreugh cave remains the XP meta).",
+     "src": "igc-2026-08"
+    },
+    {
+     "statement": "Required prep (community consensus, Aug 2026): fire resist 85-100%+ - because of the -70 weakness debuff, resist 85 becomes 15 when debuffed unless over-cap slack absorbs it; a raw resist stack should exceed 155 to stay capped while debuffed. Example raw fire stack: 35 racial + 75 Ebony Mail + 30 Denstagmer + 25 Fireproof = 165, which stays 85+ through the debuff.",
+     "src": "igc-2026-08"
+    },
+    {
+     "statement": "Required prep: Resist Magicka plus dispel access for their casts; the mobs' reflect/absorb magic punishes the player's own casting, while melee-proc builds (no cast) are unaffected.",
+     "src": "igc-2026-08"
+    },
+    {
+     "statement": "Required prep: heavy potion use; expect deaths (one player reported 30+).",
+     "src": "igc-2026-08"
+    },
+    {
+     "statement": "Known drops over 3 weeks of chat: Flame Mail set, Lava set, a stealth set, Scorched pieces (Lv.60 Combat tags), Incandescent Dagger (Blaze), Infernal Blade (Blaze), top sorcerer staff (Blaze), Flame Atronach summon tome (approx. 100k trade value), effigies, elemental flame dust, and fire salts (flooding the market).",
+     "src": "igc-2026-08"
+    },
+    {
+     "statement": "Attack profile: the atronach mobs do not hit like a truck in melee - the threat is fire spell spam, which hits at any range; melee range is not the main risk, so dagger closeness costs little at this camp. Resist stack plus over-cap slack against the -70 debuff is the defense. A reach alternative if melee retaliation ever matters: Arm of the Sun, 175%/10.8ft.",
+     "src": "igc-2026-08"
+    },
+    {
+     "statement": "The camp drops its own +80 Short Blade gear; farming Cinder between Blaze spawn windows is a viable pattern.",
+     "src": "igc-2026-08"
+    }
+   ],
+   "era": "2026-08",
+   "src": "igc-2026-08",
+   "status": "current-era",
+   "note_disambiguation": "Opened 2026-08-02. Distinct from the long-standing Fire Atronach Camp north of Nchuleftingth (camp:fire-atronach-camp-nchuleftingth)."
+  }
+ ],
+ "events": [
+  {
+   "id": "event:morroween",
+   "name": "Morroween (Halloween Event)",
+   "schedule": "October (Halloween season); the Jack boss spawns once per night in Balmora at the 9th hour of in-game night - roughly once every 48 minutes of real time; later measured as spawning at 9pm in-game and despawning at 6am, respawning roughly every 50 minutes (48 minutes theoretical on vanilla timescale, ~51 minutes observed)",
+   "mechanics": [
+    {
+     "statement": "Trick-or-treat NPCs are known to spawn in: Sadrith Mora, Molag Mar, Suran, Vivec, Ebonheart, Pelagiad, Seyda Neen, Hla Oad, Gnaar Mok, Gnisis, Khuul, Ald Ruhn, Caldera (outside Ghorak Manor), Dagon Fel, Vos (at the tradehouse), and Tel Mora. They are easier to spot at night because they glow red.",
+     "src": "np-player-notes"
+    },
+    {
+     "statement": "Activating all the graves/caskets around Balmora grants a special title (Spooktober). Casket locations include: one in front of the Fighters Guild, one near the Wise Woman's house, one near the Thieves Guild, one near Caius's house, and the rest near the Temple. Later described as 21 total Halloween caskets in Balmora (8 in the East part of town, 13 in the West), granting the titles Mortician and Undertaker.",
+     "src": "np-player-notes"
+    },
+    {
+     "statement": "You need to be in a group for everyone in it to get Story Teller points from a Jack kill.",
+     "src": "np-player-notes"
+    },
+    {
+     "statement": "The Now You Know Jack achievement (surviving Jack's attack on Balmora) was obtainable in 2022 when Jack attacked Balmora directly, NOT obtainable in 2023 when Jack moved to his own realm, and obtainable again in 2024 even though Jack still attacks from his own realm.",
+     "src": "np-contested"
+    },
+    {
+     "statement": "If the Jack boss gets stuck while phased (ghost mode) because the totems have disappeared, having everyone leave the cell and re-enter seems to un-bug the totems.",
+     "src": "np-player-tested"
+    },
+    {
+     "statement": "An efficient trick-or-treat travel route (Strider to Vivec/Molag Mar/Suran, jump to Pelagiad, jump to Seyda Neen, Strider to Gnisis/Khuul, boat around Dagon Fel/Tel Mora/Vos/Sadrith Mora/Ebonheart/Hla Oad/Gnaar Mok, jump to Ald Ruhn, mage-teleport to Caldera) costs under 500 gold total with high Personality.",
+     "src": "np-player-tested"
+    },
+    {
+     "statement": "Jack has a normal shield effect and some reflect; damage-attribute rings landed with little reflected, suggesting his reflect is not very high. Avoid self-cast offensive enchants/spells that could reflect and kill you; if you fully resist the element you attack with, his reflect cannot hurt you back with it.",
+     "src": "np-player-tested"
+    },
+    {
+     "statement": "Weakness-to-magicka/Absorb-health ring spam had no noticeable effect on Jack; weakness-effect stacking does not work on him, but a Weakness to Magicka + Absorb Health + Damage Health enchant combo still deals damage. He seems to resist magic effects fairly well.",
+     "src": "np-player-tested"
+    },
+    {
+     "statement": "Hitting Jack seems to require higher Agility/weapon skill: a character with 45 Agility/81 skill was missing him, while 126 Agility/110 skill hit reliably.",
+     "src": "np-player-tested"
+    },
+    {
+     "statement": "Jack did not appear to regenerate health during the fight, and he has a kill/despawn timer - he goes invisible for a while (undetectable even with Detect Creature) then disappears.",
+     "src": "np-player-tested"
+    },
+    {
+     "statement": "Removing spam/AoE quickkey items before landing the killing blow helps avoid accidentally killing your whole party via reflect.",
+     "src": "np-player-tested"
+    },
+    {
+     "statement": "Nordic Silver Spears with Magicka Weakness plus a weakness-spam build took Jack down in about 1 minute 30 seconds; landing even a few hits at the very start counts for participation loot.",
+     "src": "np-player-tested"
+    },
+    {
+     "statement": "Due to desync, Jack's displayed health can lag behind actual health - players sometimes see him die at what looks like half HP remaining, and the desync can cause missed loot. The server dev confirmed Jack's health was too high (2021) because a health change was not accommodated alongside a related mechanic change, and said it would be nerfed slightly on the next reset.",
+     "src": "np-dev"
+    },
+    {
+     "statement": "If a group attacks Jack continuously, he gets stagger-locked and cannot cast his attack spell. Casting Demoralize on Jack causes him to flee.",
+     "src": "np-player-notes"
+    },
+    {
+     "statement": "Jack is not resistant to Fire, making it the best element to use against him.",
+     "src": "np-player-notes"
+    },
+    {
+     "statement": "Decrepit Bones from Jack can be fed to Horky at the Balmora River for masks or Gastric Cloud; each reward's price starts at 5 bones and increases by 5 bones for every additional item of that type already obtained; bones cannot be spent after the event ends. The gastric cloud acts like the sparkler item but applies a poison effect instead.",
+     "src": "np-player-notes"
+    },
+    {
+     "statement": "During the 2020 event, petting Horky through the interaction menu gives the option to buy racial masks and the fart wand, while hugging him unlocks a separate, larger purchasable inventory (masks, weapons, clothing, familiar tomes).",
+     "src": "np-player-tested"
+    },
+    {
+     "statement": "A special-event item cannot be handed off to another player after the fact; the intended recipient's character had to be online during the original event to receive it (server dev, regarding a sparkler event item).",
+     "src": "np-dev"
+    },
+    {
+     "statement": "If the event's rare unique item drop is not obtained by many players in a given year, it may return the next Halloween (speculation).",
+     "src": "np-speculation"
+    }
+   ],
+   "drops": [
+    "8-28 Decrepit Bones (always)",
+    "Morroween Hide Shirt (semi-rare; 75 enchant capacity)",
+    "Wings of the Queen of Bats (semi-rare; two-handed axe with drain-health-on-strike enchantment)",
+    "Unenchanted Daedric Longspear (semi-rare; 11.8ft reach, 10-50 damage)",
+    "Ring of Namira (rare; constant 15% reflect)",
+    "Bonekeeper Chestguard (very rare; medium armor that summons a skeleton minion with a daedric weapon for 10 seconds when the wearer is hit, 15-second cooldown between summons)"
+   ],
+   "src": "np-player-tested"
+  },
+  {
+   "id": "event:winter-holiday-new-life-festival",
+   "name": "Winter Holiday Event (New Life Festival / \"Jiubsmas\")",
+   "schedule": "December holiday season; ornament quest repeatable once per day during the event",
+   "mechanics": [
+    {
+     "statement": "The Uncle Sweetshare quest hides ornaments in Seyda Neen, Pelagiad, Tel Mora, Gnisis, Dagon Fel, Caldera, and Suran; ornaments are instanced per player, and the quest is repeatable once per day (dev-stated). Not all ornaments are literally on the decorated trees - some are hidden elsewhere in the town area.",
+     "src": "np-dev"
+    },
+    {
+     "statement": "Dev-acknowledged bug (2020): a pickable ornament located inside Uncle Sweetshare's own house was only meant as a non-pickable visual example (sourced from Balmora's tree) and is pickable due to an oversight; a fix was planned for the upcoming server reset. Only the Tel Mora tree and his house tree actually held pickable ornaments that year.",
+     "src": "np-dev"
+    },
+    {
+     "statement": "The quest can be completed twice, including once on an alt account; for the alt farming trick, give the alt about 2k gold and a broom, and make sure the alt starts the quest first.",
+     "src": "np-player-notes"
+    },
+    {
+     "statement": "The ornament quest is repeatable, but each individual ornament pickup is only available once per quest activation; you can pick up the quest multiple times without turning it in, but ornaments do not respawn until the active quest is turned in (confirmed as intended by the server dev).",
+     "src": "np-dev"
+    },
+    {
+     "statement": "There is no title associated with looting the winter-event snowball mounds (dev-stated).",
+     "src": "np-dev"
+    },
+    {
+     "statement": "Silt Striders could not be recalled during the winter event; recall was restored once the event ended (dev-stated).",
+     "src": "np-dev"
+    },
+    {
+     "statement": "Ornament spawn locations for a given run of the event were not changed and were the same as in server version 0.7 (dev-stated, 2022).",
+     "src": "np-dev"
+    },
+    {
+     "statement": "Doing large numbers of ornament runs (e.g. 200 of them) in search of a specific item is probably not worth it.",
+     "src": "np-player-tested"
+    },
+    {
+     "statement": "Speedrun route: Silt Strider/boat/Divine/Almsivi/Recall travel through Balmora, Suran, Seyda Neen, Pelagiad, Gnisis, Khuul, Dagon Fel, Tel Mora, Caldera, and back to Balmora; an optimized variant teleports/taxis from Suran instead of Seyda Neen. Total time for the optimized ornament-collection route is around 1:15. A route variant using the Berne amulet to warp to Galom Daeus is largely the same speed, saving only about 1 second at the very end; the jump-and-pickup from Greensch to the Caldera ornament takes about 12 seconds. An alternate Mark/Recall + propylon route reaches about three minutes with substantial running.",
+     "src": "np-player-tested"
+    },
+    {
+     "statement": "The present pool increases over the years, and items obtainable only through this event remain available indefinitely in future years; as of the end of the 2021 event the server dev believed there were probably still a couple of undiscovered items in the pool.",
+     "src": "np-dev"
+    },
+    {
+     "statement": "2024 (New Life Festival): every Gift Voucher trades for 1 present at a holiday tree (random items); unlike some previous years, every present has an equal chance of loot, and each present also grants 5 wrapping paper, tradeable at the recycler for items you did not get from presents.",
+     "src": "np-player-notes"
+    },
+    {
+     "statement": "2024 voucher sources: the Mizer near the bank (one-time quest, rewarding 25 vouchers and an exclusive 10-slot bag - highly recommended), Horky and Grandfather Frost (daily quests), and Da Greensh (daily for most of the month, unlimited from the 25th onward).",
+     "src": "np-player-notes"
+    },
+    {
+     "statement": "Grandfather Frost gives potions granting 2.5x Combat Mastery XP for 4 hours; the timer only counts down while sleeping or traveling, does not reset if you die, and pauses when you log off. This is the highest XP-multiplier potion available.",
+     "src": "np-player-notes"
+    },
+    {
+     "statement": "50 wrapping paper is a steep cost for Cheer currency, but you can get 1 free wrapping paper daily by visiting Grandfather Frost. Cheer currency and the recipes ranked below the SM Retort and above Blue Fire cannot be obtained from presents and must be bought from the recycler; those recipes are obtainable from purchasable holiday loot caches.",
+     "src": "np-player-notes"
+    },
+    {
+     "statement": "Making a brand-new character and doing every available holiday quest in a single day yielded around 40 vouchers, which converted to 200 wrapping paper.",
+     "src": "np-player-tested"
+    },
+    {
+     "statement": "Farming ornament runs for the 2024 event produced 4,000+ Torn Wrapping Paper wraps per one estimate; an accompanying screenshot shows a large total reading approximately 823346, though the crop makes the exact figure/label uncertain.",
+     "src": "np-contested"
+    },
+    {
+     "statement": "\"Jiubsmas\" is the community's name for this event (after Saint Jiub); items whose location reads \"Jiubsmas\" (e.g. Whitefang) are event-limited drops from this winter event. A stacking \"Jiubsmas Cheer\" 3x drop-rate boost has been reported during the event (player-reported).",
+     "src": "np-player-notes"
+    }
+   ],
+   "drops": [
+    "Large Bag of Goodies: can yield SecretMaster's Mortar and Pestle",
+    "Large Crate of Goodies (weapons pool): Infernal Blade, Eltonbrand, Voltaic Spear, Skee's Plume, the Obliterator, Spear of the Hunt, Aevar's Mace, Bipolar Blade, Hammer of Might (a 110 dmg hammer)",
+    "Large Crate of Curiosities: random gold between 10k-50k, Black Soul Gems; believed source of the 1500-soul soul gems",
+    "Large Chest of Goodies (armor pool): preenchanted Snow Wolf and Snow Bear armor pieces, a bear helm with Constant Effect Detect Animal, Helm of Tohan (medium armor, 150 enchant value), Shield of the Crab God",
+    "Small Chest of Goodies (clothing/jewelry pool): Ring of Hircine; players suspected other artifact rings like Barilzar's Mazed Band may drop too (speculation)"
+   ],
+   "src": "np-player-tested",
+   "aliases": [
+    "Jiubsmas",
+    "New Life Festival",
+    "Winter Holiday"
+   ]
+  },
+  {
+   "id": "event:hearts-day",
+   "name": "Heart's Day / Valentine's Event",
+   "schedule": "Mid-February; in 2025 the 2x Combat Mastery and 2x Tradeskill Mastery bonus ran for Heart's Day and the following week",
+   "mechanics": [
+    {
+     "statement": "The only NPCs you can turn Valentine's event arrows in to are Romieyo and Horky (dev-stated). Players can pet the NPC Horky. Horky will talk to you roughly every 60-80 seconds for reward redemption pacing.",
+     "src": "np-dev"
+    },
+    {
+     "statement": "Arrow turn-in tiers (2021, several dev-confirmed): 1 arrow = a 50pts Personality boost for 30 mins cast by Horky; 3 arrows = Love Potion no.9 (a separate reward from the 1-arrow buff); 5 arrows = Lovers Ring; 7 arrows = Hearts Day Bouquet; 10 arrows = Hearts Day Ring; 20 arrows = The Lover's Robe (50 EP); 25 arrows = The Lover's Shirt (75 EP, dev-corrected from a guess of 20 arrows); 30 arrows = Heart Day Furniture. Items requiring more than 10 arrows were the new items added in that update's iteration.",
+     "src": "np-dev"
+    },
+    {
+     "statement": "Conflict flagged: a 2020 report said the Lover's Ring cost 10 arrows, while the dev-stated 2021 table lists it at 5 arrows - likely a year-over-year change in the reward table rather than an error, since new higher-tier items were separately noted as added.",
+     "src": "np-contested"
+    },
+    {
+     "statement": "The Heart Sleeve Shield item is a Heart's Day event reward.",
+     "src": "np-player-notes"
+    },
+    {
+     "statement": "2025: three achievements - Wherefore Art Thou Romieyo? (log in during the event), How Romatic! (help Romieyo; grants title Hopeless Romatic), and How Sweet! (trade Heart Candy; grants title Sweetheart) - plus a set of No-Trade reward items: Love Potion No. 9, Heart Sleeve Shield, Ring of Adoration, Ring of Devotion, Ring of Love, The Lover's Robe, The Lover's Shirt, The Lovers Vest, Heart's Day Bouquet, Lover's Arrow x6, and a non-No-Trade Redware Lamp.",
+     "src": "np-player-tested"
+    },
+    {
+     "statement": "2025: during Heart's Day, creatures around the world can drop Lovely Flowers (No Trade); one player observed roughly an 80% drop rate while playing under The Luck birthsign, though unsure whether the sign was the cause.",
+     "src": "np-speculation"
+    },
+    {
+     "statement": "2025: giving 12 Lovely Roses to Romieyo (Balmora, behind the Lucky Lockup) yields 1 Heart Candy (No Trade); Jeweliette (Balmora, outside Milie Hastien: Fine Clothier) runs the Hearts Day Candy Exchange where Heart Candy can be traded for event items.",
+     "src": "np-player-tested"
+    }
+   ],
+   "drops": [
+    "Lover's Ring",
+    "Love Potion no.9",
+    "Hearts Day Bouquet",
+    "Hearts Day Ring",
+    "The Lover's Robe (50 EP)",
+    "The Lover's Shirt (75 EP)",
+    "Heart Day Furniture",
+    "Heart Sleeve Shield",
+    "Lovely Flowers (No Trade, world creature drop, 2025)",
+    "Heart Candy (No Trade, 2025)"
+   ],
+   "src": "np-dev"
+  },
+  {
+   "id": "event:eggstreme-egghunt",
+   "name": "Eggstreme Egghunt (Spring/Easter Event)",
+   "schedule": "Spring (Easter season)",
+   "mechanics": [
+    {
+     "statement": "An Exquisite Kwama Warrior boss spawns in the middle of Balmora at the Odai River once a player collects all 150 Exquisite Kwama Eggs. Only one can be summoned/alive at a time; the server dev confirmed only one spawn is allowed per account, though players can use alts to trigger more spawns.",
+     "src": "np-dev"
+    },
+    {
+     "statement": "Dev-acknowledged bug (2020): the egg-count script had a bug (from when the dev was new to Lua) that let a second warrior spawn after collecting eggs beyond the initial 150; it was not fixed that year since the event was nearly over, with a full script rewrite planned for the following year.",
+     "src": "np-dev"
+    },
+    {
+     "statement": "Only a Detect Key spell/enchant reveals hidden egg locations on the local map (available at Sirilonwe in the Vivec Mages Guild); a generic 300ft Detect enchant was tested and did not show eggs.",
+     "src": "np-player-tested"
+    },
+    {
+     "statement": "The NPC Dusty is located near the Abaesen-Pulu Egg Mine and reportedly must be approached with weapons sheathed or he disappears; a subsequent attempt by another player following this method still failed to find him (unverified).",
+     "src": "np-speculation"
+    }
+   ],
+   "drops": [
+    "Kwama Sundas Shoes (Drain Acrobatics 35pts Constant Effect, with a unique Bunnyhopping ability - jumping automatically when moving)",
+    "Daedric Sanctuary Amulet (teleports to Magas Volar; otherwise unobtainable on the server)",
+    "Kwama Sundas Gloves (25 Enchant Points, 5 more than regular Exquisite Gloves)",
+    "Golden Kwama Egg (unique Golden Egg quest-item variant worth 10000 Gold)",
+    "Flame/Shock/Frost/Poison/Magickguard Robes and Small/Large Kwama Eggs (considered the worst rewards - common vanilla items)"
+   ],
+   "src": "np-player-notes"
+  },
+  {
+   "id": "event:st-rapticks-day",
+   "name": "St. Raptick's / St. Patrick's Day Event (The Luck)",
+   "schedule": "The week of St. Patrick's Day (March)",
+   "mechanics": [
+    {
+     "statement": "The Luck is a limited-time event buff item obtainable only during the week of St. Patrick's Day, capped at 3 gems per character per year via a quest reward; holding unused gems across multiple years lets a player stockpile more than 3 at once.",
+     "src": "np-player-notes"
+    },
+    {
+     "statement": "Using The Luck grants the user and nearby party members double Mastery XP gain and doubled rare loot drops for 168 hours of played time (the timer does not count down while offline), and the effect is lost on death.",
+     "src": "np-player-notes"
+    },
+    {
+     "statement": "2026 notes: Enchanted Shamrock spawns for levels 1-20 in Bitter Coast/Ascadian Isles (St. Rapti spawns there too); Bewitched Shamrock spawns for roughly levels 21-49(ish) in West Gash/Sheogorad; Miraculous Shamrock spawns for roughly levels 50-60(ish) in Grazelands/Azura's Coast; the NPC Elona tells the player which Shamrock type they need. To obtain the Pack Rat familiar, a player must collect all three pieces of the permit.",
+     "src": "np-player-notes"
+    }
+   ],
+   "drops": [
+    "The Luck (buff gem, max 3 per character per year)",
+    "Pack Rat familiar (requires all three permit pieces)"
+   ],
+   "src": "np-player-notes"
+  },
+  {
+   "id": "event:july-4th",
+   "name": "July 4th Event",
+   "schedule": "Around July 4th; the 2020 edition ran for 3 days",
+   "mechanics": [
+    {
+     "statement": "Previous years just distributed Experimental Dwemer Explosives; the 2020 event had different/bigger event drops.",
+     "src": "np-dev"
+    }
+   ],
+   "drops": [
+    "Experimental Dwemer Explosives (earlier years)"
+   ],
+   "src": "np-dev"
+  },
+  {
+   "id": "event:fishing-tournament",
+   "name": "Fishing Events / Weekly Fishing Tournament",
+   "schedule": "Weekly tournament; periodic fishing events",
+   "mechanics": [
+    {
+     "statement": "Biggest-fish reports: 8.9 lbs in one report; around 15 lbs in another (roughly where tournament winners have landed); one player's biggest catch was 15.4 lbs.",
+     "src": "np-player-notes"
+    },
+    {
+     "statement": "The Outstanding Rod was earned by the top 3 players in the weekly fishing tournament, and it let one such player catch a fish weighing 10.3 lb, surpassing the previous 10 lb weight cap.",
+     "src": "np-player-tested"
+    },
+    {
+     "statement": "Handing in consecutive fish to Horky during a fishing event unlocks the achievement Now THIS Is Fireracing and the title Fire Chaser.",
+     "src": "np-player-tested"
+    },
+    {
+     "statement": "A Fish Boss has a marked spawn location in the West Gash Region (shown on the minimap).",
+     "src": "np-player-notes"
+    }
+   ],
+   "drops": [
+    "Outstanding Rod (top 3 weekly tournament reward)"
+   ],
+   "src": "np-player-notes"
+  },
+  {
+   "id": "event:anniversary",
+   "name": "NP Anniversary Event",
+   "schedule": "Recurs roughly yearly; stated (Nov 2024) to recur about half a year after that statement",
+   "mechanics": [
+    {
+     "statement": "An extra respec is tied to the anniversary event (dev-stated).",
+     "src": "np-dev"
+    }
+   ],
+   "drops": [],
+   "src": "np-dev"
+  },
+  {
+   "id": "event:assassination-attempt",
+   "name": "Assassination Attempt (Quest Event)",
+   "schedule": null,
+   "mechanics": [
+    {
+     "statement": "The quest event now successfully spawns the assassins (previously apparently bugged/not spawning), as of 2023-01.",
+     "src": "np-player-tested"
+    }
+   ],
+   "drops": [],
+   "src": "np-player-tested"
+  },
+  {
+   "id": "event:silt-strider-popup-mystery",
+   "name": "Silt Strider Popup Mystery / Wild Mini-Strider (ARG-style Event)",
+   "schedule": null,
+   "mechanics": [
+    {
+     "statement": "A known location east of Seyda Neen (matching a hint from the server dev) reliably triggers a silt strider popup with the silt strider moan sound every time the player passes through; players believe the popup probably does nothing functional.",
+     "src": "np-player-notes"
+    },
+    {
+     "statement": "The Wild Mini-Strider spawns in the mountains near the popup location - actually above the mine, not at the initially marked location - but attempts to tame it crashed the server at the time. It stopped fleeing after players stopped approaching it with hands out (which scares it).",
+     "src": "np-player-tested"
+    },
+    {
+     "statement": "Per the last dev hint about the mystery, equipment skills come later - for now players just need spoons in their inventory.",
+     "src": "np-dev"
+    }
+   ],
+   "drops": [],
+   "src": "np-player-notes"
+  },
+  {
+   "id": "event:new-merchants-2019",
+   "name": "New Merchants Event (2019)",
+   "schedule": "2019-01",
+   "mechanics": [
+    {
+     "statement": "Seven new merchants were added to the server; known locations include two near the smith at Underskar in Ald'ruhn and one near the council house in Balmora.",
+     "src": "np-player-notes"
+    },
+    {
+     "statement": "One of the new merchants may be found in the Foreign District in Vivec, and another is reportedly located near the Transport/Guild Guide area in Ebonheart (initially misreported as Mournhold) - both unconfirmed.",
+     "src": "np-speculation"
+    }
+   ],
+   "drops": [],
+   "src": "np-player-notes"
+  }
+ ],
+ "facts": [
+  {
+   "id": "cfact:camp-difficulty-ranking-1-13",
+   "topic": "camp difficulty",
+   "statement": "Rough camp difficulty ranking (1=easiest, 13=hardest) per a 2025-05 player list: 1 mudcrab, 2 redwolf, 3 kagouti (easy, doable early); 4 skeleton, 5 aleft (dwemer), 6 ogrims, 7 hunger, 8 twilight, 9 druid (similar difficulty, roughly level 40-50, mainly needing magic resistances); 10 frost giant, 11 dreugh, 12 blood matrons crypt, 13 Tomb of the dessicator (hit hard and/or have high resistances/reflect, not recommended below level 60 without gear prep).",
+   "src": "np-player-notes"
+  },
+  {
+   "id": "cfact:camp-tiering-entry-adept-expert",
+   "topic": "camp difficulty",
+   "statement": "Camps/bosses can also be tiered as: entry/novice level includes the Red Wolf camp; adept level includes Aleft (dangerous even to mid-level-geared characters); expert level includes camps dropping level 50/60 items such as Dreugh, Druids, and Tomb (of the Snow Prince).",
+   "src": "np-player-notes"
+  },
+  {
+   "id": "cfact:grind-camps-purpose",
+   "topic": "camp design",
+   "statement": "Grind camps exist so players can farm MXP, intended primarily as post-level-60 progression content.",
+   "src": "np-player-notes"
+  },
+  {
+   "id": "cfact:camp-level-range-table",
+   "topic": "camp level ranges",
+   "statement": "A compiled level-range table (2024-08) lists: Mudcrabs 1-11 (Beginner), Red Wolves 12-20 (Low End), Kagoutis 21-29 (Low End), Skeletons 31-39 (Mid-High End), Ogrims 46+ (Mid End), Twilight Matriarchs (High End), Druids (Mid-High End), Hungers 46+ (Mid-High End), Automatons/Aleft 46+ (Mid-High End), Frost Giants 56+ (High-High End), Scions (High-High End), Horrors (High-High End), Dreughs (Mid-High End).",
+   "src": "np-player-notes"
+  },
+  {
+   "id": "cfact:community-camp-maps",
+   "topic": "camp maps",
+   "statement": "Multiple community-made maps track camp locations over time: one map went through versions v1-v5 between 2023-02-23 and 2024-03-02, progressively adding Gertrude, Mudcrab, Kagouti, Hunger, Skeleton, Ogrim, Winged Twilight, Dwemer Centurion, Ole' Fangtooth, Red Wolf, Frost Giant, Muck Dreugh, and Unkempt Druid camps. Updated compilations from 2024-09-24 and 2025-05-02 mark substantially the same full roster across Vvardenfell and the northern Solstheim/Sheogorad island, plus Blood Matron's Crypt and Tomb of the Desiccator.",
+   "src": "np-player-notes"
+  },
+  {
+   "id": "cfact:six-boss-map-2020",
+   "topic": "world bosses",
+   "statement": "A 2020 map pins the approximate locations of all six then-known server bosses (Icy Jack, Gertrude, Inferno, Matches, Shadowgale, Bishop O-5) across Vvardenfell.",
+   "src": "np-player-notes"
+  },
+  {
+   "id": "cfact:confirmed-grind-camp-bosses",
+   "topic": "world bosses",
+   "statement": "Confirmed grind-camp bosses include Gertrude, Ol' Fangtooth, and Zin the Dessicato.",
+   "src": "np-player-notes"
+  },
+  {
+   "id": "cfact:boss-respawn-2-8-hours",
+   "topic": "boss respawns",
+   "statement": "Boss respawn timers server-wide range from 2 to 8 hours depending on the boss.",
+   "src": "np-player-notes"
+  },
+  {
+   "id": "cfact:static-item-respawn-random",
+   "topic": "respawn timers",
+   "statement": "The server dev confirmed the respawn timer for fixed/static item spawns (e.g. Daedric Greaves at Dren Plantation) is random rather than fixed.",
+   "src": "np-dev"
+  },
+  {
+   "id": "cfact:glitched-boss-spawns",
+   "topic": "camp bugs",
+   "statement": "The server dev said camp bosses dropping nothing at all should not normally happen and indicates a glitched spawn. Rarely, a camp boss monster shrinks in size and visually blends in with the regular mob NPCs.",
+   "src": "np-dev"
+  },
+  {
+   "id": "cfact:camp-boss-hp-estimate",
+   "topic": "boss stats",
+   "statement": "An early (2020) camp boss HP estimate was roughly ~1000 hp (speculation).",
+   "src": "np-speculation"
+  },
+  {
+   "id": "cfact:boss-fight-friendly-fire",
+   "topic": "boss fight tactics",
+   "statement": "It is easy to accidentally hit another player at the newer boss fights, especially the newer fire boss, when minion waves respawn and players scatter to kill them.",
+   "src": "np-player-notes"
+  },
+  {
+   "id": "cfact:boss-fight-add-management",
+   "topic": "boss fight tactics",
+   "statement": "At the newer bosses, having one player spam Calm on nearby mobs keeps them from attacking the group, letting parties of 4 or fewer manage adds safely; a mage can use fortify summons so their summoned creatures take the aggro of nearby mobs. Players also kill respawning minions partly to reduce lag caused by their AI.",
+   "src": "np-player-notes"
+  },
+  {
+   "id": "cfact:camps-magicka-items",
+   "topic": "camp loot",
+   "statement": "Creature camps have added many new items that boost magicka (dev-stated).",
+   "src": "np-dev"
+  },
+  {
+   "id": "cfact:glamour-crafting",
+   "topic": "camp loot",
+   "statement": "A boss/camp drop can be used to craft glamour items that make armor pieces (e.g. greaves, helm) turn invisible when worn.",
+   "src": "np-player-notes"
+  },
+  {
+   "id": "cfact:storyteller-bosses-at-grindcamps",
+   "topic": "storyteller",
+   "statement": "Storyteller-related bosses spawn at the grindcamps, but with rarer spawn rates than the regular grindcamp mobs.",
+   "src": "np-player-notes"
+  },
+  {
+   "id": "cfact:storyteller-commendation-points",
+   "topic": "storyteller",
+   "statement": "Killing a Bulbor grants 25 Commendation Points from the Storyteller, redeemable for goods by talking to him; Commendation Point rewards include custom items (books and a crossbow among them), purchasable stat boosts, and transformations.",
+   "src": "np-player-tested"
+  },
+  {
+   "id": "cfact:frost-claw-strategies",
+   "topic": "boss Frost Claw",
+   "statement": "Reflect works against the camp boss Frost Claw (and the Blood Matron crypt boss), but it can take about a half hour to kill some things with it; reflect is considered an easy strategy against Frost Claw, and some players instead defeat him by nuking his intelligence.",
+   "src": "np-player-tested"
+  },
+  {
+   "id": "cfact:smol-jack-storn-drown",
+   "topic": "Jack variants",
+   "statement": "If Smol Jack spawns, you can lure the NPC Storn into drowning him in a river. These Jack-variant claims are tagged under general camp discussion; their relation to the Morroween event boss Jack is not fully clarified in the source data.",
+   "src": "np-player-tested"
+  },
+  {
+   "id": "cfact:flat-jack-hitbox",
+   "topic": "Jack variants",
+   "statement": "When fighting Flat Jack, his visual model is purely cosmetic - his actual hitbox does not move from where he normally stands.",
+   "src": "np-player-tested"
+  },
+  {
+   "id": "cfact:massama-caverns-glass",
+   "topic": "farming spots",
+   "statement": "Massama Caverns, just southwest of Dissapla Mine, is a glass and silver mine with over a dozen glass deposits and several dozen more silver rocks - one of the better glass-farming spots.",
+   "src": "np-player-notes"
+  },
+  {
+   "id": "cfact:druscathi-looting",
+   "topic": "farming spots",
+   "statement": "Druscathi is a popular looting location where items such as Blood of the Quarra Master potions can be found; it gets looted by others frequently.",
+   "src": "np-player-notes"
+  },
+  {
+   "id": "cfact:vos-wickwheat",
+   "topic": "farming spots",
+   "statement": "Vos has hundreds of wickwheat pickable within a few minutes, plus marshmallow near the water.",
+   "src": "np-player-notes"
+  },
+  {
+   "id": "cfact:mournhold-kwama-eggs",
+   "topic": "farming spots",
+   "statement": "Raiding the basement/storage areas in Mournhold (castle/Temple) yields a healthy stock of Kwama Eggs.",
+   "src": "np-player-notes"
+  },
+  {
+   "id": "cfact:pine-best-wood",
+   "topic": "farming spots",
+   "statement": "Pine trees have much higher density than other tree types, making Pine the best choice for farming wood/resin.",
+   "src": "np-player-tested"
+  },
+  {
+   "id": "cfact:kwama-boss-loot",
+   "topic": "Kwama boss",
+   "statement": "The Kwama boss loot table includes: Golden Kwama Egg, Kwama Gloves (left/right), Kwama Boots (hoppy boots), Minstrel's Lute, various loot bags, Resistance Robes, Large/Small Kwama Eggs, and a Daedric Sanctuary Amulet.",
+   "src": "np-player-notes"
+  },
+  {
+   "id": "cfact:murky-fungus-robe-region",
+   "topic": "fishing loot",
+   "statement": "The community fishing guide book incorrectly lists the Murky Fungus Robe as dropping in the Sheogorad region; a week of fishing there produced none, while an hour of fishing in Bitter Coast produced one.",
+   "src": "np-player-tested"
+  },
+  {
+   "id": "cfact:tel-fyr-amulets",
+   "topic": "farming spots",
+   "statement": "Tel Fyr amulets can be farmed by anyone with access to Dregas Volar.",
+   "src": "np-player-notes"
+  },
+  {
+   "id": "cfact:tusk-farming-rate",
+   "topic": "farming rates",
+   "statement": "Using a nuke ring while auto-running and spam-attacking, a player reported getting 100 tusks in 30 minutes.",
+   "src": "np-player-notes"
+  },
+  {
+   "id": "cfact:special-silt-strider-spawn",
+   "topic": "special spawns",
+   "statement": "A notable silt strider spawns at a fixed location near Seyda Neen, between Addamasartus and Andrano Ancestral Tomb; the spawn location is near the Abaesen-Pulu Egg Mine, east of Andrano Ancestral Tomb, distinct from the regular Silt Strider travel post at Seyda Neen.",
+   "src": "np-player-tested"
+  },
+  {
+   "id": "cfact:mini-strider-easter-egg",
+   "topic": "special spawns",
+   "statement": "There is a hidden mini silt strider easter egg on the map whose location has apparently been sold between players before, similar to how the location of the Daedric Pauldrons was previously sold.",
+   "src": "np-player-notes"
+  },
+  {
+   "id": "cfact:secret-islands-no-reset",
+   "topic": "world mechanics",
+   "statement": "The secret islands reportedly do not reset; the speculated reason is that spamming things like summoned creatures there would be harmful to the server.",
+   "src": "np-speculation"
+  },
+  {
+   "id": "cfact:smuggler-cave-map",
+   "topic": "farming spots",
+   "statement": "Smuggler cave locations were mapped across Vvardenfell, with marked sites near Dagon Fel, the Vos area, Gnisis, Gnaar Mok, the Balmora area, the Pelagiad/Suran area, and Vivec.",
+   "src": "np-player-notes"
+  },
+  {
+   "id": "cfact:events-no-advance-warning",
+   "topic": "events general",
+   "statement": "Server events that grant rare items typically happen on a moment's notice, without advance warning (dev-stated).",
+   "src": "np-dev"
+  },
+  {
+   "id": "cfact:mournhold-bloodmoon-bugs",
+   "topic": "events general",
+   "statement": "The server dev will not fix Mournhold or Bloodmoon quest bugs until TES3MP can sufficiently run those areas smoothly.",
+   "src": "np-dev"
+  },
+  {
+   "id": "cfact:event-books-skill-gains",
+   "topic": "events general",
+   "statement": "Server event books (special skill books given out during events) reportedly grant increased skill gains compared to normal skill books (secondhand, unverified).",
+   "src": "np-speculation"
+  },
+  {
+   "id": "cfact:wria-lightningfoot-quest-spots",
+   "topic": "quest events",
+   "statement": "For Wria Lightningfoot's quest chain, four spots are marked on the map; the numbered order (starting location plus 1st-3rd locations) applies to the first quest, while the 4th location is only needed for the final quest.",
+   "src": "np-player-tested"
+  },
+  {
+   "id": "cfact:lil-green-goblin",
+   "topic": "event NPCs",
+   "statement": "The Lil Green Goblin event NPC (a mini Tribunal-style goblin, aka Leprechaun) spawns along the path between Balmora and Caldera, at the top of a hill. Its pants reward is a misc item rather than equippable armor (which is why it appears at the end of the inventory list), and its weapon and shield generally cannot be looted. The server dev confirmed the pants auto-adding to a player's inventory on kill (without looting) is not scripted/intended, and that its inventory desynced on at least one occasion (nothing lootable), suspected due to random generated loot; the fix is letting the NPC despawn and respawn, sometimes requiring a server reset.",
+   "src": "np-dev"
+  },
+  {
+   "id": "cfact:meta-2026-mage-comboom",
+   "topic": "combat meta 2025-2026",
+   "statement": "The 2025-2026 meta is described as all about mage comboom - weakness-stack mage nukes on buffed Ogrims, solo viable.",
+   "src": "server-general-2026",
+   "era": "2026-08"
+  },
+  {
+   "id": "cfact:meta-2026-dreugh-stealth-pairs",
+   "topic": "combat meta 2025-2026",
+   "statement": "Stealth bravo/minstrel AoE dreugh-cave pairs (approx. 100 Sanctuary / 300 Agility) clear every ~30s, which is the best XP.",
+   "src": "server-general-2026",
+   "era": "2026-08"
+  },
+  {
+   "id": "cfact:meta-2026-melee-combos",
+   "topic": "combat meta 2025-2026",
+   "statement": "Fast-weapon combo melee achieves 2K+ combo crits; a vampire Frenzy+Feed+Focused Strike setup was measured at 1,686 per hit.",
+   "src": "server-general-2026",
+   "era": "2026-08"
+  },
+  {
+   "id": "cfact:jan-2026-rebalance-rend-cleave",
+   "topic": "combat meta 2025-2026",
+   "statement": "A January 2026 rebalance added the combat AoE Combat Masteries Rend and Cleave (post-wiki - a masteries catalog gap; check /cm in game), and free CM resets were issued.",
+   "src": "server-general-2026",
+   "era": "2026-08"
+  }
+ ]
 }

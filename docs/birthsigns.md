@@ -13,7 +13,7 @@ NP 0.8 birthsigns — complete dev-authored rework, verbatim. All 13 signs diffe
 
 ## The Atronach
 
-- **Wombburn** (passive): Spell Absorption 15 pts on Self. Fortify Maximum Magicka 1.25x INT on Self. Stunted Magicka on Self. Damage Magicka on Self for 5% of total maximum magicka. All natural MoT removed. All bonus MoT reduced by half.
+- **Wombburn** (passive): Spell Absorption 15 pts on Self. Fortify Maximum Magicka 1.25x INT on Self. [Editorial: dev-doc verbatim; resolved to 1.2x per in-game tooltip — see c:atronach-magmult.] Stunted Magicka on Self. Damage Magicka on Self for 5% of total maximum magicka. All natural MoT removed. All bonus MoT reduced by half.
 
   *Vanilla (NOT valid on NP):* Original: Wombburn (Passive): Spell Absorption 50 pts; Fortify Maximum Magicka 2.0x INT; Stunted Magicka. NOTE the trap: vanilla absorb is 50, NP is 15.
 

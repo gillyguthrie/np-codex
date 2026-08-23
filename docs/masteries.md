@@ -306,6 +306,7 @@ NP masteries (Class Masteries / mastery points system). raw_text is the verbatim
 | Thick Skin 3 | 15 | L30, Skill 80; prior tier | +3, +25 Fort. Max, Resist Magicka effect equal to 6% of effective Armor Rating while fulled Unarmored. |
 | Thick Skin 4 | 20 | L40, Skill 90; prior tier | +4, +30 Fort. Max, Resist Magicka effect equal to 8% of effective Armor Rating while fulled Unarmored. |
 | Thick Skin 5 | 25 | L50, Skill 100; prior tier | +5, +35 Fort. Max, Resist Magicka effect equal to 10% of effective Armor Rating while fulled Unarmored. |
+| Disenchant **(not yet captured)** | — (unknown) |  |  |
 
 ## Birthsigns:
 
@@ -783,6 +784,7 @@ NP masteries (Class Masteries / mastery points system). raw_text is the verbatim
 | Heroic Were-Hunter | 200 | L55, arcane-regeneration, arcane-rejuvenation, heroic-wit-3, 500 Points Spent; 100 Strength/Intelligence; Must Be Were-Hunter Branded | +50 Strength Fortification Max, +50 Intelligence, +20 Attack Bonus, +10 Sanctuary, +10 Healing over Time |
 | Vital Strike | 75 | L60, Heroic Were-Hunter Master Class | Adds power: Vital Strike that applies the following effect once every 5 seconds when attacking with a melee weapon: Damage Health 650 pts (+200% Strength and Intelligence Mod) on touch for 1 sec. x3 Damage Against Werewolves and Vampires. Costs 765Fatigue to use. |
 | Danger Awareness | 75 | L60, Heroic Were-Hunter Master Class | +25 Agility/Intelligence/Willpower, +25 Fire/Shock Resistance, +10 Sanctuary |
+| Champion Master Class **(not yet captured)** | — (unknown) |  |  |
 
 ## Magic Master Classes:
 

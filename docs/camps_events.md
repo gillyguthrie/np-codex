@@ -258,7 +258,7 @@ Schedule: October (Halloween season); the Jack boss spawns once per night in Bal
 - If the event's rare unique item drop is not obtained by many players in a given year, it may return the next Halloween (speculation).
 - Drops: 8-28 Decrepit Bones (always), Morroween Hide Shirt (semi-rare; 75 enchant capacity), Wings of the Queen of Bats (semi-rare; two-handed axe with drain-health-on-strike enchantment), Unenchanted Daedric Longspear (semi-rare; 11.8ft reach, 10-50 damage), Ring of Namira (rare; constant 15% reflect), Bonekeeper Chestguard (very rare; medium armor that summons a skeleton minion with a daedric weapon for 10 seconds when the wearer is hit, 15-second cooldown between summons)
 
-## Winter Holiday Event (New Life Festival)
+## Winter Holiday Event (New Life Festival / "Jiubsmas")
 
 Schedule: December holiday season; ornament quest repeatable once per day during the event  
 - The Uncle Sweetshare quest hides ornaments in Seyda Neen, Pelagiad, Tel Mora, Gnisis, Dagon Fel, Caldera, and Suran; ornaments are instanced per player, and the quest is repeatable once per day (dev-stated). Not all ornaments are literally on the decorated trees - some are hidden elsewhere in the town area.
@@ -277,6 +277,7 @@ Schedule: December holiday season; ornament quest repeatable once per day during
 - 50 wrapping paper is a steep cost for Cheer currency, but you can get 1 free wrapping paper daily by visiting Grandfather Frost. Cheer currency and the recipes ranked below the SM Retort and above Blue Fire cannot be obtained from presents and must be bought from the recycler; those recipes are obtainable from purchasable holiday loot caches.
 - Making a brand-new character and doing every available holiday quest in a single day yielded around 40 vouchers, which converted to 200 wrapping paper.
 - Farming ornament runs for the 2024 event produced 4,000+ Torn Wrapping Paper wraps per one estimate; an accompanying screenshot shows a large total reading approximately 823346, though the crop makes the exact figure/label uncertain.
+- "Jiubsmas" is the community's name for this event (after Saint Jiub); items whose location reads "Jiubsmas" (e.g. Whitefang) are event-limited drops from this winter event. A stacking "Jiubsmas Cheer" 3x drop-rate boost has been reported during the event (player-reported).
 - Drops: Large Bag of Goodies: can yield SecretMaster's Mortar and Pestle, Large Crate of Goodies (weapons pool): Infernal Blade, Eltonbrand, Voltaic Spear, Skee's Plume, the Obliterator, Spear of the Hunt, Aevar's Mace, Bipolar Blade, Hammer of Might (a 110 dmg hammer), Large Crate of Curiosities: random gold between 10k-50k, Black Soul Gems; believed source of the 1500-soul soul gems, Large Chest of Goodies (armor pool): preenchanted Snow Wolf and Snow Bear armor pieces, a bear helm with Constant Effect Detect Animal, Helm of Tohan (medium armor, 150 enchant value), Shield of the Crab God, Small Chest of Goodies (clothing/jewelry pool): Ring of Hircine; players suspected other artifact rings like Barilzar's Mazed Band may drop too (speculation)
 
 ## Heart's Day / Valentine's Event

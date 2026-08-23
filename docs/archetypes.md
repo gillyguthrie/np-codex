@@ -123,7 +123,7 @@ caster · Dunmer (author's preference; race claimed not to matter for Animator s
 
 magic · melee · Imperial · The Tower
 
-**Masteries (as claimed):** Flowing Power 3 (90), Spiraling Bulwark (210), Combo Focus 3 (270), Brawn 5 (345), Physical Training 2 (360), Meditative Prayer 5 (435), Focus 5 (510), Champion Master Class (710), Arcane Rejuvenation (740), Arcane Might 3 (815), Vital Body 5 (890), Were-Hunter Resistances (975), God Touched (1050), Zenithar's Blessing 5 (1125), Talos's Blessing 5 (1200), Akatosh's Blessing 5 (1275), Dibella's Blessing 5 (1350), Arkay's Blessing 5 (1425), Stendarr's Blessing 5 (1500)
+**Masteries (as claimed):** Flowing Power 3 (90), Spiraling Bulwark (210), Combo Focus 3 (270), Brawn 5 (345), Physical Training 2 (360), Meditative Prayer 5 (435), Focus 5 (510), Champion Master Class (710), Arcane Rejuvenation (740), Arcane Might 3 (815), Vital Body 5 (890), Were-Hunter Resistances (975), God Touched (1050), Zenithar's Blessing 5 (1125), Talos' Blessing 5 (1200), Akatosh's Blessing 5 (1275), Dibella's Blessing 5 (1350), Arkay's Blessing 5 (1425), Stendarr's Blessing 5 (1500)
 
 **Gear:** None by design — 'nothing but the common, unenchanted clothes on their back and CM masteries'; Bound Battle Axe via spell.
 
@@ -417,7 +417,7 @@ combat · hybrid · Any ('Designed to play with whatever race you want!') · The
 
 magic · support · Orc (to max Armorer with the Orcish Smith CM) · Any (author likes Steed)
 
-**Masteries (as claimed):** Vital Body 5 (75), Brawn 5 (75), Quickness 5 (75), Wit 5 (75), Balance 5 (75), Alluring Embuement 5 (75), Melding Construct 5 (75), Orcish Smith (15), Animation Adept 4 (100), Animator (200), Godborn (100), Unrivaled Grace 4 (50), Bulging Muslces 4 (50), Superior Intellect 4 (50), Disenchant (25)
+**Masteries (as claimed):** Vital Body 5 (75), Brawn 5 (75), Quickness 5 (75), Wit 5 (75), Balance 5 (75), Alluring Embuement 5 (75), Melding Construct 5 (75), Orcish Smith (15), Animation Adept 4 (100), Animator (200), Godborn (100), Unrivaled Grace 4 (50), Bulging Muscles 4 (50), Superior Intellect 4 (50), Disenchant (25)
 
 **Key numbers:** Claimed total: 940 cm. 'we need 110 enchant anyway'. Animator claimed at 200 pts with 500 spent as prerequisite.
 

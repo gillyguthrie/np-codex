@@ -1,119 +1,753 @@
 {
-  "_meta": {
-    "description": "NP server mechanics: constants, formulas, and established facts. This file is the single source for mechanics numbers — tools must import from here rather than hardcoding.",
-    "migrated": "2026-08-22",
-    "banner": "NP is not vanilla Morrowind. Formulas and values here are server-specific; vanilla/UESP values are wrong on NP more often than right."
+ "_meta": {
+  "description": "NP server mechanics: constants, formulas, and established facts. This file is the single source for mechanics numbers — tools must import from here rather than hardcoding.",
+  "migrated": "2026-08-22",
+  "banner": "NP is not vanilla Morrowind. Formulas and values here are server-specific; vanilla/UESP values are wrong on NP more often than right."
+ },
+ "sources": {
+  "s-dev": {
+   "origin": "dev-doc",
+   "channel": "public developer statements (Discord)",
+   "url": null,
+   "date": null,
+   "confidence": "dev-stated"
   },
-  "sources": {
-    "s-dev": {"origin": "dev-doc", "channel": "public developer statements (Discord)", "url": null, "date": null, "confidence": "dev-stated"},
-    "s-dev-08doc": {"origin": "dev-doc", "channel": "0.8 Information channels", "url": null, "date": "2022-05-10", "confidence": "dev-stated"},
-    "s-measured": {"origin": "in-game-measured", "channel": null, "url": null, "date": "2026-08", "confidence": "measured", "note": "in-game measurement campaigns, Aug 2026 (incl. an 18/18-exact armor-rating validation)"},
-    "s-tooltip": {"origin": "in-game-tooltip", "channel": null, "url": null, "date": "2026-08", "confidence": "measured"},
-    "s-player": {"origin": "discord-public", "channel": "player-notes", "url": null, "date": null, "confidence": "player-reported"},
-    "s-expert": {"origin": "player-reported", "channel": null, "url": null, "date": null, "confidence": "player-reported", "note": "expert player statement"},
-    "s-prov": {"origin": "player-reported", "channel": null, "url": null, "date": null, "confidence": "provisional"},
-    "s-contested": {"origin": "player-reported", "channel": null, "url": null, "date": null, "confidence": "contested"}
+  "s-dev-08doc": {
+   "origin": "dev-doc",
+   "channel": "0.8 Information channels",
+   "url": null,
+   "date": "2022-05-10",
+   "confidence": "dev-stated"
   },
-  "constants": [
-    {"id": "const:tick-length", "name": "Regen tick length", "value": 6, "unit": "seconds", "src": "s-measured", "date": "2026-08-21", "note": "Stopwatch-confirmed; supersedes the earlier ~7s community estimate. HoT/MoT/FoT effects tick every 6s."},
-    {"id": "const:level-cap", "name": "Character level cap", "value": 60, "unit": "level", "src": "s-dev-08doc", "note": "Attribute multiplier gains are server-controlled so all attributes max by 60."},
-    {"id": "const:mp-cap-per-level", "name": "Mastery points cap per level", "value": 25, "unit": "points/level", "src": "s-dev", "note": "1500 total at level 60. Dev-stated accrual: all 1500 in roughly 44-46 days of logged playtime."},
-    {"id": "const:hp-ratio-combat", "name": "L60 effective HP ratio — Combat", "value": 3.6, "unit": "HP/END", "src": "s-prov", "note": "From the community HP calculator; NOT yet validated by direct measurement (Stealth and Magic ratios are)."},
-    {"id": "const:hp-ratio-stealth", "name": "L60 effective HP ratio — Stealth", "value": 2.8, "unit": "HP/END", "src": "s-measured", "date": "2026-08-21", "note": "Validated exact on an L60 character (100 END -> 280 HP)."},
-    {"id": "const:hp-ratio-magic", "name": "L60 effective HP ratio — Magic", "value": 2.2, "unit": "HP/END", "src": "s-measured", "date": "2026-08-21", "note": "Validated within 1 HP (observed 219 vs predicted 220; 2.2-vs-2.19 rounding open)."},
-    {"id": "const:hp-spec-mult-combat", "name": "HP specialization multiplier (engine) — Combat", "value": 1.14, "unit": "x", "src": "s-dev", "date": "2021-02-26", "note": "Dev-quoted engine script value. Relationship to the effective 3.6/2.8/2.2 ratios: the ratios fold in additional layers (see formula:hp)."},
-    {"id": "const:hp-spec-mult-magic", "name": "HP specialization multiplier (engine) — Magic", "value": 1.033, "unit": "x", "src": "s-dev", "date": "2021-02-26"},
-    {"id": "const:hp-spec-mult-stealth", "name": "HP specialization multiplier (engine) — Stealth", "value": 1.077, "unit": "x", "src": "s-dev", "date": "2021-02-26"},
-    {"id": "const:magicka-mult-atronach", "name": "Fortify Maximum Magicka — Atronach (Wombburn)", "value": 1.2, "unit": "x INT", "src": "s-tooltip", "date": "2026-08-21", "note": "In-game tooltip reads 1.2x verbatim; the 0.8 dev doc said 1.25x — see contradictions (tooltip adopted as truth)."},
-    {"id": "const:magicka-mult-mage", "name": "Fortify Maximum Magicka — Mage (Fay)", "value": 1.0, "unit": "x INT", "src": "s-dev-08doc"},
-    {"id": "const:magicka-mult-apprentice", "name": "Fortify Maximum Magicka — Apprentice (Elfborn)", "value": 1.5, "unit": "x INT", "src": "s-dev-08doc"},
-    {"id": "const:magicka-mult-altmer", "name": "Fortify Maximum Magicka — High Elf racial", "value": 1.5, "unit": "x INT", "src": "s-dev-08doc", "note": "Validated in-game 2026-08 (exact fit in the flat-stack model)."},
-    {"id": "const:magicka-mult-breton", "name": "Fortify Maximum Magicka — Breton racial", "value": 0.5, "unit": "x INT", "src": "s-dev-08doc"},
-    {"id": "const:int-cap-magicka", "name": "INT cap in the magicka formula", "value": 175, "unit": "INT", "src": "s-measured", "date": "2026-08-21", "note": "INT above 175 adds no magicka — and corrupts the pool (see fact:overmax-magicka-bug)."},
-    {"id": "const:fort-cap-default", "name": "Default attribute fortification cap (L60)", "value": 175, "unit": "pts", "src": "s-measured", "date": "2026-08-21", "note": "Attribute sheet clamps at 175 without a Fortification-Max mastery; raised per-attribute by such masteries."},
-    {"id": "const:fatigue-level-bonus-l60", "name": "NP fatigue flat bonus at L60", "value": 55, "unit": "pts", "src": "s-measured", "date": "2026-08-21", "note": "Validated exact on two independent L60 characters; +1 at L1; curve between unmeasured."},
-    {"id": "const:dodge-penalty-magic", "name": "Dodge chance penalty — Magic spec", "value": 25, "unit": "pts", "src": "s-dev", "date": "2024-06-12"},
-    {"id": "const:dodge-penalty-combat", "name": "Dodge chance penalty — Combat spec", "value": 50, "unit": "pts", "src": "s-dev", "date": "2024-06-12"},
-    {"id": "const:cast-penalty-combat", "name": "Cast chance penalty — Combat spec", "value": 25, "unit": "pts", "src": "s-dev", "date": "2024-06-12"},
-    {"id": "const:cast-penalty-stealth", "name": "Cast chance penalty — Stealth spec", "value": 50, "unit": "pts", "src": "s-dev", "date": "2024-06-12"},
-    {"id": "const:accuracy-penalty-stealth", "name": "Melee accuracy penalty — Stealth spec", "value": 25, "unit": "pts", "src": "s-dev", "date": "2024-06-12"},
-    {"id": "const:accuracy-penalty-magic", "name": "Melee accuracy penalty — Magic spec", "value": 50, "unit": "pts", "src": "s-dev", "date": "2024-06-12"},
-    {"id": "const:ar-slot-weight-cuirass", "name": "Sheet AR slot weight — cuirass", "value": 0.30, "unit": "fraction", "src": "s-measured", "date": "2026-08-21"},
-    {"id": "const:ar-slot-weight-standard", "name": "Sheet AR slot weight — helm/shield/greaves/boots/each pauldron", "value": 0.10, "unit": "fraction", "src": "s-measured", "date": "2026-08-21"},
-    {"id": "const:ar-slot-weight-gauntlet", "name": "Sheet AR slot weight — each gauntlet", "value": 0.05, "unit": "fraction", "src": "s-measured", "date": "2026-08-21"},
-    {"id": "const:piece-ar-divisor", "name": "Piece AR skill divisor", "value": 30, "unit": null, "src": "s-measured", "date": "2026-08-21", "note": "tooltip AR = floor(base AR x armor skill / 30)"},
-    {"id": "const:unarmored-coefficient", "name": "Unarmored slot AR coefficient", "value": 0.0065, "unit": null, "src": "s-measured", "date": "2026-08-21", "note": "AR per empty/clothing slot = UnarmoredSkill^2 x 0.0065"},
-    {"id": "const:healing-cap", "name": "Healing spell cap", "value": 100, "unit": "HP/second", "src": "s-dev", "date": "2023-10-22"},
-    {"id": "const:npc-training-per-day", "name": "NPC training sessions per earth day", "value": 5, "unit": "sessions", "src": "s-dev-08doc", "note": "A 10/day player claim exists — see contradictions; the dev doc wins."},
-    {"id": "const:cell-reset-hours", "name": "Cell reset window (unloaded)", "value": null, "status": "ok", "src": "s-dev", "note": "3-6 hours as long as no player has the cell loaded; stored as text because it is a range.", "range": "3-6 hours"},
-    {"id": "const:magic-resistance-cap", "name": "Magic resistance cap", "value": 85, "unit": "%", "src": "s-player", "date": "2024-09-11"},
-    {"id": "const:speed-cap", "name": "Speed cap", "value": null, "status": "contested", "src": "s-contested", "note": "350 (2021 claim) vs 175 at L60 (2024 claim) — see contradictions; unresolved."},
-    {"id": "const:melding-pct-per-rank", "name": "Melding Construct AR bonus per rank", "value": 4, "unit": "%/rank", "src": "s-prov", "date": "2026-08-22", "note": "PROVISIONAL — from a single item reading (+20% at rank 5). Applies to equipped-armor AR."},
-    {"id": "const:anvil-armor-ar-multiplier", "name": "Anvil max upgrade — armor piece AR multiplier", "value": 1.54, "unit": "x", "src": "s-prov", "date": "2026-08-22", "note": "PROVISIONAL — one measured item pair (fresh 250 vs maxed 385 at matched skill/condition). A relayed '+42 AR flat' figure did not match — see contradictions."},
-    {"id": "const:native-magicka-regen", "name": "Native magicka regen", "value": 1, "unit": "magicka/tick", "src": "s-measured", "date": "2026-08-21", "note": "For all characters EXCEPT Stunted Magicka (Atronach). Deliberate NP GMST edit."},
-    {"id": "const:enchant-skill-one-charge", "name": "Enchant skill for 1-charge casts", "value": 110, "unit": "skill", "src": "s-player", "note": "At 110 Enchant, all enchanted items cost 1 charge per use (multiple corroborations 2019-2022)."},
-    {"id": "const:max-effects-per-enchant", "name": "Max effects per enchant/spell", "value": 8, "unit": "effects", "src": "s-player", "date": "2020-12-10", "note": "Soul size raises magnitude/duration, never the effect count."},
-    {"id": "const:vampire-daywalker-cost", "name": "Daywalker perk cost", "value": 50, "unit": "mastery points", "src": "s-dev", "date": "2021-04-17"},
-    {"id": "const:vampire-ancient-bloodline-cost", "name": "Ancient Bloodline perk cost", "value": 75, "unit": "mastery points", "src": "s-dev", "date": "2021-04-17", "note": "Requires Daywalker first; both together 125 points."}
-  ],
-  "formulas": [
-    {"id": "formula:hp", "name": "Max Health (L60 effective)", "expr": "HP = floor(END x (spec_ratio + sum(health_factor_bonuses))) + flat_fortify_health", "src": "s-measured", "date": "2026-08-21", "note": "spec_ratio: see const:hp-ratio-*. Dev-stated structure: HP = Endurance x HP Factor(s) x spec multiplier + flat fortify; every character starts with 1 innate HP Factor; Health-Factor perks add on (+1 HP Factor -> 1 END = 2 HP). Endurance is retroactive/real-time. How +0.2-class Health-Factor mastery lines interact with the L60 ratio is OPEN (q:health-factor-stacking)."},
-    {"id": "formula:magicka", "name": "Max Magicka (flat-stack model)", "expr": "maxMag = floor(min(INT, 175) x (1 + sum(fortify_max_magicka_multipliers))) + flat_fortify_magicka", "src": "s-measured", "date": "2026-08-21", "note": "Base 1x INT for everyone. The ONLY xINT carriers: signs Atronach 1.2 / Mage 1.0 / Apprentice 1.5; racials High Elf 1.5 / Breton 0.5 (see const:magicka-mult-*). No specialization factor. Validated exact on an L60 character (mult 3.7: floor(125x3.7)=462; floor(175x3.7)=647). Items can also carry xINT multipliers. WARNING: in-game readings above the INT cap are unstable — see fact:overmax-magicka-bug. Spell Absorption/Reflect stack multiplicatively: total = 1 - prod(1 - each); resists stack additively."},
-    {"id": "formula:fatigue", "name": "Max Fatigue", "expr": "maxFat = STR + WIL + AGI + END + level_bonus", "src": "s-measured", "date": "2026-08-21", "note": "level_bonus: +55 at L60 (validated exact on two characters), +1 at L1; curve between unmeasured. One measured L60 character reads +126 above this model — same character carries an unexplained magicka surplus (q:hidden-passive-anomaly)."},
-    {"id": "formula:piece-ar", "name": "Armor piece tooltip AR", "expr": "tooltipAR = floor(baseAR x armorSkill / 30)", "src": "s-measured", "date": "2026-08-21", "note": "Verified for light/medium/heavy at skill 100 and (item-fortified) 118. NP base ARs deviate from vanilla (e.g. Daedric Tower Shield base 40, vanilla 45) — never take a base from UESP."},
-    {"id": "formula:ar-capture-normalization", "name": "AR capture-skill normalization convention", "expr": "AR@100 = floor(baseAR x 100/30); baseAR = tooltipReading x 30 / captureSkill", "src": "s-measured", "date": "2026-08-22", "note": "CONVENTION: all item AR values in this KB are stated at the skill-100 tooltip baseline (AR@100), independent of who captured them or at what armor skill. Any tooltip captured at a different armor skill MUST be normalized through this formula before entry. Screenshots posted publicly by unknown players may be at unknown skill — such values are marked 'as-posted tooltip, capture skill unknown' in the item record until verified."},
-    {"id": "formula:unarmored-ar", "name": "Unarmored slot AR", "expr": "AR_per_slot = unarmoredSkill^2 x 0.0065", "src": "s-measured", "date": "2026-08-21", "note": "Skill 100 -> 65; empty or clothing-filled armor slots count at this value. Consequence: with high Unarmored, equipping a LOW-AR piece can lower sheet AR."},
-    {"id": "formula:sheet-ar", "name": "Character sheet AR", "expr": "sheetAR = floor(sum(slot_tooltip_AR x slot_weight)) [+ flat Shield effects + flat Armor Bonus masteries]", "src": "s-measured", "date": "2026-08-21", "note": "Slot weights: const:ar-slot-weight-*. Validated 18/18 exact across two characters at armor skills 100 and 118. Armor condition scales AR down as it degrades (confirmed). Piece AR at skill >100 from mastery cap-raises may scale non-linearly — open anomaly q:piece-ar-above-100."},
-    {"id": "formula:dodge", "name": "Dodge chance", "expr": "dodge = sum(mastery_dodge_bonuses) - spec_penalty", "src": "s-dev", "date": "2024-06-12", "note": "spec_penalty: Magic 25, Combat 50, Stealth 0 (see const:dodge-penalty-*)."},
-    {"id": "formula:hit-damage", "name": "Hit damage (best power attack)", "expr": "hit = best_strike_max x (STR + 50) / 100", "src": "s-prov", "note": "Vanilla-structure damage scaling adopted by community tools; matches observed play but not formally validated on NP. Condition and armor reduction also factor into damage dealt (vanilla structure, unverified on NP)."},
-    {"id": "formula:focused-strike-proc", "name": "Focused Strike proc chance (Lightning/Freezing/Fiery)", "expr": "proc% = 0.30 x Agility", "src": "s-expert", "date": "2026-08-20", "note": "Expert player statement, adopted as working truth: the tooltip's '30%' corresponds to 100 Agility; 100% proc at Agility >= ~334; scales linearly (190 AGI -> ~57%). Not dev-stated; a one-time count-test would confirm."},
-    {"id": "formula:encumbrance", "name": "Effective encumbrance with Feather", "expr": "effEnc = max(0, equipped_weight - sum(feather_effects))", "src": "s-measured", "date": "2026-08-22", "note": "All Feather sources subtract: mastery flat feather, AR-scaled feather, item/custom-enchant feather. Wearing armor does not itself slow movement/jumping — only total encumbrance does (player-tested)."},
-    {"id": "formula:rank-stacking", "name": "Multi-rank mastery stacking", "expr": "total_effect = sum(effects of ALL owned ranks 1..N)", "src": "s-dev", "note": "Dev-stated 'perks stack additively'. Buying rank N implies owning ranks 1..N and their summed effects."},
-    {"id": "formula:crafting-cost-scaling", "name": "Crafting material cost by tradeskill level", "expr": "cost_at_L10 ~= cost_at_L1 / 10 (rounded down); success chance -10% per level the recipe is above your skill", "src": "s-player", "note": "Dev-clarified example: an 88-spool level-1 recipe costs ~12-15 spools at level 10. Crafting above your level is allowed at higher cost and failure risk."},
-    {"id": "formula:tradeskill-xp-curve", "name": "Total XP per tradeskill level", "expr": "L1:0 L2:32000 L3:254750 L4:668250 L5:1272500 L6:2067500 L7:3053250 L8:4229750 L9:5597000 L10:7155000", "src": "s-player", "date": "2025-01-21", "note": "Cross-checked against actual level-ups by two independent testers; Tailoring confirmed on the same curve."},
-    {"id": "formula:chain-combo-damage", "name": "Chain Combo chained-spell damage", "expr": "chained = spell_damage x chain_multiplier x duration [x3 if trigger is Burning Slash]", "src": "s-player", "date": "2024-08-27", "note": "Chain Combo multiplies the SPELL's damage; it ignores the weapon's own damage and damage-over-time. Multipliers by weapon type were systematically player-tested (e.g. 2H Spear ~19.9-23.5, 1H Axe 14, 2H Long Blade ~9.7-9.8, 1H Short Blade 7); roughly halved inside one tested dungeon."},
-    {"id": "formula:potion-weight", "name": "Potion weight", "expr": "weight = floor(average(ingredient_weights))", "src": "s-dev", "date": "2024-07-23", "note": "2025 addition: any fish ingredient caps potion weight at 1, even when the fish contributes no used effect."}
-  ],
-  "facts": [
-    {"id": "fact:np-not-vanilla", "statement": "NP deliberately rewrites vanilla values: birthsigns and racials fully reworked in 0.8, item base stats differ from vanilla/UESP, and core formulas are server-custom. Vanilla knowledge must never be substituted for a missing NP value.", "src": "s-dev-08doc"},
-    {"id": "fact:restore-vs-tick", "statement": "Constant 'Restore Health/Magicka/Fatigue' effects apply per SECOND; 'over Time' (HoT/MoT/FoT) effects apply per 6-second tick.", "src": "s-measured", "date": "2026-08-21"},
-    {"id": "fact:atronach-stunted-regen", "statement": "Stunted Magicka (Atronach) removes the native 1 magicka/tick regen AND halves all mastery-gained HoT/MoT/FoT tick regen; item-granted regen is not halved.", "src": "s-expert", "date": "2026-08-21"},
-    {"id": "fact:atronach-drain", "statement": "As part of the 0.8 Atronach rework, the sign carries a self Damage Magicka effect (5% of total maximum magicka) — dev-described as a slow drain 'unless you do something about it'. Whether the drain is still live in the current era is unconfirmed.", "src": "s-dev", "date": "2023-11-14", "status": "provisional"},
-    {"id": "fact:overmax-magicka-bug", "statement": "Raising INT above the 175 cap does not just waste points — it CORRUPTS max magicka, and the corrupted value re-rolls on every relog (swinging high or low). Dev-acknowledged as an open issue (Jan 2026) and community-confirmed (Aug 2026). Fixes: damage INT, unequip INT gear to get under the cap, or relog.", "src": "s-dev", "date": "2026-01-27"},
-    {"id": "fact:login-staleness", "statement": "Stat values displayed at login can be stale; equipping/unequipping any item forces a recalculation to the correct value. Formula-verification readings should be taken after an equip cycle.", "src": "s-measured", "date": "2026-08-21"},
-    {"id": "fact:enchant-no-passive-recharge", "statement": "Per the 0.8 dev doc, enchanted items no longer passively recharge and require filled soul gems — but multiple corroborated player reports describe skill-based natural recharge at high Enchant skill. Unresolved; see contradictions.", "src": "s-contested", "status": "contested"},
-    {"id": "fact:ce-enchant-rolls", "statement": "Post-0.8 player constant-effect enchants roll a random final magnitude between the chosen min and max (enchanter mastery and certain racials improve the odds); a later change reportedly sets outcomes to the average of the range. Enter ranges as 1-X, never X-X.", "src": "s-dev-08doc"},
-    {"id": "fact:disenchanting", "statement": "The Disenchanting mastery extracts a player enchant using an empty black soul gem (which shatters), returning the item to its blank, re-enchantable state.", "src": "s-dev-08doc"},
-    {"id": "fact:player-goods-no-npc-value", "statement": "Player-made potions and player-enchanted items have no gold value to NPC merchants; they can only be sold to other players.", "src": "s-dev-08doc"},
-    {"id": "fact:potion-active-limit", "statement": "The number of potions active at once on a character is limited, scaling with Alchemy skill.", "src": "s-dev-08doc"},
-    {"id": "fact:skills-not-potion-fortifiable", "statement": "Skills cannot be fortified by potions on NP; fortifying a skill requires a spellmaking spell or enchant.", "src": "s-player", "date": "2019-01-19"},
-    {"id": "fact:fort-caps-masteries", "statement": "Attribute/skill fortification caps can be raised via masteries ('Fortification Max' lines and certain racials).", "src": "s-dev-08doc"},
-    {"id": "fact:endurance-retroactive", "statement": "Endurance affects health in real time (retroactively) — no need to front-load END early.", "src": "s-dev-08doc"},
-    {"id": "fact:death-penalties", "statement": "On death: revival at the bound Spirit Master (or Seyda Neen), loss of some carried gold, and Mastery Point debt that halves mastery XP gain until paid.", "src": "s-dev-08doc"},
-    {"id": "fact:respec-paths", "statement": "Mastery refunds are available via Rehabilitator Anja (Vivec, near the bank). Additionally, all level-60 players can respec once for FREE with Socucius Ergalla after completing the tax quest, provided zero CM points are currently spent; being online during the NP anniversary event granted one extra respec. Whether these are one mechanism or two is unresolved.", "src": "s-dev", "date": "2024-11-02"},
-    {"id": "fact:birthsign-change", "statement": "Birthsigns can be changed at the Census and Excise Office in Seyda Neen: first change per character free, subsequent changes via anniversary certificates. Whether purchased birthsign-gated masteries refund on change is open.", "src": "s-player", "date": "2026-08-20"},
-    {"id": "fact:soultrap-summons", "statement": "Soultrap does not work on summoned creatures.", "src": "s-dev-08doc"},
-    {"id": "fact:quest-no-trade", "statement": "Quest-tagged items cannot be sold to merchants; No-Trade-tagged items additionally cannot be traded to other players. Neither crosses accounts.", "src": "s-dev-08doc"},
-    {"id": "fact:merchant-sync", "statement": "Since 0.8, merchant inventories and gold are synced across all players (an engine change), restocking after a few in-game days and resetting on server resets.", "src": "s-dev", "date": "2020-07-19"},
-    {"id": "fact:server-reset", "statement": "The server resets daily at 06:00 server time; cells reset 3-6 hours after being unloaded. NPCs killed are restored by resets.", "src": "s-dev"},
-    {"id": "fact:training-limit", "statement": "NPC training is limited to 5 sessions per earth day (dev doc). A 10/day claim circulates — see contradictions.", "src": "s-dev-08doc"},
-    {"id": "fact:autoban", "statement": "A scripted auto-ban system exists: leveling any skill too fast (threshold unknown), and picking up or dropping ~1 million gold at once, are confirmed triggers; it can also catch illegitimately-obtained items without a report.", "src": "s-dev"},
-    {"id": "fact:pvp-flag", "statement": "PVP is opt-in via a toggle flag; hitting another player force-enables yours; killing unflagged players carries penalties including in-game prison. Honor kills earn tokens for custom PVP items; some items require the PVP flag to equip.", "src": "s-dev-08doc"},
-    {"id": "fact:spec-terminology", "statement": "The Combat/Magic/Stealth axis is called 'specialization' (it drives mastery trees, specialization penalties, master classes, and equipment gating). 'Affinity' is the narrower subclass tag on certain masteries (e.g. Paladin/Wizard/Bard-class locks). The sheet's 'Class' name is player-authored and mechanically irrelevant.", "src": "s-dev"},
-    {"id": "fact:full-set-side-effects", "statement": "Certain masteries grant AR-scaled side effects gated on a FULL armor-class set — all 8 body slots (helm, cuirass, greaves, boots, both pauldrons, both gauntlets) in that class, no off-class armor; a worn shield must match, an empty shield slot is allowed. Known: full Light -> Chameleon; full Medium -> Attack; full Heavy -> Feather; full Unarmored (no armor) -> Resist Magicka; gauntlet-scaled fist damage has no full-set requirement.", "src": "s-measured", "date": "2026-08-22"},
-    {"id": "fact:weakness-stack-multiplayer", "statement": "Combining Weakness-to-X with damage in one multi-effect spell multiplies damage beyond sequential casting, and stacking Weakness from MULTIPLE players exceeds the solo cap — dev-confirmed unintended ('not much I can do to resolve it for now').", "src": "s-dev", "date": "2023-01-05"},
-    {"id": "fact:weapon-speed-classes", "statement": "Confirmed tooltip weapon speeds: daggers 250-270%, longblades 125-150%, staffs 175%, 2H/spears ~100%. Reach: ALL 1H blades 6 ft (longblades have no reach advantage over daggers); 2H hammers/axes ~8.4-9.6 ft; spears and long staffs 10.8 ft.", "src": "s-tooltip", "date": "2026-08-20"},
-    {"id": "fact:glorious-tides", "statement": "Glorious Tides tier 3 at max Restoration heals 625 HP to caster and nearby group members (~1088 every 12s per caster with all tiers stacked; two healers rotating -> 1088 per 6s); simultaneous casts on one target do not stack — rotate casts. Hits up to 4 players, cannot target enemies.", "src": "s-dev", "date": "2023-10-22"},
-    {"id": "fact:cure-school-reclassification", "statement": "Adding a Cure effect to a custom spell reclassifies the whole spell as Restoration regardless of other effects (community-tested extensively) — enabling cheap casting of multi-school spells by training only Restoration. Cast chance for multi-school spells otherwise follows the effect with the lowest cast chance, which also sets the displayed school tag.", "src": "s-player", "date": "2021-04-07"},
-    {"id": "fact:leveled-loot", "statement": "Leveled loot/creature spawn lists are determined by whichever player first enters the cell — except spawned creature camps, which are fixed. Displayed item drop rates don't always match observed rates (dev-stated).", "src": "s-dev"},
-    {"id": "fact:bedrolls", "statement": "Free waiting-to-heal is disabled; all players start with a placeable bedroll usable in temples or player homes (crouch-activate to pick it back up).", "src": "s-dev-08doc"},
-    {"id": "fact:character-limits", "statement": "Max 10 characters per player, max 4 played simultaneously (server rule 9).", "src": "s-dev"},
-    {"id": "fact:custom-item-ids", "statement": "Every player-created custom item's internal ID begins with the prefix '$custom_'.", "src": "s-dev", "date": "2019-01-25"},
-    {"id": "fact:stat-caps-base", "statement": "100 is the highest base stat value; 'Max' masteries raise the fortification ceiling above the default cap (see const:fort-cap-default). The /cs command shows current caps in-game.", "src": "s-player"},
-    {"id": "fact:fall-damage", "statement": "1 point of Slow Fall negates all fall damage; fortifying Acrobatics to ~126+ is also reported to negate it.", "src": "s-player", "date": "2019-07-16"},
-    {"id": "fact:jump-teleport-momentum", "statement": "Casting Almsivi/Divine Intervention or Recall right after a strong Jump carries momentum through the teleport (both directions) — the basis of long-distance jump travel.", "src": "s-player", "date": "2019-07-16"},
-    {"id": "fact:skill-check-structure", "statement": "Most skill checks are roughly Skill + 20% of the governing attribute + 10% of Luck (player-reported). Running speed ~ Athletics x Speed with race/encumbrance modifiers; Levitate speed = Levitate magnitude + Speed, no Athletics.", "src": "s-player", "date": "2024-05-14"},
-    {"id": "fact:beast-feet-slot-bug", "statement": "A login bug unequips beast-race characters' feet-slot gear; workaround is an /es equipment set hotkeyed at login. Avoid life-critical enchants on the feet slot for beast races.", "src": "s-player", "date": "2024-08-06"},
-    {"id": "fact:enchanted-tools-bug-fixed", "statement": "Enchanting an axe/pickaxe used to stop it harvesting/mining; dev-confirmed bug, fixed Aug 2022. Two-handed weapons chop/mine better than one-handed (dev-stated); a Fortify Axe effect while mining can raise ore yield per node.", "src": "s-dev", "date": "2022-08-09"}
-  ]
+  "s-measured": {
+   "origin": "in-game-measured",
+   "channel": null,
+   "url": null,
+   "date": "2026-08",
+   "confidence": "measured",
+   "note": "in-game measurement campaigns, Aug 2026 (incl. an 18/18-exact armor-rating validation)"
+  },
+  "s-tooltip": {
+   "origin": "in-game-tooltip",
+   "channel": null,
+   "url": null,
+   "date": "2026-08",
+   "confidence": "measured"
+  },
+  "s-player": {
+   "origin": "discord-public",
+   "channel": "player-notes",
+   "url": null,
+   "date": null,
+   "confidence": "player-reported"
+  },
+  "s-expert": {
+   "origin": "player-reported",
+   "channel": null,
+   "url": null,
+   "date": null,
+   "confidence": "player-reported",
+   "note": "expert player statement"
+  },
+  "s-prov": {
+   "origin": "player-reported",
+   "channel": null,
+   "url": null,
+   "date": null,
+   "confidence": "provisional"
+  },
+  "s-contested": {
+   "origin": "player-reported",
+   "channel": null,
+   "url": null,
+   "date": null,
+   "confidence": "contested"
+  }
+ },
+ "constants": [
+  {
+   "id": "const:tick-length",
+   "name": "Regen tick length",
+   "value": 6,
+   "unit": "seconds",
+   "src": "s-measured",
+   "date": "2026-08-21",
+   "note": "Stopwatch-confirmed; supersedes the earlier ~7s community estimate. HoT/MoT/FoT effects tick every 6s."
+  },
+  {
+   "id": "const:level-cap",
+   "name": "Character level cap",
+   "value": 60,
+   "unit": "level",
+   "src": "s-dev-08doc",
+   "note": "Attribute multiplier gains are server-controlled so all attributes max by 60."
+  },
+  {
+   "id": "const:mp-cap-per-level",
+   "name": "Mastery points cap per level",
+   "value": 25,
+   "unit": "points/level",
+   "src": "s-dev",
+   "note": "1500 total at level 60. Dev-stated accrual: all 1500 in roughly 44-46 days of logged playtime."
+  },
+  {
+   "id": "const:hp-ratio-combat",
+   "name": "L60 effective HP ratio — Combat",
+   "value": 3.6,
+   "unit": "HP/END",
+   "src": "s-prov",
+   "note": "From the community HP calculator; NOT yet validated by direct measurement (Stealth and Magic ratios are)."
+  },
+  {
+   "id": "const:hp-ratio-stealth",
+   "name": "L60 effective HP ratio — Stealth",
+   "value": 2.8,
+   "unit": "HP/END",
+   "src": "s-measured",
+   "date": "2026-08-21",
+   "note": "Validated exact on an L60 character (100 END -> 280 HP)."
+  },
+  {
+   "id": "const:hp-ratio-magic",
+   "name": "L60 effective HP ratio — Magic",
+   "value": 2.2,
+   "unit": "HP/END",
+   "src": "s-measured",
+   "date": "2026-08-21",
+   "note": "Validated within 1 HP (observed 219 vs predicted 220; 2.2-vs-2.19 rounding open)."
+  },
+  {
+   "id": "const:hp-spec-mult-combat",
+   "name": "HP specialization multiplier (engine) — Combat",
+   "value": 1.14,
+   "unit": "x",
+   "src": "s-dev",
+   "date": "2021-02-26",
+   "note": "Dev-quoted engine script value. Relationship to the effective 3.6/2.8/2.2 ratios: the ratios fold in additional layers (see formula:hp)."
+  },
+  {
+   "id": "const:hp-spec-mult-magic",
+   "name": "HP specialization multiplier (engine) — Magic",
+   "value": 1.033,
+   "unit": "x",
+   "src": "s-dev",
+   "date": "2021-02-26"
+  },
+  {
+   "id": "const:hp-spec-mult-stealth",
+   "name": "HP specialization multiplier (engine) — Stealth",
+   "value": 1.077,
+   "unit": "x",
+   "src": "s-dev",
+   "date": "2021-02-26"
+  },
+  {
+   "id": "const:magicka-mult-atronach",
+   "name": "Fortify Maximum Magicka — Atronach (Wombburn)",
+   "value": 1.2,
+   "unit": "x INT",
+   "src": "s-tooltip",
+   "date": "2026-08-21",
+   "note": "In-game tooltip reads 1.2x verbatim; the 0.8 dev doc said 1.25x — see contradictions (tooltip adopted as truth)."
+  },
+  {
+   "id": "const:magicka-mult-mage",
+   "name": "Fortify Maximum Magicka — Mage (Fay)",
+   "value": 1.0,
+   "unit": "x INT",
+   "src": "s-dev-08doc"
+  },
+  {
+   "id": "const:magicka-mult-apprentice",
+   "name": "Fortify Maximum Magicka — Apprentice (Elfborn)",
+   "value": 1.5,
+   "unit": "x INT",
+   "src": "s-dev-08doc"
+  },
+  {
+   "id": "const:magicka-mult-altmer",
+   "name": "Fortify Maximum Magicka — High Elf racial",
+   "value": 1.5,
+   "unit": "x INT",
+   "src": "s-dev-08doc",
+   "note": "Validated in-game 2026-08 (exact fit in the flat-stack model)."
+  },
+  {
+   "id": "const:magicka-mult-breton",
+   "name": "Fortify Maximum Magicka — Breton racial",
+   "value": 0.5,
+   "unit": "x INT",
+   "src": "s-dev-08doc"
+  },
+  {
+   "id": "const:int-cap-magicka",
+   "name": "INT cap in the magicka formula",
+   "value": 175,
+   "unit": "INT",
+   "src": "s-measured",
+   "date": "2026-08-21",
+   "note": "INT above 175 adds no magicka — and corrupts the pool (see fact:overmax-magicka-bug)."
+  },
+  {
+   "id": "const:fort-cap-default",
+   "name": "Default attribute fortification cap (L60)",
+   "value": 175,
+   "unit": "pts",
+   "src": "s-measured",
+   "date": "2026-08-21",
+   "note": "Attribute sheet clamps at 175 without a Fortification-Max mastery; raised per-attribute by such masteries."
+  },
+  {
+   "id": "const:fatigue-level-bonus-l60",
+   "name": "NP fatigue flat bonus at L60",
+   "value": 55,
+   "unit": "pts",
+   "src": "s-measured",
+   "date": "2026-08-21",
+   "note": "Validated exact on two independent L60 characters; +1 at L1; curve between unmeasured."
+  },
+  {
+   "id": "const:dodge-penalty-magic",
+   "name": "Dodge chance penalty — Magic spec",
+   "value": 25,
+   "unit": "pts",
+   "src": "s-dev",
+   "date": "2024-06-12"
+  },
+  {
+   "id": "const:dodge-penalty-combat",
+   "name": "Dodge chance penalty — Combat spec",
+   "value": 50,
+   "unit": "pts",
+   "src": "s-dev",
+   "date": "2024-06-12"
+  },
+  {
+   "id": "const:cast-penalty-combat",
+   "name": "Cast chance penalty — Combat spec",
+   "value": 25,
+   "unit": "pts",
+   "src": "s-dev",
+   "date": "2024-06-12"
+  },
+  {
+   "id": "const:cast-penalty-stealth",
+   "name": "Cast chance penalty — Stealth spec",
+   "value": 50,
+   "unit": "pts",
+   "src": "s-dev",
+   "date": "2024-06-12"
+  },
+  {
+   "id": "const:accuracy-penalty-stealth",
+   "name": "Melee accuracy penalty — Stealth spec",
+   "value": 25,
+   "unit": "pts",
+   "src": "s-dev",
+   "date": "2024-06-12"
+  },
+  {
+   "id": "const:accuracy-penalty-magic",
+   "name": "Melee accuracy penalty — Magic spec",
+   "value": 50,
+   "unit": "pts",
+   "src": "s-dev",
+   "date": "2024-06-12"
+  },
+  {
+   "id": "const:ar-slot-weight-cuirass",
+   "name": "Sheet AR slot weight — cuirass",
+   "value": 0.3,
+   "unit": "fraction",
+   "src": "s-measured",
+   "date": "2026-08-21"
+  },
+  {
+   "id": "const:ar-slot-weight-standard",
+   "name": "Sheet AR slot weight — helm/shield/greaves/boots/each pauldron",
+   "value": 0.1,
+   "unit": "fraction",
+   "src": "s-measured",
+   "date": "2026-08-21"
+  },
+  {
+   "id": "const:ar-slot-weight-gauntlet",
+   "name": "Sheet AR slot weight — each gauntlet",
+   "value": 0.05,
+   "unit": "fraction",
+   "src": "s-measured",
+   "date": "2026-08-21"
+  },
+  {
+   "id": "const:piece-ar-divisor",
+   "name": "Piece AR skill divisor",
+   "value": 30,
+   "unit": null,
+   "src": "s-measured",
+   "date": "2026-08-21",
+   "note": "tooltip AR = floor(base AR x armor skill / 30)"
+  },
+  {
+   "id": "const:unarmored-coefficient",
+   "name": "Unarmored slot AR coefficient",
+   "value": 0.0065,
+   "unit": null,
+   "src": "s-measured",
+   "date": "2026-08-21",
+   "note": "AR per empty/clothing slot = UnarmoredSkill^2 x 0.0065"
+  },
+  {
+   "id": "const:healing-cap",
+   "name": "Healing spell cap",
+   "value": 100,
+   "unit": "HP/second",
+   "src": "s-dev",
+   "date": "2023-10-22"
+  },
+  {
+   "id": "const:npc-training-per-day",
+   "name": "NPC training sessions per earth day",
+   "value": 5,
+   "unit": "sessions",
+   "src": "s-dev-08doc",
+   "note": "A 10/day player claim exists — see contradictions; the dev doc wins."
+  },
+  {
+   "id": "const:cell-reset-hours",
+   "name": "Cell reset window (unloaded)",
+   "value": null,
+   "status": "ok",
+   "src": "s-dev",
+   "note": "3-6 hours as long as no player has the cell loaded; stored as text because it is a range.",
+   "range": "3-6 hours"
+  },
+  {
+   "id": "const:magic-resistance-cap",
+   "name": "Magic resistance cap",
+   "value": 85,
+   "unit": "%",
+   "src": "s-player",
+   "date": "2024-09-11"
+  },
+  {
+   "id": "const:speed-cap",
+   "name": "Speed cap",
+   "value": null,
+   "status": "contested",
+   "src": "s-contested",
+   "note": "350 (2021 claim) vs 175 at L60 (2024 claim) — see contradictions; unresolved."
+  },
+  {
+   "id": "const:melding-pct-per-rank",
+   "name": "Melding Construct AR bonus per rank",
+   "value": 4,
+   "unit": "%/rank",
+   "src": "s-prov",
+   "date": "2026-08-22",
+   "note": "PROVISIONAL — from a single item reading (+20% at rank 5). Applies to equipped-armor AR."
+  },
+  {
+   "id": "const:anvil-armor-ar-multiplier",
+   "name": "Anvil max upgrade — armor piece AR multiplier",
+   "value": 1.54,
+   "unit": "x",
+   "src": "s-prov",
+   "date": "2026-08-22",
+   "note": "PROVISIONAL — one measured item pair (fresh 250 vs maxed 385 at matched skill/condition). A relayed '+42 AR flat' figure did not match — see contradictions."
+  },
+  {
+   "id": "const:native-magicka-regen",
+   "name": "Native magicka regen",
+   "value": 1,
+   "unit": "magicka/tick",
+   "src": "s-measured",
+   "date": "2026-08-21",
+   "note": "For all characters EXCEPT Stunted Magicka (Atronach). Deliberate NP GMST edit."
+  },
+  {
+   "id": "const:enchant-skill-one-charge",
+   "name": "Enchant skill for 1-charge casts",
+   "value": 110,
+   "unit": "skill",
+   "src": "s-player",
+   "note": "At 110 Enchant, all enchanted items cost 1 charge per use (multiple corroborations 2019-2022)."
+  },
+  {
+   "id": "const:max-effects-per-enchant",
+   "name": "Max effects per enchant/spell",
+   "value": 8,
+   "unit": "effects",
+   "src": "s-player",
+   "date": "2020-12-10",
+   "note": "Soul size raises magnitude/duration, never the effect count."
+  },
+  {
+   "id": "const:vampire-daywalker-cost",
+   "name": "Daywalker perk cost",
+   "value": 50,
+   "unit": "mastery points",
+   "src": "s-dev",
+   "date": "2021-04-17"
+  },
+  {
+   "id": "const:vampire-ancient-bloodline-cost",
+   "name": "Ancient Bloodline perk cost",
+   "value": 75,
+   "unit": "mastery points",
+   "src": "s-dev",
+   "date": "2021-04-17",
+   "note": "Requires Daywalker first; both together 125 points."
+  }
+ ],
+ "formulas": [
+  {
+   "id": "formula:hp",
+   "name": "Max Health (L60 effective)",
+   "expr": "HP = floor(END x (spec_ratio + sum(health_factor_bonuses))) + flat_fortify_health",
+   "src": "s-measured",
+   "date": "2026-08-21",
+   "note": "spec_ratio: see const:hp-ratio-*. Dev-stated structure: HP = Endurance x HP Factor(s) x spec multiplier + flat fortify; every character starts with 1 innate HP Factor; Health-Factor perks add on (+1 HP Factor -> 1 END = 2 HP). Endurance is retroactive/real-time. How +0.2-class Health-Factor mastery lines interact with the L60 ratio is OPEN (q:health-factor-stacking)."
+  },
+  {
+   "id": "formula:magicka",
+   "name": "Max Magicka (flat-stack model)",
+   "expr": "maxMag = floor(min(INT, 175) x (1 + sum(fortify_max_magicka_multipliers))) + flat_fortify_magicka",
+   "src": "s-measured",
+   "date": "2026-08-21",
+   "note": "Base 1x INT for everyone. The ONLY xINT carriers: signs Atronach 1.2 / Mage 1.0 / Apprentice 1.5; racials High Elf 1.5 / Breton 0.5 (see const:magicka-mult-*). No specialization factor. Validated exact on an L60 character (mult 3.7: floor(125x3.7)=462; floor(175x3.7)=647). Items can also carry xINT multipliers. WARNING: in-game readings above the INT cap are unstable — see fact:overmax-magicka-bug. Spell Absorption/Reflect stack multiplicatively: total = 1 - prod(1 - each); resists stack additively."
+  },
+  {
+   "id": "formula:fatigue",
+   "name": "Max Fatigue",
+   "expr": "maxFat = STR + WIL + AGI + END + level_bonus",
+   "src": "s-measured",
+   "date": "2026-08-21",
+   "note": "level_bonus: +55 at L60 (validated exact on two characters), +1 at L1; curve between unmeasured. One measured L60 character reads +126 above this model — same character carries an unexplained magicka surplus (q:hidden-passive-anomaly)."
+  },
+  {
+   "id": "formula:piece-ar",
+   "name": "Armor piece tooltip AR",
+   "expr": "tooltipAR = floor(baseAR x armorSkill / 30)",
+   "src": "s-measured",
+   "date": "2026-08-21",
+   "note": "Verified for light/medium/heavy at skill 100 and (item-fortified) 118. NP base ARs deviate from vanilla (e.g. Daedric Tower Shield base 40, vanilla 45) — never take a base from UESP."
+  },
+  {
+   "id": "formula:ar-capture-normalization",
+   "name": "AR capture-skill normalization convention",
+   "expr": "AR@100 = floor(baseAR x 100/30); baseAR = tooltipReading x 30 / captureSkill",
+   "src": "s-measured",
+   "date": "2026-08-22",
+   "note": "CONVENTION: all item AR values in this KB are stated at the skill-100 tooltip baseline (AR@100), independent of who captured them or at what armor skill. Any tooltip captured at a different armor skill MUST be normalized through this formula before entry. Screenshots posted publicly by unknown players may be at unknown skill — such values are marked 'as-posted tooltip, capture skill unknown' in the item record until verified."
+  },
+  {
+   "id": "formula:unarmored-ar",
+   "name": "Unarmored slot AR",
+   "expr": "AR_per_slot = unarmoredSkill^2 x 0.0065",
+   "src": "s-measured",
+   "date": "2026-08-21",
+   "note": "Skill 100 -> 65; empty or clothing-filled armor slots count at this value. Consequence: with high Unarmored, equipping a LOW-AR piece can lower sheet AR."
+  },
+  {
+   "id": "formula:sheet-ar",
+   "name": "Character sheet AR",
+   "expr": "sheetAR = floor(sum(slot_tooltip_AR x slot_weight)) [+ flat Shield effects + flat Armor Bonus masteries]",
+   "src": "s-measured",
+   "date": "2026-08-21",
+   "note": "Slot weights: const:ar-slot-weight-*. Validated 18/18 exact across two characters at armor skills 100 and 118. Armor condition scales AR down as it degrades (confirmed). Piece AR at skill >100 from mastery cap-raises may scale non-linearly — open anomaly q:piece-ar-above-100. Tool authors: there is no enumerated registry of which masteries grant flat Armor Bonus — find them by searching masteries.json raw_text for 'Armor Bonus'; treat that list as player-curated until a registry exists."
+  },
+  {
+   "id": "formula:dodge",
+   "name": "Dodge chance",
+   "expr": "dodge = sum(mastery_dodge_bonuses) - spec_penalty",
+   "src": "s-dev",
+   "date": "2024-06-12",
+   "note": "spec_penalty: Magic 25, Combat 50, Stealth 0 (see const:dodge-penalty-*)."
+  },
+  {
+   "id": "formula:hit-damage",
+   "name": "Hit damage (best power attack)",
+   "expr": "hit = best_strike_max x (STR + 50) / 100",
+   "src": "s-prov",
+   "note": "Vanilla-structure damage scaling adopted by community tools; matches observed play but not formally validated on NP. Condition and armor reduction also factor into damage dealt (vanilla structure, unverified on NP)."
+  },
+  {
+   "id": "formula:focused-strike-proc",
+   "name": "Focused Strike proc chance (Lightning/Freezing/Fiery)",
+   "expr": "proc% = 0.30 x Agility",
+   "src": "s-expert",
+   "date": "2026-08-20",
+   "note": "Expert player statement, adopted as working truth: the tooltip's '30%' corresponds to 100 Agility; 100% proc at Agility >= ~334; scales linearly (190 AGI -> ~57%). Not dev-stated; a one-time count-test would confirm."
+  },
+  {
+   "id": "formula:encumbrance",
+   "name": "Effective encumbrance with Feather",
+   "expr": "effEnc = max(0, equipped_weight - sum(feather_effects))",
+   "src": "s-measured",
+   "date": "2026-08-22",
+   "note": "All Feather sources subtract: mastery flat feather, AR-scaled feather, item/custom-enchant feather. Wearing armor does not itself slow movement/jumping — only total encumbrance does (player-tested)."
+  },
+  {
+   "id": "formula:rank-stacking",
+   "name": "Multi-rank mastery stacking",
+   "expr": "total_effect = sum(effects of ALL owned ranks 1..N)",
+   "src": "s-dev",
+   "note": "Dev-stated 'perks stack additively'. Buying rank N implies owning ranks 1..N and their summed effects."
+  },
+  {
+   "id": "formula:crafting-cost-scaling",
+   "name": "Crafting material cost by tradeskill level",
+   "expr": "cost_at_L10 ~= cost_at_L1 / 10 (rounded down); success chance -10% per level the recipe is above your skill",
+   "src": "s-player",
+   "note": "Dev-clarified example: an 88-spool level-1 recipe costs ~12-15 spools at level 10. Crafting above your level is allowed at higher cost and failure risk."
+  },
+  {
+   "id": "formula:tradeskill-xp-curve",
+   "name": "Total XP per tradeskill level",
+   "expr": "L1:0 L2:32000 L3:254750 L4:668250 L5:1272500 L6:2067500 L7:3053250 L8:4229750 L9:5597000 L10:7155000",
+   "src": "s-player",
+   "date": "2025-01-21",
+   "note": "Cross-checked against actual level-ups by two independent testers; Tailoring confirmed on the same curve."
+  },
+  {
+   "id": "formula:chain-combo-damage",
+   "name": "Chain Combo chained-spell damage",
+   "expr": "chained = spell_damage x chain_multiplier x duration [x3 if trigger is Burning Slash]",
+   "src": "s-player",
+   "date": "2024-08-27",
+   "note": "Chain Combo multiplies the SPELL's damage; it ignores the weapon's own damage and damage-over-time. Multipliers by weapon type were systematically player-tested (e.g. 2H Spear ~19.9-23.5, 1H Axe 14, 2H Long Blade ~9.7-9.8, 1H Short Blade 7); roughly halved inside one tested dungeon."
+  },
+  {
+   "id": "formula:potion-weight",
+   "name": "Potion weight",
+   "expr": "weight = floor(average(ingredient_weights))",
+   "src": "s-dev",
+   "date": "2024-07-23",
+   "note": "2025 addition: any fish ingredient caps potion weight at 1, even when the fish contributes no used effect."
+  }
+ ],
+ "facts": [
+  {
+   "id": "fact:np-not-vanilla",
+   "statement": "NP deliberately rewrites vanilla values: birthsigns and racials fully reworked in 0.8, item base stats differ from vanilla/UESP, and core formulas are server-custom. Vanilla knowledge must never be substituted for a missing NP value.",
+   "src": "s-dev-08doc"
+  },
+  {
+   "id": "fact:restore-vs-tick",
+   "statement": "Constant 'Restore Health/Magicka/Fatigue' effects apply per SECOND; 'over Time' (HoT/MoT/FoT) effects apply per 6-second tick.",
+   "src": "s-measured",
+   "date": "2026-08-21"
+  },
+  {
+   "id": "fact:atronach-stunted-regen",
+   "statement": "Stunted Magicka (Atronach) removes the native 1 magicka/tick regen AND halves all mastery-gained HoT/MoT/FoT tick regen; item-granted regen is not halved.",
+   "src": "s-expert",
+   "date": "2026-08-21"
+  },
+  {
+   "id": "fact:atronach-drain",
+   "statement": "As part of the 0.8 Atronach rework, the sign carries a self Damage Magicka effect (5% of total maximum magicka) — dev-described as a slow drain 'unless you do something about it'. Whether the drain is still live in the current era is unconfirmed.",
+   "src": "s-dev",
+   "date": "2023-11-14",
+   "status": "provisional"
+  },
+  {
+   "id": "fact:overmax-magicka-bug",
+   "statement": "Raising INT above the 175 cap does not just waste points — it CORRUPTS max magicka, and the corrupted value re-rolls on every relog (swinging high or low). Dev-acknowledged as an open issue (Jan 2026) and community-confirmed (Aug 2026). Fixes: damage INT, unequip INT gear to get under the cap, or relog.",
+   "src": "s-dev",
+   "date": "2026-01-27"
+  },
+  {
+   "id": "fact:login-staleness",
+   "statement": "Stat values displayed at login can be stale; equipping/unequipping any item forces a recalculation to the correct value. Formula-verification readings should be taken after an equip cycle.",
+   "src": "s-measured",
+   "date": "2026-08-21"
+  },
+  {
+   "id": "fact:enchant-no-passive-recharge",
+   "statement": "Per the 0.8 dev doc, enchanted items no longer passively recharge and require filled soul gems — but multiple corroborated player reports describe skill-based natural recharge at high Enchant skill. Unresolved; see contradictions.",
+   "src": "s-contested",
+   "status": "contested"
+  },
+  {
+   "id": "fact:ce-enchant-rolls",
+   "statement": "Post-0.8 player constant-effect enchants roll a random final magnitude between the chosen min and max (enchanter mastery and certain racials improve the odds); a later change reportedly sets outcomes to the average of the range. Enter ranges as 1-X, never X-X.",
+   "src": "s-dev-08doc"
+  },
+  {
+   "id": "fact:disenchanting",
+   "statement": "The Disenchanting mastery extracts a player enchant using an empty black soul gem (which shatters), returning the item to its blank, re-enchantable state.",
+   "src": "s-dev-08doc"
+  },
+  {
+   "id": "fact:player-goods-no-npc-value",
+   "statement": "Player-made potions and player-enchanted items have no gold value to NPC merchants; they can only be sold to other players.",
+   "src": "s-dev-08doc"
+  },
+  {
+   "id": "fact:potion-active-limit",
+   "statement": "The number of potions active at once on a character is limited, scaling with Alchemy skill.",
+   "src": "s-dev-08doc"
+  },
+  {
+   "id": "fact:skills-not-potion-fortifiable",
+   "statement": "Skills cannot be fortified by potions on NP; fortifying a skill requires a spellmaking spell or enchant.",
+   "src": "s-player",
+   "date": "2019-01-19"
+  },
+  {
+   "id": "fact:fort-caps-masteries",
+   "statement": "Attribute/skill fortification caps can be raised via masteries ('Fortification Max' lines and certain racials).",
+   "src": "s-dev-08doc"
+  },
+  {
+   "id": "fact:endurance-retroactive",
+   "statement": "Endurance affects health in real time (retroactively) — no need to front-load END early.",
+   "src": "s-dev-08doc"
+  },
+  {
+   "id": "fact:death-penalties",
+   "statement": "On death: revival at the bound Spirit Master (or Seyda Neen), loss of some carried gold, and Mastery Point debt that halves mastery XP gain until paid.",
+   "src": "s-dev-08doc"
+  },
+  {
+   "id": "fact:respec-paths",
+   "statement": "Mastery refunds are available via Rehabilitator Anja (Vivec, near the bank). Additionally, all level-60 players can respec once for FREE with Socucius Ergalla after completing the tax quest, provided zero CM points are currently spent; being online during the NP anniversary event granted one extra respec. Whether these are one mechanism or two is unresolved.",
+   "src": "s-dev",
+   "date": "2024-11-02"
+  },
+  {
+   "id": "fact:birthsign-change",
+   "statement": "Birthsigns can be changed at the Census and Excise Office in Seyda Neen: first change per character free, subsequent changes via anniversary certificates. Whether purchased birthsign-gated masteries refund on change is open.",
+   "src": "s-player",
+   "date": "2026-08-20"
+  },
+  {
+   "id": "fact:soultrap-summons",
+   "statement": "Soultrap does not work on summoned creatures.",
+   "src": "s-dev-08doc"
+  },
+  {
+   "id": "fact:quest-no-trade",
+   "statement": "Quest-tagged items cannot be sold to merchants; No-Trade-tagged items additionally cannot be traded to other players. Neither crosses accounts.",
+   "src": "s-dev-08doc"
+  },
+  {
+   "id": "fact:merchant-sync",
+   "statement": "Since 0.8, merchant inventories and gold are synced across all players (an engine change), restocking after a few in-game days and resetting on server resets.",
+   "src": "s-dev",
+   "date": "2020-07-19"
+  },
+  {
+   "id": "fact:server-reset",
+   "statement": "The server resets daily at 06:00 server time; cells reset 3-6 hours after being unloaded. NPCs killed are restored by resets.",
+   "src": "s-dev"
+  },
+  {
+   "id": "fact:training-limit",
+   "statement": "NPC training is limited to 5 sessions per earth day (dev doc). A 10/day claim circulates — see contradictions.",
+   "src": "s-dev-08doc"
+  },
+  {
+   "id": "fact:autoban",
+   "statement": "A scripted auto-ban system exists: leveling any skill too fast (threshold unknown), and picking up or dropping ~1 million gold at once, are confirmed triggers; it can also catch illegitimately-obtained items without a report.",
+   "src": "s-dev"
+  },
+  {
+   "id": "fact:pvp-flag",
+   "statement": "PVP is opt-in via a toggle flag; hitting another player force-enables yours; killing unflagged players carries penalties including in-game prison. Honor kills earn tokens for custom PVP items; some items require the PVP flag to equip.",
+   "src": "s-dev-08doc"
+  },
+  {
+   "id": "fact:spec-terminology",
+   "statement": "The Combat/Magic/Stealth axis is called 'specialization' (it drives mastery trees, specialization penalties, master classes, and equipment gating). 'Affinity' is the narrower subclass tag on certain masteries (e.g. Paladin/Wizard/Bard-class locks). The sheet's 'Class' name is player-authored and mechanically irrelevant.",
+   "src": "s-dev"
+  },
+  {
+   "id": "fact:full-set-side-effects",
+   "statement": "Certain masteries grant AR-scaled side effects gated on a FULL armor-class set — all 8 body slots (helm, cuirass, greaves, boots, both pauldrons, both gauntlets) in that class, no off-class armor; a worn shield must match, an empty shield slot is allowed. Known: full Light -> Chameleon; full Medium -> Attack; full Heavy -> Feather; full Unarmored (no armor) -> Resist Magicka; gauntlet-scaled fist damage has no full-set requirement.",
+   "src": "s-measured",
+   "date": "2026-08-22"
+  },
+  {
+   "id": "fact:weakness-stack-multiplayer",
+   "statement": "Combining Weakness-to-X with damage in one multi-effect spell multiplies damage beyond sequential casting, and stacking Weakness from MULTIPLE players exceeds the solo cap — dev-confirmed unintended ('not much I can do to resolve it for now').",
+   "src": "s-dev",
+   "date": "2023-01-05"
+  },
+  {
+   "id": "fact:weapon-speed-classes",
+   "statement": "Confirmed tooltip weapon speeds: daggers 250-270%, longblades 125-150%, staffs 175%, 2H/spears ~100%. Reach: ALL 1H blades 6 ft (longblades have no reach advantage over daggers); 2H hammers/axes ~8.4-9.6 ft; spears and long staffs 10.8 ft.",
+   "src": "s-tooltip",
+   "date": "2026-08-20"
+  },
+  {
+   "id": "fact:glorious-tides",
+   "statement": "Glorious Tides tier 3 at max Restoration heals 625 HP to caster and nearby group members (~1088 every 12s per caster with all tiers stacked; two healers rotating -> 1088 per 6s); simultaneous casts on one target do not stack — rotate casts. Hits up to 4 players, cannot target enemies.",
+   "src": "s-dev",
+   "date": "2023-10-22"
+  },
+  {
+   "id": "fact:cure-school-reclassification",
+   "statement": "Adding a Cure effect to a custom spell reclassifies the whole spell as Restoration regardless of other effects (community-tested extensively) — enabling cheap casting of multi-school spells by training only Restoration. Cast chance for multi-school spells otherwise follows the effect with the lowest cast chance, which also sets the displayed school tag.",
+   "src": "s-player",
+   "date": "2021-04-07"
+  },
+  {
+   "id": "fact:leveled-loot",
+   "statement": "Leveled loot/creature spawn lists are determined by whichever player first enters the cell — except spawned creature camps, which are fixed. Displayed item drop rates don't always match observed rates (dev-stated).",
+   "src": "s-dev"
+  },
+  {
+   "id": "fact:bedrolls",
+   "statement": "Free waiting-to-heal is disabled; all players start with a placeable bedroll usable in temples or player homes (crouch-activate to pick it back up).",
+   "src": "s-dev-08doc"
+  },
+  {
+   "id": "fact:character-limits",
+   "statement": "Max 10 characters per player, max 4 played simultaneously (server rule 9).",
+   "src": "s-dev"
+  },
+  {
+   "id": "fact:custom-item-ids",
+   "statement": "Every player-created custom item's internal ID begins with the prefix '$custom_'.",
+   "src": "s-dev",
+   "date": "2019-01-25"
+  },
+  {
+   "id": "fact:stat-caps-base",
+   "statement": "100 is the highest base stat value; 'Max' masteries raise the fortification ceiling above the default cap (see const:fort-cap-default). The /cs command shows current caps in-game.",
+   "src": "s-player"
+  },
+  {
+   "id": "fact:fall-damage",
+   "statement": "1 point of Slow Fall negates all fall damage; fortifying Acrobatics to ~126+ is also reported to negate it.",
+   "src": "s-player",
+   "date": "2019-07-16"
+  },
+  {
+   "id": "fact:jump-teleport-momentum",
+   "statement": "Casting Almsivi/Divine Intervention or Recall right after a strong Jump carries momentum through the teleport (both directions) — the basis of long-distance jump travel.",
+   "src": "s-player",
+   "date": "2019-07-16"
+  },
+  {
+   "id": "fact:skill-check-structure",
+   "statement": "Most skill checks are roughly Skill + 20% of the governing attribute + 10% of Luck (player-reported). Running speed ~ Athletics x Speed with race/encumbrance modifiers; Levitate speed = Levitate magnitude + Speed, no Athletics.",
+   "src": "s-player",
+   "date": "2024-05-14"
+  },
+  {
+   "id": "fact:beast-feet-slot-bug",
+   "statement": "A login bug unequips beast-race characters' feet-slot gear; workaround is an /es equipment set hotkeyed at login. Avoid life-critical enchants on the feet slot for beast races.",
+   "src": "s-player",
+   "date": "2024-08-06"
+  },
+  {
+   "id": "fact:enchanted-tools-bug-fixed",
+   "statement": "Enchanting an axe/pickaxe used to stop it harvesting/mining; dev-confirmed bug, fixed Aug 2022. Two-handed weapons chop/mine better than one-handed (dev-stated); a Fortify Axe effect while mining can raise ore yield per node.",
+   "src": "s-dev",
+   "date": "2022-08-09"
+  }
+ ]
 }

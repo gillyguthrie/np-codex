@@ -1,86 +1,418 @@
 {
-  "_meta": {
-    "description": "Controlled vocabulary of effect types for the NP KB. Item/mastery/sign/race effects reference these keys. delivery classes: constant (always-on while equipped/owned), on-strike (cast when strikes), on-use (cast when used), timed (fixed duration), triggered-spell (grants a castable spell/power), skill-only (fortifies a skill; does not move computed HP/MP/AR/resists), unmodeled (server-custom effect with unknown mechanics)."
+ "_meta": {
+  "description": "Controlled vocabulary of effect types for the NP KB. Item/mastery/sign/race effects reference these keys. delivery classes: constant (always-on while equipped/owned), on-strike (cast when strikes), on-use (cast when used), timed (fixed duration), triggered-spell (grants a castable spell/power), skill-only (fortifies a skill; does not move computed HP/MP/AR/resists), unmodeled (server-custom effect with unknown mechanics)."
+ },
+ "effects": [
+  {
+   "key": "str",
+   "name": "Fortify Strength",
+   "unit": "pts"
   },
-  "effects": [
-    {"key": "str", "name": "Fortify Strength", "unit": "pts"},
-    {"key": "int", "name": "Fortify Intelligence", "unit": "pts"},
-    {"key": "wil", "name": "Fortify Willpower", "unit": "pts"},
-    {"key": "agi", "name": "Fortify Agility", "unit": "pts"},
-    {"key": "spe", "name": "Fortify Speed", "unit": "pts"},
-    {"key": "end", "name": "Fortify Endurance", "unit": "pts"},
-    {"key": "per", "name": "Fortify Personality", "unit": "pts"},
-    {"key": "luc", "name": "Fortify Luck", "unit": "pts"},
-    {"key": "hp", "name": "Fortify Health", "unit": "pts"},
-    {"key": "mag", "name": "Fortify Magicka", "unit": "pts"},
-    {"key": "fat", "name": "Fortify Fatigue", "unit": "pts"},
-    {"key": "magmult", "name": "Fortify Maximum Magicka", "unit": "x INT"},
-    {"key": "attack", "name": "Fortify Attack", "unit": "pts"},
-    {"key": "fire", "name": "Resist Fire", "unit": "%", "note": "negative = Weakness to Fire"},
-    {"key": "frost", "name": "Resist Frost", "unit": "%", "note": "negative = Weakness to Frost"},
-    {"key": "shock", "name": "Resist Shock", "unit": "%", "note": "negative = Weakness to Shock"},
-    {"key": "rmag", "name": "Resist Magicka", "unit": "%", "note": "negative = Weakness to Magicka"},
-    {"key": "poison", "name": "Resist Poison", "unit": "%", "note": "negative = Weakness to Poison"},
-    {"key": "disease", "name": "Resist Disease", "unit": "%"},
-    {"key": "blight", "name": "Resist Blight", "unit": "%"},
-    {"key": "para", "name": "Resist Paralysis", "unit": "%"},
-    {"key": "rnw", "name": "Resist Normal Weapons", "unit": "%"},
-    {"key": "reflect", "name": "Reflect", "unit": "%"},
-    {"key": "absorb", "name": "Spell Absorption", "unit": "%"},
-    {"key": "sanc", "name": "Sanctuary", "unit": "pts"},
-    {"key": "cham", "name": "Chameleon", "unit": "%"},
-    {"key": "feather", "name": "Feather", "unit": "pts"},
-    {"key": "shield", "name": "Shield", "unit": "pts"},
-    {"key": "hot", "name": "Health over Time", "unit": "pts/tick"},
-    {"key": "mot", "name": "Magicka over Time", "unit": "pts/tick"},
-    {"key": "fot", "name": "Fatigue over Time", "unit": "pts/tick"},
-    {"key": "restore-hp", "name": "Restore Health", "unit": "pts/sec"},
-    {"key": "restore-mag", "name": "Restore Magicka", "unit": "pts/sec"},
-    {"key": "restore-fat", "name": "Restore Fatigue", "unit": "pts/sec"},
-    {"key": "hf", "name": "Health Factor", "unit": "factor", "note": "adds to the HP spec ratio"},
-    {"key": "armorbonus", "name": "Armor Bonus (flat)", "unit": "pts"},
-    {"key": "dodge", "name": "Dodge", "unit": "%"},
-    {"key": "swift-swim", "name": "Swift Swim", "unit": "pts"},
-    {"key": "water-breathing", "name": "Water Breathing", "unit": null},
-    {"key": "night-eye", "name": "Night Eye", "unit": "pts"},
-    {"key": "detect", "name": "Detect (animal/enchantment/key)", "unit": "ft"},
-    {"key": "invisibility", "name": "Invisibility", "unit": null},
-    {"key": "telekinesis", "name": "Telekinesis", "unit": "pts"},
-    {"key": "levitate", "name": "Levitate", "unit": "pts"},
-    {"key": "jump", "name": "Jump", "unit": "pts"},
-    {"key": "slowfall", "name": "Slow Fall", "unit": "pts"},
-    {"key": "open", "name": "Open", "unit": "pts"},
-    {"key": "charm", "name": "Charm", "unit": "pts"},
-    {"key": "sound", "name": "Sound", "unit": "pts"},
-    {"key": "silence", "name": "Silence", "unit": null},
-    {"key": "paralyze", "name": "Paralyze", "unit": null},
-    {"key": "dmg-fire", "name": "Fire Damage", "unit": "pts"},
-    {"key": "dmg-frost", "name": "Frost Damage", "unit": "pts"},
-    {"key": "dmg-shock", "name": "Shock Damage", "unit": "pts"},
-    {"key": "dmg-poison", "name": "Poison", "unit": "pts"},
-    {"key": "dmg-hp", "name": "Damage Health", "unit": "pts"},
-    {"key": "dmg-mag", "name": "Damage Magicka", "unit": "pts"},
-    {"key": "dmg-fat", "name": "Damage Fatigue", "unit": "pts"},
-    {"key": "drain-attr", "name": "Drain Attribute", "unit": "pts"},
-    {"key": "absorb-hp", "name": "Absorb Health", "unit": "pts"},
-    {"key": "absorb-fat", "name": "Absorb Fatigue", "unit": "pts"},
-    {"key": "dispel", "name": "Dispel", "unit": "pts"},
-    {"key": "cure", "name": "Cure (disease/blight/poison/paralysis)", "unit": null},
-    {"key": "turn-undead", "name": "Turn Undead", "unit": "pts"},
-    {"key": "demoralize", "name": "Demoralize Humanoid", "unit": "pts"},
-    {"key": "command", "name": "Command Creature", "unit": "levels"},
-    {"key": "soultrap", "name": "Soultrap", "unit": null},
-    {"key": "disint-weapon", "name": "Disintegrate Weapon", "unit": "pts"},
-    {"key": "disint-armor", "name": "Disintegrate Armor", "unit": "pts"},
-    {"key": "fire-shield", "name": "Fire Shield", "unit": "pts"},
-    {"key": "frost-shield", "name": "Frost Shield", "unit": "pts"},
-    {"key": "stunted-magicka", "name": "Stunted Magicka", "unit": null},
-    {"key": "fortify-skill", "name": "Fortify Skill (generic)", "unit": "pts", "note": "delivery skill-only: does not move computed HP/MP/AR/resists"},
-    {"key": "fortify-enchant", "name": "Fortify Enchant", "unit": "pts"},
-    {"key": "fortify-attack-skill", "name": "Fortify Attack (skill)", "unit": "pts"},
-    {"key": "enhancement", "name": "Enhancement", "unit": "pts", "note": "server-custom, mechanics unknown — delivery unmodeled"},
-    {"key": "cap-raise", "name": "Fortification cap raise", "unit": "pts", "note": "raises the fortification ceiling for the attribute/skill named in raw_text"},
-    {"key": "ar-scaled", "name": "AR-scaled side effect", "unit": "% of AR", "note": "effect magnitude scales with Armor Rating; the target stat and gating (full-set class) are in raw_text"},
-    {"key": "unknown", "name": "Unknown/unparsed effect", "unit": null, "note": "delivery unmodeled; raw_text is authoritative"}
-  ]
+  {
+   "key": "int",
+   "name": "Fortify Intelligence",
+   "unit": "pts"
+  },
+  {
+   "key": "wil",
+   "name": "Fortify Willpower",
+   "unit": "pts"
+  },
+  {
+   "key": "agi",
+   "name": "Fortify Agility",
+   "unit": "pts"
+  },
+  {
+   "key": "spe",
+   "name": "Fortify Speed",
+   "unit": "pts"
+  },
+  {
+   "key": "end",
+   "name": "Fortify Endurance",
+   "unit": "pts"
+  },
+  {
+   "key": "per",
+   "name": "Fortify Personality",
+   "unit": "pts"
+  },
+  {
+   "key": "luc",
+   "name": "Fortify Luck",
+   "unit": "pts"
+  },
+  {
+   "key": "hp",
+   "name": "Fortify Health",
+   "unit": "pts"
+  },
+  {
+   "key": "mag",
+   "name": "Fortify Magicka",
+   "unit": "pts"
+  },
+  {
+   "key": "fat",
+   "name": "Fortify Fatigue",
+   "unit": "pts"
+  },
+  {
+   "key": "magmult",
+   "name": "Fortify Maximum Magicka",
+   "unit": "x INT"
+  },
+  {
+   "key": "attack",
+   "name": "Fortify Attack",
+   "unit": "pts"
+  },
+  {
+   "key": "fire",
+   "name": "Resist Fire",
+   "unit": "%",
+   "note": "negative = Weakness to Fire"
+  },
+  {
+   "key": "frost",
+   "name": "Resist Frost",
+   "unit": "%",
+   "note": "negative = Weakness to Frost"
+  },
+  {
+   "key": "shock",
+   "name": "Resist Shock",
+   "unit": "%",
+   "note": "negative = Weakness to Shock"
+  },
+  {
+   "key": "rmag",
+   "name": "Resist Magicka",
+   "unit": "%",
+   "note": "negative = Weakness to Magicka"
+  },
+  {
+   "key": "poison",
+   "name": "Resist Poison",
+   "unit": "%",
+   "note": "negative = Weakness to Poison"
+  },
+  {
+   "key": "disease",
+   "name": "Resist Disease",
+   "unit": "%"
+  },
+  {
+   "key": "blight",
+   "name": "Resist Blight",
+   "unit": "%"
+  },
+  {
+   "key": "para",
+   "name": "Resist Paralysis",
+   "unit": "%"
+  },
+  {
+   "key": "rnw",
+   "name": "Resist Normal Weapons",
+   "unit": "%"
+  },
+  {
+   "key": "reflect",
+   "name": "Reflect",
+   "unit": "%"
+  },
+  {
+   "key": "absorb",
+   "name": "Spell Absorption",
+   "unit": "%"
+  },
+  {
+   "key": "sanc",
+   "name": "Sanctuary",
+   "unit": "pts"
+  },
+  {
+   "key": "cham",
+   "name": "Chameleon",
+   "unit": "%"
+  },
+  {
+   "key": "feather",
+   "name": "Feather",
+   "unit": "pts"
+  },
+  {
+   "key": "shield",
+   "name": "Shield",
+   "unit": "pts"
+  },
+  {
+   "key": "hot",
+   "name": "Health over Time",
+   "unit": "pts/tick"
+  },
+  {
+   "key": "mot",
+   "name": "Magicka over Time",
+   "unit": "pts/tick"
+  },
+  {
+   "key": "fot",
+   "name": "Fatigue over Time",
+   "unit": "pts/tick"
+  },
+  {
+   "key": "restore-hp",
+   "name": "Restore Health",
+   "unit": "pts/sec"
+  },
+  {
+   "key": "restore-mag",
+   "name": "Restore Magicka",
+   "unit": "pts/sec"
+  },
+  {
+   "key": "restore-fat",
+   "name": "Restore Fatigue",
+   "unit": "pts/sec"
+  },
+  {
+   "key": "hf",
+   "name": "Health Factor",
+   "unit": "factor",
+   "note": "adds to the HP spec ratio"
+  },
+  {
+   "key": "armorbonus",
+   "name": "Armor Bonus (flat)",
+   "unit": "pts"
+  },
+  {
+   "key": "dodge",
+   "name": "Dodge",
+   "unit": "%"
+  },
+  {
+   "key": "swift-swim",
+   "name": "Swift Swim",
+   "unit": "pts"
+  },
+  {
+   "key": "water-breathing",
+   "name": "Water Breathing",
+   "unit": null
+  },
+  {
+   "key": "night-eye",
+   "name": "Night Eye",
+   "unit": "pts"
+  },
+  {
+   "key": "detect",
+   "name": "Detect (animal/enchantment/key)",
+   "unit": "ft"
+  },
+  {
+   "key": "invisibility",
+   "name": "Invisibility",
+   "unit": null
+  },
+  {
+   "key": "telekinesis",
+   "name": "Telekinesis",
+   "unit": "pts"
+  },
+  {
+   "key": "levitate",
+   "name": "Levitate",
+   "unit": "pts"
+  },
+  {
+   "key": "jump",
+   "name": "Jump",
+   "unit": "pts"
+  },
+  {
+   "key": "slowfall",
+   "name": "Slow Fall",
+   "unit": "pts"
+  },
+  {
+   "key": "open",
+   "name": "Open",
+   "unit": "pts"
+  },
+  {
+   "key": "charm",
+   "name": "Charm",
+   "unit": "pts"
+  },
+  {
+   "key": "sound",
+   "name": "Sound",
+   "unit": "pts"
+  },
+  {
+   "key": "silence",
+   "name": "Silence",
+   "unit": null
+  },
+  {
+   "key": "paralyze",
+   "name": "Paralyze",
+   "unit": null
+  },
+  {
+   "key": "dmg-fire",
+   "name": "Fire Damage",
+   "unit": "pts"
+  },
+  {
+   "key": "dmg-frost",
+   "name": "Frost Damage",
+   "unit": "pts"
+  },
+  {
+   "key": "dmg-shock",
+   "name": "Shock Damage",
+   "unit": "pts"
+  },
+  {
+   "key": "dmg-poison",
+   "name": "Poison",
+   "unit": "pts"
+  },
+  {
+   "key": "dmg-hp",
+   "name": "Damage Health",
+   "unit": "pts"
+  },
+  {
+   "key": "dmg-mag",
+   "name": "Damage Magicka",
+   "unit": "pts"
+  },
+  {
+   "key": "dmg-fat",
+   "name": "Damage Fatigue",
+   "unit": "pts"
+  },
+  {
+   "key": "drain-attr",
+   "name": "Drain Attribute",
+   "unit": "pts"
+  },
+  {
+   "key": "absorb-hp",
+   "name": "Absorb Health",
+   "unit": "pts"
+  },
+  {
+   "key": "absorb-fat",
+   "name": "Absorb Fatigue",
+   "unit": "pts"
+  },
+  {
+   "key": "dispel",
+   "name": "Dispel",
+   "unit": "pts"
+  },
+  {
+   "key": "cure",
+   "name": "Cure (disease/blight/poison/paralysis)",
+   "unit": null
+  },
+  {
+   "key": "turn-undead",
+   "name": "Turn Undead",
+   "unit": "pts"
+  },
+  {
+   "key": "demoralize",
+   "name": "Demoralize Humanoid",
+   "unit": "pts"
+  },
+  {
+   "key": "command",
+   "name": "Command Creature",
+   "unit": "levels"
+  },
+  {
+   "key": "soultrap",
+   "name": "Soultrap",
+   "unit": null
+  },
+  {
+   "key": "disint-weapon",
+   "name": "Disintegrate Weapon",
+   "unit": "pts"
+  },
+  {
+   "key": "disint-armor",
+   "name": "Disintegrate Armor",
+   "unit": "pts"
+  },
+  {
+   "key": "fire-shield",
+   "name": "Fire Shield",
+   "unit": "pts"
+  },
+  {
+   "key": "frost-shield",
+   "name": "Frost Shield",
+   "unit": "pts"
+  },
+  {
+   "key": "stunted-magicka",
+   "name": "Stunted Magicka",
+   "unit": null
+  },
+  {
+   "key": "fortify-skill",
+   "name": "Fortify Skill (generic)",
+   "unit": "pts",
+   "note": "delivery skill-only: does not move computed HP/MP/AR/resists"
+  },
+  {
+   "key": "fortify-enchant",
+   "name": "Fortify Enchant",
+   "unit": "pts"
+  },
+  {
+   "key": "fortify-attack-skill",
+   "name": "Fortify Attack (skill)",
+   "unit": "pts"
+  },
+  {
+   "key": "enhancement",
+   "name": "Enhancement",
+   "unit": "pts",
+   "note": "server-custom, mechanics unknown — delivery unmodeled"
+  },
+  {
+   "key": "cap-raise",
+   "name": "Fortification cap raise",
+   "unit": "pts",
+   "note": "raises the fortification ceiling for the attribute/skill named in raw_text"
+  },
+  {
+   "key": "ar-scaled",
+   "name": "AR-scaled side effect",
+   "unit": "% of AR",
+   "note": "effect magnitude scales with Armor Rating; the target stat and gating (full-set class) are in raw_text"
+  },
+  {
+   "key": "unknown",
+   "name": "Unknown/unparsed effect",
+   "unit": null,
+   "note": "delivery unmodeled; raw_text is authoritative"
+  },
+  {
+   "key": "light",
+   "name": "Light",
+   "unit": "pts"
+  }
+ ]
 }

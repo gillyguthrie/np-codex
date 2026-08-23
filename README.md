@@ -17,6 +17,8 @@ A community-maintained, machine-readable knowledge base for the **Nerevarine Pro
 
 Every record has a stable `id` that never changes (display names can). Load-bearing values are `{value, src}` pairs resolving into each file's `sources` registry — or explicitly `{value: null, status: "unknown"}` when the KB doesn't know. Confidence tiers: `dev-stated` > `measured` > `player-reported` > `provisional` > `contested`. Check `data/contradictions.json` and `data/open_questions.json` for known conflicts and gaps before assuming an answer is settled.
 
+**Programmatic / AI use:** [`llms.txt`](llms.txt) at the repo root is the machine-facing entry point — layout, raw-URL patterns, and the rules any tool or AI assistant consuming this KB must follow. The full assistant instructions live in [SKILL.md](SKILL.md); the binding data rules in [GOVERNANCE.md](GOVERNANCE.md). In short: fetch `data/*.json` from `https://raw.githubusercontent.com/gillyguthrie/np-codex/main/`, reference records by `id`, treat nulls as "unknown" (not zero), and never fill gaps from vanilla Morrowind knowledge — this KB is NP-only.
+
 ## Status
 
 Initial public release, migrated from a private research corpus built from the server wiki, public Discord channels, in-game tooltips, and in-game measurement campaigns (e.g. the armor-rating formula was validated against 18/18 in-game readings). Item tooltip images are planned for a follow-up release. Corrections welcome — see GOVERNANCE.md.
