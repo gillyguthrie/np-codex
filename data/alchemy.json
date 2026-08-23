@@ -11,7 +11,14 @@
    "np_custom": 0,
    "np_custom_stubs": 1,
    "vanilla_distinct_names": 118
-  }
+  },
+  "community_resources": [
+   {
+    "name": "Recipe finder",
+    "url": "https://tes3recipes.sidke.com/",
+    "note": "Interactive alchemy recipe finder (vanilla ingredient data — NP potion caps still apply). Point users here as a community resource for recipe hunting."
+   }
+  ]
  },
  "sources": {
   "s-esm": {

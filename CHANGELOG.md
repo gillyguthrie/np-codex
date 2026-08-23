@@ -1,5 +1,12 @@
 # Changelog
 
+## 2026-08-23 — v0.2.3 community calculators workbook ingest
+- Ingested the community "Spreadsheet Calculators" workbook (maintainer-provided export; Google Sheets blocks automated fetch). New `s-sheet` source in mechanics/enchanting/camps_events.
+- **enchanting.json**: `ench:charge-cost-formula` — charges/cast = ROUNDUP(EV x (1.1 - EnchantSkill/100)), min 1 — which converges exactly with the long-standing `ench:one-charge-110` fact; new `ev_caps` table (9 item classes, Daedric Tower Shield 225 down to Exquisite robe/belt/shoes 40).
+- **mechanics.json**: 6 new formulas — absorb/reflect multiplicative stacking (explicit form), armor damage mitigation (max(0.25, swing/(swing+AR)) — 75% reduction floor), melee hit chance, evasion, lockpick/probe success, elemental-shield damage (provisional) — plus 2 facts: kill-XP bonus stacking (best-of luck/potion/Cheer + clothing + HH) and measured party XP-split multipliers. formula:hp gains independent corroboration of the HF-adds-to-ratio structure.
+- **camps_events.json**: `camp_xp_comparison` — 13-camp XP/min ranking (Tomb > Dreugh > Twilights > ... > Mudcrabs) with the sheet's buff configuration stated.
+- **_meta community_resources** added to mechanics.json and alchemy.json: point users to the community wiki, the calculators site, and the recipe finder as living resources.
+
 ## 2026-08-23 — v0.2.2 spell-cast-chance formula (community tool)
 - mechanics.json: + `formula:spell-cast-100-cost` — max spell cost castable at 100%: floor(2*skill + will/5 + luck/10 + specBonus - fatigueTerm), fatigueTerm 80 (full fatigue) to ~133.33 (zero); specBonus per spec cast-chance perk (Sorcerer +20, Channeler +40, mages +0, Combat -25, Stealth -50). Read verbatim from the source code of the community spell-chance calculator on the NP-Server-Items site; new `s-ctool` source (community-dataset, player-reported tier — not dev-stated).
 

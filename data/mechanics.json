@@ -2,7 +2,24 @@
  "_meta": {
   "description": "NP server mechanics: constants, formulas, and established facts. This file is the single source for mechanics numbers — tools must import from here rather than hardcoding.",
   "migrated": "2026-08-22",
-  "banner": "NP is not vanilla Morrowind. Formulas and values here are server-specific; vanilla/UESP values are wrong on NP more often than right."
+  "banner": "NP is not vanilla Morrowind. Formulas and values here are server-specific; vanilla/UESP values are wrong on NP more often than right.",
+  "community_resources": [
+   {
+    "name": "NP community wiki",
+    "url": "https://wiki.nerevarineprophecies.com",
+    "note": "Community-maintained wiki (Gameplay Changes, Mastery Points, Tradeskills, Creature Camps, Holiday Events, Login Points, Lycanthropy & Vampirism). Point users here as a living community resource alongside KB answers."
+   },
+   {
+    "name": "Community calculators (spell chance, item tables)",
+    "url": "https://skooma-breath.github.io/NP-Server-Items/",
+    "note": "Interactive spell-chance calculator and custom-item tables. Point users here for hands-on calculation."
+   },
+   {
+    "name": "Recipe finder",
+    "url": "https://tes3recipes.sidke.com/",
+    "note": "Interactive alchemy recipe finder (vanilla ingredient data; NP potion caps still apply)."
+   }
+  ]
  },
  "sources": {
   "s-dev": {
@@ -84,6 +101,14 @@
    "date": "2026-08-23",
    "confidence": "player-reported",
    "note": "Formula read verbatim from the tool's published source code; the tool is community-maintained, not dev-stated."
+  },
+  "s-sheet": {
+   "origin": "community-dataset",
+   "channel": "community spreadsheet calculators (maintainer-provided export, 2026-08-23)",
+   "url": null,
+   "date": "2026-08-23",
+   "confidence": "player-reported",
+   "note": "Formulas and values read from the workbook's cells verbatim. Community-maintained; parts contributed by multiple players."
   }
  },
  "constants": [
@@ -428,7 +453,7 @@
    "expr": "HP = floor(END x (spec_ratio + sum(health_factor_bonuses))) + flat_fortify_health",
    "src": "s-measured",
    "date": "2026-08-21",
-   "note": "spec_ratio: see const:hp-ratio-*. Dev-stated structure: HP = Endurance x HP Factor(s) x spec multiplier + flat fortify; every character starts with 1 innate HP Factor; Health-Factor perks add on (+1 HP Factor -> 1 END = 2 HP). Endurance is retroactive/real-time. How +0.2-class Health-Factor mastery lines interact with the L60 ratio is OPEN (q:health-factor-stacking)."
+   "note": "spec_ratio: see const:hp-ratio-*. Dev-stated structure: HP = Endurance x HP Factor(s) x spec multiplier + flat fortify; every character starts with 1 innate HP Factor; Health-Factor perks add on (+1 HP Factor -> 1 END = 2 HP). Endurance is retroactive/real-time. How +0.2-class Health-Factor mastery lines interact with the L60 ratio is OPEN (q:health-factor-stacking). Independently corroborated 2026-08-23 by the community calculators sheet (HP = END x (specRatio + sum HF) + flat fortify), same structure."
   },
   {
    "id": "formula:magicka",
@@ -554,6 +579,54 @@
    "src": "s-ctool",
    "date": "2026-08-23",
    "note": "specBonus = the spec's cast-chance CM perk value: Sorcerer +20, Channeler +40, mage specs +0, Combat -25, Stealth -50. Fatigue interpolates the constant between 80 (full fatigue) and ~133.33 (zero fatigue). Community-tool formula, not dev-stated; one corroborating public report (server-general 2025-03-23) treats Willpower as marginal for cast chance until ~98%+, consistent with the will/5 term."
+  },
+  {
+   "id": "formula:absorb-reflect-stacking",
+   "name": "Spell Absorption / Reflect stacking",
+   "expr": "total = 1 - product(1 - eff_i); each added source contributes eff_i x (1 - cumulative_before_it)",
+   "src": "s-sheet",
+   "date": "2026-08-23",
+   "note": "Multiplicative/diminishing stacking across all sources (gear, potions, sign). Example from the sheet: eighteen sources -> 93% total. Confirms the KB's prior multiplicative-stacking note with the explicit formula."
+  },
+  {
+   "id": "formula:armor-damage-mitigation",
+   "name": "Damage taken vs Armor Rating",
+   "expr": "damageTakenFraction = max(0.25, incomingSwing / (incomingSwing + AR)); damageTaken = incomingSwing x damageTakenFraction",
+   "src": "s-sheet",
+   "date": "2026-08-23",
+   "note": "Armor mitigation is ratio-based and floors at 25% damage taken (max 75% reduction). Example: AR 1000 vs 2000 swing -> 2/3 damage taken."
+  },
+  {
+   "id": "formula:hit-chance",
+   "name": "Melee hit chance (attacker)",
+   "expr": "hit% = (WeaponSkill + AGI/5 + LUC/10) x fatigueTerm + AttackBonus - Blind; fatigueTerm ranges 0.75 (empty fatigue) to 1.25 (full)",
+   "src": "s-sheet",
+   "date": "2026-08-23",
+   "note": "Spec attack penalties per the sheet: Stealth -25, Magic -50. Vanilla-structure formula in community use on NP."
+  },
+  {
+   "id": "formula:evasion",
+   "name": "Evasion (defender)",
+   "expr": "evade% = (AGI/5 + LUC/10) x fatigueTerm + Sanctuary + Dodge; net chance to hit = hit% - evade%",
+   "src": "s-sheet",
+   "date": "2026-08-23",
+   "note": "Spec dodge penalties per the sheet: Magic -25, Combat -50 (consistent with formula:dodge's spec_penalty). Sanctuary adds 1:1."
+  },
+  {
+   "id": "formula:security-picking",
+   "name": "Lockpick / probe success",
+   "expr": "success% = floor((Security + AGI/5 + LUC/10) x toolQuality x fatigueTerm) - lockOrTrapLevel; fatigueTerm 0.75-1.25",
+   "src": "s-sheet",
+   "date": "2026-08-23",
+   "note": "Tool qualities from the sheet: Grandmaster pick 1.3, Grandmaster probe 1.25."
+  },
+  {
+   "id": "formula:elemental-shield-damage",
+   "name": "Damage taken from mob elemental shields",
+   "expr": "dmg = difficultyMod x 10 x shieldMagnitude x (1 - 0.01 x (playerElementalResist + magicResistRoll)); magicResistRoll = (Destruction + 0.2xWIL + 0.1xLUC) x 1.25 x curFatigue/maxFatigue - RNG(0..99)",
+   "src": "s-sheet",
+   "date": "2026-08-23",
+   "note": "PROVISIONAL: the sheet's header states TotalResistance = max(100, ...) but its own cells use the raw sum; the x10 multiplier is the sheet's fElementalShieldMult. Explains one-shot deaths at empty fatigue vs giant-class shield mobs (magnitude ~300 -> thousands of damage unresisted)."
   }
  ],
  "facts": [
@@ -831,6 +904,19 @@
    "statement": "A max-potency alchemist build was publicly accounted at ~950 CM: ~500 in base lines (Curiosity, max INT/Luck/Alchemy plus filler), 200 Metabolist master class, 75+75 for its two master-class abilities, and 100 Godborn.",
    "src": "s-sgen",
    "date": "2025-01-08"
+  },
+  {
+   "id": "fact:xp-kill-bonus-stacking",
+   "statement": "Kill-XP bonuses combine as: factor = 1 + max(Luck event 1.0, basic XP potion 0.5, Jiubmas Cheer 1.5) + 0.1 per XP-clothing piece + 1.0 during Happy Hour. Luck event / XP potion / Cheer do NOT stack with each other (best one applies); clothing and Happy Hour stack on top.",
+   "src": "s-sheet",
+   "date": "2026-08-23",
+   "note": "Matches public chat 2026-08-17 ('jiubmas cheer overrides login points'). Worked example from the sheet: luck event + 5 XP-clothing pieces, no Happy Hour -> 1 + 1.0 + 0.5 = 2.5x; adding Happy Hour -> 3.5x."
+  },
+  {
+   "id": "fact:party-xp-split",
+   "statement": "Group XP split multipliers (measured at dreugh during Happy Hour): 1 player 1.000, 2 players 0.9615, 3 players 0.9259, 4 players 0.8929 of solo per-kill XP each — a full group loses ~11% per head but yields ~3.57x total group XP.",
+   "src": "s-sheet",
+   "date": "2026-08-23"
   }
  ]
 }

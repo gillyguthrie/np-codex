@@ -36,6 +36,7 @@ Max observed constant-effect magnitude per blank slot x effect class. 'Fortify c
 - Self-enchanted fortify effects do not persist across login — a re-equip shuffle after logging in reapplies them.
 - Weapon enchants are cast-on-strike/charge-based — a different system from constant-effect apparel enchants. Damage-on-strike enchants are not mitigated by the target's Armor Rating.
 - Glamouring a weapon can inconsistently break its silver flag or damage-type flag (e.g. a Daedric weapon glamoured with a Steel model losing its ability to damage Daedra); reproduction attempts have failed on other models — model-specific or intermittent. **[provisional]**
+- Charges consumed per cast/strike = ROUNDUP(effect total EV x (1.1 - EnchantSkill/100)), minimum 1; uses until empty = floor(soulCharge / chargesPerCast). Example: 140 EV at Enchant 108 -> ceil(140 x 0.02) = 3 charges/cast; a 1500 soul gives 500 uses.
 
 ## Infusion Anvil (2026-08)
 

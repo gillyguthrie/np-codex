@@ -1,62 +1,279 @@
 {
-  "_meta": {
-    "description": "NP enchanting and Infusion Anvil system. The self-enchant baseline chart is EMPIRICAL — observed maxima on real player-enchanted items — not a dev-published table. Era matters: the anvil was reworked twice; only post-Jan-2026 values are current.",
-    "migrated": "2026-08-22"
+ "_meta": {
+  "description": "NP enchanting and Infusion Anvil system. The self-enchant baseline chart is EMPIRICAL — observed maxima on real player-enchanted items — not a dev-published table. Era matters: the anvil was reworked twice; only post-Jan-2026 values are current.",
+  "migrated": "2026-08-22"
+ },
+ "sources": {
+  "s-devdoc": {
+   "origin": "dev-doc",
+   "channel": "0.8 Information: notable-changes",
+   "url": null,
+   "date": "2022-05-10",
+   "confidence": "dev-stated"
   },
-  "sources": {
-    "s-devdoc": {"origin": "dev-doc", "channel": "0.8 Information: notable-changes", "url": null, "date": "2022-05-10", "confidence": "dev-stated"},
-    "s-observed": {"origin": "in-game-tooltip", "channel": null, "url": null, "date": "2026-08", "confidence": "measured", "note": "magnitudes observed on real player self-enchanted items"},
-    "s-player": {"origin": "discord-public", "channel": "player-notes", "url": null, "date": null, "confidence": "player-reported"},
-    "s-anvil": {"origin": "discord-public", "channel": "player-notes (Infusion Anvil thread)", "url": null, "date": "2026-08-17", "confidence": "player-reported", "note": "extensive testing by the system's main community documenter"},
-    "s-prov": {"origin": "player-reported", "channel": null, "url": null, "date": null, "confidence": "provisional"}
+  "s-observed": {
+   "origin": "in-game-tooltip",
+   "channel": null,
+   "url": null,
+   "date": "2026-08",
+   "confidence": "measured",
+   "note": "magnitudes observed on real player self-enchanted items"
   },
-  "self_enchant_baseline": {
-    "description": "Max observed constant-effect magnitude per blank slot x effect class. 'Fortify class' = fortify attribute/skill/attack; Chameleon and Sanctuary price identically to fortify. Armor slots (except helm and shield) hold far less than clothing — cuirass/pauldrons/greaves/boots/gauntlets are not practical self-enchant targets.",
-    "src": "s-observed",
-    "slots": [
-      {"slot": "ring (grand/exquisite)", "fortify": 55, "restore_health": 10, "levitate_jump": 17, "notes": "Chameleon/Sanctuary observed 56"},
-      {"slot": "amulet (grand)", "fortify": 55, "restore_health": 10, "levitate_jump": 17},
-      {"slot": "helm (armor blank)", "fortify": 59, "restore_health": 11},
-      {"slot": "shield (daedric-tower-class)", "fortify": 88, "restore_health": 17, "notes": "Sanctuary/Chameleon observed 87-89"},
-      {"slot": "shirt/pants/skirt (grand)", "fortify": 29, "restore_health": 5},
-      {"slot": "robe (grand)", "fortify": 30, "restore_health": null},
-      {"slot": "shoes (grand)", "fortify": 19, "restore_health": 3, "levitate_jump": 5, "resist_elemental": 9},
-      {"slot": "gloves (grand)", "fortify": 11, "resist_paralysis": 50},
-      {"slot": "belt (grand)", "fortify": null, "notes": "no enchanted example observed; inferred ~29 (shirt-class), unverified"}
-    ],
-    "cost_ratios": {
-      "description": "Relative EV cost per effect point (fortify = 1.0x), derived from within-slot ratios. Treat as ~plus/minus 20% until calibrated.",
-      "src": "s-prov",
-      "ratios": {"fortify": 1.0, "sanctuary_chameleon": 1.0, "resist_elemental": 2.1, "levitate_jump": 3.5, "restore_health": 5.6, "resist_paralysis": 0.2}
-    }
+  "s-player": {
+   "origin": "discord-public",
+   "channel": "player-notes",
+   "url": null,
+   "date": null,
+   "confidence": "player-reported"
   },
-  "facts": [
-    {"id": "ench:ev-definition", "statement": "EV (Enchant Value) is how strong an enchantment an item can hold; every weapon, apparel item, and blank scroll has one.", "src": "s-player", "date": "2021-04-02"},
-    {"id": "ench:roll-mechanics", "statement": "Post-0.8 constant-effect enchants roll between min and max (enchanter mastery/racials improve odds); later reports say outcomes auto-set to the range average. Always enter ranges as 1-X, never X-X.", "src": "s-devdoc"},
-    {"id": "ench:effect-cap", "statement": "Max 8 effects per enchant/spell regardless of soul size; bigger souls raise magnitude/duration only.", "src": "s-player", "date": "2020-12-10"},
-    {"id": "ench:one-charge-110", "statement": "At Enchant skill 110, all enchanted items cost 1 charge per use (multiple corroborations 2019-2022); at 109 some still cost more.", "src": "s-player"},
-    {"id": "ench:self-enchant-ceiling", "statement": "The reliable self-enchant ceiling is items of ~100 EV or below (expert community testing).", "src": "s-player", "date": "2022-01-19"},
-    {"id": "ench:ring-ev-baseline", "statement": "Exquisite/grand ring baseline is ~20-24 EV; a re-equip-during-enchant technique historically reached 47 points on a ring (may since be patched — verify before relying on it).", "src": "s-player", "date": "2022-09-25", "status": "provisional"},
-    {"id": "ench:disenchant", "statement": "Disenchanting (mastery) extracts a player enchant with an empty black soul gem, which shatters; the item returns to its blank state and can be re-enchanted.", "src": "s-devdoc"},
-    {"id": "ench:no-npc-value", "statement": "Player enchants have no NPC-sale gold value.", "src": "s-devdoc"},
-    {"id": "ench:self-enchant-persistence", "statement": "Self-enchanted fortify effects do not persist across login — a re-equip shuffle after logging in reapplies them.", "src": "s-player", "date": "2021-07-06"},
-    {"id": "ench:weapon-enchants", "statement": "Weapon enchants are cast-on-strike/charge-based — a different system from constant-effect apparel enchants. Damage-on-strike enchants are not mitigated by the target's Armor Rating.", "src": "s-player"},
-    {"id": "ench:glamour-flag-bug", "statement": "Glamouring a weapon can inconsistently break its silver flag or damage-type flag (e.g. a Daedric weapon glamoured with a Steel model losing its ability to damage Daedra); reproduction attempts have failed on other models — model-specific or intermittent.", "src": "s-player", "date": "2023-06-24", "status": "provisional"}
-  ],
-  "anvil": {
-    "description": "Infusion Anvil item upgrading. 6 attempts per item; outcomes fail / success / critical. History: Nov 2025 first version too strong -> upgraded items wiped; Jan 2026 rebalance; Aug 2026 community confirmation that 'upgrade values are fixed'. Only current-era numbers below.",
-    "src": "s-anvil",
-    "era": "2026-08",
-    "current_values": [
-      {"item_class": "jewellery and clothing", "max_6of6_critical": "+55 EV", "note": "displays as 5x9 + 1x10 on rings; non-critical roughly half"},
-      {"item_class": "weapons", "max_6of6_critical": "+30 Damage, +2250 Durability, +25 EV"},
-      {"item_class": "armor", "max_6of6_critical": "+25 EV, +2250 Durability; AR gain CONTESTED — a relayed '+42 AR' estimate vs a measured x1.54 piece-AR pair (see mechanics const:anvil-armor-ar-multiplier and contradictions)"}
-    ],
-    "facts": [
-      {"id": "anvil:no-luck", "statement": "Luck has little to no measurable influence on upgrade outcomes; tradeskill levels do not influence upgrade costs or salvage yield.", "src": "s-anvil"},
-      {"id": "anvil:skill-mapping", "statement": "Enchant skill primarily influences EV gains (rings/clothing); Armorer skill primarily influences AR/damage/durability gains (weapons/armor).", "src": "s-anvil"},
-      {"id": "anvil:fixed-increments", "statement": "Upgrades use fixed increments per item type, not percentages — item quality/material is irrelevant to the increment (e.g. fully upgraded common gloves can exceed fully upgraded Daedric gloves in EV).", "src": "s-anvil"},
-      {"id": "anvil:upgrade-then-enchant", "statement": "Upgrading does NOT change existing enchantments — upgrade the blank first, then enchant. Whether enchant magnitude ceilings scale with upgraded EV is OPEN (one test enchant settles it).", "src": "s-anvil"}
-    ]
+  "s-anvil": {
+   "origin": "discord-public",
+   "channel": "player-notes (Infusion Anvil thread)",
+   "url": null,
+   "date": "2026-08-17",
+   "confidence": "player-reported",
+   "note": "extensive testing by the system's main community documenter"
+  },
+  "s-prov": {
+   "origin": "player-reported",
+   "channel": null,
+   "url": null,
+   "date": null,
+   "confidence": "provisional"
+  },
+  "s-sheet": {
+   "origin": "community-dataset",
+   "channel": "community spreadsheet calculators (maintainer-provided export, 2026-08-23)",
+   "url": null,
+   "date": "2026-08-23",
+   "confidence": "player-reported",
+   "note": "Formulas and values read from the workbook's cells verbatim. Community-maintained; parts contributed by multiple players."
   }
+ },
+ "self_enchant_baseline": {
+  "description": "Max observed constant-effect magnitude per blank slot x effect class. 'Fortify class' = fortify attribute/skill/attack; Chameleon and Sanctuary price identically to fortify. Armor slots (except helm and shield) hold far less than clothing — cuirass/pauldrons/greaves/boots/gauntlets are not practical self-enchant targets.",
+  "src": "s-observed",
+  "slots": [
+   {
+    "slot": "ring (grand/exquisite)",
+    "fortify": 55,
+    "restore_health": 10,
+    "levitate_jump": 17,
+    "notes": "Chameleon/Sanctuary observed 56"
+   },
+   {
+    "slot": "amulet (grand)",
+    "fortify": 55,
+    "restore_health": 10,
+    "levitate_jump": 17
+   },
+   {
+    "slot": "helm (armor blank)",
+    "fortify": 59,
+    "restore_health": 11
+   },
+   {
+    "slot": "shield (daedric-tower-class)",
+    "fortify": 88,
+    "restore_health": 17,
+    "notes": "Sanctuary/Chameleon observed 87-89"
+   },
+   {
+    "slot": "shirt/pants/skirt (grand)",
+    "fortify": 29,
+    "restore_health": 5
+   },
+   {
+    "slot": "robe (grand)",
+    "fortify": 30,
+    "restore_health": null
+   },
+   {
+    "slot": "shoes (grand)",
+    "fortify": 19,
+    "restore_health": 3,
+    "levitate_jump": 5,
+    "resist_elemental": 9
+   },
+   {
+    "slot": "gloves (grand)",
+    "fortify": 11,
+    "resist_paralysis": 50
+   },
+   {
+    "slot": "belt (grand)",
+    "fortify": null,
+    "notes": "no enchanted example observed; inferred ~29 (shirt-class), unverified"
+   }
+  ],
+  "cost_ratios": {
+   "description": "Relative EV cost per effect point (fortify = 1.0x), derived from within-slot ratios. Treat as ~plus/minus 20% until calibrated.",
+   "src": "s-prov",
+   "ratios": {
+    "fortify": 1.0,
+    "sanctuary_chameleon": 1.0,
+    "resist_elemental": 2.1,
+    "levitate_jump": 3.5,
+    "restore_health": 5.6,
+    "resist_paralysis": 0.2
+   }
+  }
+ },
+ "facts": [
+  {
+   "id": "ench:ev-definition",
+   "statement": "EV (Enchant Value) is how strong an enchantment an item can hold; every weapon, apparel item, and blank scroll has one.",
+   "src": "s-player",
+   "date": "2021-04-02"
+  },
+  {
+   "id": "ench:roll-mechanics",
+   "statement": "Post-0.8 constant-effect enchants roll between min and max (enchanter mastery/racials improve odds); later reports say outcomes auto-set to the range average. Always enter ranges as 1-X, never X-X.",
+   "src": "s-devdoc"
+  },
+  {
+   "id": "ench:effect-cap",
+   "statement": "Max 8 effects per enchant/spell regardless of soul size; bigger souls raise magnitude/duration only.",
+   "src": "s-player",
+   "date": "2020-12-10"
+  },
+  {
+   "id": "ench:one-charge-110",
+   "statement": "At Enchant skill 110, all enchanted items cost 1 charge per use (multiple corroborations 2019-2022); at 109 some still cost more.",
+   "src": "s-player"
+  },
+  {
+   "id": "ench:self-enchant-ceiling",
+   "statement": "The reliable self-enchant ceiling is items of ~100 EV or below (expert community testing).",
+   "src": "s-player",
+   "date": "2022-01-19"
+  },
+  {
+   "id": "ench:ring-ev-baseline",
+   "statement": "Exquisite/grand ring baseline is ~20-24 EV; a re-equip-during-enchant technique historically reached 47 points on a ring (may since be patched — verify before relying on it).",
+   "src": "s-player",
+   "date": "2022-09-25",
+   "status": "provisional"
+  },
+  {
+   "id": "ench:disenchant",
+   "statement": "Disenchanting (mastery) extracts a player enchant with an empty black soul gem, which shatters; the item returns to its blank state and can be re-enchanted.",
+   "src": "s-devdoc"
+  },
+  {
+   "id": "ench:no-npc-value",
+   "statement": "Player enchants have no NPC-sale gold value.",
+   "src": "s-devdoc"
+  },
+  {
+   "id": "ench:self-enchant-persistence",
+   "statement": "Self-enchanted fortify effects do not persist across login — a re-equip shuffle after logging in reapplies them.",
+   "src": "s-player",
+   "date": "2021-07-06"
+  },
+  {
+   "id": "ench:weapon-enchants",
+   "statement": "Weapon enchants are cast-on-strike/charge-based — a different system from constant-effect apparel enchants. Damage-on-strike enchants are not mitigated by the target's Armor Rating.",
+   "src": "s-player"
+  },
+  {
+   "id": "ench:glamour-flag-bug",
+   "statement": "Glamouring a weapon can inconsistently break its silver flag or damage-type flag (e.g. a Daedric weapon glamoured with a Steel model losing its ability to damage Daedra); reproduction attempts have failed on other models — model-specific or intermittent.",
+   "src": "s-player",
+   "date": "2023-06-24",
+   "status": "provisional"
+  },
+  {
+   "id": "ench:charge-cost-formula",
+   "statement": "Charges consumed per cast/strike = ROUNDUP(effect total EV x (1.1 - EnchantSkill/100)), minimum 1; uses until empty = floor(soulCharge / chargesPerCast). Example: 140 EV at Enchant 108 -> ceil(140 x 0.02) = 3 charges/cast; a 1500 soul gives 500 uses.",
+   "src": "s-sheet",
+   "date": "2026-08-23",
+   "note": "Converges exactly with ench:one-charge-110: at Enchant 110 the multiplier reaches 0 and every item hits the 1-charge minimum."
+  }
+ ],
+ "anvil": {
+  "description": "Infusion Anvil item upgrading. 6 attempts per item; outcomes fail / success / critical. History: Nov 2025 first version too strong -> upgraded items wiped; Jan 2026 rebalance; Aug 2026 community confirmation that 'upgrade values are fixed'. Only current-era numbers below.",
+  "src": "s-anvil",
+  "era": "2026-08",
+  "current_values": [
+   {
+    "item_class": "jewellery and clothing",
+    "max_6of6_critical": "+55 EV",
+    "note": "displays as 5x9 + 1x10 on rings; non-critical roughly half"
+   },
+   {
+    "item_class": "weapons",
+    "max_6of6_critical": "+30 Damage, +2250 Durability, +25 EV"
+   },
+   {
+    "item_class": "armor",
+    "max_6of6_critical": "+25 EV, +2250 Durability; AR gain CONTESTED — a relayed '+42 AR' estimate vs a measured x1.54 piece-AR pair (see mechanics const:anvil-armor-ar-multiplier and contradictions)"
+   }
+  ],
+  "facts": [
+   {
+    "id": "anvil:no-luck",
+    "statement": "Luck has little to no measurable influence on upgrade outcomes; tradeskill levels do not influence upgrade costs or salvage yield.",
+    "src": "s-anvil"
+   },
+   {
+    "id": "anvil:skill-mapping",
+    "statement": "Enchant skill primarily influences EV gains (rings/clothing); Armorer skill primarily influences AR/damage/durability gains (weapons/armor).",
+    "src": "s-anvil"
+   },
+   {
+    "id": "anvil:fixed-increments",
+    "statement": "Upgrades use fixed increments per item type, not percentages — item quality/material is irrelevant to the increment (e.g. fully upgraded common gloves can exceed fully upgraded Daedric gloves in EV).",
+    "src": "s-anvil"
+   },
+   {
+    "id": "anvil:upgrade-then-enchant",
+    "statement": "Upgrading does NOT change existing enchantments — upgrade the blank first, then enchant. Whether enchant magnitude ceilings scale with upgraded EV is OPEN (one test enchant settles it).",
+    "src": "s-anvil"
+   }
+  ]
+ },
+ "ev_caps": {
+  "description": "Maximum enchantable EV per item class, as used by the community charge calculator. Complements self_enchant_baseline (which records observed constant-effect magnitudes, not EV capacity).",
+  "src": "s-sheet",
+  "date": "2026-08-23",
+  "caps": [
+   {
+    "item_class": "Daedric Tower Shield",
+    "ev_max": 225
+   },
+   {
+    "item_class": "Helm of Tohan",
+    "ev_max": 150
+   },
+   {
+    "item_class": "Grand jewelry (ring/amulet)",
+    "ev_max": 140
+   },
+   {
+    "item_class": "Exquisite jewelry (ring/amulet)",
+    "ev_max": 120
+   },
+   {
+    "item_class": "Grand shirt/pants/skirt",
+    "ev_max": 75
+   },
+   {
+    "item_class": "Musician's Lute",
+    "ev_max": 70
+   },
+   {
+    "item_class": "Exquisite shirt/pants/skirt",
+    "ev_max": 60
+   },
+   {
+    "item_class": "Grand robe/belt/shoes",
+    "ev_max": 50
+   },
+   {
+    "item_class": "Exquisite robe/belt/shoes",
+    "ev_max": 40
+   }
+  ]
+ }
 }

@@ -75,6 +75,14 @@
    "date": null,
    "confidence": "player-reported",
    "note": "Public server-general channel, 2025-2026 meta context"
+  },
+  "s-sheet": {
+   "origin": "community-dataset",
+   "channel": "community spreadsheet calculators (maintainer-provided export, 2026-08-23)",
+   "url": null,
+   "date": "2026-08-23",
+   "confidence": "player-reported",
+   "note": "Formulas and values read from the workbook's cells verbatim. Community-maintained; parts contributed by multiple players."
   }
  },
  "camps": [
@@ -1630,5 +1638,65 @@
    "src": "server-general-2026",
    "era": "2026-08"
   }
- ]
+ ],
+ "camp_xp_comparison": {
+  "description": "XP-per-minute comparison across grind camps, from the community calculators sheet's measured dataset. Values are AS-CONFIGURED in the sheet: 4-player party (Ogrims solo-only), luck event active, 5 XP-clothing pieces each (2.5x kill factor), no Happy Hour. Use the RANKING more than the absolute numbers; see mechanics fact:xp-kill-bonus-stacking and fact:party-xp-split to rescale.",
+  "src": "s-sheet",
+  "date": "2026-08-23",
+  "group_xp_per_minute": [
+   {
+    "camp": "Tomb",
+    "xp": 47042338
+   },
+   {
+    "camp": "Dreugh",
+    "xp": 35127211
+   },
+   {
+    "camp": "Twilights",
+    "xp": 31551193
+   },
+   {
+    "camp": "Giants",
+    "xp": 13985660
+   },
+   {
+    "camp": "Draugr",
+    "xp": 13152922
+   },
+   {
+    "camp": "Dwemer Constructs",
+    "xp": 12751558
+   },
+   {
+    "camp": "Ogrims (solo)",
+    "xp": 10958941
+   },
+   {
+    "camp": "Druids",
+    "xp": 9530414
+   },
+   {
+    "camp": "Hungers",
+    "xp": 9395161
+   },
+   {
+    "camp": "Skeletons",
+    "xp": 9128373
+   },
+   {
+    "camp": "Kagouti",
+    "xp": 8830108
+   },
+   {
+    "camp": "Wolves",
+    "xp": 3100661
+   },
+   {
+    "camp": "Mudcrabs",
+    "xp": 162452
+   }
+  ],
+  "note": "Partial answer to 'which camp is strongest to farm' on the XP axis only — gear checks, risk, and drops are separate. Per-mob base XP values exist in the source workbook, not yet ingested."
+ }
 }

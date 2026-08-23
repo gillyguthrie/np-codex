@@ -54,7 +54,7 @@
 
 ### Max Health (L60 effective)  
 `HP = floor(END x (spec_ratio + sum(health_factor_bonuses))) + flat_fortify_health`  
-spec_ratio: see const:hp-ratio-*. Dev-stated structure: HP = Endurance x HP Factor(s) x spec multiplier + flat fortify; every character starts with 1 innate HP Factor; Health-Factor perks add on (+1 HP Factor -> 1 END = 2 HP). Endurance is retroactive/real-time. How +0.2-class Health-Factor mastery lines interact with the L60 ratio is OPEN (q:health-factor-stacking).
+spec_ratio: see const:hp-ratio-*. Dev-stated structure: HP = Endurance x HP Factor(s) x spec multiplier + flat fortify; every character starts with 1 innate HP Factor; Health-Factor perks add on (+1 HP Factor -> 1 END = 2 HP). Endurance is retroactive/real-time. How +0.2-class Health-Factor mastery lines interact with the L60 ratio is OPEN (q:health-factor-stacking). Independently corroborated 2026-08-23 by the community calculators sheet (HP = END x (specRatio + sum HF) + flat fortify), same structure.
 
 ### Max Magicka (flat-stack model)  
 `maxMag = floor(min(INT, 175) x (1 + sum(fortify_max_magicka_multipliers))) + flat_fortify_magicka`  
@@ -120,6 +120,30 @@ Chain Combo multiplies the SPELL's damage; it ignores the weapon's own damage an
 `maxCost_fullFatigue = floor(2*skill + will/5 + luck/10 + specBonus - 80); maxCost_zeroFatigue = floor(2*skill + will/5 + luck/10 + specBonus - (4/3)*100)`  
 specBonus = the spec's cast-chance CM perk value: Sorcerer +20, Channeler +40, mage specs +0, Combat -25, Stealth -50. Fatigue interpolates the constant between 80 (full fatigue) and ~133.33 (zero fatigue). Community-tool formula, not dev-stated; one corroborating public report (server-general 2025-03-23) treats Willpower as marginal for cast chance until ~98%+, consistent with the will/5 term.
 
+### Spell Absorption / Reflect stacking  
+`total = 1 - product(1 - eff_i); each added source contributes eff_i x (1 - cumulative_before_it)`  
+Multiplicative/diminishing stacking across all sources (gear, potions, sign). Example from the sheet: eighteen sources -> 93% total. Confirms the KB's prior multiplicative-stacking note with the explicit formula.
+
+### Damage taken vs Armor Rating  
+`damageTakenFraction = max(0.25, incomingSwing / (incomingSwing + AR)); damageTaken = incomingSwing x damageTakenFraction`  
+Armor mitigation is ratio-based and floors at 25% damage taken (max 75% reduction). Example: AR 1000 vs 2000 swing -> 2/3 damage taken.
+
+### Melee hit chance (attacker)  
+`hit% = (WeaponSkill + AGI/5 + LUC/10) x fatigueTerm + AttackBonus - Blind; fatigueTerm ranges 0.75 (empty fatigue) to 1.25 (full)`  
+Spec attack penalties per the sheet: Stealth -25, Magic -50. Vanilla-structure formula in community use on NP.
+
+### Evasion (defender)  
+`evade% = (AGI/5 + LUC/10) x fatigueTerm + Sanctuary + Dodge; net chance to hit = hit% - evade%`  
+Spec dodge penalties per the sheet: Magic -25, Combat -50 (consistent with formula:dodge's spec_penalty). Sanctuary adds 1:1.
+
+### Lockpick / probe success  
+`success% = floor((Security + AGI/5 + LUC/10) x toolQuality x fatigueTerm) - lockOrTrapLevel; fatigueTerm 0.75-1.25`  
+Tool qualities from the sheet: Grandmaster pick 1.3, Grandmaster probe 1.25.
+
+### Damage taken from mob elemental shields  
+`dmg = difficultyMod x 10 x shieldMagnitude x (1 - 0.01 x (playerElementalResist + magicResistRoll)); magicResistRoll = (Destruction + 0.2xWIL + 0.1xLUC) x 1.25 x curFatigue/maxFatigue - RNG(0..99)`  
+PROVISIONAL: the sheet's header states TotalResistance = max(100, ...) but its own cells use the raw sum; the x10 multiplier is the sheet's fElementalShieldMult. Explains one-shot deaths at empty fatigue vs giant-class shield mobs (magnitude ~300 -> thousands of damage unresisted).
+
 
 ## Established facts
 
@@ -171,3 +195,5 @@ specBonus = the spec's cast-chance CM perk value: Sorcerer +20, Channeler +40, m
 - **vampire-dust-vampirism-cosmetic**: The Vampirism effect on Vampire Dust changes the drinker's appearance only; it carries none of the actual vampirism scripting.
 - **mass-brew-caution**: Very large single combines are risky: a 1000-potion combine triggered the server's anti-cheat auto-ban, and mass brewing lags the server. Community practice is roughly 100 potions per combine with a few seconds between batches.
 - **alchemist-cm-budget**: A max-potency alchemist build was publicly accounted at ~950 CM: ~500 in base lines (Curiosity, max INT/Luck/Alchemy plus filler), 200 Metabolist master class, 75+75 for its two master-class abilities, and 100 Godborn.
+- **xp-kill-bonus-stacking**: Kill-XP bonuses combine as: factor = 1 + max(Luck event 1.0, basic XP potion 0.5, Jiubmas Cheer 1.5) + 0.1 per XP-clothing piece + 1.0 during Happy Hour. Luck event / XP potion / Cheer do NOT stack with each other (best one applies); clothing and Happy Hour stack on top.
+- **party-xp-split**: Group XP split multipliers (measured at dreugh during Happy Hour): 1 player 1.000, 2 players 0.9615, 3 players 0.9259, 4 players 0.8929 of solo per-kill XP each — a full group loses ~11% per head but yields ~3.57x total group XP.
