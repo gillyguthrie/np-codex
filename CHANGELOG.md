@@ -1,5 +1,10 @@
 # Changelog
 
+## 2026-08-23 — v0.2.1 vanilla reference
+- **New `data/vanilla_ref.json`**: 1,584 vanilla equipment records (armor/weapons/clothing incl. jewelry, 847 with enchantments) parsed directly from the game's Morrowind/Tribunal/Bloodmoon ESM files. New `game-esm` origin in the provenance enum. NP vanilla-named items now carry `xref["vanilla-ref"]` (50 matched).
+- **ESM extraction corrected two memory-sourced KB claims**: (1) the piece-AR note's "vanilla Daedric Tower Shield 45" — the ESM says base 80; (2) q:vanilla-modified-tracking's entire "NP buffed artifact damage" list (Sunder/Goldbrand/Hopesfire/Eltonbrand/Skull Crusher) and the Mantle of Woe claim — all identical to vanilla in the ESM. The question is now partially resolved with the real, ESM-verified NP changes: Wraithguard + Marara's Ring Reflect 20->10, Marara's lost Fortify Acrobatics, Nordic Silver Battleaxe + Stormfang retuned, and armor AR systematically reduced (~half of vanilla, some helms further).
+- SKILL.md rule 7 updated: vanilla item stats now answerable from vanilla_ref.json (with the AR-convention warning); vanilla lore/quests still go to UESP. `np-codex.skill` repackaged.
+
 ## 2026-08-23 — v0.2.1 persona-test round 2
 - camps_events.json: the winter event now carries its community name — **"Jiubsmas"** — as an alias, with the ornament-quest / event-limited-drops note; items whose location reads "Jiubsmas" (e.g. Whitefang) now cross-reference it via drop_notes.
 - open_questions.json: + `q:player-theft-rules` (rules are silent on pickpocketing/looting other players), `q:elemental-camp-level-ranges` (no level guidance for atronach/event camps), `q:race-base-stats` (races.json has abilities only — no base attribute/skill tables).

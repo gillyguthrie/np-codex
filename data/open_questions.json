@@ -158,9 +158,9 @@
   {
    "id": "q:vanilla-modified-tracking",
    "topic": "Which vanilla items NP has modified",
-   "status": "open",
+   "status": "partially-resolved",
    "date": "2026-08-23",
-   "detail": "items.json now carries origin_game (vanilla / np-custom) classified against the actual game ESM rosters. Known so far from tooltip-vs-ESM comparison: NP buffed max damage on several artifacts (e.g. Sunder 60->70, Goldbrand 45->50, Hopesfire 55->70, Eltonbrand 55->60, Skull Crusher 50->60) and changed Mantle of Woe's magicka multiplier (0.5x -> 5.0x INT); Wraithguard/Marara's Ring Reflect 20->10 unverified. Systematically flagging vanilla-modified items is future work."
+   "detail": "RESOLVED for the 50 vanilla-named items with full NP captures, via data/vanilla_ref.json (parsed from the game ESMs, 2026-08-23). ESM-verified NP changes: Wraithguard and Marara's Ring Reflect nerfed 20->10 (Marara's also lost vanilla's Fortify Acrobatics 10); Nordic Silver Battleaxe retuned (Chop 5-50 -> 25-45, weight 30->22); Stormfang slightly nerfed (all dmg maxima -2 to -3, weight 30->27); armor AR systematically reduced (~half of vanilla for most pieces: Daedric Cuirass/Greaves/Savior's Hide 266->133 AR@100, Ebony Mail 333->166, Darksun 200->100; some helms cut further: Oreyn Bearclaw 300->76, Masque of Clavicus Vile 266->68). CORRECTED: earlier versions of this question claimed NP buffed artifact damage (Sunder 60->70, Goldbrand 45->50, Hopesfire 55->70, Eltonbrand 55->60, Skull Crusher 50->60) and Mantle of Woe 0.5x->5.0x - ALL FALSE: those NP values are identical to the vanilla ESM; the 'vanilla' side of each claim was memory-sourced. REMAINING: vanilla-named items without full NP tooltip captures, and non-equipment records."
   },
   {
    "id": "q:weapon-speed-attack-rate",

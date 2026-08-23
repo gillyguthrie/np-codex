@@ -9326,7 +9326,8 @@
     "base_dmg": 45
    },
    "xref": {
-    "np-server-items": "Nordic Silver Battleaxe"
+    "np-server-items": "Nordic Silver Battleaxe",
+    "vanilla-ref": "vanilla:nordic-silver-battleaxe"
    },
    "origin_game": "vanilla"
   },
@@ -9716,7 +9717,8 @@
     "base_dmg": 27
    },
    "xref": {
-    "np-server-items": "Stormfang"
+    "np-server-items": "Stormfang",
+    "vanilla-ref": "vanilla:stormfang"
    },
    "origin_game": "vanilla"
   },
@@ -10266,7 +10268,8 @@
     "base_dmg": 44
    },
    "xref": {
-    "np-server-items": "Wings of the Queen of Bats"
+    "np-server-items": "Wings of the Queen of Bats",
+    "vanilla-ref": "vanilla:wings-of-the-queen-of-bats"
    },
    "origin_game": "vanilla"
   },
@@ -11342,7 +11345,8 @@
     "raw_text": "none"
    },
    "xref": {
-    "np-server-items": "Cuirass of the Savior’s Hide"
+    "np-server-items": "Cuirass of the Savior’s Hide",
+    "vanilla-ref": "vanilla:cuirass-of-the-savior-s-hide"
    },
    "origin_game": "vanilla"
   },
@@ -29847,7 +29851,10 @@
     "status": "unknown",
     "raw_text": "Unknown"
    },
-   "origin_game": "vanilla"
+   "origin_game": "vanilla",
+   "xref": {
+    "vanilla-ref": "vanilla:veloth-s-shield"
+   }
   },
   {
    "id": "item:staff-of-cinders",
@@ -42755,7 +42762,10 @@
    "image": null,
    "src": "s-tooltip",
    "notes": "hand-captured from an in-game tooltip (absent from the public channel export)",
-   "origin_game": "vanilla"
+   "origin_game": "vanilla",
+   "xref": {
+    "vanilla-ref": "vanilla:daedric-cuirass"
+   }
   },
   {
    "id": "item:daedric-greaves",
@@ -42796,7 +42806,10 @@
    "image": null,
    "src": "s-tooltip",
    "notes": "hand-captured from an in-game tooltip (absent from the public channel export)",
-   "origin_game": "vanilla"
+   "origin_game": "vanilla",
+   "xref": {
+    "vanilla-ref": "vanilla:daedric-greaves"
+   }
   },
   {
    "id": "item:denstagmer-s-ring",
@@ -42855,7 +42868,10 @@
    "image": null,
    "src": "s-tooltip",
    "notes": "hand-captured from an in-game tooltip (absent from the public channel export)",
-   "origin_game": "vanilla"
+   "origin_game": "vanilla",
+   "xref": {
+    "vanilla-ref": "vanilla:denstagmer-s-ring"
+   }
   },
   {
    "id": "item:ebony-mail",
@@ -42915,7 +42931,10 @@
    "image": null,
    "src": "s-tooltip",
    "notes": "hand-captured from an in-game tooltip (absent from the public channel export)",
-   "origin_game": "vanilla"
+   "origin_game": "vanilla",
+   "xref": {
+    "vanilla-ref": "vanilla:ebony-mail"
+   }
   },
   {
    "id": "item:falmen-trousers",
@@ -43021,7 +43040,10 @@
    "image": null,
    "src": "s-tooltip",
    "notes": "hand-captured from an in-game tooltip (absent from the public channel export)",
-   "origin_game": "vanilla"
+   "origin_game": "vanilla",
+   "xref": {
+    "vanilla-ref": "vanilla:ring-of-phynaster"
+   }
   },
   {
    "id": "item:darksun-shield",
@@ -43069,7 +43091,10 @@
    "image": null,
    "src": "s-tooltip",
    "notes": "hand-captured from an in-game tooltip (absent from the public channel export)",
-   "origin_game": "vanilla"
+   "origin_game": "vanilla",
+   "xref": {
+    "vanilla-ref": "vanilla:darksun-shield"
+   }
   },
   {
    "id": "item:goblin-buckler",
@@ -43129,7 +43154,10 @@
    "image": null,
    "src": "s-tooltip",
    "notes": "hand-captured from an in-game tooltip (absent from the public channel export)",
-   "origin_game": "vanilla"
+   "origin_game": "vanilla",
+   "xref": {
+    "vanilla-ref": "vanilla:goblin-buckler"
+   }
   },
   {
    "id": "item:shrouded-anklet",
@@ -43259,7 +43287,10 @@
    "image": null,
    "src": "s-tooltip",
    "notes": "hand-captured from an in-game tooltip (absent from the public channel export)",
-   "origin_game": "vanilla"
+   "origin_game": "vanilla",
+   "xref": {
+    "vanilla-ref": "vanilla:the-icecap"
+   }
   },
   {
    "id": "item:bloodstained-ring",
@@ -43631,7 +43662,10 @@
    "image": null,
    "src": "s-tooltip",
    "notes": "hand-captured from an in-game tooltip (absent from the public channel export)",
-   "origin_game": "vanilla"
+   "origin_game": "vanilla",
+   "xref": {
+    "vanilla-ref": "vanilla:paws-of-the-wolf-runner"
+   }
   },
   {
    "id": "item:visage-of-mzund",
@@ -43769,7 +43803,10 @@
    "image": null,
    "src": "s-tooltip",
    "notes": "hand-captured from an in-game tooltip (absent from the public channel export)",
-   "origin_game": "vanilla"
+   "origin_game": "vanilla",
+   "xref": {
+    "vanilla-ref": "vanilla:wraithguard"
+   }
   },
   {
    "id": "item:mantle-of-woe",
@@ -43828,7 +43865,10 @@
    "image": null,
    "src": "s-tooltip",
    "notes": "hand-captured from an in-game tooltip (absent from the public channel export)",
-   "origin_game": "vanilla"
+   "origin_game": "vanilla",
+   "xref": {
+    "vanilla-ref": "vanilla:mantle-of-woe"
+   }
   },
   {
    "id": "item:robe-of-the-drake-s-pride",
@@ -43881,7 +43921,10 @@
    "image": null,
    "src": "s-tooltip",
    "notes": "hand-captured from an in-game tooltip (absent from the public channel export)",
-   "origin_game": "vanilla"
+   "origin_game": "vanilla",
+   "xref": {
+    "vanilla-ref": "vanilla:robe-of-the-drake-s-pride"
+   }
   },
   {
    "id": "item:helseth-s-collar",
@@ -43934,7 +43977,10 @@
    "image": null,
    "src": "s-tooltip",
    "notes": "hand-captured from an in-game tooltip (absent from the public channel export)",
-   "origin_game": "vanilla"
+   "origin_game": "vanilla",
+   "xref": {
+    "vanilla-ref": "vanilla:helseth-s-collar"
+   }
   },
   {
    "id": "item:ring-of-sanguine-red-wisdom",
@@ -43981,7 +44027,10 @@
    "image": null,
    "src": "s-tooltip",
    "notes": "hand-captured from an in-game tooltip (absent from the public channel export)",
-   "origin_game": "vanilla"
+   "origin_game": "vanilla",
+   "xref": {
+    "vanilla-ref": "vanilla:ring-of-sanguine-red-wisdom"
+   }
   },
   {
    "id": "item:helm-of-oreyn-bearclaw",
@@ -44035,7 +44084,10 @@
    "image": null,
    "src": "s-tooltip",
    "notes": "hand-captured from an in-game tooltip (absent from the public channel export)",
-   "origin_game": "vanilla"
+   "origin_game": "vanilla",
+   "xref": {
+    "vanilla-ref": "vanilla:helm-of-oreyn-bearclaw"
+   }
   },
   {
    "id": "item:masque-of-clavicus-vile",
@@ -44083,7 +44135,10 @@
    "image": null,
    "src": "s-tooltip",
    "notes": "hand-captured from an in-game tooltip (absent from the public channel export)",
-   "origin_game": "vanilla"
+   "origin_game": "vanilla",
+   "xref": {
+    "vanilla-ref": "vanilla:masque-of-clavicus-vile"
+   }
   },
   {
    "id": "item:helm-of-bear-scent",
@@ -44124,7 +44179,10 @@
    "image": null,
    "src": "s-tooltip",
    "notes": "hand-captured from an in-game tooltip (absent from the public channel export)",
-   "origin_game": "vanilla"
+   "origin_game": "vanilla",
+   "xref": {
+    "vanilla-ref": "vanilla:helm-of-bear-scent"
+   }
   },
   {
    "id": "item:whitewalker",
@@ -44171,7 +44229,10 @@
    "image": null,
    "src": "s-tooltip",
    "notes": "hand-captured from an in-game tooltip (absent from the public channel export)",
-   "origin_game": "vanilla"
+   "origin_game": "vanilla",
+   "xref": {
+    "vanilla-ref": "vanilla:whitewalker"
+   }
   },
   {
    "id": "item:glove-of-sanguine-swiftblade",
@@ -44218,7 +44279,10 @@
    "image": null,
    "src": "s-tooltip",
    "notes": "hand-captured from an in-game tooltip (absent from the public channel export)",
-   "origin_game": "vanilla"
+   "origin_game": "vanilla",
+   "xref": {
+    "vanilla-ref": "vanilla:glove-of-sanguine-swiftblade"
+   }
   },
   {
    "id": "item:fist-of-randagulf-right-gauntlet-right",
@@ -44314,7 +44378,10 @@
    "image": null,
    "src": "s-tooltip",
    "notes": "hand-captured from an in-game tooltip (absent from the public channel export)",
-   "origin_game": "vanilla"
+   "origin_game": "vanilla",
+   "xref": {
+    "vanilla-ref": "vanilla:fist-of-randagulf-left-gauntlet"
+   }
   },
   {
    "id": "item:helm-of-the-wolf-s-heart",
@@ -44368,7 +44435,10 @@
    "image": null,
    "src": "s-tooltip",
    "notes": "hand-captured from an in-game tooltip (absent from the public channel export)",
-   "origin_game": "vanilla"
+   "origin_game": "vanilla",
+   "xref": {
+    "vanilla-ref": "vanilla:helm-of-the-wolf-s-heart"
+   }
   },
   {
    "id": "item:aesliip-s-ring",
@@ -44421,7 +44491,10 @@
    "image": null,
    "src": "s-tooltip",
    "notes": "hand-captured from an in-game tooltip (absent from the public channel export)",
-   "origin_game": "vanilla"
+   "origin_game": "vanilla",
+   "xref": {
+    "vanilla-ref": "vanilla:aesliip-s-ring"
+   }
   },
   {
    "id": "item:surefeet",
@@ -44461,7 +44534,10 @@
    "image": null,
    "src": "s-tooltip",
    "notes": "hand-captured from an in-game tooltip (absent from the public channel export)",
-   "origin_game": "vanilla"
+   "origin_game": "vanilla",
+   "xref": {
+    "vanilla-ref": "vanilla:surefeet"
+   }
   },
   {
    "id": "item:belt-of-sanguine-smiting",
@@ -44501,7 +44577,10 @@
    "image": null,
    "src": "s-tooltip",
    "notes": "hand-captured from an in-game tooltip (absent from the public channel export)",
-   "origin_game": "vanilla"
+   "origin_game": "vanilla",
+   "xref": {
+    "vanilla-ref": "vanilla:belt-of-sanguine-smiting"
+   }
   },
   {
    "id": "item:ring-of-sanguine-green-wisdom",
@@ -44541,7 +44620,10 @@
    "image": null,
    "src": "s-tooltip",
    "notes": "hand-captured from an in-game tooltip (absent from the public channel export)",
-   "origin_game": "vanilla"
+   "origin_game": "vanilla",
+   "xref": {
+    "vanilla-ref": "vanilla:ring-of-sanguine-green-wisdom"
+   }
   },
   {
    "id": "item:ring-of-sanguine-transfiguring",
@@ -44581,7 +44663,10 @@
    "image": null,
    "src": "s-tooltip",
    "notes": "hand-captured from an in-game tooltip (absent from the public channel export)",
-   "origin_game": "vanilla"
+   "origin_game": "vanilla",
+   "xref": {
+    "vanilla-ref": "vanilla:ring-of-sanguine-transfiguring"
+   }
   },
   {
    "id": "item:ring-of-raven-eye",
@@ -44628,7 +44713,10 @@
    "image": null,
    "src": "s-tooltip",
    "notes": "hand-captured from an in-game tooltip (absent from the public channel export)",
-   "origin_game": "vanilla"
+   "origin_game": "vanilla",
+   "xref": {
+    "vanilla-ref": "vanilla:ring-of-raven-eye"
+   }
   },
   {
    "id": "item:marara-s-ring",
@@ -44681,7 +44769,10 @@
    "image": null,
    "src": "s-tooltip",
    "notes": "hand-captured from an in-game tooltip (absent from the public channel export)",
-   "origin_game": "vanilla"
+   "origin_game": "vanilla",
+   "xref": {
+    "vanilla-ref": "vanilla:marara-s-ring"
+   }
   },
   {
    "id": "item:moon-and-star",
@@ -44728,7 +44819,10 @@
    "image": null,
    "src": "s-tooltip",
    "notes": "hand-captured from an in-game tooltip (absent from the public channel export)",
-   "origin_game": "vanilla"
+   "origin_game": "vanilla",
+   "xref": {
+    "vanilla-ref": "vanilla:moon-and-star"
+   }
   },
   {
    "id": "item:necromancer-s-amulet",
@@ -44793,7 +44887,10 @@
    "image": null,
    "src": "s-tooltip",
    "notes": "hand-captured from an in-game tooltip (absent from the public channel export)",
-   "origin_game": "vanilla"
+   "origin_game": "vanilla",
+   "xref": {
+    "vanilla-ref": "vanilla:necromancer-s-amulet"
+   }
   },
   {
    "id": "item:frost-etched-belt",
@@ -44920,7 +45017,10 @@
     "range_ft": 6,
     "base_dmg": 14
    },
-   "origin_game": "vanilla"
+   "origin_game": "vanilla",
+   "xref": {
+    "vanilla-ref": "vanilla:dagger-of-symmachus"
+   }
   },
   {
    "id": "item:stalhrim-dagger",
@@ -44984,7 +45084,10 @@
     "range_ft": 6,
     "base_dmg": 13
    },
-   "origin_game": "vanilla"
+   "origin_game": "vanilla",
+   "xref": {
+    "vanilla-ref": "vanilla:stalhrim-dagger"
+   }
   },
   {
    "id": "item:fang-of-haynekhtnamet",
@@ -45048,7 +45151,10 @@
     "range_ft": 6,
     "base_dmg": 17
    },
-   "origin_game": "vanilla"
+   "origin_game": "vanilla",
+   "xref": {
+    "vanilla-ref": "vanilla:fang-of-haynekhtnamet"
+   }
   },
   {
    "id": "item:adamantium-jinkblade-of-wounds",
@@ -45112,7 +45218,10 @@
     "range_ft": 6,
     "base_dmg": 12
    },
-   "origin_game": "vanilla"
+   "origin_game": "vanilla",
+   "xref": {
+    "vanilla-ref": "vanilla:adamantium-jinkblade-of-wounds"
+   }
   },
   {
    "id": "item:goldbrand",
@@ -45176,7 +45285,10 @@
     "range_ft": 6,
     "base_dmg": 28
    },
-   "origin_game": "vanilla"
+   "origin_game": "vanilla",
+   "xref": {
+    "vanilla-ref": "vanilla:goldbrand"
+   }
   },
   {
    "id": "item:hopesfire",
@@ -45240,7 +45352,10 @@
     "range_ft": 6,
     "base_dmg": 41
    },
-   "origin_game": "vanilla"
+   "origin_game": "vanilla",
+   "xref": {
+    "vanilla-ref": "vanilla:hopesfire"
+   }
   },
   {
    "id": "item:arm-of-the-sun",
@@ -45372,7 +45487,10 @@
     "range_ft": 6,
     "base_dmg": 14
    },
-   "origin_game": "vanilla"
+   "origin_game": "vanilla",
+   "xref": {
+    "vanilla-ref": "vanilla:daedric-tanto"
+   }
   },
   {
    "id": "item:daedric-wakizashi",
@@ -45436,7 +45554,10 @@
     "range_ft": 6,
     "base_dmg": 17
    },
-   "origin_game": "vanilla"
+   "origin_game": "vanilla",
+   "xref": {
+    "vanilla-ref": "vanilla:daedric-wakizashi"
+   }
   },
   {
    "id": "item:daedric-longsword",
@@ -45500,7 +45621,10 @@
     "range_ft": 6,
     "base_dmg": 23
    },
-   "origin_game": "vanilla"
+   "origin_game": "vanilla",
+   "xref": {
+    "vanilla-ref": "vanilla:daedric-longsword"
+   }
   },
   {
    "id": "item:winterwound-dagger",
@@ -45564,7 +45688,10 @@
     "range_ft": 6,
     "base_dmg": 12
    },
-   "origin_game": "vanilla"
+   "origin_game": "vanilla",
+   "xref": {
+    "vanilla-ref": "vanilla:winterwound-dagger"
+   }
   },
   {
    "id": "item:sunder",
@@ -45659,7 +45786,10 @@
     "range_ft": 6,
     "base_dmg": 70
    },
-   "origin_game": "vanilla"
+   "origin_game": "vanilla",
+   "xref": {
+    "vanilla-ref": "vanilla:sunder--sunder"
+   }
   },
   {
    "id": "item:keening",
@@ -45754,7 +45884,10 @@
     "range_ft": 6,
     "base_dmg": 18
    },
-   "origin_game": "vanilla"
+   "origin_game": "vanilla",
+   "xref": {
+    "vanilla-ref": "vanilla:keening"
+   }
   },
   {
    "id": "item:skull-crusher",
@@ -45831,7 +45964,10 @@
     "range_ft": 6,
     "base_dmg": 60
    },
-   "origin_game": "vanilla"
+   "origin_game": "vanilla",
+   "xref": {
+    "vanilla-ref": "vanilla:skull-crusher"
+   }
   },
   {
    "id": "item:eltonbrand",
@@ -45895,7 +46031,10 @@
     "range_ft": 6,
     "base_dmg": 60
    },
-   "origin_game": "vanilla"
+   "origin_game": "vanilla",
+   "xref": {
+    "vanilla-ref": "vanilla:eltonbrand"
+   }
   },
   {
    "id": "item:abysmal-neckguard",
@@ -46499,7 +46638,8 @@
    "image": "items/seasplitter.png",
    "src": "s-upstream",
    "xref": {
-    "np-server-items": "Seasplitter"
+    "np-server-items": "Seasplitter",
+    "vanilla-ref": "vanilla:seasplitter"
    },
    "notes": null,
    "origin_game": "vanilla"

@@ -430,7 +430,7 @@
    "expr": "tooltipAR = floor(baseAR x armorSkill / 30)",
    "src": "s-measured",
    "date": "2026-08-21",
-   "note": "Verified for light/medium/heavy at skill 100 and (item-fortified) 118. NP base ARs deviate from vanilla (e.g. Daedric Tower Shield base 40, vanilla 45) — never take a base from UESP."
+   "note": "Verified for light/medium/heavy at skill 100 and (item-fortified) 118. NP base ARs deviate from vanilla (e.g. Daedric Tower Shield NP base 40 vs vanilla ESM base 80 — see data/vanilla_ref.json) — never take a vanilla base from memory or UESP; vanilla_ref.json is parsed from the game ESMs. [Correction 2026-08-23: an earlier version of this note said 'vanilla 45' — a memory-sourced error caught by the ESM extraction.]"
   },
   {
    "id": "formula:ar-capture-normalization",

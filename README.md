@@ -8,6 +8,7 @@ A community-maintained, machine-readable knowledge base for the **Nerevarine Pro
 
 - `data/` — **the authority.** All knowledge lives here as JSON with per-fact provenance (origin, date, confidence). Start with `data/mechanics.json` for formulas/constants and `data/items.json` / `data/masteries.json` for the big catalogs.
 - `docs/` — human-readable reference, **generated** from `data/` (`python tools/generate_docs.py`). Never hand-edited.
+- `data/vanilla_ref.json` — vanilla Morrowind equipment stats parsed directly from the game's ESM files, for NP-vs-vanilla comparisons and vanilla stat lookups. Vanilla values only — never valid on NP.
 - `schema/` — JSON Schemas and data conventions.
 - `tools/` — doc generator, structural validator, hygiene checks.
 - `GOVERNANCE.md` — the rules that keep this KB trustworthy. Read it before contributing — or before building a tool on the data.

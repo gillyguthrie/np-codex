@@ -66,7 +66,7 @@ level_bonus: +55 at L60 (validated exact on two characters), +1 at L1; curve bet
 
 ### Armor piece tooltip AR  
 `tooltipAR = floor(baseAR x armorSkill / 30)`  
-Verified for light/medium/heavy at skill 100 and (item-fortified) 118. NP base ARs deviate from vanilla (e.g. Daedric Tower Shield base 40, vanilla 45) — never take a base from UESP.
+Verified for light/medium/heavy at skill 100 and (item-fortified) 118. NP base ARs deviate from vanilla (e.g. Daedric Tower Shield NP base 40 vs vanilla ESM base 80 — see data/vanilla_ref.json) — never take a vanilla base from memory or UESP; vanilla_ref.json is parsed from the game ESMs. [Correction 2026-08-23: an earlier version of this note said 'vanilla 45' — a memory-sourced error caught by the ESM extraction.]
 
 ### AR capture-skill normalization convention  
 `AR@100 = floor(baseAR x 100/30); baseAR = tooltipReading x 30 / captureSkill`  
