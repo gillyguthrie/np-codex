@@ -1,5 +1,12 @@
 # Changelog
 
+## 2026-08-23 — v0.3.1 vanilla world data (locations, NPCs, spells)
+- **New `data/vanilla_locations.json`** (~2,079 items): where vanilla items are actually found — world placements by cell, containers, NPC carriers, RESTOCKING sellers, and leveled-list membership — parsed from the ESMs' CELL/CONT/NPC_/CREA/LEVI records. Answers "where can I find a Daedric Helm?" with real cells. Developer test cells excluded. Vanilla baseline; per-record np_override door left open.
+- **New `data/vanilla_npcs.json`** (633 service NPCs): merchants with barter gold, trainers (top-3 skills where stored; autocalc = null per populated-or-null), spellmakers/enchanters, with cell + faction.
+- **New `data/vanilla_spells.json`**: all 1,065 vanilla spells (typed, with effect blocks) + 141 magic effects with school and base cost.
+- SKILL.md: rule 8 extended (vanilla item locations answered in-codex from the baseline), file map +3, and item-stat lookups now show the tooltip screenshot by default when the record has an image. `np-codex.skill` repackaged.
+- Quests and NPC dialogue deliberately NOT ingested — UESP remains the referral for walkthroughs.
+
 ## 2026-08-23 — v0.3.0 vanilla lore layer
 - **New `data/vanilla_lore_books.json`**: all 449 distinct in-game books, notes, scrolls, and letters from the Morrowind/Tribunal/Bloodmoon ESMs, each SUMMARIZED IN ORIGINAL WORDS (never reproduced) with type, skill-book mapping, topics, characters, factions/places, and storyline tags. IP convention in `_meta`: the KB holds summaries only; verse is described, never quoted; full-text requests are declined with a pointer to the in-game book.
 - **New `data/vanilla_lore.json`**: 15 synthesized storyline arcs (Nerevarine prophecy, Tribunal & Dagoth Ur, Dwemer mystery, Great Houses, ...) plus 6 **contested questions** (What happened at Red Mountain? Are the Tribunal divine? Where did the Dwemer go? ...) with each competing tradition attributed to its sources. Binding `contested_is_canon` convention: Morrowind's core lore contradictions are authored content — answered by presenting the traditions flatly, never resolved.
