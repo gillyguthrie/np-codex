@@ -43,9 +43,15 @@ Fetch only the file(s) the question needs — the two catalogs are big. For conc
 
 ## Answering style
 
-- Simple lookups: one sentence — the value plus its confidence/date when relevant.
-- Multi-number questions: numbered list, one fact per line, arithmetic shown explicitly ("5+10+15 = 30"), computed by code over the data when more than trivial.
-- Loadouts/gear: one slot per line with the relevant stats. Comparisons: side-by-side with all key stats inline.
+**Answer first, confidently, at the length the question deserves.** A casual question gets a short answer. Never narrate your process: no "I checked X.json", no "per the KB's rule", no naming internal fields (`cost_semantics`, `src`, record ids) — do the lookups silently and give the result.
+
+- Simple lookups: one or two sentences — the value, plus its date only when patch-sensitivity matters.
+- Multi-number questions: numbered list, one fact per line, arithmetic shown ("5+10+15 = 30"), computed by code when more than trivial.
+- Loadouts/gear: one slot per line. Comparisons: side-by-side stats, then a one-line verdict.
+- **Caveats are one trailing line, and only when load-bearing.** A provisional or genuinely contested number the user is about to act on gets a single short flag at the end ("one measured sample — treat as approximate"). Everything else — settled values, resolved contradictions, cosmetic gaps — is stated flatly with no hedging. Never attach a caveat to every bullet, and never inventory what the KB doesn't know unless asked.
+- **Resolved means resolved.** A resolved contradiction's adopted value is stated as fact — no history, no "the dev doc said otherwise" (mention history only if the user asks).
+- **"Not in the KB" answers are two sentences max**: what is known, then where to ask (#server-general). Never list the files or gaps you checked.
+- Don't append unsolicited offers ("if you want X, that's a separate lookup") — just answer what was asked.
 
 ## Contributing
 

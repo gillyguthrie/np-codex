@@ -1,5 +1,9 @@
 # Changelog
 
+## 2026-08-23 — v0.2.1 answer style + README overhaul
+- SKILL.md answering style rewritten from a style audit (8 persona questions): answer-first and confident; zero process narration (no file names, internal fields, or "per the KB's rule"); caveats collapsed to one trailing line and only when load-bearing; resolved contradictions stated as plain fact; "not in the KB" answers capped at two sentences + the Discord pointer; no unsolicited offers. `np-codex.skill` repackaged.
+- README rebuilt as the **Nerevarine Prophecies Codex** front page: TOC, what's-in-this-repo summary, and step-by-step "How to use Claude with this Codex" / "How to use ChatGPT with this Codex" sections.
+
 ## 2026-08-23 — v0.2.1 effects backfill + audit gate
 - **146 tooltip effect lines backfilled** into parsed `effects[]` across 111 items — the full sweep behind the builder thread's 64-line Fortify Skill list, extended to every effect type: skill fortifies, attribute drains (Chronium Pendant's full 8-attribute drain set), weaknesses (stored as negative resist magnitudes), restores, detects, and more. Each carries its verbatim raw_text and a backfill note.
 - **Structured params**: every `fortify-skill` effect now carries a `skill` field and every `drain-attr` an `attr` field (81 params added to existing records) — tools no longer parse raw_text to learn which skill/attribute. New vocab keys: drain-hp, drain-mag, drain-fat.
