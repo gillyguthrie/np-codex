@@ -1,0 +1,1111 @@
+{
+ "_meta": {
+  "description": "VANILLA Morrowind lore synthesis: storyline arcs and the great contested questions, derived from the summarized in-game literature in vanilla_lore_books.json. Vanilla-only — NP-server lore lives in lore.json.",
+  "conventions": {
+   "contested_is_canon": "Morrowind's central lore contradictions are AUTHORED CONTENT, not data conflicts: unlike mechanics contradictions, they must NEVER be resolved to a single truth. The confident answer to a contested lore question is the set of competing traditions, stated flatly with their sources. Do not hedge, do not adjudicate, do not treat disagreement between in-game sources as an error.",
+   "vanilla_only_answering": "Answer vanilla lore from this file and vanilla_lore_books.json — never from the internet. UESP referral only for what these files do not cover."
+  }
+ },
+ "sources": {
+  "s-esm": {
+   "origin": "game-esm",
+   "channel": null,
+   "url": null,
+   "date": "2026-08-23",
+   "confidence": "dev-stated",
+   "note": "Synthesized from the ESM-derived book summaries in vanilla_lore_books.json."
+  }
+ },
+ "storylines": [
+  {
+   "id": "storyline:nerevarine-prophecy",
+   "name": "The Nerevarine Prophecy",
+   "arc": "Ashlander tradition holds that the war-leader Nerevar united House and Tribe under the Ring of the Ancestors to drive out the Dwemer and outlanders, only to be murdered by his own commanders once victory was won, who then styled themselves gods and abandoned his promises to the Tribes. Prophecy holds that a reincarnated \"Nerevarine\" or \"Incarnate\" will one day return, ring in hand, to topple the Tribunal and free Morrowind, foretold in cryptic verses like \"The Stranger\" and \"The Seven Visions,\" which describe trials of unusual birth, immunity to blight, uniting the Houses as Hortator, and uniting the tribes as Nerevarine. Temple doctrine flatly denies all of this, honoring Nerevar merely as a departed saint and treating living claimants as frauds or heretics, and sources disagree sharply on Nerevar himself: Ashlander/Apographa accounts paint him as a hero poisoned by Vivec, Almalexia, and Sotha Sil, while a rival Telvanni-leaning account instead casts him as an opportunist warlord whose magic ring simply compelled obedience, and Vivec's own sermons admit uncertainty about Dagoth Ur's fate while urging silence over \"forbidden truths.\" The Empire secretly investigates and manipulates the prophecy through its Blades agent Caius Cosades, recruiting an outlander to pursue the titles of Hortator and Nerevarine among Houses and Ashlander tribes alike, while a hidden Nerevarine cult persists chiefly among the Urshilaku tribe under Ashkhan Sul-Matuul and wise woman Nibani Maesa. Dagoth Ur's own letter to Nerevar claims the Sixth House was never destroyed and frames himself as a wronged brother rather than an enemy, further muddying which account of Red Mountain, and which side of the prophecy, deserves belief.",
+   "key_figures": [
+    "Nerevar",
+    "Caius Cosades",
+    "Dagoth Ur",
+    "Vivec",
+    "Kagrenac",
+    "Glabrio Bellienus",
+    "Almalexia",
+    "Sotha Sil",
+    "Berel Sala",
+    "Huleeya"
+   ],
+   "key_books": [
+    {
+     "esm_id": "bk_NerevarMoonandStar",
+     "title": "Nerevar Moon-and-Star"
+    },
+    {
+     "esm_id": "bk_a2_1_thestranger",
+     "title": "The Stranger"
+    },
+    {
+     "esm_id": "bk_a2_1_sevenvisions",
+     "title": "The Seven Visions"
+    },
+    {
+     "esm_id": "bk_thelostprophecy",
+     "title": "The Lost Prophecy"
+    },
+    {
+     "esm_id": "bk_RealNerevar",
+     "title": "The Real Nerevar"
+    },
+    {
+     "esm_id": "bk_vivec_no_murder",
+     "title": "The Battle of Red Mountain"
+    },
+    {
+     "esm_id": "bk_A1_7_HuleeyaInformant",
+     "title": "Notes from Huleeya"
+    },
+    {
+     "esm_id": "bk_a1_11_zainsubaninotes",
+     "title": "Zainsubani's Notes"
+    },
+    {
+     "esm_id": "bk_NerevarineNotice",
+     "title": "Public notice"
+    },
+    {
+     "esm_id": "bk_saryoni_note",
+     "title": "note from the Archcanon"
+    },
+    {
+     "esm_id": "bk_a2_2_dagoth_message",
+     "title": "Message from Dagoth Ur"
+    },
+    {
+     "esm_id": "bk_vivecs_plan",
+     "title": "Plan to Defeat Dagoth Ur"
+    }
+   ],
+   "book_count": 22
+  },
+  {
+   "id": "storyline:tribunal-and-dagoth-ur",
+   "name": "The Tribunal and Dagoth Ur",
+   "arc": "At the Battle of Red Mountain, Nerevar's Chimer-Ashlander alliance destroyed the secular Houses Dwemer and Dagoth after the Dwemer priest Kagrenac tried to forge a new god from the Heart of Lorkhan using his tools Sunder, Keening, and Wraithguard; Nerevar died of his wounds and the Dwemer vanished from existence entirely. Left guarding the recovered tools, Dagoth Ur secretly bonded with the Heart's power and was driven mad, while Vivec, Almalexia, and Sotha Sil broke their own oath to Azura and used the same tools to make themselves gods, transforming the Chimer into the ash-skinned Dunmer as Azura's curse. Whether that ascension was righteous or a crime is the central fracture in the sources: Temple orthodoxy and Vivec's own sermons frame it as a hard-won, sanctified transformation, while the Ashlander/Apographa account and the Dissident Priests' \"Progress of Truth\" allege the Tribunal murdered Nerevar outright during a ritual meant to summon Azura, coveting the Heart's power for themselves. Dagoth Ur, long presumed destroyed, instead survived beneath Red Mountain and by the late Third Era has awakened the dormant Sixth House, seeking to raise the construct-god Akulakhan from the Heart and a Dwemer body, break Temple authority, and expel the Empire, a threat Temple and Inquisition intelligence track through recruited \"Sleepers,\" \"Dreamers,\" and escalating assassinations. Vivec's own \"36 Lessons\" recast this entire history as riddling myth - daedric gestation, monster-slaying trials, a forced marriage to Molag Bal - even as the Tribunal quietly plans a final reckoning with the \"Sharmat\" using the very tools that made them divine, at the risk of unmaking their own godhood in the process.",
+   "key_figures": [
+    "Vivec",
+    "Nerevar",
+    "Almalexia",
+    "Sotha Sil",
+    "Dagoth Ur",
+    "Azura",
+    "Kagrenac",
+    "Mephala",
+    "Boethiah",
+    "Dumac"
+   ],
+   "key_books": [
+    {
+     "esm_id": "bk_vivec_no_murder",
+     "title": "The Battle of Red Mountain"
+    },
+    {
+     "esm_id": "bk_vivec_murders",
+     "title": "Nerevar at Red Mountain"
+    },
+    {
+     "esm_id": "bk_kagrenac'stools",
+     "title": "Kagrenac's Tools"
+    },
+    {
+     "esm_id": "bk_WaroftheFirstCouncil",
+     "title": "The War of the First Council"
+    },
+    {
+     "esm_id": "bk_Anticipations",
+     "title": "The Anticipations"
+    },
+    {
+     "esm_id": "bk_SaintNerevar",
+     "title": "Saint Nerevar"
+    },
+    {
+     "esm_id": "bk_Dagoth_Urs_Plans",
+     "title": "Dagoth Ur's Plans"
+    },
+    {
+     "esm_id": "bk_vivecs_plan",
+     "title": "Plan to Defeat Dagoth Ur"
+    },
+    {
+     "esm_id": "bk_thesevencurses",
+     "title": "The Seven Curses"
+    },
+    {
+     "esm_id": "bk_a2_2_dagoth_message",
+     "title": "Message from Dagoth Ur"
+    },
+    {
+     "esm_id": "bk_ArcturianHeresy",
+     "title": "The Arcturian Heresy"
+    },
+    {
+     "esm_id": "BookSkill_Athletics3",
+     "title": "36 Lessons of Vivec, Sermon 1"
+    }
+   ],
+   "book_count": 60
+  },
+  {
+   "id": "storyline:dwemer-mystery",
+   "name": "The Vanishing of the Dwemer",
+   "arc": "The Dwemer, master artificers of Vvardenfell, vanished entirely and simultaneously at the Battle of Red Mountain, when their priest Kagrenac used his artifacts Sunder, Keening, and Wraithguard to tap the Heart of Lorkhan and forge a new god - an event that also killed King Dumac and the Chimer hero Nerevar and left behind the Inner Sea. Exactly what happened to them is the field's central mystery: most accounts simply say they were erased from existence, but a publisher's note appended to \"The Dowry\" floats the alternative theory that the Dwemer never vanished at all but live disguised among other races. Their abandoned ruins, still humming with active constructs and centurions per Senilius Cadiusus's excavation reports and a stack of untranslated technical manuals recovered from them, are treated by scholars as puzzle-boxes: Kagrenac's own journal and planbook survive but remain wholly undecipherable, and functioning centurions reportedly stop working when carried off Vvardenfell's waters, only reactivating on return. The popular \"Marobar Sul\" story cycle, marketed as authentic Dwemer folklore, is repeatedly exposed within its own margins as fabricated or plagiarized from Ashlander and Argonian sources, casting doubt on how much of \"Dwemer culture\" as commonly known is genuine. Underlying all of this is unresolved dispute over motive and blame: the Dissident Priests' \"Kagrenac's Tools\" frames the Dwemer's fate and the Tribunal's own godhood as two sides of the same theft from Lorkhan, while Ashlander tradition, the \"Five Songs of King Wulfharth,\" and Temple orthodoxy each assign the glory and guilt differently among Nerevar, Kagrenac, and Dagoth Ur.",
+   "key_figures": [
+    "Vivec",
+    "Nerevar",
+    "Kagrenac",
+    "Sotha Sil",
+    "Almalexia",
+    "Dagoth Ur",
+    "Marobar Sul",
+    "Azura",
+    "Dumac",
+    "Wulfharth"
+   ],
+   "key_books": [
+    {
+     "esm_id": "bk_kagrenac'stools",
+     "title": "Kagrenac's Tools"
+    },
+    {
+     "esm_id": "bk_WaroftheFirstCouncil",
+     "title": "The War of the First Council"
+    },
+    {
+     "esm_id": "bk_vivec_no_murder",
+     "title": "The Battle of Red Mountain"
+    },
+    {
+     "esm_id": "bk_vivec_murders",
+     "title": "Nerevar at Red Mountain"
+    },
+    {
+     "esm_id": "bk_seniliasreport",
+     "title": "Senilius' Report"
+    },
+    {
+     "esm_id": "BookSkill_Security3",
+     "title": "The Dowry"
+    },
+    {
+     "esm_id": "bk_nchunaksfireandfaith",
+     "title": "Nchunak's Fire and Faith"
+    },
+    {
+     "esm_id": "bk_tamrielicreligions",
+     "title": "The Ruins of Kemel-Ze"
+    },
+    {
+     "esm_id": "bk_ChroniclesNchuleft",
+     "title": "Chronicles of Nchuleft"
+    },
+    {
+     "esm_id": "BookSkill_Heavy Armor3",
+     "title": "Chimarvamidium"
+    },
+    {
+     "esm_id": "bk_fivesongsofkingwulfharth",
+     "title": "Five Songs of King Wulfharth"
+    },
+    {
+     "esm_id": "bk_kagrenac'sjournal_excl",
+     "title": "Kagrenac's Journal"
+    }
+   ],
+   "book_count": 37
+  },
+  {
+   "id": "storyline:great-houses",
+   "name": "The Great Houses of Morrowind",
+   "arc": "Morrowind's five Great Houses - Hlaalu, Redoran, Telvanni, Indoril, and Dres - descend from the clans that survived the War of the First Council against the Dwemer and House Dagoth, and each embodies a distinct answer to modernity and foreign rule. House Hlaalu champions pro-Imperial pragmatism and trade; Redoran prizes martial duty, piety, and traditional honor; Telvanni are isolationist, slavery-defending wizard-lords whose politics runs on personal power and expected assassination of rivals; and Indoril and Dres, neither holding land on Vvardenfell, remain the most conservative, slaveholding, and openly hostile to Imperial presence. Sources disagree on how Morrowind's incorporation into the Empire actually happened: \"On Morrowind\" credits a secret Vivec-negotiated treaty preserving Dunmer self-rule, with the Houses split between Hlaalu accommodation and Indoril/Dres resistance to the death (Redoran privately relieved, Telvanni opportunistic), and notes that more Dunmer blood was ultimately spilled in the internal reprisals against the resisting Lord High Councilor than against the Legions themselves. Great House politics runs on councils, ledgers, and land deeds as much as swords - annual registers record real corruption, tax revolts, and rising violence between the Thieves Guild and the xenophobic Camonna Tong - while the Sixth House's hidden bloodline resurfaces disruptively within House Indoril itself in the \"Poison Song\" tale of Tay and Dagoth-Tython. Slavery remains a fault line the Houses never resolve among themselves: openly defended by Telvanni and Dres, and privately practiced by Hlaalu magnates like Orvas Dren, whose own letters casually endorse harsh discipline of the enslaved.",
+   "key_figures": [
+    "Barenziah",
+    "Crassius Curio",
+    "Athyn Sarethi",
+    "Therana",
+    "Orvas Dren",
+    "Baynarah",
+    "Tay",
+    "Edebah",
+    "Dagoth-Acra",
+    "Neloth"
+   ],
+   "key_books": [
+    {
+     "esm_id": "bk_great_houses",
+     "title": "Great Houses of Morrowind"
+    },
+    {
+     "esm_id": "bk_ShortHistoryMorrowind",
+     "title": "A Short History of Morrowind"
+    },
+    {
+     "esm_id": "bk_OnMorrowind",
+     "title": "On Morrowind"
+    },
+    {
+     "esm_id": "bk_graspingfortune",
+     "title": "Grasping Fortune"
+    },
+    {
+     "esm_id": "bk_truenoblescode",
+     "title": "The True Noble's Code"
+    },
+    {
+     "esm_id": "bk_AffairsOfWizards",
+     "title": "The Affairs of Wizards"
+    },
+    {
+     "esm_id": "bk_BrownBook426",
+     "title": "Brown Book of 3E 426"
+    },
+    {
+     "esm_id": "bk_redbook426",
+     "title": "Red Book of 3E 426"
+    },
+    {
+     "esm_id": "bk_yellowbook426",
+     "title": "Yellow Book of 3E 426"
+    },
+    {
+     "esm_id": "bk_WaroftheFirstCouncil",
+     "title": "The War of the First Council"
+    },
+    {
+     "esm_id": "bk_poisonsong5",
+     "title": "Poison Song V"
+    },
+    {
+     "esm_id": "bk_Dren_Hlevala_note",
+     "title": "Note to Hlevala"
+    }
+   ],
+   "book_count": 61
+  },
+  {
+   "id": "storyline:empire-politics",
+   "name": "Empire and Throne",
+   "arc": "The Third Era imperial narrative runs through the Septim dynasty founded by Tiber Septim, tracing a chain of assassinations, regencies, and civil wars: Pelagius I murdered by the Dark Brotherhood, Potema the \"Wolf Queen\" plunging the Empire into the War of the Red Diamond to install her son Uriel III before waging a necromantic civil war against her own brothers, the erratic Pelagius III confined to asylums while his Dunmer wife Katariah governs as regent, and finally Uriel Septim VII's decade-long secret imprisonment by his own Battlemage Jagar Tharn. Barenziah's life - covered in dueling \"authorized\" and \"unauthorized\" biographies that visibly contradict each other in tone and detail - threads through this history as the exiled Queen of Mournhold raised in the Empire, lover to Tiber Septim, wife to General Symmachus and later King Eadwyre, and mother to King Helseth, whose own reign is dogged by gossip broadsheets accusing him of serially poisoning rivals while coroners rule each death \"natural.\" Morrowind's relationship with the Empire is itself disputed terrain: \"On Morrowind\" claims Vivec secured a secret treaty preserving Dunmer self-rule in exchange for provincial status, while a separate pamphlet argues Imperial control of Morrowind and Black Marsh is a net loss dressed up to enrich a few monopolists. The earlier 2920 chronicles document a full war between Cyrodiil and a god-led Morrowind under Emperor Reman III and Potentate Versidue-Shaie, ending in Reman III's assassination by a Morag Tong blade, after which Versidue-Shaie seizes power without ever claiming the title of Emperor. Throughout, court intrigue is constant and often untrustworthy in its telling - forged letters, poisoned banquets, and doubles substituted for royalty recur so often across these accounts that no single version of imperial succession can be taken fully at face value.",
+   "key_figures": [
+    "Potema",
+    "Barenziah",
+    "Vivec",
+    "Symmachus",
+    "Reman III",
+    "Versidue-Shaie",
+    "Tiber Septim",
+    "Almalexia",
+    "Turala",
+    "Jagar Tharn"
+   ],
+   "key_books": [
+    {
+     "esm_id": "bk_BriefHistoryEmpire1",
+     "title": "Brief History of the Empire v 1"
+    },
+    {
+     "esm_id": "bk_BriefHistoryEmpire2",
+     "title": "Brief History of the Empire v 2"
+    },
+    {
+     "esm_id": "bk_BriefHistoryEmpire4",
+     "title": "Brief History of the Empire v 4"
+    },
+    {
+     "esm_id": "BookSkill_Speechcraft1",
+     "title": "Biography of the Wolf Queen"
+    },
+    {
+     "esm_id": "bk_madnessofpelagius",
+     "title": "The Madness of Pelagius"
+    },
+    {
+     "esm_id": "bk_RealBarenziah5",
+     "title": "The Real Barenziah v V"
+    },
+    {
+     "esm_id": "bk_BiographyBarenziah1",
+     "title": "Biography of Barenziah v I"
+    },
+    {
+     "esm_id": "bk_ArcturianHeresy",
+     "title": "The Arcturian Heresy"
+    },
+    {
+     "esm_id": "bk_OnMorrowind",
+     "title": "On Morrowind"
+    },
+    {
+     "esm_id": "bk_easternprovincesimpartial",
+     "title": "The Eastern Provinces..."
+    },
+    {
+     "esm_id": "BookSkill_Short Blade3",
+     "title": "2920, Evening Star"
+    },
+    {
+     "esm_id": "bk_commontongue",
+     "title": "The Common Tongue"
+    }
+   ],
+   "book_count": 66
+  },
+  {
+   "id": "storyline:daedra-and-worship",
+   "name": "The Daedra and Their Worship",
+   "arc": "Daedra are explained as precise Elvish terms distinguishing changeable, unkillable \"not-our-ancestors\" from the static, mortal-bound Aedra, and the Tribunal Temple further sorts them into \"Anticipations\" - Boethiah, Mephala, and Azura, precursors of Almalexia, Vivec, and Sotha Sil who accepted Tribunal divinity - versus the \"Four Corners of the House of Troubles\" (Molag Bal, Malacath, Sheogorath, Mehrunes Dagon), rebellious princes whose worship is outlawed and hunted by Ordinators and Legion alike. Foundational myths clash on cause and blame: \"The Changed Ones\" has Boethiah trick and devour Trinimac to remake the Aldmer into the Chimer, while \"The True Nature of Orcs\" makes Trinimac's devoured remnant into Malacath, father of the despised Orcs - two tellings of the same god's fate serving opposite communities' self-understanding. Individual worshippers' testimony is intensely personal and often contradictory about which princes deserve devotion: a centuries-old priestess cycles through Molag Bal, Boethiah, and Nocturnal before settling on Azura as uniquely valuing genuine devotion, while the doomed adventurers Charwich and Koniinge spend volumes hunting the relic Azura's Star through betrayal and murder before both dying at the hands of the disguised daedra lord Baliasir. Daedra worship bleeds constantly into mortal ambition and cautionary tragedy - Galur Rithari bargains with Molag Bal to cure his vampirism at a terrible price, the scribe Thaurbad's enchanted quill possessed by Feyfolken destroys him in service to Clavicus Vile, and countless catalogued artifacts tied to Boethiah, Hircine, Nocturnal, and Mehrunes Dagon are said to abandon owners judged unworthy by their patron. Scholarly attempts at an objective account struggle to reconcile lived testimony, Temple dogma, and the Daedra's own alien psychology - one Dremora-authored text baldly states that Daedra hunt mortals for sport and cannot fathom why doomed, mortal humans do not simply despair.",
+   "key_figures": [
+    "Boethiah",
+    "Molag Bal",
+    "Vivec",
+    "Azura",
+    "Mehrunes Dagon",
+    "Mephala",
+    "Almalexia",
+    "Sotha Sil",
+    "Malacath",
+    "Charwich"
+   ],
+   "key_books": [
+    {
+     "esm_id": "bk_BookOfDaedra",
+     "title": "The Book of Daedra"
+    },
+    {
+     "esm_id": "bk_Anticipations",
+     "title": "The Anticipations"
+    },
+    {
+     "esm_id": "bk_HouseOfTroubles_o",
+     "title": "The House of Troubles"
+    },
+    {
+     "esm_id": "bk_darkestdarkness",
+     "title": "Darkest Darkness"
+    },
+    {
+     "esm_id": "bk_AedraAndDaedra",
+     "title": "Aedra and Daedra"
+    },
+    {
+     "esm_id": "bk_ChangedOnes",
+     "title": "The Changed Ones"
+    },
+    {
+     "esm_id": "bk_onoblivion",
+     "title": "On Oblivion"
+    },
+    {
+     "esm_id": "bk_InvocationOfAzura",
+     "title": "Invocation of Azura"
+    },
+    {
+     "esm_id": "bk_SpiritOfTheDaedra",
+     "title": "Spirit of the Daedra"
+    },
+    {
+     "esm_id": "bookskill_hand to hand4",
+     "title": "Charwich-Koniinge, Volume 4"
+    },
+    {
+     "esm_id": "bk_TalMarogKersResearches",
+     "title": "Tal Marog Ker's Researches"
+    },
+    {
+     "esm_id": "bk_truenatureoforcs",
+     "title": "The True Nature of Orcs"
+    }
+   ],
+   "book_count": 37
+  },
+  {
+   "id": "storyline:ashlanders",
+   "name": "The Ashlander Tribes",
+   "arc": "The nomadic Ashlander tribes of Vvardenfell hold to the \"Old Ways\" of ancestor worship and oral prophecy, rejecting the settled Great Houses and the Tribunal Temple that displaced them from political and economic standing once House power consolidated. Central to their identity is the legend of Nerevar Moon-and-Star: their war-leader who united House People and Tribes to drive off the Dwemer, only to be murdered by treacherous Great House khans who then declared themselves gods and abandoned his promises - a betrayal narrative the Tribunal Temple flatly denies. Ashlander religious life centers on ancestor spirits believed to remain present in daily life and nature rather than truly departed, honored through hearth shrines, and their oral verse frames suffering, death, and renewal as part of nature's cycle rather than tragedy to mourn. An elite Nerevarine cult, concentrated among the Urshilaku tribe under Ashkhan Sul-Matuul and wise woman Nibani Maesa, keeps alive the belief that Nerevar will return as an Incarnate to overthrow the false Tribunal gods, even as Temple persecution of claimants and Ashlander memory-loss have reportedly erased related prophecies like the Seven Curses and Seven Visions. Scholarly dispute over the popular \"Marobar Sul\" Dwemer story cycle - repeatedly exposed within its own footnotes as repackaged or plagiarized Ashlander and Argonian tales - suggests the settled culture's picture of the Ashlanders is itself unreliable, filtered through outsiders who dismiss or distort the tribes' own storytelling.",
+   "key_figures": [
+    "Nerevar",
+    "Caius Cosades",
+    "Zershishi Mus-Manul",
+    "Fangbith",
+    "Joltereg",
+    "Ghorick",
+    "Beran",
+    "Marobar Sul",
+    "Commander Jasrat",
+    "Dagoth-Tython"
+   ],
+   "key_books": [
+    {
+     "esm_id": "bk_a1_11_zainsubaninotes",
+     "title": "Zainsubani's Notes"
+    },
+    {
+     "esm_id": "bk_A1_7_HuleeyaInformant",
+     "title": "Notes from Huleeya"
+    },
+    {
+     "esm_id": "bk_NerevarMoonandStar",
+     "title": "Nerevar Moon-and-Star"
+    },
+    {
+     "esm_id": "bk_DoorsOfTheSpirit",
+     "title": "The Doors of the Spirit"
+    },
+    {
+     "esm_id": "bk_five_far_stars",
+     "title": "The Five Far Stars"
+    },
+    {
+     "esm_id": "bk_words_of_the_wind",
+     "title": "Words of the Wind"
+    },
+    {
+     "esm_id": "bk_Ashland_Hymns",
+     "title": "Ashland Hymns"
+    },
+    {
+     "esm_id": "bk_poisonsong6",
+     "title": "Poison Song VI"
+    },
+    {
+     "esm_id": "BookSkill_Blunt Weapon2",
+     "title": "The Importance of Where"
+    },
+    {
+     "esm_id": "bk_a1_4_sharnsnotes",
+     "title": "Nerevarine cult notes"
+    }
+   ],
+   "book_count": 10
+  },
+  {
+   "id": "storyline:vampires",
+   "name": "Vampirism in Morrowind",
+   "arc": "Vampires on Vvardenfell are described as rare, owing to the Dunmer's strong cultural hostility toward necromancy and undeath, but reference works note they have \"recently reappeared\" after having been nearly wiped out by Ordinators and Buoyant Armigers in earlier campaigns. The island's undead are said to divide into three known bloodlines - the frenzied Quarra, the hypnotic Aundae, and the stealthy poison-and-ambush Berne - each carefully distinguished from unrelated phenomena like the Ashlanders' \"ash vampire,\" which shows no true undead traits at all. Sources disagree pointedly on whether vampirism can be cured: Dunmer tradition holds it permanently incurable and shameful, while a Western tradition claims cured former vampires secretly exist and conceal the cure from others - a dispute embodied in the case of Buoyant Armiger Galur Rithari, who bargained with Molag Bal (said by Temple lore to be vampirism's very origin) to be freed of the curse, then recanted his own cure story under Temple pressure, leaving his true status permanently disputed. Fictional accounts reinforce vampires as predators who toy with mortals rather than merely feed on them - a coven in one tale orchestrates an elaborate hunt to herd a thief toward its \"ancient one,\" and a nest of Quarra-clan vampires nearly overwhelms a mercenary band before an illusionist's skill turns the tide. Religious texts fold vampire lords in with necromancers as sacrilegious threats to be violently purged from Morrowind's shrines and ruins, reflecting a taboo that makes vampirism, unlike ancestor-spirit veneration, uniformly condemned across Dunmer society.",
+   "key_figures": [
+    "Galur Rithari",
+    "Molag Bal",
+    "Yana",
+    "Arthcamu",
+    "Phlaxith",
+    "Nitrah",
+    "Osmic",
+    "Massitha",
+    "Sharn gra-Muzgob"
+   ],
+   "key_books": [
+    {
+     "esm_id": "bk_vampiresofvvardenfell1",
+     "title": "Vampires of Vvardenfell, v I"
+    },
+    {
+     "esm_id": "bk_vampiresofvvardenfell2",
+     "title": "Vampires of Vvardenfell, v II"
+    },
+    {
+     "esm_id": "bk_legionsofthedead",
+     "title": "Legions of the Dead"
+    },
+    {
+     "esm_id": "bk_galur_rithari's_papers",
+     "title": "Galur Rithari's Papers"
+    },
+    {
+     "esm_id": "bookskill_illusion3",
+     "title": "Incident in Necrom"
+    },
+    {
+     "esm_id": "bookskill_sneak4",
+     "title": "Trap"
+    },
+    {
+     "esm_id": "bookskill_security1",
+     "title": "The Locked Room"
+    },
+    {
+     "esm_id": "bk_BlasphemousRevenants",
+     "title": "Blasphemous Revenants"
+    }
+   ],
+   "book_count": 9
+  },
+  {
+   "id": "storyline:solstheim-and-werewolves",
+   "name": "Solstheim and the Werewolf Curse",
+   "arc": "Solstheim's Nord settlement centers on the mead hall of Thirsk, founded by Skaal separatists who broke from the native tribe's nature-worship to live by older, freer custom, only to accidentally awaken the monstrous Udyrfrykte during construction; the beast was sealed beneath the ice by the sorcerer Eldrid Ice-Light, and Thirsk's chieftain succession has run ever since on a trophy-combat tradition begun by Hrothmund the Red. The Skaal themselves keep an older, distinct faith centered on the All-Maker, preserved in legends like \"The Story of Aevar Stone-Singer,\" in which a trickster spirit steals the tribe's natural gifts and an unproven youth must win them back - a tale pointedly left unresolved, in keeping with Skaal storytelling style. Lycanthropy is treated as a real, curable affliction rather than myth: Glenmoril Witches maintain a standing curing ceremony and a backup one-use \"Scroll of the Wolf Ender,\" implying the curse is common enough on Solstheim to need routine remedy. Imperial presence is comparatively recent and uneasy - Raven Rock's mining colony and Fort Frostmoth garrison coexist with the Nords and Skaal, but a conspiratorial note reveals an Imperial-linked plot to massacre a colony and frame the Skaal for it, suggesting real friction beneath the peaceable official picture. Solstheim's ancient history carries its own contested legend: \"Fall of the Snow Prince\" recounts Nord warriors under Ysgramor nearly wiping out the island's last Elves until a nearly invincible Elven champion turns the tide, killed only by a grieving child rather than any warrior - a story the victorious Nords honor with an uncharacteristically respectful burial for their fallen enemy.",
+   "key_figures": [
+    "Hrothmund the Red",
+    "Eldrid Ice-Light",
+    "Drengr Bronze-Helm",
+    "Brynjolfr",
+    "Agnes",
+    "Heinlen the Heavy",
+    "Winter-Fist",
+    "Angria",
+    "Falco Galenus",
+    "Roberto Jodoin"
+   ],
+   "key_books": [
+    {
+     "esm_id": "bk_ThirskHistory",
+     "title": "Thirsk, a History"
+    },
+    {
+     "esm_id": "bk_ThirskHistory_revised_m",
+     "title": "Thirsk, a History -- Revised"
+    },
+    {
+     "esm_id": "bk_snowprince",
+     "title": "Fall of the Snow Prince"
+    },
+    {
+     "esm_id": "bk_BM_Aevar",
+     "title": "The Story of Aevar Stone-Singer"
+    },
+    {
+     "esm_id": "sc_witchnote",
+     "title": "Note from a Glenmoril Witch"
+    },
+    {
+     "esm_id": "bk_colony_Toralf",
+     "title": "Tattered Note"
+    },
+    {
+     "esm_id": "bk_colonyreport",
+     "title": "Colony Status Report"
+    },
+    {
+     "esm_id": "bk_Airship_Captains_Journal",
+     "title": "Airship Captain's Journal"
+    },
+    {
+     "esm_id": "sc_fjaldingnote",
+     "title": "Old, Wet Note"
+    },
+    {
+     "esm_id": "bk_necrojournal",
+     "title": "Rogue Necromancer's Journal"
+    }
+   ],
+   "book_count": 19
+  },
+  {
+   "id": "storyline:morag-tong-and-dark-brotherhood",
+   "name": "The Morag Tong and the Dark Brotherhood",
+   "arc": "The Dark Brotherhood traces its lineage to the Morag Tong, a Second Era assassin-cult devoted to Mephala and led by successive figures each called the Night Mother, whose doctrine most prized killings born of hatred for the powerful; after the Tong's brazen assassination of Potentate Versidue-Shaie in 2E 324 got the cult outlawed across Tamriel, it resurfaced generations later as the for-hire Dark Brotherhood, whose destruction of an entire Colovian imperial line made rulers permanently wary of crossing it. In Morrowind the Morag Tong instead survives as a lawful, licensed guild: its \"Honorable Writs of Execution,\" issued against specific named targets, function as legal cover under ancient Guild tradition, distinguishing sanctioned killing from ordinary murder - a distinction Morrowind's own citizens invoke deliberately, as when Bedal Alen debates hiring the \"more principled\" Morag Tong over the Dark Brotherhood, which he suspects is secretly controlled by King Helseth himself. Vivec's own sermons complicate the Tong's origins further, claiming he personally took the cult's deadliest assassins as consorts and fathered their \"King of Assassins,\" tying the guild's murderous mythology directly into Tribunal theology. The two organizations' rivalry and occasional overlap recur across the imperial 2920 chronicles, where Night Mother-sanctioned Dark Brotherhood killers and Morag Tong assassins repeatedly target emperors and potentates - Corda's killing of Reman III on Versidue-Shaie's order, and an earlier failed attempt by the mercenary Miramor - showing both guilds as recurring instruments of high politics rather than mere criminal outfits. A recruitment text, \"The Black Glove,\" and individual origin stories like the axe-wielding assassin Minas Torik suggest membership draws as much from personal grievance and emotional alienation as from genuine devotion to Mephala's murderous creed.",
+   "key_figures": [
+    "Versidue-Shaie",
+    "Vivec",
+    "Reman III",
+    "Sotha Sil",
+    "Almalexia",
+    "Night Mother",
+    "Savirien-Chorak",
+    "Corda",
+    "Tirer Belvayn",
+    "Sarayn Sadus"
+   ],
+   "key_books": [
+    {
+     "esm_id": "bk_BrothersOfDarkness",
+     "title": "The Brothers of Darkness"
+    },
+    {
+     "esm_id": "bk_BlackGlove",
+     "title": "The Black Glove"
+    },
+    {
+     "esm_id": "writ_belvayn",
+     "title": "Honorable Writ of Execution"
+    },
+    {
+     "esm_id": "bk_dbcontract",
+     "title": "A Dark Brotherhood Contract"
+    },
+    {
+     "esm_id": "bookskill_axe2",
+     "title": "The Axe Man"
+    },
+    {
+     "esm_id": "BookSkill_Short Blade3",
+     "title": "2920, Evening Star"
+    },
+    {
+     "esm_id": "BookSkill_Short Blade2",
+     "title": "2920, Sun's Dusk"
+    },
+    {
+     "esm_id": "bk_Alen_note",
+     "title": "handwritten letter"
+    },
+    {
+     "esm_id": "bookskill_medium armor4",
+     "title": "36 Lessons of Vivec, Sermon 22"
+    },
+    {
+     "esm_id": "bk_a1_v_vivecinformants",
+     "title": "Mission to Vivec -- from Caius"
+    }
+   ],
+   "book_count": 29
+  },
+  {
+   "id": "storyline:guilds",
+   "name": "The Guilds of Vvardenfell",
+   "arc": "Vanus Galerion, a serf-born mage trained by the Psijic Order, founded the Mages Guild at Firsthold in open defiance of the secretive, aristocratic magical tradition embodied by Artaeum, offering spells and enchanting to any paying member of the public; his own later verdict, per \"Origin of the Mages Guild,\" was that his creation had become mired in political infighting despite spreading across Tamriel under a six-Archmagister structure. Guild charters formalize this history alongside the Fighters Guild's Imperial mandate to supply mercenaries and the Thieves Guild's informal, cornerclub-based, no-killing code, which a boastful recruiter contrasts favorably against the murderous, xenophobic Camonna Tong - a real rivalry that Great House registers record turning violent in Vvardenfell's towns. Guild life on Vvardenfell is shown as petty and political as much as scholarly: journeyman mages like Ajira jockey for promotion over rivals, an enchanter is expelled for unauthorized experiments, and Imperial authority intervenes directly, as when Chancellor Ocato orders Archmage Trebonius stripped of real power over the local Mages Guild. The Imperial Cult, described in its own recruitment handbook, positions itself as an explicitly rival \"guild\" of worship, friendly to the Legion and House Hlaalu but hostile to slavery, the Camonna Tong, and the Tribunal Temple, showing that guild alignment doubles as political and religious allegiance. Fiction embedded within Guild-skill books - obsessive infatuation, rival apprentices, fatal enchanting mistakes - repeatedly frames guild membership as a site of personal ambition and occasional tragedy rather than pure disinterested learning, even as the founding charters insist on ideals of open knowledge-sharing and internal discipline.",
+   "key_figures": [
+    "Vanus Galerion",
+    "Iachesis",
+    "Ajira",
+    "Galbedir",
+    "Versidue-Shaie",
+    "Betaniqi",
+    "Palla",
+    "Magister Ilther",
+    "Magister Tendixus",
+    "Gelyn"
+   ],
+   "key_books": [
+    {
+     "esm_id": "bk_galerionthemystic",
+     "title": "Galerion The Mystic"
+    },
+    {
+     "esm_id": "bk_OriginOfTheMagesGuild",
+     "title": "Origin of the Mages Guild"
+    },
+    {
+     "esm_id": "bk_charterMG",
+     "title": "Mages Guild Charter"
+    },
+    {
+     "esm_id": "bk_charterFG",
+     "title": "Fighters Guild Charter"
+    },
+    {
+     "esm_id": "bk_fragmentonartaeum",
+     "title": "Fragment: On Artaeum"
+    },
+    {
+     "esm_id": "bk_honorthieves",
+     "title": "Honor Among Thieves"
+    },
+    {
+     "esm_id": "bk_Ajira1",
+     "title": "Ajira's Mushroom Report"
+    },
+    {
+     "esm_id": "bookskill_illusion4",
+     "title": "Palla, Book I"
+    },
+    {
+     "esm_id": "bk_formygodsandemperor",
+     "title": "For my Gods and Emperor"
+    },
+    {
+     "esm_id": "bk_ocato_recommendation",
+     "title": "Letter from Ocato"
+    },
+    {
+     "esm_id": "bk_fryssajournal",
+     "title": "Journal of Fryssa"
+    }
+   ],
+   "book_count": 20
+  },
+  {
+   "id": "storyline:tamriel-history",
+   "name": "A History of Tamriel",
+   "arc": "Tamriel's deep past begins, per Dunmer and comparative accounts, with the primordial rivalry of Anu and Padomay giving rise to the et'Ada and the shattering of the original worlds into Nirn, followed by a war between isolationist and wandering Ehlnofey that seeds the various Mer and Men peoples; regional retellings of how Lorkhan's heart was severed differ so much by culture (Yokudan, Cyrodilic, Altmeri) that no single creation account is treated as authoritative. Human settlement is itself disputed: one university essay argues Nedic peoples predate Ysgramor's Atmoran migration and mostly integrated peacefully with Elves, with the Nords uniquely choosing conquest over accommodation under King Harald - a claim that cuts against more triumphalist Nord chronicles. The Third Era's political history is dominated by the Septim dynasty's repeated crises of succession: Tiber Septim's conquest and disputed true nature (heretical texts claim he was aided, then betrayed, by the resurrected demigod Wulfharth), the extended \"War of the Red Diamond\" waged by Potema the Wolf Queen, and Uriel Septim VII's decade-long secret imprisonment by his own Battlemage Jagar Tharn. Beyond Cyrodiil the history sprawls across a genuinely multipolar Tamriel - warring Khajiit and Bosmer nations locked in a Five Years War, the still-mysterious Ayleids who never assimilated, the founding of Orsinium after an Orc chieftain wins disputed land by trial of combat, and Akavir's rival nations including the immortal Tsaesci who once ruled the Cyrodilic Empire through Potentate Versidue-Shaie. Even singular events resist consensus: the \"Dragon Break\" said to have fractured time itself is remembered as four flatly contradictory experiences by an Imperial councilor, a Dunmer priestess, a Khajiit attendant, and the necromancer-god Mannimarco, and a rival scholar separately argues the entire doctrine originated from a simple mistranslation.",
+   "key_figures": [
+    "Potema",
+    "Almalexia",
+    "Tiber Septim",
+    "Barenziah",
+    "Vivec",
+    "Versidue-Shaie",
+    "Symmachus",
+    "Magnus",
+    "Sotha Sil",
+    "Turala"
+   ],
+   "key_books": [
+    {
+     "esm_id": "bk_AnnotatedAnuad",
+     "title": "The Annotated Anuad"
+    },
+    {
+     "esm_id": "bk_manyfacesmissinggod",
+     "title": "The Monomyth"
+    },
+    {
+     "esm_id": "bk_frontierconquestaccommodat",
+     "title": "Frontier, Conquest..."
+    },
+    {
+     "esm_id": "bk_MysteriousAkavir",
+     "title": "Mysterious Akavir"
+    },
+    {
+     "esm_id": "bk_provinces_of_tamriel",
+     "title": "Provinces of Tamriel"
+    },
+    {
+     "esm_id": "bk_wildelves",
+     "title": "The Wild Elves"
+    },
+    {
+     "esm_id": "bk_ArcturianHeresy",
+     "title": "The Arcturian Heresy"
+    },
+    {
+     "esm_id": "bk_wherewereyoudragonbroke",
+     "title": "Where Were You ... Dragon Broke"
+    },
+    {
+     "esm_id": "bookskill_heavy armor4",
+     "title": "How Orsinium Passed to the Orcs"
+    },
+    {
+     "esm_id": "BookSkill_Speechcraft1",
+     "title": "Biography of the Wolf Queen"
+    },
+    {
+     "esm_id": "bk_BriefHistoryEmpire3",
+     "title": "Brief History of the Empire v 3"
+    },
+    {
+     "esm_id": "bk_MixedUnitTactics",
+     "title": "Mixed Unit Tactics v1"
+    }
+   ],
+   "book_count": 80
+  },
+  {
+   "id": "storyline:religion-and-myth",
+   "name": "Gods, Myth, and the Aedra-Daedra Divide",
+   "arc": "Tamrielic cosmology begins, across most cultures, with the primal duality of Anu and Padomay birthing the et'Ada, whose \"Missing God\" Lorkhan (also Shezarr, Shor, Sep, Lorkhaj by region) tricked or persuaded the other gods into creating the mortal plane at the cost of severing his own divine heart - a myth retold with sharply different morals in Yokudan, Cyrodilic, and Altmeri versions, and reinterpreted again by the \"Lunar Lorkhan\" theory, which claims the moons themselves are the two halves of his flesh. Whether the gods and Daedra differ in kind is itself disputed: \"Aedra and Daedra\" insists the terms are precise Elvish categories - static, mortal-bound ancestors versus changeable, unkillable \"not-ancestors\" - while the same figures recur under wildly different names and moral valences across cultures, and Khajiiti myth recasts Azura's role and the Khajiit's own origin entirely differently from Dunmer tradition. Dunmer theology in particular centers on the Tribunal - Vivec, Almalexia, and Sotha Sil - whose own scripture, the \"36 Lessons of Vivec,\" presents an elaborate, deliberately riddling mythic autobiography that doctrinally justifies their divinity, even as Ashlander oral tradition and the Dissident Priests directly contest whether that divinity was earned or stolen through murder. Regional and racial faiths multiply outward from this core: Nord warriors venerate Shor's afterlife-hall Sovngarde and the Thu'um-wielding Wulfharth cycle, the Skaal keep the All-Maker distinct from mainstream Nord religion, saints and household ancestor-shrines structure ordinary Dunmer piety, and an astrological system of thirteen constellations offers a separate, birth-sign-based account of fate. A recurring open question across these texts is why the gods behave as they do at all - one essay speculates that deities draw power from worship itself and that diminished, forgotten spirits might be fading gods capable of one day rising again, an idea that quietly undercuts every fixed hierarchy the other religious texts assert.",
+   "key_figures": [
+    "Vivec",
+    "Nerevar",
+    "Almalexia",
+    "Sotha Sil",
+    "Boethiah",
+    "Azura",
+    "Mephala",
+    "Molag Bal",
+    "Lorkhan",
+    "Sheogorath"
+   ],
+   "key_books": [
+    {
+     "esm_id": "bk_AnnotatedAnuad",
+     "title": "The Annotated Anuad"
+    },
+    {
+     "esm_id": "bk_manyfacesmissinggod",
+     "title": "The Monomyth"
+    },
+    {
+     "esm_id": "bk_AedraAndDaedra",
+     "title": "Aedra and Daedra"
+    },
+    {
+     "esm_id": "bk_varietiesoffaithintheempire",
+     "title": "Varieties of Faith..."
+    },
+    {
+     "esm_id": "bk_wordsclanmother",
+     "title": "Words of Clan Mother Ahnissi"
+    },
+    {
+     "esm_id": "bk_ChangedOnes",
+     "title": "The Changed Ones"
+    },
+    {
+     "esm_id": "bk_spiritofnirn",
+     "title": "Spirit of Nirn, God of Mortals"
+    },
+    {
+     "esm_id": "BookSkill_Alteration5",
+     "title": "The Lunar Lorkhan"
+    },
+    {
+     "esm_id": "bk_Sovngarde",
+     "title": "Sovngarde, a Reexamination"
+    },
+    {
+     "esm_id": "bk_OverviewOfGodsAndWorship",
+     "title": "Overview of Gods and Worship"
+    },
+    {
+     "esm_id": "bk_firmament",
+     "title": "The Firmament"
+    },
+    {
+     "esm_id": "BookSkill_Athletics3",
+     "title": "36 Lessons of Vivec, Sermon 1"
+    }
+   ],
+   "book_count": 87
+  },
+  {
+   "id": "storyline:daily-life-vvardenfell",
+   "name": "Daily Life on Vvardenfell",
+   "arc": "Ordinary life on Vvardenfell is documented mostly through travel guides, ledgers, permits, and personal notes rather than grand narrative: town guides to Balmora, Ald'ruhn, Vivec, and Sadrith Mora catalogue guild halls, Temple services, and transport by silt strider and Mages Guild teleport, while a companion regional guide surveys the island's nine wildly different terrains behind the isolating Inner Sea. Commerce runs on a dense paper trail of tax records, land deeds, shipping logs, and contracts - Seyda Neen's Census and Excise office tracks debts owed by named residents, and merchant ledgers and haggling etiquette essays reveal a functioning cash economy alongside black-market smuggling (moon sugar, illegal ebony shipments, forged deeds) operating in the same towns as legitimate trade. Slavery is a visible, unresolved feature of daily Dunmer life: mine-camp regulations for slaves demand silent obedience under threat, plantation owner Orvas Dren's letters casually endorse harsh discipline of workers he refers to dismissively as \"nemer,\" and fictional pieces turn slave-master cruelty into a source of quiet, violent revenge - cruelty that other texts, like guild charters and the Imperial Cult handbook, explicitly condemn, showing real disagreement within Vvardenfell society over its legitimacy. Blight disease and its cures are a constant practical backdrop - mine passes bar entry to blighted lower shafts, shopkeepers apologize for irregular Cure Blight potion stock, and prayer scrolls double as folk remedies - alongside everyday hazards like shipwreck, bandits, and monster attacks that recur repeatedly in settlers' and travelers' journals. Bawdy comic theater, romantic notes, tavern debates, and petty guild rivalries round out a picture of a colonial frontier society that is at once bureaucratic, mercantile, dangerous, and startlingly ordinary in its human relationships.",
+   "key_figures": [
+    "Rovone Arvel",
+    "Orvas Dren",
+    "Odral Helvi",
+    "Arrille",
+    "Crassius Curio",
+    "Irgola",
+    "Valvius",
+    "Hlaren Ramoran",
+    "Vivec",
+    "Lifts-Her-Tail"
+   ],
+   "key_books": [
+    {
+     "esm_id": "bk_guide_to_balmora",
+     "title": "Guide to Balmora"
+    },
+    {
+     "esm_id": "bk_guide_to_ald_ruhn",
+     "title": "Guide to Ald'ruhn"
+    },
+    {
+     "esm_id": "bk_guide_to_vivec",
+     "title": "Guide to Vivec"
+    },
+    {
+     "esm_id": "bk_guide_to_sadrithmora",
+     "title": "Guide to Sadrith Mora"
+    },
+    {
+     "esm_id": "bk_guide_to_vvardenfell",
+     "title": "Guide to Vvardenfell"
+    },
+    {
+     "esm_id": "bk_seydaneentaxrecord",
+     "title": "Tax Record"
+    },
+    {
+     "esm_id": "bk_AlchemistsFormulary",
+     "title": "The Alchemists Formulary"
+    },
+    {
+     "esm_id": "bk_lustyargonianmaid",
+     "title": "The Lusty Argonian Maid"
+    },
+    {
+     "esm_id": "bk_notetocalderaslaves",
+     "title": "Note to Slaves"
+    },
+    {
+     "esm_id": "bk_Dren_Hlevala_note",
+     "title": "Note to Hlevala"
+    },
+    {
+     "esm_id": "bookskill_mercantile1",
+     "title": "The Buying Game"
+    },
+    {
+     "esm_id": "bk_BlightPotionNotice",
+     "title": "Cure Blight Potion Notice"
+    }
+   ],
+   "book_count": 53
+  },
+  {
+   "id": "storyline:sixth-house",
+   "name": "The Sixth House Uprising",
+   "arc": "House Dagoth was destroyed as a Great House after being exposed as traitors following the Battle of Red Mountain, its surviving loyal members reabsorbed into the other Houses - but Temple doctrine holds its original leadership actually survived beneath Red Mountain, sustained by dark sorcery, and by the late Third Era Dagoth Ur's own letters confirm the Sixth House was never destroyed, only dormant, now awakening to drive out Morrowind's foreign rulers and false gods. Temple and Inquisition intelligence reconstructs Dagoth Ur's plan in detail: raise the construct-god Akulakhan from the Heart of Lorkhan and a Dwemer body, install House Dagoth as its priesthood, and break Temple and Imperial authority, pursued through fortified bases, dream-sent recruitment of \"Sleepers\" and \"Dreamers,\" and escalating assassination campaigns - all cast in Sixth House scripture as liberation of primal chaos from the \"false god\" Anui-El and the Aedra. The uprising's human cost plays out intimately in the \"Poison Song\" cycle: an orphan named Tay, secretly a hidden Dagoth heir marked by an ancestral ring, is driven by a compulsive psychic \"Song\" to kill repeatedly and is eventually drawn fully into the cult by his supposed sister Dagoth-Acra, while his cousin Baynarah - a Temple-loyal House Indoril warrior - is torn between duty and horror as she is forced to hunt the very bloodline she loves. The revolt is explicitly framed as a guerrilla insurgency rather than open war, striking through infiltration, disguise, and assassination against House Indoril and the Temple, and the \"Seven Curses\" prophecy of fire, ash, flesh, ghosts, seed, despair, and dreams is read by Temple scholars as evidence the House's ancient betrayal is finally coming to fruition. A much older precedent, the 3E 150 siege of the Sixth House stronghold Abernanit against the Mehrunes Dagon-worshipping tyrant Dagoth Thras, shows the cult recurring across centuries rather than being a single unified uprising, suggesting \"Sixth House\" names a persistent undercurrent of Dagoth-blood heresy rather than one contained rebellion.",
+   "key_figures": [
+    "Dagoth Ur",
+    "Nerevar",
+    "Kagrenac",
+    "Baynarah",
+    "Tay",
+    "Edebah",
+    "Dagoth-Acra",
+    "Acra",
+    "Caius Cosades"
+   ],
+   "key_books": [
+    {
+     "esm_id": "bk_Dagoth_Urs_Plans",
+     "title": "Dagoth Ur's Plans"
+    },
+    {
+     "esm_id": "bk_a2_2_dagoth_message",
+     "title": "Message from Dagoth Ur"
+    },
+    {
+     "esm_id": "bk_thesevencurses",
+     "title": "The Seven Curses"
+    },
+    {
+     "esm_id": "bk_a1_2_antabolistocosades",
+     "title": "Hasphat's notes for Cosades"
+    },
+    {
+     "esm_id": "bk_poisonsong2",
+     "title": "Poison Song II"
+    },
+    {
+     "esm_id": "bk_poisonsong4",
+     "title": "Poison Song IV"
+    },
+    {
+     "esm_id": "bk_poisonsong5",
+     "title": "Poison Song V"
+    },
+    {
+     "esm_id": "bk_poisonsong6",
+     "title": "Poison Song VI"
+    },
+    {
+     "esm_id": "bk_poisonsong7",
+     "title": "Poison Song VII"
+    },
+    {
+     "esm_id": "BookSkill_Alteration3",
+     "title": "Sithis"
+    },
+    {
+     "esm_id": "bk_6thhouseravings",
+     "title": "Parchment with Scrawlings"
+    },
+    {
+     "esm_id": "BookSkill_Block1",
+     "title": "Death Blow of Abernanit"
+    }
+   ],
+   "book_count": 16
+  }
+ ],
+ "contested_questions": [
+  {
+   "id": "cq:red-mountain",
+   "question": "What actually happened at Red Mountain — and who killed Nerevar?",
+   "accounts": [
+    {
+     "tradition": "Temple orthodoxy",
+     "claim": "Nerevar died of battle wounds after defeating the Dwemer; the Tribunal later achieved divinity through wisdom and virtue, and Nerevar is venerated as their sainted champion."
+    },
+    {
+     "tradition": "Ashlander oral tradition",
+     "claim": "The Tribunal murdered Nerevar after the victory, stole godhood from the Heart against his dying wishes, and the Chimer's change to ash-skinned Dunmer is Azura's curse for it."
+    },
+    {
+     "tradition": "Vivec's own account (The Battle of Red Mountain — first-person, unreliable)",
+     "claim": "Admits the oath to Azura was broken and the tools were used, but frames the ascension as tragic necessity and denies murder."
+    },
+    {
+     "tradition": "Dagoth Ur's account (his letters and Temple intelligence)",
+     "claim": "Casts himself as the only one who kept faith with Nerevar's dying charge to guard the tools, and the Tribunal as the true oath-breakers."
+    }
+   ],
+   "note": "Deliberately unresolvable — the game presents all accounts without adjudicating. Present the traditions; never pick one as fact."
+  },
+  {
+   "id": "cq:tribunal-divinity",
+   "question": "Are Almalexia, Sotha Sil, and Vivec true gods?",
+   "accounts": [
+    {
+     "tradition": "Temple orthodoxy",
+     "claim": "Living gods whose coming was prepared by the Anticipations (Boethiah, Mephala, Azura); their divinity is the foundation of Dunmer faith and protection."
+    },
+    {
+     "tradition": "Dissident Priests / Ashlander view",
+     "claim": "Mortals who tapped the Heart of Lorkhan with Kagrenac's tools — powerful, but thieves of divinity whose 'godhood' requires periodic recharge at the Heart, which Dagoth Ur has cut off."
+    }
+   ],
+   "note": "The Sixth House crisis exists because both descriptions are functionally true at once: their power is real AND stolen AND failing."
+  },
+  {
+   "id": "cq:dwemer-fate",
+   "question": "Where did the Dwemer go?",
+   "accounts": [
+    {
+     "tradition": "Mainstream scholarship",
+     "claim": "Erased instantly and entirely at Red Mountain when Kagrenac used his tools on the Heart — whether destroyed, transported, or transformed is unknown."
+    },
+    {
+     "tradition": "Fringe theory (a publisher's note in fiction)",
+     "claim": "They never vanished; they live disguised among the other races."
+    },
+    {
+     "tradition": "Esoteric/theological hints",
+     "claim": "Their fate was a consequence of their own disbelief-as-craft — an attempt to unmake their dependence on the world that may have succeeded all too well."
+    }
+   ],
+   "note": "No in-game source knows. That absence is the point; treat every answer as speculation with a source."
+  },
+  {
+   "id": "cq:nerevarine-authenticity",
+   "question": "Is the Nerevarine a true reincarnation or a political fabrication?",
+   "accounts": [
+    {
+     "tradition": "Ashlander prophecy (The Stranger, The Seven Visions)",
+     "claim": "A genuine Incarnate, foretold by trial-riddles: born on a certain day to uncertain parents, immune to blight, uniting Houses and Tribes."
+    },
+    {
+     "tradition": "Temple position",
+     "claim": "The Nerevarine cult is heresy, its 'incarnates' failures or frauds, and the prophecy politically dangerous nonsense."
+    },
+    {
+     "tradition": "Imperial angle",
+     "claim": "The Empire finds the prophecy useful and quietly maneuvers a candidate into place — which reads either as cynical fabrication or as exactly how a real prophecy would fulfill itself."
+    }
+   ],
+   "note": "The game lets the fulfillment be read both ways simultaneously — chosen one and manufactured asset."
+  },
+  {
+   "id": "cq:lorkhan",
+   "question": "Was the creation of the mortal world a gift or a theft?",
+   "accounts": [
+    {
+     "tradition": "Elven accounts (Altmeri and kin)",
+     "claim": "Lorkhan tricked the et'Ada into creation, robbing them of divinity — the world is a prison and a loss."
+    },
+    {
+     "tradition": "Human accounts (Cyrodilic, Nordic, Yokudan variants)",
+     "claim": "Creation was a gift or a testing-ground; Lorkhan (Shezarr, Shor, Sep) is culture-hero, not villain."
+    },
+    {
+     "tradition": "Lunar Lorkhan theory",
+     "claim": "The moons are the two halves of Lorkhan's severed body — a metaphysical reading that sidesteps the morality question entirely."
+    }
+   ],
+   "note": "Every culture retells the same event with a different moral. There is no neutral version on record."
+  },
+  {
+   "id": "cq:36-lessons",
+   "question": "What are the 36 Lessons of Vivec actually saying?",
+   "accounts": [
+    {
+     "tradition": "Temple use",
+     "claim": "Sacred scripture: the mystery-teachings of a living god, studied as theology."
+    },
+    {
+     "tradition": "Skeptical reading",
+     "claim": "Self-mythology written by Vivec about Vivec — an unreliable narrator sanctifying his own history, possibly rewriting it."
+    },
+    {
+     "tradition": "Esoteric reading",
+     "claim": "Deliberately encoded metaphysics in which the surreal imagery carries the real doctrine and the 'events' are not meant as history at all."
+    }
+   ],
+   "note": "Summaries of the sermons describe imagery and claims without adjudicating what they 'really' mean — that ambiguity is authored."
+  }
+ ]
+}

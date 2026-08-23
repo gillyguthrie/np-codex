@@ -1,5 +1,11 @@
 # Changelog
 
+## 2026-08-23 — v0.3.0 vanilla lore layer
+- **New `data/vanilla_lore_books.json`**: all 449 distinct in-game books, notes, scrolls, and letters from the Morrowind/Tribunal/Bloodmoon ESMs, each SUMMARIZED IN ORIGINAL WORDS (never reproduced) with type, skill-book mapping, topics, characters, factions/places, and storyline tags. IP convention in `_meta`: the KB holds summaries only; verse is described, never quoted; full-text requests are declined with a pointer to the in-game book.
+- **New `data/vanilla_lore.json`**: 15 synthesized storyline arcs (Nerevarine prophecy, Tribunal & Dagoth Ur, Dwemer mystery, Great Houses, ...) plus 6 **contested questions** (What happened at Red Mountain? Are the Tribunal divine? Where did the Dwemer go? ...) with each competing tradition attributed to its sources. Binding `contested_is_canon` convention: Morrowind's core lore contradictions are authored content — answered by presenting the traditions flatly, never resolved.
+- **SKILL.md rule 7 amended**: vanilla lore is now answered IN-CODEX from these files, never from the internet; UESP referral narrows to quests/NPCs/anything the vanilla files don't cover. File map +2 entries; `np-codex.skill` repackaged.
+- Vanilla-only scope: NP-server lore remains in lore.json for future NP-specific additions.
+
 ## 2026-08-23 — v0.2.3 werewolf-alchemy facts + movement (provisional) + per-mob XP
 - mechanics.json: `fact:ww-potion-buffing` (human-form potion buffs persist into beast form; Alchemy 100 + Cowl of the Druid advised) and `fact:ww-gear-no-transfer` (gear stats don't carry into WW form except the Endowment robe/skirt) — from the public werewolf build guide (player-builds, 2025-09-28). Fixes the persona eval's weakest answer.
 - mechanics.json: `formula:movement-speed` (walk/run/sneak/swim/fly with engine-GMST constants) — PROVISIONAL, new `s-sheet-prov` source; the workbook tab labels itself "possibly accurate" and the record says so.
