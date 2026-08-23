@@ -1,5 +1,8 @@
 # Changelog
 
+## 2026-08-23 — v0.2.2 skill rule 9: per-file conventions are binding
+- SKILL.md gains rule 9: every data file's `_meta.conventions` block is binding for that file (read before computing); SKILL.md itself changes only for cross-cutting rules or new files, with per-file reading rules living in `_meta`. Codifies the scaling policy — topic expansions (like today's alchemy work) ship without touching the skill. `np-codex.skill` repackaged.
+
 ## 2026-08-23 — v0.2.2 alchemy NP-delta capture (Discord sweep)
 - **mechanics.json: 8 new alchemy facts** from a full public-archive sweep (server-general, in-game chat, player-builds, player-trades; ~1,130 alchemy-related messages reviewed): active-potion limit values (5 at Alchemy 100, +1 from Cowl of the Druid → 6), 5 potions per combine fully equipped, server-side potion magnitude/duration caps with the resist/elemental-shield/fatigue exceptions and persisting "pre-nerf" batches (era-tagged), potion strength input priority (Alchemy > INT > Luck, ~1 pt lost per skipped max source) and the current-era max-potion meta, ingredient-eating gives first effect only, Vampire Dust's Vampirism is cosmetic, mass-brew anti-cheat/lag caution (~100 per combine practice), and a publicly-accounted ~950 CM alchemist budget. New sources `s-sgen`, `s-igchat` (public channels, player-reported).
 - **alchemy.json: first np_ingredients record** — `ingr:elemental-flame-dust` stub (2026 Infernal Flame Atronach Camp drop, in-game chat 2026-08-09; effects unknown); np_ingredients note now names the known-but-uncaptured fireshield-fish drop ingredient. Counts gain `np_custom_stubs`.
