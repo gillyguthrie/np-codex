@@ -6,6 +6,7 @@
 - **New `data/vanilla_spells.json`**: all 1,065 vanilla spells (typed, with effect blocks) + 141 magic effects with school and base cost.
 - SKILL.md: rule 8 extended (vanilla item locations answered in-codex from the baseline), file map +3, and item-stat lookups now show the tooltip screenshot by default when the record has an image. `np-codex.skill` repackaged.
 - Quests and NPC dialogue deliberately NOT ingested — UESP remains the referral for walkthroughs.
+- Creature souls deliberately NOT ingested (system believed reworked on NP) — + `q:np-soul-rework` with the working hypothesis (charge value vanilla, merchant gold value nerfed; unverified).
 
 ## 2026-08-23 — v0.3.0 vanilla lore layer
 - **New `data/vanilla_lore_books.json`**: all 449 distinct in-game books, notes, scrolls, and letters from the Morrowind/Tribunal/Bloodmoon ESMs, each SUMMARIZED IN ORIGINAL WORDS (never reproduced) with type, skill-book mapping, topics, characters, factions/places, and storyline tags. IP convention in `_meta`: the KB holds summaries only; verse is described, never quoted; full-text requests are declined with a pointer to the in-game book.

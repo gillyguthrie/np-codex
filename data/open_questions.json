@@ -238,6 +238,13 @@
    "status": "open",
    "detail": "Does apparatus tier still change final potency at max perk/skill investment? The current-era meta includes the full Secret Master set, but an era-2022 report claimed plain Master apparatus sufficed at max perks — see c:secret-master-apparatus-impact. Related unverified claim: higher-quality calcinator lowers brewed potion weight (server-general 2025-06-04). Resolution: same-ingredient brews across apparatus tiers at maxed stats.",
    "date": "2026-08-23"
+  },
+  {
+   "id": "q:np-soul-rework",
+   "topic": "How souls work on NP",
+   "status": "open",
+   "detail": "Souls were deliberately left out of the vanilla ingest because the system is believed reworked. Working hypothesis (maintainer, unverified): a soul's ENCHANT charge value is unchanged from vanilla, but its GOLD value to merchants was nerfed. Resolution: in-game check of two or three filled gems — compare tooltip charge and merchant offer against vanilla values (vanilla creature souls are parseable from the ESMs on demand once this is settled).",
+   "date": "2026-08-23"
   }
  ]
 }
