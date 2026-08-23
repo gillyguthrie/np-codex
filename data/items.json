@@ -6052,8 +6052,8 @@
    "aliases": [],
    "captured": true,
    "item_kind": "server-unique",
-   "category": "other",
-   "slot": "ring",
+   "category": "weapon",
+   "slot": null,
    "armor_class": null,
    "side": null,
    "pair_group": null,
@@ -6101,7 +6101,23 @@
    "xref": {
     "np-server-items": "The Heartstring"
    },
-   "origin_game": "np-custom"
+   "origin_game": "np-custom",
+   "weapon": {
+    "dmg": {
+     "Attack": [
+      1,
+      100
+     ]
+    },
+    "dmgmax": 100,
+    "dmgtype": "Attack",
+    "speed_pct": {
+     "value": 150,
+     "src": "s-tooltip"
+    },
+    "range_ft": null,
+    "base_dmg": 100
+   }
   },
   {
    "id": "item:staff-of-the-stormweaver",
@@ -15878,14 +15894,28 @@
     "raw_text": "none"
    },
    "weapon": {
-    "dmg": null,
-    "dmgmax": null,
-    "dmgtype": null,
+    "dmg": {
+     "Chop": [
+      6,
+      15
+     ],
+     "Slash": [
+      6,
+      15
+     ],
+     "Thrust": [
+      6,
+      12
+     ]
+    },
+    "dmgmax": 15,
+    "dmgtype": "Chop",
     "speed_pct": {
      "value": 250,
      "src": "s-tooltip"
     },
-    "range_ft": 6.0
+    "range_ft": 6.0,
+    "base_dmg": 15
    },
    "xref": {
     "np-server-items": "Dagger of Shielding"

@@ -646,7 +646,7 @@ Total: 704 items.
 | Tenacious Headband | server-unique | helm | 134 | 1.0 | agi 20; str 20; hp 170 | Invisible on wearer, looks like not wearing helmet |
 | The Foreman's Pick | server-unique | weapon | — (unknown) | 20.0 | str 15; agi 15; hp 175 | Increases ore gained  compared to other Picks | Best pick for mining, reduces axe skill req. for max ore from 270 to 190 |
 | The Forgemaster's Fingers | server-unique | hands | 6 | 7.0 |  | unknown |
-| The Heartstring | server-unique | ring | — (unknown) | 16.0 | str 50 | unresistable -300 max hp // -100 speed | -300 Max HP (unresistable), -100 Speed (unresistable) |
+| The Heartstring | server-unique | weapon | — (unknown) | 16.0 | str 50 | unresistable -300 max hp // -100 speed | -300 Max HP (unresistable), -100 Speed (unresistable) |
 | The Icecap | server-unique · vanilla | helm | 7 | 1.5 | frost 30 | unknown |
 | The Longhammer | server-unique | weapon | — (unknown) | 30.4 |  | It's not a hidden effect, but it has a reach of 9 ft | Fastest Two Handed weapon |
 | The Lover's Shirt | server-unique | clothing | — (unknown) | 2.0 |  | 77 Enchant Value |
