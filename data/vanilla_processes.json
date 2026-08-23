@@ -1,0 +1,135 @@
+{
+ "_meta": {
+  "description": "VANILLA Morrowind crafting-process reference: how alchemy, enchanting, and armor repair work in the base game — constants parsed from the game ESMs (GMST records), process text quoted verbatim from the game's own help strings, formula structure from the community-documented engine (OpenMW reimplementation). Purpose: the baseline to diff NP's modified processes against as they are documented. NOTHING here is guaranteed to hold on NP — see each section's np_status.",
+  "extraction_date": "2026-08-23"
+ },
+ "sources": {
+  "s-gmst": {
+   "origin": "game-esm",
+   "channel": null,
+   "url": null,
+   "date": "2026-08-23",
+   "confidence": "dev-stated",
+   "note": "GMST game-settings records parsed from the ESMs — the engine's actual tuning constants."
+  },
+  "s-help": {
+   "origin": "game-esm",
+   "channel": null,
+   "url": null,
+   "date": "2026-08-23",
+   "confidence": "dev-stated",
+   "note": "Verbatim in-game help/UI strings shipped in the ESMs."
+  },
+  "s-engine": {
+   "origin": "engine-docs",
+   "channel": null,
+   "url": "https://openmw.readthedocs.io/",
+   "date": "2026-08-23",
+   "confidence": "measured",
+   "note": "Formula structure per the OpenMW engine reimplementation (community-verified against vanilla behavior). Constants themselves come from s-gmst."
+  }
+ },
+ "alchemy": {
+  "summary": "Potions are brewed from 2+ ingredients that share at least one effect, using apparatus (Mortar & Pestle required; Alembic, Calcinator, and Retort optionally modify quality). Skill and INT/LUK drive success and potion strength.",
+  "constants": {
+   "fWortChanceValue": 15.0,
+   "fPotionStrengthMult": 0.5,
+   "fPotionT1DurMult": 0.5,
+   "fPotionT1MagMult": 1.5,
+   "fPotionT4BaseStrengthMult": 20.0,
+   "fPotionT4EquipStrengthMult": 12.0,
+   "fPotionMinUsefulDuration": 20.0,
+   "iAlchemyMod": 2,
+   "fWereWolfAlchemy": 0.0
+  },
+  "constants_src": "s-gmst",
+  "process": [
+   {
+    "step": "Effect visibility: an ingredient's effects are revealed in listed order as Alchemy skill rises — thresholds at fWortChanceValue x1/x2/x3/x4 (15/30/45/60 skill for effects 1-4).",
+    "src": "s-engine"
+   },
+   {
+    "step": "Brewing requires a Mortar & Pestle; a shared effect between ingredients is what ends up in the potion. Alembic/Calcinator/Retort quality modifies the result (calcinator boosts, alembic reduces negative effects, retort boosts positives).",
+    "src": "s-engine"
+   },
+   {
+    "step": "Potion strength scales with Alchemy skill + INT/10 + LUK/10, apparatus quality, and fPotionStrengthMult; resulting magnitude/duration scale via fPotionT1MagMult / fPotionT1DurMult, with fPotionMinUsefulDuration as the floor.",
+    "src": "s-engine"
+   },
+   {
+    "step": "Werewolves cannot use alchemy (fWereWolfAlchemy = 0).",
+    "src": "s-gmst"
+   }
+  ],
+  "np_status": "NP modifications expected but not yet documented (see open_questions q:np-process-deltas). NP-side known so far: custom ingredients exist (alchemy.json np_ingredients)."
+ },
+ "enchanting": {
+  "summary": "Items are enchanted using a filled soul gem; the soul's charge becomes the item's charge pool, and the item type caps total enchantment cost. Self-enchanting success is skill-gated; constant effects need large souls.",
+  "constants": {
+   "fEnchantmentChanceMult": 3.0,
+   "fEnchantmentConstantChanceMult": 0.5,
+   "fEnchantmentConstantDurationMult": 100.0,
+   "fEnchantmentMult": 0.1,
+   "fEnchantmentValueMult": 1000.0,
+   "fSoulGemMult": 3.0,
+   "iSoulAmountForConstantEffect": 400,
+   "fWereWolfEnchant": 0.0
+  },
+  "constants_src": "s-gmst",
+  "game_help_verbatim": {
+   "src": "s-help",
+   "strings": [
+    "Slot for item to enchant. Only weapons, armor, scrolls and clothing that are not already enchanted can be enchanted.",
+    "Slot for the soul gem used to enchant an item. Only soul gems filled with a soul can be used. The soul amount is the total charge placed into the item.",
+    "The first number is the total amount the enchantment would cost to cast. The second number is the total enchantment cost that can be placed on this type of item.",
+    "The amount of charge points needed each time this enchantment is cast. This number is modified by your enchant skill.",
+    "The amount of soul in the soul gem in the soul gem slot",
+    "Type of cast for the enchantment.",
+    "Magic effects you know that you can add to an item",
+    "Current effects on the item"
+   ]
+  },
+  "process": [
+   {
+    "step": "Only unenchanted weapons, armor, scrolls, and clothing can be enchanted; each item type has an enchant-point capacity that caps total enchantment cost (see vanilla_ref.json enchant_capacity per item).",
+    "src": "s-help"
+   },
+   {
+    "step": "A constant-effect enchantment requires a soul of at least iSoulAmountForConstantEffect (400) — in vanilla, Golden Saint / Ascended Sleeper tier.",
+    "src": "s-gmst"
+   },
+   {
+    "step": "Self-enchant success chance scales with Enchant skill (+INT/LUK contributions) against enchantment cost via fEnchantmentChanceMult (x3 on cost), halved again for constant effects (fEnchantmentConstantChanceMult 0.5) — large enchantments are near-impossible to self-make in vanilla.",
+    "src": "s-engine"
+   },
+   {
+    "step": "Cast cost per use is reduced by Enchant skill (fEnchantmentMult 0.1 scaling); items recharge over time and from soul gems; enchanter NPCs charge fEnchantmentValueMult (1000) x enchantment cost in gold.",
+    "src": "s-engine"
+   },
+   {
+    "step": "Werewolves cannot enchant (fWereWolfEnchant = 0).",
+    "src": "s-gmst"
+   }
+  ],
+  "np_status": "NP HEAVILY modifies enchanting — the NP-side system (self-enchant ceilings, EV, the Infusion Anvil) is documented in data/enchanting.json; use THAT for NP answers. This section is the vanilla baseline only. Known deltas already: NP self-enchant ceilings are empirical per-slot caps unlike vanilla's chance-gated system; systematic diff pending (q:np-process-deltas)."
+ },
+ "repair": {
+  "summary": "Armor and weapons lose condition with use; repairing uses hammers/prongs consumed per attempt, with success and repair amount driven by Armorer skill.",
+  "constants": {
+   "fRepairAmountMult": 3.0,
+   "fRepairMult": 1.0
+  },
+  "constants_src": "s-gmst",
+  "process": [
+   {
+    "step": "Each repair attempt consumes one use of a repair item (Repair Prongs / hammers of increasing quality); success chance scales with Armorer skill (+STR? engine details), fatigue state, and luck; repaired amount scales with skill and tool quality via fRepairAmountMult (3).",
+    "src": "s-engine"
+   },
+   {
+    "step": "NPC smiths offer paid repair (sServiceRepairTitle UI); items cannot be repaired above full condition in vanilla.",
+    "src": "s-engine"
+   }
+  ],
+  "np_status": "NP modifications expected but not yet documented — NP items reach conditions far above vanilla norms (e.g. 6400/6400) and the Infusion Anvil adds +2250 durability, suggesting a reworked durability economy. Systematic diff pending (q:np-process-deltas)."
+ }
+}

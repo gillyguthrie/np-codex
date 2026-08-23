@@ -203,6 +203,20 @@
    "status": "open",
    "detail": "7 captured weapons have no damage values (Sparkler, Snowman Balls, Fireracer Launcher, Ouch, Stalhrim Shortsword, Witches' Broom, Seasplitter) and ~117 have no speed_pct. Most tooltips exist as images/items/*.png — an OCR pass or fresh in-game reads would close this. Builder impact: DPS/speed display incomplete for these.",
    "date": "2026-08-23"
+  },
+  {
+   "id": "q:np-custom-ingredients",
+   "topic": "NP-custom alchemy ingredients",
+   "status": "open",
+   "detail": "Aug 2026 in-game chat confirms new server-added ingredients (players discuss 'the new ingredients'; at least one drops at the 2026 Infernal Flame Atronach Camp). Names, effects, weights, values not yet captured. Resolution: in-game catalog screenshots of each ingredient tooltip -> alchemy.json np_ingredients. (Checked: 'Sticky Cinnamon Taffy' is Jiubsmas throwing ammo, not an ingredient.)",
+   "date": "2026-08-23"
+  },
+  {
+   "id": "q:np-process-deltas",
+   "topic": "NP modifications to alchemy / enchanting / repair processes",
+   "status": "open",
+   "detail": "Vanilla baselines are now documented in data/vanilla_processes.json (GMST constants + engine-documented formulas). NP is expected to modify all three processes (enchanting demonstrably so — see enchanting.json). Resolution: capture NP's actual process behavior (patch notes, in-game testing) and record each delta against the vanilla baseline.",
+   "date": "2026-08-23"
   }
  ]
 }

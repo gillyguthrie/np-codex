@@ -20,7 +20,7 @@
     "source": {
       "type": "object",
       "properties": {
-        "origin": { "enum": ["dev-doc", "wiki", "discord-public", "in-game-tooltip", "in-game-measured", "player-reported", "community-dataset", "game-esm"] },
+        "origin": { "enum": ["dev-doc", "wiki", "discord-public", "in-game-tooltip", "in-game-measured", "player-reported", "community-dataset", "game-esm", "engine-docs"] },
         "channel": { "type": ["string", "null"], "description": "Public channel or wiki page name only. Private channels must never appear." },
         "url": { "type": ["string", "null"] },
         "date": { "type": ["string", "null"] },

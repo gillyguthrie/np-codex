@@ -26,7 +26,7 @@ PRIVATE_CHANNEL_TOKENS = [
 FORBIDDEN_FIELDS = {"owner", "owned_by", "owned_status", "poster", "author",
                     "message_id", "message_ids", "discord_user", "player_name"}
 PATH_RE = re.compile(r"[A-Za-z]:\\\\|/home/|/mnt/")
-ORIGINS = {"dev-doc", "wiki", "discord-public", "in-game-tooltip", "in-game-measured", "player-reported", "community-dataset", "game-esm"}
+ORIGINS = {"dev-doc", "wiki", "discord-public", "in-game-tooltip", "in-game-measured", "player-reported", "community-dataset", "game-esm", "engine-docs"}
 CONFIDENCE = {"dev-stated", "measured", "player-reported", "provisional", "contested"}
 
 errors = []

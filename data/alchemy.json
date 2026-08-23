@@ -1,0 +1,1903 @@
+{
+ "_meta": {
+  "description": "Alchemy ingredients on NP. Vanilla ingredients are parsed directly from the game ESMs (baseline values — NP may modify any of them). NP-custom ingredients are tracked in np_ingredients as they are captured.",
+  "conventions": {
+   "effects": "Listed in game order — order matters: lower Alchemy skill reveals fewer effects (first effects first), and potions combine ingredients sharing an effect.",
+   "origin_game": "vanilla = shipped game ingredient (ESM values); np-custom = server-added."
+  },
+  "counts": {
+   "vanilla": 126,
+   "np_custom": 0
+  }
+ },
+ "sources": {
+  "s-esm": {
+   "origin": "game-esm",
+   "channel": null,
+   "url": null,
+   "date": "2026-08-23",
+   "confidence": "dev-stated",
+   "note": "Parsed from local Morrowind/Tribunal/Bloodmoon ESMs."
+  },
+  "s-igc": {
+   "origin": "in-game-tooltip",
+   "channel": null,
+   "url": null,
+   "date": null,
+   "confidence": "measured",
+   "note": "In-game catalog screenshots (for np-custom ingredients as captured)."
+  }
+ },
+ "ingredients": [
+  {
+   "id": "ingr:adamantium-ore",
+   "esm_id": "ingred_adamantium_ore_01",
+   "name": "Adamantium Ore",
+   "origin_game": "vanilla",
+   "src": "s-esm",
+   "weight": 50.0,
+   "value_gold": 300,
+   "effects": [
+    "Burden",
+    "Restore Magicka",
+    "Poison",
+    "Reflect"
+   ]
+  },
+  {
+   "id": "ingr:alit-hide",
+   "esm_id": "ingred_alit_hide_01",
+   "name": "Alit Hide",
+   "origin_game": "vanilla",
+   "src": "s-esm",
+   "weight": 1.0,
+   "value_gold": 5,
+   "effects": [
+    "Drain Intelligence",
+    "Resist Poison",
+    "Telekinesis",
+    "Detect Animal"
+   ]
+  },
+  {
+   "id": "ingr:ampoule-pod",
+   "esm_id": "ingred_bc_ampoule_pod",
+   "name": "Ampoule Pod",
+   "origin_game": "vanilla",
+   "src": "s-esm",
+   "weight": 0.1,
+   "value_gold": 2,
+   "effects": [
+    "Water Walking",
+    "Paralyze",
+    "Detect Animal",
+    "Drain Willpower"
+   ]
+  },
+  {
+   "id": "ingr:ash-salts",
+   "esm_id": "ingred_ash_salts_01",
+   "name": "Ash Salts",
+   "origin_game": "vanilla",
+   "src": "s-esm",
+   "weight": 0.1,
+   "value_gold": 25,
+   "effects": [
+    "Drain Agility",
+    "Resist Magicka",
+    "Cure Blight Disease",
+    "Resist Magicka"
+   ]
+  },
+  {
+   "id": "ingr:ash-yam",
+   "esm_id": "ingred_ash_yam_01",
+   "name": "Ash Yam",
+   "origin_game": "vanilla",
+   "src": "s-esm",
+   "weight": 0.5,
+   "value_gold": 1,
+   "effects": [
+    "Fortify Intelligence",
+    "Fortify Strength",
+    "Resist Common Disease",
+    "Detect Key"
+   ]
+  },
+  {
+   "id": "ingr:bear-pelt",
+   "esm_id": "ingred_bear_pelt",
+   "name": "Bear Pelt",
+   "origin_game": "vanilla",
+   "src": "s-esm",
+   "weight": 1.0,
+   "value_gold": 2,
+   "effects": [
+    "Drain Fatigue",
+    "Fortify Strength",
+    "Resist Common Disease",
+    "Night Eye"
+   ]
+  },
+  {
+   "id": "ingr:bittergreen-petals",
+   "esm_id": "ingred_bittergreen_petals_01",
+   "name": "Bittergreen Petals",
+   "origin_game": "vanilla",
+   "src": "s-esm",
+   "weight": 0.1,
+   "value_gold": 5,
+   "effects": [
+    "Restore Intelligence",
+    "Invisibility",
+    "Drain Endurance",
+    "Drain Magicka"
+   ]
+  },
+  {
+   "id": "ingr:black-anther",
+   "esm_id": "ingred_black_anther_01",
+   "name": "Black Anther",
+   "origin_game": "vanilla",
+   "src": "s-esm",
+   "weight": 0.1,
+   "value_gold": 2,
+   "effects": [
+    "Drain Agility",
+    "Resist Fire",
+    "Drain Endurance",
+    "Light"
+   ]
+  },
+  {
+   "id": "ingr:black-lichen",
+   "esm_id": "ingred_black_lichen_01",
+   "name": "Black Lichen",
+   "origin_game": "vanilla",
+   "src": "s-esm",
+   "weight": 0.1,
+   "value_gold": 2,
+   "effects": [
+    "Drain Strength",
+    "Resist Frost",
+    "Drain Speed",
+    "Cure Poison"
+   ]
+  },
+  {
+   "id": "ingr:bloat",
+   "esm_id": "ingred_bloat_01",
+   "name": "Bloat",
+   "origin_game": "vanilla",
+   "src": "s-esm",
+   "weight": 0.1,
+   "value_gold": 5,
+   "effects": [
+    "Drain Magicka",
+    "Fortify Intelligence",
+    "Fortify Willpower",
+    "Detect Animal"
+   ]
+  },
+  {
+   "id": "ingr:blood-of-an-innocent",
+   "esm_id": "ingred_blood_innocent_unique",
+   "name": "Blood of an Innocent",
+   "origin_game": "vanilla",
+   "src": "s-esm",
+   "weight": 0.1,
+   "value_gold": 25,
+   "effects": [
+    "Drain Speed",
+    "Light",
+    "Cure Common Disease",
+    "Drain Magicka"
+   ]
+  },
+  {
+   "id": "ingr:bonemeal",
+   "esm_id": "ingred_bonemeal_01",
+   "name": "Bonemeal",
+   "origin_game": "vanilla",
+   "src": "s-esm",
+   "weight": 0.2,
+   "value_gold": 2,
+   "effects": [
+    "Restore Agility",
+    "Telekinesis",
+    "Drain Fatigue",
+    "Drain Personality"
+   ]
+  },
+  {
+   "id": "ingr:bread",
+   "esm_id": "ingred_bread_01",
+   "name": "Bread",
+   "origin_game": "vanilla",
+   "src": "s-esm",
+   "weight": 0.2,
+   "value_gold": 1,
+   "effects": [
+    "Restore Fatigue"
+   ]
+  },
+  {
+   "id": "ingr:bread--ingred-bread-01-uni2",
+   "esm_id": "ingred_bread_01_UNI2",
+   "name": "Bread",
+   "origin_game": "vanilla",
+   "src": "s-esm",
+   "weight": 0.2,
+   "value_gold": 1,
+   "effects": [
+    "Restore Fatigue"
+   ]
+  },
+  {
+   "id": "ingr:bristleback-leather",
+   "esm_id": "ingred_boar_leather",
+   "name": "Bristleback Leather",
+   "origin_game": "vanilla",
+   "src": "s-esm",
+   "weight": 1.0,
+   "value_gold": 2,
+   "effects": [
+    "Blind",
+    "Frost Damage",
+    "Resist Frost",
+    "Recall"
+   ]
+  },
+  {
+   "id": "ingr:bungler-s-bane",
+   "esm_id": "ingred_bc_bungler's_bane",
+   "name": "Bungler's Bane",
+   "origin_game": "vanilla",
+   "src": "s-esm",
+   "weight": 0.5,
+   "value_gold": 1,
+   "effects": [
+    "Drain Speed",
+    "Drain Endurance",
+    "Dispel",
+    "Drain Strength"
+   ]
+  },
+  {
+   "id": "ingr:chokeweed",
+   "esm_id": "ingred_chokeweed_01",
+   "name": "Chokeweed",
+   "origin_game": "vanilla",
+   "src": "s-esm",
+   "weight": 0.1,
+   "value_gold": 1,
+   "effects": [
+    "Drain Luck",
+    "Restore Fatigue",
+    "Cure Common Disease",
+    "Drain Willpower"
+   ]
+  },
+  {
+   "id": "ingr:coda-flower",
+   "esm_id": "ingred_bc_coda_flower",
+   "name": "Coda Flower",
+   "origin_game": "vanilla",
+   "src": "s-esm",
+   "weight": 0.1,
+   "value_gold": 23,
+   "effects": [
+    "Drain Personality",
+    "Levitate",
+    "Drain Intelligence",
+    "Drain Health"
+   ]
+  },
+  {
+   "id": "ingr:comberry",
+   "esm_id": "ingred_comberry_01",
+   "name": "Comberry",
+   "origin_game": "vanilla",
+   "src": "s-esm",
+   "weight": 0.1,
+   "value_gold": 2,
+   "effects": [
+    "Drain Fatigue",
+    "Restore Magicka",
+    "Fire Shield",
+    "Reflect"
+   ]
+  },
+  {
+   "id": "ingr:corkbulb-root",
+   "esm_id": "ingred_corkbulb_root_01",
+   "name": "Corkbulb Root",
+   "origin_game": "vanilla",
+   "src": "s-esm",
+   "weight": 0.1,
+   "value_gold": 5,
+   "effects": [
+    "Cure Paralyzation",
+    "Restore Health",
+    "Lightning Shield",
+    "Fortify Luck"
+   ]
+  },
+  {
+   "id": "ingr:corprus-weepings",
+   "esm_id": "ingred_corprus_weepings_01",
+   "name": "Corprus weepings",
+   "origin_game": "vanilla",
+   "src": "s-esm",
+   "weight": 0.1,
+   "value_gold": 50,
+   "effects": [
+    "Drain Fatigue",
+    "Fortify Luck",
+    "Drain Willpower",
+    "Restore Health"
+   ]
+  },
+  {
+   "id": "ingr:crab-meat",
+   "esm_id": "ingred_crab_meat_01",
+   "name": "Crab Meat",
+   "origin_game": "vanilla",
+   "src": "s-esm",
+   "weight": 0.5,
+   "value_gold": 1,
+   "effects": [
+    "Restore Fatigue",
+    "Resist Shock",
+    "Lightning Shield",
+    "Restore Luck"
+   ]
+  },
+  {
+   "id": "ingr:daedra-skin",
+   "esm_id": "ingred_daedra_skin_01",
+   "name": "Daedra Skin",
+   "origin_game": "vanilla",
+   "src": "s-esm",
+   "weight": 0.2,
+   "value_gold": 200,
+   "effects": [
+    "Fortify Strength",
+    "Cure Common Disease",
+    "Paralyze",
+    "Swift Swim"
+   ]
+  },
+  {
+   "id": "ingr:daedra-s-heart",
+   "esm_id": "ingred_cursed_daedras_heart_01",
+   "name": "Daedra's Heart",
+   "origin_game": "vanilla",
+   "src": "s-esm",
+   "weight": 1.0,
+   "value_gold": 200,
+   "effects": [
+    "Restore Magicka",
+    "Fortify Endurance",
+    "Drain Agility",
+    "Night Eye"
+   ]
+  },
+  {
+   "id": "ingr:daedra-s-heart--ingred-daedras-heart-01",
+   "esm_id": "ingred_daedras_heart_01",
+   "name": "Daedra's Heart",
+   "origin_game": "vanilla",
+   "src": "s-esm",
+   "weight": 1.0,
+   "value_gold": 200,
+   "effects": [
+    "Restore Magicka",
+    "Fortify Endurance",
+    "Drain Agility",
+    "Night Eye"
+   ]
+  },
+  {
+   "id": "ingr:diamond",
+   "esm_id": "ingred_Dae_cursed_diamond_01",
+   "name": "Diamond",
+   "origin_game": "vanilla",
+   "src": "s-esm",
+   "weight": 0.2,
+   "value_gold": 250,
+   "effects": [
+    "Drain Agility",
+    "Invisibility",
+    "Reflect",
+    "Detect Key"
+   ]
+  },
+  {
+   "id": "ingr:diamond--ingred-diamond-01",
+   "esm_id": "ingred_diamond_01",
+   "name": "Diamond",
+   "origin_game": "vanilla",
+   "src": "s-esm",
+   "weight": 0.2,
+   "value_gold": 250,
+   "effects": [
+    "Drain Agility",
+    "Invisibility",
+    "Reflect",
+    "Detect Key"
+   ]
+  },
+  {
+   "id": "ingr:dreugh-wax",
+   "esm_id": "ingred_dreugh_wax_01",
+   "name": "Dreugh Wax",
+   "origin_game": "vanilla",
+   "src": "s-esm",
+   "weight": 0.2,
+   "value_gold": 100,
+   "effects": [
+    "Fortify Strength",
+    "Restore Strength",
+    "Drain Luck",
+    "Drain Willpower"
+   ]
+  },
+  {
+   "id": "ingr:durzog-meat",
+   "esm_id": "ingred_durzog_meat_01",
+   "name": "Durzog Meat",
+   "origin_game": "vanilla",
+   "src": "s-esm",
+   "weight": 2.0,
+   "value_gold": 7,
+   "effects": [
+    "Fortify Agility",
+    "Fortify Strength",
+    "Blind",
+    "Damage Magicka"
+   ]
+  },
+  {
+   "id": "ingr:ectoplasm",
+   "esm_id": "ingred_ectoplasm_01",
+   "name": "Ectoplasm",
+   "origin_game": "vanilla",
+   "src": "s-esm",
+   "weight": 0.1,
+   "value_gold": 10,
+   "effects": [
+    "Fortify Agility",
+    "Detect Animal",
+    "Drain Strength",
+    "Drain Health"
+   ]
+  },
+  {
+   "id": "ingr:emerald",
+   "esm_id": "ingred_Dae_cursed_emerald_01",
+   "name": "Emerald",
+   "origin_game": "vanilla",
+   "src": "s-esm",
+   "weight": 0.2,
+   "value_gold": 150,
+   "effects": [
+    "Fortify Magicka",
+    "Restore Health",
+    "Drain Agility",
+    "Drain Endurance"
+   ]
+  },
+  {
+   "id": "ingr:emerald--ingred-emerald-01",
+   "esm_id": "ingred_emerald_01",
+   "name": "Emerald",
+   "origin_game": "vanilla",
+   "src": "s-esm",
+   "weight": 0.2,
+   "value_gold": 150,
+   "effects": [
+    "Fortify Magicka",
+    "Restore Health",
+    "Drain Agility",
+    "Drain Endurance"
+   ]
+  },
+  {
+   "id": "ingr:fire-petal",
+   "esm_id": "ingred_fire_petal_01",
+   "name": "Fire Petal",
+   "origin_game": "vanilla",
+   "src": "s-esm",
+   "weight": 0.1,
+   "value_gold": 2,
+   "effects": [
+    "Resist Fire",
+    "Drain Health",
+    "Spell Absorption",
+    "Paralyze"
+   ]
+  },
+  {
+   "id": "ingr:fire-salts",
+   "esm_id": "ingred_fire_salts_01",
+   "name": "Fire Salts",
+   "origin_game": "vanilla",
+   "src": "s-esm",
+   "weight": 0.1,
+   "value_gold": 100,
+   "effects": [
+    "Drain Health",
+    "Fortify Agility",
+    "Resist Frost",
+    "Fire Shield"
+   ]
+  },
+  {
+   "id": "ingr:flaming-eye-of-the-lightkeeper",
+   "esm_id": "ingred_eyeball_unique",
+   "name": "Flaming Eye of the Lightkeeper",
+   "origin_game": "vanilla",
+   "src": "s-esm",
+   "weight": 1.0,
+   "value_gold": 15,
+   "effects": [
+    "Resist Frost",
+    "Night Eye",
+    "Drain Magicka",
+    "Fortify Strength"
+   ]
+  },
+  {
+   "id": "ingr:frost-salts",
+   "esm_id": "ingred_frost_salts_01",
+   "name": "Frost Salts",
+   "origin_game": "vanilla",
+   "src": "s-esm",
+   "weight": 0.1,
+   "value_gold": 75,
+   "effects": [
+    "Drain Speed",
+    "Restore Magicka",
+    "Frost Shield",
+    "Resist Fire"
+   ]
+  },
+  {
+   "id": "ingr:ghoul-heart",
+   "esm_id": "ingred_ghoul_heart_01",
+   "name": "Ghoul Heart",
+   "origin_game": "vanilla",
+   "src": "s-esm",
+   "weight": 0.5,
+   "value_gold": 150,
+   "effects": [
+    "Paralyze",
+    "Cure Poison",
+    "Fortify Attack"
+   ]
+  },
+  {
+   "id": "ingr:girith-s-guar-hide",
+   "esm_id": "ingred_guar_hide_girith",
+   "name": "Girith's Guar Hide",
+   "origin_game": "vanilla",
+   "src": "s-esm",
+   "weight": 1.0,
+   "value_gold": 5,
+   "effects": [
+    "Drain Fatigue",
+    "Fortify Endurance",
+    "Restore Personality",
+    "Fortify Luck"
+   ]
+  },
+  {
+   "id": "ingr:gold-kanet",
+   "esm_id": "ingred_gold_kanet_01",
+   "name": "Gold Kanet",
+   "origin_game": "vanilla",
+   "src": "s-esm",
+   "weight": 0.1,
+   "value_gold": 5,
+   "effects": [
+    "Drain Health",
+    "Burden",
+    "Drain Luck",
+    "Restore Strength"
+   ]
+  },
+  {
+   "id": "ingr:golden-sedge-flowers",
+   "esm_id": "Ingred_golden_sedge_01",
+   "name": "Golden Sedge Flowers",
+   "origin_game": "vanilla",
+   "src": "s-esm",
+   "weight": 1.0,
+   "value_gold": 1,
+   "effects": [
+    "Drain Magicka",
+    "Fortify Strength",
+    "Fortify Attack",
+    "Swift Swim"
+   ]
+  },
+  {
+   "id": "ingr:grahl-eyeball",
+   "esm_id": "ingred_eyeball",
+   "name": "Grahl Eyeball",
+   "origin_game": "vanilla",
+   "src": "s-esm",
+   "weight": 1.0,
+   "value_gold": 15,
+   "effects": [
+    "Resist Frost",
+    "Night Eye",
+    "Drain Magicka",
+    "Fortify Strength"
+   ]
+  },
+  {
+   "id": "ingr:gravedust",
+   "esm_id": "ingred_gravedust_01",
+   "name": "Gravedust",
+   "origin_game": "vanilla",
+   "src": "s-esm",
+   "weight": 0.1,
+   "value_gold": 1,
+   "effects": [
+    "Drain Intelligence",
+    "Cure Common Disease",
+    "Drain Magicka",
+    "Restore Endurance"
+   ]
+  },
+  {
+   "id": "ingr:gravetar",
+   "esm_id": "ingred_gravetar_01",
+   "name": "Gravetar",
+   "origin_game": "vanilla",
+   "src": "s-esm",
+   "weight": 0.1,
+   "value_gold": 5,
+   "effects": [
+    "Resist Frost",
+    "Drain Health",
+    "Fortify Fatigue",
+    "Drain Luck"
+   ]
+  },
+  {
+   "id": "ingr:green-lichen",
+   "esm_id": "ingred_green_lichen_01",
+   "name": "Green Lichen",
+   "origin_game": "vanilla",
+   "src": "s-esm",
+   "weight": 0.1,
+   "value_gold": 1,
+   "effects": [
+    "Fortify Personality",
+    "Cure Common Disease",
+    "Drain Strength",
+    "Drain Health"
+   ]
+  },
+  {
+   "id": "ingr:guar-hide",
+   "esm_id": "ingred_guar_hide_01",
+   "name": "Guar Hide",
+   "origin_game": "vanilla",
+   "src": "s-esm",
+   "weight": 1.0,
+   "value_gold": 5,
+   "effects": [
+    "Drain Fatigue",
+    "Fortify Endurance",
+    "Restore Personality",
+    "Fortify Luck"
+   ]
+  },
+  {
+   "id": "ingr:hackle-lo-leaf",
+   "esm_id": "ingred_hackle-lo_leaf_01",
+   "name": "Hackle-Lo Leaf",
+   "origin_game": "vanilla",
+   "src": "s-esm",
+   "weight": 0.1,
+   "value_gold": 30,
+   "effects": [
+    "Restore Fatigue",
+    "Paralyze",
+    "Water Breathing",
+    "Restore Luck"
+   ]
+  },
+  {
+   "id": "ingr:heart-of-an-innocent",
+   "esm_id": "ingred_innocent_heart",
+   "name": "Heart of an Innocent",
+   "origin_game": "vanilla",
+   "src": "s-esm",
+   "weight": 1.0,
+   "value_gold": 10,
+   "effects": [
+    "Restore Magicka",
+    "Fortify Endurance",
+    "Drain Agility",
+    "Night Eye"
+   ]
+  },
+  {
+   "id": "ingr:heart-of-the-udyrfrykte",
+   "esm_id": "ingred_udyrfrykte_heart",
+   "name": "Heart of the Udyrfrykte",
+   "origin_game": "vanilla",
+   "src": "s-esm",
+   "weight": 5.0,
+   "value_gold": 300,
+   "effects": [
+    "Restore Magicka",
+    "Fortify Endurance",
+    "Drain Agility",
+    "Night Eye"
+   ]
+  },
+  {
+   "id": "ingr:heart-of-the-wolf",
+   "esm_id": "ingred_wolf_heart",
+   "name": "Heart of the Wolf",
+   "origin_game": "vanilla",
+   "src": "s-esm",
+   "weight": 1.0,
+   "value_gold": 100,
+   "effects": [
+    "Restore Magicka",
+    "Fortify Endurance",
+    "Drain Agility",
+    "Night Eye"
+   ]
+  },
+  {
+   "id": "ingr:heartwood",
+   "esm_id": "ingred_heartwood_01",
+   "name": "Heartwood",
+   "origin_game": "vanilla",
+   "src": "s-esm",
+   "weight": 1.0,
+   "value_gold": 200,
+   "effects": [
+    "Restore Magicka",
+    "Fortify Agility",
+    "Drain Strength",
+    "Weakness to Fire"
+   ]
+  },
+  {
+   "id": "ingr:heather",
+   "esm_id": "ingred_heather_01",
+   "name": "Heather",
+   "origin_game": "vanilla",
+   "src": "s-esm",
+   "weight": 0.1,
+   "value_gold": 1,
+   "effects": [
+    "Restore Personality",
+    "Feather",
+    "Drain Speed",
+    "Drain Personality"
+   ]
+  },
+  {
+   "id": "ingr:holly-berries",
+   "esm_id": "ingred_holly_01",
+   "name": "Holly Berries",
+   "origin_game": "vanilla",
+   "src": "s-esm",
+   "weight": 0.1,
+   "value_gold": 5,
+   "effects": [
+    "Resist Frost",
+    "Frost Shield",
+    "Frost Damage",
+    "Weakness to Fire"
+   ]
+  },
+  {
+   "id": "ingr:horker-tusk",
+   "esm_id": "ingred_horker_tusk_01",
+   "name": "Horker Tusk",
+   "origin_game": "vanilla",
+   "src": "s-esm",
+   "weight": 0.1,
+   "value_gold": 5,
+   "effects": [
+    "Drain Alteration (skill)",
+    "Fortify Intelligence",
+    "Fortify Maximum Magicka",
+    "Detect Animal"
+   ]
+  },
+  {
+   "id": "ingr:horn-lily-bulb",
+   "esm_id": "Ingred_horn_lily_bulb_01",
+   "name": "Horn Lily Bulb",
+   "origin_game": "vanilla",
+   "src": "s-esm",
+   "weight": 1.0,
+   "value_gold": 1,
+   "effects": [
+    "Resist Paralysis",
+    "Drain Health",
+    "Restore Strength",
+    "Restore Endurance"
+   ]
+  },
+  {
+   "id": "ingr:hound-meat",
+   "esm_id": "ingred_hound_meat_01",
+   "name": "Hound Meat",
+   "origin_game": "vanilla",
+   "src": "s-esm",
+   "weight": 1.0,
+   "value_gold": 2,
+   "effects": [
+    "Restore Fatigue",
+    "Fortify Fatigue",
+    "Reflect",
+    "Detect Enchantment"
+   ]
+  },
+  {
+   "id": "ingr:human-flesh",
+   "esm_id": "ingred_human_meat_01",
+   "name": "Human Flesh",
+   "origin_game": "vanilla",
+   "src": "s-esm",
+   "weight": 1.0,
+   "value_gold": 1,
+   "effects": [
+    "Fortify Health",
+    "Drain Intelligence",
+    "Drain Personality"
+   ]
+  },
+  {
+   "id": "ingr:hypha-facia",
+   "esm_id": "ingred_bc_hypha_facia",
+   "name": "Hypha Facia",
+   "origin_game": "vanilla",
+   "src": "s-esm",
+   "weight": 0.1,
+   "value_gold": 1,
+   "effects": [
+    "Drain Luck",
+    "Drain Agility",
+    "Drain Fatigue",
+    "Detect Enchantment"
+   ]
+  },
+  {
+   "id": "ingr:kagouti-hide",
+   "esm_id": "ingred_kagouti_hide_01",
+   "name": "Kagouti Hide",
+   "origin_game": "vanilla",
+   "src": "s-esm",
+   "weight": 1.0,
+   "value_gold": 2,
+   "effects": [
+    "Drain Fatigue",
+    "Fortify Speed",
+    "Resist Common Disease",
+    "Night Eye"
+   ]
+  },
+  {
+   "id": "ingr:kresh-fiber",
+   "esm_id": "ingred_kresh_fiber_01",
+   "name": "Kresh Fiber",
+   "origin_game": "vanilla",
+   "src": "s-esm",
+   "weight": 0.1,
+   "value_gold": 1,
+   "effects": [
+    "Restore Luck",
+    "Fortify Personality",
+    "Drain Magicka",
+    "Drain Speed"
+   ]
+  },
+  {
+   "id": "ingr:kwama-cuttle",
+   "esm_id": "ingred_kwama_cuttle_01",
+   "name": "Kwama Cuttle",
+   "origin_game": "vanilla",
+   "src": "s-esm",
+   "weight": 0.1,
+   "value_gold": 2,
+   "effects": [
+    "Resist Poison",
+    "Drain Fatigue",
+    "Water Walking",
+    "Water Breathing"
+   ]
+  },
+  {
+   "id": "ingr:large-corprusmeat-hunk",
+   "esm_id": "ingred_6th_corprusmeat_05",
+   "name": "Large Corprusmeat Hunk",
+   "origin_game": "vanilla",
+   "src": "s-esm",
+   "weight": 1.0,
+   "value_gold": 0,
+   "effects": [
+    "Drain Fatigue",
+    "Drain Health",
+    "Drain Magicka"
+   ]
+  },
+  {
+   "id": "ingr:large-kwama-egg",
+   "esm_id": "food_kwama_egg_02",
+   "name": "Large Kwama Egg",
+   "origin_game": "vanilla",
+   "src": "s-esm",
+   "weight": 2.0,
+   "value_gold": 2,
+   "effects": [
+    "Restore Fatigue",
+    "Paralyze",
+    "Frost Shield",
+    "Fortify Health"
+   ]
+  },
+  {
+   "id": "ingr:large-wrapped-corprusmeat",
+   "esm_id": "ingred_6th_corprusmeat_01",
+   "name": "Large Wrapped Corprusmeat",
+   "origin_game": "vanilla",
+   "src": "s-esm",
+   "weight": 1.0,
+   "value_gold": 0,
+   "effects": [
+    "Drain Fatigue",
+    "Drain Health",
+    "Drain Magicka"
+   ]
+  },
+  {
+   "id": "ingr:lloramor-spines",
+   "esm_id": "Ingred_lloramor_spines_01",
+   "name": "Lloramor Spines",
+   "origin_game": "vanilla",
+   "src": "s-esm",
+   "weight": 1.0,
+   "value_gold": 1,
+   "effects": [
+    "Spell Absorption",
+    "Invisibility",
+    "Poison",
+    "Detect Enchantment"
+   ]
+  },
+  {
+   "id": "ingr:luminous-russula",
+   "esm_id": "ingred_russula_01",
+   "name": "Luminous Russula",
+   "origin_game": "vanilla",
+   "src": "s-esm",
+   "weight": 0.2,
+   "value_gold": 1,
+   "effects": [
+    "Water Breathing",
+    "Drain Fatigue",
+    "Poison"
+   ]
+  },
+  {
+   "id": "ingr:marshmerrow",
+   "esm_id": "ingred_marshmerrow_01",
+   "name": "Marshmerrow",
+   "origin_game": "vanilla",
+   "src": "s-esm",
+   "weight": 0.1,
+   "value_gold": 1,
+   "effects": [
+    "Restore Health",
+    "Detect Enchantment",
+    "Drain Willpower",
+    "Drain Fatigue"
+   ]
+  },
+  {
+   "id": "ingr:marsus-guar-hide",
+   "esm_id": "ingred_guar_hide_marsus",
+   "name": "Marsus' Guar Hide",
+   "origin_game": "vanilla",
+   "src": "s-esm",
+   "weight": 1.0,
+   "value_gold": 5,
+   "effects": [
+    "Drain Fatigue",
+    "Fortify Endurance",
+    "Restore Personality",
+    "Fortify Luck"
+   ]
+  },
+  {
+   "id": "ingr:meadow-rye",
+   "esm_id": "Ingred_meadow_rye_01",
+   "name": "Meadow Rye",
+   "origin_game": "vanilla",
+   "src": "s-esm",
+   "weight": 1.0,
+   "value_gold": 1,
+   "effects": [
+    "Fortify Speed",
+    "Damage Health",
+    "Restore Speed",
+    "Drain Speed"
+   ]
+  },
+  {
+   "id": "ingr:medium-corprusmeat-hunk",
+   "esm_id": "ingred_6th_corprusmeat_06",
+   "name": "Medium Corprusmeat Hunk",
+   "origin_game": "vanilla",
+   "src": "s-esm",
+   "weight": 0.5,
+   "value_gold": 0,
+   "effects": [
+    "Drain Fatigue",
+    "Drain Health",
+    "Drain Magicka"
+   ]
+  },
+  {
+   "id": "ingr:medium-wrapped-corprusmeat",
+   "esm_id": "ingred_6th_corprusmeat_03",
+   "name": "Medium Wrapped Corprusmeat",
+   "origin_game": "vanilla",
+   "src": "s-esm",
+   "weight": 0.5,
+   "value_gold": 0,
+   "effects": [
+    "Drain Fatigue",
+    "Drain Health",
+    "Drain Magicka"
+   ]
+  },
+  {
+   "id": "ingr:meteor-slime",
+   "esm_id": "ingred_scrib_jelly_02",
+   "name": "Meteor Slime",
+   "origin_game": "vanilla",
+   "src": "s-esm",
+   "weight": 0.1,
+   "value_gold": 10,
+   "effects": [
+    "Fortify Willpower",
+    "Cure Poison",
+    "Cure Blight Disease",
+    "Restore Willpower"
+   ]
+  },
+  {
+   "id": "ingr:moon-sugar",
+   "esm_id": "ingred_moon_sugar_01",
+   "name": "Moon Sugar",
+   "origin_game": "vanilla",
+   "src": "s-esm",
+   "weight": 0.1,
+   "value_gold": 50,
+   "effects": [
+    "Fortify Speed",
+    "Dispel",
+    "Drain Endurance",
+    "Drain Luck"
+   ]
+  },
+  {
+   "id": "ingr:muck",
+   "esm_id": "ingred_muck_01",
+   "name": "Muck",
+   "origin_game": "vanilla",
+   "src": "s-esm",
+   "weight": 0.1,
+   "value_gold": 1,
+   "effects": [
+    "Drain Intelligence",
+    "Detect Key",
+    "Drain Personality",
+    "Cure Common Disease"
+   ]
+  },
+  {
+   "id": "ingr:muffin",
+   "esm_id": "ingred_bread_01_UNI3",
+   "name": "Muffin",
+   "origin_game": "vanilla",
+   "src": "s-esm",
+   "weight": 0.2,
+   "value_gold": 1,
+   "effects": [
+    "Restore Fatigue"
+   ]
+  },
+  {
+   "id": "ingr:netch-leather",
+   "esm_id": "ingred_netch_leather_01",
+   "name": "Netch Leather",
+   "origin_game": "vanilla",
+   "src": "s-esm",
+   "weight": 1.0,
+   "value_gold": 1,
+   "effects": [
+    "Fortify Endurance",
+    "Fortify Intelligence",
+    "Drain Personality",
+    "Cure Paralyzation"
+   ]
+  },
+  {
+   "id": "ingr:nirthfly-stalks",
+   "esm_id": "Ingred_nirthfly_stalks_01",
+   "name": "Nirthfly Stalks",
+   "origin_game": "vanilla",
+   "src": "s-esm",
+   "weight": 1.0,
+   "value_gold": 1,
+   "effects": [
+    "Damage Health",
+    "Fortify Speed",
+    "Restore Speed",
+    "Drain Speed"
+   ]
+  },
+  {
+   "id": "ingr:noble-sedge-flowers",
+   "esm_id": "Ingred_noble_sedge_01",
+   "name": "Noble Sedge Flowers",
+   "origin_game": "vanilla",
+   "src": "s-esm",
+   "weight": 1.0,
+   "value_gold": 1,
+   "effects": [
+    "Damage Health",
+    "Restore Agility",
+    "Poison",
+    "Fortify Agility"
+   ]
+  },
+  {
+   "id": "ingr:pearl",
+   "esm_id": "ingred_Dae_cursed_pearl_01",
+   "name": "Pearl",
+   "origin_game": "vanilla",
+   "src": "s-esm",
+   "weight": 0.2,
+   "value_gold": 100,
+   "effects": [
+    "Drain Agility",
+    "Dispel",
+    "Water Breathing",
+    "Resist Common Disease"
+   ]
+  },
+  {
+   "id": "ingr:pearl--ingred-pearl-01",
+   "esm_id": "ingred_pearl_01",
+   "name": "Pearl",
+   "origin_game": "vanilla",
+   "src": "s-esm",
+   "weight": 0.2,
+   "value_gold": 100,
+   "effects": [
+    "Drain Agility",
+    "Dispel",
+    "Water Breathing",
+    "Resist Common Disease"
+   ]
+  },
+  {
+   "id": "ingr:pinetear",
+   "esm_id": "ingred_emerald_pinetear",
+   "name": "Pinetear",
+   "origin_game": "vanilla",
+   "src": "s-esm",
+   "weight": 0.2,
+   "value_gold": 50,
+   "effects": [
+    "Fortify Magicka",
+    "Restore Health",
+    "Drain Agility",
+    "Drain Endurance"
+   ]
+  },
+  {
+   "id": "ingr:poison",
+   "esm_id": "poison_goop00",
+   "name": "Poison",
+   "origin_game": "vanilla",
+   "src": "s-esm",
+   "weight": 0.1,
+   "value_gold": 0,
+   "effects": [
+    "Weakness to Poison",
+    "Damage Health",
+    "Damage Fatigue",
+    "Poison"
+   ]
+  },
+  {
+   "id": "ingr:racer-plumes",
+   "esm_id": "ingred_racer_plumes_01",
+   "name": "Racer Plumes",
+   "origin_game": "vanilla",
+   "src": "s-esm",
+   "weight": 0.1,
+   "value_gold": 20,
+   "effects": [
+    "Drain Willpower",
+    "Levitate"
+   ]
+  },
+  {
+   "id": "ingr:rat-meat",
+   "esm_id": "ingred_rat_meat_01",
+   "name": "Rat Meat",
+   "origin_game": "vanilla",
+   "src": "s-esm",
+   "weight": 1.0,
+   "value_gold": 1,
+   "effects": [
+    "Drain Magicka",
+    "Paralyze",
+    "Cure Poison",
+    "Resist Poison"
+   ]
+  },
+  {
+   "id": "ingr:raw-ebony",
+   "esm_id": "ingred_Dae_cursed_raw_ebony_01",
+   "name": "Raw Ebony",
+   "origin_game": "vanilla",
+   "src": "s-esm",
+   "weight": 10.0,
+   "value_gold": 200,
+   "effects": [
+    "Drain Agility",
+    "Cure Poison",
+    "Frost Shield",
+    "Restore Speed"
+   ]
+  },
+  {
+   "id": "ingr:raw-ebony--ingred-raw-ebony-01",
+   "esm_id": "ingred_raw_ebony_01",
+   "name": "Raw Ebony",
+   "origin_game": "vanilla",
+   "src": "s-esm",
+   "weight": 10.0,
+   "value_gold": 200,
+   "effects": [
+    "Drain Agility",
+    "Cure Poison",
+    "Frost Shield",
+    "Restore Speed"
+   ]
+  },
+  {
+   "id": "ingr:raw-glass",
+   "esm_id": "ingred_raw_glass_01",
+   "name": "Raw Glass",
+   "origin_game": "vanilla",
+   "src": "s-esm",
+   "weight": 2.0,
+   "value_gold": 200,
+   "effects": [
+    "Drain Intelligence",
+    "Drain Strength",
+    "Drain Speed",
+    "Fire Shield"
+   ]
+  },
+  {
+   "id": "ingr:raw-glass--ingred-raw-glass-tinos",
+   "esm_id": "ingred_raw_glass_tinos",
+   "name": "Raw Glass",
+   "origin_game": "vanilla",
+   "src": "s-esm",
+   "weight": 2.0,
+   "value_gold": 200,
+   "effects": [
+    "Drain Intelligence",
+    "Drain Strength",
+    "Drain Speed",
+    "Fire Shield"
+   ]
+  },
+  {
+   "id": "ingr:raw-stalhrim",
+   "esm_id": "ingred_raw_Stalhrim_01",
+   "name": "Raw Stalhrim",
+   "origin_game": "vanilla",
+   "src": "s-esm",
+   "weight": 5.0,
+   "value_gold": 300,
+   "effects": [
+    "Resist Frost",
+    "Frost Damage",
+    "Paralyze",
+    "Restore Health"
+   ]
+  },
+  {
+   "id": "ingr:red-lichen",
+   "esm_id": "ingred_red_lichen_01",
+   "name": "Red Lichen",
+   "origin_game": "vanilla",
+   "src": "s-esm",
+   "weight": 0.1,
+   "value_gold": 25,
+   "effects": [
+    "Drain Speed",
+    "Light",
+    "Cure Common Disease",
+    "Drain Magicka"
+   ]
+  },
+  {
+   "id": "ingr:resin",
+   "esm_id": "ingred_resin_01",
+   "name": "Resin",
+   "origin_game": "vanilla",
+   "src": "s-esm",
+   "weight": 0.1,
+   "value_gold": 10,
+   "effects": [
+    "Restore Health",
+    "Restore Speed",
+    "Burden",
+    "Resist Common Disease"
+   ]
+  },
+  {
+   "id": "ingr:ripened-belladonna-berries",
+   "esm_id": "ingred_belladonna_01",
+   "name": "Ripened Belladonna Berries",
+   "origin_game": "vanilla",
+   "src": "s-esm",
+   "weight": 0.1,
+   "value_gold": 5,
+   "effects": [
+    "Resist Magicka",
+    "Restore Magicka",
+    "Fortify Magicka",
+    "Drain Magicka"
+   ]
+  },
+  {
+   "id": "ingr:roland-s-tear",
+   "esm_id": "ingred_gold_kanet_unique",
+   "name": "Roland's Tear",
+   "origin_game": "vanilla",
+   "src": "s-esm",
+   "weight": 0.1,
+   "value_gold": 5,
+   "effects": [
+    "Drain Health",
+    "Burden",
+    "Drain Luck",
+    "Restore Strength"
+   ]
+  },
+  {
+   "id": "ingr:roobrush",
+   "esm_id": "ingred_roobrush_01",
+   "name": "Roobrush",
+   "origin_game": "vanilla",
+   "src": "s-esm",
+   "weight": 0.1,
+   "value_gold": 1,
+   "effects": [
+    "Drain Willpower",
+    "Fortify Agility",
+    "Drain Health",
+    "Cure Poison"
+   ]
+  },
+  {
+   "id": "ingr:ruby",
+   "esm_id": "ingred_Dae_cursed_ruby_01",
+   "name": "Ruby",
+   "origin_game": "vanilla",
+   "src": "s-esm",
+   "weight": 0.2,
+   "value_gold": 200,
+   "effects": [
+    "Drain Health",
+    "Feather",
+    "Restore Intelligence",
+    "Drain Agility"
+   ]
+  },
+  {
+   "id": "ingr:ruby--ingred-ruby-01",
+   "esm_id": "ingred_ruby_01",
+   "name": "Ruby",
+   "origin_game": "vanilla",
+   "src": "s-esm",
+   "weight": 0.2,
+   "value_gold": 200,
+   "effects": [
+    "Drain Health",
+    "Feather",
+    "Restore Intelligence",
+    "Drain Agility"
+   ]
+  },
+  {
+   "id": "ingr:saltrice",
+   "esm_id": "ingred_saltrice_01",
+   "name": "Saltrice",
+   "origin_game": "vanilla",
+   "src": "s-esm",
+   "weight": 0.1,
+   "value_gold": 1,
+   "effects": [
+    "Restore Fatigue",
+    "Fortify Magicka",
+    "Drain Strength",
+    "Restore Health"
+   ]
+  },
+  {
+   "id": "ingr:scales",
+   "esm_id": "ingred_scales_01",
+   "name": "Scales",
+   "origin_game": "vanilla",
+   "src": "s-esm",
+   "weight": 0.2,
+   "value_gold": 2,
+   "effects": [
+    "Drain Personality",
+    "Water Walking",
+    "Restore Endurance",
+    "Swift Swim"
+   ]
+  },
+  {
+   "id": "ingr:scamp-skin",
+   "esm_id": "ingred_scamp_skin_01",
+   "name": "Scamp Skin",
+   "origin_game": "vanilla",
+   "src": "s-esm",
+   "weight": 0.1,
+   "value_gold": 10,
+   "effects": [
+    "Drain Magicka",
+    "Cure Paralyzation",
+    "Restore Personality",
+    "Restore Strength"
+   ]
+  },
+  {
+   "id": "ingr:scathecraw",
+   "esm_id": "ingred_scathecraw_01",
+   "name": "Scathecraw",
+   "origin_game": "vanilla",
+   "src": "s-esm",
+   "weight": 0.1,
+   "value_gold": 2,
+   "effects": [
+    "Drain Strength",
+    "Cure Poison",
+    "Drain Health",
+    "Restore Willpower"
+   ]
+  },
+  {
+   "id": "ingr:scrap-metal",
+   "esm_id": "ingred_scrap_metal_01",
+   "name": "Scrap Metal",
+   "origin_game": "vanilla",
+   "src": "s-esm",
+   "weight": 10.0,
+   "value_gold": 20,
+   "effects": [
+    "Drain Health",
+    "Lightning Shield",
+    "Resist Shock",
+    "Restore Intelligence"
+   ]
+  },
+  {
+   "id": "ingr:scrib-cabbage",
+   "esm_id": "Ingred_scrib_cabbage_01",
+   "name": "Scrib Cabbage",
+   "origin_game": "vanilla",
+   "src": "s-esm",
+   "weight": 1.0,
+   "value_gold": 1,
+   "effects": [
+    "Drain Intelligence",
+    "Damage Health",
+    "Restore Agility",
+    "Fortify Agility"
+   ]
+  },
+  {
+   "id": "ingr:scrib-jelly",
+   "esm_id": "ingred_scrib_jelly_01",
+   "name": "Scrib Jelly",
+   "origin_game": "vanilla",
+   "src": "s-esm",
+   "weight": 0.1,
+   "value_gold": 10,
+   "effects": [
+    "Fortify Willpower",
+    "Cure Poison",
+    "Cure Blight Disease",
+    "Restore Willpower"
+   ]
+  },
+  {
+   "id": "ingr:scrib-jerky",
+   "esm_id": "ingred_scrib_jerky_01",
+   "name": "Scrib Jerky",
+   "origin_game": "vanilla",
+   "src": "s-esm",
+   "weight": 0.2,
+   "value_gold": 5,
+   "effects": [
+    "Restore Fatigue",
+    "Fortify Fatigue",
+    "Burden",
+    "Swift Swim"
+   ]
+  },
+  {
+   "id": "ingr:scuttle",
+   "esm_id": "ingred_scuttle_01",
+   "name": "Scuttle",
+   "origin_game": "vanilla",
+   "src": "s-esm",
+   "weight": 0.1,
+   "value_gold": 10,
+   "effects": [
+    "Restore Fatigue",
+    "Fortify Fatigue",
+    "Feather",
+    "Telekinesis"
+   ]
+  },
+  {
+   "id": "ingr:shalk-resin",
+   "esm_id": "ingred_shalk_resin_01",
+   "name": "Shalk Resin",
+   "origin_game": "vanilla",
+   "src": "s-esm",
+   "weight": 0.1,
+   "value_gold": 50,
+   "effects": [
+    "Drain Fatigue",
+    "Fortify Health",
+    "Drain Personality",
+    "Fortify Speed"
+   ]
+  },
+  {
+   "id": "ingr:sload-soap",
+   "esm_id": "ingred_sload_soap_01",
+   "name": "Sload Soap",
+   "origin_game": "vanilla",
+   "src": "s-esm",
+   "weight": 0.1,
+   "value_gold": 50,
+   "effects": [
+    "Drain Personality",
+    "Fortify Agility",
+    "Fire Shield",
+    "Restore Agility"
+   ]
+  },
+  {
+   "id": "ingr:small-corprusmeat-hunk",
+   "esm_id": "ingred_6th_corprusmeat_07",
+   "name": "Small Corprusmeat Hunk",
+   "origin_game": "vanilla",
+   "src": "s-esm",
+   "weight": 0.2,
+   "value_gold": 0,
+   "effects": [
+    "Drain Fatigue",
+    "Drain Health",
+    "Drain Magicka"
+   ]
+  },
+  {
+   "id": "ingr:small-kwama-egg",
+   "esm_id": "food_kwama_egg_01",
+   "name": "Small Kwama Egg",
+   "origin_game": "vanilla",
+   "src": "s-esm",
+   "weight": 0.5,
+   "value_gold": 1,
+   "effects": [
+    "Restore Fatigue"
+   ]
+  },
+  {
+   "id": "ingr:small-wrapped-corprusmeat",
+   "esm_id": "ingred_6th_corprusmeat_02",
+   "name": "Small Wrapped Corprusmeat",
+   "origin_game": "vanilla",
+   "src": "s-esm",
+   "weight": 0.2,
+   "value_gold": 0,
+   "effects": [
+    "Drain Fatigue",
+    "Drain Health",
+    "Drain Magicka"
+   ]
+  },
+  {
+   "id": "ingr:snow-bear-pelt",
+   "esm_id": "ingred_snowbear_pelt_unique",
+   "name": "Snow Bear Pelt",
+   "origin_game": "vanilla",
+   "src": "s-esm",
+   "weight": 1.0,
+   "value_gold": 2,
+   "effects": [
+    "Drain Fatigue",
+    "Fortify Speed",
+    "Resist Common Disease",
+    "Night Eye"
+   ]
+  },
+  {
+   "id": "ingr:snow-wolf-pelt",
+   "esm_id": "ingred_snowwolf_pelt_unique",
+   "name": "Snow Wolf Pelt",
+   "origin_game": "vanilla",
+   "src": "s-esm",
+   "weight": 1.0,
+   "value_gold": 2,
+   "effects": [
+    "Drain Fatigue",
+    "Fortify Speed",
+    "Resist Common Disease",
+    "Night Eye"
+   ]
+  },
+  {
+   "id": "ingr:spore-pod",
+   "esm_id": "ingred_bc_spore_pod",
+   "name": "Spore Pod",
+   "origin_game": "vanilla",
+   "src": "s-esm",
+   "weight": 0.1,
+   "value_gold": 1,
+   "effects": [
+    "Drain Strength",
+    "Drain Fatigue",
+    "Detect Key",
+    "Paralyze"
+   ]
+  },
+  {
+   "id": "ingr:stoneflower-petals",
+   "esm_id": "ingred_stoneflower_petals_01",
+   "name": "Stoneflower Petals",
+   "origin_game": "vanilla",
+   "src": "s-esm",
+   "weight": 0.1,
+   "value_gold": 1,
+   "effects": [
+    "Restore Strength",
+    "Fortify Magicka",
+    "Drain Luck",
+    "Fortify Personality"
+   ]
+  },
+  {
+   "id": "ingr:sweetpulp",
+   "esm_id": "Ingred_sweetpulp_01",
+   "name": "Sweetpulp",
+   "origin_game": "vanilla",
+   "src": "s-esm",
+   "weight": 1.0,
+   "value_gold": 1,
+   "effects": [
+    "Paralyze",
+    "Levitate",
+    "Resist Paralysis",
+    "Restore Health"
+   ]
+  },
+  {
+   "id": "ingr:timsa-come-by-flowers",
+   "esm_id": "Ingred_timsa-come-by_01",
+   "name": "Timsa-Come-By flowers",
+   "origin_game": "vanilla",
+   "src": "s-esm",
+   "weight": 1.0,
+   "value_gold": 1,
+   "effects": [
+    "Dispel",
+    "Resist Paralysis",
+    "Drain Magicka",
+    "Restore Endurance"
+   ]
+  },
+  {
+   "id": "ingr:trama-root",
+   "esm_id": "ingred_trama_root_01",
+   "name": "Trama Root",
+   "origin_game": "vanilla",
+   "src": "s-esm",
+   "weight": 0.1,
+   "value_gold": 10,
+   "effects": [
+    "Restore Willpower",
+    "Levitate",
+    "Drain Magicka",
+    "Drain Speed"
+   ]
+  },
+  {
+   "id": "ingr:treated-bittergreen-petals",
+   "esm_id": "ingred_treated_bittergreen_uniq",
+   "name": "Treated Bittergreen Petals",
+   "origin_game": "vanilla",
+   "src": "s-esm",
+   "weight": 0.1,
+   "value_gold": 10,
+   "effects": [
+    "Restore Intelligence",
+    "Drain Magicka",
+    "Drain Endurance",
+    "Invisibility"
+   ]
+  },
+  {
+   "id": "ingr:unripened-belladonna-berries",
+   "esm_id": "ingred_belladonna_02",
+   "name": "Unripened Belladonna Berries",
+   "origin_game": "vanilla",
+   "src": "s-esm",
+   "weight": 0.1,
+   "value_gold": 5,
+   "effects": [
+    "Resist Magicka",
+    "Restore Magicka",
+    "Fortify Magicka",
+    "Drain Magicka"
+   ]
+  },
+  {
+   "id": "ingr:vampire-dust",
+   "esm_id": "ingred_vampire_dust_01",
+   "name": "Vampire Dust",
+   "origin_game": "vanilla",
+   "src": "s-esm",
+   "weight": 0.1,
+   "value_gold": 500,
+   "effects": [
+    "Fortify Health",
+    "Fortify Strength",
+    "Spell Absorption",
+    "Vampirism"
+   ]
+  },
+  {
+   "id": "ingr:violet-coprinus",
+   "esm_id": "ingred_coprinus_01",
+   "name": "Violet Coprinus",
+   "origin_game": "vanilla",
+   "src": "s-esm",
+   "weight": 0.5,
+   "value_gold": 1,
+   "effects": [
+    "Water Walking",
+    "Drain Fatigue",
+    "Poison"
+   ]
+  },
+  {
+   "id": "ingr:void-salts",
+   "esm_id": "ingred_void_salts_01",
+   "name": "Void Salts",
+   "origin_game": "vanilla",
+   "src": "s-esm",
+   "weight": 0.1,
+   "value_gold": 100,
+   "effects": [
+    "Restore Magicka",
+    "Spell Absorption",
+    "Paralyze",
+    "Drain Endurance"
+   ]
+  },
+  {
+   "id": "ingr:wickwheat",
+   "esm_id": "ingred_wickwheat_01",
+   "name": "Wickwheat",
+   "origin_game": "vanilla",
+   "src": "s-esm",
+   "weight": 0.1,
+   "value_gold": 1,
+   "effects": [
+    "Restore Health",
+    "Fortify Willpower",
+    "Paralyze",
+    "Damage Intelligence"
+   ]
+  },
+  {
+   "id": "ingr:willow-anther",
+   "esm_id": "ingred_willow_anther_01",
+   "name": "Willow Anther",
+   "origin_game": "vanilla",
+   "src": "s-esm",
+   "weight": 0.1,
+   "value_gold": 10,
+   "effects": [
+    "Drain Personality",
+    "Frost Shield",
+    "Cure Common Disease",
+    "Cure Paralyzation"
+   ]
+  },
+  {
+   "id": "ingr:wolf-pelt",
+   "esm_id": "ingred_wolf_pelt",
+   "name": "Wolf Pelt",
+   "origin_game": "vanilla",
+   "src": "s-esm",
+   "weight": 1.0,
+   "value_gold": 2,
+   "effects": [
+    "Drain Fatigue",
+    "Fortify Speed",
+    "Resist Common Disease",
+    "Night Eye"
+   ]
+  },
+  {
+   "id": "ingr:wolfsbane-petals",
+   "esm_id": "ingred_wolfsbane_01",
+   "name": "Wolfsbane Petals",
+   "origin_game": "vanilla",
+   "src": "s-esm",
+   "weight": 0.1,
+   "value_gold": 5,
+   "effects": [
+    "Restore Intelligence",
+    "Invisibility",
+    "Drain Endurance",
+    "Drain Magicka"
+   ]
+  },
+  {
+   "id": "ingr:wrapped-corprusmeat-hunk",
+   "esm_id": "ingred_6th_corprusmeat_04",
+   "name": "Wrapped Corprusmeat Hunk",
+   "origin_game": "vanilla",
+   "src": "s-esm",
+   "weight": 0.0,
+   "value_gold": 0,
+   "effects": [
+    "Drain Fatigue",
+    "Drain Health",
+    "Drain Magicka"
+   ]
+  }
+ ],
+ "np_ingredients": {
+  "status": "known-to-exist, not yet captured",
+  "note": "Aug 2026 in-game chat confirms NP has added custom alchemy ingredients (at least one dropping at the 2026 Infernal Flame Atronach Camp, and boss-drop ingredients players call 'the new ingredients'). Names/effects not yet captured — see open_questions q:np-custom-ingredients. Note: 'Sticky Cinnamon Taffy' is Jiubsmas throwing-knife ammo, not an ingredient.",
+  "records": []
+ }
+}

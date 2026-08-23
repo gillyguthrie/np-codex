@@ -1,5 +1,10 @@
 # Changelog
 
+## 2026-08-23 — v0.2.1 alchemy + vanilla process baselines
+- **New `data/alchemy.json`**: 126 vanilla ingredients parsed from the game ESMs (effects in game order — reveal order matters), with an `np_ingredients` section for server-added ingredients (confirmed to exist per Aug 2026 chat — names not yet captured → `q:np-custom-ingredients`). Checked: "Sticky Cinnamon Taffy" is Jiubsmas throwing ammo, not an ingredient.
+- **New `data/vanilla_processes.json`**: how vanilla alchemy, enchanting, and armor repair actually work — GMST constants parsed from the ESMs (fWortChanceValue 15, iSoulAmountForConstantEffect 400, fRepairAmountMult 3, etc.), the game's own enchanting help text verbatim, and engine-documented formula structure (new `engine-docs` origin). Purpose: the fixed baseline to diff NP's modified processes against → `q:np-process-deltas`. NP enchanting answers stay in enchanting.json.
+- SKILL.md file map updated for both; `np-codex.skill` repackaged.
+
 ## 2026-08-23 — v0.2.1 answer style + README overhaul
 - SKILL.md answering style rewritten from a style audit (8 persona questions): answer-first and confident; zero process narration (no file names, internal fields, or "per the KB's rule"); caveats collapsed to one trailing line and only when load-bearing; resolved contradictions stated as plain fact; "not in the KB" answers capped at two sentences + the Discord pointer; no unsolicited offers. `np-codex.skill` repackaged.
 - README rebuilt as the **Nerevarine Prophecies Codex** front page: TOC, what's-in-this-repo summary, and step-by-step "How to use Claude with this Codex" / "How to use ChatGPT with this Codex" sections.
