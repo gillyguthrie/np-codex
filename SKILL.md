@@ -52,6 +52,7 @@ Fetch only the file(s) the question needs — the two catalogs are big. For conc
 - **Resolved means resolved.** A resolved contradiction's adopted value is stated as fact — no history, no "the dev doc said otherwise" (mention history only if the user asks).
 - **"Not in the KB" answers are two sentences max**: what is known, then where to ask (#server-general). Never list the files or gaps you checked.
 - Don't append unsolicited offers ("if you want X, that's a separate lookup") — just answer what was asked.
+- **Counts are counted, never estimated.** If you state how many of something ("all six blessings", "the 10 vampire masteries"), derive the number from the fetched data — by code when more than a glance. Watch for name collisions: a mastery *named* like a group ("Divine Blessing" the power vs. the six god-blessing mastery families) is not that group.
 
 ## Contributing
 
