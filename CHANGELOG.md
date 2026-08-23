@@ -1,5 +1,10 @@
 # Changelog
 
+## 2026-08-23 — v0.2.3 werewolf-alchemy facts + movement (provisional) + per-mob XP
+- mechanics.json: `fact:ww-potion-buffing` (human-form potion buffs persist into beast form; Alchemy 100 + Cowl of the Druid advised) and `fact:ww-gear-no-transfer` (gear stats don't carry into WW form except the Endowment robe/skirt) — from the public werewolf build guide (player-builds, 2025-09-28). Fixes the persona eval's weakest answer.
+- mechanics.json: `formula:movement-speed` (walk/run/sneak/swim/fly with engine-GMST constants) — PROVISIONAL, new `s-sheet-prov` source; the workbook tab labels itself "possibly accurate" and the record says so.
+- camps_events.json: `camp_base_xp` — base XP per kill for 30 mob variants across all 13 camps (pre-bonus values; compose with fact:xp-kill-bonus-stacking and fact:party-xp-split).
+
 ## 2026-08-23 — v0.2.3 community calculators workbook ingest
 - Ingested the community "Spreadsheet Calculators" workbook (maintainer-provided export; Google Sheets blocks automated fetch). New `s-sheet` source in mechanics/enchanting/camps_events.
 - **enchanting.json**: `ench:charge-cost-formula` — charges/cast = ROUNDUP(EV x (1.1 - EnchantSkill/100)), min 1 — which converges exactly with the long-standing `ench:one-charge-110` fact; new `ev_caps` table (9 item classes, Daedric Tower Shield 225 down to Exquisite robe/belt/shoes 40).

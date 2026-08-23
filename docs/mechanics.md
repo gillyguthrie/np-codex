@@ -144,6 +144,10 @@ Tool qualities from the sheet: Grandmaster pick 1.3, Grandmaster probe 1.25.
 `dmg = difficultyMod x 10 x shieldMagnitude x (1 - 0.01 x (playerElementalResist + magicResistRoll)); magicResistRoll = (Destruction + 0.2xWIL + 0.1xLUC) x 1.25 x curFatigue/maxFatigue - RNG(0..99)`  
 PROVISIONAL: the sheet's header states TotalResistance = max(100, ...) but its own cells use the raw sum; the x10 multiplier is the sheet's fElementalShieldMult. Explains one-shot deaths at empty fatigue vs giant-class shield mobs (magnitude ~300 -> thousands of damage unresisted).
 
+### Movement speed (walk/run/sneak/swim/fly)  
+`walk = (100 + Speed) x (1 - 0.3 x currentEncumbrance/maxEncumbrance); run = walk x (0.01 x Athletics + 1.75); sneak = walk x 0.75; swim = run x (1 + 0.01 x SwiftSwim) x (0.01 x Athletics x 0.1 + 0.5); fly = (5 + 0.01 x (Speed + LevitateMagnitude) x 295) x (1 - 0.3 x currentEncumbrance/maxEncumbrance)`  
+PROVISIONAL — the source tab labels itself 'possibly accurate'; engine-GMST structure (fMinWalkSpeed 100, fMaxWalkSpeed 200, fSneakSpeedMultiplier 0.75, fBaseRunMultiplier 1.75, fMinFlySpeed 5, fMaxFlySpeed 300, fEncumberedMoveEffect 0.3, fSwimRunAthleticsMult 0.1, fSwimRunBase 0.5). walk simplifies from fMin + 0.01xSpeed x (fMax-fMin). One in-game timing check would confirm or correct.
+
 
 ## Established facts
 
@@ -197,3 +201,5 @@ PROVISIONAL: the sheet's header states TotalResistance = max(100, ...) but its o
 - **alchemist-cm-budget**: A max-potency alchemist build was publicly accounted at ~950 CM: ~500 in base lines (Curiosity, max INT/Luck/Alchemy plus filler), 200 Metabolist master class, 75+75 for its two master-class abilities, and 100 Godborn.
 - **xp-kill-bonus-stacking**: Kill-XP bonuses combine as: factor = 1 + max(Luck event 1.0, basic XP potion 0.5, Jiubmas Cheer 1.5) + 0.1 per XP-clothing piece + 1.0 during Happy Hour. Luck event / XP potion / Cheer do NOT stack with each other (best one applies); clothing and Happy Hour stack on top.
 - **party-xp-split**: Group XP split multipliers (measured at dreugh during Happy Hour): 1 player 1.000, 2 players 0.9615, 3 players 0.9259, 4 players 0.8929 of solo per-kill XP each — a full group loses ~11% per head but yields ~3.57x total group XP.
+- **ww-potion-buffing**: Werewolf play is potion-driven: buffs consumed in human form persist into beast form, so the standard loop is buff (potions and spells) in human form, then swap. WW builds are advised to reach Alchemy 100 for the 5-active-potion limit, with the Cowl of the Druid (+1, to 6) as recommended human-form gear.
+- **ww-gear-no-transfer**: Equipment stats do NOT carry into werewolf form — human-form gear is preference only — with one exception: the Endowment System robe/skirt (quest west of the Gnisis silt strider), whose effects become permanent on the character and persist through the swap.

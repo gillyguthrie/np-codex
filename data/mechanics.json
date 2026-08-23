@@ -109,6 +109,20 @@
    "date": "2026-08-23",
    "confidence": "player-reported",
    "note": "Formulas and values read from the workbook's cells verbatim. Community-maintained; parts contributed by multiple players."
+  },
+  "s-guide": {
+   "origin": "discord-public",
+   "channel": "player-builds (werewolf build guide thread)",
+   "url": null,
+   "date": "2025-09-28",
+   "confidence": "player-reported"
+  },
+  "s-sheet-prov": {
+   "origin": "community-dataset",
+   "channel": "community spreadsheet calculators (maintainer-provided export, 2026-08-23) — tab self-labeled 'possibly accurate'",
+   "url": null,
+   "date": "2026-08-23",
+   "confidence": "provisional"
   }
  },
  "constants": [
@@ -627,6 +641,14 @@
    "src": "s-sheet",
    "date": "2026-08-23",
    "note": "PROVISIONAL: the sheet's header states TotalResistance = max(100, ...) but its own cells use the raw sum; the x10 multiplier is the sheet's fElementalShieldMult. Explains one-shot deaths at empty fatigue vs giant-class shield mobs (magnitude ~300 -> thousands of damage unresisted)."
+  },
+  {
+   "id": "formula:movement-speed",
+   "name": "Movement speed (walk/run/sneak/swim/fly)",
+   "expr": "walk = (100 + Speed) x (1 - 0.3 x currentEncumbrance/maxEncumbrance); run = walk x (0.01 x Athletics + 1.75); sneak = walk x 0.75; swim = run x (1 + 0.01 x SwiftSwim) x (0.01 x Athletics x 0.1 + 0.5); fly = (5 + 0.01 x (Speed + LevitateMagnitude) x 295) x (1 - 0.3 x currentEncumbrance/maxEncumbrance)",
+   "src": "s-sheet-prov",
+   "date": "2026-08-23",
+   "note": "PROVISIONAL — the source tab labels itself 'possibly accurate'; engine-GMST structure (fMinWalkSpeed 100, fMaxWalkSpeed 200, fSneakSpeedMultiplier 0.75, fBaseRunMultiplier 1.75, fMinFlySpeed 5, fMaxFlySpeed 300, fEncumberedMoveEffect 0.3, fSwimRunAthleticsMult 0.1, fSwimRunBase 0.5). walk simplifies from fMin + 0.01xSpeed x (fMax-fMin). One in-game timing check would confirm or correct."
   }
  ],
  "facts": [
@@ -917,6 +939,18 @@
    "statement": "Group XP split multipliers (measured at dreugh during Happy Hour): 1 player 1.000, 2 players 0.9615, 3 players 0.9259, 4 players 0.8929 of solo per-kill XP each — a full group loses ~11% per head but yields ~3.57x total group XP.",
    "src": "s-sheet",
    "date": "2026-08-23"
+  },
+  {
+   "id": "fact:ww-potion-buffing",
+   "statement": "Werewolf play is potion-driven: buffs consumed in human form persist into beast form, so the standard loop is buff (potions and spells) in human form, then swap. WW builds are advised to reach Alchemy 100 for the 5-active-potion limit, with the Cowl of the Druid (+1, to 6) as recommended human-form gear.",
+   "src": "s-guide",
+   "date": "2025-09-28"
+  },
+  {
+   "id": "fact:ww-gear-no-transfer",
+   "statement": "Equipment stats do NOT carry into werewolf form — human-form gear is preference only — with one exception: the Endowment System robe/skirt (quest west of the Gnisis silt strider), whose effects become permanent on the character and persist through the swap.",
+   "src": "s-guide",
+   "date": "2025-09-28"
   }
  ]
 }

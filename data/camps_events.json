@@ -1698,5 +1698,190 @@
    }
   ],
   "note": "Partial answer to 'which camp is strongest to farm' on the XP axis only — gear checks, risk, and drops are separate. Per-mob base XP values exist in the source workbook, not yet ingested."
+ },
+ "camp_base_xp": {
+  "description": "Base XP per kill by mob variant (pre-bonus; multiply by the kill factor in mechanics fact:xp-kill-bonus-stacking and the party split in fact:party-xp-split). From the community calculators workbook's measured dataset.",
+  "src": "s-sheet",
+  "date": "2026-08-23",
+  "camps": [
+   {
+    "camp": "Mudcrabs",
+    "mobs": [
+     {
+      "name": "\"Ferocious\" Mudcrab",
+      "base_xp": 206
+     }
+    ]
+   },
+   {
+    "camp": "Wolves",
+    "mobs": [
+     {
+      "name": "Wolf (Pup)",
+      "base_xp": 1995
+     },
+     {
+      "name": "Wolf",
+      "base_xp": 3705
+     },
+     {
+      "name": "Wolf (Alpha)",
+      "base_xp": 4560
+     }
+    ]
+   },
+   {
+    "camp": "Kagouti",
+    "mobs": [
+     {
+      "name": "Feral Kagouti",
+      "base_xp": 8224
+     }
+    ]
+   },
+   {
+    "camp": "Skeletons",
+    "mobs": [
+     {
+      "name": "Skeleton (Sharpshooter)",
+      "base_xp": 58740
+     },
+     {
+      "name": "Skeleton (Prophet)",
+      "base_xp": 61820
+     },
+     {
+      "name": "Skeleton (Gladiator)",
+      "base_xp": 62130
+     },
+     {
+      "name": "Skeleton (Myrmidon)",
+      "base_xp": 66870
+     }
+    ]
+   },
+   {
+    "camp": "Hungers",
+    "mobs": [
+     {
+      "name": "Hunger (Gorged)",
+      "base_xp": 96250
+     },
+     {
+      "name": "Hunger (Ferocious)",
+      "base_xp": 97430
+     }
+    ]
+   },
+   {
+    "camp": "Dwemer Constructs",
+    "mobs": [
+     {
+      "name": "Construct (Spider)",
+      "base_xp": 97183
+     },
+     {
+      "name": "Construct (Sphere)",
+      "base_xp": 98603
+     },
+     {
+      "name": "Construct (Centurion)",
+      "base_xp": 100023
+     }
+    ]
+   },
+   {
+    "camp": "Giants",
+    "mobs": [
+     {
+      "name": "Frost Giant",
+      "base_xp": 175168
+     }
+    ]
+   },
+   {
+    "camp": "Ogrims",
+    "mobs": [
+     {
+      "name": "Ogrim (Basher)",
+      "base_xp": 69520
+     },
+     {
+      "name": "Ogrim (Savage)",
+      "base_xp": 72132
+     },
+     {
+      "name": "Ogrim (Goliath)",
+      "base_xp": 82630
+     }
+    ]
+   },
+   {
+    "camp": "Dreugh",
+    "mobs": [
+     {
+      "name": "Murk Dreugh",
+      "base_xp": 165240
+     }
+    ]
+   },
+   {
+    "camp": "Twilights",
+    "mobs": [
+     {
+      "name": "Twilight (Vicious)",
+      "base_xp": 99776
+     },
+     {
+      "name": "Twilight (Malevolent)",
+      "base_xp": 98115
+     }
+    ]
+   },
+   {
+    "camp": "Druids",
+    "mobs": [
+     {
+      "name": "Druid (7 appearance variants)",
+      "base_xp": 68493,
+      "note": "variant range 68244-68872; value is the sheet's average"
+     }
+    ]
+   },
+   {
+    "camp": "Draugr",
+    "mobs": [
+     {
+      "name": "Draugr",
+      "base_xp": 128327
+     }
+    ]
+   },
+   {
+    "camp": "Tomb",
+    "mobs": [
+     {
+      "name": "Doubt",
+      "base_xp": 224621
+     },
+     {
+      "name": "Terror",
+      "base_xp": 231778
+     },
+     {
+      "name": "Fright",
+      "base_xp": 243217
+     },
+     {
+      "name": "Horror",
+      "base_xp": 253181
+     },
+     {
+      "name": "Dread",
+      "base_xp": 276588
+     }
+    ]
+   }
+  ]
  }
 }
