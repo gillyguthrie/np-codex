@@ -1,5 +1,12 @@
 # Changelog
 
+## 2026-08-23 — v0.2.1 effects backfill + audit gate
+- **146 tooltip effect lines backfilled** into parsed `effects[]` across 111 items — the full sweep behind the builder thread's 64-line Fortify Skill list, extended to every effect type: skill fortifies, attribute drains (Chronium Pendant's full 8-attribute drain set), weaknesses (stored as negative resist magnitudes), restores, detects, and more. Each carries its verbatim raw_text and a backfill note.
+- **Structured params**: every `fortify-skill` effect now carries a `skill` field and every `drain-attr` an `attr` field (81 params added to existing records) — tools no longer parse raw_text to learn which skill/attribute. New vocab keys: drain-hp, drain-mag, drain-fat.
+- **Delivery corrections** (the Whitefang class): Glacier Splitter's Resist Frost is a 10-sec on-strike buff, not constant; Book of Lore's four effects are 65-sec timed, not constant. Bulbor's Cooking Knife speed 135%/range 6ft recovered from misfiled tooltip lines.
+- **New gate: `tools/audit_effects.py`** — fails if any tooltip line lacks a parsed effect or any timed raw line is curated as constant. This class of drift is now machine-caught; run it with validate + check_public before every commit.
+- open_questions: + `q:weapon-stat-capture-gaps` (7 weapons without damage, ~117 without speed — OCR/in-game backlog).
+
 ## 2026-08-23 — v0.2.1 vanilla reference
 - **New `data/vanilla_ref.json`**: 1,584 vanilla equipment records (armor/weapons/clothing incl. jewelry, 847 with enchantments) parsed directly from the game's Morrowind/Tribunal/Bloodmoon ESM files. New `game-esm` origin in the provenance enum. NP vanilla-named items now carry `xref["vanilla-ref"]` (50 matched).
 - **ESM extraction corrected two memory-sourced KB claims**: (1) the piece-AR note's "vanilla Daedric Tower Shield 45" — the ESM says base 80; (2) q:vanilla-modified-tracking's entire "NP buffed artifact damage" list (Sunder/Goldbrand/Hopesfire/Eltonbrand/Skull Crusher) and the Mantle of Woe claim — all identical to vanilla in the ESM. The question is now partially resolved with the real, ESM-verified NP changes: Wraithguard + Marara's Ring Reflect 20->10, Marara's lost Fortify Acrobatics, Nordic Silver Battleaxe + Stormfang retuned, and armor AR systematically reduced (~half of vanilla, some helms further).

@@ -1380,6 +1380,84 @@
      "magnitude": 3.5,
      "delivery": "constant",
      "raw_text": "mot=3.5 (curated)"
+    },
+    {
+     "key": "drain-attr",
+     "magnitude": 5.0,
+     "delivery": "constant",
+     "attr": "Strength",
+     "raw_text": "Drain Attribute Strength 5 pts",
+     "note": "backfilled 2026-08-23 from posted tooltip text"
+    },
+    {
+     "key": "drain-attr",
+     "magnitude": 5.0,
+     "delivery": "constant",
+     "attr": "Intelligence",
+     "raw_text": "Drain Attribute Intelligence 5 pts",
+     "note": "backfilled 2026-08-23 from posted tooltip text"
+    },
+    {
+     "key": "drain-attr",
+     "magnitude": 5.0,
+     "delivery": "constant",
+     "attr": "Willpower",
+     "raw_text": "Drain Attribute Willpower 5 pts",
+     "note": "backfilled 2026-08-23 from posted tooltip text"
+    },
+    {
+     "key": "drain-attr",
+     "magnitude": 5.0,
+     "delivery": "constant",
+     "attr": "Agility",
+     "raw_text": "Drain Attribute Agility 5 pts",
+     "note": "backfilled 2026-08-23 from posted tooltip text"
+    },
+    {
+     "key": "drain-attr",
+     "magnitude": 5.0,
+     "delivery": "constant",
+     "attr": "Speed",
+     "raw_text": "Drain Attribute Speed 5 pts",
+     "note": "backfilled 2026-08-23 from posted tooltip text"
+    },
+    {
+     "key": "drain-attr",
+     "magnitude": 5.0,
+     "delivery": "constant",
+     "attr": "Endurance",
+     "raw_text": "Drain Attribute Endurance 5 pts",
+     "note": "backfilled 2026-08-23 from posted tooltip text"
+    },
+    {
+     "key": "drain-attr",
+     "magnitude": 5.0,
+     "delivery": "constant",
+     "attr": "Personality",
+     "raw_text": "Drain Attribute Personality 5 pts",
+     "note": "backfilled 2026-08-23 from posted tooltip text"
+    },
+    {
+     "key": "drain-attr",
+     "magnitude": 5.0,
+     "delivery": "constant",
+     "attr": "Luck",
+     "raw_text": "Drain Attribute Luck 5 pts",
+     "note": "backfilled 2026-08-23 from posted tooltip text"
+    },
+    {
+     "key": "restore-hp",
+     "magnitude": null,
+     "delivery": "constant",
+     "raw_text": "Restore Health",
+     "note": "backfilled 2026-08-23 from posted tooltip text"
+    },
+    {
+     "key": "restore-mag",
+     "magnitude": null,
+     "delivery": "constant",
+     "raw_text": "Restore Magicka",
+     "note": "backfilled 2026-08-23 from posted tooltip text"
     }
    ],
    "effects_raw_posted": [
@@ -1685,7 +1763,8 @@
      "key": "fortify-skill",
      "magnitude": 15,
      "delivery": "skill-only",
-     "raw_text": "Fortify Skill Armorer 15 pts"
+     "raw_text": "Fortify Skill Armorer 15 pts",
+     "skill": "Armorer"
     }
    ],
    "hidden_effects": {
@@ -2305,7 +2384,8 @@
      "key": "fortify-skill",
      "magnitude": 10,
      "delivery": "skill-only",
-     "raw_text": "Fortify Destruction 10"
+     "raw_text": "Fortify Destruction 10",
+     "skill": "Destruction"
     }
    ],
    "effects_raw_posted": [
@@ -2411,7 +2491,8 @@
      "key": "fortify-skill",
      "magnitude": 10,
      "delivery": "skill-only",
-     "raw_text": "Fortify Skill Athletics 10 pts"
+     "raw_text": "Fortify Skill Athletics 10 pts",
+     "skill": "Athletics"
     }
    ],
    "hidden_effects": {
@@ -2567,7 +2648,8 @@
      "key": "fortify-skill",
      "magnitude": 15,
      "delivery": "skill-only",
-     "raw_text": "Fortify Skill Speechcraft 15 pts"
+     "raw_text": "Fortify Skill Speechcraft 15 pts",
+     "skill": "Speechcraft"
     }
    ],
    "hidden_effects": {
@@ -2617,7 +2699,8 @@
      "key": "fortify-skill",
      "magnitude": 10,
      "delivery": "skill-only",
-     "raw_text": "Fortify Skill Restoration 10 pts"
+     "raw_text": "Fortify Skill Restoration 10 pts",
+     "skill": "Restoration"
     }
    ],
    "hidden_effects": {
@@ -2667,7 +2750,8 @@
      "key": "fortify-skill",
      "magnitude": 10,
      "delivery": "skill-only",
-     "raw_text": "Fortify Skill Block 10 pts"
+     "raw_text": "Fortify Skill Block 10 pts",
+     "skill": "Block"
     }
    ],
    "hidden_effects": {
@@ -2717,7 +2801,8 @@
      "key": "fortify-skill",
      "magnitude": 10,
      "delivery": "skill-only",
-     "raw_text": "Fortify Skill Mercantile 10 pts"
+     "raw_text": "Fortify Skill Mercantile 10 pts",
+     "skill": "Mercantile"
     }
    ],
    "hidden_effects": {
@@ -3294,8 +3379,6 @@
     }
    ],
    "effects_raw_posted": [
-    "Range: 6 ft",
-    "Speed: 135%",
     "Constant Effect",
     "Fortify Attribute Strength 30 pts",
     "Fortify Attribute Endurance 30 pts"
@@ -3326,7 +3409,8 @@
      "src": "s-tooltip"
     },
     "range_ft": 6.0,
-    "base_dmg": 46
+    "base_dmg": 46,
+    "note": "speed/range recovered 2026-08-23 from misfiled tooltip lines"
    },
    "xref": {
     "np-server-items": "Bulbor's Cooking Knife"
@@ -3614,7 +3698,16 @@
     "src": "s-verified",
     "note": "skill-100 tooltip convention (curated/corrected)"
    },
-   "effects": [],
+   "effects": [
+    {
+     "key": "fortify-skill",
+     "magnitude": 25.0,
+     "delivery": "skill-only",
+     "skill": "Sneak",
+     "raw_text": "Fortify Skill Sneak 25 pts",
+     "note": "backfilled 2026-08-23 from posted tooltip text"
+    }
+   ],
    "effects_raw_posted": [
     "Constant Effect",
     "Fortify Skill Sneak 25 pts"
@@ -3662,7 +3755,16 @@
     "src": "s-verified",
     "note": "skill-100 tooltip convention (curated/corrected)"
    },
-   "effects": [],
+   "effects": [
+    {
+     "key": "fortify-skill",
+     "magnitude": 20.0,
+     "delivery": "skill-only",
+     "skill": "Marksman",
+     "raw_text": "Fortify Skill Marksman 20 pts",
+     "note": "backfilled 2026-08-23 from posted tooltip text"
+    }
+   ],
    "effects_raw_posted": [
     "Constant Effect",
     "Fortify Skill Marksman 20 pts"
@@ -3765,7 +3867,16 @@
     "src": "s-verified",
     "note": "skill-100 tooltip convention (curated/corrected)"
    },
-   "effects": [],
+   "effects": [
+    {
+     "key": "fortify-skill",
+     "magnitude": 10.0,
+     "delivery": "skill-only",
+     "skill": "Light Armor",
+     "raw_text": "Fortify Skill Light Armor 10 pts",
+     "note": "backfilled 2026-08-23 from posted tooltip text"
+    }
+   ],
    "effects_raw_posted": [
     "Constant Effect",
     "Fortify Skill Light Armor 10 pts"
@@ -3813,7 +3924,16 @@
     "src": "s-verified",
     "note": "skill-100 tooltip convention (curated/corrected)"
    },
-   "effects": [],
+   "effects": [
+    {
+     "key": "fortify-skill",
+     "magnitude": 10.0,
+     "delivery": "skill-only",
+     "skill": "Light Armor",
+     "raw_text": "Fortify Skill Light Armor 10 pts",
+     "note": "backfilled 2026-08-23 from posted tooltip text"
+    }
+   ],
    "effects_raw_posted": [
     "Constant Effect",
     "Fortify Skill Light Armor 10 pts"
@@ -3866,7 +3986,8 @@
      "key": "fortify-skill",
      "magnitude": 10.0,
      "delivery": "skill-only",
-     "raw_text": "Fortify Short Blade 10.0"
+     "raw_text": "Fortify Short Blade 10.0",
+     "skill": "Short Blade"
     }
    ],
    "effects_raw_posted": [
@@ -3918,7 +4039,8 @@
      "key": "fortify-skill",
      "magnitude": 10.0,
      "delivery": "skill-only",
-     "raw_text": "Fortify Short Blade 10.0"
+     "raw_text": "Fortify Short Blade 10.0",
+     "skill": "Short Blade"
     }
    ],
    "effects_raw_posted": [
@@ -3968,7 +4090,16 @@
     "src": "s-verified",
     "note": "skill-100 tooltip convention (curated/corrected)"
    },
-   "effects": [],
+   "effects": [
+    {
+     "key": "fortify-skill",
+     "magnitude": 20.0,
+     "delivery": "skill-only",
+     "skill": "Athletics",
+     "raw_text": "Fortify Skill Athletics 20 pts",
+     "note": "backfilled 2026-08-23 from posted tooltip text"
+    }
+   ],
    "effects_raw_posted": [
     "Constant Effect",
     "Fortify Skill Athletics 20 pts"
@@ -4016,7 +4147,16 @@
     "src": "s-verified",
     "note": "skill-100 tooltip convention (curated/corrected)"
    },
-   "effects": [],
+   "effects": [
+    {
+     "key": "fortify-skill",
+     "magnitude": 20.0,
+     "delivery": "skill-only",
+     "skill": "Sneak",
+     "raw_text": "Fortify Skill Sneak 20 pts",
+     "note": "backfilled 2026-08-23 from posted tooltip text"
+    }
+   ],
    "effects_raw_posted": [
     "Constant Effect",
     "Fortify Skill Sneak 20 pts"
@@ -4069,7 +4209,8 @@
      "key": "fortify-skill",
      "magnitude": 35,
      "delivery": "skill-only",
-     "raw_text": "Fortify Marksman 35"
+     "raw_text": "Fortify Marksman 35",
+     "skill": "Marksman"
     }
    ],
    "effects_raw_posted": [
@@ -4124,7 +4265,8 @@
      "key": "fortify-skill",
      "magnitude": 35,
      "delivery": "skill-only",
-     "raw_text": "Fortify Marksman 35"
+     "raw_text": "Fortify Marksman 35",
+     "skill": "Marksman"
     }
    ],
    "effects_raw_posted": [
@@ -4229,7 +4371,16 @@
     "src": "s-verified",
     "note": "skill-100 tooltip convention (curated/corrected)"
    },
-   "effects": [],
+   "effects": [
+    {
+     "key": "fortify-skill",
+     "magnitude": 17.0,
+     "delivery": "skill-only",
+     "skill": "Light Armor",
+     "raw_text": "Fortify Skill Light Armor 17 pts",
+     "note": "backfilled 2026-08-23 from posted tooltip text"
+    }
+   ],
    "effects_raw_posted": [
     "Constant Effect",
     "Fortify Skill Light Armor 17 pts"
@@ -4277,7 +4428,16 @@
     "src": "s-verified",
     "note": "skill-100 tooltip convention (curated/corrected)"
    },
-   "effects": [],
+   "effects": [
+    {
+     "key": "fortify-skill",
+     "magnitude": 17.0,
+     "delivery": "skill-only",
+     "skill": "Light Armor",
+     "raw_text": "Fortify Skill Light Armor 17 pts",
+     "note": "backfilled 2026-08-23 from posted tooltip text"
+    }
+   ],
    "effects_raw_posted": [
     "Constant Effect",
     "Fortify Skill Light Armor 17 pts"
@@ -4330,7 +4490,8 @@
      "key": "fortify-skill",
      "magnitude": 17.0,
      "delivery": "skill-only",
-     "raw_text": "Fortify Short Blade 17.0"
+     "raw_text": "Fortify Short Blade 17.0",
+     "skill": "Short Blade"
     }
    ],
    "effects_raw_posted": [
@@ -4385,7 +4546,8 @@
      "key": "fortify-skill",
      "magnitude": 17.0,
      "delivery": "skill-only",
-     "raw_text": "Fortify Short Blade 17.0"
+     "raw_text": "Fortify Short Blade 17.0",
+     "skill": "Short Blade"
     }
    ],
    "effects_raw_posted": [
@@ -4435,7 +4597,16 @@
     "src": "s-verified",
     "note": "skill-100 tooltip convention (curated/corrected)"
    },
-   "effects": [],
+   "effects": [
+    {
+     "key": "fortify-skill",
+     "magnitude": 35.0,
+     "delivery": "skill-only",
+     "skill": "Athletics",
+     "raw_text": "Fortify Skill Athletics 35 pts",
+     "note": "backfilled 2026-08-23 from posted tooltip text"
+    }
+   ],
    "effects_raw_posted": [
     "Constant Effect",
     "Fortify Skill Athletics 35 pts"
@@ -4488,7 +4659,8 @@
      "key": "fortify-skill",
      "magnitude": 35,
      "delivery": "skill-only",
-     "raw_text": "Fortify Sneak 35"
+     "raw_text": "Fortify Sneak 35",
+     "skill": "Sneak"
     }
    ],
    "effects_raw_posted": [
@@ -4543,7 +4715,8 @@
      "key": "fortify-skill",
      "magnitude": 35,
      "delivery": "skill-only",
-     "raw_text": "Fortify Sneak 35"
+     "raw_text": "Fortify Sneak 35",
+     "skill": "Sneak"
     }
    ],
    "effects_raw_posted": [
@@ -6085,6 +6258,21 @@
      "magnitude": 50,
      "delivery": "constant",
      "raw_text": "str=50 (curated)"
+    },
+    {
+     "key": "drain-hp",
+     "magnitude": null,
+     "delivery": "constant",
+     "raw_text": "Drain Health",
+     "note": "backfilled 2026-08-23 from posted tooltip text"
+    },
+    {
+     "key": "drain-attr",
+     "magnitude": null,
+     "delivery": "constant",
+     "attr": "Speed",
+     "raw_text": "Drain Attribute Speed",
+     "note": "backfilled 2026-08-23 from posted tooltip text"
     }
    ],
    "effects_raw_posted": [
@@ -6378,6 +6566,13 @@
      "magnitude": 5,
      "delivery": "constant",
      "raw_text": "disease=5 (curated)"
+    },
+    {
+     "key": "blight",
+     "magnitude": 5.0,
+     "delivery": "constant",
+     "raw_text": "Resist Blight Disease 5%",
+     "note": "backfilled 2026-08-23 from posted tooltip text"
     }
    ],
    "effects_raw_posted": [
@@ -6472,6 +6667,13 @@
      "magnitude": 4,
      "delivery": "constant",
      "raw_text": "disease=4 (curated)"
+    },
+    {
+     "key": "blight",
+     "magnitude": 4.0,
+     "delivery": "constant",
+     "raw_text": "Resist Blight Disease 4%",
+     "note": "backfilled 2026-08-23 from posted tooltip text"
     }
    ],
    "effects_raw_posted": [
@@ -8917,6 +9119,14 @@
      "magnitude": -10,
      "delivery": "constant",
      "raw_text": "int=-10 (curated)"
+    },
+    {
+     "key": "drain-attr",
+     "magnitude": 10.0,
+     "delivery": "constant",
+     "attr": "Intelligence",
+     "raw_text": "Drain Attribute Intelligence 10 pts",
+     "note": "backfilled 2026-08-23 from posted tooltip text"
     }
    ],
    "effects_raw_posted": [
@@ -9059,8 +9269,18 @@
     {
      "key": "frost",
      "magnitude": 15,
-     "delivery": "constant",
-     "raw_text": "frost=15 (curated)"
+     "delivery": "on-strike",
+     "raw_text": "Resist Frost 15% for 10 secs on Self",
+     "duration_sec": 10,
+     "note": "delivery corrected 2026-08-23: timed on-strike self-buff, was curated as constant"
+    },
+    {
+     "key": "dmg-frost",
+     "magnitude": 10.0,
+     "delivery": "on-strike",
+     "duration_sec": 1,
+     "raw_text": "Frost Damage 10 pts for 1 sec on Touch",
+     "note": "backfilled 2026-08-23 from posted tooltip text"
     }
    ],
    "effects_raw_posted": [
@@ -9306,6 +9526,14 @@
      "magnitude": 75,
      "delivery": "constant",
      "raw_text": "disease=75 (curated)"
+    },
+    {
+     "key": "fortify-skill",
+     "magnitude": 10.0,
+     "delivery": "skill-only",
+     "skill": "Axe",
+     "raw_text": "Fortify Skill Axe 10 pts",
+     "note": "backfilled 2026-08-23 from posted tooltip text"
     }
    ],
    "effects_raw_posted": [
@@ -10174,7 +10402,8 @@
      "key": "fortify-skill",
      "magnitude": 15,
      "delivery": "skill-only",
-     "raw_text": "Fortify Athletics 15"
+     "raw_text": "Fortify Athletics 15",
+     "skill": "Athletics"
     }
    ],
    "effects_raw_posted": [
@@ -11239,7 +11468,8 @@
      "key": "fortify-skill",
      "magnitude": 25,
      "delivery": "skill-only",
-     "raw_text": "Fortify Skill Acrobatics 25 pts"
+     "raw_text": "Fortify Skill Acrobatics 25 pts",
+     "skill": "Acrobatics"
     }
    ],
    "hidden_effects": {
@@ -11296,6 +11526,14 @@
      "magnitude": 50,
      "delivery": "constant",
      "raw_text": "str=50 (curated)"
+    },
+    {
+     "key": "drain-attr",
+     "magnitude": 30.0,
+     "delivery": "constant",
+     "attr": "Agility",
+     "raw_text": "Drain Attribute Agility 30 pts",
+     "note": "backfilled 2026-08-23 from posted tooltip text"
     }
    ],
    "effects_raw_posted": [
@@ -11400,7 +11638,15 @@
     "src": "s-verified",
     "note": "skill-100 tooltip convention (curated/corrected)"
    },
-   "effects": [],
+   "effects": [
+    {
+     "key": "light",
+     "magnitude": 5.0,
+     "delivery": "constant",
+     "raw_text": "Light 5 pts",
+     "note": "backfilled 2026-08-23 from posted tooltip text"
+    }
+   ],
    "effects_raw_posted": [
     "Light 5 pts"
    ],
@@ -11452,6 +11698,21 @@
      "magnitude": 40,
      "delivery": "constant",
      "raw_text": "str=40 (curated)"
+    },
+    {
+     "key": "fortify-skill",
+     "magnitude": 25.0,
+     "delivery": "skill-only",
+     "skill": "Enchant",
+     "raw_text": "Fortify Skill Enchant 25 pts",
+     "note": "backfilled 2026-08-23 from posted tooltip text"
+    },
+    {
+     "key": "detect",
+     "magnitude": 100.0,
+     "delivery": "constant",
+     "raw_text": "Detect Enchantment 100 ft",
+     "note": "backfilled 2026-08-23 from posted tooltip text"
     }
    ],
    "effects_raw_posted": [
@@ -11771,6 +12032,13 @@
      "magnitude": 45,
      "delivery": "constant",
      "raw_text": "hp=45 (curated)"
+    },
+    {
+     "key": "swift-swim",
+     "magnitude": 30.0,
+     "delivery": "constant",
+     "raw_text": "Swift Swim 30 pts",
+     "note": "backfilled 2026-08-23 from posted tooltip text"
     }
    ],
    "effects_raw_posted": [
@@ -12193,7 +12461,15 @@
     "src": "s-verified",
     "note": "skill-100 tooltip convention (curated/corrected)"
    },
-   "effects": [],
+   "effects": [
+    {
+     "key": "light",
+     "magnitude": 5.0,
+     "delivery": "constant",
+     "raw_text": "Light 5 pts",
+     "note": "backfilled 2026-08-23 from posted tooltip text"
+    }
+   ],
    "effects_raw_posted": [
     "Light 5 pts"
    ],
@@ -12240,7 +12516,15 @@
     "src": "s-verified",
     "note": "skill-100 tooltip convention (curated/corrected)"
    },
-   "effects": [],
+   "effects": [
+    {
+     "key": "light",
+     "magnitude": 5.0,
+     "delivery": "constant",
+     "raw_text": "Light 5 pts",
+     "note": "backfilled 2026-08-23 from posted tooltip text"
+    }
+   ],
    "effects_raw_posted": [
     "Light 5 pts"
    ],
@@ -12292,13 +12576,22 @@
      "key": "fortify-skill",
      "magnitude": 50,
      "delivery": "skill-only",
-     "raw_text": "Fortify Marksman 50"
+     "raw_text": "Fortify Marksman 50",
+     "skill": "Marksman"
     },
     {
      "key": "fortify-skill",
      "magnitude": 25,
      "delivery": "skill-only",
-     "raw_text": "Fortify Alchemy 25"
+     "raw_text": "Fortify Alchemy 25",
+     "skill": "Alchemy"
+    },
+    {
+     "key": "detect",
+     "magnitude": 100.0,
+     "delivery": "constant",
+     "raw_text": "Detect Animal 100 ft",
+     "note": "backfilled 2026-08-23 from posted tooltip text"
     }
    ],
    "effects_raw_posted": [
@@ -12882,7 +13175,32 @@
     "src": "s-verified",
     "note": "skill-100 tooltip convention (curated/corrected)"
    },
-   "effects": [],
+   "effects": [
+    {
+     "key": "fortify-skill",
+     "magnitude": 5.0,
+     "delivery": "skill-only",
+     "skill": "Blunt Weapon",
+     "raw_text": "Fortify Skill Blunt Weapon 5 pts",
+     "note": "backfilled 2026-08-23 from posted tooltip text"
+    },
+    {
+     "key": "fortify-skill",
+     "magnitude": 5.0,
+     "delivery": "skill-only",
+     "skill": "Long Blade",
+     "raw_text": "Fortify Skill Long Blade 5 pts",
+     "note": "backfilled 2026-08-23 from posted tooltip text"
+    },
+    {
+     "key": "fortify-skill",
+     "magnitude": 5.0,
+     "delivery": "skill-only",
+     "skill": "Axe",
+     "raw_text": "Fortify Skill Axe 5 pts",
+     "note": "backfilled 2026-08-23 from posted tooltip text"
+    }
+   ],
    "effects_raw_posted": [
     "Fortify Skill Blunt Weapon 5 pts",
     "Fortify Skill Long Blade 5 pts",
@@ -12931,7 +13249,32 @@
     "src": "s-verified",
     "note": "skill-100 tooltip convention (curated/corrected)"
    },
-   "effects": [],
+   "effects": [
+    {
+     "key": "fortify-skill",
+     "magnitude": 5.0,
+     "delivery": "skill-only",
+     "skill": "Blunt Weapon",
+     "raw_text": "Fortify Skill Blunt Weapon 5 pts",
+     "note": "backfilled 2026-08-23 from posted tooltip text"
+    },
+    {
+     "key": "fortify-skill",
+     "magnitude": 5.0,
+     "delivery": "skill-only",
+     "skill": "Long Blade",
+     "raw_text": "Fortify Skill Long Blade 5 pts",
+     "note": "backfilled 2026-08-23 from posted tooltip text"
+    },
+    {
+     "key": "fortify-skill",
+     "magnitude": 5.0,
+     "delivery": "skill-only",
+     "skill": "Axe",
+     "raw_text": "Fortify Skill Axe 5 pts",
+     "note": "backfilled 2026-08-23 from posted tooltip text"
+    }
+   ],
    "effects_raw_posted": [
     "Fortify Skill Blunt Weapon 5 pts",
     "Fortify Skill Long Blade 5 pts",
@@ -13140,6 +13483,14 @@
      "magnitude": 5.0,
      "delivery": "constant",
      "raw_text": "disease=5.0 (curated)"
+    },
+    {
+     "key": "fortify-skill",
+     "magnitude": 10.0,
+     "delivery": "skill-only",
+     "skill": "Athletics",
+     "raw_text": "Fortify Skill Athletics 10 pts",
+     "note": "backfilled 2026-08-23 from posted tooltip text"
     }
    ],
    "effects_raw_posted": [
@@ -13216,6 +13567,14 @@
      "magnitude": 5.0,
      "delivery": "constant",
      "raw_text": "disease=5.0 (curated)"
+    },
+    {
+     "key": "fortify-skill",
+     "magnitude": 10.0,
+     "delivery": "skill-only",
+     "skill": "Athletics",
+     "raw_text": "Fortify Skill Athletics 10 pts",
+     "note": "backfilled 2026-08-23 from posted tooltip text"
     }
    ],
    "effects_raw_posted": [
@@ -13503,6 +13862,13 @@
      "magnitude": 40,
      "delivery": "constant",
      "raw_text": "mag=40 (curated)"
+    },
+    {
+     "key": "restore-hp",
+     "magnitude": null,
+     "delivery": "constant",
+     "raw_text": "Restore Health",
+     "note": "backfilled 2026-08-23 from posted tooltip text"
     }
    ],
    "effects_raw_posted": [
@@ -13776,7 +14142,8 @@
      "key": "fortify-skill",
      "magnitude": 35,
      "delivery": "skill-only",
-     "raw_text": "Fortify Skill Speechcraft 35 pts"
+     "raw_text": "Fortify Skill Speechcraft 35 pts",
+     "skill": "Speechcraft"
     }
    ],
    "hidden_effects": {
@@ -13822,7 +14189,15 @@
     "src": "s-verified",
     "note": "skill-100 tooltip convention (curated/corrected)"
    },
-   "effects": [],
+   "effects": [
+    {
+     "key": "restore-hp",
+     "magnitude": null,
+     "delivery": "constant",
+     "raw_text": "Restore Health",
+     "note": "backfilled 2026-08-23 from posted tooltip text"
+    }
+   ],
    "effects_raw_posted": [
     "Restore Health"
    ],
@@ -13894,6 +14269,20 @@
      "magnitude": 5,
      "delivery": "constant",
      "raw_text": "disease=5 (curated)"
+    },
+    {
+     "key": "restore-hp",
+     "magnitude": null,
+     "delivery": "constant",
+     "raw_text": "Restore Health",
+     "note": "backfilled 2026-08-23 from posted tooltip text"
+    },
+    {
+     "key": "restore-mag",
+     "magnitude": null,
+     "delivery": "constant",
+     "raw_text": "Restore Magicka",
+     "note": "backfilled 2026-08-23 from posted tooltip text"
     }
    ],
    "effects_raw_posted": [
@@ -14055,13 +14444,15 @@
      "key": "fortify-skill",
      "magnitude": 20,
      "delivery": "skill-only",
-     "raw_text": "Fortify Skill Armorer 20 pts"
+     "raw_text": "Fortify Skill Armorer 20 pts",
+     "skill": "Armorer"
     },
     {
      "key": "fortify-skill",
      "magnitude": 20,
      "delivery": "skill-only",
-     "raw_text": "Fortify Skill Enchant 20 pts"
+     "raw_text": "Fortify Skill Enchant 20 pts",
+     "skill": "Enchant"
     }
    ],
    "hidden_effects": {
@@ -14335,7 +14726,16 @@
     "src": "s-verified",
     "note": "skill-100 tooltip convention (curated/corrected)"
    },
-   "effects": [],
+   "effects": [
+    {
+     "key": "fortify-skill",
+     "magnitude": 10.0,
+     "delivery": "skill-only",
+     "skill": "Hand-To-Hand",
+     "raw_text": "Fortify Skill Hand-to-hand 10 pts",
+     "note": "backfilled 2026-08-23 from posted tooltip text"
+    }
+   ],
    "effects_raw_posted": [
     "Fortify Skill Hand-to-hand 10 pts"
    ],
@@ -14479,6 +14879,14 @@
      "magnitude": 24,
      "delivery": "constant",
      "raw_text": "Fortify Attribute Willpower 24 pts (restored from posted tooltip text; upstream corroborates)"
+    },
+    {
+     "key": "drain-attr",
+     "magnitude": 25.0,
+     "delivery": "constant",
+     "attr": "Endurance",
+     "raw_text": "Drain Attribute Endurance 25 pts",
+     "note": "backfilled 2026-08-23 from posted tooltip text"
     }
    ],
    "effects_raw_posted": [
@@ -14764,13 +15172,15 @@
      "key": "fortify-skill",
      "magnitude": 25,
      "delivery": "skill-only",
-     "raw_text": "Fortify Skill Long Blade 25 pts"
+     "raw_text": "Fortify Skill Long Blade 25 pts",
+     "skill": "Long Blade"
     },
     {
      "key": "fortify-skill",
      "magnitude": 15,
      "delivery": "skill-only",
-     "raw_text": "Fortify Skill Speechcraft 15 pts"
+     "raw_text": "Fortify Skill Speechcraft 15 pts",
+     "skill": "Speechcraft"
     }
    ],
    "hidden_effects": {
@@ -15353,6 +15763,14 @@
      "magnitude": 24,
      "delivery": "constant",
      "raw_text": "agi=24 (curated)"
+    },
+    {
+     "key": "drain-attr",
+     "magnitude": 10.0,
+     "delivery": "constant",
+     "attr": "Endurance",
+     "raw_text": "Drain Attribute Endurance 10 pts",
+     "note": "backfilled 2026-08-23 from posted tooltip text"
     }
    ],
    "effects_raw_posted": [
@@ -15425,7 +15843,15 @@
      "key": "fortify-skill",
      "magnitude": 10,
      "delivery": "skill-only",
-     "raw_text": "Fortify Sneak 10"
+     "raw_text": "Fortify Sneak 10",
+     "skill": "Sneak"
+    },
+    {
+     "key": "restore-fat",
+     "magnitude": 1.0,
+     "delivery": "constant",
+     "raw_text": "Restore Fatigue 1 pt",
+     "note": "backfilled 2026-08-23 from posted tooltip text"
     }
    ],
    "effects_raw_posted": [
@@ -15991,6 +16417,13 @@
      "magnitude": 5,
      "delivery": "constant",
      "raw_text": "per=5 (curated)"
+    },
+    {
+     "key": "restore-mag",
+     "magnitude": null,
+     "delivery": "constant",
+     "raw_text": "Restore Magicka",
+     "note": "backfilled 2026-08-23 from posted tooltip text"
     }
    ],
    "effects_raw_posted": [
@@ -16275,6 +16708,14 @@
      "magnitude": 8.0,
      "delivery": "constant",
      "raw_text": "rmag=8.0 (curated)"
+    },
+    {
+     "key": "fortify-skill",
+     "magnitude": 12.0,
+     "delivery": "skill-only",
+     "skill": "Athletics",
+     "raw_text": "Fortify Skill Athletics 12 pts",
+     "note": "backfilled 2026-08-23 from posted tooltip text"
     }
    ],
    "effects_raw_posted": [
@@ -16577,6 +17018,14 @@
      "magnitude": 10,
      "delivery": "constant",
      "raw_text": "frost=10 (curated)"
+    },
+    {
+     "key": "drain-attr",
+     "magnitude": 20.0,
+     "delivery": "constant",
+     "attr": "Agility",
+     "raw_text": "Drain Attribute Agility 20 pts",
+     "note": "backfilled 2026-08-23 from posted tooltip text"
     }
    ],
    "effects_raw_posted": [
@@ -17367,6 +17816,13 @@
      "magnitude": 450,
      "delivery": "constant",
      "raw_text": "fat=450 (curated)"
+    },
+    {
+     "key": "dmg-mag",
+     "magnitude": null,
+     "delivery": "constant",
+     "raw_text": "Damage Magicka",
+     "note": "backfilled 2026-08-23 from posted tooltip text"
     }
    ],
    "effects_raw_posted": [
@@ -17549,7 +18005,8 @@
      "key": "fortify-skill",
      "magnitude": 15,
      "delivery": "skill-only",
-     "raw_text": "Fortify Destruction 15"
+     "raw_text": "Fortify Destruction 15",
+     "skill": "Destruction"
     }
    ],
    "effects_raw_posted": [
@@ -17691,6 +18148,14 @@
      "magnitude": 75,
      "delivery": "constant",
      "raw_text": "hp=75 (curated)"
+    },
+    {
+     "key": "fortify-skill",
+     "magnitude": 17.0,
+     "delivery": "skill-only",
+     "skill": "Marksman",
+     "raw_text": "Fortify Skill Marksman 17 pts",
+     "note": "backfilled 2026-08-23 from posted tooltip text"
     }
    ],
    "effects_raw_posted": [
@@ -18475,7 +18940,16 @@
     "src": "s-verified",
     "note": "skill-100 tooltip convention (curated/corrected)"
    },
-   "effects": [],
+   "effects": [
+    {
+     "key": "fortify-skill",
+     "magnitude": 12.0,
+     "delivery": "skill-only",
+     "skill": "Armorer",
+     "raw_text": "Fortify Skill Armorer 12 pts",
+     "note": "backfilled 2026-08-23 from posted tooltip text"
+    }
+   ],
    "effects_raw_posted": [
     "Fortify Skill Armorer 12 pts"
    ],
@@ -18566,7 +19040,16 @@
     "src": "s-verified",
     "note": "skill-100 tooltip convention (curated/corrected)"
    },
-   "effects": [],
+   "effects": [
+    {
+     "key": "fortify-skill",
+     "magnitude": 10.0,
+     "delivery": "skill-only",
+     "skill": "Security",
+     "raw_text": "Fortify Skill Security 10 pts",
+     "note": "backfilled 2026-08-23 from posted tooltip text"
+    }
+   ],
    "effects_raw_posted": [
     "Fortify Skill Security 10 pts"
    ],
@@ -18617,7 +19100,8 @@
      "key": "fortify-skill",
      "magnitude": 25,
      "delivery": "skill-only",
-     "raw_text": "Fortify Skill Athletics 25 pts"
+     "raw_text": "Fortify Skill Athletics 25 pts",
+     "skill": "Athletics"
     }
    ],
    "hidden_effects": {
@@ -18830,6 +19314,20 @@
      "magnitude": 15,
      "delivery": "constant",
      "raw_text": "wil=15 (curated)"
+    },
+    {
+     "key": "restore-hp",
+     "magnitude": null,
+     "delivery": "constant",
+     "raw_text": "Restore Health",
+     "note": "backfilled 2026-08-23 from posted tooltip text"
+    },
+    {
+     "key": "restore-mag",
+     "magnitude": null,
+     "delivery": "constant",
+     "raw_text": "Restore Magicka",
+     "note": "backfilled 2026-08-23 from posted tooltip text"
     }
    ],
    "effects_raw_posted": [
@@ -19026,7 +19524,8 @@
      "key": "fortify-skill",
      "magnitude": 15,
      "delivery": "skill-only",
-     "raw_text": "Fortify Skill Marksman 15 pts"
+     "raw_text": "Fortify Skill Marksman 15 pts",
+     "skill": "Marksman"
     }
    ],
    "hidden_effects": {
@@ -19216,7 +19715,16 @@
      "key": "fortify-skill",
      "magnitude": 10,
      "delivery": "skill-only",
-     "raw_text": "Fortify Destruction 10"
+     "raw_text": "Fortify Destruction 10",
+     "skill": "Destruction"
+    },
+    {
+     "key": "fortify-skill",
+     "magnitude": 10.0,
+     "delivery": "skill-only",
+     "skill": "Sneak",
+     "raw_text": "Fortify Skill Sneak 10 pts",
+     "note": "backfilled 2026-08-23 from posted tooltip text"
     }
    ],
    "effects_raw_posted": [
@@ -20078,7 +20586,8 @@
      "key": "fortify-skill",
      "magnitude": 25,
      "delivery": "timed",
-     "raw_text": "Fortify Skill Athletics 25 pts for 1800 secs"
+     "raw_text": "Fortify Skill Athletics 25 pts for 1800 secs",
+     "skill": "Athletics"
     }
    ],
    "hidden_effects": {
@@ -21355,6 +21864,13 @@
      "magnitude": 10,
      "delivery": "constant",
      "raw_text": "Fortify Agility 10 (pixel-verbatim from both tooltip screenshots, 2026-08-23)"
+    },
+    {
+     "key": "str",
+     "magnitude": 30.0,
+     "delivery": "constant",
+     "raw_text": "Fortify Attribute Strength 30 pts",
+     "note": "backfilled 2026-08-23 from posted tooltip text"
     }
    ],
    "effects_raw_posted": [
@@ -21437,6 +21953,13 @@
      "magnitude": 10,
      "delivery": "constant",
      "raw_text": "Fortify Agility 10 (pixel-verbatim from both tooltip screenshots, 2026-08-23)"
+    },
+    {
+     "key": "str",
+     "magnitude": 30.0,
+     "delivery": "constant",
+     "raw_text": "Fortify Attribute Strength 30 pts",
+     "note": "backfilled 2026-08-23 from posted tooltip text"
     }
    ],
    "effects_raw_posted": [
@@ -21519,6 +22042,13 @@
      "magnitude": 30,
      "delivery": "constant",
      "raw_text": "Fortify Agility 30 (pixel-verbatim from both tooltip screenshots, 2026-08-23)"
+    },
+    {
+     "key": "str",
+     "magnitude": 30.0,
+     "delivery": "constant",
+     "raw_text": "Fortify Attribute Strength 30 pts",
+     "note": "backfilled 2026-08-23 from posted tooltip text"
     }
    ],
    "effects_raw_posted": [
@@ -21601,6 +22131,13 @@
      "magnitude": 30,
      "delivery": "constant",
      "raw_text": "Fortify Agility 30 (pixel-verbatim from both tooltip screenshots, 2026-08-23)"
+    },
+    {
+     "key": "str",
+     "magnitude": 30.0,
+     "delivery": "constant",
+     "raw_text": "Fortify Attribute Strength 30 pts",
+     "note": "backfilled 2026-08-23 from posted tooltip text"
     }
    ],
    "effects_raw_posted": [
@@ -21765,6 +22302,13 @@
      "magnitude": 30,
      "delivery": "constant",
      "raw_text": "Fortify Agility 30 (pixel-verbatim from both tooltip screenshots, 2026-08-23)"
+    },
+    {
+     "key": "str",
+     "magnitude": 30.0,
+     "delivery": "constant",
+     "raw_text": "Fortify Attribute Strength 30 pts",
+     "note": "backfilled 2026-08-23 from posted tooltip text"
     }
    ],
    "effects_raw_posted": [
@@ -21835,6 +22379,13 @@
      "magnitude": 90,
      "delivery": "constant",
      "raw_text": "mag=90 (curated)"
+    },
+    {
+     "key": "poison",
+     "magnitude": -40.0,
+     "delivery": "constant",
+     "raw_text": "Weakness to Poison 40%",
+     "note": "backfilled 2026-08-23 from posted tooltip text"
     }
    ],
    "effects_raw_posted": [
@@ -22204,6 +22755,13 @@
      "magnitude": 90,
      "delivery": "constant",
      "raw_text": "mag=90 (curated)"
+    },
+    {
+     "key": "frost",
+     "magnitude": -40.0,
+     "delivery": "constant",
+     "raw_text": "Weakness to Frost 40%",
+     "note": "backfilled 2026-08-23 from posted tooltip text"
     }
    ],
    "effects_raw_posted": [
@@ -23077,7 +23635,8 @@
      "key": "fortify-skill",
      "magnitude": 14,
      "delivery": "skill-only",
-     "raw_text": "Fortify Destruction 14"
+     "raw_text": "Fortify Destruction 14",
+     "skill": "Destruction"
     },
     {
      "key": "fire",
@@ -23304,6 +23863,14 @@
      "magnitude": 60,
      "delivery": "constant",
      "raw_text": "mag=60 (curated)"
+    },
+    {
+     "key": "drain-attr",
+     "magnitude": 50.0,
+     "delivery": "constant",
+     "attr": "Personality",
+     "raw_text": "Drain Attribute Personality 50 pts",
+     "note": "backfilled 2026-08-23 from posted tooltip text"
     }
    ],
    "effects_raw_posted": [
@@ -23373,6 +23940,13 @@
      "magnitude": 15,
      "delivery": "constant",
      "raw_text": "rmag=15 (curated)"
+    },
+    {
+     "key": "drain-hp",
+     "magnitude": 100.0,
+     "delivery": "constant",
+     "raw_text": "Drain Health 100 pts",
+     "note": "backfilled 2026-08-23 from posted tooltip text"
     }
    ],
    "effects_raw_posted": [
@@ -23500,7 +24074,8 @@
      "key": "fortify-skill",
      "magnitude": 13,
      "delivery": "skill-only",
-     "raw_text": "Fortify Destruction 13"
+     "raw_text": "Fortify Destruction 13",
+     "skill": "Destruction"
     }
    ],
    "effects_raw_posted": [
@@ -23554,26 +24129,34 @@
     {
      "key": "wil",
      "magnitude": 10,
-     "delivery": "constant",
-     "raw_text": "wil=10 (curated)"
+     "delivery": "timed",
+     "raw_text": "Fortify Attribute Willpower 10 pts for 65 secs on Self",
+     "duration_sec": 65,
+     "note": "delivery corrected 2026-08-23: timed, was curated as constant"
     },
     {
      "key": "per",
      "magnitude": 10,
-     "delivery": "constant",
-     "raw_text": "per=10 (curated)"
+     "delivery": "timed",
+     "raw_text": "Fortify Attribute Personality 10 pts for 65 secs on Self",
+     "duration_sec": 65,
+     "note": "delivery corrected 2026-08-23: timed, was curated as constant"
     },
     {
      "key": "mag",
      "magnitude": 25,
-     "delivery": "constant",
-     "raw_text": "mag=25 (curated)"
+     "delivery": "timed",
+     "raw_text": "Fortify Magicka 25 pts for 65 secs on Self",
+     "duration_sec": 65,
+     "note": "delivery corrected 2026-08-23: timed, was curated as constant"
     },
     {
      "key": "rmag",
      "magnitude": 12,
-     "delivery": "constant",
-     "raw_text": "rmag=12 (curated)"
+     "delivery": "timed",
+     "raw_text": "Resist Magicka 12% for 65 secs on Self",
+     "duration_sec": 65,
+     "note": "delivery corrected 2026-08-23: timed, was curated as constant"
     }
    ],
    "effects_raw_posted": [
@@ -23733,6 +24316,14 @@
      "magnitude": -40,
      "delivery": "constant",
      "raw_text": "per=-40 (curated)"
+    },
+    {
+     "key": "drain-attr",
+     "magnitude": 40.0,
+     "delivery": "constant",
+     "attr": "Personality",
+     "raw_text": "Drain Attribute Personality 40 pts",
+     "note": "backfilled 2026-08-23 from posted tooltip text"
     }
    ],
    "effects_raw_posted": [
@@ -23920,6 +24511,14 @@
      "magnitude": 100,
      "delivery": "constant",
      "raw_text": "mag=100 (curated)"
+    },
+    {
+     "key": "fortify-skill",
+     "magnitude": 20.0,
+     "delivery": "skill-only",
+     "skill": "Restoration",
+     "raw_text": "Fortify Skill Restoration 20 pts",
+     "note": "backfilled 2026-08-23 from posted tooltip text"
     }
    ],
    "effects_raw_posted": [
@@ -24046,7 +24645,8 @@
      "key": "fortify-skill",
      "magnitude": 13,
      "delivery": "skill-only",
-     "raw_text": "Fortify Destruction 13"
+     "raw_text": "Fortify Destruction 13",
+     "skill": "Destruction"
     }
    ],
    "effects_raw_posted": [
@@ -24603,6 +25203,14 @@
      "magnitude": 15,
      "delivery": "constant",
      "raw_text": "fire=15 (curated)"
+    },
+    {
+     "key": "fortify-skill",
+     "magnitude": 31.0,
+     "delivery": "skill-only",
+     "skill": "Heavy Armor",
+     "raw_text": "Fortify Skill Heavy Armor 31 pts",
+     "note": "backfilled 2026-08-23 from posted tooltip text"
     }
    ],
    "effects_raw_posted": [
@@ -24710,7 +25318,16 @@
      "key": "fortify-skill",
      "magnitude": 18,
      "delivery": "skill-only",
-     "raw_text": "Fortify Athletics 18"
+     "raw_text": "Fortify Athletics 18",
+     "skill": "Athletics"
+    },
+    {
+     "key": "fortify-skill",
+     "magnitude": 25.0,
+     "delivery": "skill-only",
+     "skill": "Unarmored",
+     "raw_text": "Fortify Skill Unarmored 25 pts",
+     "note": "backfilled 2026-08-23 from posted tooltip text"
     }
    ],
    "effects_raw_posted": [
@@ -25046,6 +25663,13 @@
      "magnitude": 125,
      "delivery": "constant",
      "raw_text": "hp=125 (curated)"
+    },
+    {
+     "key": "enhancement",
+     "magnitude": 31.0,
+     "delivery": "constant",
+     "raw_text": "Enhancement 31 pts",
+     "note": "backfilled 2026-08-23 from posted tooltip text"
     }
    ],
    "effects_raw_posted": [
@@ -25197,6 +25821,13 @@
      "magnitude": 150,
      "delivery": "constant",
      "raw_text": "hp=150 (curated)"
+    },
+    {
+     "key": "enhancement",
+     "magnitude": 15.0,
+     "delivery": "constant",
+     "raw_text": "Enhancement 15 pts",
+     "note": "backfilled 2026-08-23 from posted tooltip text"
     }
    ],
    "effects_raw_posted": [
@@ -25271,13 +25902,44 @@
      "key": "fortify-skill",
      "magnitude": 20,
      "delivery": "skill-only",
-     "raw_text": "Fortify Athletics 20"
+     "raw_text": "Fortify Athletics 20",
+     "skill": "Athletics"
     },
     {
      "key": "per",
      "magnitude": -50,
      "delivery": "constant",
      "raw_text": "per=-50 (curated)"
+    },
+    {
+     "key": "water-breathing",
+     "magnitude": null,
+     "delivery": "constant",
+     "raw_text": "Water Breathing",
+     "note": "backfilled 2026-08-23 from posted tooltip text"
+    },
+    {
+     "key": "swift-swim",
+     "magnitude": 30.0,
+     "delivery": "constant",
+     "raw_text": "Swift Swim 30 pts",
+     "note": "backfilled 2026-08-23 from posted tooltip text"
+    },
+    {
+     "key": "fortify-skill",
+     "magnitude": 35.0,
+     "delivery": "skill-only",
+     "skill": "Spear",
+     "raw_text": "Fortify Skill Spear 35 pts",
+     "note": "backfilled 2026-08-23 from posted tooltip text"
+    },
+    {
+     "key": "drain-attr",
+     "magnitude": 50.0,
+     "delivery": "constant",
+     "attr": "Personality",
+     "raw_text": "Drain Attribute Personality 50 pts",
+     "note": "backfilled 2026-08-23 from posted tooltip text"
     }
    ],
    "effects_raw_posted": [
@@ -25498,6 +26160,14 @@
      "magnitude": -30,
      "delivery": "constant",
      "raw_text": "Weakness to Magicka 30% (restored from posted tooltip text; upstream corroborates)"
+    },
+    {
+     "key": "drain-attr",
+     "magnitude": 50.0,
+     "delivery": "constant",
+     "attr": "Intelligence",
+     "raw_text": "Drain Attribute Intelligence 50 pts",
+     "note": "backfilled 2026-08-23 from posted tooltip text"
     }
    ],
    "effects_raw_posted": [
@@ -25674,6 +26344,14 @@
      "magnitude": -50,
      "delivery": "constant",
      "raw_text": "int=-50 (curated)"
+    },
+    {
+     "key": "drain-attr",
+     "magnitude": 50.0,
+     "delivery": "constant",
+     "attr": "Intelligence",
+     "raw_text": "Drain Attribute Intelligence 50 pts",
+     "note": "backfilled 2026-08-23 from posted tooltip text"
     }
    ],
    "effects_raw_posted": [
@@ -25756,6 +26434,14 @@
      "magnitude": -50,
      "delivery": "constant",
      "raw_text": "str=-50 (curated)"
+    },
+    {
+     "key": "drain-attr",
+     "magnitude": 50.0,
+     "delivery": "constant",
+     "attr": "Strength",
+     "raw_text": "Drain Attribute Strength 50 pts",
+     "note": "backfilled 2026-08-23 from posted tooltip text"
     }
    ],
    "effects_raw_posted": [
@@ -25911,6 +26597,14 @@
      "magnitude": -50,
      "delivery": "constant",
      "raw_text": "str=-50 (curated)"
+    },
+    {
+     "key": "drain-attr",
+     "magnitude": 50.0,
+     "delivery": "constant",
+     "attr": "Strength",
+     "raw_text": "Drain Attribute Strength 50 pts",
+     "note": "backfilled 2026-08-23 from posted tooltip text"
     }
    ],
    "effects_raw_posted": [
@@ -26073,6 +26767,14 @@
      "magnitude": -50,
      "delivery": "constant",
      "raw_text": "int=-50 (curated)"
+    },
+    {
+     "key": "drain-attr",
+     "magnitude": 50.0,
+     "delivery": "constant",
+     "attr": "Intelligence",
+     "raw_text": "Drain Attribute Intelligence 50 pts",
+     "note": "backfilled 2026-08-23 from posted tooltip text"
     }
    ],
    "effects_raw_posted": [
@@ -26228,6 +26930,14 @@
      "magnitude": -50,
      "delivery": "constant",
      "raw_text": "per=-50 (curated)"
+    },
+    {
+     "key": "drain-attr",
+     "magnitude": 50.0,
+     "delivery": "constant",
+     "attr": "Personality",
+     "raw_text": "Drain Attribute Personality 50 pts",
+     "note": "backfilled 2026-08-23 from posted tooltip text"
     }
    ],
    "effects_raw_posted": [
@@ -26377,6 +27087,14 @@
      "magnitude": -50,
      "delivery": "constant",
      "raw_text": "int=-50 (curated)"
+    },
+    {
+     "key": "drain-attr",
+     "magnitude": 50.0,
+     "delivery": "constant",
+     "attr": "Intelligence",
+     "raw_text": "Drain Attribute Intelligence 50 pts",
+     "note": "backfilled 2026-08-23 from posted tooltip text"
     }
    ],
    "effects_raw_posted": [
@@ -26531,6 +27249,14 @@
      "magnitude": -50,
      "delivery": "constant",
      "raw_text": "str=-50 (curated)"
+    },
+    {
+     "key": "drain-attr",
+     "magnitude": 50.0,
+     "delivery": "constant",
+     "attr": "Strength",
+     "raw_text": "Drain Attribute Strength 50 pts",
+     "note": "backfilled 2026-08-23 from posted tooltip text"
     }
    ],
    "effects_raw_posted": [
@@ -26686,6 +27412,14 @@
      "magnitude": -50,
      "delivery": "constant",
      "raw_text": "int=-50 (curated)"
+    },
+    {
+     "key": "drain-attr",
+     "magnitude": 50.0,
+     "delivery": "constant",
+     "attr": "Intelligence",
+     "raw_text": "Drain Attribute Intelligence 50 pts",
+     "note": "backfilled 2026-08-23 from posted tooltip text"
     }
    ],
    "effects_raw_posted": [
@@ -26848,6 +27582,14 @@
      "magnitude": -50,
      "delivery": "constant",
      "raw_text": "per=-50 (curated)"
+    },
+    {
+     "key": "drain-attr",
+     "magnitude": 50.0,
+     "delivery": "constant",
+     "attr": "Personality",
+     "raw_text": "Drain Attribute Personality 50 pts",
+     "note": "backfilled 2026-08-23 from posted tooltip text"
     }
    ],
    "effects_raw_posted": [
@@ -27009,6 +27751,14 @@
      "magnitude": -50,
      "delivery": "constant",
      "raw_text": "per=-50 (curated)"
+    },
+    {
+     "key": "drain-attr",
+     "magnitude": 50.0,
+     "delivery": "constant",
+     "attr": "Personality",
+     "raw_text": "Drain Attribute Personality 50 pts",
+     "note": "backfilled 2026-08-23 from posted tooltip text"
     }
    ],
    "effects_raw_posted": [
@@ -27227,7 +27977,8 @@
      "key": "fortify-skill",
      "magnitude": 7,
      "delivery": "skill-only",
-     "raw_text": "Fortify Athletics 7"
+     "raw_text": "Fortify Athletics 7",
+     "skill": "Athletics"
     },
     {
      "key": "disease",
@@ -27565,7 +28316,24 @@
     "src": "s-verified",
     "note": "skill-100 tooltip convention (curated/corrected)"
    },
-   "effects": [],
+   "effects": [
+    {
+     "key": "fortify-skill",
+     "magnitude": 19.0,
+     "delivery": "skill-only",
+     "skill": "Medium Armor",
+     "raw_text": "Fortify Skill Medium Armor 19 pts",
+     "note": "backfilled 2026-08-23 from posted tooltip text"
+    },
+    {
+     "key": "fortify-skill",
+     "magnitude": 14.0,
+     "delivery": "skill-only",
+     "skill": "Hand-To-Hand",
+     "raw_text": "Fortify Skill Hand-to-hand 14 pts",
+     "note": "backfilled 2026-08-23 from posted tooltip text"
+    }
+   ],
    "effects_raw_posted": [
     "Fortify Skill Medium Armor 19 pts",
     "Fortify Skill Hand-to-hand 14 pts"
@@ -28027,6 +28795,13 @@
      "magnitude": 15,
      "delivery": "constant",
      "raw_text": "mag=15 (curated)"
+    },
+    {
+     "key": "restore-mag",
+     "magnitude": null,
+     "delivery": "constant",
+     "raw_text": "Restore Magicka",
+     "note": "backfilled 2026-08-23 from posted tooltip text"
     }
    ],
    "effects_raw_posted": [
@@ -28089,6 +28864,13 @@
      "magnitude": 15,
      "delivery": "constant",
      "raw_text": "hp=15 (curated)"
+    },
+    {
+     "key": "restore-hp",
+     "magnitude": null,
+     "delivery": "constant",
+     "raw_text": "Restore Health",
+     "note": "backfilled 2026-08-23 from posted tooltip text"
     }
    ],
    "effects_raw_posted": [
@@ -28151,6 +28933,13 @@
      "magnitude": 15,
      "delivery": "constant",
      "raw_text": "hp=15 (curated)"
+    },
+    {
+     "key": "restore-hp",
+     "magnitude": null,
+     "delivery": "constant",
+     "raw_text": "Restore Health",
+     "note": "backfilled 2026-08-23 from posted tooltip text"
     }
    ],
    "effects_raw_posted": [
@@ -28219,6 +29008,13 @@
      "magnitude": 12.5,
      "delivery": "constant",
      "raw_text": "mot=12.5 (curated)"
+    },
+    {
+     "key": "restore-mag",
+     "magnitude": null,
+     "delivery": "constant",
+     "raw_text": "Restore Magicka",
+     "note": "backfilled 2026-08-23 from posted tooltip text"
     }
    ],
    "effects_raw_posted": [
@@ -30091,7 +30887,8 @@
      "key": "fortify-skill",
      "magnitude": 15,
      "delivery": "skill-only",
-     "raw_text": "Fortify Skill Sneak 15 pts"
+     "raw_text": "Fortify Skill Sneak 15 pts",
+     "skill": "Sneak"
     }
    ],
    "hidden_effects": {
@@ -30138,13 +30935,15 @@
      "key": "fortify-skill",
      "magnitude": 10,
      "delivery": "skill-only",
-     "raw_text": "Fortify Short Blade 10"
+     "raw_text": "Fortify Short Blade 10",
+     "skill": "Short Blade"
     },
     {
      "key": "fortify-skill",
      "magnitude": 10,
      "delivery": "skill-only",
-     "raw_text": "Fortify Sneak 10"
+     "raw_text": "Fortify Sneak 10",
+     "skill": "Sneak"
     }
    ],
    "effects_raw_posted": [
@@ -30195,7 +30994,32 @@
      "key": "fortify-skill",
      "magnitude": 3,
      "delivery": "skill-only",
-     "raw_text": "Fortify Destruction 3"
+     "raw_text": "Fortify Destruction 3",
+     "skill": "Destruction"
+    },
+    {
+     "key": "fortify-skill",
+     "magnitude": 3.0,
+     "delivery": "skill-only",
+     "skill": "Conjuration",
+     "raw_text": "Fortify Skill Conjuration 3 pts",
+     "note": "backfilled 2026-08-23 from posted tooltip text"
+    },
+    {
+     "key": "fortify-skill",
+     "magnitude": 3.0,
+     "delivery": "skill-only",
+     "skill": "Illusion",
+     "raw_text": "Fortify Skill Illusion 3 pts",
+     "note": "backfilled 2026-08-23 from posted tooltip text"
+    },
+    {
+     "key": "fortify-skill",
+     "magnitude": 3.0,
+     "delivery": "skill-only",
+     "skill": "Restoration",
+     "raw_text": "Fortify Skill Restoration 3 pts",
+     "note": "backfilled 2026-08-23 from posted tooltip text"
     }
    ],
    "effects_raw_posted": [
@@ -30255,6 +31079,28 @@
      "magnitude": -75,
      "delivery": "constant",
      "raw_text": "hp=-75 (curated)"
+    },
+    {
+     "key": "fortify-skill",
+     "magnitude": 25.0,
+     "delivery": "skill-only",
+     "skill": "Conjuration",
+     "raw_text": "Fortify Skill Conjuration 25 pts",
+     "note": "backfilled 2026-08-23 from posted tooltip text"
+    },
+    {
+     "key": "drain-hp",
+     "magnitude": 75.0,
+     "delivery": "constant",
+     "raw_text": "Drain Health 75 pts",
+     "note": "backfilled 2026-08-23 from posted tooltip text"
+    },
+    {
+     "key": "drain-fat",
+     "magnitude": 75.0,
+     "delivery": "constant",
+     "raw_text": "Drain Fatigue 75 pts",
+     "note": "backfilled 2026-08-23 from posted tooltip text"
     }
    ],
    "effects_raw_posted": [
@@ -30310,7 +31156,8 @@
      "key": "fortify-skill",
      "magnitude": 15,
      "delivery": "skill-only",
-     "raw_text": "Fortify Skill Alchemy 15 pts"
+     "raw_text": "Fortify Skill Alchemy 15 pts",
+     "skill": "Alchemy"
     }
    ],
    "hidden_effects": {
@@ -30585,6 +31432,14 @@
      "magnitude": 100,
      "delivery": "constant",
      "raw_text": "hp=100 (curated)"
+    },
+    {
+     "key": "fortify-skill",
+     "magnitude": 20.0,
+     "delivery": "skill-only",
+     "skill": "Hand-To-Hand",
+     "raw_text": "Fortify Skill Hand-to-hand 20 pts",
+     "note": "backfilled 2026-08-23 from posted tooltip text"
     }
    ],
    "effects_raw_posted": [
@@ -31332,6 +32187,22 @@
      "magnitude": 20,
      "delivery": "constant",
      "raw_text": "fat=20 (curated)"
+    },
+    {
+     "key": "fortify-skill",
+     "magnitude": 30.0,
+     "delivery": "skill-only",
+     "skill": "Illusion",
+     "raw_text": "Fortify Skill Illusion 30 pts",
+     "note": "backfilled 2026-08-23 from posted tooltip text"
+    },
+    {
+     "key": "fortify-skill",
+     "magnitude": 20.0,
+     "delivery": "skill-only",
+     "skill": "Sneak",
+     "raw_text": "Fortify Skill Sneak 20 pts",
+     "note": "backfilled 2026-08-23 from posted tooltip text"
     }
    ],
    "effects_raw_posted": [
@@ -31427,7 +32298,16 @@
     "src": "s-verified",
     "note": "skill-100 tooltip convention (curated/corrected)"
    },
-   "effects": [],
+   "effects": [
+    {
+     "key": "fortify-skill",
+     "magnitude": 15.0,
+     "delivery": "skill-only",
+     "skill": "Sneak",
+     "raw_text": "Fortify Skill Sneak 15 pts",
+     "note": "backfilled 2026-08-23 from posted tooltip text"
+    }
+   ],
    "effects_raw_posted": [
     "Fortify Skill Sneak 15 pts"
    ],
@@ -31774,6 +32654,13 @@
      "magnitude": 100,
      "delivery": "constant",
      "raw_text": "mag=100 (curated)"
+    },
+    {
+     "key": "restore-mag",
+     "magnitude": null,
+     "delivery": "constant",
+     "raw_text": "Restore Magicka",
+     "note": "backfilled 2026-08-23 from posted tooltip text"
     }
    ],
    "effects_raw_posted": [
@@ -33039,6 +33926,14 @@
      "magnitude": 25,
      "delivery": "constant",
      "raw_text": "mag=25 (curated)"
+    },
+    {
+     "key": "fortify-skill",
+     "magnitude": 10.0,
+     "delivery": "skill-only",
+     "skill": "Medium Armor",
+     "raw_text": "Fortify Skill Medium Armor 10 pts",
+     "note": "backfilled 2026-08-23 from posted tooltip text"
     }
    ],
    "effects_raw_posted": [
@@ -33191,7 +34086,8 @@
      "key": "fortify-skill",
      "magnitude": 12,
      "delivery": "skill-only",
-     "raw_text": "Fortify Destruction 12"
+     "raw_text": "Fortify Destruction 12",
+     "skill": "Destruction"
     },
     {
      "key": "mag",
@@ -33365,6 +34261,14 @@
      "magnitude": -10,
      "delivery": "constant",
      "raw_text": "per=-10 (curated)"
+    },
+    {
+     "key": "drain-attr",
+     "magnitude": 10.0,
+     "delivery": "constant",
+     "attr": "Personality",
+     "raw_text": "Drain Attribute Personality 10 pts",
+     "note": "backfilled 2026-08-23 from posted tooltip text"
     }
    ],
    "effects_raw_posted": [
@@ -33606,6 +34510,14 @@
      "magnitude": 30,
      "delivery": "constant",
      "raw_text": "hp=30 (curated)"
+    },
+    {
+     "key": "fortify-skill",
+     "magnitude": 10.0,
+     "delivery": "skill-only",
+     "skill": "Axe",
+     "raw_text": "Fortify Skill Axe 10 pts",
+     "note": "backfilled 2026-08-23 from posted tooltip text"
     }
    ],
    "effects_raw_posted": [
@@ -33968,6 +34880,14 @@
      "magnitude": 25,
      "delivery": "constant",
      "raw_text": "hp=25 (curated)"
+    },
+    {
+     "key": "fortify-skill",
+     "magnitude": 10.0,
+     "delivery": "skill-only",
+     "skill": "Blunt Weapon",
+     "raw_text": "Fortify Skill Blunt Weapon 10 pts",
+     "note": "backfilled 2026-08-23 from posted tooltip text"
     }
    ],
    "effects_raw_posted": [
@@ -34741,6 +35661,14 @@
      "magnitude": 30,
      "delivery": "constant",
      "raw_text": "hp=30 (curated)"
+    },
+    {
+     "key": "fortify-skill",
+     "magnitude": 10.0,
+     "delivery": "skill-only",
+     "skill": "Acrobatics",
+     "raw_text": "Fortify Skill Acrobatics 10 pts",
+     "note": "backfilled 2026-08-23 from posted tooltip text"
     }
    ],
    "effects_raw_posted": [
@@ -35169,6 +36097,22 @@
      "magnitude": 55,
      "delivery": "constant",
      "raw_text": "hp=55 (curated)"
+    },
+    {
+     "key": "fortify-skill",
+     "magnitude": 25.0,
+     "delivery": "skill-only",
+     "skill": "Long Blade",
+     "raw_text": "Fortify Skill Long Blade 25 pts",
+     "note": "backfilled 2026-08-23 from posted tooltip text"
+    },
+    {
+     "key": "fortify-skill",
+     "magnitude": 15.0,
+     "delivery": "skill-only",
+     "skill": "Heavy Armor",
+     "raw_text": "Fortify Skill Heavy Armor 15 pts",
+     "note": "backfilled 2026-08-23 from posted tooltip text"
     }
    ],
    "effects_raw_posted": [
@@ -35685,7 +36629,8 @@
      "key": "fortify-skill",
      "magnitude": 10,
      "delivery": "skill-only",
-     "raw_text": "Fortify Marksman 10"
+     "raw_text": "Fortify Marksman 10",
+     "skill": "Marksman"
     }
    ],
    "effects_raw_posted": [
@@ -35755,6 +36700,13 @@
      "magnitude": 125,
      "delivery": "constant",
      "raw_text": "mag=125 (curated)"
+    },
+    {
+     "key": "restore-mag",
+     "magnitude": null,
+     "delivery": "constant",
+     "raw_text": "Restore Magicka",
+     "note": "backfilled 2026-08-23 from posted tooltip text"
     }
    ],
    "effects_raw_posted": [
@@ -35996,7 +36948,8 @@
      "key": "fortify-skill",
      "magnitude": 35,
      "delivery": "skill-only",
-     "raw_text": "Fortify Destruction 35"
+     "raw_text": "Fortify Destruction 35",
+     "skill": "Destruction"
     }
    ],
    "effects_raw_posted": [
@@ -36120,6 +37073,13 @@
      "magnitude": 125,
      "delivery": "constant",
      "raw_text": "hp=125 (curated)"
+    },
+    {
+     "key": "enhancement",
+     "magnitude": 63.0,
+     "delivery": "constant",
+     "raw_text": "Enhancement 63 pts",
+     "note": "backfilled 2026-08-23 from posted tooltip text"
     }
    ],
    "effects_raw_posted": [
@@ -36346,6 +37306,14 @@
      "magnitude": 150,
      "delivery": "constant",
      "raw_text": "mag=150 (curated)"
+    },
+    {
+     "key": "fortify-skill",
+     "magnitude": 30.0,
+     "delivery": "skill-only",
+     "skill": "Restoration",
+     "raw_text": "Fortify Skill Restoration 30 pts",
+     "note": "backfilled 2026-08-23 from posted tooltip text"
     }
    ],
    "effects_raw_posted": [
@@ -36418,13 +37386,37 @@
      "key": "fortify-skill",
      "magnitude": 20,
      "delivery": "skill-only",
-     "raw_text": "Fortify Athletics 20"
+     "raw_text": "Fortify Athletics 20",
+     "skill": "Athletics"
     },
     {
      "key": "per",
      "magnitude": -50,
      "delivery": "constant",
      "raw_text": "per=-50 (curated)"
+    },
+    {
+     "key": "swift-swim",
+     "magnitude": 25.0,
+     "delivery": "constant",
+     "raw_text": "Swift Swim 25 pts",
+     "note": "backfilled 2026-08-23 from posted tooltip text"
+    },
+    {
+     "key": "fortify-skill",
+     "magnitude": 25.0,
+     "delivery": "skill-only",
+     "skill": "Medium Armor",
+     "raw_text": "Fortify Skill Medium Armor 25 pts",
+     "note": "backfilled 2026-08-23 from posted tooltip text"
+    },
+    {
+     "key": "drain-attr",
+     "magnitude": 50.0,
+     "delivery": "constant",
+     "attr": "Personality",
+     "raw_text": "Drain Attribute Personality 50 pts",
+     "note": "backfilled 2026-08-23 from posted tooltip text"
     }
    ],
    "effects_raw_posted": [
@@ -36491,6 +37483,14 @@
      "magnitude": 100,
      "delivery": "constant",
      "raw_text": "hp=100 (curated)"
+    },
+    {
+     "key": "fortify-skill",
+     "magnitude": 40.0,
+     "delivery": "skill-only",
+     "skill": "Restoration",
+     "raw_text": "Fortify Skill Restoration 40 pts",
+     "note": "backfilled 2026-08-23 from posted tooltip text"
     }
    ],
    "effects_raw_posted": [
@@ -36557,7 +37557,8 @@
      "key": "fortify-skill",
      "magnitude": 40,
      "delivery": "skill-only",
-     "raw_text": "Fortify Short Blade 40"
+     "raw_text": "Fortify Short Blade 40",
+     "skill": "Short Blade"
     }
    ],
    "effects_raw_posted": [
@@ -36774,6 +37775,22 @@
      "magnitude": -15,
      "delivery": "constant",
      "raw_text": "int=-15 (curated)"
+    },
+    {
+     "key": "fortify-skill",
+     "magnitude": 15.0,
+     "delivery": "skill-only",
+     "skill": "Heavy Armor",
+     "raw_text": "Fortify Skill Heavy Armor 15 pts",
+     "note": "backfilled 2026-08-23 from posted tooltip text"
+    },
+    {
+     "key": "drain-attr",
+     "magnitude": 15.0,
+     "delivery": "constant",
+     "attr": "Intelligence",
+     "raw_text": "Drain Attribute Intelligence 15 pts",
+     "note": "backfilled 2026-08-23 from posted tooltip text"
     }
    ],
    "effects_raw_posted": [
@@ -36835,13 +37852,30 @@
      "key": "fortify-skill",
      "magnitude": 10,
      "delivery": "skill-only",
-     "raw_text": "Fortify Destruction 10"
+     "raw_text": "Fortify Destruction 10",
+     "skill": "Destruction"
     },
     {
      "key": "str",
      "magnitude": -50,
      "delivery": "constant",
      "raw_text": "str=-50 (curated)"
+    },
+    {
+     "key": "drain-attr",
+     "magnitude": 50.0,
+     "delivery": "constant",
+     "attr": "Strength",
+     "raw_text": "Drain Attribute Strength 50 pts",
+     "note": "backfilled 2026-08-23 from posted tooltip text"
+    },
+    {
+     "key": "fortify-skill",
+     "magnitude": 10.0,
+     "delivery": "skill-only",
+     "skill": "Restoration",
+     "raw_text": "Fortify Skill Restoration 10 pts",
+     "note": "backfilled 2026-08-23 from posted tooltip text"
     }
    ],
    "effects_raw_posted": [
@@ -36913,13 +37947,37 @@
      "key": "fortify-skill",
      "magnitude": 20,
      "delivery": "skill-only",
-     "raw_text": "Fortify Athletics 20"
+     "raw_text": "Fortify Athletics 20",
+     "skill": "Athletics"
     },
     {
      "key": "per",
      "magnitude": -50,
      "delivery": "constant",
      "raw_text": "per=-50 (curated)"
+    },
+    {
+     "key": "swift-swim",
+     "magnitude": 25.0,
+     "delivery": "constant",
+     "raw_text": "Swift Swim 25 pts",
+     "note": "backfilled 2026-08-23 from posted tooltip text"
+    },
+    {
+     "key": "fortify-skill",
+     "magnitude": 25.0,
+     "delivery": "skill-only",
+     "skill": "Medium Armor",
+     "raw_text": "Fortify Skill Medium Armor 25 pts",
+     "note": "backfilled 2026-08-23 from posted tooltip text"
+    },
+    {
+     "key": "drain-attr",
+     "magnitude": 50.0,
+     "delivery": "constant",
+     "attr": "Personality",
+     "raw_text": "Drain Attribute Personality 50 pts",
+     "note": "backfilled 2026-08-23 from posted tooltip text"
     }
    ],
    "effects_raw_posted": [
@@ -36976,6 +38034,14 @@
      "magnitude": 150,
      "delivery": "constant",
      "raw_text": "hp=150 (curated)"
+    },
+    {
+     "key": "fortify-skill",
+     "magnitude": 30.0,
+     "delivery": "skill-only",
+     "skill": "Heavy Armor",
+     "raw_text": "Fortify Skill Heavy Armor 30 pts",
+     "note": "backfilled 2026-08-23 from posted tooltip text"
     }
    ],
    "effects_raw_posted": [
@@ -37035,13 +38101,15 @@
      "key": "fortify-skill",
      "magnitude": 25,
      "delivery": "skill-only",
-     "raw_text": "Fortify Short Blade 25"
+     "raw_text": "Fortify Short Blade 25",
+     "skill": "Short Blade"
     },
     {
      "key": "fortify-skill",
      "magnitude": 20,
      "delivery": "skill-only",
-     "raw_text": "Fortify Marksman 20"
+     "raw_text": "Fortify Marksman 20",
+     "skill": "Marksman"
     }
    ],
    "effects_raw_posted": [
@@ -37122,13 +38190,30 @@
      "key": "fortify-skill",
      "magnitude": 20,
      "delivery": "skill-only",
-     "raw_text": "Fortify Athletics 20"
+     "raw_text": "Fortify Athletics 20",
+     "skill": "Athletics"
     },
     {
      "key": "per",
      "magnitude": -50,
      "delivery": "constant",
      "raw_text": "per=-50 (curated)"
+    },
+    {
+     "key": "fortify-skill",
+     "magnitude": 25.0,
+     "delivery": "skill-only",
+     "skill": "Medium Armor",
+     "raw_text": "Fortify Skill Medium Armor 25 pts",
+     "note": "backfilled 2026-08-23 from posted tooltip text"
+    },
+    {
+     "key": "drain-attr",
+     "magnitude": 50.0,
+     "delivery": "constant",
+     "attr": "Personality",
+     "raw_text": "Drain Attribute Personality 50 pts",
+     "note": "backfilled 2026-08-23 from posted tooltip text"
     }
    ],
    "effects_raw_posted": [
@@ -37459,7 +38544,8 @@
      "key": "fortify-skill",
      "magnitude": 28,
      "delivery": "skill-only",
-     "raw_text": "Fortify Athletics 28"
+     "raw_text": "Fortify Athletics 28",
+     "skill": "Athletics"
     },
     {
      "key": "agi",
@@ -37478,6 +38564,14 @@
      "magnitude": 130,
      "delivery": "constant",
      "raw_text": "hp=130 (curated)"
+    },
+    {
+     "key": "fortify-skill",
+     "magnitude": 24.0,
+     "delivery": "skill-only",
+     "skill": "Spear",
+     "raw_text": "Fortify Skill Spear 24 pts",
+     "note": "backfilled 2026-08-23 from posted tooltip text"
     }
    ],
    "effects_raw_posted": [
@@ -37650,6 +38744,13 @@
      "magnitude": 140,
      "delivery": "constant",
      "raw_text": "hp=140 (curated)"
+    },
+    {
+     "key": "enhancement",
+     "magnitude": 50.0,
+     "delivery": "constant",
+     "raw_text": "Enhancement 50 pts",
+     "note": "backfilled 2026-08-23 from posted tooltip text"
     }
    ],
    "effects_raw_posted": [
@@ -39757,6 +40858,21 @@
      "magnitude": -40,
      "delivery": "constant",
      "raw_text": "per=-40 (curated)"
+    },
+    {
+     "key": "enhancement",
+     "magnitude": 22.0,
+     "delivery": "constant",
+     "raw_text": "Enhancement 22 pts",
+     "note": "backfilled 2026-08-23 from posted tooltip text"
+    },
+    {
+     "key": "drain-attr",
+     "magnitude": 40.0,
+     "delivery": "constant",
+     "attr": "Personality",
+     "raw_text": "Drain Attribute Personality 40 pts",
+     "note": "backfilled 2026-08-23 from posted tooltip text"
     }
    ],
    "effects_raw_posted": [
@@ -39912,6 +41028,14 @@
      "magnitude": -20,
      "delivery": "constant",
      "raw_text": "Weakness to Frost 20% (restored from posted tooltip text; upstream corroborates)"
+    },
+    {
+     "key": "fortify-skill",
+     "magnitude": 25.0,
+     "delivery": "skill-only",
+     "skill": "Light Armor",
+     "raw_text": "Fortify Skill Light Armor 25 pts",
+     "note": "backfilled 2026-08-23 from posted tooltip text"
     }
    ],
    "effects_raw_posted": [
@@ -39987,7 +41111,8 @@
      "key": "fortify-skill",
      "magnitude": 25,
      "delivery": "skill-only",
-     "raw_text": "Fortify Athletics 25"
+     "raw_text": "Fortify Athletics 25",
+     "skill": "Athletics"
     },
     {
      "key": "frost",
@@ -40062,7 +41187,8 @@
      "key": "fortify-skill",
      "magnitude": 30,
      "delivery": "skill-only",
-     "raw_text": "Fortify Short Blade 30"
+     "raw_text": "Fortify Short Blade 30",
+     "skill": "Short Blade"
     }
    ],
    "effects_raw_posted": [
@@ -40161,7 +41287,8 @@
      "key": "fortify-skill",
      "magnitude": 25,
      "delivery": "skill-only",
-     "raw_text": "Fortify Short Blade 25"
+     "raw_text": "Fortify Short Blade 25",
+     "skill": "Short Blade"
     },
     {
      "key": "frost",
@@ -40243,7 +41370,8 @@
      "key": "fortify-skill",
      "magnitude": 25,
      "delivery": "skill-only",
-     "raw_text": "Fortify Short Blade 25"
+     "raw_text": "Fortify Short Blade 25",
+     "skill": "Short Blade"
     },
     {
      "key": "frost",
@@ -40314,6 +41442,14 @@
      "magnitude": -40,
      "delivery": "constant",
      "raw_text": "int=-40 (curated)"
+    },
+    {
+     "key": "drain-attr",
+     "magnitude": 40.0,
+     "delivery": "constant",
+     "attr": "Intelligence",
+     "raw_text": "Drain Attribute Intelligence 40 pts",
+     "note": "backfilled 2026-08-23 from posted tooltip text"
     }
    ],
    "effects_raw_posted": [
@@ -40454,6 +41590,14 @@
      "magnitude": -20,
      "delivery": "constant",
      "raw_text": "Weakness to Frost 20% (restored from posted tooltip text; upstream corroborates)"
+    },
+    {
+     "key": "fortify-skill",
+     "magnitude": 10.0,
+     "delivery": "skill-only",
+     "skill": "Restoration",
+     "raw_text": "Fortify Skill Restoration 10 pts",
+     "note": "backfilled 2026-08-23 from posted tooltip text"
     }
    ],
    "effects_raw_posted": [
@@ -40529,7 +41673,8 @@
      "key": "fortify-skill",
      "magnitude": 25,
      "delivery": "skill-only",
-     "raw_text": "Fortify Destruction 25"
+     "raw_text": "Fortify Destruction 25",
+     "skill": "Destruction"
     },
     {
      "key": "frost",
@@ -40612,6 +41757,14 @@
      "magnitude": -20,
      "delivery": "constant",
      "raw_text": "Weakness to Frost 20% (restored from posted tooltip text; upstream corroborates)"
+    },
+    {
+     "key": "fortify-skill",
+     "magnitude": 25.0,
+     "delivery": "skill-only",
+     "skill": "Long Blade",
+     "raw_text": "Fortify Skill Long Blade 25 pts",
+     "note": "backfilled 2026-08-23 from posted tooltip text"
     }
    ],
    "effects_raw_posted": [
@@ -40688,6 +41841,14 @@
      "magnitude": -20,
      "delivery": "constant",
      "raw_text": "Weakness to Frost 20% (restored from posted tooltip text; upstream corroborates)"
+    },
+    {
+     "key": "fortify-skill",
+     "magnitude": 25.0,
+     "delivery": "skill-only",
+     "skill": "Long Blade",
+     "raw_text": "Fortify Skill Long Blade 25 pts",
+     "note": "backfilled 2026-08-23 from posted tooltip text"
     }
    ],
    "effects_raw_posted": [
@@ -40764,6 +41925,14 @@
      "magnitude": -20,
      "delivery": "constant",
      "raw_text": "Weakness to Frost 20% (restored from posted tooltip text; upstream corroborates)"
+    },
+    {
+     "key": "fortify-skill",
+     "magnitude": 25.0,
+     "delivery": "skill-only",
+     "skill": "Medium Armor",
+     "raw_text": "Fortify Skill Medium Armor 25 pts",
+     "note": "backfilled 2026-08-23 from posted tooltip text"
     }
    ],
    "effects_raw_posted": [
@@ -40839,7 +42008,8 @@
      "key": "fortify-skill",
      "magnitude": 25,
      "delivery": "skill-only",
-     "raw_text": "Fortify Marksman 25"
+     "raw_text": "Fortify Marksman 25",
+     "skill": "Marksman"
     },
     {
      "key": "frost",
@@ -40909,6 +42079,14 @@
      "magnitude": 125,
      "delivery": "constant",
      "raw_text": "hp=125 (curated)"
+    },
+    {
+     "key": "fortify-skill",
+     "magnitude": 30.0,
+     "delivery": "skill-only",
+     "skill": "Long Blade",
+     "raw_text": "Fortify Skill Long Blade 30 pts",
+     "note": "backfilled 2026-08-23 from posted tooltip text"
     }
    ],
    "effects_raw_posted": [
@@ -41076,6 +42254,14 @@
      "magnitude": -20,
      "delivery": "constant",
      "raw_text": "Weakness to Frost 20% (restored from posted tooltip text; upstream corroborates)"
+    },
+    {
+     "key": "fortify-skill",
+     "magnitude": 25.0,
+     "delivery": "skill-only",
+     "skill": "Conjuration",
+     "raw_text": "Fortify Skill Conjuration 25 pts",
+     "note": "backfilled 2026-08-23 from posted tooltip text"
     }
    ],
    "effects_raw_posted": [
@@ -41151,7 +42337,8 @@
      "key": "fortify-skill",
      "magnitude": 25,
      "delivery": "skill-only",
-     "raw_text": "Fortify Athletics 25"
+     "raw_text": "Fortify Athletics 25",
+     "skill": "Athletics"
     },
     {
      "key": "frost",
@@ -41295,6 +42482,14 @@
      "magnitude": 20,
      "delivery": "constant",
      "raw_text": "rmag=20 (curated)"
+    },
+    {
+     "key": "fortify-skill",
+     "magnitude": 5.0,
+     "delivery": "skill-only",
+     "skill": "Restoration",
+     "raw_text": "Fortify Skill Restoration 5 pts",
+     "note": "backfilled 2026-08-23 from posted tooltip text"
     }
    ],
    "effects_raw_posted": [
@@ -41436,7 +42631,8 @@
      "key": "fortify-skill",
      "magnitude": 50,
      "delivery": "skill-only",
-     "raw_text": "Fortify Destruction 50"
+     "raw_text": "Fortify Destruction 50",
+     "skill": "Destruction"
     },
     {
      "key": "int",
@@ -41547,6 +42743,14 @@
      "magnitude": -20,
      "delivery": "constant",
      "raw_text": "Weakness to Frost 20% (restored from posted tooltip text; upstream corroborates)"
+    },
+    {
+     "key": "fortify-skill",
+     "magnitude": 25.0,
+     "delivery": "skill-only",
+     "skill": "Alchemy",
+     "raw_text": "Fortify Skill Alchemy 25 pts",
+     "note": "backfilled 2026-08-23 from posted tooltip text"
     }
    ],
    "effects_raw_posted": [
@@ -41623,7 +42827,8 @@
      "key": "fortify-skill",
      "magnitude": 25,
      "delivery": "skill-only",
-     "raw_text": "Fortify Athletics 25"
+     "raw_text": "Fortify Athletics 25",
+     "skill": "Athletics"
     },
     {
      "key": "frost",
@@ -41830,7 +43035,8 @@
      "key": "fortify-skill",
      "magnitude": 25,
      "delivery": "skill-only",
-     "raw_text": "Fortify Athletics 25"
+     "raw_text": "Fortify Athletics 25",
+     "skill": "Athletics"
     }
    ],
    "effects_raw_posted": [
@@ -41962,7 +43168,8 @@
      "key": "fortify-skill",
      "magnitude": 30,
      "delivery": "skill-only",
-     "raw_text": "Fortify Destruction 30"
+     "raw_text": "Fortify Destruction 30",
+     "skill": "Destruction"
     },
     {
      "key": "hp",
@@ -42189,6 +43396,14 @@
      "magnitude": -20,
      "delivery": "constant",
      "raw_text": "Weakness to Frost 20% (restored from posted tooltip text; upstream corroborates)"
+    },
+    {
+     "key": "fortify-skill",
+     "magnitude": 25.0,
+     "delivery": "skill-only",
+     "skill": "Axe",
+     "raw_text": "Fortify Skill Axe 25 pts",
+     "note": "backfilled 2026-08-23 from posted tooltip text"
     }
    ],
    "effects_raw_posted": [
@@ -42264,7 +43479,8 @@
      "key": "fortify-skill",
      "magnitude": 25,
      "delivery": "skill-only",
-     "raw_text": "Fortify Athletics 25"
+     "raw_text": "Fortify Athletics 25",
+     "skill": "Athletics"
     },
     {
      "key": "frost",
@@ -42590,7 +43806,8 @@
      "key": "fortify-skill",
      "magnitude": 25,
      "delivery": "skill-only",
-     "raw_text": "Fortify Athletics 25"
+     "raw_text": "Fortify Athletics 25",
+     "skill": "Athletics"
     }
    ],
    "effects_raw_posted": [
@@ -42659,7 +43876,8 @@
      "key": "fortify-skill",
      "magnitude": 14,
      "delivery": "skill-only",
-     "raw_text": "Fortify Destruction 14"
+     "raw_text": "Fortify Destruction 14",
+     "skill": "Destruction"
     },
     {
      "key": "fire",
@@ -43573,7 +44791,8 @@
      "key": "fortify-skill",
      "magnitude": 10.0,
      "delivery": "skill-only",
-     "raw_text": "Fortify Short Blade 10.0"
+     "raw_text": "Fortify Short Blade 10.0",
+     "skill": "Short Blade"
     }
    ],
    "hidden_effects": {
@@ -43623,7 +44842,8 @@
      "key": "fortify-skill",
      "magnitude": 10.0,
      "delivery": "skill-only",
-     "raw_text": "Fortify Short Blade 10.0"
+     "raw_text": "Fortify Short Blade 10.0",
+     "skill": "Short Blade"
     }
    ],
    "hidden_effects": {
@@ -43674,7 +44894,8 @@
      "key": "fortify-skill",
      "magnitude": 10,
      "delivery": "skill-only",
-     "raw_text": "Fortify Athletics 10"
+     "raw_text": "Fortify Athletics 10",
+     "skill": "Athletics"
     },
     {
      "key": "spe",
@@ -43989,7 +45210,8 @@
      "key": "fortify-skill",
      "magnitude": 10,
      "delivery": "skill-only",
-     "raw_text": "Fortify Sneak 10"
+     "raw_text": "Fortify Sneak 10",
+     "skill": "Sneak"
     },
     {
      "key": "spe",
@@ -44045,7 +45267,8 @@
      "key": "fortify-skill",
      "magnitude": 5,
      "delivery": "skill-only",
-     "raw_text": "Fortify Destruction 5"
+     "raw_text": "Fortify Destruction 5",
+     "skill": "Destruction"
     }
    ],
    "hidden_effects": {
@@ -44297,7 +45520,8 @@
      "key": "fortify-skill",
      "magnitude": 5,
      "delivery": "skill-only",
-     "raw_text": "Fortify Short Blade 5"
+     "raw_text": "Fortify Short Blade 5",
+     "skill": "Short Blade"
     }
    ],
    "hidden_effects": {
@@ -44453,7 +45677,8 @@
      "key": "fortify-skill",
      "magnitude": 5,
      "delivery": "skill-only",
-     "raw_text": "Fortify Sneak 5"
+     "raw_text": "Fortify Sneak 5",
+     "skill": "Sneak"
     }
    ],
    "hidden_effects": {
@@ -44731,7 +45956,8 @@
      "key": "fortify-skill",
      "magnitude": 20,
      "delivery": "skill-only",
-     "raw_text": "Fortify Marksman 20"
+     "raw_text": "Fortify Marksman 20",
+     "skill": "Marksman"
     }
    ],
    "hidden_effects": {
@@ -45011,7 +46237,8 @@
      "key": "fortify-skill",
      "magnitude": 10,
      "delivery": "skill-only",
-     "raw_text": "Fortify Short Blade 10"
+     "raw_text": "Fortify Short Blade 10",
+     "skill": "Short Blade"
     }
    ],
    "hidden_effects": {
@@ -46167,7 +47394,8 @@
      "key": "fortify-skill",
      "magnitude": 14,
      "delivery": "skill-only",
-     "raw_text": "Fortify Skill Destruction 14 pts"
+     "raw_text": "Fortify Skill Destruction 14 pts",
+     "skill": "Destruction"
     },
     {
      "key": "hp",
@@ -46707,7 +47935,8 @@
      "key": "fortify-skill",
      "magnitude": 25,
      "delivery": "skill-only",
-     "raw_text": "Fortify Skill Short Blade 25 pts"
+     "raw_text": "Fortify Skill Short Blade 25 pts",
+     "skill": "Short Blade"
     },
     {
      "key": "fortify-skill",
@@ -46719,13 +47948,15 @@
      "key": "fortify-skill",
      "magnitude": 20,
      "delivery": "skill-only",
-     "raw_text": "Fortify Skill Athletics 20 pts"
+     "raw_text": "Fortify Skill Athletics 20 pts",
+     "skill": "Athletics"
     },
     {
      "key": "fortify-skill",
      "magnitude": 20,
      "delivery": "skill-only",
-     "raw_text": "Fortify Skill Acrobatics 20 pts"
+     "raw_text": "Fortify Skill Acrobatics 20 pts",
+     "skill": "Acrobatics"
     },
     {
      "key": "hp",
@@ -46788,13 +48019,15 @@
      "key": "fortify-skill",
      "magnitude": 25,
      "delivery": "skill-only",
-     "raw_text": "Fortify Skill Medium Armor 25 pts"
+     "raw_text": "Fortify Skill Medium Armor 25 pts",
+     "skill": "Medium Armor"
     },
     {
      "key": "fortify-skill",
      "magnitude": 20,
      "delivery": "skill-only",
-     "raw_text": "Fortify Skill Athletics 20 pts"
+     "raw_text": "Fortify Skill Athletics 20 pts",
+     "skill": "Athletics"
     },
     {
      "key": "shock",

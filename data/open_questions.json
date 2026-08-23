@@ -196,6 +196,13 @@
    "status": "open",
    "detail": "races.json captures the 0.8 rework special abilities only — no base attribute or skill-bonus tables. Unknown whether NP kept vanilla racial base stats or reworked them. Resolution: dev doc check or per-race fresh-character readings.",
    "date": "2026-08-23"
+  },
+  {
+   "id": "q:weapon-stat-capture-gaps",
+   "topic": "Weapons with uncaptured damage or speed",
+   "status": "open",
+   "detail": "7 captured weapons have no damage values (Sparkler, Snowman Balls, Fireracer Launcher, Ouch, Stalhrim Shortsword, Witches' Broom, Seasplitter) and ~117 have no speed_pct. Most tooltips exist as images/items/*.png — an OCR pass or fresh in-game reads would close this. Builder impact: DPS/speed display incomplete for these.",
+   "date": "2026-08-23"
   }
  ]
 }

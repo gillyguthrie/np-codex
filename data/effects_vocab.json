@@ -302,7 +302,8 @@
   {
    "key": "drain-attr",
    "name": "Drain Attribute",
-   "unit": "pts"
+   "unit": "pts",
+   "note": "carries a structured `attr` field naming the attribute; magnitude stored positive (the key implies the debuff)"
   },
   {
    "key": "absorb-hp",
@@ -373,7 +374,7 @@
    "key": "fortify-skill",
    "name": "Fortify Skill (generic)",
    "unit": "pts",
-   "note": "delivery skill-only: does not move computed HP/MP/AR/resists"
+   "note": "carries a structured `skill` field naming the skill; raw_text is verbatim"
   },
   {
    "key": "fortify-enchant",
@@ -412,6 +413,21 @@
   {
    "key": "light",
    "name": "Light",
+   "unit": "pts"
+  },
+  {
+   "key": "drain-hp",
+   "name": "Drain Health",
+   "unit": "pts"
+  },
+  {
+   "key": "drain-mag",
+   "name": "Drain Magicka",
+   "unit": "pts"
+  },
+  {
+   "key": "drain-fat",
+   "name": "Drain Fatigue",
    "unit": "pts"
   }
  ]
