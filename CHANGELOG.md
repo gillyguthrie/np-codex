@@ -1,5 +1,8 @@
 # Changelog
 
+## 2026-08-23 — v0.2.2 spell-cast-chance formula (community tool)
+- mechanics.json: + `formula:spell-cast-100-cost` — max spell cost castable at 100%: floor(2*skill + will/5 + luck/10 + specBonus - fatigueTerm), fatigueTerm 80 (full fatigue) to ~133.33 (zero); specBonus per spec cast-chance perk (Sorcerer +20, Channeler +40, mages +0, Combat -25, Stealth -50). Read verbatim from the source code of the community spell-chance calculator on the NP-Server-Items site; new `s-ctool` source (community-dataset, player-reported tier — not dev-stated).
+
 ## 2026-08-23 — v0.2.2 skill rule 9: per-file conventions are binding
 - SKILL.md gains rule 9: every data file's `_meta.conventions` block is binding for that file (read before computing); SKILL.md itself changes only for cross-cutting rules or new files, with per-file reading rules living in `_meta`. Codifies the scaling policy — topic expansions (like today's alchemy work) ship without touching the skill. `np-codex.skill` repackaged.
 

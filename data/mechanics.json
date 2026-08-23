@@ -76,6 +76,14 @@
    "url": null,
    "date": null,
    "confidence": "player-reported"
+  },
+  "s-ctool": {
+   "origin": "community-dataset",
+   "channel": "community spell-chance calculator (NP-Server-Items site, linked from its header)",
+   "url": "https://skooma-breath.github.io/NP-Server-Items/",
+   "date": "2026-08-23",
+   "confidence": "player-reported",
+   "note": "Formula read verbatim from the tool's published source code; the tool is community-maintained, not dev-stated."
   }
  },
  "constants": [
@@ -538,6 +546,14 @@
    "src": "s-dev",
    "date": "2024-07-23",
    "note": "2025 addition: any fish ingredient caps potion weight at 1, even when the fish contributes no used effect."
+  },
+  {
+   "id": "formula:spell-cast-100-cost",
+   "name": "Maximum spell cost castable at 100% chance",
+   "expr": "maxCost_fullFatigue = floor(2*skill + will/5 + luck/10 + specBonus - 80); maxCost_zeroFatigue = floor(2*skill + will/5 + luck/10 + specBonus - (4/3)*100)",
+   "src": "s-ctool",
+   "date": "2026-08-23",
+   "note": "specBonus = the spec's cast-chance CM perk value: Sorcerer +20, Channeler +40, mage specs +0, Combat -25, Stealth -50. Fatigue interpolates the constant between 80 (full fatigue) and ~133.33 (zero fatigue). Community-tool formula, not dev-stated; one corroborating public report (server-general 2025-03-23) treats Willpower as marginal for cast chance until ~98%+, consistent with the will/5 term."
   }
  ],
  "facts": [

@@ -116,6 +116,10 @@ Chain Combo multiplies the SPELL's damage; it ignores the weapon's own damage an
 `weight = floor(average(ingredient_weights))`  
 2025 addition: any fish ingredient caps potion weight at 1, even when the fish contributes no used effect.
 
+### Maximum spell cost castable at 100% chance  
+`maxCost_fullFatigue = floor(2*skill + will/5 + luck/10 + specBonus - 80); maxCost_zeroFatigue = floor(2*skill + will/5 + luck/10 + specBonus - (4/3)*100)`  
+specBonus = the spec's cast-chance CM perk value: Sorcerer +20, Channeler +40, mage specs +0, Combat -25, Stealth -50. Fatigue interpolates the constant between 80 (full fatigue) and ~133.33 (zero fatigue). Community-tool formula, not dev-stated; one corroborating public report (server-general 2025-03-23) treats Willpower as marginal for cast chance until ~98%+, consistent with the will/5 term.
+
 
 ## Established facts
 
