@@ -3,11 +3,14 @@
   "description": "Alchemy ingredients on NP. Vanilla ingredients are parsed directly from the game ESMs (baseline values — NP may modify any of them). NP-custom ingredients are tracked in np_ingredients as they are captured.",
   "conventions": {
    "effects": "Listed in game order — order matters: lower Alchemy skill reveals fewer effects (first effects first), and potions combine ingredients sharing an effect.",
-   "origin_game": "vanilla = shipped game ingredient (ESM values); np-custom = server-added."
+   "origin_game": "vanilla = shipped game ingredient (ESM values); np-custom = server-added.",
+   "duplicate_records": "Some vanilla ingredients exist as multiple ESM records under one display name (8 names: Bread, Daedra's Heart, Diamond, Emerald, Pearl, Raw Ebony, Raw Glass, Ruby) — identical effects, different ESM ids (cursed/unique variants). Count and answer by NAME, not by record, or lists will over-count."
   },
   "counts": {
    "vanilla": 126,
-   "np_custom": 0
+   "np_custom": 0,
+   "np_custom_stubs": 1,
+   "vanilla_distinct_names": 118
   }
  },
  "sources": {
@@ -26,6 +29,13 @@
    "date": null,
    "confidence": "measured",
    "note": "In-game catalog screenshots (for np-custom ingredients as captured)."
+  },
+  "s-chat": {
+   "origin": "discord-public",
+   "channel": "in-game chat (public relay channel)",
+   "url": null,
+   "date": "2026-08",
+   "confidence": "player-reported"
   }
  },
  "ingredients": [
@@ -1896,8 +1906,23 @@
   }
  ],
  "np_ingredients": {
-  "status": "known-to-exist, not yet captured",
-  "note": "Aug 2026 in-game chat confirms NP has added custom alchemy ingredients (at least one dropping at the 2026 Infernal Flame Atronach Camp, and boss-drop ingredients players call 'the new ingredients'). Names/effects not yet captured — see open_questions q:np-custom-ingredients. Note: 'Sticky Cinnamon Taffy' is Jiubsmas throwing-knife ammo, not an ingredient.",
-  "records": []
+  "status": "partially captured — names emerging, effects not yet captured",
+  "note": "NP has server-added alchemy ingredients. Named so far: Elemental Flame Dust (drops at the 2026 Infernal Flame Atronach Camp; in-game chat 2026-08-09). At least one more exists: an unnamed ingredient dropped by the fireshield fish (in-game chat 2026-08-03); players also refer to 'the new ingredients' (plural). Effects/weights/values for all of them: not yet captured — see open_questions q:np-custom-ingredients. Note: 'Sticky Cinnamon Taffy' is Jiubsmas throwing-knife ammo, not an ingredient.",
+  "records": [
+   {
+    "id": "ingr:elemental-flame-dust",
+    "esm_id": null,
+    "name": "Elemental Flame Dust",
+    "origin_game": "np-custom",
+    "captured": false,
+    "src": "s-chat",
+    "first_reported": "2026-08-09",
+    "source_location": "2026 Infernal Flame Atronach Camp (drop)",
+    "weight": null,
+    "value_gold": null,
+    "effects": null,
+    "note": "Name and drop source from public chat; effects/weight/value unknown — needs an in-game tooltip capture."
+   }
+  ]
  }
 }

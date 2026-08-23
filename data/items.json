@@ -12602,9 +12602,9 @@
     "Detect Animal 100 ft"
    ],
    "hidden_effects": {
-    "status": "suspected",
+    "status": "corroborated",
     "raw_text": "Increases marksman fortify max by 20pts. Allows the wearer to drink one additonal potion past their maximum. | +20 Marksman Max, allows drinking one additional potion past max",
-    "note": "community-reported (upstream dataset)"
+    "note": "The +1-active-potion effect is corroborated by two explicit public reports naming the Cowl (server-general 2026-03-04 'Cowl of the Druid gives +1, making it 6'; player-builds WW guide 2025-09-28) plus a probable third (player-builds 2025-07-16, item named ambiguously). Originally community-reported via the upstream dataset."
    },
    "xref": {
     "np-server-items": "Cowl of the Druid"

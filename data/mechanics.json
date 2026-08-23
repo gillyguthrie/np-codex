@@ -62,6 +62,20 @@
    "url": null,
    "date": null,
    "confidence": "contested"
+  },
+  "s-sgen": {
+   "origin": "discord-public",
+   "channel": "server-general",
+   "url": null,
+   "date": null,
+   "confidence": "player-reported"
+  },
+  "s-igchat": {
+   "origin": "discord-public",
+   "channel": "in-game chat (public relay channel)",
+   "url": null,
+   "date": null,
+   "confidence": "player-reported"
   }
  },
  "constants": [
@@ -748,6 +762,59 @@
    "statement": "Enchanting an axe/pickaxe used to stop it harvesting/mining; dev-confirmed bug, fixed Aug 2022. Two-handed weapons chop/mine better than one-handed (dev-stated); a Fortify Axe effect while mining can raise ore yield per node.",
    "src": "s-dev",
    "date": "2022-08-09"
+  },
+  {
+   "id": "fact:potion-active-limit-values",
+   "statement": "The active-potion limit is 5 at Alchemy 100. The Cowl of the Druid raises the wearer's limit by 1, to 6 — it is the only item in the KB with this effect. Below Alchemy 100 the limit is lower (scales with skill); the exact curve is not recorded (q:potion-limit-curve).",
+   "src": "s-sgen",
+   "date": "2026-03-04",
+   "note": "Multi-source: server-general 2025-10-29 and 2026-03-04; in-game chat 2026-08-18. Cowl +1 named explicitly in server-general 2026-03-04 and a player-builds guide 2025-09-28; a 2025-07-16 player-builds mention of 'a helm' with +1 is probably also the Cowl but is ambiguous — a second +1 item is unconfirmed."
+  },
+  {
+   "id": "fact:potions-per-combine",
+   "statement": "A fully equipped player alchemist gets 5 potions per combine.",
+   "src": "s-sgen",
+   "date": "2026-03-12",
+   "note": "How this composes is unresolved: Metabolist/Miraculous Mix/Immunity mastery texts each add +1 potion count under conditions, and the Secret Master apparatus upstream text claims '+2 additional potions per brew'. See q:potion-count-composition."
+  },
+  {
+   "id": "fact:potion-effect-caps",
+   "statement": "Player-made potion magnitudes and durations are capped server-side: a maximum brewable value per effect exists ('maxed potions'). Elemental shield, resist, and fatigue effects escaped the across-the-board potion cap pass. Potions brewed before the cap pass ('pre-nerf' batches) persist in circulation and can exceed current brew ceilings.",
+   "src": "s-sgen",
+   "date": "2025-04-03",
+   "note": "Era-tagged: reflects the post-rework potion system. 'Maxed'/'max-magnitude' potions reconfirmed in in-game chat 2026-08-06 and 2026-08-19. Exact cap values per effect are not in the KB (q:np-process-deltas)."
+  },
+  {
+   "id": "fact:potion-strength-inputs",
+   "statement": "Potion strength scales with Alchemy skill first, then Intelligence, then Luck; skipping any max-investment source (racial line, Godborn) docks roughly 1 point of potion strength each. Current-era max-potion meta: Breton or Altmer, maxed Alchemy/INT/Luck, Metabolist master class, full Secret Master apparatus set.",
+   "src": "s-sgen",
+   "date": "2026-01-17",
+   "note": "Priority order server-general 2026-01-17; the ~1-point-per-missing-source granularity server-general 2026-07-14. On apparatus impact see c:secret-master-apparatus-impact."
+  },
+  {
+   "id": "fact:ingredient-eating-first-effect",
+   "statement": "Eating an ingredient raw grants only its first-listed effect.",
+   "src": "s-igchat",
+   "date": "2026-08-06"
+  },
+  {
+   "id": "fact:vampire-dust-vampirism-cosmetic",
+   "statement": "The Vampirism effect on Vampire Dust changes the drinker's appearance only; it carries none of the actual vampirism scripting.",
+   "src": "s-igchat",
+   "date": "2026-08-06"
+  },
+  {
+   "id": "fact:mass-brew-caution",
+   "statement": "Very large single combines are risky: a 1000-potion combine triggered the server's anti-cheat auto-ban, and mass brewing lags the server. Community practice is roughly 100 potions per combine with a few seconds between batches.",
+   "src": "s-sgen",
+   "date": "2026-08-12",
+   "note": "Auto-ban case server-general 2026-08-12; the 100-at-a-time practice in-game chat 2026-08-20."
+  },
+  {
+   "id": "fact:alchemist-cm-budget",
+   "statement": "A max-potency alchemist build was publicly accounted at ~950 CM: ~500 in base lines (Curiosity, max INT/Luck/Alchemy plus filler), 200 Metabolist master class, 75+75 for its two master-class abilities, and 100 Godborn.",
+   "src": "s-sgen",
+   "date": "2025-01-08"
   }
  ]
 }

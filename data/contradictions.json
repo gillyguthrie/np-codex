@@ -24,6 +24,21 @@
    "url": null,
    "date": "2026-08",
    "confidence": "measured"
+  },
+  "s-sgen": {
+   "origin": "discord-public",
+   "channel": "server-general",
+   "url": null,
+   "date": null,
+   "confidence": "player-reported"
+  },
+  "s-era2022": {
+   "origin": "player-reported",
+   "channel": null,
+   "url": null,
+   "date": "2022-12",
+   "confidence": "player-reported",
+   "note": "era-tagged 2022 report (role + date only); predates at least one later potion-system change"
   }
  },
  "contradictions": [
@@ -182,6 +197,25 @@
     }
    ],
    "resolution": "Catalog row adopted (-20/-20). A 2023 dev musing with different numbers was pre-ship planning, superseded by shipped values."
+  },
+  {
+   "id": "c:secret-master-apparatus-impact",
+   "subject": "fact:potion-strength-inputs",
+   "topic": "Does Secret Master apparatus affect max potion potency?",
+   "status": "unresolved",
+   "positions": [
+    {
+     "value": "Max-value potions achievable with a plain Master apparatus set given maxed alchemy perks and skill (Breton)",
+     "src": "s-era2022",
+     "date": "2022-12-16"
+    },
+    {
+     "value": "Current max-potion meta includes the full Secret Master apparatus set",
+     "src": "s-sgen",
+     "date": "2026-01-17"
+    }
+   ],
+   "note": "Era difference likely explains the conflict: public 2025-04-03 reports of 'pre-nerf' brewing show the potion system changed at least once between these dates. Treat the 2026 position as current-era guidance; resolution needs a same-ingredient tier comparison (q:apparatus-tier-impact)."
   }
  ]
 }

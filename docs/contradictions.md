@@ -58,3 +58,10 @@ Both values are kept, dated. Never state an unresolved entry flatly.
 - -20 Fire and -20 Magicka Resistance (cumulative -30/-30 with Daywalker) (undated — wiki catalog row, corroborated by an independent 2025 community summary)
 
 **Resolution:** Catalog row adopted (-20/-20). A 2023 dev musing with different numbers was pre-ship planning, superseded by shipped values.
+
+## Does Secret Master apparatus affect max potion potency? — **UNRESOLVED**
+
+- Max-value potions achievable with a plain Master apparatus set given maxed alchemy perks and skill (Breton) (2022-12-16)
+- Current max-potion meta includes the full Secret Master apparatus set (2026-01-17)
+
+*Era difference likely explains the conflict: public 2025-04-03 reports of 'pre-nerf' brewing show the potion system changed at least once between these dates. Treat the 2026 position as current-era guidance; resolution needs a same-ingredient tier comparison (q:apparatus-tier-impact).*
