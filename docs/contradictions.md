@@ -65,3 +65,10 @@ Both values are kept, dated. Never state an unresolved entry flatly.
 - Current max-potion meta includes the full Secret Master apparatus set (2026-01-17)
 
 *Era difference likely explains the conflict: public 2025-04-03 reports of 'pre-nerf' brewing show the potion system changed at least once between these dates. Treat the 2026 position as current-era guidance; resolution needs a same-ingredient tier comparison (q:apparatus-tier-impact).*
+
+## Active-potion limit at Alchemy 100 — **UNRESOLVED**
+
+- 6 at Alchemy 100+ (curve 3/4/5/6 at <50/50-74/75-99/100+) (2019-07-05 — dev announcement introducing the system)
+- 5 at Alchemy 100, with the Cowl of the Druid raising it to 6 (2026-08-18 — consistent multi-source current-era player reports)
+
+*Era gap of seven years — a retune between 2019 and 2025 is likely but no announcement for it was found in the updates digest. Resolution: count max active potions in-game at Alchemy 100 without the Cowl (TODO in-game test list).*

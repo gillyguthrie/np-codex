@@ -1,5 +1,12 @@
 # Changelog
 
+## 2026-08-24 — v0.4.0 dev-announcement ingest (server-updates channel)
+- **New `data/server_eras.json`**: the server timeline — 29 era markers (launches, wipes, system reworks, 2018-2026) plus a 400-entry structured digest of every substantive dev announcement, with stated values preserved. Dev-stated tier; new `s-updates` source. This anchors every era tag in the KB.
+- **Dev-stated upgrades**: fact:potion-effect-caps now cites the 2022-11-12 rework announcement (+ the 2024-08-06 reflect/absorb potion nerf); ench:roll-mechanics confirmed (min/max -> flat average, announced example 10-30 -> 20/20); new facts: spec HP/Magicka factors (2.4/1.6/1.0 and 0.9/1.15/1.5 — reconciling EXACTLY with measured 3.6/2.8/2.2 via a +1.2 base), quickkey potion ban, potion limit clears on death.
+- **New enchanting facts**: the Enchantment Imprinting system (2026-01-15: 10 Gem Dust = 1 EV, Shard of Enchanting, 260 EV imprint cap), the Endowment System (2024-02-18, dev-stated), disenchanting requirements (Enchant 100, level 25).
+- **New contradiction c:active-potion-limit**: dev 2019 curve says 6 at Alchemy 100+ (3/4/5/6); current-era player consensus says 5 (+Cowl -> 6). Unresolved — one in-game count settles it. q:potion-limit-curve and q:np-soul-rework updated with the dev-stated context.
+- SKILL.md file map +1; `np-codex.skill` repackaged.
+
 ## 2026-08-24 — v0.3.2 maintainer infrastructure
 - **New gate: `tools/check_consistency.py`** (gate 5) — cross-file reference checks: storyline tags resolve, storyline key_books exist, items.json vanilla-ref xrefs point at real vanilla_ref records, trainer/skill-book names are valid skills, camp tables agree, community_resources well-formed (URL liveness with --online).
 - **New `tools/eval_questions.json`** — standing persona-eval question bank (17 questions seeded from the 2026-08-23 alchemy and lore evals, with expectation keys). Grown-only: every future eval appends its fresh questions; old ones are the regression net.

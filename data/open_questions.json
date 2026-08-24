@@ -222,8 +222,8 @@
    "id": "q:potion-limit-curve",
    "topic": "Active-potion limit curve and semantics",
    "status": "open",
-   "detail": "The limit is 5 at Alchemy 100 (fact:potion-active-limit-values); the curve below 100 is unrecorded. Also unresolved: whether the limit is per potion type (a garbled in-game line of 2026-08-07 reads '1 potion at a time per <something> up to 5'), and exactly when a used slot frees (on effect end is plausible but publicly unconfirmed). Resolution: in-game measurement at two or three Alchemy values plus a timed two-potion test.",
-   "date": "2026-08-23"
+   "detail": "Dev-stated 2019 curve now on record: 3/4/5/6 at <50/50-74/75-99/100+ (fact:potion-active-limit-values). Current-era player consensus says 5 at 100 — see c:active-potion-limit; one in-game count at Alchemy 100 (no Cowl) resolves it. Still open: whether the limit is per potion type, and the slot-free timing (the limit clearing on death IS settled — dev-stated 2022-06-02).",
+   "date": "2026-08-24"
   },
   {
    "id": "q:potion-count-composition",
@@ -243,8 +243,8 @@
    "id": "q:np-soul-rework",
    "topic": "How souls work on NP",
    "status": "open",
-   "detail": "Souls were deliberately left out of the vanilla ingest because the system is believed reworked. Working hypothesis (maintainer, unverified): a soul's ENCHANT charge value is unchanged from vanilla, but its GOLD value to merchants was nerfed. Resolution: in-game check of two or three filled gems — compare tooltip charge and merchant offer against vanilla values (vanilla creature souls are parseable from the ESMs on demand once this is settled).",
-   "date": "2026-08-23"
+   "detail": "Souls were deliberately left out of the vanilla ingest because the system is believed reworked. Working hypothesis (maintainer, unverified): a soul's ENCHANT charge value is unchanged from vanilla, but its GOLD value to merchants was nerfed. Resolution: in-game check of two or three filled gems — compare tooltip charge and merchant offer against vanilla values (vanilla creature souls are parseable from the ESMs on demand once this is settled). Dev-stated context now on record: Soul Gem Synthesis (perk, 1-hour cooldown, 2019-09-19); Black Soul Gems at Grand capacity usable for self-resurrection (2022-07-23). Neither announcement states soul charge or merchant-gold values — the hypothesis still needs the in-game check.",
+   "date": "2026-08-24"
   }
  ]
 }

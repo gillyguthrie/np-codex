@@ -48,6 +48,13 @@
    "date": "2026-08-23",
    "confidence": "player-reported",
    "note": "Formulas and values read from the workbook's cells verbatim. Community-maintained; parts contributed by multiple players."
+  },
+  "s-updates": {
+   "origin": "dev-doc",
+   "channel": "server-updates announcements (public channel export, 2026-08-24)",
+   "url": null,
+   "date": null,
+   "confidence": "dev-stated"
   }
  },
  "self_enchant_baseline": {
@@ -129,7 +136,8 @@
   {
    "id": "ench:roll-mechanics",
    "statement": "Post-0.8 constant-effect enchants roll between min and max (enchanter mastery/racials improve odds); later reports say outcomes auto-set to the range average. Always enter ranges as 1-X, never X-X.",
-   "src": "s-devdoc"
+   "src": "s-devdoc",
+   "note": "Dev-stated 2022-11-12: player-crafted constant-effect enchants with a min/max range now set to the flat average (announced example: a 10-30 roll became flat 20/20). The 'enter ranges as 1-X' advice predates this change."
   },
   {
    "id": "ench:effect-cap",
@@ -189,6 +197,25 @@
    "src": "s-sheet",
    "date": "2026-08-23",
    "note": "Converges exactly with ench:one-charge-110: at Enchant 110 the multiplier reaches 0 and every item hits the 1-charge minimum."
+  },
+  {
+   "id": "ench:imprinting-system",
+   "statement": "Enchantment Imprinting (introduced 2026-01-15): Enchanters dismantle tradeskill gems at the Resource Salvager into Gem Dust (10 Gem Dust = 1 Enchant Value), condense dust into a Shard of Enchanting at any Forge, enchant the Shard normally, then imprint it onto an unenchanted item of sufficient EV. Imprintable EV cap: 260 (2,600 Gem Dust).",
+   "src": "s-updates",
+   "date": "2026-01-15"
+  },
+  {
+   "id": "ench:endowment-system",
+   "statement": "Endowment System (introduced 2024-02-18, via the enchantress NPC): after unlocking, one constant-effect Robe and one Skirt can be stored and their enchants apply passively without wearing the items (/endow toggles); effects persist through werewolf transformation.",
+   "src": "s-updates",
+   "date": "2024-02-18",
+   "note": "Dev-stated confirmation of the mechanism previously known from the public WW build guide (mechanics fact:ww-gear-no-transfer)."
+  },
+  {
+   "id": "ench:disenchanting",
+   "statement": "Disenchanting exists (introduced with the 2022-11-12 rework): requires Enchant 100 and level 25.",
+   "src": "s-updates",
+   "date": "2022-11-12"
   }
  ],
  "anvil": {

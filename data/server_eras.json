@@ -1,0 +1,4816 @@
+{
+ "_meta": {
+  "description": "NP server timeline: era-defining events and the full dev-announcement digest, from the public server-updates channel (Nov 2018 - Aug 2026). This is the anchor for every era tag in the KB: patch-sensitive values date against these markers. Dev-stated tier throughout.",
+  "conventions": {
+   "eras": "An era marker is a major launch, wipe, or system-wide rework. Values recorded before a relevant marker may be stale; the updates digest is the first place to check when did X change.",
+   "digest": "updates[] summarizes every substantive announcement in fresh words with the announcement's stated values; 'hot' flags entries touching frequently-asked systems."
+  },
+  "counts": {
+   "era_markers": 29,
+   "updates": 400,
+   "span": "2018-11-12 to 2026-08-20"
+  }
+ },
+ "sources": {
+  "s-updates": {
+   "origin": "dev-doc",
+   "channel": "server-updates announcements (public channel export, 2026-08-24)",
+   "url": null,
+   "date": null,
+   "confidence": "dev-stated"
+  }
+ },
+ "eras": [
+  {
+   "date": "11/12/2018",
+   "name": "Server launch — origin point of the timeline",
+   "systems": [
+    "infrastructure"
+   ],
+   "note": "The NP Morrowind server goes live."
+  },
+  {
+   "date": "1/27/2019",
+   "name": "First full PvP system with flagging, karma consequences, and a dedicated PvP currency — a ",
+   "systems": [
+    "combat",
+    "economy"
+   ],
+   "note": "Full PvP system launched: /pvp toggles a [PVP] flag; killing a non-flagged player draws warnings/karma loss/jail, while non-flagged players who kill a flagged player get force-flagged; PvP Tokens are earned from flagged-vs-flagged kills based on level difference, for future unique-item trades."
+  },
+  {
+   "date": "3/3/2019",
+   "name": "Launch of the Perk System — the server's first structured character-progression/mastery sy",
+   "systems": [
+    "masteries",
+    "economy"
+   ],
+   "note": "PlayerPoints acquisition formula changed to front-load early-game gains with a slowing curve. The new Perk System launched in early-release 'wave 1' — refundable perk points, requirement-gated purchases across General/Resist/Regeneration/Racial/Other categories, plus 5 new perk-count-based titles."
+  },
+  {
+   "date": "3/31/2019",
+   "name": "Replacement of the storage system (/msu → Bank) plus a forced host/cost upgrade driven by ",
+   "systems": [
+    "infrastructure",
+    "economy"
+   ],
+   "note": "Core server scripts overhauled for easier future updates. Atkana's new Bank system launched (replacing /msu, free for now), including free public bank chests starting in Balmora and support for storing enchanted items. Server was upgraded to handle a post-Bethesda-free-giveaway player surge, at a projected cost of $60+/month, which the owner warned may require finding a cheaper host."
+  },
+  {
+   "date": "4/7/2019",
+   "name": "Launch of the player guild system",
+   "systems": [
+    "other",
+    "infrastructure"
+   ],
+   "note": "Guild system launched via /guild — Member/Officer/Elder/Master ranks with escalating permissions (invite, kick, edit charter, disband), guild chat via /chatmode guild or /gc, and channel-specific /ignore support."
+  },
+  {
+   "date": "6/17/2019",
+   "name": "Full wipe of all player-made potions plus removal of the potion lag limiter — a foundation",
+   "systems": [
+    "alchemy"
+   ],
+   "note": "The potion limiter script causing lag was removed, but the fix required wiping the entire custom potion record file (379,181 lines / 5mb) since it was full of duplicate/unused potions. All existing player-made potions were lost; affected players got the [The Laggy Professor] title."
+  },
+  {
+   "date": "7/27/2019",
+   "name": "Launch of the Nerevarine Tokens economy — a persistent server currency underpinning many f",
+   "systems": [
+    "economy"
+   ],
+   "note": "Nerevarine Tokens currency launched: earned daily on login, tradeable between players, spendable in a new Exchange Shop that will expand over time with unique server items."
+  },
+  {
+   "date": "9/17/2019",
+   "name": "Launch of the tradeskill system — the server's first crafting progression track beyond alc",
+   "systems": [
+    "tradeskills",
+    "enchanting"
+   ],
+   "note": "Tradeskills launched with Jewelcrafting and Smelting: 10 levels/10 ranks each, using smelted Metals and purchased Molds at Forges/Finery Forges, with rarer creature-dropped Gems giving stronger unique enchantments and more tradeskill XP."
+  },
+  {
+   "date": "2/7/2020",
+   "name": "Full rewrite of the Perk System — a system-wide rework of character progression",
+   "systems": [
+    "masteries"
+   ],
+   "note": "Entire Perk System rewritten: new 'Skills' perk category added, default (non-perk) fortification caps toned down to compensate, and the buggy Regeneration/Focus/Invigoration lines temporarily removed. All spent perk points refunded."
+  },
+  {
+   "date": "2/16/2020",
+   "name": "Complete replacement of the party system with a custom group system, including new loot-sh",
+   "systems": [
+    "other"
+   ],
+   "note": "Custom Group System launched, replacing the old party plugin entirely: 4-member groups, LFG registration, member HP/MP/FP visibility, and early group Nerevarine Token loot-sharing."
+  },
+  {
+   "date": "2/22/2020",
+   "name": "First creature-camp system with respawning spawns and dedicated boss loot — foundation for",
+   "systems": [
+    "camps"
+   ],
+   "note": "Rise of the Atronachs event launched: 3 major atronach territories with rare/boss spawns dropping new or previously-unobtainable unique items. Also introduced a trial Respawn System letting creatures respawn at wilderness camps."
+  },
+  {
+   "date": "1/11/2021",
+   "name": "Launch of the entire fishing system — a large new gameplay loop with its own currency and ",
+   "systems": [
+    "tradeskills",
+    "economy"
+   ],
+   "note": "Fishing system launched: equippable fishing poles, a Fishing Points currency, a Fishing Guru NPC in Khuul running weekly/monthly tournaments (top 3 by largest fish win prizes), bait via /bait, and over 100 new items."
+  },
+  {
+   "date": "2/21/2021",
+   "name": "Explicitly framed by the dev as 'a massive update' — new tradeskill plus an entirely new c",
+   "systems": [
+    "tradeskills",
+    "items"
+   ],
+   "note": "Massive update: Tailoring tradeskill launched (10 levels, craft shirts/pants/robes/etc. via Looms), an Ink & Pen crafting system for patterns/books, and a full Glamour System (Dwemer Analyzer) letting players cosmetically re-skin gear while keeping stats. New Spinningwheel/Loom furniture added."
+  },
+  {
+   "date": "4/1/2021",
+   "name": "Complete rework of leveling (kill-XP, level cap 50), plus new permadeath survival mechanic",
+   "systems": [
+    "combat",
+    "world"
+   ],
+   "note": "Major overhaul: new XP-from-kills leveling system with level cap reduced to 50 (over-leveled players dropped down) and 15 free attribute points per level-up; added a Player Corpse System (must retrieve items from your death location); added Guar/Kagouti mounts; and launched Survival Mode requiring eating/drinking, with permanent character death on starvation/dehydration."
+  },
+  {
+   "date": "6/20/2021",
+   "name": "Large new progression system spanning the entire game (270+ achievements)",
+   "systems": [
+    "other"
+   ],
+   "note": "Achievement system launched with over 270 achievements unlocking points, titles, items, and familiars; achievements viewable via /achievements or on other players. Title system redesigned to no longer use chat-command setting."
+  },
+  {
+   "date": "8/19/2021",
+   "name": "Major content drop adding three new full creature camps with unique bosses",
+   "systems": [
+    "camps"
+   ],
+   "note": "3 new elemental atronach camps added (lava camp central-south, frost camp north-west, shock camp north-east), each with a new rare boss dropping older unique loot plus one new unique item."
+  },
+  {
+   "date": "9/19/2021",
+   "name": "System-wide combat rework capping all resistance types — a foundational defensive-stat cha",
+   "systems": [
+    "combat",
+    "masteries"
+   ],
+   "note": "Introduced an 85% resistance cap on Fire/Frost/Shock/Magicka/Poison/Paralysis/Normal Weapons resistances, and Weakness To effects can no longer push resistance below -100% past that cap (viewable via /resists); perks reset to accommodate. Flagged as experimental and briefly disabled due to resistance values glitching between 1000% and -1000%."
+  },
+  {
+   "date": "11/30/2021",
+   "name": "Major new content system — wild werewolves, infection mechanics, and a new perk line — exp",
+   "systems": [
+    "werewolf-vampire",
+    "masteries"
+   ],
+   "note": "Werewolves of Vvardenfell launched: wild werewolves now roam Vvardenfell at night and can infect players with sanies lupinus; new werewolf perks and quest-unlockable perks added; new Were-Hunter NPCs defend towns; werewolf players are forcibly PVP-flagged in beast form."
+  },
+  {
+   "date": "2/6/2022",
+   "name": "Narrative conclusion of the 0",
+   "systems": [
+    "quests",
+    "other"
+   ],
+   "note": "Server storyline climax: the storyline protagonist (the sainted hero of the Morrowind intro, banisher of the cliff racers) and Azura face Jyggalag on Solstheim, capping the 0.7 server storyline, released as an unlisted cinematic video."
+  },
+  {
+   "date": "5/13/2022",
+   "name": "Launch of the 0",
+   "systems": [
+    "infrastructure"
+   ],
+   "note": "0.8.1 NP server launched. New characters made in the first 7 days get a limited Commemorative Coin."
+  },
+  {
+   "date": "7/23/2022",
+   "name": "New Login Points currency plus a full player-resurrection mechanic built on Black Soul Gem",
+   "systems": [
+    "souls",
+    "economy"
+   ],
+   "note": "Login Points currency launched (10/day, +2 per patron tier, spendable with NPC Duharr). Black Soul Gems added, matching Grand Soul Gem capacity, usable to self-resurrect (reducing last-death XP debt, with resurrection sickness draining attributes); must resurrect within 1 hour of death."
+  },
+  {
+   "date": "5/13/2022",
+   "name": "Launch of NP 0",
+   "systems": [
+    "masteries",
+    "birthsigns-races",
+    "tradeskills",
+    "world",
+    "infrastructure",
+    "economy"
+   ],
+   "note": "0.8.1 launch day notes: character creation rules, all racial/birthsign abilities changed from 0.7, initial tradeskills live (Armor Crafting, Weapon Crafting, Tailoring, Survival, Smelting, Scribing, Shearing, Threading, Cooking), harvesting via axes/pickaxes/skinning knives, the Bank of Vvardenfell opens with purchasable vaults, Survival Mode toggle (7-day lockout once activated), and Class Mastery Points soft-capped at 25x character level with a death-debt system starting at level 6."
+  },
+  {
+   "date": "11/6/2022",
+   "name": "Full Tribunal expansion launch — a major content drop adding an entire new region, questli",
+   "systems": [
+    "world",
+    "quests",
+    "items"
+   ],
+   "note": "Launched the Tribunal expansion: Mournhold accessible to level 30+, full main/side questlines, new achievements, a player manor, instanced player museums, and previously-unobtainable Tribunal items."
+  },
+  {
+   "date": "11/12/2022",
+   "name": "Foundational rework of the alchemy potion formula and the enchanting variable-magnitude/di",
+   "systems": [
+    "alchemy",
+    "enchanting",
+    "souls",
+    "masteries",
+    "birthsigns-races"
+   ],
+   "note": "Major overhaul of alchemy and enchanting. Player-crafted potions get buffed effect magnitudes/durations (closer to vanilla) but with new magnitude and duration caps, boosted further by the Clever Thought mastery and Breton racial (Curiosity). Player-crafted constant-effect enchants with a min/max range now roll a random final value between them, weighted by the player's Enchant/Intelligence/Luck stats and the Alluring Embuement mastery (High Elves get an innate boost, further improved by Elven Grace); existing variable-magnitude items were converted to the min/max average. Introduced Disenchanting: the Disenchanter mastery (100 Enchant, level 25) grants a power that strips a player-made enchant back off an item by consuming an empty black soul gem (which shatters)."
+  },
+  {
+   "date": "2/18/2023",
+   "name": "Introduction of the entire Master Class / Master Class Ability tier — a structural, system",
+   "systems": [
+    "masteries"
+   ],
+   "note": "Major Class Mastery expansion: 313 new CMs added, including 25 Master Classes (level 55, 500 Mastery Points, only one active at a time, plus prerequisites) and 51 Master Class Abilities (require the Master Class and level 60). Forced CM refund; refunds temporarily free (no Rose of Renewal needed)."
+  },
+  {
+   "date": "10/8/2023",
+   "name": "Introduction of the Class Affinity system alongside a large wave of new CM lines and Maste",
+   "systems": [
+    "masteries"
+   ],
+   "note": "Large CM update: Channeler's Bounty reworked into cheap Powers (1 magicka, 120s recast, Fortify Magicka 30/210/640 for 180s); Focused Strike usable with melee/ranged weapons (Hand-to-Hand modifier swapped to Destruction); Favored Disciple armor bonus set to 50/rank with +10 Agility passive, ranks reduced 5->4; Ancient Birthright 4 adds +10 Dodge Bonus. Introduced Class Affinity, replacing the old Class Affinity Technique traits — only one Class Affinity CM can be owned at a time (until a Rose of Renewal is used), locking out CMs from other affinities. Renamed Enforcer MC to Assassin and adjusted several MC requirements/costs. Added a wave of new affinity CM lines (Fervent Belief, Infernal Hatred, Natural Stance, Assassin's Skill, Quick Shot, Stormy Coat, Reflect Dismissal, Deadly Covenant, Plaguebearer's Rune) and three new Master Classes (Slayer, Sensei, Storm Caller). Forced CM refund."
+  },
+  {
+   "date": "7/14/2024",
+   "name": "Launch of Player Housing — a major new game system (purchasable homes, the Furnisher trade",
+   "systems": [
+    "tradeskills",
+    "economy",
+    "world",
+    "items"
+   ],
+   "note": "Launched Player Housing: purchase personalized homes from Bim Joonie (gold cost, level/playtime/quest gates), pay 10% of original cost as biweekly upkeep, demolish/restore vanilla furniture, place crafted/owned furniture with no-collision mode, control public/private access and visitor allow/deny lists, assign co-owners, run Shopkeeper Mode with a secure deposit box and transaction logs, and configure activation behavior (access restriction, teleport points, sounds, messages, exit warps) via Object Settings. Added the Furnisher tradeskill (150+ craftable furnishings via workbench, some modular) and new Crafters Consortium furnishing recipes."
+  },
+  {
+   "date": "6/2/2025",
+   "name": "Launch of the Fishing system — a major new content pillar (2,000+ fish, regional crates, c",
+   "systems": [
+    "tradeskills",
+    "items",
+    "world"
+   ],
+   "note": "Launched the Fishing system: a Fishing Guru in Khuul starts the questline, fishing poles are equippable, 2,000+ unique fish exist with varied weights/ingredient effects, regional fishing crates drop unique items, /fish gives info, two new bosses are catchable and distribute loot to all online participants, and new tradeskill recipes (fishing, jewelcrafting, tailoring) were added."
+  },
+  {
+   "date": "8/20/2026",
+   "name": "Server host migration — one of the explicit major-event categories (the server moving host",
+   "systems": [
+    "infrastructure"
+   ],
+   "note": "Announced a mandatory server host migration requiring the hosting device to be restarted, planned for a low-population window with downtime duration still unknown."
+  }
+ ],
+ "updates": [
+  {
+   "date": "11/12/2018",
+   "gist": "The NP Morrowind server goes live.",
+   "systems": [
+    "infrastructure"
+   ],
+   "stated_values": [],
+   "era_marker": true,
+   "era_note": "Server launch — origin point of the timeline."
+  },
+  {
+   "date": "11/15/2018",
+   "gist": "New attribute and skill progression caps added, scaling up with character level. Speed/Acrobatics/Athletics cap at 150 by level 100; all other attributes/skills cap at 350.",
+   "systems": [
+    "masteries",
+    "world"
+   ],
+   "stated_values": [
+    "Speed/Acrobatics/Athletics cap 150 at level 100",
+    "other attributes/skills cap 350 at level 100"
+   ],
+   "era_marker": false,
+   "era_note": ""
+  },
+  {
+   "date": "11/17/2018",
+   "gist": "Fine-tuned the level-scaled attribute/skill cap tables and introduced the first relic item (Lucky Guar Foot, +25 Luck cap), though acquisition methods aren't live yet. Boots of Blinding Speed temporarily raise Speed cap by 200 while equipped.",
+   "systems": [
+    "masteries",
+    "items"
+   ],
+   "stated_values": [
+    "Speed scale: lvl1=125 cap, lvl10=130, lvl100=150",
+    "other attrs: lvl1=200, lvl10=215, lvl100=350",
+    "Acro/Athletics skills: lvl1=200, lvl10=205, lvl100=250",
+    "other skills: lvl1=200, lvl10=215, lvl100=350",
+    "Boots of Blinding Speed: +200 Speed cap while equipped",
+    "Lucky Guar Foot: +25 Luck cap"
+   ],
+   "era_marker": false,
+   "era_note": ""
+  },
+  {
+   "date": "11/21/2018",
+   "gist": "Added commands to self-clear Mages Guild expulsion (24hr real-time cooldown) and to cure prematurely-acquired Corprus, accessible via /help Quick Fixes.",
+   "systems": [
+    "rules",
+    "quests"
+   ],
+   "stated_values": [
+    "24 hour real-time cooldown on guild expulsion clear"
+   ],
+   "era_marker": false,
+   "era_note": ""
+  },
+  {
+   "date": "11/23/2018",
+   "gist": "Thanksgiving 'Giving Buff' added: using the Turkey Day command grants +50 Endurance and Endurance cap for the rest of the month.",
+   "systems": [
+    "events",
+    "masteries"
+   ],
+   "stated_values": [
+    "Giving Buff: +50 Endurance and Endurance cap"
+   ],
+   "era_marker": false,
+   "era_note": ""
+  },
+  {
+   "date": "11/25/2018",
+   "gist": "Jerthebear's Mobile Storage Unit (MSU) plugin implemented — free, unlimited-capacity personal storage accessible via /msu or /storage.",
+   "systems": [
+    "economy",
+    "infrastructure"
+   ],
+   "stated_values": [
+    "MSU storage is unlimited"
+   ],
+   "era_marker": false,
+   "era_note": ""
+  },
+  {
+   "date": "11/27/2018",
+   "gist": "MSU updated to allow granting other players access to your storage via /msu add/remove <name>.",
+   "systems": [
+    "economy"
+   ],
+   "stated_values": [],
+   "era_marker": false,
+   "era_note": ""
+  },
+  {
+   "date": "11/29/2018",
+   "gist": "Added /wait command to force-progress quests with real-time waits (starting with Tribunal's Blade of Nerevar), and added a large batch of new placeable furniture (containers, temple shrines, lights, decorations).",
+   "systems": [
+    "quests",
+    "items"
+   ],
+   "stated_values": [],
+   "era_marker": false,
+   "era_note": ""
+  },
+  {
+   "date": "12/1/2018",
+   "gist": "Introduced daily-login New Life Presents (open on the 25th), a new /character menu consolidating Quick Fixes and MSU, and a /key items menu tracking presents and other bound currencies.",
+   "systems": [
+    "infrastructure",
+    "events",
+    "items"
+   ],
+   "stated_values": [],
+   "era_marker": false,
+   "era_note": ""
+  },
+  {
+   "date": "12/3/2018",
+   "gist": "Player Bedrolls added to all inventories (craftable: 1 Spools, 1 Bolt of Cloth, 1 Guar Hide) for resting anywhere; reminded players that High Value Scroll (3 paper, craftable) gives much higher enchant value than regular paper for scroll enchanting.",
+   "systems": [
+    "items",
+    "tradeskills",
+    "enchanting"
+   ],
+   "stated_values": [
+    "Bedroll craft: 1 Spools, 1 Bolt of Cloth, 1 Guar Hide",
+    "High Value Scroll craft: 3 paper"
+   ],
+   "era_marker": false,
+   "era_note": "",
+   "hot": true
+  },
+  {
+   "date": "12/4/2018",
+   "gist": "Added /roll (0-100 dice), /vanity toggle, /time, /dayspassed, and /afk commands, plus a new /list display and the ability to craft Skooma via /craft.",
+   "systems": [
+    "infrastructure",
+    "tradeskills"
+   ],
+   "stated_values": [],
+   "era_marker": false,
+   "era_note": ""
+  },
+  {
+   "date": "12/6/2018",
+   "gist": "Boots of Blinding Speed reworked so the blind effect bypasses magic resistance; beast races can now wear the Helm of Blinding Speed variant they transmogrify into.",
+   "systems": [
+    "items",
+    "combat"
+   ],
+   "stated_values": [],
+   "era_marker": false,
+   "era_note": ""
+  },
+  {
+   "date": "12/8/2018",
+   "gist": "Server now auto-restarts and resets cells daily at 6am server time. Adventurers Hall door in Balmora unlocks at 40+ hours playtime and 100+ karma.",
+   "systems": [
+    "infrastructure",
+    "rules"
+   ],
+   "stated_values": [
+    "6am daily server reset",
+    "Adventurers Hall unlock: 40+ hours playtime, 100+ karma"
+   ],
+   "era_marker": false,
+   "era_note": ""
+  },
+  {
+   "date": "12/9/2018",
+   "gist": "Karma system added to the game (details via /server info).",
+   "systems": [
+    "rules"
+   ],
+   "stated_values": [],
+   "era_marker": false,
+   "era_note": ""
+  },
+  {
+   "date": "12/10/2018",
+   "gist": "Karma viewing fixed, Skull of Llevule Andrano given the same fixed-location treatment as the Dwemer Puzzle Box, MSU items restored, and Boots of Blinding Speed blind changed from a fade to instant.",
+   "systems": [
+    "rules",
+    "items"
+   ],
+   "stated_values": [],
+   "era_marker": false,
+   "era_note": ""
+  },
+  {
+   "date": "12/11/2018",
+   "gist": "Added /goodkarma and /badkarma commands, karma now shown in /list, and chat names color green/red based on good/bad karma. [New] tag added for players with ≤2 hours playtime.",
+   "systems": [
+    "rules"
+   ],
+   "stated_values": [
+    "[New] tag threshold: ≤2 hours playtime"
+   ],
+   "era_marker": false,
+   "era_note": ""
+  },
+  {
+   "date": "12/12/2018",
+   "gist": "PlayPoints currency introduced, accumulating over time played (viewable in key items); retroactively credited for time played since Dec 1. New furniture added.",
+   "systems": [
+    "economy",
+    "items"
+   ],
+   "stated_values": [],
+   "era_marker": false,
+   "era_note": ""
+  },
+  {
+   "date": "12/13/2018",
+   "gist": "New characters must have 1 hour playtime before giving karma (anti-alt-abuse). Server reset warnings now fire at 30/15/10/5/2 minutes. PlayerPoints notifications can be hidden/shown via toggle.",
+   "systems": [
+    "rules",
+    "infrastructure",
+    "economy"
+   ],
+   "stated_values": [
+    "karma alt requirement: 1 hour playtime",
+    "reset warnings: 30/15/10/5/2 min"
+   ],
+   "era_marker": false,
+   "era_note": ""
+  },
+  {
+   "date": "12/17/2018",
+   "gist": "Added /p (party-only chat), /proll (party dice), auto-away-response on /tell, an admin Mute command, and admin karma-cooldown bypass.",
+   "systems": [
+    "infrastructure",
+    "rules"
+   ],
+   "stated_values": [],
+   "era_marker": false,
+   "era_note": ""
+  },
+  {
+   "date": "12/17/2018",
+   "gist": "Chat Mode system launched: /chatmode <say/party/local> sets a persistent default chat channel. Cell resets can now be triggered in-game by any admin, not just the server owner.",
+   "systems": [
+    "infrastructure"
+   ],
+   "stated_values": [],
+   "era_marker": false,
+   "era_note": ""
+  },
+  {
+   "date": "12/19/2018",
+   "gist": "Seyda Neen Census Office doors reworked for faster access to a starter ring; added 5 new Pelagiad player houses (35k-100k gold); Shears now let players convert clothing into cloth bolts via a menu; bedroll craft cost reduced to 1 bolt of cloth + 1 guar hide.",
+   "systems": [
+    "world",
+    "economy",
+    "tradeskills"
+   ],
+   "stated_values": [
+    "Pelagiad houses: Murberius Harmevus 100k, Madres Navur 65k, Dralas Gilu 35k, Erval's 35k, Adanja's 65k",
+    "Sadrith Mora - Meluria Seleth's House re-enabled at 150k",
+    "bedroll craft reduced to 1 bolt of cloth + 1 guar hide"
+   ],
+   "era_marker": false,
+   "era_note": ""
+  },
+  {
+   "date": "12/20/2018",
+   "gist": "Titles system launched — 8 initial unlockable titles (Adventurer, Azura's Champion/Failure, Friendly, Guide, Hortator, Nerevarine, Saint) settable via /Title.",
+   "systems": [
+    "other",
+    "rules"
+   ],
+   "stated_values": [
+    "Friendly: 25+ karma",
+    "Guide: 50+ karma",
+    "Saint: 100+ karma"
+   ],
+   "era_marker": false,
+   "era_note": ""
+  },
+  {
+   "date": "12/23/2018",
+   "gist": "Added /r and /reply shortcuts for private messages; new houses added (Bitter Coast Abandoned Shack 500k, Balmora Vori's House 60k, 2 Vivec houses 60k each); stealing items from another player's house now costs -5 karma per item.",
+   "systems": [
+    "infrastructure",
+    "economy",
+    "rules"
+   ],
+   "stated_values": [
+    "Bitter Coast Abandoned Shack: 500k gold",
+    "Balmora Vori's House: 60k gold",
+    "Vivec houses: 60k gold each",
+    "house theft: -5 karma per item"
+   ],
+   "era_marker": false,
+   "era_note": ""
+  },
+  {
+   "date": "12/26/2018",
+   "gist": "Werewolves can now self-revert to human form via /revert command; fixed an HP-duplication exploit on a particular ring.",
+   "systems": [
+    "werewolf-vampire",
+    "items"
+   ],
+   "stated_values": [],
+   "era_marker": false,
+   "era_note": ""
+  },
+  {
+   "date": "12/27/2018",
+   "gist": "Werewolf revert also added to /help menu. Dark Brotherhood attacks (starting the Tribunal main quest) reworked to trigger only when a level 30+ player sleeps on a player bedroll, rather than randomly.",
+   "systems": [
+    "werewolf-vampire",
+    "quests"
+   ],
+   "stated_values": [
+    "Dark Brotherhood trigger: level 30+, sleeping on a player bedroll"
+   ],
+   "era_marker": false,
+   "era_note": ""
+  },
+  {
+   "date": "12/28/2018",
+   "gist": "New Ald-ruhn house (Pellecia Aurrus's, 375,000 gold) added; several inactive house owners had their houses reclaimed.",
+   "systems": [
+    "economy"
+   ],
+   "stated_values": [
+    "Ald-ruhn - Pellecia Aurrus's House: 375,000 gold"
+   ],
+   "era_marker": false,
+   "era_note": ""
+  },
+  {
+   "date": "12/29/2018",
+   "gist": "New /who command shows detailed player info (race/class/level/birthsign) beyond /list. House Merchants (Creeper, Mudcrab) added as purchasable furniture, no longer usable while the player is dead.",
+   "systems": [
+    "infrastructure",
+    "items"
+   ],
+   "stated_values": [],
+   "era_marker": false,
+   "era_note": ""
+  },
+  {
+   "date": "12/31/2018",
+   "gist": "Reworked house door locks (via Atkana's plugin) to properly and fully block entry when locked, closing a prior exploit.",
+   "systems": [
+    "world"
+   ],
+   "stated_values": [],
+   "era_marker": false,
+   "era_note": ""
+  },
+  {
+   "date": "1/7/2019",
+   "gist": "Balmora reverted to normal after holidays; fixed the Ancient Silver Dagger curse and a Nibani Maesa journal-update bug; teased upcoming changes to artifact acquisition and a 'Mysterious Opus' event.",
+   "systems": [
+    "items",
+    "quests"
+   ],
+   "stated_values": [],
+   "era_marker": false,
+   "era_note": ""
+  },
+  {
+   "date": "1/8/2019",
+   "gist": "Death now carries a financial (gold) consequence, though it correctly removes bounty afterward (except player-set bounties). New quest-completion titles added: Inquisitor, Blodskaal, Skaal-Feared.",
+   "systems": [
+    "rules",
+    "other"
+   ],
+   "stated_values": [],
+   "era_marker": false,
+   "era_note": ""
+  },
+  {
+   "date": "1/10/2019",
+   "gist": "Ring of Azura and Moon & Star scripts now strip on pickup; players killed by other players (PvP) no longer lose gold, to curb griefing; Dwemer Puzzle Box and Skull of Llevule Andrano further altered.",
+   "systems": [
+    "items",
+    "combat"
+   ],
+   "stated_values": [],
+   "era_marker": false,
+   "era_note": ""
+  },
+  {
+   "date": "1/13/2019",
+   "gist": "House Merchant furniture prices reduced: Creeper to 800,000 gold, Mudcrab to 1,000,000 gold.",
+   "systems": [
+    "economy"
+   ],
+   "stated_values": [
+    "Creeper: 800,000 gold",
+    "Mudcrab: 1,000,000 gold"
+   ],
+   "era_marker": false,
+   "era_note": ""
+  },
+  {
+   "date": "1/15/2019",
+   "gist": "Imprisonment system added: killing an essential/protected NPC (caravaners, main quest NPCs, merchants, etc.) now costs 10 karma and sends the player to jail — 15 minutes online-time for a first offense, 30 for a second, +15 minutes each time after.",
+   "systems": [
+    "rules"
+   ],
+   "stated_values": [
+    "-10 karma per essential-NPC kill",
+    "jail time: 15 min (1st offense), 30 min (2nd), +15 min per subsequent offense"
+   ],
+   "era_marker": false,
+   "era_note": ""
+  },
+  {
+   "date": "1/17/2019",
+   "gist": "Added a /jail visitor holding area (weapons/magic forcibly sheathed inside); fixed so players lose gold only from NPC/creature deaths, not PvP deaths.",
+   "systems": [
+    "rules",
+    "combat"
+   ],
+   "stated_values": [],
+   "era_marker": false,
+   "era_note": ""
+  },
+  {
+   "date": "1/18/2019",
+   "gist": "Fixed multiple jail bugs and the Malacath Helm of Bearclaw quest; added 4 new player houses (50k-395k) and 7 new roaming merchants; the global world kill count no longer counts several essential characters, reducing quest-blocking dead-NPC issues.",
+   "systems": [
+    "economy",
+    "quests"
+   ],
+   "stated_values": [
+    "Gnisis - Almu Cave Dwelling: 50,000 gold",
+    "Maar Gan - Garry's Hut: 395,000 gold",
+    "Vivec - St. Olms Upper North-One: 200,000 gold",
+    "Vos - Ulvil Llothas's Dramhouse: 200,000 gold"
+   ],
+   "era_marker": false,
+   "era_note": ""
+  },
+  {
+   "date": "1/26/2019",
+   "gist": "New characters get a more vanilla Morrowind start; Jail reworked with a Suran entrance door; 12 inactive-owner houses re-opened for purchase; PvP implementation teased as beginning.",
+   "systems": [
+    "world",
+    "economy"
+   ],
+   "stated_values": [],
+   "era_marker": false,
+   "era_note": ""
+  },
+  {
+   "date": "1/27/2019",
+   "gist": "Full PvP system launched: /pvp toggles a [PVP] flag; killing a non-flagged player draws warnings/karma loss/jail, while non-flagged players who kill a flagged player get force-flagged; PvP Tokens are earned from flagged-vs-flagged kills based on level difference, for future unique-item trades.",
+   "systems": [
+    "combat",
+    "economy"
+   ],
+   "stated_values": [],
+   "era_marker": true,
+   "era_note": "First full PvP system with flagging, karma consequences, and a dedicated PvP currency — a foundational combat/economy system."
+  },
+  {
+   "date": "2/5/2019",
+   "gist": "Non-flagged players auto-flag for PvP upon killing another player; /pvp cooldown raised from 5 to 15 minutes; certain items (Ebony Arrow of Slaying, Spring Darts) made PvP-flag-only usable; daily reset now also clears the world kill count.",
+   "systems": [
+    "combat",
+    "items"
+   ],
+   "stated_values": [
+    "/pvp cooldown: 5 → 15 minutes"
+   ],
+   "era_marker": false,
+   "era_note": ""
+  },
+  {
+   "date": "2/7/2019",
+   "gist": "A method of potion abuse (extreme speed/jump/swim exploitation) was discovered and is not yet fixable; players caught using it get one warning, then a ban.",
+   "systems": [
+    "alchemy",
+    "rules"
+   ],
+   "stated_values": [],
+   "era_marker": false,
+   "era_note": "",
+   "hot": true
+  },
+  {
+   "date": "2/14/2019",
+   "gist": "Heart's Day weekend event launched with 4 unique tradeable items and a unique event-only title.",
+   "systems": [
+    "events"
+   ],
+   "stated_values": [],
+   "era_marker": false,
+   "era_note": ""
+  },
+  {
+   "date": "3/3/2019",
+   "gist": "PlayerPoints acquisition formula changed to front-load early-game gains with a slowing curve. The new Perk System launched in early-release 'wave 1' — refundable perk points, requirement-gated purchases across General/Resist/Regeneration/Racial/Other categories, plus 5 new perk-count-based titles.",
+   "systems": [
+    "masteries",
+    "economy"
+   ],
+   "stated_values": [
+    "Regeneration perks heal their listed amount every 6 seconds in-game"
+   ],
+   "era_marker": true,
+   "era_note": "Launch of the Perk System — the server's first structured character-progression/mastery system, precursor to later Class Masteries.",
+   "hot": true
+  },
+  {
+   "date": "3/19/2019",
+   "gist": "Cell resets reworked to occur every 2.5 real-time hours (only when the cell is empty) and now restore dead actors without removing player-placed objects; server-wide resets remain the full twice-daily reset. Banking and guild systems are in development but not yet working.",
+   "systems": [
+    "infrastructure"
+   ],
+   "stated_values": [
+    "cell resets: every 2.5 real-time hours"
+   ],
+   "era_marker": false,
+   "era_note": ""
+  },
+  {
+   "date": "3/31/2019",
+   "gist": "Core server scripts overhauled for easier future updates. Atkana's new Bank system launched (replacing /msu, free for now), including free public bank chests starting in Balmora and support for storing enchanted items. Server was upgraded to handle a post-Bethesda-free-giveaway player surge, at a projected cost of $60+/month, which the owner warned may require finding a cheaper host.",
+   "systems": [
+    "infrastructure",
+    "economy"
+   ],
+   "stated_values": [
+    "projected server cost: $60+/month"
+   ],
+   "era_marker": true,
+   "era_note": "Replacement of the storage system (/msu → Bank) plus a forced host/cost upgrade driven by a major player influx."
+  },
+  {
+   "date": "4/7/2019",
+   "gist": "Guild system launched via /guild — Member/Officer/Elder/Master ranks with escalating permissions (invite, kick, edit charter, disband), guild chat via /chatmode guild or /gc, and channel-specific /ignore support.",
+   "systems": [
+    "other",
+    "infrastructure"
+   ],
+   "stated_values": [],
+   "era_marker": true,
+   "era_note": "Launch of the player guild system."
+  },
+  {
+   "date": "4/12/2019",
+   "gist": "/warp now requires having physically visited a location first; /bank via chat command now costs 1,000 gold (free via physical Bank Chests); /oldmsu officially retired with a one-time item-recovery command.",
+   "systems": [
+    "economy",
+    "world"
+   ],
+   "stated_values": [
+    "/bank chat-command fee: 1,000 gold"
+   ],
+   "era_marker": false,
+   "era_note": ""
+  },
+  {
+   "date": "4/19/2019",
+   "gist": "Eggstreme Egghunt event launched in Balmora: 150 hidden eggs, three limited-time titles, and unique event items.",
+   "systems": [
+    "events"
+   ],
+   "stated_values": [
+    "150 eggs to find"
+   ],
+   "era_marker": false,
+   "era_note": ""
+  },
+  {
+   "date": "5/4/2019",
+   "gist": "Patreon officially went live for NP; benefits are non-pay2win and tiers require in-game confirmation (up to 24hrs). New doorway furniture added.",
+   "systems": [
+    "economy"
+   ],
+   "stated_values": [],
+   "era_marker": false,
+   "era_note": ""
+  },
+  {
+   "date": "5/5/2019",
+   "gist": "Added /ignore <pid> and /unignore <pid/name> commands plus a View Ignored Players list in the ignore menu.",
+   "systems": [
+    "infrastructure"
+   ],
+   "stated_values": [],
+   "era_marker": false,
+   "era_note": ""
+  },
+  {
+   "date": "5/24/2019",
+   "gist": "Fixed nude-player bug, enchanted-item hiding on relog, and soul gems losing their soul when bought from a player market; also fixed cure-corprus quick-fix and a kick-loop script.",
+   "systems": [
+    "souls",
+    "enchanting",
+    "items"
+   ],
+   "stated_values": [],
+   "era_marker": false,
+   "era_note": "",
+   "hot": true
+  },
+  {
+   "date": "5/25/2019",
+   "gist": "Creature merchants now restock gold on dialogue re-entry. A Doors furniture category (15+ new doors) added, plus Tier 5 patron furniture.",
+   "systems": [
+    "items",
+    "economy"
+   ],
+   "stated_values": [],
+   "era_marker": false,
+   "era_note": ""
+  },
+  {
+   "date": "5/26/2019",
+   "gist": "Extended the Witness Protection List of jail-triggering essential NPCs to all silt strider caravaners, shipmasters, gondoliers, and main quest NPCs. Added 16 new creature-kill-count titles across 8 creature types.",
+   "systems": [
+    "rules",
+    "other"
+   ],
+   "stated_values": [],
+   "era_marker": false,
+   "era_note": ""
+  },
+  {
+   "date": "5/31/2019",
+   "gist": "Added Free Select Furniture mode for real-time selection/adjustment of activatable placed furniture inside owned homes. Launched a Writeable Books system (/book) letting players create custom in-game books.",
+   "systems": [
+    "items"
+   ],
+   "stated_values": [],
+   "era_marker": false,
+   "era_note": ""
+  },
+  {
+   "date": "6/9/2019",
+   "gist": "Health calculation reworked to be based on current Endurance in real time rather than fixed at level-up, removing the need to front-load Endurance early. Added the Hearty perk line (boosts HPFactor) and a /csheet command showing attribute fortification maxes.",
+   "systems": [
+    "combat",
+    "masteries"
+   ],
+   "stated_values": [],
+   "era_marker": false,
+   "era_note": "",
+   "hot": true
+  },
+  {
+   "date": "6/16/2019",
+   "gist": "Auto-Purge Housing system added: houses whose owner hasn't entered in ~30 days have ownership, market, and chest contents wiped on server restart (placed furniture and dropped items are preserved/returned).",
+   "systems": [
+    "world",
+    "rules"
+   ],
+   "stated_values": [
+    "30-day inactivity threshold for house purge"
+   ],
+   "era_marker": false,
+   "era_note": ""
+  },
+  {
+   "date": "6/17/2019",
+   "gist": "The potion limiter script causing lag was removed, but the fix required wiping the entire custom potion record file (379,181 lines / 5mb) since it was full of duplicate/unused potions. All existing player-made potions were lost; affected players got the [The Laggy Professor] title.",
+   "systems": [
+    "alchemy"
+   ],
+   "stated_values": [
+    "potion file: 379,181 lines, 5mb before wipe"
+   ],
+   "era_marker": true,
+   "era_note": "Full wipe of all player-made potions plus removal of the potion lag limiter — a foundational alchemy-system reset.",
+   "hot": true
+  },
+  {
+   "date": "6/19/2019",
+   "gist": "Fixed a batch of quest bugs, including writable-notes paper consumption, new-character quest-item handoffs, Adondasi Sadalvel resets, and NPC-following resets across 13 escort quests.",
+   "systems": [
+    "quests"
+   ],
+   "stated_values": [],
+   "era_marker": false,
+   "era_note": ""
+  },
+  {
+   "date": "6/20/2019",
+   "gist": "Pool of Forgetfulness now downgrades all level-100 skills to 15 once per real-time day, letting players who maxed out continue progressing.",
+   "systems": [
+    "masteries",
+    "other"
+   ],
+   "stated_values": [
+    "Pool of Forgetfulness: level-100 skills → 15, once per real day"
+   ],
+   "era_marker": false,
+   "era_note": ""
+  },
+  {
+   "date": "6/29/2019",
+   "gist": "Rare open-world items (daedric, artifacts) now respawn over time instead of only on hard resets; Bloodmoon/Tribunal daedric gear is now obtainable on the mainland. Six specific enchanted items (Marara's Ring, Robe of the Drake's Pride, Wraithguards, Darksun Shield, Helm of Graff the White, Dagger of Symmachus) had their enchantments changed. Fixed a bug letting players become unkillable.",
+   "systems": [
+    "enchanting",
+    "items"
+   ],
+   "stated_values": [],
+   "era_marker": false,
+   "era_note": "",
+   "hot": true
+  },
+  {
+   "date": "7/2/2019",
+   "gist": "New perk added: Kagrenac's Intuition (General-Other, requires level 20 + 25 PlayerPoints) — informs the player of nearby rare items.",
+   "systems": [
+    "masteries"
+   ],
+   "stated_values": [
+    "Kagrenac's Intuition requirement: level 20, 25 PlayerPoints"
+   ],
+   "era_marker": false,
+   "era_note": "",
+   "hot": true
+  },
+  {
+   "date": "7/5/2019",
+   "gist": "Potions and scrolls can no longer be bound to Quick Keys. Introduced an active-potion limit tied to Alchemy skill: <50 Alchemy = 3 active potions, 50-74 = 4, 75-99 = 5, 100+ = 6.",
+   "systems": [
+    "alchemy",
+    "items"
+   ],
+   "stated_values": [
+    "active potion cap: <50 Alchemy=3, 50-74=4, 75-99=5, 100+=6"
+   ],
+   "era_marker": false,
+   "era_note": "",
+   "hot": true
+  },
+  {
+   "date": "7/15/2019",
+   "gist": "Mail System launched via /mail — send to online/offline players, 50-message inbox limit, read/unread color coding — plus admin-only Notifications that can't be deleted.",
+   "systems": [
+    "infrastructure"
+   ],
+   "stated_values": [
+    "mail inbox limit: 50 messages"
+   ],
+   "era_marker": false,
+   "era_note": ""
+  },
+  {
+   "date": "7/27/2019",
+   "gist": "Nerevarine Tokens currency launched: earned daily on login, tradeable between players, spendable in a new Exchange Shop that will expand over time with unique server items.",
+   "systems": [
+    "economy"
+   ],
+   "stated_values": [],
+   "era_marker": true,
+   "era_note": "Launch of the Nerevarine Tokens economy — a persistent server currency underpinning many future systems (exchange shop, camps, resurrection, etc.)."
+  },
+  {
+   "date": "7/31/2019",
+   "gist": "Players with -10 karma or worse can no longer warp to their own home.",
+   "systems": [
+    "rules"
+   ],
+   "stated_values": [
+    "home-warp block threshold: karma ≤ -10"
+   ],
+   "era_marker": false,
+   "era_note": ""
+  },
+  {
+   "date": "8/6/2019",
+   "gist": "Perk purchase GUI overhauled with Category (General/Racial) and Viewing (Available/Owned) toggles; perks whose requirements aren't met are now hidden as Locked. All perks reset for players.",
+   "systems": [
+    "masteries"
+   ],
+   "stated_values": [],
+   "era_marker": false,
+   "era_note": "",
+   "hot": true
+  },
+  {
+   "date": "8/15/2019",
+   "gist": "Fixed players not receiving intact souls when soul gems were placed too quickly.",
+   "systems": [
+    "souls"
+   ],
+   "stated_values": [],
+   "era_marker": false,
+   "era_note": "",
+   "hot": true
+  },
+  {
+   "date": "8/16/2019",
+   "gist": "Trapped Black Soul Gems added to the Token Exchange (Misc. Server Items) — use to return to your death location when slain by an NPC, with minor side effects. Weekend logins now grant +5 bonus Nerevarine Tokens every Fri/Sat/Sun.",
+   "systems": [
+    "souls",
+    "economy"
+   ],
+   "stated_values": [
+    "+5 bonus Nerevarine Tokens Fri/Sat/Sun"
+   ],
+   "era_marker": false,
+   "era_note": "",
+   "hot": true
+  },
+  {
+   "date": "9/8/2019",
+   "gist": "Nerevarine Tokens now have a chance to drop from any creature and go straight to the currency stash on loot. Rose of Renewal moved to creature-only drops, with increased rate and its 1-per-day restriction removed.",
+   "systems": [
+    "economy",
+    "items"
+   ],
+   "stated_values": [],
+   "era_marker": false,
+   "era_note": ""
+  },
+  {
+   "date": "9/17/2019",
+   "gist": "Tradeskills launched with Jewelcrafting and Smelting: 10 levels/10 ranks each, using smelted Metals and purchased Molds at Forges/Finery Forges, with rarer creature-dropped Gems giving stronger unique enchantments and more tradeskill XP.",
+   "systems": [
+    "tradeskills",
+    "enchanting"
+   ],
+   "stated_values": [],
+   "era_marker": true,
+   "era_note": "Launch of the tradeskill system — the server's first crafting progression track beyond alchemy/enchanting."
+  },
+  {
+   "date": "9/19/2019",
+   "gist": "Racial power toggles and Soul Gem Synthesis moved from spells to a new Perk Effects menu; Soul Gem Synthesis now has a 1-hour real-time cooldown.",
+   "systems": [
+    "souls",
+    "masteries"
+   ],
+   "stated_values": [
+    "Soul Gem Synthesis cooldown: 1 hour"
+   ],
+   "era_marker": false,
+   "era_note": "",
+   "hot": true
+  },
+  {
+   "date": "9/23/2019",
+   "gist": "Player Markets can now price items in gold or Nerevarine Tokens, with color-coded GUI and offline sale notifications.",
+   "systems": [
+    "economy"
+   ],
+   "stated_values": [],
+   "era_marker": false,
+   "era_note": ""
+  },
+  {
+   "date": "9/27/2019",
+   "gist": "Player Housing GUI overhauled: houses auto-select instead of manual picking, co-owners can now toggle locks and warp home; added /home and /hinfo commands.",
+   "systems": [
+    "world"
+   ],
+   "stated_values": [],
+   "era_marker": false,
+   "era_note": ""
+  },
+  {
+   "date": "10/18/2019",
+   "gist": "Morroween event begins with 17 unique obtainable items and one previously-unimplemented vanilla item.",
+   "systems": [
+    "events"
+   ],
+   "stated_values": [],
+   "era_marker": false,
+   "era_note": ""
+  },
+  {
+   "date": "10/22/2019",
+   "gist": "Added a /delete command for full character deletion (bank, furniture, mail included). Morroween loot syncing and Jack's drop rates fixed.",
+   "systems": [
+    "infrastructure",
+    "events"
+   ],
+   "stated_values": [],
+   "era_marker": false,
+   "era_note": ""
+  },
+  {
+   "date": "10/23/2019",
+   "gist": "Added /bank add/remove <name> to grant/revoke access to your personal bank, and free sneak-access to shared player storage via Balmora Chests.",
+   "systems": [
+    "economy"
+   ],
+   "stated_values": [],
+   "era_marker": false,
+   "era_note": ""
+  },
+  {
+   "date": "10/24/2019",
+   "gist": "Player Bounty System launched via /bounty: place stacking gold/token bounties on negative-karma players (once per 30 min); whoever kills the bountied player collects, and the target gets a 30-min bounty-immunity window.",
+   "systems": [
+    "rules",
+    "economy"
+   ],
+   "stated_values": [
+    "bounty placement cooldown: 30 minutes",
+    "post-kill bounty immunity: 30 minutes"
+   ],
+   "era_marker": false,
+   "era_note": ""
+  },
+  {
+   "date": "11/3/2019",
+   "gist": "Fast Travel menu reworked into a list GUI (/warp, /fasttravel, /ft, /port) with undiscovered locations shown in grey.",
+   "systems": [
+    "world"
+   ],
+   "stated_values": [],
+   "era_marker": false,
+   "era_note": ""
+  },
+  {
+   "date": "11/11/2019",
+   "gist": "Housing reprimand system reworked to require actual active playtime (not just login/logout) to keep a house, with warnings when the deadline is within 15 days.",
+   "systems": [
+    "world"
+   ],
+   "stated_values": [
+    "housing warning threshold: 15 days from deadline"
+   ],
+   "era_marker": false,
+   "era_note": ""
+  },
+  {
+   "date": "11/12/2019",
+   "gist": "1-Year Anniversary event: all characters logging in 11/12–11/17 get a commemorative coin, plus heavily increased Nerevarine Token drop rates.",
+   "systems": [
+    "events"
+   ],
+   "stated_values": [],
+   "era_marker": false,
+   "era_note": ""
+  },
+  {
+   "date": "11/15/2019",
+   "gist": "Housing list now sorted alphabetically. Added 16 new creature-kill-count titles (e.g. Skeleton Slayer/King, Sphere of Fear, Black Betty).",
+   "systems": [
+    "other",
+    "world"
+   ],
+   "stated_values": [
+    "title thresholds: 100 / 1,000 kills per creature type"
+   ],
+   "era_marker": false,
+   "era_note": ""
+  },
+  {
+   "date": "11/19/2019",
+   "gist": "Player Inspect now correctly shows modified (not just base) attributes/skills, plus each stat's fortification cap in yellow.",
+   "systems": [
+    "other"
+   ],
+   "stated_values": [],
+   "era_marker": false,
+   "era_note": ""
+  },
+  {
+   "date": "11/20/2019",
+   "gist": "Equipment now stays equipped even if it would push a stat past its fortification cap, though the stat itself remains capped.",
+   "systems": [
+    "combat",
+    "items"
+   ],
+   "stated_values": [],
+   "era_marker": false,
+   "era_note": ""
+  },
+  {
+   "date": "11/23/2019",
+   "gist": "Vanilla NPCs banned from being placed inside player houses, in response to an in-game incident.",
+   "systems": [
+    "rules",
+    "world"
+   ],
+   "stated_values": [],
+   "era_marker": false,
+   "era_note": ""
+  },
+  {
+   "date": "11/24/2019",
+   "gist": "Equip Set Macros launched: bind up to 5 named gear loadouts, activated via /es1 through /es5.",
+   "systems": [
+    "items"
+   ],
+   "stated_values": [
+    "5 equip set macro slots"
+   ],
+   "era_marker": false,
+   "era_note": ""
+  },
+  {
+   "date": "11/27/2019",
+   "gist": "Dynamic Object Placement added: the last placed/dropped item can be moved and rotated in real time in owned/co-owned homes via weapon-ready to rotate, crouch to place.",
+   "systems": [
+    "items"
+   ],
+   "stated_values": [],
+   "era_marker": false,
+   "era_note": ""
+  },
+  {
+   "date": "11/30/2019",
+   "gist": "New Life Festival 2019 launched: daily login presents redeemable for gifts, viewable in /keyitems.",
+   "systems": [
+    "events"
+   ],
+   "stated_values": [],
+   "era_marker": false,
+   "era_note": ""
+  },
+  {
+   "date": "12/5/2019",
+   "gist": "New Racial perks added to the Perk System.",
+   "systems": [
+    "masteries"
+   ],
+   "stated_values": [],
+   "era_marker": false,
+   "era_note": "",
+   "hot": true
+  },
+  {
+   "date": "12/17/2019",
+   "gist": "Ebony Scimitar added to the token shop's Unique Weapons category; Player Inspection and Character Sheet now show a greenish highlight for stats boosted by spells/enchantments; Karma cooldown switched from server-time to user-playtime-based.",
+   "systems": [
+    "economy",
+    "rules"
+   ],
+   "stated_values": [],
+   "era_marker": false,
+   "era_note": ""
+  },
+  {
+   "date": "12/18/2019",
+   "gist": "New unified banking menu on bank chest activation: access your own bank, others' shared banks, and manage who has access to yours.",
+   "systems": [
+    "economy"
+   ],
+   "stated_values": [],
+   "era_marker": false,
+   "era_note": ""
+  },
+  {
+   "date": "1/12/2020",
+   "gist": "Profanity filter no longer lower-cases whole messages, and deliberate filter-bypassing now escalates to a ban. Chat Shortcuts introduced (%0 name, %1 level, %2 race, %3 class) for use in chat messages.",
+   "systems": [
+    "infrastructure",
+    "rules"
+   ],
+   "stated_values": [],
+   "era_marker": false,
+   "era_note": ""
+  },
+  {
+   "date": "1/13/2020",
+   "gist": "Added the %p# chat shortcut to highlight and display a player's name by PID.",
+   "systems": [
+    "infrastructure"
+   ],
+   "stated_values": [],
+   "era_marker": false,
+   "era_note": ""
+  },
+  {
+   "date": "1/14/2020",
+   "gist": "Added %l and %cell chat shortcuts for current location/cell name; fixed Zainab Camp fast-travel visibility and /r message spacing.",
+   "systems": [
+    "infrastructure"
+   ],
+   "stated_values": [],
+   "era_marker": false,
+   "era_note": ""
+  },
+  {
+   "date": "1/15/2020",
+   "gist": "Added @# chat shortcut (equivalent to %p#) with tell-sound playback for the mentioned player; fixed Zainab Camp, Seyda Neen Census door, and a guild-title/ignore crash.",
+   "systems": [
+    "infrastructure"
+   ],
+   "stated_values": [],
+   "era_marker": false,
+   "era_note": ""
+  },
+  {
+   "date": "1/17/2020",
+   "gist": "Boots/Helm of Blinding Speed no longer increase the Speed fortification max.",
+   "systems": [
+    "items"
+   ],
+   "stated_values": [],
+   "era_marker": false,
+   "era_note": ""
+  },
+  {
+   "date": "1/31/2020",
+   "gist": "Default /tell sound changed to a private-only cue; fixed a crashless bug with looting cursed items, added failsafe checks to Regeneration/Focus/Invigoration perks, and further blocked death-gating to Solstheim. Nerevarine Token drop rate more than doubled for the weekend.",
+   "systems": [
+    "masteries",
+    "rules"
+   ],
+   "stated_values": [],
+   "era_marker": false,
+   "era_note": "",
+   "hot": true
+  },
+  {
+   "date": "2/7/2020",
+   "gist": "Entire Perk System rewritten: new 'Skills' perk category added, default (non-perk) fortification caps toned down to compensate, and the buggy Regeneration/Focus/Invigoration lines temporarily removed. All spent perk points refunded.",
+   "systems": [
+    "masteries"
+   ],
+   "stated_values": [],
+   "era_marker": true,
+   "era_note": "Full rewrite of the Perk System — a system-wide rework of character progression.",
+   "hot": true
+  },
+  {
+   "date": "2/11/2020",
+   "gist": "New Specialization perk category added, unlocking perks tied to a character's class specialization.",
+   "systems": [
+    "masteries"
+   ],
+   "stated_values": [],
+   "era_marker": false,
+   "era_note": "",
+   "hot": true
+  },
+  {
+   "date": "2/13/2020",
+   "gist": "Regeneration, Focus, and Invigoration perk lines restored to the Perk System.",
+   "systems": [
+    "masteries"
+   ],
+   "stated_values": [],
+   "era_marker": false,
+   "era_note": "",
+   "hot": true
+  },
+  {
+   "date": "2/14/2020",
+   "gist": "Hearts Day 2020 weekend event launched with 5 unique tradeable items and a unique event-only title.",
+   "systems": [
+    "events"
+   ],
+   "stated_values": [],
+   "era_marker": false,
+   "era_note": ""
+  },
+  {
+   "date": "2/16/2020",
+   "gist": "Custom Group System launched, replacing the old party plugin entirely: 4-member groups, LFG registration, member HP/MP/FP visibility, and early group Nerevarine Token loot-sharing.",
+   "systems": [
+    "other"
+   ],
+   "stated_values": [
+    "group size cap: 4 members"
+   ],
+   "era_marker": true,
+   "era_note": "Complete replacement of the party system with a custom group system, including new loot-sharing infrastructure."
+  },
+  {
+   "date": "2/22/2020",
+   "gist": "Rise of the Atronachs event launched: 3 major atronach territories with rare/boss spawns dropping new or previously-unobtainable unique items. Also introduced a trial Respawn System letting creatures respawn at wilderness camps.",
+   "systems": [
+    "camps"
+   ],
+   "stated_values": [],
+   "era_marker": true,
+   "era_note": "First creature-camp system with respawning spawns and dedicated boss loot — foundation for all later camp content.",
+   "hot": true
+  },
+  {
+   "date": "2/26/2020",
+   "gist": "Atronachs return to Vvardenfell after a brief retreat, with the blazing atronach group relocated further south, as a continued test of the spawn system.",
+   "systems": [
+    "camps"
+   ],
+   "stated_values": [],
+   "era_marker": false,
+   "era_note": "",
+   "hot": true
+  },
+  {
+   "date": "2/28/2020",
+   "gist": "Gardening added: players can plant/harvest ingredients in owned homes via purchasable planters, with bonemeal speeding up seed-stage growth.",
+   "systems": [
+    "tradeskills"
+   ],
+   "stated_values": [],
+   "era_marker": false,
+   "era_note": ""
+  },
+  {
+   "date": "3/16/2020",
+   "gist": "Mail messages can now be edited in-place (recipient/subject/body) instead of restarting from scratch.",
+   "systems": [
+    "infrastructure"
+   ],
+   "stated_values": [],
+   "era_marker": false,
+   "era_note": ""
+  },
+  {
+   "date": "3/18/2020",
+   "gist": "Tier 1 patrons get an Ingredient Pouch and Tier 2 patrons a Gem Pouch — remote storage that auto-returns items if patron status lapses; pouches can only be removed via personal bank.",
+   "systems": [
+    "economy"
+   ],
+   "stated_values": [],
+   "era_marker": false,
+   "era_note": ""
+  },
+  {
+   "date": "3/22/2020",
+   "gist": "Chatmode script rewritten: /say now sends inline, /local and /localemote became distance-based instead of cell-based, and a new /shout (/sh) long-range chat channel added.",
+   "systems": [
+    "infrastructure"
+   ],
+   "stated_values": [],
+   "era_marker": false,
+   "era_note": ""
+  },
+  {
+   "date": "3/22/2020",
+   "gist": "Ignore feature overhauled: can now ignore entire chat channels (Say/Local/Shout/Group/Guild/Players), with staff members exempt from being ignored.",
+   "systems": [
+    "infrastructure"
+   ],
+   "stated_values": [],
+   "era_marker": false,
+   "era_note": ""
+  },
+  {
+   "date": "3/29/2020",
+   "gist": "Balmora Signpost Noteboard added: each player can post one note (visible up to 30 days), removable by staff for offensive content.",
+   "systems": [
+    "world"
+   ],
+   "stated_values": [
+    "note visibility: up to 30 days"
+   ],
+   "era_marker": false,
+   "era_note": ""
+  },
+  {
+   "date": "3/31/2020",
+   "gist": "Mannequins added via Token Exchange for display/training-dummy use in owned homes (humanoid only). Atronach camp spawn system further adjusted.",
+   "systems": [
+    "items",
+    "camps"
+   ],
+   "stated_values": [],
+   "era_marker": false,
+   "era_note": "",
+   "hot": true
+  },
+  {
+   "date": "4/1/2020",
+   "gist": "April Fools: an Auction System (/auctions, up to 20 token-only listings, 12-48hr duration) and hyperlink/item-link chat were added.",
+   "systems": [
+    "economy"
+   ],
+   "stated_values": [
+    "max 20 active auctions, 12-48hr each"
+   ],
+   "era_marker": false,
+   "era_note": ""
+  },
+  {
+   "date": "4/7/2020",
+   "gist": "Players can now toggle off server messages (pro tips, Discord ads); /auctions command removed (the April Fools auction system was temporary).",
+   "systems": [
+    "infrastructure"
+   ],
+   "stated_values": [],
+   "era_marker": false,
+   "era_note": ""
+  },
+  {
+   "date": "4/10/2020",
+   "gist": "Eggstreme Egghunt returns for the weekend: 150 eggs, 3 limited titles, boosted Nerevarine Token drop rate.",
+   "systems": [
+    "events"
+   ],
+   "stated_values": [
+    "150 eggs to find"
+   ],
+   "era_marker": false,
+   "era_note": ""
+  },
+  {
+   "date": "5/5/2020",
+   "gist": "Fast Travel reworked to use Warp Charges: players start with 5, regenerating 1 per hour (even offline, but only credited while online), capped at 5.",
+   "systems": [
+    "world"
+   ],
+   "stated_values": [
+    "5 max warp charges, 1 per hour regen"
+   ],
+   "era_marker": false,
+   "era_note": ""
+  },
+  {
+   "date": "5/8/2020",
+   "gist": "Added a toggle for other players' login/logout chat messages; exploit fix prevents placing items inside merchant containers (except the Mages Guild soulgem quest).",
+   "systems": [
+    "infrastructure",
+    "rules"
+   ],
+   "stated_values": [],
+   "era_marker": false,
+   "era_note": ""
+  },
+  {
+   "date": "5/9/2020",
+   "gist": "Added a tameable wild Silt Strider mount to Vvardenfell, plus several NPC/quest fixes.",
+   "systems": [
+    "world",
+    "quests"
+   ],
+   "stated_values": [],
+   "era_marker": false,
+   "era_note": ""
+  },
+  {
+   "date": "5/26/2020",
+   "gist": "Orcish Brute perk's HPFactor bonus lowered from 2 to 1; added the Bigger Pockets general perk line (per-rank constant feather); reworked the Khajiit racial Tumbler's Grace. All players' perks reset.",
+   "systems": [
+    "masteries"
+   ],
+   "stated_values": [
+    "Orcish Brute HPFactor: 2 → 1"
+   ],
+   "era_marker": false,
+   "era_note": "",
+   "hot": true
+  },
+  {
+   "date": "5/27/2020",
+   "gist": "Mail system removed entirely due to complications; expected to be rewritten and reimplemented later.",
+   "systems": [
+    "infrastructure"
+   ],
+   "stated_values": [],
+   "era_marker": false,
+   "era_note": ""
+  },
+  {
+   "date": "5/28/2020",
+   "gist": "All players must re-agree to server rules (and again on future revisions); Super Boss Atronachs given significantly better loot.",
+   "systems": [
+    "rules",
+    "camps"
+   ],
+   "stated_values": [],
+   "era_marker": false,
+   "era_note": "",
+   "hot": true
+  },
+  {
+   "date": "5/30/2020",
+   "gist": "Mail system rewritten and relaunched via /mail: message body limit raised from ~250 to 500 characters, 50-message inbox, with validation that the recipient character exists.",
+   "systems": [
+    "infrastructure"
+   ],
+   "stated_values": [
+    "message body limit: 500 characters (up from ~250)",
+    "inbox limit: 50 messages"
+   ],
+   "era_marker": false,
+   "era_note": ""
+  },
+  {
+   "date": "6/6/2020",
+   "gist": "Added Todd's Boon, an extremely rare global creature drop that grants double Nerevarine Token gain (not drop rate) for an hour, lost on death. Fixed the Redguard racial 'Liveliness' perk.",
+   "systems": [
+    "economy",
+    "masteries"
+   ],
+   "stated_values": [
+    "Todd's Boon: 2x token gain for 1 hour"
+   ],
+   "era_marker": false,
+   "era_note": "",
+   "hot": true
+  },
+  {
+   "date": "6/9/2020",
+   "gist": "Players with extensive negative karma now receive attribute debuffs scaled to severity; a stability pass improved several menu GUIs (Bounty, Decorator, Furniture, Group, Housing, NP Tokens, Perks, Where/Who).",
+   "systems": [
+    "rules",
+    "infrastructure"
+   ],
+   "stated_values": [],
+   "era_marker": false,
+   "era_note": ""
+  },
+  {
+   "date": "6/22/2020",
+   "gist": "NPC Asciene Rane removed from the server; traveling to any Mournhold cell now triggers an automatic, non-appealable ban.",
+   "systems": [
+    "rules",
+    "world"
+   ],
+   "stated_values": [],
+   "era_marker": false,
+   "era_note": ""
+  },
+  {
+   "date": "6/24/2020",
+   "gist": "Creatures no longer drop Nerevarine Tokens (reversal of the 9/8/2019 change).",
+   "systems": [
+    "economy"
+   ],
+   "stated_values": [],
+   "era_marker": false,
+   "era_note": ""
+  },
+  {
+   "date": "6/28/2020",
+   "gist": "Tamed Silt Striders can no longer be summoned into deep water, great heights, or inside Balmora's walls, and now auto-dismiss after 7 days.",
+   "systems": [
+    "world"
+   ],
+   "stated_values": [
+    "Silt Strider auto-dismiss: 7 days"
+   ],
+   "era_marker": false,
+   "era_note": ""
+  },
+  {
+   "date": "7/3/2020",
+   "gist": "Fireracers Independence-weekend event launched: daily Experimental Dwemer Explosives, plus rewards and a title from Horky.",
+   "systems": [
+    "events"
+   ],
+   "stated_values": [],
+   "era_marker": false,
+   "era_note": ""
+  },
+  {
+   "date": "7/5/2020",
+   "gist": "Title system rewritten for easier future additions; Threads of the Webspinner quest no longer requires all items turned in during one session, with progress trackable via /webspinner or /threads.",
+   "systems": [
+    "other",
+    "quests"
+   ],
+   "stated_values": [],
+   "era_marker": false,
+   "era_note": ""
+  },
+  {
+   "date": "7/21/2020",
+   "gist": "Perk purchase flow now auto-advances to the next tier in a line instead of returning to the main menu each time; no perk reset this time.",
+   "systems": [
+    "masteries"
+   ],
+   "stated_values": [],
+   "era_marker": false,
+   "era_note": "",
+   "hot": true
+  },
+  {
+   "date": "9/16/2020",
+   "gist": "Pool of Forgetfulness no longer requires 0 spent PlayerPoints to use, and won't reduce a skill below the minimum required by an owned perk (e.g. Land Strider 1 keeps Athletics at 60+).",
+   "systems": [
+    "masteries"
+   ],
+   "stated_values": [
+    "example: Land Strider 1 floors Athletics at 60"
+   ],
+   "era_marker": false,
+   "era_note": "",
+   "hot": true
+  },
+  {
+   "date": "9/18/2020",
+   "gist": "Added /tm as a chat-triggered screenshot command and improved /debugquests output for tracking quest stages.",
+   "systems": [
+    "infrastructure"
+   ],
+   "stated_values": [],
+   "era_marker": false,
+   "era_note": ""
+  },
+  {
+   "date": "9/25/2020",
+   "gist": "Hircine's Ring can now be enchanted while retaining its transformative properties.",
+   "systems": [
+    "enchanting",
+    "items"
+   ],
+   "stated_values": [],
+   "era_marker": false,
+   "era_note": "",
+   "hot": true
+  },
+  {
+   "date": "9/27/2020",
+   "gist": "Fixed /warp and Hircine's Ring bugs; new players now get a basic tutorial after reading server rules; added an in-game FAQ via /faq.",
+   "systems": [
+    "infrastructure",
+    "rules"
+   ],
+   "stated_values": [],
+   "era_marker": false,
+   "era_note": ""
+  },
+  {
+   "date": "10/1/2020",
+   "gist": "Morroween launched for the month of October: Balmora gets a haunting overlay, and a month-long unlockable title is available.",
+   "systems": [
+    "events"
+   ],
+   "stated_values": [],
+   "era_marker": false,
+   "era_note": ""
+  },
+  {
+   "date": "10/8/2020",
+   "gist": "Difficulty is now dynamically based on character level and playtime, viewable via /difficulty.",
+   "systems": [
+    "combat"
+   ],
+   "stated_values": [],
+   "era_marker": false,
+   "era_note": ""
+  },
+  {
+   "date": "10/9/2020",
+   "gist": "Loot Bags overhauled with more items, higher/more reliable drop rates, condensed color-coded open messages, and a special cue for extreme-rarity finds. Fixed the Potion Pouch rejecting Todd's Boon and Source Potions.",
+   "systems": [
+    "items",
+    "economy"
+   ],
+   "stated_values": [],
+   "era_marker": false,
+   "era_note": "",
+   "hot": true
+  },
+  {
+   "date": "10/12/2020",
+   "gist": "Added a lockable-object system for player homes covering beds, doors, notes/books, personal banks, forges, containers, shrines, and creature merchants — homeowners can toggle stranger/co-owner access per object. Creature Merchants now auto-resurrect when slain.",
+   "systems": [
+    "world"
+   ],
+   "stated_values": [],
+   "era_marker": false,
+   "era_note": ""
+  },
+  {
+   "date": "10/15/2020",
+   "gist": "Halloween-style event begins with 18 returning and 10 new limited-time items, running through October 31st.",
+   "systems": [
+    "events"
+   ],
+   "stated_values": [
+    "18 returning + 10 new items"
+   ],
+   "era_marker": false,
+   "era_note": ""
+  },
+  {
+   "date": "10/26/2020",
+   "gist": "Ring of Equity nerfed; creature camp despawn distance increased from 2,000 to 3,000 units; Cliff Racers added to Cavern of the Incarnate.",
+   "systems": [
+    "items",
+    "camps"
+   ],
+   "stated_values": [
+    "camp despawn distance: 2,000 → 3,000"
+   ],
+   "era_marker": false,
+   "era_note": "",
+   "hot": true
+  },
+  {
+   "date": "11/1/2020",
+   "gist": "Morroween ends. Fixed Great House Stronghold quests, the Boethiah quest, and vampirism; AFK timer temporarily removed.",
+   "systems": [
+    "quests",
+    "werewolf-vampire"
+   ],
+   "stated_values": [],
+   "era_marker": false,
+   "era_note": ""
+  },
+  {
+   "date": "11/6/2020",
+   "gist": "Added a Precise Placement option letting players enter exact XYZ position/rotation coordinates for furniture, mirroring construction-set placement.",
+   "systems": [
+    "items"
+   ],
+   "stated_values": [],
+   "era_marker": false,
+   "era_note": ""
+  },
+  {
+   "date": "11/14/2020",
+   "gist": "Quickkeys now revert correctly across cell transitions; potion-spam auto-kick restored after being loosened.",
+   "systems": [
+    "alchemy"
+   ],
+   "stated_values": [],
+   "era_marker": false,
+   "era_note": "",
+   "hot": true
+  },
+  {
+   "date": "11/16/2020",
+   "gist": "Added a Quick Sell Setup feature to /market: define a currency/price once, then apply it to all crouched-activated marketplace items at once.",
+   "systems": [
+    "economy"
+   ],
+   "stated_values": [],
+   "era_marker": false,
+   "era_note": ""
+  },
+  {
+   "date": "12/1/2020",
+   "gist": "New Life Festival 2020 launched: daily presents, town decorations, and returning snowball fights.",
+   "systems": [
+    "events"
+   ],
+   "stated_values": [],
+   "era_marker": false,
+   "era_note": ""
+  },
+  {
+   "date": "12/6/2020",
+   "gist": "Chat profanity filter made toggleable via /chatsettings, though real-world slurs still trigger an instant auto-ban regardless.",
+   "systems": [
+    "rules"
+   ],
+   "stated_values": [],
+   "era_marker": false,
+   "era_note": ""
+  },
+  {
+   "date": "12/10/2020",
+   "gist": "Tier 4+ patrons can now change their chat name color via /namecolor.",
+   "systems": [
+    "economy"
+   ],
+   "stated_values": [],
+   "era_marker": false,
+   "era_note": ""
+  },
+  {
+   "date": "12/25/2020",
+   "gist": "New Life Festival main event: Uncle Sweetshare's quest becomes repeatable for more presents, tradeable at decorated city trees, running through December 31st.",
+   "systems": [
+    "events"
+   ],
+   "stated_values": [],
+   "era_marker": false,
+   "era_note": ""
+  },
+  {
+   "date": "12/28/2020",
+   "gist": "Added Quick Keys paging: all players get 2 pages of quick keys (Tier 4+ patrons get 4), switchable via a bound 'Quick Keys Page +' item.",
+   "systems": [
+    "items"
+   ],
+   "stated_values": [
+    "standard: 2 quickkey pages; Tier 4+ patron: 4 pages"
+   ],
+   "era_marker": false,
+   "era_note": ""
+  },
+  {
+   "date": "1/11/2021",
+   "gist": "Fishing system launched: equippable fishing poles, a Fishing Points currency, a Fishing Guru NPC in Khuul running weekly/monthly tournaments (top 3 by largest fish win prizes), bait via /bait, and over 100 new items.",
+   "systems": [
+    "tradeskills",
+    "economy"
+   ],
+   "stated_values": [
+    "weekly tournaments reset Mondays; monthly reset the 1st"
+   ],
+   "era_marker": true,
+   "era_note": "Launch of the entire fishing system — a large new gameplay loop with its own currency and item pool."
+  },
+  {
+   "date": "1/15/2021",
+   "gist": "Character Services menu launched (/cservices): token-gated Birthsign, Face/Hair, and Race/Gender changes. Race/birthsign changes forcibly refund invested perks. Tokens tied to patron tiers but obtainable free via PM.",
+   "systems": [
+    "birthsigns-races"
+   ],
+   "stated_values": [
+    "Tier 3 patrons: 1 Face/Hair token/month; Tier 5: 1 of each + unlimited Face/Hair"
+   ],
+   "era_marker": false,
+   "era_note": ""
+  },
+  {
+   "date": "1/23/2021",
+   "gist": "Support ticket system launched via /support, replacing the bug-report/player-request Discord channels for tracked staff resolution.",
+   "systems": [
+    "infrastructure"
+   ],
+   "stated_values": [],
+   "era_marker": false,
+   "era_note": ""
+  },
+  {
+   "date": "1/24/2021",
+   "gist": "Removed the auto-kick that had been triggered by making potions too quickly, reversing a prior anti-spam measure.",
+   "systems": [
+    "alchemy"
+   ],
+   "stated_values": [],
+   "era_marker": false,
+   "era_note": "",
+   "hot": true
+  },
+  {
+   "date": "1/27/2021",
+   "gist": "Group Loot Display added: group members can see what others loot from containers/corpses, with configurable display settings (chatbox vs popup, near-only vs global, hide self-loot).",
+   "systems": [
+    "economy"
+   ],
+   "stated_values": [],
+   "era_marker": false,
+   "era_note": ""
+  },
+  {
+   "date": "1/31/2021",
+   "gist": "Containers now restock over time without needing a server reset (excluding player homes/banks). A new creature camp was added outside Molag Bal's Shrine with unique equipment drops.",
+   "systems": [
+    "camps",
+    "economy"
+   ],
+   "stated_values": [],
+   "era_marker": false,
+   "era_note": "",
+   "hot": true
+  },
+  {
+   "date": "2/4/2021",
+   "gist": "Spiritmaster system launched: players no longer respawn at the nearest shrine/temple, but instead bind their spirit to a chosen Spiritmaster NPC's town (Seyda Neen by default). New Return Home perk lets bound players teleport back once every 15 minutes.",
+   "systems": [
+    "masteries",
+    "world"
+   ],
+   "stated_values": [
+    "Return Home perk cooldown: 15 minutes"
+   ],
+   "era_marker": false,
+   "era_note": "",
+   "hot": true
+  },
+  {
+   "date": "2/6/2021",
+   "gist": "Player health formula adjusted: overall health slightly increased for everyone, with front-line combat specialists getting the most, stealth players moderate, and magic specialists the least.",
+   "systems": [
+    "combat"
+   ],
+   "stated_values": [],
+   "era_marker": false,
+   "era_note": ""
+  },
+  {
+   "date": "2/12/2021",
+   "gist": "Hearts Day 2021 event runs the 12th-19th with exclusive items, titles, and furniture. Fixed the enchantment on Schorl Jewelcrafted Jewelry.",
+   "systems": [
+    "events",
+    "enchanting"
+   ],
+   "stated_values": [],
+   "era_marker": false,
+   "era_note": "",
+   "hot": true
+  },
+  {
+   "date": "2/21/2021",
+   "gist": "Massive update: Tailoring tradeskill launched (10 levels, craft shirts/pants/robes/etc. via Looms), an Ink & Pen crafting system for patterns/books, and a full Glamour System (Dwemer Analyzer) letting players cosmetically re-skin gear while keeping stats. New Spinningwheel/Loom furniture added.",
+   "systems": [
+    "tradeskills",
+    "items"
+   ],
+   "stated_values": [
+    "all players: 20 analyzer slots; Tier 5 patrons: +20 more"
+   ],
+   "era_marker": true,
+   "era_note": "Explicitly framed by the dev as 'a massive update' — new tradeskill plus an entirely new cosmetic Glamour system."
+  },
+  {
+   "date": "3/6/2021",
+   "gist": "Adventurer's Hall Grand Opening in Balmora: server quests that upgrade the hall and unlock unique merchants and titles. Added new no-boss Kagouti and Shalk creature camps.",
+   "systems": [
+    "quests",
+    "camps"
+   ],
+   "stated_values": [],
+   "era_marker": false,
+   "era_note": "",
+   "hot": true
+  },
+  {
+   "date": "3/17/2021",
+   "gist": "The Luck Event launched (gated behind Adventurer's Hall progress): obtain 'The Luck' gem, which buffs the player/group with greatly increased chance to find items (e.g. tokens) for 24 hours or until death. Tailoring cloth/spool costs reduced.",
+   "systems": [
+    "events",
+    "tradeskills"
+   ],
+   "stated_values": [
+    "The Luck gem buff duration: 24 hours or until death"
+   ],
+   "era_marker": false,
+   "era_note": ""
+  },
+  {
+   "date": "4/1/2021",
+   "gist": "Major overhaul: new XP-from-kills leveling system with level cap reduced to 50 (over-leveled players dropped down) and 15 free attribute points per level-up; added a Player Corpse System (must retrieve items from your death location); added Guar/Kagouti mounts; and launched Survival Mode requiring eating/drinking, with permanent character death on starvation/dehydration.",
+   "systems": [
+    "combat",
+    "world"
+   ],
+   "stated_values": [
+    "level cap: 50",
+    "15 attribute points per level"
+   ],
+   "era_marker": true,
+   "era_note": "Complete rework of leveling (kill-XP, level cap 50), plus new permadeath survival mechanics and corpse recovery — one of the most sweeping mechanical overhauls in the timeline."
+  },
+  {
+   "date": "4/2/2021",
+   "gist": "Eggstreme Egghunt returns for the weekend with 150 eggs and 3 limited titles.",
+   "systems": [
+    "events"
+   ],
+   "stated_values": [
+    "150 eggs to find"
+   ],
+   "era_marker": false,
+   "era_note": ""
+  },
+  {
+   "date": "4/3/2021",
+   "gist": "Activating another player now opens an interaction GUI showing brief details, PVP status, and options like Inspect or attaching dwemer explosives.",
+   "systems": [
+    "infrastructure",
+    "combat"
+   ],
+   "stated_values": [],
+   "era_marker": false,
+   "era_note": ""
+  },
+  {
+   "date": "4/9/2021",
+   "gist": "Player Trainers launched: players can train others' skills up to their own skill level, with 10 training sessions per refresh period (20 for Tier 4 patrons); trainers set base price, currency, and a price-per-level multiplier.",
+   "systems": [
+    "economy"
+   ],
+   "stated_values": [
+    "10 training sessions/period (20 for Tier 4 patrons)",
+    "price formula: basePrice * (multiplier * traineeLevel)"
+   ],
+   "era_marker": false,
+   "era_note": ""
+  },
+  {
+   "date": "4/16/2021",
+   "gist": "Two new vampire perks added — Daywalker and Ancient Bloodline — unlocked via bloodline quest completion, letting vampire players walk in daylight and speak with mortals at a cost.",
+   "systems": [
+    "werewolf-vampire",
+    "masteries"
+   ],
+   "stated_values": [],
+   "era_marker": false,
+   "era_note": ""
+  },
+  {
+   "date": "6/20/2021",
+   "gist": "Achievement system launched with over 270 achievements unlocking points, titles, items, and familiars; achievements viewable via /achievements or on other players. Title system redesigned to no longer use chat-command setting.",
+   "systems": [
+    "other"
+   ],
+   "stated_values": [
+    "270+ achievements at launch"
+   ],
+   "era_marker": true,
+   "era_note": "Large new progression system spanning the entire game (270+ achievements)."
+  },
+  {
+   "date": "8/17/2021",
+   "gist": "Atronachs now have a chance to drop Elemental Flame/Frost/Shock Dust, teased for use in a future update.",
+   "systems": [
+    "camps",
+    "items"
+   ],
+   "stated_values": [],
+   "era_marker": false,
+   "era_note": "",
+   "hot": true
+  },
+  {
+   "date": "8/19/2021",
+   "gist": "3 new elemental atronach camps added (lava camp central-south, frost camp north-west, shock camp north-east), each with a new rare boss dropping older unique loot plus one new unique item.",
+   "systems": [
+    "camps"
+   ],
+   "stated_values": [],
+   "era_marker": true,
+   "era_note": "Major content drop adding three new full creature camps with unique bosses.",
+   "hot": true
+  },
+  {
+   "date": "8/21/2021",
+   "gist": "Updated loot tables for the new elemental atronach bosses added on 8/19.",
+   "systems": [
+    "camps"
+   ],
+   "stated_values": [],
+   "era_marker": false,
+   "era_note": "",
+   "hot": true
+  },
+  {
+   "date": "9/19/2021",
+   "gist": "Introduced an 85% resistance cap on Fire/Frost/Shock/Magicka/Poison/Paralysis/Normal Weapons resistances, and Weakness To effects can no longer push resistance below -100% past that cap (viewable via /resists); perks reset to accommodate. Flagged as experimental and briefly disabled due to resistance values glitching between 1000% and -1000%.",
+   "systems": [
+    "combat",
+    "masteries"
+   ],
+   "stated_values": [
+    "resistance cap: 85%"
+   ],
+   "era_marker": true,
+   "era_note": "System-wide combat rework capping all resistance types — a foundational defensive-stat change."
+  },
+  {
+   "date": "9/30/2021",
+   "gist": "Moved player-placed furniture data out of the shared world.json file into its own JSON, shrinking world.json from 1.13mb to 15kb (about 66,255 lines removed) for faster saves.",
+   "systems": [
+    "infrastructure"
+   ],
+   "stated_values": [
+    "world.json: 1.13mb → 15kb (~66,255 lines removed)"
+   ],
+   "era_marker": false,
+   "era_note": ""
+  },
+  {
+   "date": "10/1/2021",
+   "gist": "Morroween 2021 launched for the full month with returning/new limited items and limited-time achievements.",
+   "systems": [
+    "events"
+   ],
+   "stated_values": [],
+   "era_marker": false,
+   "era_note": ""
+  },
+  {
+   "date": "11/8/2021",
+   "gist": "3rd Anniversary week event: log in between the 8th-14th for a commemorative coin and increased Nerevarine Token/Source drop rates.",
+   "systems": [
+    "events"
+   ],
+   "stated_values": [],
+   "era_marker": false,
+   "era_note": ""
+  },
+  {
+   "date": "11/30/2021",
+   "gist": "Werewolves of Vvardenfell launched: wild werewolves now roam Vvardenfell at night and can infect players with sanies lupinus; new werewolf perks and quest-unlockable perks added; new Were-Hunter NPCs defend towns; werewolf players are forcibly PVP-flagged in beast form.",
+   "systems": [
+    "werewolf-vampire",
+    "masteries"
+   ],
+   "stated_values": [],
+   "era_marker": true,
+   "era_note": "Major new content system — wild werewolves, infection mechanics, and a new perk line — expanding lycanthropy gameplay across the whole map."
+  },
+  {
+   "date": "12/1/2021",
+   "gist": "New Life Festival 2021 launched with daily presents, town decorations, and returning snowball fights.",
+   "systems": [
+    "events"
+   ],
+   "stated_values": [],
+   "era_marker": false,
+   "era_note": ""
+  },
+  {
+   "date": "12/25/2021",
+   "gist": "New Life Festival main event: Uncle Sweetshare's quest made repeatable, presents tradeable at city trees through December 31st.",
+   "systems": [
+    "events"
+   ],
+   "stated_values": [],
+   "era_marker": false,
+   "era_note": ""
+  },
+  {
+   "date": "1/2/2022",
+   "gist": "Lycanthropy infection fixed to work as intended: requires re-infection and waiting three in-game days to become a full werewolf.",
+   "systems": [
+    "werewolf-vampire"
+   ],
+   "stated_values": [
+    "lycanthropy incubation: 3 in-game days"
+   ],
+   "era_marker": false,
+   "era_note": ""
+  },
+  {
+   "date": "1/31/2022",
+   "gist": "New hub Saint's Hope unlocked via server questlines (accessed after completing Rahl's Adventurer's Hall tasks), featuring new merchants, quests, items, tradeskill features, and weekly Monday-reset item turn-in quests.",
+   "systems": [
+    "world",
+    "quests"
+   ],
+   "stated_values": [],
+   "era_marker": false,
+   "era_note": ""
+  },
+  {
+   "date": "2/6/2022",
+   "gist": "Server storyline climax: the storyline protagonist (the sainted hero of the Morrowind intro, banisher of the cliff racers) and Azura face Jyggalag on Solstheim, capping the 0.7 server storyline, released as an unlisted cinematic video.",
+   "systems": [
+    "quests",
+    "other"
+   ],
+   "stated_values": [],
+   "era_marker": true,
+   "era_note": "Narrative conclusion of the 0.7 server storyline, marking the approach to the 0.8 transition."
+  },
+  {
+   "date": "2/17/2022",
+   "gist": "New Centurian creature camps added outside Bthungthumz, Nchardahrk, and Nchardumz.",
+   "systems": [
+    "camps"
+   ],
+   "stated_values": [],
+   "era_marker": false,
+   "era_note": "",
+   "hot": true
+  },
+  {
+   "date": "5/13/2022",
+   "gist": "0.8.1 NP server launched. New characters made in the first 7 days get a limited Commemorative Coin.",
+   "systems": [
+    "infrastructure"
+   ],
+   "stated_values": [],
+   "era_marker": true,
+   "era_note": "Launch of the 0.8.1 server version — a major version transition."
+  },
+  {
+   "date": "5/15/2022",
+   "gist": "Fixed guild creation crashes; player backups increased from 2x to 4x daily.",
+   "systems": [
+    "infrastructure"
+   ],
+   "stated_values": [
+    "backups: 2x → 4x daily"
+   ],
+   "era_marker": false,
+   "era_note": ""
+  },
+  {
+   "date": "5/15/2022",
+   "gist": "Fixed guild generation and tradeskill resource costs at higher tiers; Nord mastery Northern Brew given a 15-minute cooldown.",
+   "systems": [
+    "masteries"
+   ],
+   "stated_values": [
+    "Northern Brew cooldown: 15 minutes"
+   ],
+   "era_marker": false,
+   "era_note": "",
+   "hot": true
+  },
+  {
+   "date": "5/16/2022",
+   "gist": "Attribute Max and Skill Max masteries fixed to work as intended on 0.8.1; all players' perks reset.",
+   "systems": [
+    "masteries"
+   ],
+   "stated_values": [],
+   "era_marker": false,
+   "era_note": "",
+   "hot": true
+  },
+  {
+   "date": "5/17/2022",
+   "gist": "PVP deaths now correctly show the killer and no longer incur XP debt; PVP flag status now displays globally to all players.",
+   "systems": [
+    "combat"
+   ],
+   "stated_values": [],
+   "era_marker": false,
+   "era_note": ""
+  },
+  {
+   "date": "5/18/2022",
+   "gist": "Restored death debt accrual; fixed Active Potion Count false-positives from carrying over on login; removed the old Trade System script (incompatible with 0.8.1 GUI changes); fixed Scripted Powers leaking to nearby players.",
+   "systems": [
+    "alchemy",
+    "magic"
+   ],
+   "stated_values": [],
+   "era_marker": false,
+   "era_note": "",
+   "hot": true
+  },
+  {
+   "date": "5/19/2022",
+   "gist": "Vampire infection now persists correctly through offline time; merchants no longer draw from enchanting/spellmaking gold pools for bartering; Tier 4 patrons now earn 2x tradeskill XP.",
+   "systems": [
+    "werewolf-vampire",
+    "economy"
+   ],
+   "stated_values": [
+    "Tier 4 patron tradeskill XP: 2x"
+   ],
+   "era_marker": false,
+   "era_note": ""
+  },
+  {
+   "date": "5/22/2022",
+   "gist": "Added a 'Making Amends' option in the /character menu letting expelled players resolve Mages Guild (and Blades) expulsion themselves.",
+   "systems": [
+    "rules"
+   ],
+   "stated_values": [],
+   "era_marker": false,
+   "era_note": ""
+  },
+  {
+   "date": "5/24/2022",
+   "gist": "Equip Set Macros returned on 0.8: 3 base macros for all players (Tier 5 patrons get 3 more, 6 total), activated via /es1 etc.",
+   "systems": [
+    "items"
+   ],
+   "stated_values": [
+    "base: 3 macros; Tier 5 patron: 6 total"
+   ],
+   "era_marker": false,
+   "era_note": ""
+  },
+  {
+   "date": "5/26/2022",
+   "gist": "Khajiit racial Tumbler's Grace changed from a flat +30 Acrobatics to +15 Acrobatics plus +15 Acrobatics Max; all players' Class Mastery points refunded to accommodate.",
+   "systems": [
+    "masteries"
+   ],
+   "stated_values": [
+    "Tumbler's Grace: +30 Acrobatics → +15 Acrobatics + +15 Acrobatics Max"
+   ],
+   "era_marker": false,
+   "era_note": "",
+   "hot": true
+  },
+  {
+   "date": "5/27/2022",
+   "gist": "Server restarts consolidated to a single daily 6AM restart; resist mastery line values lowered; Dynamic Difficulty disabled; the Atronach birthsign rewritten to Spell Absorption 30pts, Fortify Max Magicka 2x Intelligence, and Stunted Magicka, all self-only. Perks reset again.",
+   "systems": [
+    "masteries",
+    "birthsigns-races"
+   ],
+   "stated_values": [
+    "Atronach: Spell Absorption 30, Fortify Max Magicka 2x INT, Stunted Magicka"
+   ],
+   "era_marker": false,
+   "era_note": "",
+   "hot": true
+  },
+  {
+   "date": "5/28/2022",
+   "gist": "Fixed the Altmer racial mastery Elven Grace and reversed swapped min/max magnitudes on the Altmer Condescending Tone racial.",
+   "systems": [
+    "masteries",
+    "birthsigns-races"
+   ],
+   "stated_values": [],
+   "era_marker": false,
+   "era_note": "",
+   "hot": true
+  },
+  {
+   "date": "5/31/2022",
+   "gist": "The Clever Thought mastery line changed to increase brewed potion strength per rank. Server Launch Commemorative Token extended one extra day after hitting the 45-patron goal.",
+   "systems": [
+    "masteries",
+    "alchemy"
+   ],
+   "stated_values": [],
+   "era_marker": false,
+   "era_note": "",
+   "hot": true
+  },
+  {
+   "date": "6/1/2022",
+   "gist": "Optimized tree/rock harvesting to reduce underground clipping; further adjustments to prevent false-positive potion limitation triggers.",
+   "systems": [
+    "alchemy"
+   ],
+   "stated_values": [],
+   "era_marker": false,
+   "era_note": "",
+   "hot": true
+  },
+  {
+   "date": "6/2/2022",
+   "gist": "Calm no longer affects actors; active potion limitations now clear on death, closing an exploit that let players bypass the max potion count.",
+   "systems": [
+    "alchemy",
+    "magic"
+   ],
+   "stated_values": [],
+   "era_marker": false,
+   "era_note": "",
+   "hot": true
+  },
+  {
+   "date": "6/4/2022",
+   "gist": "Hircine's Ring now triggers instantly after completing its script once; fixed attribute/skill overmaxing recalculation.",
+   "systems": [
+    "items"
+   ],
+   "stated_values": [],
+   "era_marker": false,
+   "era_note": ""
+  },
+  {
+   "date": "6/8/2022",
+   "gist": "Resolved issues with Soul Gem Synthesis.",
+   "systems": [
+    "souls"
+   ],
+   "stated_values": [],
+   "era_marker": false,
+   "era_note": "",
+   "hot": true
+  },
+  {
+   "date": "6/9/2022",
+   "gist": "Golden Egg quest item's weight reduced from 30 to 3.",
+   "systems": [
+    "quests",
+    "items"
+   ],
+   "stated_values": [
+    "Golden Egg weight: 30 → 3"
+   ],
+   "era_marker": false,
+   "era_note": ""
+  },
+  {
+   "date": "6/10/2022",
+   "gist": "Added over 1,000 creature respawn points across Vvardenfell and Solstheim, plus a few new (unnamed) creature camps. Restricted inventory item use to once per second to prevent duplication exploits.",
+   "systems": [
+    "camps",
+    "items"
+   ],
+   "stated_values": [
+    "1,000+ respawn points added"
+   ],
+   "era_marker": false,
+   "era_note": "",
+   "hot": true
+  },
+  {
+   "date": "6/11/2022",
+   "gist": "Item-use restriction narrowed to just Potions and Ingredients; the Mastery Point XP formula was altered; Bank Vaults got a storage-position revert option.",
+   "systems": [
+    "masteries",
+    "alchemy"
+   ],
+   "stated_values": [],
+   "era_marker": false,
+   "era_note": "",
+   "hot": true
+  },
+  {
+   "date": "6/12/2022",
+   "gist": "Scribing tradeskill can now craft Low, Medium, and High Value Scrolls; fixed the Ancient Bloodline vampire mastery and Wild Leaper werewolf mastery.",
+   "systems": [
+    "masteries",
+    "tradeskills",
+    "enchanting"
+   ],
+   "stated_values": [],
+   "era_marker": false,
+   "era_note": "",
+   "hot": true
+  },
+  {
+   "date": "6/14/2022",
+   "gist": "Noveling system launched: craft custom notes/scrolls/parchments/books via /write or by dragging paper to your character, with a proof-reading editor and craftable Book Jackets from Scribes for finished books.",
+   "systems": [
+    "tradeskills",
+    "items"
+   ],
+   "stated_values": [],
+   "era_marker": false,
+   "era_note": ""
+  },
+  {
+   "date": "6/19/2022",
+   "gist": "Jewelcrafting tradeskill implemented on 0.8, requiring Amulet/Ring Molds via smelting. Tradeskill Gems added, obtainable from actor drops or mining. Small Stones weight reduced from 3 to 1.5.",
+   "systems": [
+    "tradeskills"
+   ],
+   "stated_values": [
+    "Small Stones weight: 3 → 1.5"
+   ],
+   "era_marker": false,
+   "era_note": ""
+  },
+  {
+   "date": "6/23/2022",
+   "gist": "Fixed AFK training script mistakenly reverting skills; all No Trade items can now optionally be destroyed on drop.",
+   "systems": [
+    "masteries",
+    "items"
+   ],
+   "stated_values": [],
+   "era_marker": false,
+   "era_note": ""
+  },
+  {
+   "date": "6/27/2022",
+   "gist": "Fixed a previously-broken fix relating to enchanter NPCs.",
+   "systems": [
+    "enchanting"
+   ],
+   "stated_values": [],
+   "era_marker": false,
+   "era_note": "",
+   "hot": true
+  },
+  {
+   "date": "6/30/2022",
+   "gist": "Lycanthropy can no longer be cured until after the necessary Skaal main-quest event (to avoid breaking Bloodmoon's questline); Glenmoril witches no longer hostile toward known werewolves. Players are no longer required to move periodically to prevent skill decay; an AFK auto-kick was implemented instead.",
+   "systems": [
+    "werewolf-vampire",
+    "rules"
+   ],
+   "stated_values": [],
+   "era_marker": false,
+   "era_note": ""
+  },
+  {
+   "date": "7/1/2022",
+   "gist": "Fireracer event (July 1st-4th) launches for 0.8 with double mastery XP and event-exclusive items/achievements/titles.",
+   "systems": [
+    "events",
+    "masteries"
+   ],
+   "stated_values": [
+    "double mastery XP during event"
+   ],
+   "era_marker": false,
+   "era_note": "",
+   "hot": true
+  },
+  {
+   "date": "7/1/2022",
+   "gist": "Bags system added: slot-based (not weight-based) portable storage containers that are character-bound and become No Trade after first use; multiple bags of the same name share one linked storage pool.",
+   "systems": [
+    "items"
+   ],
+   "stated_values": [],
+   "era_marker": false,
+   "era_note": ""
+  },
+  {
+   "date": "7/11/2022",
+   "gist": "120 new unique enchanted ammunition types added, craftable in bulk by Weapon Crafters (yields 0 tradeskill XP); gem-infused jewelry now shows the infused gem in its name.",
+   "systems": [
+    "enchanting",
+    "tradeskills"
+   ],
+   "stated_values": [
+    "120 new enchanted ammo items"
+   ],
+   "era_marker": false,
+   "era_note": "",
+   "hot": true
+  },
+  {
+   "date": "7/13/2022",
+   "gist": "Players can now store and freely drop No Trade/Quest items in player-owned cells (Vaults, Estates, Homes). Fixed overmax attribute/skill recalculation on death and erratic resistance-cap values.",
+   "systems": [
+    "masteries",
+    "items"
+   ],
+   "stated_values": [],
+   "era_marker": false,
+   "era_note": "",
+   "hot": true
+  },
+  {
+   "date": "7/16/2022",
+   "gist": "New grind camps added — Kagouti Camp, Skeleton Camp, Ogrim Camp — each with a rare spawn dropping unique server loot; a specific oversized bear rare spawn returned with new loot.",
+   "systems": [
+    "camps"
+   ],
+   "stated_values": [],
+   "era_marker": false,
+   "era_note": "",
+   "hot": true
+  },
+  {
+   "date": "7/18/2022",
+   "gist": "Kagouti grind camp's XP and health values adjusted.",
+   "systems": [
+    "camps"
+   ],
+   "stated_values": [],
+   "era_marker": false,
+   "era_note": "",
+   "hot": true
+  },
+  {
+   "date": "7/22/2022",
+   "gist": "Added a Currencies Menu showing Banked Gold and Achievement Points (and future currencies), accessible via /currency.",
+   "systems": [
+    "economy"
+   ],
+   "stated_values": [],
+   "era_marker": false,
+   "era_note": ""
+  },
+  {
+   "date": "7/23/2022",
+   "gist": "Login Points currency launched (10/day, +2 per patron tier, spendable with NPC Duharr). Black Soul Gems added, matching Grand Soul Gem capacity, usable to self-resurrect (reducing last-death XP debt, with resurrection sickness draining attributes); must resurrect within 1 hour of death.",
+   "systems": [
+    "souls",
+    "economy"
+   ],
+   "stated_values": [
+    "Login Points: 10/day base, +2 per patron tier",
+    "resurrection window: 1 hour /playtime"
+   ],
+   "era_marker": true,
+   "era_note": "New Login Points currency plus a full player-resurrection mechanic built on Black Soul Gems — a significant new economy/death system.",
+   "hot": true
+  },
+  {
+   "date": "7/28/2022",
+   "gist": "The Storyteller NPC added, rewarding players for sharing tales of dangerous encounters. New grind camps added: Winged Twilights and Hungers. Large batch of new items and powers.",
+   "systems": [
+    "camps",
+    "quests"
+   ],
+   "stated_values": [],
+   "era_marker": false,
+   "era_note": "",
+   "hot": true
+  },
+  {
+   "date": "7/29/2022",
+   "gist": "Ebony Staff's enchant value reduced from 90 to 9; all previously-enchanted Ebony Staves were replaced with unenchanted versions.",
+   "systems": [
+    "enchanting",
+    "items"
+   ],
+   "stated_values": [
+    "Ebony Staff enchant value: 90 → 9"
+   ],
+   "era_marker": false,
+   "era_note": "",
+   "hot": true
+  },
+  {
+   "date": "8/5/2022",
+   "gist": "Experimental change: Fortify Health now increases base health (not just current), meaning losing an active Fortify Health effect can kill you if your health was at or below the fortified amount.",
+   "systems": [
+    "magic",
+    "combat"
+   ],
+   "stated_values": [],
+   "era_marker": false,
+   "era_note": ""
+  },
+  {
+   "date": "5/13/2022",
+   "gist": "0.8.1 launch day notes: character creation rules, all racial/birthsign abilities changed from 0.7, initial tradeskills live (Armor Crafting, Weapon Crafting, Tailoring, Survival, Smelting, Scribing, Shearing, Threading, Cooking), harvesting via axes/pickaxes/skinning knives, the Bank of Vvardenfell opens with purchasable vaults, Survival Mode toggle (7-day lockout once activated), and Class Mastery Points soft-capped at 25x character level with a death-debt system starting at level 6.",
+   "systems": [
+    "masteries",
+    "birthsigns-races",
+    "tradeskills",
+    "world",
+    "infrastructure",
+    "economy"
+   ],
+   "stated_values": [
+    "Class Mastery Point cap = 25 x Level",
+    "Survival Mode cannot be disabled for 7 days after activation"
+   ],
+   "era_marker": true,
+   "era_note": "Launch of NP 0.8, the successor server to 0.7 — the foundational version this entire era of patch notes builds on."
+  },
+  {
+   "date": "8/6/2022",
+   "gist": "Added 120+ new global/regional loot drop items across enemy kills, with regional variation. Atronach-birthsign players now gain magicka-over-time (MoT) from items/spells but remain locked out of MoT masteries and gain no bonus MoT from intelligence.",
+   "systems": [
+    "items",
+    "world",
+    "birthsigns-races",
+    "magic"
+   ],
+   "stated_values": [
+    "Over 120 new loot items added"
+   ],
+   "era_marker": false
+  },
+  {
+   "date": "8/11/2022",
+   "gist": "Introduced Loot Caches, a new portable loot-container acquisition method; unlooted contents vanish on closing the cache.",
+   "systems": [
+    "items",
+    "economy"
+   ],
+   "stated_values": [],
+   "era_marker": false
+  },
+  {
+   "date": "8/12/2022",
+   "gist": "Fortify Magicka and Fortify Fatigue now function like the earlier Fortify Health change, increasing base values alongside current values (with the same known limitations).",
+   "systems": [
+    "magic",
+    "combat"
+   ],
+   "stated_values": [
+    "Fortify Magicka/Fatigue now raise base value + current, mirroring Fortify Health"
+   ],
+   "era_marker": false
+  },
+  {
+   "date": "8/13/2022",
+   "gist": "Added /lastloot (and /lastcache, /cache) commands for recovering a loot cache window; armor crafters can upgrade Shrouded Armor to Ancient Shrouded Armor; a bug causing infinite loot caches forced a full server revert, with Happy Hour run all day as compensation.",
+   "systems": [
+    "items",
+    "tradeskills",
+    "infrastructure"
+   ],
+   "stated_values": [],
+   "era_marker": false
+  },
+  {
+   "date": "8/27/2022",
+   "gist": "Strength no longer influences werewolf hand-to-hand damage; hand-to-hand fatigue/health damage lowered slightly to compensate; the blind effect from Boots/Helm of Blinding Speed can no longer be resisted.",
+   "systems": [
+    "werewolf-vampire",
+    "combat",
+    "items"
+   ],
+   "stated_values": [],
+   "era_marker": false
+  },
+  {
+   "date": "8/29/2022",
+   "gist": "Boots/Helm of Blinding Speed now correctly un-blind on unequip; Falco assassinate/protect questlines fixed; Ring of Equity had its enchantment effects reduced.",
+   "systems": [
+    "items",
+    "quests"
+   ],
+   "stated_values": [],
+   "era_marker": false
+  },
+  {
+   "date": "9/1/2022",
+   "gist": "Introduced Reward Points (RP), a new in-game currency purchasable as an alternate donation method to Patreon, spendable via /rp on cosmetics like light sources, familiars, and supporter packs.",
+   "systems": [
+    "economy",
+    "infrastructure"
+   ],
+   "stated_values": [],
+   "era_marker": false
+  },
+  {
+   "date": "9/15/2022",
+   "gist": "Introduced Arms Dealer Dirlen in Suran, the first tradeskill daily-supply-quest NPC (gold + mastery XP once per day), with other tradeskills planned to receive similar dailies later.",
+   "systems": [
+    "tradeskills",
+    "economy"
+   ],
+   "stated_values": [],
+   "era_marker": false
+  },
+  {
+   "date": "9/21/2022",
+   "gist": "Ruled self-PVP alt-farming unacceptable, with suspensions for continuous abuse; added a settings toggle to hide player death messages.",
+   "systems": [
+    "rules"
+   ],
+   "stated_values": [],
+   "era_marker": false
+  },
+  {
+   "date": "9/24/2022",
+   "gist": "Players can no longer lock objects (unlock only, to curb trolling); Happy Hour now has a chance to randomly trigger once per day at the top of an hour instead of requiring manual activation.",
+   "systems": [
+    "world",
+    "rules",
+    "economy"
+   ],
+   "stated_values": [],
+   "era_marker": false
+  },
+  {
+   "date": "9/27/2022",
+   "gist": "Summoned pets no longer steal kills from their owner as long as the owner contributes damage; @pid ping sounds now only trigger in global say chat.",
+   "systems": [
+    "combat",
+    "other"
+   ],
+   "stated_values": [],
+   "era_marker": false
+  },
+  {
+   "date": "10/13/2022",
+   "gist": "Reworked Combat/Magic/Stealth specialization mastery lines: Sage's Knack (Agility) replaced by Sage's Grace (Speed), Soldier's Grace (Speed) replaced by Soldier's Intuition (Willpower), each specialization now has its intended 4 lines, Stendarr's Blessing swapped Corprus resist for Normal Weapon resist, and several masteries had passive/prerequisite bugs fixed. Full class mastery refund on next login.",
+   "systems": [
+    "masteries"
+   ],
+   "stated_values": [],
+   "era_marker": false,
+   "hot": true
+  },
+  {
+   "date": "10/13/2022",
+   "gist": "Added the Vampiric Form vampire class mastery, letting vampires toggle visible vampirism for vampire-specific quests; purchasable for 0 CM after Ancient Bloodline. Another mastery reset on next login.",
+   "systems": [
+    "masteries",
+    "werewolf-vampire"
+   ],
+   "stated_values": [
+    "Vampiric Form costs 0 CM after Ancient Bloodline"
+   ],
+   "era_marker": false,
+   "hot": true
+  },
+  {
+   "date": "10/18/2022",
+   "gist": "Added player-settable in-game alarms via /alarm <hours:minutes> or /alarm <minutes>.",
+   "systems": [
+    "other"
+   ],
+   "stated_values": [],
+   "era_marker": false
+  },
+  {
+   "date": "10/24/2022",
+   "gist": "Storyteller summon powers (Ogrim's Persistance, Durzog's Alacrity, Spriggan's Elegance) gained matching Restore Health/Fatigue/Magicka self-effects; non-player-made enchanted equipment with Over Time effects will now visibly display as Restore Health/Magicka/Fatigue in the enchant tooltip when conditions are met; Fortify Intelligence enchantments no longer damage current magicka.",
+   "systems": [
+    "enchanting",
+    "magic",
+    "items"
+   ],
+   "stated_values": [
+    "Storyteller summon powers restore 300 pts for 1 sec on self"
+   ],
+   "era_marker": false,
+   "hot": true
+  },
+  {
+   "date": "10/27/2022",
+   "gist": "Reworked the /where list for clarity and added a way to hide your location from it via Character Settings or /anonymous (/anon).",
+   "systems": [
+    "other"
+   ],
+   "stated_values": [],
+   "era_marker": false
+  },
+  {
+   "date": "11/3/2022",
+   "gist": "Rewrote parts of the player Guild system: hides options not accessible to your rank, shows offline guildmates' level/race/class/birthsign on individual lookup, fixes capitalization, and lays groundwork (not yet live) for future Guild XP/Levels/Perks.",
+   "systems": [
+    "other"
+   ],
+   "stated_values": [],
+   "era_marker": false
+  },
+  {
+   "date": "11/6/2022",
+   "gist": "Launched the Tribunal expansion: Mournhold accessible to level 30+, full main/side questlines, new achievements, a player manor, instanced player museums, and previously-unobtainable Tribunal items.",
+   "systems": [
+    "world",
+    "quests",
+    "items"
+   ],
+   "stated_values": [
+    "Mournhold access requires level 30+"
+   ],
+   "era_marker": true,
+   "era_note": "Full Tribunal expansion launch — a major content drop adding an entire new region, questline, and item set."
+  },
+  {
+   "date": "11/8/2022",
+   "gist": "Ogrim-type creatures can now be skinned, Atronachs can now be tenderized for salts; scimitar crafting molds added; Ebony Scimitar enchant value buffed from 8 to 14.",
+   "systems": [
+    "tradeskills",
+    "items"
+   ],
+   "stated_values": [
+    "Ebony Scimitar enchant value 8 -> 14"
+   ],
+   "era_marker": false
+  },
+  {
+   "date": "11/12/2022",
+   "gist": "Major overhaul of alchemy and enchanting. Player-crafted potions get buffed effect magnitudes/durations (closer to vanilla) but with new magnitude and duration caps, boosted further by the Clever Thought mastery and Breton racial (Curiosity). Player-crafted constant-effect enchants with a min/max range now roll a random final value between them, weighted by the player's Enchant/Intelligence/Luck stats and the Alluring Embuement mastery (High Elves get an innate boost, further improved by Elven Grace); existing variable-magnitude items were converted to the min/max average. Introduced Disenchanting: the Disenchanter mastery (100 Enchant, level 25) grants a power that strips a player-made enchant back off an item by consuming an empty black soul gem (which shatters).",
+   "systems": [
+    "alchemy",
+    "enchanting",
+    "souls",
+    "masteries",
+    "birthsigns-races"
+   ],
+   "stated_values": [
+    "Example: a 10-30 min/max enchant became a flat 20/20",
+    "Disenchanter requires 100 Enchant and level 25"
+   ],
+   "era_marker": true,
+   "era_note": "Foundational rework of the alchemy potion formula and the enchanting variable-magnitude/disenchanting mechanics — establishes rules referenced by all later alchemy/enchanting balance passes.",
+   "hot": true
+  },
+  {
+   "date": "11/13/2022",
+   "gist": "Minor follow-up tuning adjustments to the alchemy and enchanting changes from the prior update.",
+   "systems": [
+    "alchemy",
+    "enchanting"
+   ],
+   "stated_values": [],
+   "era_marker": false,
+   "hot": true
+  },
+  {
+   "date": "11/28/2022",
+   "gist": "Added Shin Guards, a new beast-race-only boot-slot equipment type that (unlike Anklets) displays a visible model; craftable by armor crafters across all standard armor material tiers.",
+   "systems": [
+    "items",
+    "tradeskills"
+   ],
+   "stated_values": [],
+   "era_marker": false
+  },
+  {
+   "date": "12/16/2022",
+   "gist": "Using /revert now triggers Transformation Fatigue, setting current magicka to 0 when reverting from werewolf form.",
+   "systems": [
+    "werewolf-vampire"
+   ],
+   "stated_values": [],
+   "era_marker": false,
+   "hot": true
+  },
+  {
+   "date": "12/19/2022",
+   "gist": "Introduced the Glamour System: a Dwemer Glamour Analyzer near Gnisis lets adventurers copy the visual appearance of one item onto a matching item type via Glamour Storage and the Transmogrification Chamber; glamoured items become non-tradeable and unenchantable until cleared.",
+   "systems": [
+    "items",
+    "world"
+   ],
+   "stated_values": [
+    "Default Glamour Storage capacity: 10 slots (+20 bonus for tier 5 patrons)"
+   ],
+   "era_marker": false
+  },
+  {
+   "date": "12/31/2022",
+   "gist": "Added a Quick Chat system (/qc or /quickchat) letting players trigger common Morrowind voice dialogue lines for nearby players, limited by race/gender/available voice files.",
+   "systems": [
+    "other"
+   ],
+   "stated_values": [],
+   "era_marker": false
+  },
+  {
+   "date": "1/6/2023",
+   "gist": "Significantly flattened the Mastery Point XP curve at higher point counts — low-CM players see little change, high-CM players need much less XP per additional point. All players' Mastery Points recalculated and refunded.",
+   "systems": [
+    "masteries"
+   ],
+   "stated_values": [],
+   "era_marker": false,
+   "hot": true
+  },
+  {
+   "date": "1/8/2023",
+   "gist": "Replaced all instances of Resist Corprus Disease with Resist Blight Disease.",
+   "systems": [
+    "items",
+    "magic"
+   ],
+   "stated_values": [],
+   "era_marker": false
+  },
+  {
+   "date": "1/13/2023",
+   "gist": "Migrated the Vampire and Werewolf Class Masteries from the Class Mastery category into the Racial mastery category.",
+   "systems": [
+    "masteries",
+    "werewolf-vampire"
+   ],
+   "stated_values": [],
+   "era_marker": false,
+   "hot": true
+  },
+  {
+   "date": "1/14/2023",
+   "gist": "Hidden-effect damage now counts toward kill-tracking. Actors are now limited to one active debuff stack per negative-effect category (Weakness To, Damage/Drain Attribute or Skill, Burden, Soul Trap, Command Creature/Humanoid) — the highest magnitude wins, ties favor the newest cast; only the specific effect is capped, not the whole spell, and this does not yet apply to players' own active effects.",
+   "systems": [
+    "combat",
+    "magic",
+    "souls"
+   ],
+   "stated_values": [
+    "Affected effect categories: Weakness To, Damage/Drain Attribute/Skill, Burden, Soul Trap, Command Creature/Humanoid"
+   ],
+   "era_marker": false
+  },
+  {
+   "date": "1/15/2023",
+   "gist": "Players' active spell effect durations no longer tick down while the player is offline.",
+   "systems": [
+    "magic"
+   ],
+   "stated_values": [],
+   "era_marker": false
+  },
+  {
+   "date": "1/16/2023",
+   "gist": "Players can now only have one summon of each creature type active at once.",
+   "systems": [
+    "magic",
+    "combat"
+   ],
+   "stated_values": [],
+   "era_marker": false
+  },
+  {
+   "date": "1/18/2023",
+   "gist": "Temporarily limited players to a single active summon of any kind at a time.",
+   "systems": [
+    "magic",
+    "combat"
+   ],
+   "stated_values": [],
+   "era_marker": false
+  },
+  {
+   "date": "1/19/2023",
+   "gist": "Atronach-sign players can now acquire Magicka-over-Time masteries (previously fully locked out).",
+   "systems": [
+    "birthsigns-races",
+    "magic"
+   ],
+   "stated_values": [],
+   "era_marker": false
+  },
+  {
+   "date": "1/21/2023",
+   "gist": "Rebalanced three birthsigns: Apprentice's Fortify Max Magicka raised to x1.5 (from x1) and Weakness to Magicka raised to 30 (from 25); Atronach's Fortify Max Magicka lowered to x1.5 (from x2); Mage's Fortify Max Magicka raised to x1 (from x0.5).",
+   "systems": [
+    "birthsigns-races"
+   ],
+   "stated_values": [
+    "Apprentice: Fortify Max Magicka x1.5 (up from x1), Weakness to Magicka 30 (up from 25)",
+    "Atronach: Fortify Max Magicka x1.5 (down from x2)",
+    "Mage: Fortify Max Magicka x1 (up from x0.5)"
+   ],
+   "era_marker": false
+  },
+  {
+   "date": "2/12/2023",
+   "gist": "Follow-up birthsign tuning: Apprentice's Weakness to Magicka lowered to 25 (from 30); Atronach's Fortify Max Magicka lowered to x1.25 (from x1.5) and Atronach players now only receive half MoT from all sources (masteries, equipment, etc.) on top of their existing lack of natural MoT.",
+   "systems": [
+    "birthsigns-races",
+    "magic"
+   ],
+   "stated_values": [
+    "Atronach: Fortify Max Magicka x1.25 (down from x1.5); receives only 50% of all MoT from items/masteries"
+   ],
+   "era_marker": false
+  },
+  {
+   "date": "2/14/2023",
+   "gist": "[Bags] can now be stored inside vault containers.",
+   "systems": [
+    "items"
+   ],
+   "stated_values": [],
+   "era_marker": false
+  },
+  {
+   "date": "2/18/2023",
+   "gist": "Major Class Mastery expansion: 313 new CMs added, including 25 Master Classes (level 55, 500 Mastery Points, only one active at a time, plus prerequisites) and 51 Master Class Abilities (require the Master Class and level 60). Forced CM refund; refunds temporarily free (no Rose of Renewal needed).",
+   "systems": [
+    "masteries"
+   ],
+   "stated_values": [
+    "313 new CMs: 25 Master Classes + 51 Master Class Abilities",
+    "Master Class requires level 55 and 500 Mastery Points"
+   ],
+   "era_marker": true,
+   "era_note": "Introduction of the entire Master Class / Master Class Ability tier — a structural, system-wide expansion of end-game mastery progression that all later MC balance passes build on.",
+   "hot": true
+  },
+  {
+   "date": "2/21/2023",
+   "gist": "The banker in Vivec can now store up to 20 stacks of items free of charge.",
+   "systems": [
+    "economy"
+   ],
+   "stated_values": [
+    "20 free item stacks via the Vivec banker"
+   ],
+   "era_marker": false
+  },
+  {
+   "date": "2/22/2023",
+   "gist": "High-end CM summons had their attack and dodge chance buffed; respawning/grind camp creatures had a bug fix applied.",
+   "systems": [
+    "masteries",
+    "camps"
+   ],
+   "stated_values": [],
+   "era_marker": false
+  },
+  {
+   "date": "2/23/2023",
+   "gist": "Added a new creature camp: a band of dwemer constructs occupying a dwemer ruin.",
+   "systems": [
+    "camps"
+   ],
+   "stated_values": [],
+   "era_marker": false,
+   "hot": true
+  },
+  {
+   "date": "2/28/2023",
+   "gist": "Werewolves using /revert now have their health set to either its pre-transformation value or its current (lower) value, whichever is lower.",
+   "systems": [
+    "werewolf-vampire"
+   ],
+   "stated_values": [],
+   "era_marker": false,
+   "hot": true
+  },
+  {
+   "date": "3/1/2023",
+   "gist": "Werewolf transformation now carries the player's current (not max) health value into beast form, requiring healing to top it off.",
+   "systems": [
+    "werewolf-vampire"
+   ],
+   "stated_values": [],
+   "era_marker": false,
+   "hot": true
+  },
+  {
+   "date": "3/2/2023",
+   "gist": "Shared group Mastery XP now requires group members to be within 6 levels of each other; additional grind camps across level ranges are being planned to accommodate this.",
+   "systems": [
+    "masteries",
+    "camps"
+   ],
+   "stated_values": [
+    "Shared XP requires being within 6 levels of group members"
+   ],
+   "era_marker": false,
+   "hot": true
+  },
+  {
+   "date": "3/4/2023",
+   "gist": "Introduced the [Temporary] item tag (vanishes after extended offline time, unlike [No Trade]). Added 6 new Vampire class masteries built around a new Feed mechanic that generates Units of Blood ([Temporary]-tagged) from feeding on living creatures, spent on the new masteries. Expanded salvageable-corpse creature list. Added a new creature camp: Red Wolves in the Ascadian Isles near Lleran Ancestral Tomb, aimed at newer adventurers.",
+   "systems": [
+    "items",
+    "werewolf-vampire",
+    "masteries",
+    "camps"
+   ],
+   "stated_values": [],
+   "era_marker": false,
+   "hot": true
+  },
+  {
+   "date": "3/7/2023",
+   "gist": "Items with a stack limit (e.g. Exploding Eureka line items) now auto-deposit/withdraw up to the remaining allowed amount instead of blocking entirely. Introduced tiered Hunt and Gather daily quest NPCs across level ranges 1-11 through 46-60.",
+   "systems": [
+    "items",
+    "quests"
+   ],
+   "stated_values": [],
+   "era_marker": false
+  },
+  {
+   "date": "3/10/2023",
+   "gist": "Drowning damage now generally scales with player level.",
+   "systems": [
+    "world",
+    "combat"
+   ],
+   "stated_values": [],
+   "era_marker": false
+  },
+  {
+   "date": "3/11/2023",
+   "gist": "Added /colorcode, letting players choose how skill/attribute names are colored (default, attribute-colored, or specialization-colored).",
+   "systems": [
+    "other"
+   ],
+   "stated_values": [],
+   "era_marker": false
+  },
+  {
+   "date": "3/11/2023",
+   "gist": "Added a new high-level creature camp: Tenacious Frost Giants atop the northern peaks of Solstheim, with 10 new rare loot items; mages advised to avoid it.",
+   "systems": [
+    "camps",
+    "items"
+   ],
+   "stated_values": [
+    "10 new rare items added to the camp's loot table"
+   ],
+   "era_marker": false,
+   "hot": true
+  },
+  {
+   "date": "3/15/2023",
+   "gist": "Added an Online Players List (/list) for sending private messages and group/guild invites directly to a selected player.",
+   "systems": [
+    "other"
+   ],
+   "stated_values": [],
+   "era_marker": false
+  },
+  {
+   "date": "3/16/2023",
+   "gist": "Placed campfires can no longer be moved (must be picked up and replaced) and newly placed campfires now self-destroy after 3 hours.",
+   "systems": [
+    "world"
+   ],
+   "stated_values": [
+    "Campfires expire after 3 hours"
+   ],
+   "era_marker": false
+  },
+  {
+   "date": "5/7/2023",
+   "gist": "Tier 5 patrons can claim 500 Reward Points once per month via /rp, account-wide (usable on only one character per month).",
+   "systems": [
+    "economy"
+   ],
+   "stated_values": [
+    "500 RP/month for Tier 5 patrons"
+   ],
+   "era_marker": false
+  },
+  {
+   "date": "5/10/2023",
+   "gist": "Happy Hour's XP multiplier is now folded into the base XP-gain formula instead of applied as a final multiplier afterward, meaning players stacking other XP-boosting effects see slightly less total XP during Happy Hour going forward.",
+   "systems": [
+    "masteries",
+    "economy"
+   ],
+   "stated_values": [],
+   "era_marker": false
+  },
+  {
+   "date": "5/19/2023",
+   "gist": "Patreon Pouch transfers are now near-instant and no longer close the inventory menu; inactive patrons no longer have pouch contents dumped into inventory and can instead reclaim individual pouch items from the Vivec banker via a new container GUI.",
+   "systems": [
+    "economy"
+   ],
+   "stated_values": [],
+   "era_marker": false
+  },
+  {
+   "date": "5/28/2023",
+   "gist": "Added tiered Lockpick Training Kits at Thieves Guild hubs that auto-relock on success but jam (temporary lockout) under frequent repeated use.",
+   "systems": [
+    "items",
+    "world"
+   ],
+   "stated_values": [
+    "4 tiers of training kits"
+   ],
+   "era_marker": false
+  },
+  {
+   "date": "6/23/2023",
+   "gist": "Players can now opt in/out (default off) of having certain controversial spell effects — Jump, Levitate, Slow Fall, Water Walking — cast on them by other players, via a new Allowed Spell Effects settings menu.",
+   "systems": [
+    "rules",
+    "magic"
+   ],
+   "stated_values": [],
+   "era_marker": false
+  },
+  {
+   "date": "7/2/2023",
+   "gist": "Overhauled Survival Mode: it can now be toggled every 24 hours; hunger/thirst deplete slower (thirst faster when hot); Warmth is now based on location+weather instead of windspeed, with equipment giving additive/subtractive bonuses and new wetness mechanics; the well fed/well hydrated/comfortable buffs now additionally multiply CM Healing/Magicka/Fatigue-over-Time gains by 1.25x; empty bottles/jugs now always return outside Survival Mode too.",
+   "systems": [
+    "world",
+    "masteries"
+   ],
+   "stated_values": [
+    "Well fed/hydrated/comfortable buffs multiply relevant CM over-time effects by 1.25x"
+   ],
+   "era_marker": false
+  },
+  {
+   "date": "7/4/2023",
+   "gist": "Upgraded the /decor (/dh) decorator: a new View Placed Objects option in homes/vaults lets players select and move any placed item (including multi-select group moves), useful for recovering out-of-bounds items or moving furniture groups together.",
+   "systems": [
+    "other"
+   ],
+   "stated_values": [],
+   "era_marker": false
+  },
+  {
+   "date": "7/22/2023",
+   "gist": "Mastery/Tradeskill XP-boosting potion effects now persist through death (The Luck excluded due to its duration).",
+   "systems": [
+    "alchemy",
+    "masteries"
+   ],
+   "stated_values": [],
+   "era_marker": false,
+   "hot": true
+  },
+  {
+   "date": "7/29/2023",
+   "gist": "Reintroduced Player Trainers from the 0.7 server: players can train up to 3 self-set skills to other players (up to their own skill value), limited to 5 uses per 24h (10 for tier 4+ patrons), with trainers setting their own base/multiplicative pricing and viewing a usage log.",
+   "systems": [
+    "tradeskills",
+    "other"
+   ],
+   "stated_values": [
+    "5 player-training uses/24h (10 for tier 4+ patrons)"
+   ],
+   "era_marker": false
+  },
+  {
+   "date": "8/2/2023",
+   "gist": "Added preparatory Class Masteries ahead of a future update: Tactician 1/2 (Combat, +Int/-Str), Strategist 1/2 (Stealth, +Int/-End), and Physical Training 1/2 (Magic, +Str/-Int), each tier costing 5 or 10 points at level 30/45.",
+   "systems": [
+    "masteries"
+   ],
+   "stated_values": [
+    "Tactician/Strategist/Physical Training: tier 1 = 5 pts/level 30, tier 2 = 10 pts/level 45, +15/-5 or +35/-10 stat swing"
+   ],
+   "era_marker": false,
+   "hot": true
+  },
+  {
+   "date": "8/3/2023",
+   "gist": "Natural Healing-over-Time is now tied to max health (was current endurance), natural Magicka-over-Time to max magicka (was current intelligence), with equipment/effect HoT/MoT additive on top. Reintroduced a Fatigue Factor by specialization (Stealth highest, Combat mid, Magic lowest), so most players should see fatigue only increase, not decrease.",
+   "systems": [
+    "magic",
+    "masteries"
+   ],
+   "stated_values": [
+    "Natural HoT = (maxHealth/50) + item/effect HoT",
+    "Natural MoT = (maxMagicka/50) + item/effect MoT"
+   ],
+   "era_marker": false
+  },
+  {
+   "date": "8/5/2023",
+   "gist": "Added Smithy Vargis in Sadrith Mora, an armor-crafter daily supply quest NPC mirroring the earlier Dirlen weaponcrafter quest.",
+   "systems": [
+    "tradeskills"
+   ],
+   "stated_values": [],
+   "era_marker": false
+  },
+  {
+   "date": "8/14/2023",
+   "gist": "Hunter MCA True Shot now deals its effect damage on every bow shot but additionally costs 472 fatigue per hit; fixed Storyteller kill-credit requiring proximity.",
+   "systems": [
+    "masteries"
+   ],
+   "stated_values": [
+    "True Shot fatigue cost: 472 per hit"
+   ],
+   "era_marker": false
+  },
+  {
+   "date": "8/15/2023",
+   "gist": "Fixed a bug where using potions too quickly from the inventory screen could falsely inflate the active-potion count without an actual active effect; Elemental Guard CM cooldown reduced to 285s for continuous buff upkeep; fixed a Focused Strike CM exploit allowing infinite buff upkeep at no fatigue cost after initial cast.",
+   "systems": [
+    "alchemy",
+    "masteries"
+   ],
+   "stated_values": [
+    "Elemental Guard cooldown: 285 seconds"
+   ],
+   "era_marker": false,
+   "hot": true
+  },
+  {
+   "date": "8/24/2023",
+   "gist": "Added summon stat-buff caps: most beneficial fortification effects (Fortify Attributes/Skills, Levitate, Swift Swim, Shield, elemental shields, Chameleon, Sanctuary, Reflect) cap at +100 via fortification spells, Fortify Health/Magicka/Fatigue cap at +500; CM buff spells like Animal Instinct/Teachings of Arkay bypass the cap additively.",
+   "systems": [
+    "magic",
+    "masteries"
+   ],
+   "stated_values": [
+    "Summon fortification cap: +100 (most effects), +500 (Fortify H/M/F)"
+   ],
+   "era_marker": false
+  },
+  {
+   "date": "8/25/2023",
+   "gist": "Added the Were-Hunters of Vvardenfeell questline via Dijivan Mertshak in Maar Gan (requires level 30+, completed Bloodmoon main quest, and no active lycanthropy/vampirism), unlocking new items, abilities, and class masteries.",
+   "systems": [
+    "quests",
+    "werewolf-vampire",
+    "masteries"
+   ],
+   "stated_values": [],
+   "era_marker": false
+  },
+  {
+   "date": "8/26/2023",
+   "gist": "Attacking or casting spells on group members no longer flags PVP (physical attacks between groupmates still land, but can't force a PVP flag).",
+   "systems": [
+    "rules",
+    "combat"
+   ],
+   "stated_values": [],
+   "era_marker": false
+  },
+  {
+   "date": "8/30/2023",
+   "gist": "Buffed the Unkempt Druids creature camp and fixed its over-frequent drop rates; fixed several related quest/item issues.",
+   "systems": [
+    "camps",
+    "items"
+   ],
+   "stated_values": [],
+   "era_marker": false
+  },
+  {
+   "date": "9/1/2023",
+   "gist": "Reduced weapon condition depreciation from normal use.",
+   "systems": [
+    "items",
+    "combat"
+   ],
+   "stated_values": [],
+   "era_marker": false
+  },
+  {
+   "date": "9/3/2023",
+   "gist": "Introduced the Combo system: physical attacks (melee/ranged/thrown/fists) within a timing window chain into bonus damage scaled by combo count, weapon skill, and hit-timing accuracy; perfectly-timed consecutive hits can trigger weapon-type-specific devastating effects; combos break on delay, target switch, or being struck; werewolves cannot combo in beast form; toggleable via /combo. Also made the Camouflage stealth CM line toggleable powers (forcing a global CM refund).",
+   "systems": [
+    "combat",
+    "masteries"
+   ],
+   "stated_values": [],
+   "era_marker": false
+  },
+  {
+   "date": "9/6/2023",
+   "gist": "Tuned the new combo system: attacking inanimate objects now breaks combo, and the streak/hit requirements for devastating effects and bonus damage were lowered slightly.",
+   "systems": [
+    "combat"
+   ],
+   "stated_values": [],
+   "era_marker": false
+  },
+  {
+   "date": "9/9/2023",
+   "gist": "Fixed a bug preventing soul trapping after landing combo attacks, and related issues with scripted active spell effects on actors.",
+   "systems": [
+    "souls",
+    "combat"
+   ],
+   "stated_values": [],
+   "era_marker": false,
+   "hot": true
+  },
+  {
+   "date": "9/12/2023",
+   "gist": "Fixed Hunter MCA True Shot; Were-Hunter damage MCAs can no longer be reflected by their target; the druid camp no longer summons lizard adds.",
+   "systems": [
+    "masteries",
+    "camps"
+   ],
+   "stated_values": [],
+   "era_marker": false
+  },
+  {
+   "date": "9/16/2023",
+   "gist": "Reworked several selected-spell Master Class Abilities (Furious Strike, Hero's Blow, Blade Dance, Poisoned Blade, Silent Blade, Threnody, Light Fingered, Crush) from requiring an explicit cast to auto-triggering on melee attacks while selected as the active spell, each retaining its prior cooldown.",
+   "systems": [
+    "masteries",
+    "combat"
+   ],
+   "stated_values": [
+    "Retained cooldowns: Hero's Blow 18s, Blade Dance 36s, Poisoned Blade 36s, Silent Blade 30s, Threnody 48s, Light Fingered/Crush 150s"
+   ],
+   "era_marker": false,
+   "hot": true
+  },
+  {
+   "date": "9/23/2023",
+   "gist": "Combo Devastating Effects are now chance-based (chance increases with more perfect combos landed) rather than guaranteed on a full perfect chain; /stuck now bypasses its cooldown in the void and applies 1s levitation to prevent fall-death.",
+   "systems": [
+    "combat"
+   ],
+   "stated_values": [],
+   "era_marker": false
+  },
+  {
+   "date": "9/29/2023",
+   "gist": "Added /selectspell (/ss) to set a spell/power as the active selected spell via chat command, with partial-name matching, for use with melee-trigger effects mid-combat.",
+   "systems": [
+    "other",
+    "combat"
+   ],
+   "stated_values": [],
+   "era_marker": false
+  },
+  {
+   "date": "10/2/2023",
+   "gist": "Bravo MCA Blade Dance recast lowered to 10s (from 36) with fatigue cost raised to 425 (from 385).",
+   "systems": [
+    "masteries"
+   ],
+   "stated_values": [
+    "Blade Dance recast 36->10s, fatigue cost 385->425"
+   ],
+   "era_marker": false
+  },
+  {
+   "date": "10/3/2023",
+   "gist": "Large rebalance of selected-spell-triggered MCAs: Blade Dance renamed Bravo's Dance (now any physical weapon, damage 350->298, Agility mod 200->250%, recast 36->10s); Brilliant Strike damage 150->1000, recast 150->6s; Poisoned Blade damage 350->1164, Agility mod 200->900%, recast 36->15s; Silent Blade damage 300->1000, recast 30->15s; Quick Hands recast 150->18s; Threnody damage 100->600, mod 225->300%, recast 48->12s, now AOE; Hero's Blow damage 600->620, mod 70->75%, recast 18->8s.",
+   "systems": [
+    "masteries",
+    "combat"
+   ],
+   "stated_values": [
+    "Bravo's Dance dmg 298, Brilliant Strike dmg 1000/recast 6s, Poisoned Blade dmg 1164, Silent Blade dmg 1000/recast 15s, Threnody dmg 600 AOE, Hero's Blow dmg 620/recast 8s"
+   ],
+   "era_marker": false,
+   "hot": true
+  },
+  {
+   "date": "10/5/2023",
+   "gist": "Soldier's Rally resist raised to +25 (from 20) and its Fortify Health typo corrected to +350; Soldier's Cry now also grants +150 Fortify Health and a 150-health restore on cast; Tainted Blood line gains passive +75 Fortify Health per rank.",
+   "systems": [
+    "masteries"
+   ],
+   "stated_values": [
+    "Soldier's Rally resist +25 (up from 20)"
+   ],
+   "era_marker": false
+  },
+  {
+   "date": "10/7/2023",
+   "gist": "Soldier Master Class gains +20 Attack Bonus.",
+   "systems": [
+    "masteries"
+   ],
+   "stated_values": [
+    "Soldier MC +20 Attack Bonus"
+   ],
+   "era_marker": false
+  },
+  {
+   "date": "10/8/2023",
+   "gist": "Large CM update: Channeler's Bounty reworked into cheap Powers (1 magicka, 120s recast, Fortify Magicka 30/210/640 for 180s); Focused Strike usable with melee/ranged weapons (Hand-to-Hand modifier swapped to Destruction); Favored Disciple armor bonus set to 50/rank with +10 Agility passive, ranks reduced 5->4; Ancient Birthright 4 adds +10 Dodge Bonus. Introduced Class Affinity, replacing the old Class Affinity Technique traits — only one Class Affinity CM can be owned at a time (until a Rose of Renewal is used), locking out CMs from other affinities. Renamed Enforcer MC to Assassin and adjusted several MC requirements/costs. Added a wave of new affinity CM lines (Fervent Belief, Infernal Hatred, Natural Stance, Assassin's Skill, Quick Shot, Stormy Coat, Reflect Dismissal, Deadly Covenant, Plaguebearer's Rune) and three new Master Classes (Slayer, Sensei, Storm Caller). Forced CM refund.",
+   "systems": [
+    "masteries"
+   ],
+   "stated_values": [],
+   "era_marker": true,
+   "era_note": "Introduction of the Class Affinity system alongside a large wave of new CM lines and Master Classes — a structural overhaul of how mastery specialization locks work, referenced by nearly every subsequent mastery balance pass.",
+   "hot": true
+  },
+  {
+   "date": "10/12/2023",
+   "gist": "Player-vs-player resistances are now tracked and applied to several abilities that previously ignored them (Quick Shot vs elemental resists, Poisoner's Talent vs Poison resist, Furious Strike/Natural Stance vs Normal Weapon resist, Infernal Hatred vs Magicka resist), sometimes affecting duration instead of/alongside magnitude; combo damage confirmed unaffected by resists. Crafting single potions too quickly now forces a slowdown.",
+   "systems": [
+    "combat",
+    "magic",
+    "alchemy"
+   ],
+   "stated_values": [],
+   "era_marker": false,
+   "hot": true
+  },
+  {
+   "date": "10/13/2023",
+   "gist": "Added new Magic CM lines Wizard's Fury (Wizard affinity, Intelligence-scaled damage) and Refining Agent (Alchemist affinity, self-poisoning potions that boost magicka regen). Items created by a CM line (Explosive Eureka/Refining Agent potions, Gypsy Were-Hunter stakes) now become unusable if the player no longer owns that CM.",
+   "systems": [
+    "masteries",
+    "alchemy"
+   ],
+   "stated_values": [],
+   "era_marker": false,
+   "hot": true
+  },
+  {
+   "date": "10/17/2023",
+   "gist": "Added the Necromancer-affinity Xiudia's Boon CM line (Willpower-scaled life tap); Lich Master Class requirements changed to Teachings of Arkay 4 and Xiudia's Boon 4.",
+   "systems": [
+    "masteries"
+   ],
+   "stated_values": [],
+   "era_marker": false
+  },
+  {
+   "date": "10/18/2023",
+   "gist": "Added Class Affinity CM lines Blessing of Faith (Paladin, self-rez removing 20-60% death debt) and Glorious Tides/Crusading Faith (Healer, group heal + passive Attack/Agility); added the free general CM Remove Illusion power and the Werewolf CM Bite (usable outside beast form, 30s recast); United Faith now grants +50 Armor Bonus/rank, Stormy Coat +50 Fortify Magicka/rank, Controlled Regression cost cut 100->25. Forced refund.",
+   "systems": [
+    "masteries",
+    "werewolf-vampire"
+   ],
+   "stated_values": [
+    "Blessing of Faith removes 20-60% death debt",
+    "Controlled Regression cost 100->25"
+   ],
+   "era_marker": false,
+   "hot": true
+  },
+  {
+   "date": "10/20/2023",
+   "gist": "Reworked Gypsy Were-Hunter MCA Stake (Carve Stake now grants 6 stakes/15s, max stack 30, effects land on the struck target) and Vital Strike (now a selected-spell trigger); Spring/Fine Spring Darts got reduced stack sizes and their enchant value zeroed out.",
+   "systems": [
+    "masteries",
+    "werewolf-vampire",
+    "items"
+   ],
+   "stated_values": [],
+   "era_marker": false
+  },
+  {
+   "date": "10/21/2023",
+   "gist": "Made several Storm Caller/Channeler/Were-Hunter/Exorcist MCAs significantly less resistible or explicitly non-resistible; experimentally increased spell travel speed.",
+   "systems": [
+    "masteries",
+    "magic"
+   ],
+   "stated_values": [],
+   "era_marker": false
+  },
+  {
+   "date": "10/22/2023",
+   "gist": "Bedrolls now restricted to temples and player-owned homes; Almsivi/Divine Intervention and Recall now inflict Teleportation Exhaustion (fully drains magicka and fatigue). Changed Specialization Health factors (Combat 2.4/Stealth 1.6/Magic 1) and Magicka factors (Combat 0.9/Stealth 1.15/Magic 1.5). Metabolist line boosted (+30 Alchemy, +30 Alchemy Fortification Max); Concentration reworked to Alchemist-affinity group spell (+5 Int/Will per rank). All Mage-spec self/touch/target MCAs now guarantee 100% cast chance. Added Wizard CM Sorcerous Maelstrom and the Sorcerer Master Class.",
+   "systems": [
+    "alchemy",
+    "magic",
+    "masteries",
+    "world"
+   ],
+   "stated_values": [
+    "Specialization Health factors: Combat 2.4 / Stealth 1.6 / Magic 1",
+    "Specialization Magicka factors: Combat 0.9 / Stealth 1.15 / Magic 1.5"
+   ],
+   "era_marker": false,
+   "hot": true
+  },
+  {
+   "date": "10/23/2023",
+   "gist": "Buffed damage on the Sorcerous Maelstrom and Wizard's Fury CM lines; fixed a Stake range exploit and an enchanting/spellmaking exploit that let players attach Area to On Self effects.",
+   "systems": [
+    "masteries",
+    "enchanting"
+   ],
+   "stated_values": [],
+   "era_marker": false,
+   "hot": true
+  },
+  {
+   "date": "10/24/2023",
+   "gist": "Broad numeric rebalance of Combat-spec CM lines: Elemental Guard resistances increased across all 5 ranks; Smite Undead magicka costs cut across all 5 ranks; Fervent Belief magicka costs cut sharply; Parasitic Bond absorb strength increased 2-4x; Primal Scream fatigue damage adjusted; Life Clutch absorb health increased; Glorious Cry/Hero's Shout/Dark Touch had their heal/damage and Armor Bonus values roughly doubled or more.",
+   "systems": [
+    "masteries",
+    "combat"
+   ],
+   "stated_values": [
+    "Elemental Guard resist 5->30 across ranks 1-5"
+   ],
+   "era_marker": false
+  },
+  {
+   "date": "10/25/2023",
+   "gist": "Adjusted non-say chat colors for readability and lowered spell travel speed again to address spells passing through players. Broad racial CM rebalance across Altmer, Argonian, Bosmer, Breton, Khajiit, Orsimer, and Redguard (stat values and CM costs tuned); several Master Class requirement changes (Guardian, Hero, Defender, Death Knight, Burglar, Minstrel, Exorcist, Metabolist); Metabolist MCA Miraculous Mix now doubles Eureka/Refining Agent potion yield. Refund recommended but not forced.",
+   "systems": [
+    "masteries",
+    "birthsigns-races",
+    "alchemy"
+   ],
+   "stated_values": [
+    "Highborn Fortify Magicka 50->150"
+   ],
+   "era_marker": false,
+   "hot": true
+  },
+  {
+   "date": "10/26/2023",
+   "gist": "Assassin MCA Muscle Lock reworked to trigger on bladed attacks (300s cooldown) draining 180 low-resist Strength/Agility and costing 482 fatigue on use.",
+   "systems": [
+    "masteries"
+   ],
+   "stated_values": [
+    "Muscle Lock: 180 pts Str/Agi drain, 482 fatigue cost, 300s cooldown"
+   ],
+   "era_marker": false
+  },
+  {
+   "date": "10/27/2023",
+   "gist": "Corrected Glorious Cry/Dark Touch/Hero's Shout numeric typos from the 10/24 patch; Soldier MC now passively grants +2 HP Factor and Soldier's Cry +1 HP Factor.",
+   "systems": [
+    "masteries"
+   ],
+   "stated_values": [],
+   "era_marker": false
+  },
+  {
+   "date": "10/29/2023",
+   "gist": "Redguard Mercenary MC gains +25 Intelligence Fortification Max; several Mercenary/Sage/Forester MCAs buffed (Expose weakness/drain to 45, Grizzled +25 End/+25 Spd, Stoneskin/Forest's Might set all resistances to 85% temporarily). CM refunds are no longer free going forward, but one final free refund was pushed to everyone.",
+   "systems": [
+    "masteries"
+   ],
+   "stated_values": [],
+   "era_marker": false,
+   "hot": true
+  },
+  {
+   "date": "11/8/2023",
+   "gist": "Focused Strike now requires Destruction instead of Hand-to-Hand; several racial CM costs reduced (Imperial, Khajiit, Orsimer, Redguard); vampire Daywalker cost cut 50->25 and Ancient Bloodline 75->40. Mastery refund required.",
+   "systems": [
+    "masteries",
+    "birthsigns-races",
+    "werewolf-vampire"
+   ],
+   "stated_values": [
+    "Daywalker cost 50->25, Ancient Bloodline cost 75->40"
+   ],
+   "era_marker": false,
+   "hot": true
+  },
+  {
+   "date": "11/10/2023",
+   "gist": "Added new Combat CM lines Shield Bash (Paladin affinity, shield-wielders knock down + bonus damage every 45s) and Bewildering Charge (Warrior affinity, dash-jump silences the next target hit for 3s, 120s cooldown). Malignant Shroud line made harder to resist and now grants +15 Intelligence/rank.",
+   "systems": [
+    "masteries"
+   ],
+   "stated_values": [],
+   "era_marker": false
+  },
+  {
+   "date": "11/15/2023",
+   "gist": "Bewildering Charge silence duration doubled to 6s. Birthsign tuning: Wombburn (Atronach) now also drains 5% max magicka every 6s but its spell absorption was cut 30->15; Lady's Grace fatigue restore raised 1,000->10,000; Warwyrd (Warrior) Fortify Attack raised +15->+25.",
+   "systems": [
+    "masteries",
+    "birthsigns-races"
+   ],
+   "stated_values": [
+    "Lady's Grace fatigue restore: 1,000 -> 10,000"
+   ],
+   "era_marker": false
+  },
+  {
+   "date": "11/16/2023",
+   "gist": "Removed Wombburn's magicka-drain-on-self component for the time being.",
+   "systems": [
+    "birthsigns-races"
+   ],
+   "stated_values": [],
+   "era_marker": false
+  },
+  {
+   "date": "11/17/2023",
+   "gist": "Slayer MC Fortify Health raised 350->450 with +10 Dodge Bonus added; Muscle Lock duration/fatigue cost both increased; Infernal Bond damage/heal and modifiers buffed but duration shortened 30s->10s; Assassin's Skill recast cut 45->30s; Poisoner's Talent reworked with per-rank passive Poison Resistance and short-blade fortify; Shield Bash gained an Agility drain/Normal-Weapon-weakness debuff; Religious Zeal traded some Fortify for Fortify Agility; Parasitic Bond and Dark Touch reworked mechanically.",
+   "systems": [
+    "masteries"
+   ],
+   "stated_values": [],
+   "era_marker": false
+  },
+  {
+   "date": "11/18/2023",
+   "gist": "Introduced the Tradeskill Recipe system: recipes are acquired, learned, and (currently for level-10 Armor Crafters) tradeable but not sellable. Added Crafters Marks (Artisan and Master tiers), earned from Dirlen/Vargis daily quests, exchangeable at the new Crafters Consortium hub in Mournhold for crafting resources and high-tier recipes. Introduced 3 new specialization-locked armor sets (Wind Golem/Skystrider/White Wind) craftable via Consortium recipes.",
+   "systems": [
+    "tradeskills",
+    "economy",
+    "items"
+   ],
+   "stated_values": [],
+   "era_marker": false
+  },
+  {
+   "date": "11/20/2023",
+   "gist": "Added Dismiss Summon (/dismisssummon or /di, or via the /help menu). New Crafters Consortium armor sets now require level 60. Certain hidden-effect equipment (e.g. Martyr's Breastplate, Coralium Chestplate) and unique spell effects (e.g. Manticore's Tail) can now stack per trigger instead of being capped to a single 1-second instance.",
+   "systems": [
+    "items",
+    "magic",
+    "combat"
+   ],
+   "stated_values": [],
+   "era_marker": false
+  },
+  {
+   "date": "11/21/2023",
+   "gist": "Extended the stacking fix to selected-spell melee-trigger effects (Mark of Faith, True Shot, Thunderous Mark, Stormy Coat, Frenzy); Frenzy's resist changed from Agility to (less-resistible) Normal Weapons; new spec-locked armor's Weakness To raised 10->40 to account for resists; Mark of Faith duration raised to 60s.",
+   "systems": [
+    "masteries",
+    "magic"
+   ],
+   "stated_values": [],
+   "era_marker": false
+  },
+  {
+   "date": "11/23/2023",
+   "gist": "New Tailoring recipes added to the Crafters Consortium; Consortium-obtained recipes are now [No Trade] for now. Added Fashionista Bonnie in Pelagiad, a Tailoring daily-supply-quest NPC granting gold, mastery XP, and Crafters Marks.",
+   "systems": [
+    "tradeskills",
+    "economy"
+   ],
+   "stated_values": [],
+   "era_marker": false
+  },
+  {
+   "date": "11/25/2023",
+   "gist": "Teased the Tomb of the Desiccator, a new dungeon/camp. Added Grandmaster Crafters Marks (1 per tradeskill per week from completing all three tier-10 tradeskill dailies). Added new Jewelry recipes to the Crafters Consortium, plus a UI cleanup.",
+   "systems": [
+    "camps",
+    "tradeskills",
+    "economy"
+   ],
+   "stated_values": [
+    "1 Grandmaster Crafters Mark per tradeskill per week"
+   ],
+   "era_marker": false
+  },
+  {
+   "date": "11/28/2023",
+   "gist": "Added /timer for viewing time until daily/weekly resets. Login Points now cap at 10,000 (existing overflow retained, not reduced). Deployed a patch attempting to fix werewolf damage failing outside cell authority.",
+   "systems": [
+    "other",
+    "economy",
+    "werewolf-vampire"
+   ],
+   "stated_values": [
+    "Login Points cap: 10,000"
+   ],
+   "era_marker": false
+  },
+  {
+   "date": "12/21/2023",
+   "gist": "Werewolves with Controlled Regression can now double-tap sneak in beast form to instantly revert, toggled via /togglesneakrevert or /wwsneakrevert.",
+   "systems": [
+    "werewolf-vampire"
+   ],
+   "stated_values": [],
+   "era_marker": false
+  },
+  {
+   "date": "12/23/2023",
+   "gist": "Elder MCA Tribal Ward reworked into a 15-minute group ward that heals affected members for +350 (+50% Willpower mod) over 4s when they're physically struck.",
+   "systems": [
+    "masteries"
+   ],
+   "stated_values": [
+    "Tribal Ward heals +350 (+50% Willpower mod) for 4s"
+   ],
+   "era_marker": false
+  },
+  {
+   "date": "12/29/2023",
+   "gist": "Major fix to how attack bonus (hit chance), defend bonus (dodge chance), cast penalty (cast chance), and armor bonus interact with certain equipment and abilities.",
+   "systems": [
+    "combat"
+   ],
+   "stated_values": [],
+   "era_marker": false
+  },
+  {
+   "date": "12/31/2023",
+   "gist": "Vampire Daywalker's Weakness to Fire/Magicka cut to 10 each (from 25/50); Ancient Bloodline's cut to 20 each (from 50/100).",
+   "systems": [
+    "werewolf-vampire",
+    "masteries"
+   ],
+   "stated_values": [
+    "Daywalker Weakness to Fire/Magicka: 25/50 -> 10/10",
+    "Ancient Bloodline Weakness to Fire/Magicka: 50/100 -> 20/20"
+   ],
+   "era_marker": false,
+   "hot": true
+  },
+  {
+   "date": "1/1/2024",
+   "gist": "Added new birthsign-locked CMs (level 51, matching birthsign required, cost 120 CM points each).",
+   "systems": [
+    "birthsigns-races",
+    "masteries"
+   ],
+   "stated_values": [
+    "Birthsign-51 CMs cost 120 points, require level 51"
+   ],
+   "era_marker": false
+  },
+  {
+   "date": "2/18/2024",
+   "gist": "Introduced the Endowment System via Enchantress Tessarina: after unlocking it, players can store one constant-effect enchanted Robe and one Skirt with her, and their enchant effects apply passively without wearing the items, toggleable via /endow — effects persist through werewolf transformation.",
+   "systems": [
+    "enchanting",
+    "items",
+    "werewolf-vampire"
+   ],
+   "stated_values": [],
+   "era_marker": false,
+   "hot": true
+  },
+  {
+   "date": "2/22/2024",
+   "gist": "Added Rehabilitator Anja (near the Vivec bank), who refunds Class Mastery points for a gold fee scaling with level — 50,000g at level 15, up to 500,000g at level 55.",
+   "systems": [
+    "masteries",
+    "economy"
+   ],
+   "stated_values": [
+    "CM refund cost: 50,000g (Lv15) / 200,000g (Lv35) / 500,000g (Lv55 max)"
+   ],
+   "era_marker": false,
+   "hot": true
+  },
+  {
+   "date": "2/27/2024",
+   "gist": "Added a new creature camp: Murk Dreugh in a mostly-underwater cave, guarded by a Warlord boss (requires water breathing and melee).",
+   "systems": [
+    "camps"
+   ],
+   "stated_values": [],
+   "era_marker": false,
+   "hot": true
+  },
+  {
+   "date": "3/2/2024",
+   "gist": "Added class/level restrictions to some Murk Dreugh loot table items, increased overall drop chances, and buffed the Warlord boss. Ring of Ages renamed Ring of Ageas and reworked; Murk Claw Ring reworked.",
+   "systems": [
+    "camps",
+    "items"
+   ],
+   "stated_values": [],
+   "era_marker": false
+  },
+  {
+   "date": "3/8/2024",
+   "gist": "Player Training now resets daily instead of on an exact 24-hour timer.",
+   "systems": [
+    "tradeskills"
+   ],
+   "stated_values": [],
+   "era_marker": false
+  },
+  {
+   "date": "3/18/2024",
+   "gist": "Pilfering Potential now also grants Pilfering Stash (Feather scaling with lockpick tier while a lockpick is equipped); Shadowstalker now adds +30 to +150% critical strike damage per rank (bugged for ranged). Burglar MC and Quick Hands grant extra Pilfering Stash ranks. Metabolist MC/Miraculous Mix/Immunity now passively boost freshly-mixed potion potency, duration, and count (with both MCAs, +1 extra potion count).",
+   "systems": [
+    "masteries",
+    "alchemy"
+   ],
+   "stated_values": [
+    "Shadowstalker crit damage: +30/60/90/120/150% per rank"
+   ],
+   "era_marker": false,
+   "hot": true
+  },
+  {
+   "date": "3/21/2024",
+   "gist": "Gypsy Were-Hunter Stake now stacks damage correctly; Assassin MC +35%, Bravo/Hunter MC +20% passive critical strike damage; Soldier/Guardian/Defender/Death Knight gain improved block chance and reduced block fatigue cost; Thunderous Mark recast cut 180->15s.",
+   "systems": [
+    "masteries"
+   ],
+   "stated_values": [
+    "Thunderous Mark recast: 180s -> 15s"
+   ],
+   "era_marker": false
+  },
+  {
+   "date": "3/23/2024",
+   "gist": "Juggernaut's Crush recast cut 150->60s; Berserker/Reckless Vigor made attacks more cumbersome to execute; Gypsy Khajiit's Seasoned Traveler gains passive +75 Feather; Burglar MC gains passive +50 Feather; Soldier MC/Mercenary Redguard MC attacks no longer drain fatigue.",
+   "systems": [
+    "masteries"
+   ],
+   "stated_values": [],
+   "era_marker": false
+  },
+  {
+   "date": "3/23/2024",
+   "gist": "Sorcerer's elemental Fingers MCAs and Channeler's Mana Blast now additionally apply a 200% elemental/magicka weakness (ignoring the normal weakness resist limit) for 30s on the target.",
+   "systems": [
+    "masteries",
+    "magic"
+   ],
+   "stated_values": [
+    "200% weakness effect that ignores the weakness resist cap"
+   ],
+   "era_marker": false
+  },
+  {
+   "date": "3/24/2024",
+   "gist": "Forester's Feral Companion MCA replaced with a reworked Flame Lick (775 +125% Agility fire damage on touch every 36s, 291 fatigue cost). Breathy Ballad duration increased from 60/180/360s to 1800/3600/5400s.",
+   "systems": [
+    "masteries"
+   ],
+   "stated_values": [
+    "Flame Lick: 775 (+125% Agility) fire damage, 36s cooldown, 291 fatigue cost"
+   ],
+   "era_marker": false
+  },
+  {
+   "date": "3/24/2024",
+   "gist": "Mass Health Factor squish across many CM/MC lines (Blessing of Nirn, Plaguebearer's Rune, Orcish Brute, Hearty, Reckless Vigor, Bravo, Chosen, Guardian, Metabolist, Soldier, Soldier's Cry, Cursed Orc all reduced); Assassin's Skill/Poisoned Blade now require short blades specifically instead of any bladed weapon. Added new CM lines Anthemic Crescendo (Bard), Purifying Touch (Monk), Quick Blade (Ranger), Rakish Attack (Rogue). Mandatory full CM refund, free for 7 days.",
+   "systems": [
+    "masteries"
+   ],
+   "stated_values": [
+    "Example: Blessing of Nirn Health Factor 1 -> 0.2"
+   ],
+   "era_marker": false
+  },
+  {
+   "date": "3/26/2024",
+   "gist": "Added new CM lines with attached Health Factors: Arcane Fortitude (Caster, Endurance), Battle Instincts (Stealth, Agility), Battle Hardened (Combat, Endurance), Battle Tested (Combat, Strength).",
+   "systems": [
+    "masteries"
+   ],
+   "stated_values": [],
+   "era_marker": false
+  },
+  {
+   "date": "3/30/2024",
+   "gist": "Overhauled many \"when this is your selected spell\" CM triggers to cost specific Fatigue/Magicka amounts rather than simply draining them. Glorious Cry/Hero's Shout/Dark Touch now trigger on melee attacks; True Shot and Jolt now require being the selected spell to trigger on bow shots (True Shot damage mod raised 200->300%, both got new/shortened cooldowns); Infernal Bond's stat mod and duration increased; Banshee Wail heavily reworked and buffed; the Mug line triggers on melee; Life Clutch magnitudes raised; the Primal Scream line reworked with longer duration/radius and new magicka costs. Tenacious Frost Giant glyph/shield drop rates lowered.",
+   "systems": [
+    "masteries",
+    "camps"
+   ],
+   "stated_values": [
+    "True Shot damage mod 200% -> 300%",
+    "Banshee Wail damage 600 -> 900 pts"
+   ],
+   "era_marker": false
+  },
+  {
+   "date": "3/30/2024",
+   "gist": "Vampire Feed and Vampiric Strike CMs now trigger on melee attacks while selected (Feed: 400 unresistible damage, 70% chance for 1 Blood every 3s; Vampiric Strike: 1200-1500 unresistible damage every 12s scaled by level); Frenzy also now triggers on melee.",
+   "systems": [
+    "werewolf-vampire",
+    "masteries"
+   ],
+   "stated_values": [
+    "Feed: 400 unresistible dmg, 70% chance/3s for 1 Blood",
+    "Vampiric Strike: 1200-1500 unresistible dmg/12s"
+   ],
+   "era_marker": false,
+   "hot": true
+  },
+  {
+   "date": "3/31/2024",
+   "gist": "Smite Undead line reworked so its damage now applies on every physical attack for a 10-minute window instead of a single instance.",
+   "systems": [
+    "masteries"
+   ],
+   "stated_values": [],
+   "era_marker": false
+  },
+  {
+   "date": "4/14/2024",
+   "gist": "Quick Hands and Power Ballad MCAs now also trigger on physical melee attacks (not just on cast); raised the max achievable combo damage; added new general CMs Combo Focus 1-3 (combos no longer break on taking damage; double devastating-effect chance; triple combo damage), unlockable from level 15/35/55.",
+   "systems": [
+    "masteries",
+    "combat"
+   ],
+   "stated_values": [
+    "Combo Focus 3: combo damage x3"
+   ],
+   "era_marker": false
+  },
+  {
+   "date": "5/1/2024",
+   "gist": "Bosmer racial Naturekin reworked into a passive renamed Nature's Kin; Breton racial Seer fixed to be properly toggleable. Set the Always Succeeds cast-chance flag on various CMs. Experimentally added specialization cast/dodge/attack chance penalties: Combat (small cast, major dodge penalty), Stealth (small attack, major cast penalty), Magic (small dodge, major attack penalty).",
+   "systems": [
+    "masteries",
+    "combat",
+    "birthsigns-races"
+   ],
+   "stated_values": [],
+   "era_marker": false
+  },
+  {
+   "date": "5/11/2024",
+   "gist": "Werewolf beast forms (Beast/Feral Beast/Dire Beast) now fortify Agility instead of Endurance, to avoid killing players via extreme endurance loss on /revert.",
+   "systems": [
+    "werewolf-vampire"
+   ],
+   "stated_values": [],
+   "era_marker": false
+  },
+  {
+   "date": "5/12/2024",
+   "gist": "Added Cosmetologist Galwen in Vivec's St. Delyn Plaza, who alters a character's face/hair appearance for a gold fee.",
+   "systems": [
+    "other"
+   ],
+   "stated_values": [],
+   "era_marker": false
+  },
+  {
+   "date": "5/13/2024",
+   "gist": "Added a one-time Race/Class/Birthsign respec at level 60 via Socucius Ergalla in Seyda Neen (requires the Death of a Taxman quest be either completed or not yet started, no spent mastery points, and not being in beast form); the server's 2-year anniversary event grants an extra respec via an Anniversary Certificate.",
+   "systems": [
+    "birthsigns-races",
+    "quests"
+   ],
+   "stated_values": [],
+   "era_marker": false
+  },
+  {
+   "date": "6/27/2024",
+   "gist": "Long-term Patreon supporters (12+ months at Tier 5 equivalent, with lower-tier equivalents also unlockable) can trigger or extend Happy Hour once every 72 hours via /activatehappyhour, account-bound and experimental.",
+   "systems": [
+    "economy"
+   ],
+   "stated_values": [
+    "Happy Hour trigger cooldown: 72 hours"
+   ],
+   "era_marker": false
+  },
+  {
+   "date": "7/5/2024",
+   "gist": "Flora is now visually harvestable for all players regardless of graphic herbalism settings; cell resets no longer guarantee ingredient respawn, and players are advised to disable graphic herbalism in owned homes to avoid permanently-picked plants.",
+   "systems": [
+    "world",
+    "tradeskills"
+   ],
+   "stated_values": [],
+   "era_marker": false
+  },
+  {
+   "date": "7/14/2024",
+   "gist": "Launched Player Housing: purchase personalized homes from Bim Joonie (gold cost, level/playtime/quest gates), pay 10% of original cost as biweekly upkeep, demolish/restore vanilla furniture, place crafted/owned furniture with no-collision mode, control public/private access and visitor allow/deny lists, assign co-owners, run Shopkeeper Mode with a secure deposit box and transaction logs, and configure activation behavior (access restriction, teleport points, sounds, messages, exit warps) via Object Settings. Added the Furnisher tradeskill (150+ craftable furnishings via workbench, some modular) and new Crafters Consortium furnishing recipes.",
+   "systems": [
+    "tradeskills",
+    "economy",
+    "world",
+    "items"
+   ],
+   "stated_values": [
+    "Home upkeep: 10% of original purchase price every 2 weeks"
+   ],
+   "era_marker": true,
+   "era_note": "Launch of Player Housing — a major new game system (purchasable homes, the Furnisher tradeskill, shopkeeping) built out over dozens of follow-up patches."
+  },
+  {
+   "date": "8/3/2024",
+   "gist": "Free CM refund week. Guardian MC's Armor Bonus raised 500->550; Guardian's Aura replaced with Divinity (+20 all-element/magicka resist, +350 HP, +100 Armor); Guardian's Relentlessness replaced with Guardian's Aid (group HoT + passive Restoration Max/Armor Bonus). Added three new Master Classes: Crusader (Combat, undead-slaying heal proc), Ninja (Stealth, Vanish invisibility power, elemental Ninjutsu proc), and Animator (Magic, Grand Animation summon that doesn't count toward the summon limit, plus Rune of Animation damage proc). Animation Adept now grants a unique summon per rank.",
+   "systems": [
+    "masteries"
+   ],
+   "stated_values": [
+    "Guardian's Aid: +425 HoT (+50% Restoration mod)"
+   ],
+   "era_marker": false,
+   "hot": true
+  },
+  {
+   "date": "8/6/2024",
+   "gist": "Player-made potion magnitudes/durations rebalanced for cross-race parity; Reflect and Spell Absorption potions had their magnitudes greatly reduced.",
+   "systems": [
+    "alchemy"
+   ],
+   "stated_values": [],
+   "era_marker": false,
+   "hot": true
+  },
+  {
+   "date": "8/9/2024",
+   "gist": "Dismiss Summon is now also obtainable as a free (0 CM) power starting at level 6, an instant-recast alternative to /dismisssummon that doesn't count toward the summon limit.",
+   "systems": [
+    "masteries",
+    "magic"
+   ],
+   "stated_values": [],
+   "era_marker": false
+  },
+  {
+   "date": "8/17/2024",
+   "gist": "Players can now access their backpack and loot cache contents inside any player home; homeowners/co-owners can restrict item add/remove permissions on containers for allowed visitors.",
+   "systems": [
+    "world",
+    "items"
+   ],
+   "stated_values": [],
+   "era_marker": false
+  },
+  {
+   "date": "8/23/2024",
+   "gist": "Introduced Chain Casting: Magic-spec players who cast a damage spell within 9 seconds of a matching-element Special Combo Attack (their own or a group member's) unleash an AOE amplified version of that combo attack, scaled by the caster's initial damage and Destruction skill; toggleable display via /chain.",
+   "systems": [
+    "magic",
+    "combat"
+   ],
+   "stated_values": [
+    "Chain Cast window: 9 seconds after a matching Special Combo Attack"
+   ],
+   "era_marker": false
+  },
+  {
+   "date": "9/9/2024",
+   "gist": "Players can now only wait/rest by using a bed.",
+   "systems": [
+    "world"
+   ],
+   "stated_values": [],
+   "era_marker": false
+  },
+  {
+   "date": "9/13/2024",
+   "gist": "Fixed a vanilla Morrowind exploit allowing players to create Corprus-inflicting spells; existing player-made Corprus spells had the component stripped (or the spell removed if it was Corprus-only).",
+   "systems": [
+    "rules",
+    "magic"
+   ],
+   "stated_values": [],
+   "era_marker": false
+  },
+  {
+   "date": "11/9/2024",
+   "gist": "Trees now have a small chance to produce resin when chopped.",
+   "systems": [
+    "world",
+    "tradeskills"
+   ],
+   "stated_values": [],
+   "era_marker": false
+  },
+  {
+   "date": "12/26/2024",
+   "gist": "The Crafters Consortium now exchanges Essences for high-tier jewelry, costing 1 essence and 1 Grand Mark per exchange.",
+   "systems": [
+    "economy",
+    "tradeskills"
+   ],
+   "stated_values": [],
+   "era_marker": false
+  },
+  {
+   "date": "12/29/2024",
+   "gist": "Added /passwordchange, letting players change their account password in-game (special characters discouraged due to bugs).",
+   "systems": [
+    "infrastructure"
+   ],
+   "stated_values": [],
+   "era_marker": false
+  },
+  {
+   "date": "1/2/2025",
+   "gist": "Necromancer line Teachings of Arkay had its buff duration/recast lowered from 30 minutes to 15 minutes.",
+   "systems": [
+    "masteries"
+   ],
+   "stated_values": [
+    "Teachings of Arkay duration/recast: 30 min -> 15 min"
+   ],
+   "era_marker": false
+  },
+  {
+   "date": "1/28/2025",
+   "gist": "Lower-tier Crafters Marks can now be upgraded to higher tiers at the Crafters Consortium.",
+   "systems": [
+    "economy",
+    "tradeskills"
+   ],
+   "stated_values": [],
+   "era_marker": false
+  },
+  {
+   "date": "3/2/2025",
+   "gist": "The Rampage 51 CM can now be resisted to a small degree.",
+   "systems": [
+    "masteries"
+   ],
+   "stated_values": [],
+   "era_marker": false
+  },
+  {
+   "date": "4/5/2025",
+   "gist": "Hold Breath CM line now always succeeds; added a new jewelcrafting ring recipe at the Crafters Consortium.",
+   "systems": [
+    "masteries",
+    "tradeskills"
+   ],
+   "stated_values": [],
+   "era_marker": false
+  },
+  {
+   "date": "4/12/2025",
+   "gist": "Broad rebalance of all thirteen level-51 birthsign CMs, mostly cutting recast times significantly (e.g. Apprentice's Power Burst 510->420s, Mage's Call of the Mage 3600->1800s, Thief's Lucky Seven 420->7s) and some magnitude/duration tweaks (Atronach's Form of the Atronach now doubles returned magicka; Steed's Swift Wind now costs no magicka).",
+   "systems": [
+    "birthsigns-races",
+    "masteries"
+   ],
+   "stated_values": [
+    "Lucky Seven recast 420s -> 7s",
+    "Swift Wind: no longer costs magicka (was 412)"
+   ],
+   "era_marker": false
+  },
+  {
+   "date": "5/25/2025",
+   "gist": "All CM summon lines had their health pools doubled with improved resilience; Teachings of Arkay significantly improved and lost its cooldown entirely; several elemental Atronach/Death summons now also cast matching Weakness+damage spells. Fixed a Soul Mastery cooldown bug.",
+   "systems": [
+    "masteries",
+    "magic",
+    "souls"
+   ],
+   "stated_values": [],
+   "era_marker": false,
+   "hot": true
+  },
+  {
+   "date": "6/2/2025",
+   "gist": "Launched the Fishing system: a Fishing Guru in Khuul starts the questline, fishing poles are equippable, 2,000+ unique fish exist with varied weights/ingredient effects, regional fishing crates drop unique items, /fish gives info, two new bosses are catchable and distribute loot to all online participants, and new tradeskill recipes (fishing, jewelcrafting, tailoring) were added.",
+   "systems": [
+    "tradeskills",
+    "items",
+    "world"
+   ],
+   "stated_values": [
+    "Over 2,000 unique fish"
+   ],
+   "era_marker": true,
+   "era_note": "Launch of the Fishing system — a major new content pillar (2,000+ fish, regional crates, catchable bosses, new tradeskill recipes) expanded across many follow-up patches."
+  },
+  {
+   "date": "6/4/2025",
+   "gist": "The Fishing Guru now exchanges caught fish for Fishing Points, redeemable for rewards.",
+   "systems": [
+    "tradeskills",
+    "economy"
+   ],
+   "stated_values": [],
+   "era_marker": false
+  },
+  {
+   "date": "6/10/2025",
+   "gist": "Fishing now requires moving to a different cell after enough casts in one spot; AFK fishing now results in a server kick after a timeout, to prevent cell desync issues from AFK players.",
+   "systems": [
+    "tradeskills",
+    "rules"
+   ],
+   "stated_values": [],
+   "era_marker": false
+  },
+  {
+   "date": "6/17/2025",
+   "gist": "In-game chat is now bridged with the #in-game-chat Discord channel.",
+   "systems": [
+    "infrastructure"
+   ],
+   "stated_values": [],
+   "era_marker": false
+  },
+  {
+   "date": "6/29/2025",
+   "gist": "Disabled Survival Mode's warmth and wetness mechanics (may return later).",
+   "systems": [
+    "world"
+   ],
+   "stated_values": [],
+   "era_marker": false
+  },
+  {
+   "date": "7/22/2025",
+   "gist": "Fishing no longer requires a cell change once fish stop biting — just moving a short distance; moving farther grants a decaying fishing XP bonus of up to +35%. Fishing bosses were made slightly less trivial against certain effects.",
+   "systems": [
+    "tradeskills"
+   ],
+   "stated_values": [
+    "Max fishing XP boost from repositioning: +35%"
+   ],
+   "era_marker": false
+  },
+  {
+   "date": "8/6/2025",
+   "gist": "Players can now move through non-hostile NPCs indoors by activating them while in spellcasting stance (not usable under Telekinesis).",
+   "systems": [
+    "world"
+   ],
+   "stated_values": [],
+   "era_marker": false
+  },
+  {
+   "date": "8/12/2025",
+   "gist": "Fish container storage capacity quadrupled; added a bait-container tradeskill recipe and consumable fishing-benefit potions to the Fishing Guru's rewards; fishing bosses now require active participation to award loot.",
+   "systems": [
+    "tradeskills",
+    "items"
+   ],
+   "stated_values": [
+    "Fish container capacity: 4x increase"
+   ],
+   "era_marker": false
+  },
+  {
+   "date": "8/16/2025",
+   "gist": "Added 3 new server-side quest chains (Strength, Wit, Speed trials via Goran the Strong, Inquiladius Expica, and Wria Lightningfoot) unlocking new class mastery lines on completion; initial quests open at level 20.",
+   "systems": [
+    "quests",
+    "masteries"
+   ],
+   "stated_values": [],
+   "era_marker": false
+  },
+  {
+   "date": "8/23/2025",
+   "gist": "Blocking reworked: shields now block automatically without positioning as long as one is equipped; block chance range widened (iBlockMinChance 10->15, iBlockMaxChance 50->65) with a significant fatigue cost increase for successful blocks. Safeguard CM's block-chance passive removed (cell priority issues) but its block-fatigue-reduction passive was greatly improved; Melding Construct now scales Armor Rating with rank; exiting homes now applies a slowfall effect.",
+   "systems": [
+    "combat",
+    "masteries"
+   ],
+   "stated_values": [
+    "iBlockMinChance 10 -> 15, iBlockMaxChance 50 -> 65"
+   ],
+   "era_marker": false
+  },
+  {
+   "date": "8/25/2025",
+   "gist": "Melding Construct CM now also grants Armorer's Favor, a temporary skill fortification after repairing an item of that type.",
+   "systems": [
+    "masteries"
+   ],
+   "stated_values": [],
+   "era_marker": false
+  },
+  {
+   "date": "9/7/2025",
+   "gist": "Reintroduced Mannequins: place them in homes/vaults to display, equip-from, trade-with, or return equipment; 20 race/gender combos purchasable from Duharr via Login Points plus 30 more from other sources; mannequins don't count toward item placement limits and are restricted to the homeowner to prevent No Trade item exploits.",
+   "systems": [
+    "world",
+    "items"
+   ],
+   "stated_values": [
+    "20 mannequin variants via Login Points + 30 from other methods"
+   ],
+   "era_marker": false
+  },
+  {
+   "date": "9/13/2025",
+   "gist": "Homeowners/co-owners can now rename crafted, placed containers (200-character limit); a container must be reverted to its default name before it can be returned to inventory.",
+   "systems": [
+    "world"
+   ],
+   "stated_values": [
+    "Container name limit: 200 characters"
+   ],
+   "era_marker": false
+  },
+  {
+   "date": "11/8/2025",
+   "gist": "Added Dwemerologist Thadren, unlocking a new method of equipment advancement upon completing his questline.",
+   "systems": [
+    "items",
+    "quests"
+   ],
+   "stated_values": [],
+   "era_marker": false
+  },
+  {
+   "date": "11/9/2025",
+   "gist": "Fixed the new equipment-upgrade system (likely the Infusion Anvil): item statistics no longer decrease during upgrades, and Enchant Value no longer increases on already-enchanted items — those items instead receive larger boosts to their other stats on successful upgrades.",
+   "systems": [
+    "enchanting",
+    "anvil",
+    "items"
+   ],
+   "stated_values": [],
+   "era_marker": false,
+   "hot": true
+  },
+  {
+   "date": "1/3/2026",
+   "gist": "/stuck now works like Exit Home indoors; the Equipment Upgrade system was scaled back to its originally intended power level. Iron Fist CM now adds 20-100% (per rank) of equipped gauntlet armor rating as non-resistible fist damage. Added three new Combat CM pairs: Rend/Slash (Warrior, AOE strike + Normal Weapon resist debuff), Cleave/Split (Paladin, AOE strike + resist debuff/silence), Rip/Sever (Shadowknight, AOE strike + resist debuff/Reflect nullify). Free CM refunds for a limited time.",
+   "systems": [
+    "masteries",
+    "anvil",
+    "combat"
+   ],
+   "stated_values": [
+    "Iron Fist: 20/40/60/80/100% of gauntlet armor rating as bonus fist damage"
+   ],
+   "era_marker": false,
+   "hot": true
+  },
+  {
+   "date": "1/5/2026",
+   "gist": "Added a hidden-state toggle for individual Quick Hot Keys (/hk), the /quickkeypage (/qkp) command for instantly switching key pages, and up to 8 additional quick key pages / 16 additional hot keys purchasable with Reward Points.",
+   "systems": [
+    "economy",
+    "other"
+   ],
+   "stated_values": [
+    "Up to +8 quick key pages, +16 quick hot keys via RP"
+   ],
+   "era_marker": false
+  },
+  {
+   "date": "1/6/2026",
+   "gist": "Master Armorer trainer Sirollus Saccus relocated to the Hawkmoth Legion Garrison in Ebonheart; a new Master Medium Armor trainer, Cinia Urtius, added at Tel Fyr. Bigger Pockets' Feather effect raised to 15/rank (from 10); several armor-type CM lines (Iron Hearted, Energetic Fortitude, Resourceful Covering, Thick Skin) now grant scaling bonuses (Feather/Attack/Chameleon/Resist Magicka) based on a percentage of the wearer's total armor rating when in a full matching-type set.",
+   "systems": [
+    "masteries",
+    "world"
+   ],
+   "stated_values": [
+    "Bigger Pockets Feather: 10 -> 15 per rank"
+   ],
+   "era_marker": false
+  },
+  {
+   "date": "1/7/2026",
+   "gist": "Overhauled the Explosive Eureka CM line: thrown potions now cost 10% of Max Magicka from Current Magicka (fail silently if insufficient), and on hitting a foe deal tiered Poison Damage (Unstable 100, Explosive 260, Detonating 530, Meteoric 662, Kinetic 942, all +20% Willpower mod) if the thrower has enough magicka.",
+   "systems": [
+    "masteries",
+    "alchemy"
+   ],
+   "stated_values": [
+    "Poison damage tiers: 100/260/530/662/942 (+20% Willpower mod)",
+    "Cast cost: 10% of Max Magicka per throw"
+   ],
+   "era_marker": false,
+   "hot": true
+  },
+  {
+   "date": "1/8/2026",
+   "gist": "Overhauled the Sorcerous Maelstrom CM line: each of its 5 tiers now deals a primary single-target elemental hit plus a secondary lower-damage AOE hit with an Intelligence modifier, with full new damage/cost values per tier. Also buffed several magic MCAs: Power Induction's Restore Magicka duration 1->30s, Arcane Shock/Mana Blast area 0->10ft, Sorcerer's Fingers damage 600->800 with a new 25ft weakness area, Lich Subversion's Willpower mod 10->50% (damage now resistible), Lich Form's restore/damage 33->66, Exorcise recast 42->3s, Mark of Faith duration 60->120s with heal proc 30->65, Call Lightning area 6->15ft with recast 9->3s, Thunderous Mark area 6->15ft with a new Weakness to Shock effect, Molten Silver area 0->15ft.",
+   "systems": [
+    "masteries",
+    "magic"
+   ],
+   "stated_values": [
+    "Sorcerous Maelstrom 5: 764 primary + 326 (+60% Destruction) AOE fire/frost/shock, 339 magicka"
+   ],
+   "era_marker": false
+  },
+  {
+   "date": "1/9/2026",
+   "gist": "Channeler's Bounty Fortify Magicka raised to 400/800/1200 (from 70/210/640); Stormy Coat's damage shield raised to 25/50/75/100; Deadly Covenant's Restore Health raised and Damage Health lowered with a longer damage duration.",
+   "systems": [
+    "masteries"
+   ],
+   "stated_values": [
+    "Channeler's Bounty Fortify Magicka: 70/210/640 -> 400/800/1200"
+   ],
+   "era_marker": false
+  },
+  {
+   "date": "1/12/2026",
+   "gist": "CM refunds are no longer free, requiring Gold or a Rose of Renewal. Combo damage scaling changed so slower weapons deal more combo damage and faster weapons less. Fishing no longer requires periodic movement, and a general crashed-client-kick fix made the old anti-AFK fishing script unnecessary.",
+   "systems": [
+    "masteries",
+    "combat",
+    "tradeskills",
+    "infrastructure"
+   ],
+   "stated_values": [],
+   "era_marker": false
+  },
+  {
+   "date": "1/15/2026",
+   "gist": "Introduced Enchantment Imprinting: Enchanters dismantle tradeskill gems at the Resource Salvager into Gem Dust (10 Gem Dust = 1 Enchant Value), condense Gem Dust into an unequippable dagger-type Shard of Enchanting at any Forge, enchant the Shard normally, then imprint it onto an unenchanted item of equal or greater Enchant Value and matching cast type via /imprint — consuming both items to produce the newly enchanted item. The current imprintable Enchant Value cap is 260 (2,600 Gem Dust).",
+   "systems": [
+    "enchanting",
+    "anvil",
+    "items"
+   ],
+   "stated_values": [
+    "10 Gem Dust = 1 Enchant Value",
+    "Imprintable Enchant Value cap: 260 (2,600 Gem Dust)"
+   ],
+   "era_marker": false,
+   "hot": true
+  },
+  {
+   "date": "1/16/2026",
+   "gist": "Overmaxed attributes/skills no longer show a misleading drain effect in the effects list; relogging now clears damage attribute/skill effects (but not blight/disease drains); /inspect now shows base attribute/skill values.",
+   "systems": [
+    "combat",
+    "other"
+   ],
+   "stated_values": [],
+   "era_marker": false
+  },
+  {
+   "date": "1/17/2026",
+   "gist": "Boots/Helm of Blinding Speed no longer auto-transform by race; players can freely swap between racial variants at any armor crafting anvil under a new Unique Variants category (no tradeskill XP granted). /inspect now also shows overmaxed values.",
+   "systems": [
+    "anvil",
+    "items"
+   ],
+   "stated_values": [],
+   "era_marker": false
+  },
+  {
+   "date": "1/21/2026",
+   "gist": "Stalhrim nodes must now be physically struck with the Ancient Nordic Pick Axe instead of activated, yielding more Raw Stalhrim per node and respawning faster since they no longer wait on a full cell reset.",
+   "systems": [
+    "tradeskills",
+    "world"
+   ],
+   "stated_values": [],
+   "era_marker": false
+  },
+  {
+   "date": "1/22/2026",
+   "gist": "Fixed Stalhrim nodes not registering physical strikes due to collision issues; nodes now also have a small chance to yield Frost Salts.",
+   "systems": [
+    "tradeskills"
+   ],
+   "stated_values": [],
+   "era_marker": false
+  },
+  {
+   "date": "3/1/2026",
+   "gist": "Furnisher tradeskill gains Dwemer furniture (140+ new pieces) plus a new meshless lighting system with 100+ light-source profiles, some unlocked by exploration; added a Lighting Helper to the decorator menu for managing them.",
+   "systems": [
+    "tradeskills",
+    "world"
+   ],
+   "stated_values": [
+    "Over 140 new furnishings, 100+ light source profiles"
+   ],
+   "era_marker": false
+  },
+  {
+   "date": "6/19/2026",
+   "gist": "Guild TLC update: guild list shows online/total member counts, kick permission bugs fixed. Guilds can now level up to 25, earning XP from kills, harvesting, tradeskill crafting, wood/stone/ore gathering, and fishing; each guild level grants 2.5 Guild Perk Points spendable by Masters/Elders on 5-tier perks (costing 1/2/2/3/4 points per tier): Guild Hauling (+5-25% chest gold), Guild Grinding (+2-10% Mastery XP), Guild Harvesting (+3-15% extra harvest chance), Guild Crafting (+2-10% Tradeskill/Fishing XP), Guild Treasure Hunting (+1-5% rare item odds). Perks refundable for 2,500g/point; /guildcontribution shows top contributors.",
+   "systems": [
+    "masteries",
+    "economy",
+    "other"
+   ],
+   "stated_values": [
+    "+10 XP per slain enemy (up to 40 grouped), +1 XP per caught fish",
+    "Guild Perk Point cost per tier: 1/2/2/3/4",
+    "Perk refund cost: 2,500 gold per point"
+   ],
+   "era_marker": false
+  },
+  {
+   "date": "8/2/2026",
+   "gist": "Added a new creature camp: Infernal Atronachs overrunning volcanic parts of Molag Amur, spread across multiple mini-camps with fast respawns and a chance for powerful item drops.",
+   "systems": [
+    "camps",
+    "items"
+   ],
+   "stated_values": [],
+   "era_marker": false,
+   "hot": true
+  },
+  {
+   "date": "8/3/2026",
+   "gist": "Corrected the new Infernal Atronachs' names and made them properly harvestable after being slain; fixed incorrect body-part slots on their new equipment drops.",
+   "systems": [
+    "camps",
+    "items"
+   ],
+   "stated_values": [],
+   "era_marker": false
+  },
+  {
+   "date": "3/22/2024",
+   "gist": "Clarified macro policy: macros must not activate faster than a human could realistically replicate (sub-0.1s delays are bannable server-lag risks); private, low-traffic self-training via macro (e.g. Restoration/Alteration) is acceptable; AFK macroing at grind camps is not, since it desyncs the area for other players.",
+   "systems": [
+    "rules"
+   ],
+   "stated_values": [],
+   "era_marker": false
+  },
+  {
+   "date": "4/1/2025",
+   "gist": "A server backup process ran out of storage space; the cleanup step deleted backups mid-condensation, losing roughly two weeks of backup history and corrupting at least one player's save (being manually restored). AWS storage will be expanded, though upgrading proved harder than expected, prompting a planned migration to an updated server.",
+   "systems": [
+    "infrastructure"
+   ],
+   "stated_values": [
+    "~2 weeks of backup history lost"
+   ],
+   "era_marker": false
+  },
+  {
+   "date": "4/5/2025",
+   "gist": "Reiterated that exploiting server bugs — especially unfixable ones — will result in permanent removal from the server.",
+   "systems": [
+    "rules"
+   ],
+   "stated_values": [],
+   "era_marker": false
+  },
+  {
+   "date": "4/25/2026",
+   "gist": "Asked players not to discuss methods of bypassing anti-cheat measures.",
+   "systems": [
+    "rules"
+   ],
+   "stated_values": [],
+   "era_marker": false
+  },
+  {
+   "date": "8/20/2026",
+   "gist": "Announced a mandatory server host migration requiring the hosting device to be restarted, planned for a low-population window with downtime duration still unknown.",
+   "systems": [
+    "infrastructure"
+   ],
+   "stated_values": [],
+   "era_marker": true,
+   "era_note": "Server host migration — one of the explicit major-event categories (the server moving hosts)."
+  }
+ ]
+}

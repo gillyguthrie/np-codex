@@ -46,6 +46,7 @@ Fetch only the file(s) the question needs — the two catalogs are big. For conc
 - `vanilla_spells.json` — all 1,065 vanilla spells with effects, plus the 141 magic effects' schools and base costs.
 - `vanilla_ref.json` (~900 KB — fetch only for vanilla lookups/comparisons) — vanilla Morrowind equipment parsed from the game ESMs (~1,580 records: armor, weapons, clothing incl. rings/amulets, with enchantments). VANILLA values only, never valid on NP. **AR convention differs**: `ar_base` is the ESM value (tooltip at skill 30) — `vanillaAR@100 = floor(ar_base × 100/30)` — while NP's items.json stores AR@100 directly; convert before comparing. See the file's `_meta.conventions`.
 - `effects_vocab.json` — the effect vocabulary; every parsed effect's `key` and `delivery` class resolve here. `raw_text` on any record beats its parsed form when they disagree.
+- `server_eras.json` (~165 KB) — the server timeline: 29 era markers + a 400-entry dev-announcement digest (2018-2026, dev-stated). Check here for 'when did X change' and before trusting any era-sensitive value.
 - `contradictions.json`, `open_questions.json` — known conflicts and known gaps. Check before calling anything settled.
 - `docs/` (repo) — generated human-readable pages of the same data, for browsing. `images/` — tooltip screenshots, illustrative only: never re-derive a stat from an image; if a screenshot appears to contradict the data, report it as a suspected correction rather than trusting either side silently.
 

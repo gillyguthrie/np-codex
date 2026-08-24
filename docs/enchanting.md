@@ -37,6 +37,9 @@ Max observed constant-effect magnitude per blank slot x effect class. 'Fortify c
 - Weapon enchants are cast-on-strike/charge-based — a different system from constant-effect apparel enchants. Damage-on-strike enchants are not mitigated by the target's Armor Rating.
 - Glamouring a weapon can inconsistently break its silver flag or damage-type flag (e.g. a Daedric weapon glamoured with a Steel model losing its ability to damage Daedra); reproduction attempts have failed on other models — model-specific or intermittent. **[provisional]**
 - Charges consumed per cast/strike = ROUNDUP(effect total EV x (1.1 - EnchantSkill/100)), minimum 1; uses until empty = floor(soulCharge / chargesPerCast). Example: 140 EV at Enchant 108 -> ceil(140 x 0.02) = 3 charges/cast; a 1500 soul gives 500 uses.
+- Enchantment Imprinting (introduced 2026-01-15): Enchanters dismantle tradeskill gems at the Resource Salvager into Gem Dust (10 Gem Dust = 1 Enchant Value), condense dust into a Shard of Enchanting at any Forge, enchant the Shard normally, then imprint it onto an unenchanted item of sufficient EV. Imprintable EV cap: 260 (2,600 Gem Dust).
+- Endowment System (introduced 2024-02-18, via the enchantress NPC): after unlocking, one constant-effect Robe and one Skirt can be stored and their enchants apply passively without wearing the items (/endow toggles); effects persist through werewolf transformation.
+- Disenchanting exists (introduced with the 2022-11-12 rework): requires Enchant 100 and level 25.
 
 ## Infusion Anvil (2026-08)
 
