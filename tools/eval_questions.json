@@ -210,6 +210,14 @@
    "area": "loadout-builder",
    "added": "2026-08-24",
    "grade_last": "A"
+  },
+  {
+   "id": "eq:029",
+   "q": "build a character with 900 mp, dark elf, fire magic, daggers, heavy armor — 'just tell me in chat'",
+   "expects": "Question round includes the delivery-format question WITH the builder link + one-phrase intro. Chat delivery: race/sign/spec line, numbered masteries with per-line costs and explicit total arithmetic <= budget, gear one slot per line with stats, weapon last, one-line linked file offer at the end. All names/costs validated against builder data.",
+   "area": "loadout-builder",
+   "added": "2026-08-24",
+   "grade_last": "A"
   }
  ]
 }

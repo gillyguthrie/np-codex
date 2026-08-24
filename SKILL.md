@@ -64,9 +64,9 @@ Fetch only the file(s) the question needs — the two catalogs are big. For conc
 - Don't append unsolicited offers ("if you want X, that's a separate lookup") — just answer what was asked.
 - **Counts are counted, never estimated.** If you state how many of something ("all six blessings", "the 10 vampire masteries"), derive the number from the fetched data — by code when more than a glance. Watch for name collisions: a mastery *named* like a group ("Divine Blessing" the power vs. the six god-blessing mastery families) is not that group.
 
-## Building loadout files for the community character builder
+## Building characters (chat build or builder file)
 
-When a user asks to BUILD A CHARACTER / LOADOUT for the community builder (https://gillyguthrie.github.io/np-character-builder/), produce a loadout file its Load button accepts. This flow activates only on an explicit build/export request — a question about a build is just a normal answer.
+When a user asks to BUILD A CHARACTER / LOADOUT, they get the same guided flow with two delivery formats: a readable build in chat, or a loadout file for the community builder tool (https://gillyguthrie.github.io/np-character-builder/ — its Load button accepts the file). Unless their phrasing already says which ("make me a file", "just tell me"), ASK as part of the question round — and ALWAYS include the link with a one-phrase intro, since many users don't know the tool exists: "Want this as a loadout file for the community character builder (https://gillyguthrie.github.io/np-character-builder/ — an interactive planner where you pick race/gear/masteries and see live stat tiles; it can load this build from a file), or just laid out here in chat?" This flow activates only on an explicit build request — a question about a build is just a normal answer.
 
 **Data**: fetch `https://gillyguthrie.github.io/np-character-builder/data.json` (the builder's own anonymized data — items, weapons, masteries with costs, races, signs, presets). Every reference in the output file MUST resolve against this file, never against memory or even the codex catalogs (the builder's data is a curated subset). If the fetch 404s, say the builder data isn't published yet and stop.
 
@@ -76,10 +76,12 @@ When a user asks to BUILD A CHARACTER / LOADOUT for the community builder (https
 
 **The flow**:
 1. Parse the request; note what's specified (budget, race, theme, weapons, armor class) and what's missing.
-2. Ask ONE compact round of fill-in-the-blank questions for the load-bearing gaps only — birthsign, specialization if ambiguous, and any named gear the user hinted at ("did you want the X set?"). Offer a sensible default with each question. Never a second round unless the answers create a new fork.
+2. Ask ONE compact round of fill-in-the-blank questions for the load-bearing gaps only — delivery format (file or chat) if not already clear, birthsign, specialization if ambiguous, and any named gear the user hinted at ("did you want the X set?"). Offer a sensible default with each question. Never a second round unless the answers create a new fork.
 3. Pick masteries to the budget: sum the cost fields from data.masteries, show the arithmetic, stay ≤ budget (multi-rank families: buying rank N requires ranks 1..N — include them all). Fit the theme (e.g. fire magic -> Destruction-supporting lines, Alchemist/Wizard affinity per theme).
 4. Pick gear from data.items matching the stated armor class/theme; requested items not present in the builder data: say so plainly and offer the closest alternatives — never invent.
-5. Validate before delivering: every race/sign key exact, weapon index in range, every slot value decodes to a real name|owner pair, every mastery name exact, budget arithmetic correct. Then deliver the .json file with a 2-3 line summary (budget used, key picks).
+5. Validate before delivering: every race/sign key exact, weapon index in range, every slot value decodes to a real name|owner pair, every mastery name exact, budget arithmetic correct. Then deliver:
+   - **File**: the .json file plus a 2-3 line summary (budget used, key picks), and mention it loads via the builder's Load button.
+   - **Chat**: the standard loadout style — race/birthsign/spec on one line; masteries as a numbered list with per-line costs and the total shown ("75+75+... = 900"); gear one slot per line; weapon last. Same data, same validation — a chat build must be exactly loadable if the user later asks for it as a file. End by offering the file version in one short line that includes the builder link (https://gillyguthrie.github.io/np-character-builder/).
 
 ## Contributing
 

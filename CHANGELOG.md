@@ -1,5 +1,8 @@
 # Changelog
 
+## 2026-08-24 — v0.4.1b chat builds + builder discovery
+- Build requests now offer BOTH deliveries: a readable chat build (race/sign/spec line, numbered masteries with cost arithmetic, gear one slot per line) or the builder-loadable file — asked as part of the single question round, ALWAYS with the builder's link and a one-phrase intro so users discover the tool. Chat builds use the same data and validation, so they remain exactly convertible to a file on request. Acceptance-tested (eq:029). `np-codex.skill` repackaged.
+
 ## 2026-08-24 — v0.4.1 loadout authoring for the community builder
 - **SKILL.md: new "Building loadout files" section** — on an explicit build request, the codex fetches the builder's own data.json (published with builder v1.16), asks ONE compact round of fill-in-the-blank questions (birthsign, spec, named gear), selects masteries to the CM budget with arithmetic shown (prerequisite ranks included), picks gear from the builder catalog, validates every reference (byte-exact race/sign keys, weapon index, name|owner slot refs, exact mastery names), and delivers a .nplb.json the builder's Load button accepts. `np-codex.skill` repackaged.
 - Acceptance-tested end to end: a "900 CM Dark Elf fire mage, daggers, heavy armor" request produced an exact-900 build that loaded into the live page with zero errors (eval bank eq:028).
