@@ -973,7 +973,7 @@
   {
    "id": "lore:nerevarine-chronicles-books",
    "topic": "The Nerevarine Prophecies Chronicles",
-   "summary": "Community-written in-world fiction: one player authored a multi-volume anthology of in-character short stories, distributed in-game as a handful of hand-delivered book copies. The first volume told a comic caper about a trickster who convinced a crowd an ordinary fork was a rare magic weapon and sold it to the most gullible bidder before the ruse was exposed.",
+   "summary": "Community-written in-world fiction: one player authored a multi-volume anthology of in-character short stories, distributed in-game as a handful of hand-delivered book copies. The first volume told a comic caper about a trickster who convinced a crowd an ordinary fork was a rare magic weapon and sold it to the most gullible bidder before the ruse was exposed. Volume II was later identified by its author as 'The Solstheim Weekend Massacre', an in-world account of the 0.7 era's Solstheim closure.",
    "facts": [
     {
      "statement": "Community-written in-world fiction: a player authored a multi-volume anthology of in-character short stories, distributed in-game as only a handful of hand-delivered book copies rather than being freely available.",
@@ -986,6 +986,10 @@
     {
      "statement": "Community-written in-world fiction: later volumes covered other in-character tales nominated by players, including stories about a mysterious former staff member and a large in-game conflict remembered as the Solstheim ordeal.",
      "src": "lorechan-fiction"
+    },
+    {
+     "statement": "Chronicles Volume II is 'The Solstheim Weekend Massacre' (author-confirmed by the KB maintainer, 2026-08-24): an in-world 'historical account' of the 0.7-era decision to close access to Solstheim, framed as recorded for archival purposes and uncensored by the Tribunal Temple.",
+     "src": "maintainer"
     }
    ],
    "src": "lorechan-fiction"

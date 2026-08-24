@@ -1,5 +1,8 @@
 # Changelog
 
+## 2026-08-24 — v0.4.3d Chronicles Volume II identified
+- Author-confirmed: Chronicles Volume II is "The Solstheim Weekend Massacre" — an in-world account of the 0.7 era's Solstheim closure. First two pages transcribed from a screenshot of the in-game tome into lore_texts.json (status: partial, three [name withheld] redactions pending authorization); the Chronicles lore entry updated. Remaining pages pending screenshots.
+
 ## 2026-08-24 — v0.4.3c gondolier full text
 - lore_texts.json +1: The Gondolier of Balmora stored verbatim per maintainer call (7 texts now). On the full read, the closing "lesson" is bawdy in-world humor from an unreliable narrator (vanilla-Morrowind-style); the record's note says so explicitly, and the lore.json paraphrase entry was corrected (the story concludes with that mock moral — it is not an unfinished cliffhanger). Chronicles Volume II: searched the maintainer's Google Drive and the tes3mp folder — manuscript not found; only the in-game tome remains as a source.
 
