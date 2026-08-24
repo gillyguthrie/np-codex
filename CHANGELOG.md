@@ -1,5 +1,10 @@
 # Changelog
 
+## 2026-08-24 — v0.4.1 loadout authoring for the community builder
+- **SKILL.md: new "Building loadout files" section** — on an explicit build request, the codex fetches the builder's own data.json (published with builder v1.16), asks ONE compact round of fill-in-the-blank questions (birthsign, spec, named gear), selects masteries to the CM budget with arithmetic shown (prerequisite ranks included), picks gear from the builder catalog, validates every reference (byte-exact race/sign keys, weapon index, name|owner slot refs, exact mastery names), and delivers a .nplb.json the builder's Load button accepts. `np-codex.skill` repackaged.
+- Acceptance-tested end to end: a "900 CM Dark Elf fire mage, daggers, heavy armor" request produced an exact-900 build that loaded into the live page with zero errors (eval bank eq:028).
+- Companion builder release v1.16 (separate repo): duplicate clear-all id bug fixed (canceled reset no longer wipes masteries; panel clear-all now works), restore() guarded against unknown race/sign in hand-edited files, and pub/data.json now ships — the anonymized builder data as standalone JSON, extracted from the leak-scanned page.
+
 ## 2026-08-24 — v0.4.0 eval round 2 + storyline wording
 - Persona eval round 2: 14 questions (7 regression, 7 fresh probing v0.3.1/v0.4.0 content) — 14/14 grounded, contested potion-limit handled per c:active-potion-limit, locations/NPCs/spells/eras files all exercised correctly. Eval bank grown to 27 questions; eq:003 expectation amended to the contested state.
 - server_eras.json: two storyline entries reworded (the 0.7 finale's protagonist described as the server dev's in-world persona).

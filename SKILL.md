@@ -64,6 +64,23 @@ Fetch only the file(s) the question needs — the two catalogs are big. For conc
 - Don't append unsolicited offers ("if you want X, that's a separate lookup") — just answer what was asked.
 - **Counts are counted, never estimated.** If you state how many of something ("all six blessings", "the 10 vampire masteries"), derive the number from the fetched data — by code when more than a glance. Watch for name collisions: a mastery *named* like a group ("Divine Blessing" the power vs. the six god-blessing mastery families) is not that group.
 
+## Building loadout files for the community character builder
+
+When a user asks to BUILD A CHARACTER / LOADOUT for the community builder (https://gillyguthrie.github.io/np-character-builder/), produce a loadout file its Load button accepts. This flow activates only on an explicit build/export request — a question about a build is just a normal answer.
+
+**Data**: fetch `https://gillyguthrie.github.io/np-character-builder/data.json` (the builder's own anonymized data — items, weapons, masteries with costs, races, signs, presets). Every reference in the output file MUST resolve against this file, never against memory or even the codex catalogs (the builder's data is a curated subset). If the fetch 404s, say the builder data isn't published yet and stop.
+
+**File format** (save as `<name>.nplb.json`, delivered as a downloadable file):
+`{"app":"nplb","v":1,"name":"<build name>","state":{...}}` where state =
+`race`/`sign`: BYTE-EXACT keys of data.races / data.signs (anything else breaks the page silently — copy the key, never retype it) · `cls`: "Combat"|"Stealth"|"Magic" · `weapon`: the weapon's ARRAY INDEX in data.weapons, as a string · `slots`: {slotId: encodeURIComponent(item.name+"|"+item.owner)} for slot ids helm,cuirass,pauldronl,pauldronr,handl,handr,greaves,feet,shield,shirt,pants,skirt,robe,belt,amulet,ring,ring2 · `mast`: array of EXACT mastery names · `custom`: {} unless the user wants a hand-typed enchant · primitives (`debuff`,`unarm`,`vamp`,`wolf`,`strike`,`skl`,`skm`,`skh`) only when relevant.
+
+**The flow**:
+1. Parse the request; note what's specified (budget, race, theme, weapons, armor class) and what's missing.
+2. Ask ONE compact round of fill-in-the-blank questions for the load-bearing gaps only — birthsign, specialization if ambiguous, and any named gear the user hinted at ("did you want the X set?"). Offer a sensible default with each question. Never a second round unless the answers create a new fork.
+3. Pick masteries to the budget: sum the cost fields from data.masteries, show the arithmetic, stay ≤ budget (multi-rank families: buying rank N requires ranks 1..N — include them all). Fit the theme (e.g. fire magic -> Destruction-supporting lines, Alchemist/Wizard affinity per theme).
+4. Pick gear from data.items matching the stated armor class/theme; requested items not present in the builder data: say so plainly and offer the closest alternatives — never invent.
+5. Validate before delivering: every race/sign key exact, weapon index in range, every slot value decodes to a real name|owner pair, every mastery name exact, budget arithmetic correct. Then deliver the .json file with a 2-3 line summary (budget used, key picks).
+
 ## Contributing
 
 Corrections and additions go through the repo: https://github.com/gillyguthrie/np-codex (issues or pull requests, per GOVERNANCE.md). A contribution needs a source — public channel + date, a tooltip screenshot, or an in-game measurement. The KB names no individuals and never references private channels.
