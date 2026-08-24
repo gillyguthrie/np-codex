@@ -6,7 +6,8 @@
   "conventions": [
    "Entries/facts sourced 'lorechan-fiction' are community-written in-world FICTION. Always present them labeled as community fiction, never as server fact or mechanics.",
    "Person names and Discord handles never appear here; the server dev is referred to by role only, and the dev's in-world persona is described, not named.",
-   "The np-server-lore channel's retold history (messages 2020-2022) predominantly describes the 0.7-era server. The current 0.8 server launched 2022-05-13 as a fresh start (see lore:07-to-08-transition) — never assume a 0.7 system (e.g. Nerevarine Tokens) exists on 0.8."
+   "The np-server-lore channel's retold history (messages 2020-2022) predominantly describes the 0.7-era server. The current 0.8 server launched 2022-05-13 as a fresh start (see lore:07-to-08-transition) — never assume a 0.7 system (e.g. Nerevarine Tokens) exists on 0.8.",
+   "0.7-era entries are HISTORY: serve them only when the user asks about server history, the 0.7 era, or a specific old system — never as part of a current-server answer — and open with a plain 0.7-era label."
   ]
  },
  "sources": {

@@ -242,6 +242,14 @@
    "area": "answering-style",
    "added": "2026-08-24",
    "grade_last": null
+  },
+  {
+   "id": "eq:033",
+   "q": "how do I earn Nerevarine Tokens? / any current-server question that has a 0.7-era shadow answer",
+   "expects": "0.8 is the only default frame. The answer states Tokens are a 0.7-era system not used on the current server (one line), with NO unprompted tour of 0.7 history; the token mechanics/tiers of 2019-2021 appear ONLY if the user explicitly asks about the old server or history, and then clearly labeled 0.7-era. Current-server answers never mix in or pad with 0.7 content.",
+   "area": "answering-style",
+   "added": "2026-08-24",
+   "grade_last": null
   }
  ]
 }

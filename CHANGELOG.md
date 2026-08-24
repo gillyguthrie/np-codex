@@ -1,5 +1,8 @@
 # Changelog
 
+## 2026-08-24 — v0.4.2d 0.8-only default frame
+- **SKILL.md rule 6 hardened: the current 0.8 server is the ONLY default frame.** 0.7-era content (pre-2022-05-13 — old systems, Nerevarine Tokens, old racials/birthsigns, retold history) is never volunteered, mixed into a current-server answer, or used as padding; it appears only on an explicit history/0.7 question, plainly labeled as 0.7-era history. Matching lore.json `_meta` convention added; eval eq:033; `np-codex.skill` repackaged.
+
 ## 2026-08-24 — v0.4.2c tables for all structured answers
 - **SKILL.md answering style: tiers, drop tables, cost breakdowns, comparisons, and any parallel records now render as markdown tables** (header row, one record per row, natural sort) — never comma-packed paragraphs; bullets only for ~2–4 one-dimensional items. Prompted by a real Heart's Day tier answer that shipped as an unreadable paragraph. Eval eq:032 added; `np-codex.skill` repackaged.
 
