@@ -1,5 +1,9 @@
 # Changelog
 
+## 2026-08-24 — v0.4.0 eval round 2 + storyline wording
+- Persona eval round 2: 14 questions (7 regression, 7 fresh probing v0.3.1/v0.4.0 content) — 14/14 grounded, contested potion-limit handled per c:active-potion-limit, locations/NPCs/spells/eras files all exercised correctly. Eval bank grown to 27 questions; eq:003 expectation amended to the contested state.
+- server_eras.json: two storyline entries reworded (the 0.7 finale's protagonist described as the server dev's in-world persona).
+
 ## 2026-08-24 — v0.4.0 dev-announcement ingest (server-updates channel)
 - **New `data/server_eras.json`**: the server timeline — 29 era markers (launches, wipes, system reworks, 2018-2026) plus a 400-entry structured digest of every substantive dev announcement, with stated values preserved. Dev-stated tier; new `s-updates` source. This anchors every era tag in the KB.
 - **Dev-stated upgrades**: fact:potion-effect-caps now cites the 2022-11-12 rework announcement (+ the 2024-08-06 reflect/absorb potion nerf); ench:roll-mechanics confirmed (min/max -> flat average, announced example 10-30 -> 20/20); new facts: spec HP/Magicka factors (2.4/1.6/1.0 and 0.9/1.15/1.5 — reconciling EXACTLY with measured 3.6/2.8/2.2 via a +1.2 base), quickkey potion ban, potion limit clears on death.

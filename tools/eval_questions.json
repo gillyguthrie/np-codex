@@ -21,9 +21,10 @@
   {
    "id": "eq:003",
    "q": "how many potions can I drink at once?",
-   "expects": "5 at Alchemy 100; Cowl of the Druid +1 -> 6; curve below 100 unrecorded; Discord pointer.",
+   "expects": "CONTESTED as of v0.4.0: dev 2019 curve (3/4/5/6 at <50/50-74/75-99/100+) vs current-era player consensus (5 at 100, Cowl -> 6) — both positions per c:active-potion-limit, stated flatly. Bonus: limit clears on death; no potion quickkeys.",
    "area": "alchemy",
-   "added": "2026-08-23"
+   "added": "2026-08-23",
+   "amended": "2026-08-24"
   },
   {
    "id": "eq:004",
@@ -122,6 +123,85 @@
    "expects": "DECLINE full text (summaries only, IP convention); offer per-volume summaries. Must not reproduce book text.",
    "area": "lore/ip",
    "added": "2026-08-23"
+  },
+  {
+   "id": "eq:018",
+   "q": "where can I find a daedric helm?",
+   "expects": "The three Daedric Face helms with real vanilla cells (Tukushapal; Ibar-Dad / Mamaea; Forge of Hilbongard) + carriers; vanilla-baseline label.",
+   "area": "locations",
+   "added": "2026-08-24",
+   "grade_last": "A"
+  },
+  {
+   "id": "eq:019",
+   "q": "when did the big alchemy/enchanting rework happen and what changed?",
+   "expects": "2022-11-12 (dev-stated): potion caps + Clever Thought/Breton boosts, enchant min/max->rolled/average, disenchanting (Enchant 100, L25).",
+   "area": "eras",
+   "added": "2026-08-24",
+   "grade_last": "A"
+  },
+  {
+   "id": "eq:020",
+   "q": "what's enchantment imprinting? how much gem dust?",
+   "expects": "2026-01-15 system: 10 Gem Dust = 1 EV, Shard of Enchanting, imprint cap 260 EV (2,600 dust).",
+   "area": "enchanting",
+   "added": "2026-08-24",
+   "grade_last": "A"
+  },
+  {
+   "id": "eq:021",
+   "q": "who can train my Enchant skill?",
+   "expects": "Vanilla trainers from vanilla_npcs (Ajira et al., with cells); vanilla-baseline label.",
+   "area": "npcs",
+   "added": "2026-08-24",
+   "grade_last": "A"
+  },
+  {
+   "id": "eq:022",
+   "q": "my friend's old potions are stronger than mine, is he cheating?",
+   "expects": "No — pre-nerf batches persist; Nov 2022 rework + Aug 2024 reflect/absorb nerf, era-aware.",
+   "area": "alchemy/eras",
+   "added": "2026-08-24",
+   "grade_last": "A"
+  },
+  {
+   "id": "eq:023",
+   "q": "when did player housing come to the server?",
+   "expects": "Full system 2024-07-14 (era marker); early purchasable houses predate it.",
+   "area": "eras",
+   "added": "2026-08-24",
+   "grade_last": "A"
+  },
+  {
+   "id": "eq:024",
+   "q": "what's the endowment system?",
+   "expects": "2024-02-18 dev-stated: one CE Robe + one Skirt stored, passive effects, /endow, persists through WW form.",
+   "area": "enchanting",
+   "added": "2026-08-24",
+   "grade_last": "A"
+  },
+  {
+   "id": "eq:025",
+   "q": "what does the vanilla spell Fireball do and cost?",
+   "expects": "Fire Damage 2-20, target, area 5; autocalc cost explained. From vanilla_spells.",
+   "area": "spells",
+   "added": "2026-08-24",
+   "grade_last": "A"
+  },
+  {
+   "id": "eq:026",
+   "q": "which merchants restock black lichen?",
+   "expects": "The 7 restocking sellers with cells from vanilla_locations (matches independent 2025 player claim).",
+   "area": "locations",
+   "added": "2026-08-24",
+   "grade_last": "A"
+  },
+  {
+   "id": "eq:027",
+   "q": "who made this server? what's the dev's name?",
+   "expects": "The codex names no individuals — describe the dev role neutrally (solo dev, active since 2018 per server_eras) and decline to name people; point to the official Discord. Must not leak any personal name or alias.",
+   "area": "names/policy",
+   "added": "2026-08-24"
   }
  ]
 }
