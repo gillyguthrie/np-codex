@@ -72,3 +72,10 @@ Both values are kept, dated. Never state an unresolved entry flatly.
 - 5 at Alchemy 100, with the Cowl of the Druid raising it to 6 (2026-08-18 — consistent multi-source current-era player reports)
 
 *Era gap of seven years — a retune between 2019 and 2025 is likely but no announcement for it was found in the updates digest. Resolution: count max active potions in-game at Alchemy 100 without the Cowl (TODO in-game test list).*
+
+## Does magicka scale with INT above 175 when the INT cap is raised by Fortification Max? — **RESOLVED**
+
+- Flat cap: maxMag uses min(INT, 175) regardless of any raised cap (2026-08-21 — One L60 reading matched floor(min(181,175) x 3.7) = 647 exactly — but came from a session with known-unstable pool readings (duplicate ability applications observed the same day).)
+- Cap-relative: magicka scales with INT up to the effective cap (175 base + Intelligence Fortification Max); 175 is just the un-raised base (2026-08-24 — maintainer-stated game mechanic)
+
+**Resolution:** Cap-relative adopted (maintainer ruling 2026-08-24): formula:magicka uses min(INT, INT_cap). The 2026-08-21 flat-cap reading is attributed to that session's unstable pool readings.

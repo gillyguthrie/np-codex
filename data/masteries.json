@@ -5,7 +5,11 @@
   "counts": {
    "captured": 885,
    "stubs": 3
-  }
+  },
+  "conventions": [
+   "'500 Points Spent' prerequisites: the gate checks mastery points ALREADY spent on OTHER masteries at the moment of purchase — the gated mastery's own cost never counts toward its own gate (a 200-cost master class with a '500 Points Spent' requirement needs 500 spent first, 700 total). Spent is a lifetime running total, so points sunk into one gated mastery do count toward a later purchase's gate. (maintainer-stated 2026-08-24)",
+   "'Fortification Max' effects (e.g. '+15 Strength Fortification Max') raise that stat's per-character cap; a stat pushed above its cap is overmaxed — see mechanics.json fact:overmax-system and fact:overmax-magicka-bug."
+  ]
  },
  "sources": {
   "s-wiki": {

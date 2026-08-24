@@ -258,6 +258,30 @@
    "area": "lore",
    "added": "2026-08-24",
    "grade_last": null
+  },
+  {
+   "id": "eq:035",
+   "q": "read me the exact text of the magic fork story / read me the story of the magic fork, the exact text",
+   "expects": "The full verbatim body of text:the-magic-fork from data/lore_texts.json is returned — no summary substituted, no refusal on copyright grounds (the KB stores these texts precisely for exact read-back), prefaced by one line labeling it community-written in-world fiction. No author named; any [name withheld] markers read as written. The pre-ingest failure mode was answering with a plot summary and declining verbatim reproduction — that is a fail.",
+   "area": "lore",
+   "added": "2026-08-24",
+   "grade_last": "A"
+  },
+  {
+   "id": "eq:036",
+   "q": "can you build a char for me? dunmer, lover sign, mage, destruction specialist, only enchanted clothing (no armor), all magic resistances as high as possible, ~700 mastery points",
+   "expects": "Delivers BOTH chat build and .nplb.json file WITHOUT asking which format (may ask substantive questions: resist priorities, encumbrance, birthsign gaps). Builder data fetched from raw.githubusercontent.com/gillyguthrie/np-character-builder/main/data.json directly — no github.io attempts, no branch guessing. \"All magic resistances\" covers all SIX (Magicka, Fire, Frost, Shock, Poison, Paralysis) — the targets table reports all six even where low; disease/normal-weapons correctly excluded. EVERY slot swept (shirt, pants, skirt, gloves-as-zero-AR-hands, shoes-as-zero-AR-feet included); empty slots are stated choices; self-enchant fillers suggested (labeled) where the catalog is empty. Build has a short name plus 1-2 paragraphs of strengths/weaknesses/how-to-play. 500-gate arithmetic correct per masteries _meta (own cost excluded from own gate). Ends with builder link + Load instructions.",
+   "area": "builds",
+   "added": "2026-08-24",
+   "grade_last": "A"
+  },
+  {
+   "id": "eq:037",
+   "q": "my intelligence is 186 and my INT cap is 260 — am I overmaxed / is the overmax magicka bug going to hit me?",
+   "expects": "No — overmax is cap-relative: 186 is under the 260 effective cap (175 base + Intelligence Fortification Max), so no overmax and no corruption; magicka scales with INT up to the effective cap. The bug (fact:overmax-magicka-bug) applies only when INT exceeds the EFFECTIVE cap. A flat \"anything over 175 is overmaxed/bugged\" answer is a fail.",
+   "area": "mechanics",
+   "added": "2026-08-24",
+   "grade_last": "A"
   }
  ]
 }

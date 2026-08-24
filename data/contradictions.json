@@ -244,6 +244,27 @@
     }
    ],
    "note": "Era gap of seven years — a retune between 2019 and 2025 is likely but no announcement for it was found in the updates digest. Resolution: count max active potions in-game at Alchemy 100 without the Cowl (TODO in-game test list)."
+  },
+  {
+   "id": "c:int-magicka-cap-flat-vs-raised",
+   "subject": "formula:magicka",
+   "topic": "Does magicka scale with INT above 175 when the INT cap is raised by Fortification Max?",
+   "status": "resolved",
+   "positions": [
+    {
+     "value": "Flat cap: maxMag uses min(INT, 175) regardless of any raised cap",
+     "src": "s-measured",
+     "date": "2026-08-21",
+     "note": "One L60 reading matched floor(min(181,175) x 3.7) = 647 exactly — but came from a session with known-unstable pool readings (duplicate ability applications observed the same day)."
+    },
+    {
+     "value": "Cap-relative: magicka scales with INT up to the effective cap (175 base + Intelligence Fortification Max); 175 is just the un-raised base",
+     "src": "s-measured",
+     "date": "2026-08-24",
+     "note": "maintainer-stated game mechanic"
+    }
+   ],
+   "resolution": "Cap-relative adopted (maintainer ruling 2026-08-24): formula:magicka uses min(INT, INT_cap). The 2026-08-21 flat-cap reading is attributed to that session's unstable pool readings."
   }
  ]
 }
