@@ -130,6 +130,14 @@
    "url": null,
    "date": null,
    "confidence": "dev-stated"
+  },
+  "s-lorechan-dev": {
+   "origin": "discord-public",
+   "channel": "np-server-lore",
+   "url": null,
+   "date": "2022-11",
+   "confidence": "dev-stated",
+   "note": "Dev statements made in the public np-server-lore channel."
   }
  },
  "constants": [
@@ -978,6 +986,16 @@
    "src": "s-updates",
    "date": "2022-06-02",
    "note": "Supersedes the old known bug where the limit persisted through death."
+  },
+  {
+   "id": "fact:invis-crit-limiter",
+   "statement": "A custom server mechanic limits players' ability to spam invisibility-based critical hits. A player who noticed invisibility felt less reliable was told this reduction is intentional (dev-stated, 2022-11-01).",
+   "src": "s-lorechan-dev"
+  },
+  {
+   "id": "fact:sujamma-vs-player-potions",
+   "statement": "Dev-stated (2022-11-30, settling a public debate): alchemy-mastery-invested player potions are far superior to Sujamma on overall effects. Sujamma boosts Strength 50 but subtracts Intelligence 50, canceling its net attribute value; the debate's example mastery-invested player potion granted +98 total attribute points, +140 Fortify Health, and +61 disease resist, each effect lasting 10 seconds longer than Sujamma's, with zero negative effects. Sujamma remains the cheap convenience only when a single stat alone matters and alchemy masteries are uninvested.",
+   "src": "s-lorechan-dev"
   }
  ]
 }

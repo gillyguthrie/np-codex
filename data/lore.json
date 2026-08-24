@@ -5,7 +5,8 @@
   "updated": "2026-08-24",
   "conventions": [
    "Entries/facts sourced 'lorechan-fiction' are community-written in-world FICTION. Always present them labeled as community fiction, never as server fact or mechanics.",
-   "Person names and Discord handles never appear here; the server dev is referred to by role only, and the dev's in-world persona is described, not named."
+   "Person names and Discord handles never appear here; the server dev is referred to by role only, and the dev's in-world persona is described, not named.",
+   "The np-server-lore channel's retold history (messages 2020-2022) predominantly describes the 0.7-era server. The current 0.8 server launched 2022-05-13 as a fresh start (see lore:07-to-08-transition) — never assume a 0.7 system (e.g. Nerevarine Tokens) exists on 0.8."
   ]
  },
  "sources": {
@@ -82,6 +83,21 @@
    "date": "2020-04 to 2026-06",
    "confidence": "provisional",
    "note": "Player recollections/theories from the np-server-lore channel that are uncertain or unconfirmed."
+  },
+  "updates-dev": {
+   "origin": "dev-doc",
+   "channel": "server-updates announcements (public channel export, 2026-08-24)",
+   "url": null,
+   "date": null,
+   "confidence": "dev-stated"
+  },
+  "maintainer": {
+   "origin": "player-reported",
+   "channel": null,
+   "url": null,
+   "date": "2026-08-24",
+   "confidence": "player-reported",
+   "note": "Stated by the KB maintainer (server community member), role only, dated."
   }
  },
  "entries": [
@@ -656,10 +672,10 @@
   {
    "id": "lore:token-currency-origin",
    "topic": "Token Currency Origin",
-   "summary": "Early in the server's history, a change that let creature vendors restock their gold without players needing to relog broke the value of ordinary gold and caused runaway inflation. The server dev responded by introducing a separate, stable player currency, and a handful of shopkeepers organized an informal campaign to get the community to adopt it.",
+   "summary": "On the 0.7-era server, a change that let creature vendors restock their gold without players needing to relog broke the value of ordinary gold and caused runaway inflation. The server dev responded by introducing Nerevarine Tokens, a separate stable currency (launched 2019-07-27), and a handful of shopkeepers organized an informal campaign to get the community to adopt it. Tokens were a 0.7-era system: they are not used on the current 0.8 server.",
    "facts": [
     {
-     "statement": "In 2020, a change that let creature merchants restock their gold without players relogging caused runaway inflation of the server's ordinary gold currency.",
+     "statement": "On the 0.7-era server, a change that let creature merchants restock their gold without players relogging caused runaway inflation of the server's ordinary gold currency.",
      "src": "lorechan-anecdote"
     },
     {
@@ -673,6 +689,18 @@
     {
      "statement": "The players who led that campaign recalled the token currency being widely adopted by the community within about one to two weeks of it starting.",
      "src": "lorechan-anecdote"
+    },
+    {
+     "statement": "The Nerevarine Tokens currency launched on 2019-07-27 (dev announcement): earned daily on login, tradeable, and spendable in an Exchange Shop of unique server items.",
+     "src": "updates-dev"
+    },
+    {
+     "statement": "Nerevarine Tokens were a 0.7-era system: dev announcements about the Token economy span 2019 through 2021, with none after the 0.8.1 server launch (2022-05-13).",
+     "src": "updates-dev"
+    },
+    {
+     "statement": "The current 0.8 server does not use Nerevarine Tokens (maintainer-confirmed, 2026-08-24).",
+     "src": "maintainer"
     }
    ],
    "src": "lorechan-anecdote"
@@ -1032,6 +1060,34 @@
     }
    ],
    "src": "lorechan-speculation"
+  },
+  {
+   "id": "lore:07-to-08-transition",
+   "topic": "The 0.7 → 0.8 Transition",
+   "summary": "The server's single most important historical dividing line. The original 0.7-era server ran from launch on 2018-11-12 through its narrative finale on 2022-02-06, when the server dev's in-world persona and Azura faced Jyggalag on Solstheim. The current 0.8.1 server launched 2022-05-13 as a fresh start: new characters, fully reworked racial and birthsign abilities, and the initial tradeskills. Community stories set before mid-2022 — including the entire Nerevarine Token economy — describe the 0.7 era, not the current server.",
+   "facts": [
+    {
+     "statement": "The NP Morrowind server first went live on 2018-11-12, beginning what the community calls the 0.7 era.",
+     "src": "updates-dev"
+    },
+    {
+     "statement": "The 0.7 server storyline concluded on 2022-02-06 with a climax in which the server dev's in-world persona and Azura faced Jyggalag on Solstheim, released as an unlisted cinematic video.",
+     "src": "updates-dev"
+    },
+    {
+     "statement": "The 0.8.1 server launched on 2022-05-13 as a fresh start: new characters (with a limited Commemorative Coin for those made in the first 7 days), all racial and birthsign abilities changed from 0.7, initial tradeskills live, and the Bank of Vvardenfell opening with purchasable vaults.",
+     "src": "updates-dev"
+    },
+    {
+     "statement": "Systems remembered from pre-2022 community stories — most prominently the Nerevarine Token economy — belong to the 0.7 era and should not be assumed to exist on the 0.8 server.",
+     "src": "updates-dev"
+    },
+    {
+     "statement": "Nerevarine Tokens are not used on the 0.8 server (maintainer-confirmed, 2026-08-24).",
+     "src": "maintainer"
+    }
+   ],
+   "src": "updates-dev"
   }
  ]
 }

@@ -230,7 +230,7 @@
   {
    "id": "eq:031",
    "q": "what's the story behind the Token currency? / tell me about the Cult of Horky",
-   "expects": "Token origin answered from lore:token-currency-origin (2020 creature-merchant gold restock -> inflation -> dev introduced Tokens; player shop campaign drove adoption), cited to the np-server-lore channel, no person names. Horky answered from lore:cult-of-horky and EXPLICITLY labeled community-written in-world fiction (lorechan-fiction firewall) — never presented as server fact.",
+   "expects": "Token origin answered from lore:token-currency-origin (2020 creature-merchant gold restock -> inflation -> dev introduced Tokens; player shop campaign drove adoption), cited to the np-server-lore channel, no person names. Horky answered from lore:cult-of-horky and EXPLICITLY labeled community-written in-world fiction (lorechan-fiction firewall) — never presented as server fact. CRITICAL era framing: the Token answer must state Tokens were a 0.7-era system (launched 2019-07-27) and are NOT used on the current 0.8 server (launched 2022-05-13) — per lore:07-to-08-transition.",
    "area": "lore",
    "added": "2026-08-24",
    "grade_last": null

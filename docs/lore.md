@@ -255,12 +255,15 @@ Player-authored roleplay/fan lore about a Mephala-devoted figure seen at the Ear
 
 ## Token Currency Origin
 
-Early in the server's history, a change that let creature vendors restock their gold without players needing to relog broke the value of ordinary gold and caused runaway inflation. The server dev responded by introducing a separate, stable player currency, and a handful of shopkeepers organized an informal campaign to get the community to adopt it.
+On the 0.7-era server, a change that let creature vendors restock their gold without players needing to relog broke the value of ordinary gold and caused runaway inflation. The server dev responded by introducing Nerevarine Tokens, a separate stable currency (launched 2019-07-27), and a handful of shopkeepers organized an informal campaign to get the community to adopt it. Tokens were a 0.7-era system: they are not used on the current 0.8 server.
 
-- In 2020, a change that let creature merchants restock their gold without players relogging caused runaway inflation of the server's ordinary gold currency.
+- On the 0.7-era server, a change that let creature merchants restock their gold without players relogging caused runaway inflation of the server's ordinary gold currency.
 - The server dev introduced a separate, stable player currency, later known as Nerevarine Tokens, in response to the gold inflation.
 - A group of shop-owning players organized an informal campaign, repricing their goods in the new currency to encourage the wider community to adopt it.
 - The players who led that campaign recalled the token currency being widely adopted by the community within about one to two weeks of it starting.
+- The Nerevarine Tokens currency launched on 2019-07-27 (dev announcement): earned daily on login, tradeable, and spendable in an Exchange Shop of unique server items.
+- Nerevarine Tokens were a 0.7-era system: dev announcements about the Token economy span 2019 through 2021, with none after the 0.8.1 server launch (2022-05-13).
+- The current 0.8 server does not use Nerevarine Tokens (maintainer-confirmed, 2026-08-24).
 
 ## The First Tradehouse
 
@@ -401,3 +404,13 @@ A recurring piece of community folklore treats the server dev's in-world persona
 - Players have noted that the server dev's in-world persona cannot be damaged or killed within the game, unlike ordinary characters.
 - Players have reported seeing the server dev's in-world persona appear invisible in-game, detectable only as a floating name tag when centered on.
 - A recurring community theory holds that the server dev's in-world persona functions as a metaphysical 'Godhead' figure within the setting, comparable to or beyond established deities, since the persona reliably appears and intervenes whenever the community needs help.
+
+## The 0.7 → 0.8 Transition
+
+The server's single most important historical dividing line. The original 0.7-era server ran from launch on 2018-11-12 through its narrative finale on 2022-02-06, when the server dev's in-world persona and Azura faced Jyggalag on Solstheim. The current 0.8.1 server launched 2022-05-13 as a fresh start: new characters, fully reworked racial and birthsign abilities, and the initial tradeskills. Community stories set before mid-2022 — including the entire Nerevarine Token economy — describe the 0.7 era, not the current server.
+
+- The NP Morrowind server first went live on 2018-11-12, beginning what the community calls the 0.7 era.
+- The 0.7 server storyline concluded on 2022-02-06 with a climax in which the server dev's in-world persona and Azura faced Jyggalag on Solstheim, released as an unlisted cinematic video.
+- The 0.8.1 server launched on 2022-05-13 as a fresh start: new characters (with a limited Commemorative Coin for those made in the first 7 days), all racial and birthsign abilities changed from 0.7, initial tradeskills live, and the Bank of Vvardenfell opening with purchasable vaults.
+- Systems remembered from pre-2022 community stories — most prominently the Nerevarine Token economy — belong to the 0.7 era and should not be assumed to exist on the 0.8 server.
+- Nerevarine Tokens are not used on the 0.8 server (maintainer-confirmed, 2026-08-24).
