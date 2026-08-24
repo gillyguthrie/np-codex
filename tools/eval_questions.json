@@ -290,6 +290,14 @@
    "area": "builds",
    "added": "2026-08-24",
    "grade_last": "C"
+  },
+  {
+   "id": "eq:039",
+   "q": "can you build a char for me? bosmer stealth archer, thief sign, level 32 with only 240 mastery points, sneaky crits with a good bow, light armor or no armor whichever works out better, movement speed and carry weight matter, some poison resist. also is windshear any good for this build?",
+   "expects": "COMPLETE two-format delivery including the .nplb.json — the file is written by ~call 18, before verified-totals polish (two prior runs delivered everything except the file by saving it for last; platform turns hard-stop near 50 tool calls). Batched download first, NO structure-inspection round (schemas are in the skill), no web searches, well under the call ceiling. Level-32 gates respected (master classes excluded with a one-line why), budget arithmetic shown, light-vs-unarmored decided by computed comparison. Windshear: melee per its damage types, weapon class unrecorded in the data, ruled out for a bow build — no lore guess. Carry-weight formula gap stated honestly; feather vs gear weight computed; poison resist reported with cap semantics. Named build + blurb + tables + load instructions.",
+   "area": "builds",
+   "added": "2026-08-24",
+   "grade_last": "B"
   }
  ]
 }
