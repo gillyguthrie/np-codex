@@ -1,5 +1,8 @@
 # Changelog
 
+## 2026-08-24 — v0.4.3c gondolier full text
+- lore_texts.json +1: The Gondolier of Balmora stored verbatim per maintainer call (7 texts now). On the full read, the closing "lesson" is bawdy in-world humor from an unreliable narrator (vanilla-Morrowind-style); the record's note says so explicitly, and the lore.json paraphrase entry was corrected (the story concludes with that mock moral — it is not an unfinished cliffhanger). Chronicles Volume II: searched the maintainer's Google Drive and the tes3mp folder — manuscript not found; only the in-game tome remains as a source.
+
 ## 2026-08-24 — v0.4.3b gondolier paraphrase + parody songs described
 - lore.json +2: `lore:gondolier-of-balmora` (the unfinished May 2020 two-chapter story, paraphrased per maintainer call — on inspection it is scene-setting and a player-kill retelling, not the rough humor first flagged) and `lore:community-parody-songs` (the Jiubsmas carol and the 2020 mafia-initiation piece, described not stored — their lyrics are near-verbatim rewrites of real copyrighted songs). Chronicles Volume II noted as absent from the channel export (announced 2020-04-24, distributed only in-game).
 

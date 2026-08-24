@@ -417,10 +417,10 @@ The server's single most important historical dividing line. The original 0.7-er
 
 ## The Gondolier of Balmora
 
-Community-written in-world fiction: an unfinished two-chapter short story, posted in May 2020 and framed as 'based on a true story' about an in-game player kill. It follows Vol, a Balmora gondolier from a long line of gondoliers, through a slow, scene-setting morning on the Odai — the silt strider mourning her fallen drunken driver, ferry runs to Vivec's shrine, his famous appetite for soft-boiled kwama eggs — before he is ambushed mid-thought, smelling blood and finding himself fatally wounded on his own boat. The story cuts off on that cliffhanger and was never continued.
+Community-written in-world fiction: a two-chapter short story posted in May 2020, framed by its author as 'based on a true story' about an in-game player kill. It follows Vol, a Balmora gondolier from a long line of gondoliers, through a slow morning on the Odai — the mourning silt strider, ferry runs toward Vivec, his famous appetite for soft-boiled kwama eggs — until he is stabbed on his own boat by an Argonian implied to be his jilted lover. It closes as a tongue-in-cheek cautionary 'lesson', delivered by an unreliable narrator whose anti-Argonian prejudice is itself the joke, in the vein of vanilla Morrowind's own bawdy in-world literature. The full text is stored in lore_texts.json.
 
-- Community-written in-world fiction: a two-chapter story posted in May 2020 follows Vol, a Balmora gondolier, through an ordinary morning on the Odai river before he is ambushed and fatally wounded on his boat; the author framed it as based on a true in-game event.
-- Community-written in-world fiction: the gondolier story was never finished — it ends on the ambush cliffhanger.
+- Community-written in-world fiction: a two-chapter story posted in May 2020 follows Vol, a Balmora gondolier, through an ordinary morning on the Odai river until he is stabbed on his boat by an Argonian implied to be his jilted lover; the author framed it as based on a true in-game event.
+- Community-written in-world fiction: the story ends as a mock cautionary 'lesson' voiced by an unreliable, prejudiced in-world narrator — bawdy humor in the style of vanilla Morrowind's own in-game literature.
 
 ## Community Parody Songs
 
