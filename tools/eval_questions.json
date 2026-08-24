@@ -234,6 +234,14 @@
    "area": "lore",
    "added": "2026-08-24",
    "grade_last": null
+  },
+  {
+   "id": "eq:032",
+   "q": "what do I get for Heart's Day arrows? (any tiered-reward / drop-table / comparison question)",
+   "expects": "Tiered or enumerated data is rendered as a markdown TABLE with a header row (e.g. Arrows | Reward | Notes), one tier per row, ascending — NEVER a comma-packed paragraph. Bullets only for ~2-4 one-dimensional items. Lead-in and any caveat stay as single prose lines. (Rule added after a real 2021-tier answer shipped as an unreadable paragraph.)",
+   "area": "answering-style",
+   "added": "2026-08-24",
+   "grade_last": null
   }
  ]
 }
