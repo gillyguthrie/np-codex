@@ -252,3 +252,152 @@ Player-authored roleplay/fan lore about a Mephala-devoted figure seen at the Ear
 
 - Player-authored fan lore describes the 'Grim Looking Man' lurking in back-corner alleyways and occasionally spotted at the Earthly Delights Gentleman's Club in Suran, reciting a Chimer-language prayer to Mephala ('Lady of Whispers... Mistress of Secrets... Mother of Spiders').
 - In the fan lore, he descends from a family of high believers of Mephala who fled to Suran and hid after the Night Mother painted 'MORAG TONG' in the blood of the murdered Potentate Versidue Shaie; set in 3E 426, he is said to still uphold family traditions within the Morag Tong Guild, and is best reached at the Earthly Delights Gentleman's Club in Suran. This reads as player-authored roleplay/fan-fiction, not vanilla game text.
+
+## Token Currency Origin
+
+Early in the server's history, a change that let creature vendors restock their gold without players needing to relog broke the value of ordinary gold and caused runaway inflation. The server dev responded by introducing a separate, stable player currency, and a handful of shopkeepers organized an informal campaign to get the community to adopt it.
+
+- In 2020, a change that let creature merchants restock their gold without players relogging caused runaway inflation of the server's ordinary gold currency.
+- The server dev introduced a separate, stable player currency, later known as Nerevarine Tokens, in response to the gold inflation.
+- A group of shop-owning players organized an informal campaign, repricing their goods in the new currency to encourage the wider community to adopt it.
+- The players who led that campaign recalled the token currency being widely adopted by the community within about one to two weeks of it starting.
+
+## The First Tradehouse
+
+Before any built-in player marketplace existed, a small group of players ran an informal trading post known as the Tradehouse, with no theft protection beyond an honor system and vigilante justice. Three players managed it together, and after one of them became less active, the other two relocated it to a private home, where it stayed for years.
+
+- Before any built-in player marketplace existed, a small group of players ran an informal trading post called the Tradehouse, where both sides of a trade placed their items on the ground to exchange them.
+- The original Tradehouse was jointly managed by three players who split duties between dealing with customers, enforcing rules, and holding the shared gold.
+- Because there was no built-in anti-theft protection, the Tradehouse's operators relied on the server's bounty system to punish players caught stealing from it.
+- After one of the Tradehouse's three founding operators became less active, the remaining two relocated it into a player-owned house on an island near Dagon Fel, where it remained for years afterward.
+
+## The Gold Duplication Purge
+
+In the server's early years, a cheater repeatedly duplicated gold and scattered huge piles of it around Balmora, and moderators had no simple tool to remove that much currency from an account. One moderator discovered that dying destroyed roughly half a character's carried gold, and used that trick dozens of times over to clear a duplicated fortune, an episode the server dev independently remembers as well.
+
+- In the server's early years, a cheater used a duplication exploit to scatter very large piles of gold around Balmora on more than one occasion.
+- With no easy admin tool available at the time to strip that much currency from an account, a moderator discovered that a character's in-game death destroyed roughly half of their carried gold.
+- A moderator killed their own character around twenty to thirty times in a row to clear a duplicated gold pile down to a manageable amount, prompting confused questions from players who kept seeing the repeated deaths.
+- The server dev separately recalled logging in during a gold-duplication incident and finding piles stacked so high in Balmora that they towered into the sky, with the game simply reporting each pile's value as '1b'.
+
+## The First Jiubsmas
+
+The server's first celebration of its winter holiday, Jiubsmas, is remembered fondly as an especially communal event. A large tree appeared in town about a month ahead of time, players received one wrapped present per login through December, and on the holiday itself the server dev's in-world persona appeared atop the tree to tell the story of the holiday before gifts could finally be opened.
+
+- The server's first Jiubsmas holiday event featured a large decorated tree that appeared in town roughly a month before the holiday itself.
+- During the run-up to the first Jiubsmas, players received one wrapped present per login throughout the preceding month, but were unable to open them until the holiday arrived.
+- On the night of the first Jiubsmas, the server dev's in-world persona appeared atop the town's holiday tree to narrate the in-world story of the holiday before players were allowed to open their presents.
+- Rewards from the first Jiubsmas included a coveted magic ring and a set of holiday-themed robes, both remembered by players as especially desirable prizes.
+- Some players also referred to Jiubsmas by the alternate, more mundane-sounding name 'New Life Festival' when discussing the holiday in-character.
+
+## Predecessor Servers
+
+Nerevarine Prophecies was not the first Morrowind multiplayer community its dev and longtime players had ties to. When pressed about the wider history of Morrowind multiplayer servers, the dev was evasive, and separately recalled a predecessor server that shut down after roughly a year of work had gone into it.
+
+- A player who joined the server in 2020 noted that Nerevarine Prophecies was the only Morrowind multiplayer server they had ever played on, which prompted a discussion of earlier servers.
+- When asked about the history of Morrowind multiplayer servers prior to Nerevarine Prophecies, the server dev declined to elaborate, implying the subject was best not revisited.
+- A predecessor Morrowind multiplayer server, remembered by name as Ragefire, is recalled by at least one longtime player, who described accumulating notable wealth there.
+- The server dev remarked that it was a shame how much effort had gone into the Ragefire server over roughly a year before it was ultimately shut down.
+
+## Origins of the Adventurer's Hall
+
+The Adventurer's Hall is a server landmark whose backstory blends confirmed fact with ongoing player speculation. Its official opening and first title-holder are agreed upon, but its intended purpose has been guessed at for years by players who never got a clear answer, with the details reportedly shifting many times over the hall's history.
+
+- The Adventurer's Hall officially opened at a specific point in the server's history, and one particular player is remembered as the first to enter it and receive the associated title.
+- Some longtime players speculate that the Adventurer's Hall was originally meant as a staging area from which higher-level characters could be sent into especially difficult dungeons requiring more than one player to complete.
+- Players who discussed the Adventurer's Hall's history noted that its stated requirements and purpose reportedly changed multiple times over the years without ever being fully clarified publicly.
+
+## Origin of the Player Note Board
+
+The server's in-game notice board feature, used for shop advertisements and public messages, began life as a small unofficial prank between two players. One edited the other's handwritten note and showed it off as a joke, the idea caught on informally within the community, and the server dev eventually turned the trend into a supported feature.
+
+- The server's player notice board feature began informally when one player edited another player's handwritten in-game note as a joke and showed it to them.
+- Rather than being upset, the player whose note had been edited liked the idea and began posting similar notes themselves, and other players gradually picked up the habit.
+- During that same era, players commonly left handwritten shop notices near the silt strider landing area in Balmora so newcomers would see them first.
+- The server dev eventually turned the informal, player-driven note-posting trend into an official, supported feature of the server.
+
+## Bounty Hunting and the Manhunter's Guild
+
+Long before the server's karma system existed, informal bounty hunting was already a popular player pastime, used both for entertainment and as a form of vigilante justice. One veteran shopkeeper recalled hiring hits through the bounty system to warn off rival marketplaces, and the culture eventually became associated with an in-game organization, the Manhunter's Guild.
+
+- Before the server's karma system existed, players could freely place bounties on other players, and some players placed several bounties a day purely for fun, sometimes for as little as a single gold coin.
+- One longtime Tradehouse operator recalled placing bounties on players who tried to start rival player-run marketplaces, treating it as informal protection of the original Tradehouse's standing.
+- The informal bounty-hunting culture that predated the karma system became associated with an in-game organization known as the Manhunter's Guild.
+
+## The Flame Atronach Siege of Balmora
+
+One remembered moment of server chaos was a griefer spawning a huge swarm of flame atronachs in Balmora, causing severe town-wide lag. Rather than waiting it out, one player suited up in their best armor and fought through the crowd alongside a few others until the culprit was banned and the swarm cleared.
+
+- A griefer once spawned a large swarm of flame atronachs in Balmora, causing severe town-wide lag until the person responsible was identified and banned.
+- A player who later became a moderator recalled fighting through the atronach swarm in their best armor with a fully charged enchanted weapon rather than waiting for the lag to pass.
+- The player who fought the swarm noted their armor was left torn and their weapon's magical charge fully depleted by the time the atronachs stopped appearing.
+
+## The Elf-on-the-Shelf Mishap
+
+In the second half of 2019, a batch of holiday event potions modeled after the 'Elf on the Shelf' toy circulated around Balmora and shrank anyone who drank them to a fraction of their normal size. The effect was advertised as temporary but turned out to be permanent due to a bug, leading to a spontaneous day of games among shrunken players before things were put right.
+
+- In the second half of 2019, a batch of event-only potions themed around 'Elf on the Shelf' circulated around Balmora and shrank players who drank them to a fraction of their normal size.
+- The potion's label advertised a short duration for the shrinking effect, but a bug made it permanent rather than temporary.
+- Players who were shrunk spent a day adventuring together at their reduced size, including a trip into a nearby Dwemer ruin, before eventually being restored to normal size.
+
+## The Curse of Pelagiad
+
+Some players have half-jokingly claimed that houses in the remote Imperial town of Pelagiad carry a curse, since an unusually high number of owners there ended up going permanently inactive or banned. The running joke has persisted informally within the community for years.
+
+- Some players have joked for years that player-owned houses in the town of Pelagiad carry a curse, since an unusually high number of their owners ended up inactive or banned soon after moving in.
+- Players attribute Pelagiad's relative unpopularity in part to its remote location and lack of direct silt strider or teleport access compared to other towns.
+
+## Heddvild the Undying
+
+An unusually tough enemy from an early version of the server earned the nickname 'the Undying' after repeatedly defeating any player who provoked her. Longtime players still reference the nickname as shorthand for how brutal certain server-specific enemies used to be before later balance changes.
+
+- An enemy remembered by the nickname 'the Undying' was notorious in an early version of the server for defeating any player who provoked her in combat.
+- The nickname 'the Undying' has persisted in community memory as shorthand for how dangerous certain server-specific enemies used to be before later balance changes.
+
+## The Cult of Horky
+
+Community-written in-world fiction: players built an entire invented religion around Horky, a real in-game horker mascot they reimagined as an immortal deity. Their myth described Horky's death and resurrection by the community's fictional pantheon, a parody scripture modeled on the vanilla game's holy texts, a home-shrine cult, and a satirical in-world tabloid that reported on Horky-related happenings.
+
+- Community-written in-world fiction: an actual in-game horker living near Balmora was reimagined by players as a deity named Horky, with an invented backstory describing him as the sole survivor of an illegally shipped horker pod.
+- Community-written in-world fiction: in the invented backstory, the first Horky was nursed back to health by a traveling tinker but was later mistreated and killed by townsfolk, prompting the community's invented pantheon to resurrect him as an immortal, speaking horker.
+- Community-written in-world fiction: players wrote a parody scripture describing thirty-six lessons of Horky, modeled on the vanilla game's holy texts about Vivec, portraying Horky as a cosmic being present at the dawn of creation.
+- Community-written in-world fiction: worshippers of the invented Horky religion were said to keep home shrines and greet one another with a set blessing phrase, while treating self-declared godhood by other figures, such as the Tribunal, as blasphemy.
+- Community-written in-world fiction: players also invented a satirical in-world tabloid that published mock news reports and reviews connected to the Horky mythos.
+
+## The Nerevarine Prophecies Chronicles
+
+Community-written in-world fiction: one player authored a multi-volume anthology of in-character short stories, distributed in-game as a handful of hand-delivered book copies. The first volume told a comic caper about a trickster who convinced a crowd an ordinary fork was a rare magic weapon and sold it to the most gullible bidder before the ruse was exposed.
+
+- Community-written in-world fiction: a player authored a multi-volume anthology of in-character short stories, distributed in-game as only a handful of hand-delivered book copies rather than being freely available.
+- Community-written in-world fiction: the anthology's first featured story described a trickster who convinced a crowd that an ordinary kitchen fork was a rare magic weapon, staged fake demonstrations of its power, then sold it to the most gullible bidder for a small fortune before the ruse was exposed and the payment refunded.
+- Community-written in-world fiction: later volumes covered other in-character tales nominated by players, including stories about a mysterious former staff member and a large in-game conflict remembered as the Solstheim ordeal.
+
+## The Origin of Guars (Myth)
+
+Community-written in-world fiction: a player wrote an invented creation myth explaining why guars, the common pack-animal of Morrowind, do not reproduce like other creatures. The story ties guars to the ancient Dwemer's forbidden pursuit of creating life through tonal architecture, framing guars as an imperfect side effect of that magical research.
+
+- Community-written in-world fiction: a player wrote an invented myth claiming guars were created by the ancient Dwemer through tonal architecture, as part of a forbidden attempt to create life and rival the gods.
+- Community-written in-world fiction: in this myth, guars do not mate; instead, gathered latent magical energy occasionally coalesces into a new guar, since even skilled Dwemer tonal architects never fully mastered the process of creating life.
+
+## School of the Arcane and the Unseen
+
+Community-written in-world fiction: players collaboratively wrote an in-game book and hid physical copies of it around the server for others to find and puzzle over. The book's fictional cult was later folded into further collaborative lore as the origin of an invented in-world organization, described as the successor to an earlier invented group.
+
+- Community-written in-world fiction: players collaboratively wrote an in-game book and hid physical copies of it in locations around the server for others to find, without labeling it obviously as such.
+- Community-written in-world fiction: the book described a fictional cult, invented by players in October 2020, which they later wrote into being the origin of an invented in-world organization called the School of the Arcane and the Unseen.
+- Community-written in-world fiction: the School of the Arcane and the Unseen was written as the successor to an earlier invented player organization called the Guild of Knowledge.
+
+## The Milkman Legend
+
+Community-written in-world fiction: for several years, a recurring community in-joke centered on a mysterious figure known only as the Milkman, tied to an informal, ongoing set of rituals among a small circle of players. The joke was eventually given a wistful in-character send-off describing a final meeting with the Milkman and the end of the rituals.
+
+- Community-written in-world fiction: for several years, a recurring community in-joke centered on a mysterious figure known only as the Milkman, tied to an informal, ongoing set of rituals among a small circle of players.
+- Community-written in-world fiction: the running joke was given an in-character send-off describing a final moonlit meeting with the Milkman and the end of the associated rituals, though players continued leaving small tribute offerings near an ash-land cave afterward.
+
+## The Dev Persona Godhead Theory
+
+A recurring piece of community folklore treats the server dev's in-world persona as a god-like figure within the setting rather than an ordinary character. Players have noted the persona cannot be harmed in-game and tends to appear right when the community needs help, leading to half-serious speculation that it functions as the setting's true metaphysical 'Godhead.'
+
+- Players have noted that the server dev's in-world persona cannot be damaged or killed within the game, unlike ordinary characters.
+- Players have reported seeing the server dev's in-world persona appear invisible in-game, detectable only as a floating name tag when centered on.
+- A recurring community theory holds that the server dev's in-world persona functions as a metaphysical 'Godhead' figure within the setting, comparable to or beyond established deities, since the persona reliably appears and intervenes whenever the community needs help.

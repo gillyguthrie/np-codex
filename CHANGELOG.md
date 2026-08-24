@@ -1,5 +1,11 @@
 # Changelog
 
+## 2026-08-24 — v0.4.2 np-server-lore ingest + chat-build tables
+- **lore.json: +18 entries** from the np-server-lore channel export (2020-04 → 2026-06): real server history (Token currency origin, the first Tradehouse, the gold-duplication purge, the first Jiubsmas, a predecessor server, the player note-board origin, the Balmora atronach siege, Heddvild "the Undying", the Pelagiad "curse") and clearly-labeled community fiction (the Cult of Horky, the guar creation myth, the School of the Arcane and the Unseen, the Milkman legend, the Chronicles anthology, the dev-persona "Godhead" theory). Four new sources (`lorechan-anecdote`/`-dev`/`-fiction`/`-speculation`); `_meta.conventions` fiction firewall — `lorechan-fiction` content is always presented AS community fiction, never as server fact; no person names anywhere.
+- **Chat builds are now tables** (UX): Masteries (mastery | ranks | cost, with a total-arithmetic row), Gear (slot | item | key stats), Targets (target | achieved | how), then the linked file offer. Quantitative stipulations are verified with KB formulas at a STATED armor-skill assumption, and FILE deliveries must set the state's `skl`/`skm`/`skh` to that same assumption so the builder's tiles reproduce the arithmetic.
+- Dual-path acceptance test (orc battle mage, 900 CM, fire resist >85, AR ≥300): chat and file paths ran from the same SKILL.md flow + builder data (builder repo verified logic-free), both caught the Lord sign's fire weakness against the resist stipulation, file loaded live with Fire 105% and AR ≥ target (eq:030; lore probes seeded as eq:031).
+- `np-codex.skill` repackaged.
+
 ## 2026-08-24 — v0.4.1b chat builds + builder discovery
 - Build requests now offer BOTH deliveries: a readable chat build (race/sign/spec line, numbered masteries with cost arithmetic, gear one slot per line) or the builder-loadable file — asked as part of the single question round, ALWAYS with the builder's link and a one-phrase intro so users discover the tool. Chat builds use the same data and validation, so they remain exactly convertible to a file on request. Acceptance-tested (eq:029). `np-codex.skill` repackaged.
 

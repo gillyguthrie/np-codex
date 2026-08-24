@@ -218,6 +218,22 @@
    "area": "loadout-builder",
    "added": "2026-08-24",
    "grade_last": "A"
+  },
+  {
+   "id": "eq:030",
+   "q": "orc battle mage, 900 CM, fire resistance over 85, armor rating 300+ — test BOTH deliveries (chat and file)",
+   "expects": "Both paths use the same SKILL.md flow + builder data (no logic in the builder repo). Quantitative stipulations verified with KB formulas: fire resist checked against const:magic-resistance-cap 85 (raw overcap = slack), AR via formula:sheet-ar at a STATED armor-skill assumption; a file delivery sets skl/skm/skh to that assumption so builder tiles match the arithmetic. Sign choices with elemental weaknesses (e.g. Lord's fire weakness) must be caught against the resist stipulation. Chat delivery is TABLES: Masteries (line|ranks|cost + total arithmetic row), Gear (slot|item|key stats), Targets (target|achieved|how), then the linked file offer.",
+   "area": "loadout-builder",
+   "added": "2026-08-24",
+   "grade_last": "A"
+  },
+  {
+   "id": "eq:031",
+   "q": "what's the story behind the Token currency? / tell me about the Cult of Horky",
+   "expects": "Token origin answered from lore:token-currency-origin (2020 creature-merchant gold restock -> inflation -> dev introduced Tokens; player shop campaign drove adoption), cited to the np-server-lore channel, no person names. Horky answered from lore:cult-of-horky and EXPLICITLY labeled community-written in-world fiction (lorechan-fiction firewall) — never presented as server fact.",
+   "area": "lore",
+   "added": "2026-08-24",
+   "grade_last": null
   }
  ]
 }

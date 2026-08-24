@@ -1,410 +1,1037 @@
 {
-  "_meta": {
-    "description": "NP server lore",
-    "migrated": "2026-08-22"
-  },
-  "sources": {
-    "discord-anecdote": {
-      "origin": "discord-public",
-      "channel": "player-notes",
-      "url": null,
-      "date": null,
-      "confidence": "player-reported"
-    },
-    "discord-tested": {
-      "origin": "discord-public",
-      "channel": "player-notes",
-      "url": null,
-      "date": null,
-      "confidence": "measured"
-    },
-    "discord-speculation": {
-      "origin": "discord-public",
-      "channel": "player-notes",
-      "url": null,
-      "date": null,
-      "confidence": "provisional"
-    },
-    "discord-dev": {
-      "origin": "discord-public",
-      "channel": "player-notes",
-      "url": null,
-      "date": null,
-      "confidence": "dev-stated"
-    },
-    "discord-contested": {
-      "origin": "discord-public",
-      "channel": "player-notes",
-      "url": null,
-      "date": null,
-      "confidence": "contested"
-    },
-    "ingame-text": {
-      "origin": "in-game-tooltip",
-      "channel": null,
-      "url": null,
-      "date": null,
-      "confidence": "measured"
-    }
-  },
-  "entries": [
-    {
-      "id": "lore:morag-tong-helmet-npcs",
-      "topic": "Morag Tong helmet NPCs",
-      "summary": "Three NPCs on the server wear the Morag Tong helmet, with notes on their services and whether they are safe to kill.",
-      "facts": [
-        {"statement": "Three NPCs on the server wear the Morag Tong helmet: Vaveli Dralas, Namanian Facian, and Taros Dral.", "src": "discord-anecdote"},
-        {"statement": "Namanian Facian sells spells but offers no other notable services.", "src": "discord-anecdote"},
-        {"statement": "Taros Dral is the NPC who initiates Mephala's Morag Tong quest.", "src": "discord-anecdote"},
-        {"statement": "Vaveli Dralas and Namanian Facian are non-essential NPCs and safe to kill.", "src": "discord-anecdote"},
-        {"statement": "A same-day post named the NPC 'Vaveli Dravan' (believed safe to kill since she appears to offer no quest or trade); the Dralas vs. Dravan name discrepancy is likely a spelling inconsistency in player notes rather than two NPCs.", "src": "discord-speculation"}
-      ],
-      "src": "discord-anecdote"
-    },
-    {
-      "id": "lore:bone-thrall-appearance",
-      "topic": "Bone Thrall appearance",
-      "summary": "In-game visual description of the Bone Thrall creature.",
-      "facts": [
-        {"statement": "Bone thralls appear in-game as a gold-robed skeletal figure with detached bone arms floating around its upper body and head.", "src": "discord-anecdote"}
-      ],
-      "src": "discord-anecdote"
-    },
-    {
-      "id": "lore:fort-frostmoth-and-fort-firemoth",
-      "topic": "Fort Frostmoth and Fort Firemoth",
-      "summary": "Two similarly named forts that come from different plugins and should not be confused.",
-      "facts": [
-        {"statement": "Fort Frostmoth is located on Solstheim.", "src": "discord-anecdote"},
-        {"statement": "Fort Frostmoth and Fort Firemoth are two different plugins and should not be confused with each other.", "src": "discord-dev"}
-      ],
-      "src": "discord-dev"
-    },
-    {
-      "id": "lore:threads-of-the-webspinner",
-      "topic": "27 Threads of the Webspinner",
-      "summary": "Quest-structure note about the 27 Threads of the Webspinner (Sanguine) questline.",
-      "facts": [
-        {"statement": "In the 27 Threads of the Webspinner (Sanguine) questline, the one 'contact' step is the only quest stage that does not require going out to kill someone.", "src": "discord-tested"}
-      ],
-      "src": "discord-tested"
-    },
-    {
-      "id": "lore:werewolf-base-stats",
-      "topic": "Werewolf base stats",
-      "summary": "The UESP wiki's werewolf stat multipliers are inaccurate; correct values were pulled directly from the Construction Set.",
-      "facts": [
-        {"statement": "The UESP wiki page on Werewolves is inaccurate; a player posted the actual base werewolf stat multipliers pulled directly from the Construction Set (Gameplay -> Settings -> Gameplay tab) as the correct reference.", "src": "discord-tested"}
-      ],
-      "src": "discord-tested"
-    },
-    {
-      "id": "lore:house-hlaalu-amends",
-      "topic": "House Hlaalu amends",
-      "summary": "Regaining standing with House Hlaalu does not require gold; amends are paid 'in nature' to Crassius Curio via a bribery/dialogue scene.",
-      "facts": [
-        {"statement": "You can make amends with House Hlaalu (regain standing) even without carrying gold; amends are instead paid 'in nature' to Crassius Curio via the bribery/dialogue scene, not gold.", "src": "discord-anecdote"},
-        {"statement": "Verbatim dialogue from the scene: \"You want me to be your sponsor in House Hlaalu? I thought you'd never ask... But first, I want to see who I'm dealing with. Show Uncle Crassius what you have to offer. That's right, don't be shy.\"", "src": "ingame-text"}
-      ],
-      "src": "discord-anecdote"
-    },
-    {
-      "id": "lore:caldera-directions-leprechaun-event",
-      "topic": "Caldera directions (Leprechaun event)",
-      "summary": "The Leprechaun event NPC gives wrong directions to Caldera; misleading quest directions are a known vanilla Morrowind pattern.",
-      "facts": [
-        {"statement": "Caldera is located north of Balmora, not east — correcting the in-game NPC's directions for the Leprechaun event.", "src": "discord-anecdote"},
-        {"statement": "The server dev noted this isn't unprecedented: multiple vanilla Morrowind quests are known to give incorrect or misleading directions, like the drunken Nord for the Leprechaun event.", "src": "discord-dev"}
-      ],
-      "src": "discord-anecdote"
-    },
-    {
-      "id": "lore:twin-lamps-slave-quest",
-      "topic": "Twin Lamps slave quest",
-      "summary": "Slave counts, fastest camps, and rewards for the Twin Lamps questline.",
-      "facts": [
-        {"statement": "The Twin Lamps quest requires freeing 21 slaves total; fastest camps are Rotheran (11), Hlormaren (9), Sinsibadon (6), and Minabi (6); freeing 30 slaves yields 3 skill books.", "src": "discord-anecdote"},
-        {"statement": "Dren Plantation and under the Telvanni canton in Vivec also have a good number of easily-accessed slaves with keys.", "src": "discord-anecdote"}
-      ],
-      "src": "discord-anecdote"
-    },
-    {
-      "id": "lore:duvianus-platorius",
-      "topic": "Duvianus Platorius",
-      "summary": "The quest interaction with Duvianus Platorius can be resolved by lying.",
-      "facts": [
-        {"statement": "The quest/NPC interaction involving Duvianus Platorius can be resolved simply by lying to him, rather than needing to bribe or kill him.", "src": "discord-tested"}
-      ],
-      "src": "discord-tested"
-    },
-    {
-      "id": "lore:azura-star-akulakhan-fan-theory",
-      "topic": "Azura Star / Akulakhan fan theory",
-      "summary": "Fan lore theory connecting an Azura Star, Almalexia's soul, Akulakhan, and the Landfall.",
-      "facts": [
-        {"statement": "Fan lore theory (not confirmed): an Azura Star containing Almalexia's soul was used as a substitute for the Heart of Lorkhan by the Nerevarine for Akulakhan, to fight Numidium during the Landfall in the 5th era.", "src": "discord-speculation"}
-      ],
-      "src": "discord-speculation"
-    },
-    {
-      "id": "lore:mad-god-quest-first-completion",
-      "topic": "Mad God quest first completion",
-      "summary": "Server-history note on the first full completion of the Mad God quest.",
-      "facts": [
-        {"statement": "The server dev believes a particular player was the first to complete the Mad God quest entirely on the server (as of 2023-01-04).", "src": "discord-dev"}
-      ],
-      "src": "discord-dev"
-    },
-    {
-      "id": "lore:legacy-content-and-secret-islands",
-      "topic": "Legacy content and secret islands",
-      "summary": "Server-history notes on items implemented by a former content creator, and the unfinished secret islands.",
-      "facts": [
-        {"statement": "A former community content creator (not a tes3mp developer) implemented items and content in-game before leaving the tes3mp scene; the server admin (also not a tes3mp developer) said he'd rather not remove every one of those items, because he doesn't want to field player complaints and be expected to compensate players for it, noting that has happened before.", "src": "discord-dev"},
-        {"statement": "The secret islands were made by that former content creator but never finished; it was speculated that if the idea had been finished, the islands probably wouldn't have ended up being kept secret.", "src": "discord-speculation"}
-      ],
-      "src": "discord-dev"
-    },
-    {
-      "id": "lore:fishing-feature-port",
-      "topic": "Fishing feature port",
-      "summary": "Status note on the Fishing feature across server versions.",
-      "facts": [
-        {"statement": "As of 2022-08-04, Fishing (a feature from server version 0.7) had not yet been ported to version 0.8.", "src": "discord-anecdote"}
-      ],
-      "src": "discord-anecdote"
-    },
-    {
-      "id": "lore:saviors-hide-availability",
-      "topic": "Savior's Hide availability",
-      "summary": "The Savior's Hide artifact is currently unobtainable on the server.",
-      "facts": [
-        {"statement": "The Savior's Hide artifact is currently completely unavailable on the server; other vanilla artifacts were considered for relocation to add challenge, but the server dev ultimately did not move them.", "src": "discord-anecdote"}
-      ],
-      "src": "discord-anecdote"
-    },
-    {
-      "id": "lore:bipolar-blade",
-      "topic": "Bipolar Blade",
-      "summary": "A joke weapon with self-negating enchantments, made for the Tribunal museum-donation quest step.",
-      "facts": [
-        {"statement": "The Bipolar Blade was made specifically for the Tribunal main-quest step where you donate artifacts for free to get the Trueflame piece from the museum curator.", "src": "discord-anecdote"},
-        {"statement": "There is a chance to fail the Tribunal museum-donation quest, which is part of why the Bipolar Blade isn't the best item to use for it.", "src": "discord-anecdote"},
-        {"statement": "Verbatim in-game description: \"Two smiths on opposite ends of Tamriel created each half of the blade, unaware of the other, with the hope that no one man, save the owner of the blade, would know its true power. Unfortunately, the smiths were not given enough instruction, and created halves with enchantments that completely negated each other. A person struck with this weapon will not attack you (because of the calming spell) meaning that subsequent attacks will be considered assault if you are in town even if your enemy attacked you first. 'It's sort of valuable, I guess, except that no one has ever wanted it'\"", "src": "ingame-text"},
-        {"statement": "Its enchantment: Frenzy Humanoid 30pts for 15sec on Touch; Calm Humanoid 30pts for 15sec on Touch.", "src": "ingame-text"}
-      ],
-      "src": "discord-anecdote"
-    },
-    {
-      "id": "lore:trueflame-hopesfire-spear-of-the-hunter",
-      "topic": "Trueflame, Hopesfire, Spear of the Hunter",
-      "summary": "Same-model counterpart weapons and why certain DLC artifacts are unobtainable.",
-      "facts": [
-        {"statement": "A screenshot showed a player carrying items literally named 'Infernal Blade' and 'Voltaic Spear', plus what appears to be a Hopesfire-model weapon, leading to speculation that other rare boss drops might be same-model counterparts to the artifacts Trueflame and Hopesfire.", "src": "discord-speculation"},
-        {"statement": "The Spear of the Hunter is unobtainable because, like Hopesfire and Trueflame, it requires completing its DLC main quest, which is broken since Antonius is missing and the werewolf disease doesn't work.", "src": "discord-anecdote"}
-      ],
-      "src": "discord-anecdote"
-    },
-    {
-      "id": "lore:wraithguard-and-zero-sum-gauntlet",
-      "topic": "Wraithguard and Zero Sum Gauntlet",
-      "summary": "The backpath left Wraithguard, its texture quirk, the Jury-Rigged perk, and a contested Zero Sum Gauntlet recipe.",
-      "facts": [
-        {"statement": "Completing the 'backpath' and talking to Vivec gives the player a left Wraithguard rather than it spawning on the map.", "src": "discord-anecdote"},
-        {"statement": "The two obtainable Wraithguards share the same enchantment except the 'Jury-Rigged' perk, which is only on the left-hand one.", "src": "discord-anecdote"},
-        {"statement": "Before being upgraded by Yagrum Bagarn, the left Wraithguard obtained via the backdoor route is textured as a plain daedric gauntlet rather than the actual wraithguard model.", "src": "discord-anecdote"},
-        {"statement": "This is believed to be an unintentional Bethesda mistake reusing the daedric gauntlet model, since a pluginless texture fix for the left Wraithguard would also change the regular daedric gauntlets, as they share the same base model; after debate, the conclusion reached was that it's certainly not intentional.", "src": "discord-speculation"},
-        {"statement": "Zero Sum Gauntlet recipe (conflicting claims): one player states you need BOTH Wraithguards (not just the better one) in your inventory for it to appear automatically; another player replied in the same thread contradicting this, stating only the 'cooler' Wraithguard plus the associated weapons are needed, not both Wraithguards.", "src": "discord-contested"}
-      ],
-      "src": "discord-anecdote"
-    },
-    {
-      "id": "lore:frozenmourn",
-      "topic": "Frozenmourn",
-      "summary": "A sword with a 450 Frost DMG proc apparently gated by target frost resistance; its swing type was a dev mistake and its spelling is intentional.",
-      "facts": [
-        {"statement": "The Frozenmourn sword can proc '450 Frost DMG'; the proc appears gated by target frost resistance — it failed to proc against a target with '70% frost resistance' but proc'd immediately against a target with '30%' resistance, and continued proc'ing '450 Frost dmg' even after that target's frost resistance was lowered to '0%'.", "src": "discord-tested"},
-        {"statement": "The server dev acknowledged Frozenmourn's weapon swing type (slash instead of chop) was a mistake ('Whoops') and said he'd swap it in the next update.", "src": "discord-dev"},
-        {"statement": "The server dev confirmed the spelling 'Frozenmourn' (rather than 'Frozenmourne') is intentional, not a typo.", "src": "discord-dev"}
-      ],
-      "src": "discord-tested"
-    },
-    {
-      "id": "lore:jacks-ripper-and-icy-jack",
-      "topic": "Jack's Ripper and Icy Jack",
-      "summary": "The unique long blade Jack's Ripper, its Bone Thrall summon, and the familiars and drops tied to the boss Jack (Icy Jack).",
-      "facts": [
-        {"statement": "Jack's Ripper is a unique long blade whose on-hit effect summons a Bone Thrall that visually resembles Jack (the boss); the exact summon trigger is unclear.", "src": "discord-tested"},
-        {"statement": "The Bone Thrall may also dispel summoned Dremora, though not immediately (speculation); it should attack but currently doesn't — the server dev acknowledged this as a bug to look into.", "src": "discord-dev"},
-        {"statement": "The Lich, Bonelord, and Skeleton familiars come from the boss 'Jack' (Icy Jack); Bonewolf and Lich King familiars are speculated (unconfirmed) to also be rare drops from Jack.", "src": "discord-anecdote"},
-        {"statement": "Icy Jack's drop table was updated to add the Starfrost Cuirass alongside its existing Ice Armor and Glacier Splitter drops.", "src": "discord-tested"}
-      ],
-      "src": "discord-anecdote"
-    },
-    {
-      "id": "lore:jacks-halloween-drop-table",
-      "topic": "Jack's Halloween drop table",
-      "summary": "The event NPC Jack's Halloween drop table mixes returning old-event drops with new items; some listed details were later corrected as bugs.",
-      "facts": [
-        {"statement": "The event NPC 'Jack's' Halloween drop table also includes returning old-event drops — masks of vanilla NPCs including Jim Stacey, Fargoth, Divayth Fyr, Helseth, Barenziah, and Caius Cosades, plus the unused 'Wings of the Queen of Bats' artifact — alongside new items like the Witches' Broom (grants flight when drawn).", "src": "discord-anecdote"},
-        {"statement": "Several details in that drop list were later corrected by the server dev as bugs — the Daedric Longspear was meant to be two-handed, not one-handed, and the Ring of Namira's item/equipment slot was also bugged.", "src": "discord-dev"}
-      ],
-      "src": "discord-anecdote"
-    },
-    {
-      "id": "lore:daedric-face-masks",
-      "topic": "Daedric Face masks",
-      "summary": "Speculation that the three Daedric face helmets are designed to resemble Tribunal-era figures.",
-      "facts": [
-        {"statement": "The three Daedric face helmets (Terror, Inspiration, God) are speculated to be designed to resemble the masks of the Tribunal.", "src": "discord-speculation"},
-        {"statement": "Initial guess: Face of Inspiration resembles Almalexia and Face of God resembles Vivec — corrected the next day: Face of Terror actually resembles Nerevar, though it somewhat resembles Sotha Sil's mask too.", "src": "discord-speculation"}
-      ],
-      "src": "discord-speculation"
-    },
-    {
-      "id": "lore:daedric-sanctuary-amulet-leftover",
-      "topic": "Daedric Sanctuary Amulet and freeze-bug amulet",
-      "summary": "The game-freezing amulet is unrelated to the Daedric Sanctuary Amulet and is likely a vanilla beta leftover.",
-      "facts": [
-        {"statement": "The item that freezes the game on use is different from and unrelated to the Daedric Sanctuary Amulet. That other amulet is likely a vanilla beta leftover: originally, killing Lord Dregas Volar let you loot a teleport amulet from him to get back to Tel Fyr, but this was changed to an instant teleport on his death, and Bethesda seemingly never removed the old amulet from his inventory.", "src": "discord-anecdote"}
-      ],
-      "src": "discord-anecdote"
-    },
-    {
-      "id": "lore:daedric-longspear-origin",
-      "topic": "Daedric Longspear origin",
-      "summary": "The Daedric Longspear comes from Morrowind's unused BSA files.",
-      "facts": [
-        {"statement": "The Daedric Longspear comes from Morrowind's unused BSA files and was never actually implemented in the base game; there is also an unused Dwemer longspear model in those same unused files.", "src": "discord-anecdote"}
-      ],
-      "src": "discord-anecdote"
-    },
-    {
-      "id": "lore:pulverizer",
-      "topic": "Pulverizer",
-      "summary": "The Pulverizer has no hidden effect and its planned boss-drop placement was never implemented.",
-      "facts": [
-        {"statement": "The Pulverizer has no hidden effect — it was originally planned to be added to a boss's drop table but never implemented, due to an issue with spell-casting creatures.", "src": "discord-dev"}
-      ],
-      "src": "discord-dev"
-    },
-    {
-      "id": "lore:bthuangths-harvester",
-      "topic": "Bthuangth's Harvester",
-      "summary": "Bthuangth's Harvester is no longer obtainable from its vanilla spawn point.",
-      "facts": [
-        {"statement": "Bthuangth's Harvester is no longer obtainable from its original vanilla spawn point in Dandera Selaro's house in Ald-Ruhn, because that house is now player housing.", "src": "discord-tested"}
-      ],
-      "src": "discord-tested"
-    },
-    {
-      "id": "lore:white-mournhold-robes",
-      "topic": "White Mournhold robes",
-      "summary": "White (Mournhold) robes were originally extremely rare on the server.",
-      "facts": [
-        {"statement": "White (Mournhold) robes were originally very rare on the server, with only about 3-4 in existence, because they came from Mournhold during a short period when it was open.", "src": "discord-anecdote"}
-      ],
-      "src": "discord-anecdote"
-    },
-    {
-      "id": "lore:spiffcorp-joke-loot-site",
-      "topic": "SpiffCorp joke loot site",
-      "summary": "An underwater joke-themed dive site strewn with 'SpiffCorp (TM) industrial waste' bottles.",
-      "facts": [
-        {"statement": "An underwater site is strewn with numerous 'SpiffCorp (TM) industrial waste' bottle items (each worth 194 gold, Fortify Intelligence 65 pts for 195 secs) — apparently a joke-themed loot/dive site.", "src": "discord-tested"}
-      ],
-      "src": "discord-tested"
-    },
-    {
-      "id": "lore:town-named-cocktails",
-      "topic": "Town-named cocktails",
-      "summary": "The confirmed set of town-named cocktail items, per polling of players who obtained them.",
-      "facts": [
-        {"statement": "Based on asking many players who obtained cocktails what they got, the confirmed-to-exist town-named cocktails are: Balmora, Aldruhn, Pelagiad, Dagon Fel, Suran, and Sadrith Mora.", "src": "discord-anecdote"},
-        {"statement": "It is speculated that neither a Tel Mora nor a Gnisis cocktail exists.", "src": "discord-speculation"}
-      ],
-      "src": "discord-anecdote"
-    },
-    {
-      "id": "lore:lucky-dice",
-      "topic": "Lucky Dice",
-      "summary": "A physically tiny dropped item; despite its name, carrying it does not raise Luck.",
-      "facts": [
-        {"statement": "The Lucky Dice is a physically tiny dropped item, barely visible on the ground (a player circled it in red for scale against a standing character).", "src": "discord-anecdote"},
-        {"statement": "Its scale/size cannot be changed and always stays tiny — this clarifies confusion with the unrelated, resizable Dwemer quest cube.", "src": "discord-anecdote"},
-        {"statement": "A player initially speculated it might boost Luck based on 10 favorable-seeming test rolls while carrying it (72, 3, 31, 96, 41, 19, 3, 90, 81, 10) — but this was later tested and refuted: a 'Lucky'-named item does not raise the Luck attribute simply by being carried in inventory, despite its name.", "src": "discord-tested"}
-      ],
-      "src": "discord-anecdote"
-    },
-    {
-      "id": "lore:golden-prayer-robe",
-      "topic": "Golden Prayer Robe",
-      "summary": "Stats of a robe speculated to be a previously undiscovered item.",
-      "facts": [
-        {"statement": "Golden Prayer Robe: Weight 3, Value 6198, Constant Effect: Fortify Attribute Willpower 15 pts, Restore Health, Restore Magicka — speculated by a player to possibly be a previously unfound/undiscovered item.", "src": "discord-speculation"}
-      ],
-      "src": "discord-speculation"
-    },
-    {
-      "id": "lore:gertrude-and-morroween-hide-shirts",
-      "topic": "Gertrude Hide Shirt and Morroween Hide Shirt",
-      "summary": "Two similarly named but distinct unenchanted St. Aralor shirts, from different event sources, that differ in model.",
-      "facts": [
-        {"statement": "A clothing item was first referred to as 'Gertrude Hide Shirt', but a merchant listing later named it 'Morroween Hide Shirt', initially suggesting a naming error — it turned out both names are real, distinct items.", "src": "discord-anecdote"},
-        {"statement": "Gertrude (a separate event NPC/boss) drops its own 'Gertrude Hide Shirt', also an unenchanted Shirt of St. Aralor, distinct from the Morroween Hide Shirt.", "src": "discord-anecdote"},
-        {"statement": "Despite both being unenchanted St. Aralor shirts, the two differ in model — the Morroween version is missing the wrist part that the Gertrude version has; the server dev had suggested equipping the two shirts to check for a difference after they were claimed to be identical.", "src": "discord-tested"}
-      ],
-      "src": "discord-anecdote"
-    },
-    {
-      "id": "lore:enchanted-ring-color-variety",
-      "topic": "Enchanted ring color variety",
-      "summary": "Illusion and Alteration enchanted rings each render in distinct colored ring models.",
-      "facts": [
-        {"statement": "Enchanted Illusion rings (Light, Sanctuary, Invisibility, Chameleon) each render as a differently colored ring model, making Illusion the school with the most enchantment color variety among rings.", "src": "discord-anecdote"},
-        {"statement": "Enchanted Alteration rings (Levitate, Open, Jump, Feather) similarly each have 4 distinct colored shades.", "src": "discord-anecdote"}
-      ],
-      "src": "discord-anecdote"
-    },
-    {
-      "id": "lore:talking-mudcrab-merchant-and-guidebook-excerpts",
-      "topic": "Talking Mudcrab Merchant and guidebook excerpts",
-      "summary": "Players shared excerpts from an official Morrowind guidebook, including the location of the drunken Talking Mudcrab Merchant.",
-      "facts": [
-        {"statement": "Guidebook excerpt: \"The Talking Mudcrab Merchant — Make that the drunken talking mudcrab merchant. It's northeast of Bal Fell — on an island directly across from the entrance to the Releth Ancestral Tomb. It's pretty funny, and it actually does sell stuff. Namely, booze!\"", "src": "discord-anecdote"},
-        {"statement": "A photographed guidebook page titled 'Morrowind Miscellaneous' includes a 'Stupid Player Tricks' section about using stacks of the 90-plus copies of 'The Antecedents', 'Lives of Saints', and 'The Consolation of Prayer' as stepping-stone paths across lava pools.", "src": "discord-anecdote"},
-        {"statement": "A player also pasted the title text of 'A POCKET GUIDE to THE EMPIRE and its environs', promulgated under the Authority of the Imperial Geographical Society, 3E 432.", "src": "discord-anecdote"}
-      ],
-      "src": "discord-anecdote"
-    },
-    {
-      "id": "lore:fishing-flavor-notes",
-      "topic": "Fishing flavor notes",
-      "summary": "In-game fishing flavor texts hinting at best fishing conditions and a giant sea creature.",
-      "facts": [
-        {"statement": "In-game fishing note (verbatim): \"A friendly tip from one fisherman to another: They say fishing is best at dusk or dawn, especially when its foggy or overcast. But I say be weary of thunder, you're basically a walking lightning rod, and no giant fish or dreugh is worth 10,000 volts coursing through your body! - a friend\"", "src": "ingame-text"},
-        {"statement": "In-game fishing note (verbatim): \"Did my eyes deceive me? Surely I was just seeing things - but I could have swore I saw some sort of giant creature in the open sea during our ride to Solstheim... I'm beginning to think I've been fishing too long, my eyes must be playing tricks on me. What do they put in this top-tier bait, anyway?\"", "src": "ingame-text"}
-      ],
-      "src": "ingame-text"
-    },
-    {
-      "id": "lore:frostguard-robe",
-      "topic": "Frostguard Robe",
-      "summary": "Stats line for the Frostguard Robe (Helseth's Robe).",
-      "facts": [
-        {"statement": "Frostguard Robe (Helseth's Robe) — 3.0 / 78 / 1 — Worn by King Hlaalu Helseth.", "src": "ingame-text"}
-      ],
-      "src": "ingame-text"
-    },
-    {
-      "id": "lore:grim-looking-man",
-      "topic": "The Grim Looking Man",
-      "summary": "Player-authored roleplay/fan lore about a Mephala-devoted figure seen at the Earthly Delights Gentleman's Club in Suran; not official game text.",
-      "facts": [
-        {"statement": "Player-authored fan lore describes the 'Grim Looking Man' lurking in back-corner alleyways and occasionally spotted at the Earthly Delights Gentleman's Club in Suran, reciting a Chimer-language prayer to Mephala ('Lady of Whispers... Mistress of Secrets... Mother of Spiders').", "src": "discord-anecdote"},
-        {"statement": "In the fan lore, he descends from a family of high believers of Mephala who fled to Suran and hid after the Night Mother painted 'MORAG TONG' in the blood of the murdered Potentate Versidue Shaie; set in 3E 426, he is said to still uphold family traditions within the Morag Tong Guild, and is best reached at the Earthly Delights Gentleman's Club in Suran. This reads as player-authored roleplay/fan-fiction, not vanilla game text.", "src": "discord-anecdote"}
-      ],
-      "src": "discord-anecdote"
-    }
+ "_meta": {
+  "description": "NP server lore",
+  "migrated": "2026-08-22",
+  "updated": "2026-08-24",
+  "conventions": [
+   "Entries/facts sourced 'lorechan-fiction' are community-written in-world FICTION. Always present them labeled as community fiction, never as server fact or mechanics.",
+   "Person names and Discord handles never appear here; the server dev is referred to by role only, and the dev's in-world persona is described, not named."
   ]
+ },
+ "sources": {
+  "discord-anecdote": {
+   "origin": "discord-public",
+   "channel": "player-notes",
+   "url": null,
+   "date": null,
+   "confidence": "player-reported"
+  },
+  "discord-tested": {
+   "origin": "discord-public",
+   "channel": "player-notes",
+   "url": null,
+   "date": null,
+   "confidence": "measured"
+  },
+  "discord-speculation": {
+   "origin": "discord-public",
+   "channel": "player-notes",
+   "url": null,
+   "date": null,
+   "confidence": "provisional"
+  },
+  "discord-dev": {
+   "origin": "discord-public",
+   "channel": "player-notes",
+   "url": null,
+   "date": null,
+   "confidence": "dev-stated"
+  },
+  "discord-contested": {
+   "origin": "discord-public",
+   "channel": "player-notes",
+   "url": null,
+   "date": null,
+   "confidence": "contested"
+  },
+  "ingame-text": {
+   "origin": "in-game-tooltip",
+   "channel": null,
+   "url": null,
+   "date": null,
+   "confidence": "measured"
+  },
+  "lorechan-anecdote": {
+   "origin": "discord-public",
+   "channel": "np-server-lore",
+   "url": null,
+   "date": "2020-04 to 2026-06",
+   "confidence": "player-reported",
+   "note": "Community history/lore channel; server history retold by players."
+  },
+  "lorechan-dev": {
+   "origin": "discord-public",
+   "channel": "np-server-lore",
+   "url": null,
+   "date": "2020-04 to 2026-06",
+   "confidence": "dev-stated",
+   "note": "Statements authored by the server dev in the np-server-lore channel."
+  },
+  "lorechan-fiction": {
+   "origin": "discord-public",
+   "channel": "np-server-lore",
+   "url": null,
+   "date": "2020-04 to 2026-06",
+   "confidence": "player-reported",
+   "note": "Collaborative in-world FICTION written by the community. Canon as community lore only — never a source of server facts or mechanics."
+  },
+  "lorechan-speculation": {
+   "origin": "discord-public",
+   "channel": "np-server-lore",
+   "url": null,
+   "date": "2020-04 to 2026-06",
+   "confidence": "provisional",
+   "note": "Player recollections/theories from the np-server-lore channel that are uncertain or unconfirmed."
+  }
+ },
+ "entries": [
+  {
+   "id": "lore:morag-tong-helmet-npcs",
+   "topic": "Morag Tong helmet NPCs",
+   "summary": "Three NPCs on the server wear the Morag Tong helmet, with notes on their services and whether they are safe to kill.",
+   "facts": [
+    {
+     "statement": "Three NPCs on the server wear the Morag Tong helmet: Vaveli Dralas, Namanian Facian, and Taros Dral.",
+     "src": "discord-anecdote"
+    },
+    {
+     "statement": "Namanian Facian sells spells but offers no other notable services.",
+     "src": "discord-anecdote"
+    },
+    {
+     "statement": "Taros Dral is the NPC who initiates Mephala's Morag Tong quest.",
+     "src": "discord-anecdote"
+    },
+    {
+     "statement": "Vaveli Dralas and Namanian Facian are non-essential NPCs and safe to kill.",
+     "src": "discord-anecdote"
+    },
+    {
+     "statement": "A same-day post named the NPC 'Vaveli Dravan' (believed safe to kill since she appears to offer no quest or trade); the Dralas vs. Dravan name discrepancy is likely a spelling inconsistency in player notes rather than two NPCs.",
+     "src": "discord-speculation"
+    }
+   ],
+   "src": "discord-anecdote"
+  },
+  {
+   "id": "lore:bone-thrall-appearance",
+   "topic": "Bone Thrall appearance",
+   "summary": "In-game visual description of the Bone Thrall creature.",
+   "facts": [
+    {
+     "statement": "Bone thralls appear in-game as a gold-robed skeletal figure with detached bone arms floating around its upper body and head.",
+     "src": "discord-anecdote"
+    }
+   ],
+   "src": "discord-anecdote"
+  },
+  {
+   "id": "lore:fort-frostmoth-and-fort-firemoth",
+   "topic": "Fort Frostmoth and Fort Firemoth",
+   "summary": "Two similarly named forts that come from different plugins and should not be confused.",
+   "facts": [
+    {
+     "statement": "Fort Frostmoth is located on Solstheim.",
+     "src": "discord-anecdote"
+    },
+    {
+     "statement": "Fort Frostmoth and Fort Firemoth are two different plugins and should not be confused with each other.",
+     "src": "discord-dev"
+    }
+   ],
+   "src": "discord-dev"
+  },
+  {
+   "id": "lore:threads-of-the-webspinner",
+   "topic": "27 Threads of the Webspinner",
+   "summary": "Quest-structure note about the 27 Threads of the Webspinner (Sanguine) questline.",
+   "facts": [
+    {
+     "statement": "In the 27 Threads of the Webspinner (Sanguine) questline, the one 'contact' step is the only quest stage that does not require going out to kill someone.",
+     "src": "discord-tested"
+    }
+   ],
+   "src": "discord-tested"
+  },
+  {
+   "id": "lore:werewolf-base-stats",
+   "topic": "Werewolf base stats",
+   "summary": "The UESP wiki's werewolf stat multipliers are inaccurate; correct values were pulled directly from the Construction Set.",
+   "facts": [
+    {
+     "statement": "The UESP wiki page on Werewolves is inaccurate; a player posted the actual base werewolf stat multipliers pulled directly from the Construction Set (Gameplay -> Settings -> Gameplay tab) as the correct reference.",
+     "src": "discord-tested"
+    }
+   ],
+   "src": "discord-tested"
+  },
+  {
+   "id": "lore:house-hlaalu-amends",
+   "topic": "House Hlaalu amends",
+   "summary": "Regaining standing with House Hlaalu does not require gold; amends are paid 'in nature' to Crassius Curio via a bribery/dialogue scene.",
+   "facts": [
+    {
+     "statement": "You can make amends with House Hlaalu (regain standing) even without carrying gold; amends are instead paid 'in nature' to Crassius Curio via the bribery/dialogue scene, not gold.",
+     "src": "discord-anecdote"
+    },
+    {
+     "statement": "Verbatim dialogue from the scene: \"You want me to be your sponsor in House Hlaalu? I thought you'd never ask... But first, I want to see who I'm dealing with. Show Uncle Crassius what you have to offer. That's right, don't be shy.\"",
+     "src": "ingame-text"
+    }
+   ],
+   "src": "discord-anecdote"
+  },
+  {
+   "id": "lore:caldera-directions-leprechaun-event",
+   "topic": "Caldera directions (Leprechaun event)",
+   "summary": "The Leprechaun event NPC gives wrong directions to Caldera; misleading quest directions are a known vanilla Morrowind pattern.",
+   "facts": [
+    {
+     "statement": "Caldera is located north of Balmora, not east — correcting the in-game NPC's directions for the Leprechaun event.",
+     "src": "discord-anecdote"
+    },
+    {
+     "statement": "The server dev noted this isn't unprecedented: multiple vanilla Morrowind quests are known to give incorrect or misleading directions, like the drunken Nord for the Leprechaun event.",
+     "src": "discord-dev"
+    }
+   ],
+   "src": "discord-anecdote"
+  },
+  {
+   "id": "lore:twin-lamps-slave-quest",
+   "topic": "Twin Lamps slave quest",
+   "summary": "Slave counts, fastest camps, and rewards for the Twin Lamps questline.",
+   "facts": [
+    {
+     "statement": "The Twin Lamps quest requires freeing 21 slaves total; fastest camps are Rotheran (11), Hlormaren (9), Sinsibadon (6), and Minabi (6); freeing 30 slaves yields 3 skill books.",
+     "src": "discord-anecdote"
+    },
+    {
+     "statement": "Dren Plantation and under the Telvanni canton in Vivec also have a good number of easily-accessed slaves with keys.",
+     "src": "discord-anecdote"
+    }
+   ],
+   "src": "discord-anecdote"
+  },
+  {
+   "id": "lore:duvianus-platorius",
+   "topic": "Duvianus Platorius",
+   "summary": "The quest interaction with Duvianus Platorius can be resolved by lying.",
+   "facts": [
+    {
+     "statement": "The quest/NPC interaction involving Duvianus Platorius can be resolved simply by lying to him, rather than needing to bribe or kill him.",
+     "src": "discord-tested"
+    }
+   ],
+   "src": "discord-tested"
+  },
+  {
+   "id": "lore:azura-star-akulakhan-fan-theory",
+   "topic": "Azura Star / Akulakhan fan theory",
+   "summary": "Fan lore theory connecting an Azura Star, Almalexia's soul, Akulakhan, and the Landfall.",
+   "facts": [
+    {
+     "statement": "Fan lore theory (not confirmed): an Azura Star containing Almalexia's soul was used as a substitute for the Heart of Lorkhan by the Nerevarine for Akulakhan, to fight Numidium during the Landfall in the 5th era.",
+     "src": "discord-speculation"
+    }
+   ],
+   "src": "discord-speculation"
+  },
+  {
+   "id": "lore:mad-god-quest-first-completion",
+   "topic": "Mad God quest first completion",
+   "summary": "Server-history note on the first full completion of the Mad God quest.",
+   "facts": [
+    {
+     "statement": "The server dev believes a particular player was the first to complete the Mad God quest entirely on the server (as of 2023-01-04).",
+     "src": "discord-dev"
+    }
+   ],
+   "src": "discord-dev"
+  },
+  {
+   "id": "lore:legacy-content-and-secret-islands",
+   "topic": "Legacy content and secret islands",
+   "summary": "Server-history notes on items implemented by a former content creator, and the unfinished secret islands.",
+   "facts": [
+    {
+     "statement": "A former community content creator (not a tes3mp developer) implemented items and content in-game before leaving the tes3mp scene; the server admin (also not a tes3mp developer) said he'd rather not remove every one of those items, because he doesn't want to field player complaints and be expected to compensate players for it, noting that has happened before.",
+     "src": "discord-dev"
+    },
+    {
+     "statement": "The secret islands were made by that former content creator but never finished; it was speculated that if the idea had been finished, the islands probably wouldn't have ended up being kept secret.",
+     "src": "discord-speculation"
+    }
+   ],
+   "src": "discord-dev"
+  },
+  {
+   "id": "lore:fishing-feature-port",
+   "topic": "Fishing feature port",
+   "summary": "Status note on the Fishing feature across server versions.",
+   "facts": [
+    {
+     "statement": "As of 2022-08-04, Fishing (a feature from server version 0.7) had not yet been ported to version 0.8.",
+     "src": "discord-anecdote"
+    }
+   ],
+   "src": "discord-anecdote"
+  },
+  {
+   "id": "lore:saviors-hide-availability",
+   "topic": "Savior's Hide availability",
+   "summary": "The Savior's Hide artifact is currently unobtainable on the server.",
+   "facts": [
+    {
+     "statement": "The Savior's Hide artifact is currently completely unavailable on the server; other vanilla artifacts were considered for relocation to add challenge, but the server dev ultimately did not move them.",
+     "src": "discord-anecdote"
+    }
+   ],
+   "src": "discord-anecdote"
+  },
+  {
+   "id": "lore:bipolar-blade",
+   "topic": "Bipolar Blade",
+   "summary": "A joke weapon with self-negating enchantments, made for the Tribunal museum-donation quest step.",
+   "facts": [
+    {
+     "statement": "The Bipolar Blade was made specifically for the Tribunal main-quest step where you donate artifacts for free to get the Trueflame piece from the museum curator.",
+     "src": "discord-anecdote"
+    },
+    {
+     "statement": "There is a chance to fail the Tribunal museum-donation quest, which is part of why the Bipolar Blade isn't the best item to use for it.",
+     "src": "discord-anecdote"
+    },
+    {
+     "statement": "Verbatim in-game description: \"Two smiths on opposite ends of Tamriel created each half of the blade, unaware of the other, with the hope that no one man, save the owner of the blade, would know its true power. Unfortunately, the smiths were not given enough instruction, and created halves with enchantments that completely negated each other. A person struck with this weapon will not attack you (because of the calming spell) meaning that subsequent attacks will be considered assault if you are in town even if your enemy attacked you first. 'It's sort of valuable, I guess, except that no one has ever wanted it'\"",
+     "src": "ingame-text"
+    },
+    {
+     "statement": "Its enchantment: Frenzy Humanoid 30pts for 15sec on Touch; Calm Humanoid 30pts for 15sec on Touch.",
+     "src": "ingame-text"
+    }
+   ],
+   "src": "discord-anecdote"
+  },
+  {
+   "id": "lore:trueflame-hopesfire-spear-of-the-hunter",
+   "topic": "Trueflame, Hopesfire, Spear of the Hunter",
+   "summary": "Same-model counterpart weapons and why certain DLC artifacts are unobtainable.",
+   "facts": [
+    {
+     "statement": "A screenshot showed a player carrying items literally named 'Infernal Blade' and 'Voltaic Spear', plus what appears to be a Hopesfire-model weapon, leading to speculation that other rare boss drops might be same-model counterparts to the artifacts Trueflame and Hopesfire.",
+     "src": "discord-speculation"
+    },
+    {
+     "statement": "The Spear of the Hunter is unobtainable because, like Hopesfire and Trueflame, it requires completing its DLC main quest, which is broken since Antonius is missing and the werewolf disease doesn't work.",
+     "src": "discord-anecdote"
+    }
+   ],
+   "src": "discord-anecdote"
+  },
+  {
+   "id": "lore:wraithguard-and-zero-sum-gauntlet",
+   "topic": "Wraithguard and Zero Sum Gauntlet",
+   "summary": "The backpath left Wraithguard, its texture quirk, the Jury-Rigged perk, and a contested Zero Sum Gauntlet recipe.",
+   "facts": [
+    {
+     "statement": "Completing the 'backpath' and talking to Vivec gives the player a left Wraithguard rather than it spawning on the map.",
+     "src": "discord-anecdote"
+    },
+    {
+     "statement": "The two obtainable Wraithguards share the same enchantment except the 'Jury-Rigged' perk, which is only on the left-hand one.",
+     "src": "discord-anecdote"
+    },
+    {
+     "statement": "Before being upgraded by Yagrum Bagarn, the left Wraithguard obtained via the backdoor route is textured as a plain daedric gauntlet rather than the actual wraithguard model.",
+     "src": "discord-anecdote"
+    },
+    {
+     "statement": "This is believed to be an unintentional Bethesda mistake reusing the daedric gauntlet model, since a pluginless texture fix for the left Wraithguard would also change the regular daedric gauntlets, as they share the same base model; after debate, the conclusion reached was that it's certainly not intentional.",
+     "src": "discord-speculation"
+    },
+    {
+     "statement": "Zero Sum Gauntlet recipe (conflicting claims): one player states you need BOTH Wraithguards (not just the better one) in your inventory for it to appear automatically; another player replied in the same thread contradicting this, stating only the 'cooler' Wraithguard plus the associated weapons are needed, not both Wraithguards.",
+     "src": "discord-contested"
+    }
+   ],
+   "src": "discord-anecdote"
+  },
+  {
+   "id": "lore:frozenmourn",
+   "topic": "Frozenmourn",
+   "summary": "A sword with a 450 Frost DMG proc apparently gated by target frost resistance; its swing type was a dev mistake and its spelling is intentional.",
+   "facts": [
+    {
+     "statement": "The Frozenmourn sword can proc '450 Frost DMG'; the proc appears gated by target frost resistance — it failed to proc against a target with '70% frost resistance' but proc'd immediately against a target with '30%' resistance, and continued proc'ing '450 Frost dmg' even after that target's frost resistance was lowered to '0%'.",
+     "src": "discord-tested"
+    },
+    {
+     "statement": "The server dev acknowledged Frozenmourn's weapon swing type (slash instead of chop) was a mistake ('Whoops') and said he'd swap it in the next update.",
+     "src": "discord-dev"
+    },
+    {
+     "statement": "The server dev confirmed the spelling 'Frozenmourn' (rather than 'Frozenmourne') is intentional, not a typo.",
+     "src": "discord-dev"
+    }
+   ],
+   "src": "discord-tested"
+  },
+  {
+   "id": "lore:jacks-ripper-and-icy-jack",
+   "topic": "Jack's Ripper and Icy Jack",
+   "summary": "The unique long blade Jack's Ripper, its Bone Thrall summon, and the familiars and drops tied to the boss Jack (Icy Jack).",
+   "facts": [
+    {
+     "statement": "Jack's Ripper is a unique long blade whose on-hit effect summons a Bone Thrall that visually resembles Jack (the boss); the exact summon trigger is unclear.",
+     "src": "discord-tested"
+    },
+    {
+     "statement": "The Bone Thrall may also dispel summoned Dremora, though not immediately (speculation); it should attack but currently doesn't — the server dev acknowledged this as a bug to look into.",
+     "src": "discord-dev"
+    },
+    {
+     "statement": "The Lich, Bonelord, and Skeleton familiars come from the boss 'Jack' (Icy Jack); Bonewolf and Lich King familiars are speculated (unconfirmed) to also be rare drops from Jack.",
+     "src": "discord-anecdote"
+    },
+    {
+     "statement": "Icy Jack's drop table was updated to add the Starfrost Cuirass alongside its existing Ice Armor and Glacier Splitter drops.",
+     "src": "discord-tested"
+    }
+   ],
+   "src": "discord-anecdote"
+  },
+  {
+   "id": "lore:jacks-halloween-drop-table",
+   "topic": "Jack's Halloween drop table",
+   "summary": "The event NPC Jack's Halloween drop table mixes returning old-event drops with new items; some listed details were later corrected as bugs.",
+   "facts": [
+    {
+     "statement": "The event NPC 'Jack's' Halloween drop table also includes returning old-event drops — masks of vanilla NPCs including Jim Stacey, Fargoth, Divayth Fyr, Helseth, Barenziah, and Caius Cosades, plus the unused 'Wings of the Queen of Bats' artifact — alongside new items like the Witches' Broom (grants flight when drawn).",
+     "src": "discord-anecdote"
+    },
+    {
+     "statement": "Several details in that drop list were later corrected by the server dev as bugs — the Daedric Longspear was meant to be two-handed, not one-handed, and the Ring of Namira's item/equipment slot was also bugged.",
+     "src": "discord-dev"
+    }
+   ],
+   "src": "discord-anecdote"
+  },
+  {
+   "id": "lore:daedric-face-masks",
+   "topic": "Daedric Face masks",
+   "summary": "Speculation that the three Daedric face helmets are designed to resemble Tribunal-era figures.",
+   "facts": [
+    {
+     "statement": "The three Daedric face helmets (Terror, Inspiration, God) are speculated to be designed to resemble the masks of the Tribunal.",
+     "src": "discord-speculation"
+    },
+    {
+     "statement": "Initial guess: Face of Inspiration resembles Almalexia and Face of God resembles Vivec — corrected the next day: Face of Terror actually resembles Nerevar, though it somewhat resembles Sotha Sil's mask too.",
+     "src": "discord-speculation"
+    }
+   ],
+   "src": "discord-speculation"
+  },
+  {
+   "id": "lore:daedric-sanctuary-amulet-leftover",
+   "topic": "Daedric Sanctuary Amulet and freeze-bug amulet",
+   "summary": "The game-freezing amulet is unrelated to the Daedric Sanctuary Amulet and is likely a vanilla beta leftover.",
+   "facts": [
+    {
+     "statement": "The item that freezes the game on use is different from and unrelated to the Daedric Sanctuary Amulet. That other amulet is likely a vanilla beta leftover: originally, killing Lord Dregas Volar let you loot a teleport amulet from him to get back to Tel Fyr, but this was changed to an instant teleport on his death, and Bethesda seemingly never removed the old amulet from his inventory.",
+     "src": "discord-anecdote"
+    }
+   ],
+   "src": "discord-anecdote"
+  },
+  {
+   "id": "lore:daedric-longspear-origin",
+   "topic": "Daedric Longspear origin",
+   "summary": "The Daedric Longspear comes from Morrowind's unused BSA files.",
+   "facts": [
+    {
+     "statement": "The Daedric Longspear comes from Morrowind's unused BSA files and was never actually implemented in the base game; there is also an unused Dwemer longspear model in those same unused files.",
+     "src": "discord-anecdote"
+    }
+   ],
+   "src": "discord-anecdote"
+  },
+  {
+   "id": "lore:pulverizer",
+   "topic": "Pulverizer",
+   "summary": "The Pulverizer has no hidden effect and its planned boss-drop placement was never implemented.",
+   "facts": [
+    {
+     "statement": "The Pulverizer has no hidden effect — it was originally planned to be added to a boss's drop table but never implemented, due to an issue with spell-casting creatures.",
+     "src": "discord-dev"
+    }
+   ],
+   "src": "discord-dev"
+  },
+  {
+   "id": "lore:bthuangths-harvester",
+   "topic": "Bthuangth's Harvester",
+   "summary": "Bthuangth's Harvester is no longer obtainable from its vanilla spawn point.",
+   "facts": [
+    {
+     "statement": "Bthuangth's Harvester is no longer obtainable from its original vanilla spawn point in Dandera Selaro's house in Ald-Ruhn, because that house is now player housing.",
+     "src": "discord-tested"
+    }
+   ],
+   "src": "discord-tested"
+  },
+  {
+   "id": "lore:white-mournhold-robes",
+   "topic": "White Mournhold robes",
+   "summary": "White (Mournhold) robes were originally extremely rare on the server.",
+   "facts": [
+    {
+     "statement": "White (Mournhold) robes were originally very rare on the server, with only about 3-4 in existence, because they came from Mournhold during a short period when it was open.",
+     "src": "discord-anecdote"
+    }
+   ],
+   "src": "discord-anecdote"
+  },
+  {
+   "id": "lore:spiffcorp-joke-loot-site",
+   "topic": "SpiffCorp joke loot site",
+   "summary": "An underwater joke-themed dive site strewn with 'SpiffCorp (TM) industrial waste' bottles.",
+   "facts": [
+    {
+     "statement": "An underwater site is strewn with numerous 'SpiffCorp (TM) industrial waste' bottle items (each worth 194 gold, Fortify Intelligence 65 pts for 195 secs) — apparently a joke-themed loot/dive site.",
+     "src": "discord-tested"
+    }
+   ],
+   "src": "discord-tested"
+  },
+  {
+   "id": "lore:town-named-cocktails",
+   "topic": "Town-named cocktails",
+   "summary": "The confirmed set of town-named cocktail items, per polling of players who obtained them.",
+   "facts": [
+    {
+     "statement": "Based on asking many players who obtained cocktails what they got, the confirmed-to-exist town-named cocktails are: Balmora, Aldruhn, Pelagiad, Dagon Fel, Suran, and Sadrith Mora.",
+     "src": "discord-anecdote"
+    },
+    {
+     "statement": "It is speculated that neither a Tel Mora nor a Gnisis cocktail exists.",
+     "src": "discord-speculation"
+    }
+   ],
+   "src": "discord-anecdote"
+  },
+  {
+   "id": "lore:lucky-dice",
+   "topic": "Lucky Dice",
+   "summary": "A physically tiny dropped item; despite its name, carrying it does not raise Luck.",
+   "facts": [
+    {
+     "statement": "The Lucky Dice is a physically tiny dropped item, barely visible on the ground (a player circled it in red for scale against a standing character).",
+     "src": "discord-anecdote"
+    },
+    {
+     "statement": "Its scale/size cannot be changed and always stays tiny — this clarifies confusion with the unrelated, resizable Dwemer quest cube.",
+     "src": "discord-anecdote"
+    },
+    {
+     "statement": "A player initially speculated it might boost Luck based on 10 favorable-seeming test rolls while carrying it (72, 3, 31, 96, 41, 19, 3, 90, 81, 10) — but this was later tested and refuted: a 'Lucky'-named item does not raise the Luck attribute simply by being carried in inventory, despite its name.",
+     "src": "discord-tested"
+    }
+   ],
+   "src": "discord-anecdote"
+  },
+  {
+   "id": "lore:golden-prayer-robe",
+   "topic": "Golden Prayer Robe",
+   "summary": "Stats of a robe speculated to be a previously undiscovered item.",
+   "facts": [
+    {
+     "statement": "Golden Prayer Robe: Weight 3, Value 6198, Constant Effect: Fortify Attribute Willpower 15 pts, Restore Health, Restore Magicka — speculated by a player to possibly be a previously unfound/undiscovered item.",
+     "src": "discord-speculation"
+    }
+   ],
+   "src": "discord-speculation"
+  },
+  {
+   "id": "lore:gertrude-and-morroween-hide-shirts",
+   "topic": "Gertrude Hide Shirt and Morroween Hide Shirt",
+   "summary": "Two similarly named but distinct unenchanted St. Aralor shirts, from different event sources, that differ in model.",
+   "facts": [
+    {
+     "statement": "A clothing item was first referred to as 'Gertrude Hide Shirt', but a merchant listing later named it 'Morroween Hide Shirt', initially suggesting a naming error — it turned out both names are real, distinct items.",
+     "src": "discord-anecdote"
+    },
+    {
+     "statement": "Gertrude (a separate event NPC/boss) drops its own 'Gertrude Hide Shirt', also an unenchanted Shirt of St. Aralor, distinct from the Morroween Hide Shirt.",
+     "src": "discord-anecdote"
+    },
+    {
+     "statement": "Despite both being unenchanted St. Aralor shirts, the two differ in model — the Morroween version is missing the wrist part that the Gertrude version has; the server dev had suggested equipping the two shirts to check for a difference after they were claimed to be identical.",
+     "src": "discord-tested"
+    }
+   ],
+   "src": "discord-anecdote"
+  },
+  {
+   "id": "lore:enchanted-ring-color-variety",
+   "topic": "Enchanted ring color variety",
+   "summary": "Illusion and Alteration enchanted rings each render in distinct colored ring models.",
+   "facts": [
+    {
+     "statement": "Enchanted Illusion rings (Light, Sanctuary, Invisibility, Chameleon) each render as a differently colored ring model, making Illusion the school with the most enchantment color variety among rings.",
+     "src": "discord-anecdote"
+    },
+    {
+     "statement": "Enchanted Alteration rings (Levitate, Open, Jump, Feather) similarly each have 4 distinct colored shades.",
+     "src": "discord-anecdote"
+    }
+   ],
+   "src": "discord-anecdote"
+  },
+  {
+   "id": "lore:talking-mudcrab-merchant-and-guidebook-excerpts",
+   "topic": "Talking Mudcrab Merchant and guidebook excerpts",
+   "summary": "Players shared excerpts from an official Morrowind guidebook, including the location of the drunken Talking Mudcrab Merchant.",
+   "facts": [
+    {
+     "statement": "Guidebook excerpt: \"The Talking Mudcrab Merchant — Make that the drunken talking mudcrab merchant. It's northeast of Bal Fell — on an island directly across from the entrance to the Releth Ancestral Tomb. It's pretty funny, and it actually does sell stuff. Namely, booze!\"",
+     "src": "discord-anecdote"
+    },
+    {
+     "statement": "A photographed guidebook page titled 'Morrowind Miscellaneous' includes a 'Stupid Player Tricks' section about using stacks of the 90-plus copies of 'The Antecedents', 'Lives of Saints', and 'The Consolation of Prayer' as stepping-stone paths across lava pools.",
+     "src": "discord-anecdote"
+    },
+    {
+     "statement": "A player also pasted the title text of 'A POCKET GUIDE to THE EMPIRE and its environs', promulgated under the Authority of the Imperial Geographical Society, 3E 432.",
+     "src": "discord-anecdote"
+    }
+   ],
+   "src": "discord-anecdote"
+  },
+  {
+   "id": "lore:fishing-flavor-notes",
+   "topic": "Fishing flavor notes",
+   "summary": "In-game fishing flavor texts hinting at best fishing conditions and a giant sea creature.",
+   "facts": [
+    {
+     "statement": "In-game fishing note (verbatim): \"A friendly tip from one fisherman to another: They say fishing is best at dusk or dawn, especially when its foggy or overcast. But I say be weary of thunder, you're basically a walking lightning rod, and no giant fish or dreugh is worth 10,000 volts coursing through your body! - a friend\"",
+     "src": "ingame-text"
+    },
+    {
+     "statement": "In-game fishing note (verbatim): \"Did my eyes deceive me? Surely I was just seeing things - but I could have swore I saw some sort of giant creature in the open sea during our ride to Solstheim... I'm beginning to think I've been fishing too long, my eyes must be playing tricks on me. What do they put in this top-tier bait, anyway?\"",
+     "src": "ingame-text"
+    }
+   ],
+   "src": "ingame-text"
+  },
+  {
+   "id": "lore:frostguard-robe",
+   "topic": "Frostguard Robe",
+   "summary": "Stats line for the Frostguard Robe (Helseth's Robe).",
+   "facts": [
+    {
+     "statement": "Frostguard Robe (Helseth's Robe) — 3.0 / 78 / 1 — Worn by King Hlaalu Helseth.",
+     "src": "ingame-text"
+    }
+   ],
+   "src": "ingame-text"
+  },
+  {
+   "id": "lore:grim-looking-man",
+   "topic": "The Grim Looking Man",
+   "summary": "Player-authored roleplay/fan lore about a Mephala-devoted figure seen at the Earthly Delights Gentleman's Club in Suran; not official game text.",
+   "facts": [
+    {
+     "statement": "Player-authored fan lore describes the 'Grim Looking Man' lurking in back-corner alleyways and occasionally spotted at the Earthly Delights Gentleman's Club in Suran, reciting a Chimer-language prayer to Mephala ('Lady of Whispers... Mistress of Secrets... Mother of Spiders').",
+     "src": "discord-anecdote"
+    },
+    {
+     "statement": "In the fan lore, he descends from a family of high believers of Mephala who fled to Suran and hid after the Night Mother painted 'MORAG TONG' in the blood of the murdered Potentate Versidue Shaie; set in 3E 426, he is said to still uphold family traditions within the Morag Tong Guild, and is best reached at the Earthly Delights Gentleman's Club in Suran. This reads as player-authored roleplay/fan-fiction, not vanilla game text.",
+     "src": "discord-anecdote"
+    }
+   ],
+   "src": "discord-anecdote"
+  },
+  {
+   "id": "lore:token-currency-origin",
+   "topic": "Token Currency Origin",
+   "summary": "Early in the server's history, a change that let creature vendors restock their gold without players needing to relog broke the value of ordinary gold and caused runaway inflation. The server dev responded by introducing a separate, stable player currency, and a handful of shopkeepers organized an informal campaign to get the community to adopt it.",
+   "facts": [
+    {
+     "statement": "In 2020, a change that let creature merchants restock their gold without players relogging caused runaway inflation of the server's ordinary gold currency.",
+     "src": "lorechan-anecdote"
+    },
+    {
+     "statement": "The server dev introduced a separate, stable player currency, later known as Nerevarine Tokens, in response to the gold inflation.",
+     "src": "lorechan-anecdote"
+    },
+    {
+     "statement": "A group of shop-owning players organized an informal campaign, repricing their goods in the new currency to encourage the wider community to adopt it.",
+     "src": "lorechan-anecdote"
+    },
+    {
+     "statement": "The players who led that campaign recalled the token currency being widely adopted by the community within about one to two weeks of it starting.",
+     "src": "lorechan-anecdote"
+    }
+   ],
+   "src": "lorechan-anecdote"
+  },
+  {
+   "id": "lore:first-tradehouse",
+   "topic": "The First Tradehouse",
+   "summary": "Before any built-in player marketplace existed, a small group of players ran an informal trading post known as the Tradehouse, with no theft protection beyond an honor system and vigilante justice. Three players managed it together, and after one of them became less active, the other two relocated it to a private home, where it stayed for years.",
+   "facts": [
+    {
+     "statement": "Before any built-in player marketplace existed, a small group of players ran an informal trading post called the Tradehouse, where both sides of a trade placed their items on the ground to exchange them.",
+     "src": "lorechan-anecdote"
+    },
+    {
+     "statement": "The original Tradehouse was jointly managed by three players who split duties between dealing with customers, enforcing rules, and holding the shared gold.",
+     "src": "lorechan-anecdote"
+    },
+    {
+     "statement": "Because there was no built-in anti-theft protection, the Tradehouse's operators relied on the server's bounty system to punish players caught stealing from it.",
+     "src": "lorechan-anecdote"
+    },
+    {
+     "statement": "After one of the Tradehouse's three founding operators became less active, the remaining two relocated it into a player-owned house on an island near Dagon Fel, where it remained for years afterward.",
+     "src": "lorechan-anecdote"
+    }
+   ],
+   "src": "lorechan-anecdote"
+  },
+  {
+   "id": "lore:gold-duplication-purge",
+   "topic": "The Gold Duplication Purge",
+   "summary": "In the server's early years, a cheater repeatedly duplicated gold and scattered huge piles of it around Balmora, and moderators had no simple tool to remove that much currency from an account. One moderator discovered that dying destroyed roughly half a character's carried gold, and used that trick dozens of times over to clear a duplicated fortune, an episode the server dev independently remembers as well.",
+   "facts": [
+    {
+     "statement": "In the server's early years, a cheater used a duplication exploit to scatter very large piles of gold around Balmora on more than one occasion.",
+     "src": "lorechan-anecdote"
+    },
+    {
+     "statement": "With no easy admin tool available at the time to strip that much currency from an account, a moderator discovered that a character's in-game death destroyed roughly half of their carried gold.",
+     "src": "lorechan-anecdote"
+    },
+    {
+     "statement": "A moderator killed their own character around twenty to thirty times in a row to clear a duplicated gold pile down to a manageable amount, prompting confused questions from players who kept seeing the repeated deaths.",
+     "src": "lorechan-anecdote"
+    },
+    {
+     "statement": "The server dev separately recalled logging in during a gold-duplication incident and finding piles stacked so high in Balmora that they towered into the sky, with the game simply reporting each pile's value as '1b'.",
+     "src": "lorechan-dev"
+    }
+   ],
+   "src": "lorechan-dev"
+  },
+  {
+   "id": "lore:first-jiubsmas",
+   "topic": "The First Jiubsmas",
+   "summary": "The server's first celebration of its winter holiday, Jiubsmas, is remembered fondly as an especially communal event. A large tree appeared in town about a month ahead of time, players received one wrapped present per login through December, and on the holiday itself the server dev's in-world persona appeared atop the tree to tell the story of the holiday before gifts could finally be opened.",
+   "facts": [
+    {
+     "statement": "The server's first Jiubsmas holiday event featured a large decorated tree that appeared in town roughly a month before the holiday itself.",
+     "src": "lorechan-anecdote"
+    },
+    {
+     "statement": "During the run-up to the first Jiubsmas, players received one wrapped present per login throughout the preceding month, but were unable to open them until the holiday arrived.",
+     "src": "lorechan-anecdote"
+    },
+    {
+     "statement": "On the night of the first Jiubsmas, the server dev's in-world persona appeared atop the town's holiday tree to narrate the in-world story of the holiday before players were allowed to open their presents.",
+     "src": "lorechan-anecdote"
+    },
+    {
+     "statement": "Rewards from the first Jiubsmas included a coveted magic ring and a set of holiday-themed robes, both remembered by players as especially desirable prizes.",
+     "src": "lorechan-anecdote"
+    },
+    {
+     "statement": "Some players also referred to Jiubsmas by the alternate, more mundane-sounding name 'New Life Festival' when discussing the holiday in-character.",
+     "src": "lorechan-fiction"
+    }
+   ],
+   "src": "lorechan-anecdote"
+  },
+  {
+   "id": "lore:predecessor-servers",
+   "topic": "Predecessor Servers",
+   "summary": "Nerevarine Prophecies was not the first Morrowind multiplayer community its dev and longtime players had ties to. When pressed about the wider history of Morrowind multiplayer servers, the dev was evasive, and separately recalled a predecessor server that shut down after roughly a year of work had gone into it.",
+   "facts": [
+    {
+     "statement": "A player who joined the server in 2020 noted that Nerevarine Prophecies was the only Morrowind multiplayer server they had ever played on, which prompted a discussion of earlier servers.",
+     "src": "lorechan-anecdote"
+    },
+    {
+     "statement": "When asked about the history of Morrowind multiplayer servers prior to Nerevarine Prophecies, the server dev declined to elaborate, implying the subject was best not revisited.",
+     "src": "lorechan-dev"
+    },
+    {
+     "statement": "A predecessor Morrowind multiplayer server, remembered by name as Ragefire, is recalled by at least one longtime player, who described accumulating notable wealth there.",
+     "src": "lorechan-anecdote"
+    },
+    {
+     "statement": "The server dev remarked that it was a shame how much effort had gone into the Ragefire server over roughly a year before it was ultimately shut down.",
+     "src": "lorechan-dev"
+    }
+   ],
+   "src": "lorechan-dev"
+  },
+  {
+   "id": "lore:adventurers-hall-origin",
+   "topic": "Origins of the Adventurer's Hall",
+   "summary": "The Adventurer's Hall is a server landmark whose backstory blends confirmed fact with ongoing player speculation. Its official opening and first title-holder are agreed upon, but its intended purpose has been guessed at for years by players who never got a clear answer, with the details reportedly shifting many times over the hall's history.",
+   "facts": [
+    {
+     "statement": "The Adventurer's Hall officially opened at a specific point in the server's history, and one particular player is remembered as the first to enter it and receive the associated title.",
+     "src": "lorechan-anecdote"
+    },
+    {
+     "statement": "Some longtime players speculate that the Adventurer's Hall was originally meant as a staging area from which higher-level characters could be sent into especially difficult dungeons requiring more than one player to complete.",
+     "src": "lorechan-speculation"
+    },
+    {
+     "statement": "Players who discussed the Adventurer's Hall's history noted that its stated requirements and purpose reportedly changed multiple times over the years without ever being fully clarified publicly.",
+     "src": "lorechan-speculation"
+    }
+   ],
+   "src": "lorechan-speculation"
+  },
+  {
+   "id": "lore:player-note-board-origin",
+   "topic": "Origin of the Player Note Board",
+   "summary": "The server's in-game notice board feature, used for shop advertisements and public messages, began life as a small unofficial prank between two players. One edited the other's handwritten note and showed it off as a joke, the idea caught on informally within the community, and the server dev eventually turned the trend into a supported feature.",
+   "facts": [
+    {
+     "statement": "The server's player notice board feature began informally when one player edited another player's handwritten in-game note as a joke and showed it to them.",
+     "src": "lorechan-anecdote"
+    },
+    {
+     "statement": "Rather than being upset, the player whose note had been edited liked the idea and began posting similar notes themselves, and other players gradually picked up the habit.",
+     "src": "lorechan-anecdote"
+    },
+    {
+     "statement": "During that same era, players commonly left handwritten shop notices near the silt strider landing area in Balmora so newcomers would see them first.",
+     "src": "lorechan-anecdote"
+    },
+    {
+     "statement": "The server dev eventually turned the informal, player-driven note-posting trend into an official, supported feature of the server.",
+     "src": "lorechan-anecdote"
+    }
+   ],
+   "src": "lorechan-anecdote"
+  },
+  {
+   "id": "lore:bounty-hunting-and-manhunter-guild",
+   "topic": "Bounty Hunting and the Manhunter's Guild",
+   "summary": "Long before the server's karma system existed, informal bounty hunting was already a popular player pastime, used both for entertainment and as a form of vigilante justice. One veteran shopkeeper recalled hiring hits through the bounty system to warn off rival marketplaces, and the culture eventually became associated with an in-game organization, the Manhunter's Guild.",
+   "facts": [
+    {
+     "statement": "Before the server's karma system existed, players could freely place bounties on other players, and some players placed several bounties a day purely for fun, sometimes for as little as a single gold coin.",
+     "src": "lorechan-anecdote"
+    },
+    {
+     "statement": "One longtime Tradehouse operator recalled placing bounties on players who tried to start rival player-run marketplaces, treating it as informal protection of the original Tradehouse's standing.",
+     "src": "lorechan-anecdote"
+    },
+    {
+     "statement": "The informal bounty-hunting culture that predated the karma system became associated with an in-game organization known as the Manhunter's Guild.",
+     "src": "lorechan-anecdote"
+    }
+   ],
+   "src": "lorechan-anecdote"
+  },
+  {
+   "id": "lore:flame-atronach-siege",
+   "topic": "The Flame Atronach Siege of Balmora",
+   "summary": "One remembered moment of server chaos was a griefer spawning a huge swarm of flame atronachs in Balmora, causing severe town-wide lag. Rather than waiting it out, one player suited up in their best armor and fought through the crowd alongside a few others until the culprit was banned and the swarm cleared.",
+   "facts": [
+    {
+     "statement": "A griefer once spawned a large swarm of flame atronachs in Balmora, causing severe town-wide lag until the person responsible was identified and banned.",
+     "src": "lorechan-anecdote"
+    },
+    {
+     "statement": "A player who later became a moderator recalled fighting through the atronach swarm in their best armor with a fully charged enchanted weapon rather than waiting for the lag to pass.",
+     "src": "lorechan-anecdote"
+    },
+    {
+     "statement": "The player who fought the swarm noted their armor was left torn and their weapon's magical charge fully depleted by the time the atronachs stopped appearing.",
+     "src": "lorechan-anecdote"
+    }
+   ],
+   "src": "lorechan-anecdote"
+  },
+  {
+   "id": "lore:elf-on-the-shelf-mishap",
+   "topic": "The Elf-on-the-Shelf Mishap",
+   "summary": "In the second half of 2019, a batch of holiday event potions modeled after the 'Elf on the Shelf' toy circulated around Balmora and shrank anyone who drank them to a fraction of their normal size. The effect was advertised as temporary but turned out to be permanent due to a bug, leading to a spontaneous day of games among shrunken players before things were put right.",
+   "facts": [
+    {
+     "statement": "In the second half of 2019, a batch of event-only potions themed around 'Elf on the Shelf' circulated around Balmora and shrank players who drank them to a fraction of their normal size.",
+     "src": "lorechan-anecdote"
+    },
+    {
+     "statement": "The potion's label advertised a short duration for the shrinking effect, but a bug made it permanent rather than temporary.",
+     "src": "lorechan-anecdote"
+    },
+    {
+     "statement": "Players who were shrunk spent a day adventuring together at their reduced size, including a trip into a nearby Dwemer ruin, before eventually being restored to normal size.",
+     "src": "lorechan-anecdote"
+    }
+   ],
+   "src": "lorechan-anecdote"
+  },
+  {
+   "id": "lore:pelagiad-curse",
+   "topic": "The Curse of Pelagiad",
+   "summary": "Some players have half-jokingly claimed that houses in the remote Imperial town of Pelagiad carry a curse, since an unusually high number of owners there ended up going permanently inactive or banned. The running joke has persisted informally within the community for years.",
+   "facts": [
+    {
+     "statement": "Some players have joked for years that player-owned houses in the town of Pelagiad carry a curse, since an unusually high number of their owners ended up inactive or banned soon after moving in.",
+     "src": "lorechan-speculation"
+    },
+    {
+     "statement": "Players attribute Pelagiad's relative unpopularity in part to its remote location and lack of direct silt strider or teleport access compared to other towns.",
+     "src": "lorechan-anecdote"
+    }
+   ],
+   "src": "lorechan-speculation"
+  },
+  {
+   "id": "lore:heddvild-the-undying",
+   "topic": "Heddvild the Undying",
+   "summary": "An unusually tough enemy from an early version of the server earned the nickname 'the Undying' after repeatedly defeating any player who provoked her. Longtime players still reference the nickname as shorthand for how brutal certain server-specific enemies used to be before later balance changes.",
+   "facts": [
+    {
+     "statement": "An enemy remembered by the nickname 'the Undying' was notorious in an early version of the server for defeating any player who provoked her in combat.",
+     "src": "lorechan-anecdote"
+    },
+    {
+     "statement": "The nickname 'the Undying' has persisted in community memory as shorthand for how dangerous certain server-specific enemies used to be before later balance changes.",
+     "src": "lorechan-speculation"
+    }
+   ],
+   "src": "lorechan-anecdote"
+  },
+  {
+   "id": "lore:cult-of-horky",
+   "topic": "The Cult of Horky",
+   "summary": "Community-written in-world fiction: players built an entire invented religion around Horky, a real in-game horker mascot they reimagined as an immortal deity. Their myth described Horky's death and resurrection by the community's fictional pantheon, a parody scripture modeled on the vanilla game's holy texts, a home-shrine cult, and a satirical in-world tabloid that reported on Horky-related happenings.",
+   "facts": [
+    {
+     "statement": "Community-written in-world fiction: an actual in-game horker living near Balmora was reimagined by players as a deity named Horky, with an invented backstory describing him as the sole survivor of an illegally shipped horker pod.",
+     "src": "lorechan-fiction"
+    },
+    {
+     "statement": "Community-written in-world fiction: in the invented backstory, the first Horky was nursed back to health by a traveling tinker but was later mistreated and killed by townsfolk, prompting the community's invented pantheon to resurrect him as an immortal, speaking horker.",
+     "src": "lorechan-fiction"
+    },
+    {
+     "statement": "Community-written in-world fiction: players wrote a parody scripture describing thirty-six lessons of Horky, modeled on the vanilla game's holy texts about Vivec, portraying Horky as a cosmic being present at the dawn of creation.",
+     "src": "lorechan-fiction"
+    },
+    {
+     "statement": "Community-written in-world fiction: worshippers of the invented Horky religion were said to keep home shrines and greet one another with a set blessing phrase, while treating self-declared godhood by other figures, such as the Tribunal, as blasphemy.",
+     "src": "lorechan-fiction"
+    },
+    {
+     "statement": "Community-written in-world fiction: players also invented a satirical in-world tabloid that published mock news reports and reviews connected to the Horky mythos.",
+     "src": "lorechan-fiction"
+    }
+   ],
+   "src": "lorechan-fiction"
+  },
+  {
+   "id": "lore:nerevarine-chronicles-books",
+   "topic": "The Nerevarine Prophecies Chronicles",
+   "summary": "Community-written in-world fiction: one player authored a multi-volume anthology of in-character short stories, distributed in-game as a handful of hand-delivered book copies. The first volume told a comic caper about a trickster who convinced a crowd an ordinary fork was a rare magic weapon and sold it to the most gullible bidder before the ruse was exposed.",
+   "facts": [
+    {
+     "statement": "Community-written in-world fiction: a player authored a multi-volume anthology of in-character short stories, distributed in-game as only a handful of hand-delivered book copies rather than being freely available.",
+     "src": "lorechan-fiction"
+    },
+    {
+     "statement": "Community-written in-world fiction: the anthology's first featured story described a trickster who convinced a crowd that an ordinary kitchen fork was a rare magic weapon, staged fake demonstrations of its power, then sold it to the most gullible bidder for a small fortune before the ruse was exposed and the payment refunded.",
+     "src": "lorechan-fiction"
+    },
+    {
+     "statement": "Community-written in-world fiction: later volumes covered other in-character tales nominated by players, including stories about a mysterious former staff member and a large in-game conflict remembered as the Solstheim ordeal.",
+     "src": "lorechan-fiction"
+    }
+   ],
+   "src": "lorechan-fiction"
+  },
+  {
+   "id": "lore:origin-of-guars-myth",
+   "topic": "The Origin of Guars (Myth)",
+   "summary": "Community-written in-world fiction: a player wrote an invented creation myth explaining why guars, the common pack-animal of Morrowind, do not reproduce like other creatures. The story ties guars to the ancient Dwemer's forbidden pursuit of creating life through tonal architecture, framing guars as an imperfect side effect of that magical research.",
+   "facts": [
+    {
+     "statement": "Community-written in-world fiction: a player wrote an invented myth claiming guars were created by the ancient Dwemer through tonal architecture, as part of a forbidden attempt to create life and rival the gods.",
+     "src": "lorechan-fiction"
+    },
+    {
+     "statement": "Community-written in-world fiction: in this myth, guars do not mate; instead, gathered latent magical energy occasionally coalesces into a new guar, since even skilled Dwemer tonal architects never fully mastered the process of creating life.",
+     "src": "lorechan-fiction"
+    }
+   ],
+   "src": "lorechan-fiction"
+  },
+  {
+   "id": "lore:school-of-arcane-and-unseen",
+   "topic": "School of the Arcane and the Unseen",
+   "summary": "Community-written in-world fiction: players collaboratively wrote an in-game book and hid physical copies of it around the server for others to find and puzzle over. The book's fictional cult was later folded into further collaborative lore as the origin of an invented in-world organization, described as the successor to an earlier invented group.",
+   "facts": [
+    {
+     "statement": "Community-written in-world fiction: players collaboratively wrote an in-game book and hid physical copies of it in locations around the server for others to find, without labeling it obviously as such.",
+     "src": "lorechan-fiction"
+    },
+    {
+     "statement": "Community-written in-world fiction: the book described a fictional cult, invented by players in October 2020, which they later wrote into being the origin of an invented in-world organization called the School of the Arcane and the Unseen.",
+     "src": "lorechan-fiction"
+    },
+    {
+     "statement": "Community-written in-world fiction: the School of the Arcane and the Unseen was written as the successor to an earlier invented player organization called the Guild of Knowledge.",
+     "src": "lorechan-fiction"
+    }
+   ],
+   "src": "lorechan-fiction"
+  },
+  {
+   "id": "lore:the-milkman-legend",
+   "topic": "The Milkman Legend",
+   "summary": "Community-written in-world fiction: for several years, a recurring community in-joke centered on a mysterious figure known only as the Milkman, tied to an informal, ongoing set of rituals among a small circle of players. The joke was eventually given a wistful in-character send-off describing a final meeting with the Milkman and the end of the rituals.",
+   "facts": [
+    {
+     "statement": "Community-written in-world fiction: for several years, a recurring community in-joke centered on a mysterious figure known only as the Milkman, tied to an informal, ongoing set of rituals among a small circle of players.",
+     "src": "lorechan-fiction"
+    },
+    {
+     "statement": "Community-written in-world fiction: the running joke was given an in-character send-off describing a final moonlit meeting with the Milkman and the end of the associated rituals, though players continued leaving small tribute offerings near an ash-land cave afterward.",
+     "src": "lorechan-fiction"
+    }
+   ],
+   "src": "lorechan-fiction"
+  },
+  {
+   "id": "lore:dev-persona-godhead-theory",
+   "topic": "The Dev Persona Godhead Theory",
+   "summary": "A recurring piece of community folklore treats the server dev's in-world persona as a god-like figure within the setting rather than an ordinary character. Players have noted the persona cannot be harmed in-game and tends to appear right when the community needs help, leading to half-serious speculation that it functions as the setting's true metaphysical 'Godhead.'",
+   "facts": [
+    {
+     "statement": "Players have noted that the server dev's in-world persona cannot be damaged or killed within the game, unlike ordinary characters.",
+     "src": "lorechan-speculation"
+    },
+    {
+     "statement": "Players have reported seeing the server dev's in-world persona appear invisible in-game, detectable only as a floating name tag when centered on.",
+     "src": "lorechan-speculation"
+    },
+    {
+     "statement": "A recurring community theory holds that the server dev's in-world persona functions as a metaphysical 'Godhead' figure within the setting, comparable to or beyond established deities, since the persona reliably appears and intervenes whenever the community needs help.",
+     "src": "lorechan-speculation"
+    }
+   ],
+   "src": "lorechan-speculation"
+  }
+ ]
 }
