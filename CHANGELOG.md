@@ -1,5 +1,8 @@
 # Changelog
 
+## 2026-08-24 — v0.4.3b gondolier paraphrase + parody songs described
+- lore.json +2: `lore:gondolier-of-balmora` (the unfinished May 2020 two-chapter story, paraphrased per maintainer call — on inspection it is scene-setting and a player-kill retelling, not the rough humor first flagged) and `lore:community-parody-songs` (the Jiubsmas carol and the 2020 mafia-initiation piece, described not stored — their lyrics are near-verbatim rewrites of real copyrighted songs). Chronicles Volume II noted as absent from the channel export (announced 2020-04-24, distributed only in-game).
+
 ## 2026-08-24 — v0.4.3 verbatim lore texts
 - **New `data/lore_texts.json`** — six community-authored in-world texts stored VERBATIM for exact read-back on request: 36 Lessons of Horky Vol. 1, The Origin of Horky (Chronicles Vol. III), The Origin of Guars, The Magic Fork (Chronicles Vol. I), The Milkman farewell, and the School of the Arcane and the Unseen founding note. Read-back is always labeled community fiction; attribution is null on every text until the maintainer records authorization; two single-name redactions (`[name withheld]`) pending that authorization. Held out for a maintainer call: the gondolier story and two parody songs of real-world tunes. SKILL.md file map +1; eq:034; `np-codex.skill` repackaged.
 

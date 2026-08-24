@@ -414,3 +414,18 @@ The server's single most important historical dividing line. The original 0.7-er
 - The 0.8.1 server launched on 2022-05-13 as a fresh start: new characters (with a limited Commemorative Coin for those made in the first 7 days), all racial and birthsign abilities changed from 0.7, initial tradeskills live, and the Bank of Vvardenfell opening with purchasable vaults.
 - Systems remembered from pre-2022 community stories — most prominently the Nerevarine Token economy — belong to the 0.7 era and should not be assumed to exist on the 0.8 server.
 - Nerevarine Tokens are not used on the 0.8 server (maintainer-confirmed, 2026-08-24).
+
+## The Gondolier of Balmora
+
+Community-written in-world fiction: an unfinished two-chapter short story, posted in May 2020 and framed as 'based on a true story' about an in-game player kill. It follows Vol, a Balmora gondolier from a long line of gondoliers, through a slow, scene-setting morning on the Odai — the silt strider mourning her fallen drunken driver, ferry runs to Vivec's shrine, his famous appetite for soft-boiled kwama eggs — before he is ambushed mid-thought, smelling blood and finding himself fatally wounded on his own boat. The story cuts off on that cliffhanger and was never continued.
+
+- Community-written in-world fiction: a two-chapter story posted in May 2020 follows Vol, a Balmora gondolier, through an ordinary morning on the Odai river before he is ambushed and fatally wounded on his boat; the author framed it as based on a true in-game event.
+- Community-written in-world fiction: the gondolier story was never finished — it ends on the ambush cliffhanger.
+
+## Community Parody Songs
+
+Community-written in-world fiction: players also wrote Morrowind-flavored parodies of famous real-world songs — a Jiubsmas carol reworking a classic 'most wonderful time of the year' holiday tune with Sixth House bells, Hlaalu guards, snowball fights, and Nord mead (December 2022), and a mafia-initiation tale set to the theme of a famous 1990s TV show (June 2020). Their lyrics are near-verbatim rewrites of copyrighted songs, so the codex describes rather than stores them.
+
+- Community-written in-world fiction: a Jiubsmas carol posted in December 2022 rewrites a classic holiday song with Morrowind imagery (Sixth House bells, Hlaalu guards, snowball fights, Nord mead, enchanting in the snow).
+- Community-written in-world fiction: a June 2020 piece retold a player's initiation into an in-game mafia to the rhythm of a famous 1990s TV theme song.
+- The parody songs' full lyrics are not stored in the codex because they are close rewrites of real-world copyrighted songs; they remain readable in the Discord channel itself.
