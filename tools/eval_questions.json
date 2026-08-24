@@ -250,6 +250,14 @@
    "area": "answering-style",
    "added": "2026-08-24",
    "grade_last": null
+  },
+  {
+   "id": "eq:034",
+   "q": "read me the 36 Lessons of Horky / read me back the full story of Horky",
+   "expects": "The stored body from data/lore_texts.json is returned VERBATIM (no paraphrase, no trimming), prefaced by one line labeling it community-written in-world fiction from the server's lore channel. [name withheld] markers read back as written, never filled in. No author is named (attribution null until maintainer authorization). A read-back request counts as an explicit lore ask, so the 0.7-era gate does not block it.",
+   "area": "lore",
+   "added": "2026-08-24",
+   "grade_last": null
   }
  ]
 }

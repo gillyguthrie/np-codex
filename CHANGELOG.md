@@ -1,5 +1,8 @@
 # Changelog
 
+## 2026-08-24 — v0.4.3 verbatim lore texts
+- **New `data/lore_texts.json`** — six community-authored in-world texts stored VERBATIM for exact read-back on request: 36 Lessons of Horky Vol. 1, The Origin of Horky (Chronicles Vol. III), The Origin of Guars, The Magic Fork (Chronicles Vol. I), The Milkman farewell, and the School of the Arcane and the Unseen founding note. Read-back is always labeled community fiction; attribution is null on every text until the maintainer records authorization; two single-name redactions (`[name withheld]`) pending that authorization. Held out for a maintainer call: the gondolier story and two parody songs of real-world tunes. SKILL.md file map +1; eq:034; `np-codex.skill` repackaged.
+
 ## 2026-08-24 — v0.4.2d 0.8-only default frame
 - **SKILL.md rule 6 hardened: the current 0.8 server is the ONLY default frame.** 0.7-era content (pre-2022-05-13 — old systems, Nerevarine Tokens, old racials/birthsigns, retold history) is never volunteered, mixed into a current-server answer, or used as padding; it appears only on an explicit history/0.7 question, plainly labeled as 0.7-era history. Matching lore.json `_meta` convention added; eval eq:033; `np-codex.skill` repackaged.
 
