@@ -1,5 +1,10 @@
 # Changelog
 
+## 2026-08-24 — v0.3.2 maintainer infrastructure
+- **New gate: `tools/check_consistency.py`** (gate 5) — cross-file reference checks: storyline tags resolve, storyline key_books exist, items.json vanilla-ref xrefs point at real vanilla_ref records, trainer/skill-book names are valid skills, camp tables agree, community_resources well-formed (URL liveness with --online).
+- **New `tools/eval_questions.json`** — standing persona-eval question bank (17 questions seeded from the 2026-08-23 alchemy and lore evals, with expectation keys). Grown-only: every future eval appends its fresh questions; old ones are the regression net.
+- `schema/README.md` file map refreshed: all 8 vanilla-baseline files documented, np_override convention and rule-9 binding noted.
+
 ## 2026-08-23 — v0.3.1 vanilla world data (locations, NPCs, spells)
 - **New `data/vanilla_locations.json`** (~2,079 items): where vanilla items are actually found — world placements by cell, containers, NPC carriers, RESTOCKING sellers, and leveled-list membership — parsed from the ESMs' CELL/CONT/NPC_/CREA/LEVI records. Answers "where can I find a Daedric Helm?" with real cells. Developer test cells excluded. Vanilla baseline; per-record np_override door left open.
 - **New `data/vanilla_npcs.json`** (633 service NPCs): merchants with barter gold, trainers (top-3 skills where stored; autocalc = null per populated-or-null), spellmakers/enchanters, with cell + faction.

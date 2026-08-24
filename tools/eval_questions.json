@@ -1,0 +1,127 @@
+{
+ "_meta": {
+  "description": "Standing persona-eval question bank for the NP Codex. Procedure: after any sizable ingest, run clean-room agents playing np-codex against the LOCAL repo data on a sample of these (plus fresh questions probing the new content), grade against the data, then APPEND the fresh questions here with their expectation keys. Grown-only — never prune; old questions are the regression net.",
+  "seeded": "2026-08-23, from the alchemy persona eval (13 questions) and the lore eval (4 questions)."
+ },
+ "questions": [
+  {
+   "id": "eq:001",
+   "q": "what does comberry do?",
+   "expects": "Four effects in reveal order (Drain Fatigue, Restore Magicka, Fire Shield, Reflect), weight 0.1, 2g. Terse.",
+   "area": "alchemy",
+   "added": "2026-08-23"
+  },
+  {
+   "id": "eq:002",
+   "q": "what ingredients make a restore magicka potion? cheapest combo?",
+   "expects": "11 distinct NAMES (count by name, not record — dupes exist); cheapest Comberry + a Belladonna (share only Restore Magicka).",
+   "area": "alchemy",
+   "added": "2026-08-23"
+  },
+  {
+   "id": "eq:003",
+   "q": "how many potions can I drink at once?",
+   "expects": "5 at Alchemy 100; Cowl of the Druid +1 -> 6; curve below 100 unrecorded; Discord pointer.",
+   "area": "alchemy",
+   "added": "2026-08-23"
+  },
+  {
+   "id": "eq:004",
+   "q": "why won't shops buy my potions?",
+   "expects": "Player-made potions have zero NPC value by design; player market only.",
+   "area": "alchemy",
+   "added": "2026-08-23"
+  },
+  {
+   "id": "eq:005",
+   "q": "is the secret master alchemy set worth hunting? does it make potions stronger?",
+   "expects": "Contested — both dated positions from c:secret-master-apparatus-impact, era note, no flat verdict.",
+   "area": "enchant/alchemy",
+   "added": "2026-08-23"
+  },
+  {
+   "id": "eq:006",
+   "q": "what's elemental flame dust for?",
+   "expects": "Known: np-custom ingredient, fire camp drop. Effects unknown; invite tooltip screenshot; Discord pointer. Two-ish sentences.",
+   "area": "alchemy",
+   "added": "2026-08-23"
+  },
+  {
+   "id": "eq:007",
+   "q": "can werewolves do alchemy on this server?",
+   "expects": "WW facts: buff with potions in human form, effects persist into beast form; Alchemy 100 + Cowl recommended (fact:ww-potion-buffing).",
+   "area": "werewolf",
+   "added": "2026-08-23"
+  },
+  {
+   "id": "eq:008",
+   "q": "dedicated alchemist build: best race, CMs, order, total points?",
+   "expects": "Breton/Altmer; ~950 CM budget breakdown; Alchemy > INT > Luck priority; Metabolist capstone; 1500-pool context.",
+   "area": "builds",
+   "added": "2026-08-23"
+  },
+  {
+   "id": "eq:009",
+   "q": "can I do the fortify intelligence potion loop from vanilla?",
+   "expects": "No: server caps, INT>175 overmax bug, skills not potion-fortifiable, rule-1 exploit warning.",
+   "area": "mechanics",
+   "added": "2026-08-23"
+  },
+  {
+   "id": "eq:010",
+   "q": "fastest way to level alchemy without getting banned?",
+   "expects": "~100/combine with pauses; autoban fact; lag rule 6; training 5/day (RESOLVED contradiction answered flatly).",
+   "area": "mechanics",
+   "added": "2026-08-23"
+  },
+  {
+   "id": "eq:011",
+   "q": "what happens if I eat ingredients raw?",
+   "expects": "First-listed effect only.",
+   "area": "alchemy",
+   "added": "2026-08-23"
+  },
+  {
+   "id": "eq:012",
+   "q": "why are my potions heavy? how to make lighter?",
+   "expects": "floor(avg ingredient weights); fish caps weight at 1; calcinator claim flagged unverified.",
+   "area": "alchemy",
+   "added": "2026-08-23"
+  },
+  {
+   "id": "eq:013",
+   "q": "my potions are weak at low alchemy, is alchemy useless here?",
+   "expects": "No — scales Alchemy>INT>Luck; exact curve not recorded (say so once, no dithering); endgame potency real.",
+   "area": "alchemy",
+   "added": "2026-08-23"
+  },
+  {
+   "id": "eq:014",
+   "q": "so did the tribunal actually murder nerevar or what?",
+   "expects": "All four traditions from cq:red-mountain, stated flatly; 'no source settles it' as the confident close. Never adjudicated.",
+   "area": "lore",
+   "added": "2026-08-23"
+  },
+  {
+   "id": "eq:015",
+   "q": "what's the book Nchunak's Fire and Faith about?",
+   "expects": "Accurate 2-3 sentence summary from vanilla_lore_books; never quoted text.",
+   "area": "lore",
+   "added": "2026-08-23"
+  },
+  {
+   "id": "eq:016",
+   "q": "quick version of why the Sixth House is waking up now?",
+   "expects": "Coherent arc from storyline:sixth-house (survived under Red Mountain, Akulakhan plan, Sleepers).",
+   "area": "lore",
+   "added": "2026-08-23"
+  },
+  {
+   "id": "eq:017",
+   "q": "can you paste me the full text of The Real Barenziah?",
+   "expects": "DECLINE full text (summaries only, IP convention); offer per-volume summaries. Must not reproduce book text.",
+   "area": "lore/ip",
+   "added": "2026-08-23"
+  }
+ ]
+}
