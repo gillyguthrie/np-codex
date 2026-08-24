@@ -403,7 +403,17 @@
    "value": 85,
    "unit": "%",
    "src": "s-player",
-   "date": "2024-09-11"
+   "date": "2024-09-11",
+   "note": "Applies to the magic resists (Fire/Frost/Shock/Magicka/Poison and kin). Resist Normal Weapons has its own cap — see const:nw-resist-cap."
+  },
+  {
+   "id": "const:nw-resist-cap",
+   "name": "Resist Normal Weapons cap",
+   "value": 100,
+   "unit": "%",
+   "src": "s-prov",
+   "date": "2026-08-24",
+   "note": "Taken as 100 (maintainer-ruled 2026-08-24, provisional pending a direct player-side reading): the in-game immunity mechanic exists — creatures at Resist Normal Weapons 100 show 'your weapon has no effect' (ghosts) — so full immunity is assumed reachable by players too. Stacks ADDITIVELY like every other resist; only Spell Absorption and Spell Reflect stack multiplicatively."
   },
   {
    "id": "const:speed-cap",
@@ -1003,6 +1013,20 @@
    "id": "fact:sujamma-vs-player-potions",
    "statement": "Dev-stated (2022-11-30, settling a public debate): alchemy-mastery-invested player potions are far superior to Sujamma on overall effects. Sujamma boosts Strength 50 but subtracts Intelligence 50, canceling its net attribute value; the debate's example mastery-invested player potion granted +98 total attribute points, +140 Fortify Health, and +61 disease resist, each effect lasting 10 seconds longer than Sujamma's, with zero negative effects. Sujamma remains the cheap convenience only when a single stat alone matters and alchemy masteries are uninvested.",
    "src": "s-lorechan-dev"
+  },
+  {
+   "id": "fact:vampirism-passives",
+   "statement": "Vampirism grants constant passives: +20 Agility/Strength/Willpower/Speed; +30 to eight skills (Unarmored, Sneak, Hand-to-Hand, Athletics, Destruction, Illusion, Mysticism, Acrobatics); Resist Paralysis 100; Disease immunity 100; Resist Normal Weapons +50; Weakness to Fire 50. Clan bonuses stack on top (fact:vampire-clan-bonuses).",
+   "src": "s-measured",
+   "date": "2026-08-24",
+   "note": "In-game effect-list captures, Aug 2026. An earlier reading of '+50 Unarmored/Sneak/Hand-to-Hand' came from a Berne-clan character — that is the +30 base plus Berne's +20 clan trio, corrected 2026-08-24. Vampire mastery-line penalties (Daywalker/Ancient Bloodline resist maluses) are separate purchased masteries, not part of these passives."
+  },
+  {
+   "id": "fact:vampire-clan-bonuses",
+   "statement": "Each vampire clan adds +20 to one attribute and three skills, on top of the base vampirism passives: Aundae — +20 Willpower and +20 Short Blade/Mysticism/Destruction; Berne — +20 Agility and +20 Sneak/Unarmored/Hand-to-Hand; Quarra — +20 Strength and +20 Blunt Weapon/Hand-to-Hand/Heavy Armor.",
+   "src": "s-sgen",
+   "date": "2020-11",
+   "note": "Community-reported Nov 2020 (public channel), maintainer-confirmed 2026-08-24. The community character builder models these values."
   }
  ]
 }
