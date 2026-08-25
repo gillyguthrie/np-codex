@@ -1,5 +1,13 @@
 # Changelog
 
+## 2026-08-25 — v0.4.8 build-flow speed pass (inline JSON + one-catalog)
+- **The loadout JSON is now delivered INLINE in the chat message, always**: the fenced .nplb.json code block IS the deliverable; the downloadable file is a bonus, never the only copy. Three of four blind stress-test runs lost the file to the platform's ~50-tool-call turn cap because the write was saved for last — an inline block can't be eaten.
+- **One-catalog rule**: builds resolve every item, weapon, mastery, race, and sign against the builder's `data.json` ONLY (codex `mechanics.json` for formulas/caps, `enchanting.json` for self-enchant ceilings); the codex catalogs are off-limits during builds — two-catalog reconciliation was a recurring rabbit hole with zero accuracy payoff.
+- **Default build download slimmed 8 → 3 files** (subsumed by the one-catalog rule). Call budget tightened to match: ~15 → ~10 calls, file-write deadline ~call 18 → ~12, hard research stop call 25 → 20.
+- **Decide-once rule** added to the Playbook: ambiguity gets one defensible reading and ONE flagged line ("assumed X"), then move on — never multi-interpretation self-debate (round 4 argued the stacking question three ways before v0.4.7 settled it).
+- **Continuation protocol**: a force-capped turn must end with "Say **continue** for the full build" — never a status report with no path forward.
+- `np-codex.skill` repackaged.
+
 ## 2026-08-25 — v0.4.7 stacking rules settled + Atronach 1.25 scrubbed
 - **`fact:stacking-rules` (maintainer-ruled): everything in the game stacks FLAT ADDITIVE except exactly two effects — Spell Absorption and Spell Reflect, which stack multiplicatively.** Sanctuary is additive and is NOT Spell Absorption — never fed into the absorption roll. Prompted by round-4 stress test (eq:040, graded C+): the assistant folded Sanctuary masteries into the multiplicative absorption math, producing "~74.5%" where the true figure (Atronach 15 + Necromancer's Amulet 25, the only real absorb sources) is 36.25%. formula:absorb-reflect-stacking note scoped; effects_vocab gains a binding stacking convention plus per-key stacking fields on absorb/reflect/sanc; eq:041 added as the regression probe.
 - **Stale Atronach 1.25 scrubbed everywhere**: birthsigns.json raw_text now states 1.2 with the dev-doc 1.25 relegated to a bracketed historical note (the parsed magnitude was already 1.2); server_eras' historical 1.25 patch-note entry annotated as superseded; builder data corrected (signs.Atronach.magmult 1.25 → 1.2) and its legacy unused `magK` field deleted (builder v1.20). The 1.25 now exists only as dated history inside c:atronach-magmult, where it belongs.
