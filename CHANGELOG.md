@@ -1,5 +1,8 @@
 # Changelog
 
+## 2026-08-25 — v0.4.19 standing optimization principle: increase to cap, never waste points past it
+- **SKILL.md gains a standing build principle** (maintainer-ruled, "that should always be the case"): for any capped stat a build invests in, the target IS the capped effective value — buy Fortification Max cap-raisers when they pay off, align raw investment to land at the cap, and treat every point past the cap as wasted budget to reallocate, never as value or headroom. Resist overcap (deliberate slack against debuffs) remains the sole exception. Flow step 4b's raw-vs-cap check now enforces the principle (excess must be reallocated) instead of allowing an unqualified "justified" escape. `np-codex.skill` repackaged.
+
 ## 2026-08-25 — v0.4.18b stat-scaled effects read the CAPPED value (maintainer-ruled)
 - **fact:overmax-system extended**: effects that scale off a stat (e.g. Focused Strike's Agility-scaled proc chance) read the capped effective value, never the raw overmaxed value — that is the point of caps. Raw points above the cap are wasted for scaling as well as overmax-unstable. SKILL.md's raw-vs-cap rule updated from "say which" to the settled reading; the round-8-follow-up's 91.8% proc claim was in truth 75% (0.3 × capped 250). `np-codex.skill` repackaged.
 
