@@ -384,6 +384,11 @@
    "added": "2026-08-25",
    "grade_last": "B+",
    "graded": "2026-08-25 charbuild8-2 (follow-up round, same thread, pre-v0.4.17 snapshot): 9 commands. Verified exact: 790/798, all 39 names, all gear decodes, poison exactly 85 gear-only, FS gates incl. Destruction-100 flagged, Godborn 500-gate at 690. Strengths: self-diagnosed round-8's hands/pauldron query bug and recovered the +50 agi Firepit glove; discovered the strikes need only Focused Strike ranks, canceling a 275-MP Ninja MC plan; split-hands para-cap compromise. Defects: Agility 306 raw vs 250 cap - overmaxed by 56, unflagged, with a false 'under cap' claim, and the 91.8% proc computed on raw where the true figure is 75% (0.3 x capped 250 - stat-scaled effects read the capped value, ruled after grading); shirt/pants left empty (65 free agi forfeited - inherited from the round-8 clothing-block belief, stale snapshot mitigates)."
+  },
+  {
+   "id": "eq:050",
+   "q": "build me a character. dark elf, fighteer, light magic user, prioritize a medium magicka pool and medium armor. put the rest into HP but don't neglect armor. I have around 450 mastery points (follow-ups: Long Blade; Destruction; birthsign optimizer's call)",
+   "expects": "SPEC GATING is the crux: every weapon and item pick's clsreq must admit Combat — the catalog's tempting picks (a Magic-locked long blade with big magicka/Destruction riders, Stealth-locked high-AR helm/cuirass, a Magic-locked shirt) are all ILLEGAL and must be filtered before stat comparison; a legal build uses Combat/unrestricted gear only. Skill fields skl/skm/skh/unarm all \"100\" (or omitted) — never 0/20. Weapon referenced by exact name (v1.31+). Mastery budget sums to <=450 with byte-exact names; raw-vs-cap statements on deliberately stacked stats; magicka labeled honestly for a Combat spec (0.9 factor + level term); no magicka/Destruction totals counted from spec-illegal gear. File loads in the builder with zero empty armor slots and a weapon equipped."
   }
  ]
 }

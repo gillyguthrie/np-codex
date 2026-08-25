@@ -248,13 +248,13 @@ Total: 705 items.
 | Fist of Randagulf Left Gauntlet | server-unique · vanilla | hands /left | 76 | 16 | agi 20 | unknown |
 | Fist of Randagulf Right Gauntlet | server-unique · vanilla | hands /right | 76 | 16 | str 20 | unknown |
 | Flame Etched Chestguard | server-unique | cuirass | 52 | 35.0 | str 17; end 20; fire 15 | Unknown |
-| Flame Mail Boots | server-unique | cuirass | 300 | 15.0 | spe 10; hp 75; fire 10; fortify-skill 25 [skill-only]; frost -20 | - |
+| Flame Mail Boots | server-unique | feet | 300 | 15.0 | spe 10; hp 75; fire 10; fortify-skill 25 [skill-only]; frost -20 | - |
 | Flame Mail Chestpiece | server-unique | cuirass | 325 | 25.0 | agi 10; hp 75; fire 10; fortify-skill 25 [skill-only]; frost -20 | - |
-| Flame Mail Greaves | server-unique | cuirass | 325 | 12.0 | spe 10; hp 75; fire 10; frost -20; fortify-skill 25.0 [skill-only] | - |
+| Flame Mail Greaves | server-unique | greaves | 325 | 12.0 | spe 10; hp 75; fire 10; frost -20; fortify-skill 25.0 [skill-only] | - |
 | Flame Mail Helm | server-unique | helm | 105 | 4.0 | end 10; hp 75; fire 10; frost -20; fortify-skill 25.0 [skill-only] | - |
-| Flame Mail Left Gauntlet | server-unique | cuirass /left | 114 | 4.0 | agi 10; hp 75; fire 10; fortify-skill 25 [skill-only]; frost -20 | - |
-| Flame Mail Right Gauntlet | server-unique | cuirass /right | 114 | 4.0 | agi 10; hp 75; fire 10; fortify-skill 25 [skill-only]; frost -20 | - |
-| Flame Mail Right Pauldron | server-unique | cuirass /right | 190 | 8.0 | spe 10; mag 75; fire 10; fortify-skill 25 [skill-only]; frost -20 | - |
+| Flame Mail Left Gauntlet | server-unique | hands /left | 114 | 4.0 | agi 10; hp 75; fire 10; fortify-skill 25 [skill-only]; frost -20 | - |
+| Flame Mail Right Gauntlet | server-unique | hands /right | 114 | 4.0 | agi 10; hp 75; fire 10; fortify-skill 25 [skill-only]; frost -20 | - |
+| Flame Mail Right Pauldron | server-unique | pauldron /right | 190 | 8.0 | spe 10; mag 75; fire 10; fortify-skill 25 [skill-only]; frost -20 | - |
 | Flame Woven Boots | server-unique | feet | 91 | 12.0 | wil 10; mag 75; fire 10; fortify-skill 25 [skill-only]; frost -20 | Unknown |
 | Flame Woven Cuirass | server-unique | cuirass | 100 | 15.0 | int 10; mag 75; fire 10; frost -20; fortify-skill 25.0 [skill-only] | - |
 | Flame Woven Greaves | server-unique | greaves | 105 | 8.0 | int 10; hp 75; fire 10; frost -20; fortify-skill 25.0 [skill-only] | - |
