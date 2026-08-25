@@ -366,6 +366,15 @@
    "added": "2026-08-25",
    "grade_last": "B",
    "graded": "2026-08-25 charbuild8 (round 8, on v0.4.16): 40 calls. Grade set to B (maintainer-ruled): the two false slot claims are MAJOR defects, not paperwork - on an explicit tank-if-possible goal they cost the build real AR and stats (25 pauldrons and all clothing stats forfeited to hallucinated mechanics). File PERFECT (9 slots, 34 names incl. curly-apostrophe handling, 795 verified, base skill fields clean); all six resist totals, AR decomposition (99+50+17=166) and HP 880 reproduce exactly; crit ruling and 500-gate sequencing both correct. Docked: two false slot-sweep claims ('pauldrons: none in catalog' - 25 exist incl. Skystrider Lv.60 Stealth; 'shirt/pants blocked by cuirass+greaves' - clothing layers under armor), ambiguous 'everything above' sequencing prose that read as a circular dependency on audit, unflagged Str/Int-100 stat-gate assumptions."
+  },
+  {
+   "id": "eq:048",
+   "q": "can you build a char for me? altmer battlemage, magic spec, level 50 with 600 mastery points. i want the biggest magicka pool you can get me, decent fire resist since i keep dying at the fire camp, and fill every equipment slot you can - i hate empty slots. two questions: what will my exact max magicka be, and is the mantle of woe worth wearing?",
+   "expects": "Magicka formula with the NON-60 LEVEL TERM: 0.025 x 50 = 1.25, never the L60 1.5. Exact pool arithmetic shown: floor(min(INT, 175 + int_cap masteries) x (1.5 Magic spec + 1.25 + carriers)) + flat magicka - INT aligned to just under the cap (overmax-bug aware), int_cap masteries (Wit line etc.) bought to raise the ceiling. Mantle of Woe identified as the catalog's ONLY magx item (5.0 x INT), quantified with-vs-without, curses stated (Per -100, NW -20, Sun Damage) and tied to the user's survivability problem. Robe worn OVER cuirass+greaves (vanilla-correct); only shirt/pants/skirt marked robe-covered, with reasoning; pauldrons filled from listings. All master classes excluded at L50 (Level 55 gates) with the reason; Godborn (L50-legal) evaluated QUANTITATIVELY, not by vibes. Apostrophes verified; quest-gated lines flagged as assumptions; costs sum to budget; inline JSON + file.",
+   "area": "builds",
+   "added": "2026-08-25",
+   "grade_last": "A",
+   "graded": "2026-08-25 charbuild9 (round 9, on v0.4.17): 12 min, 35 calls. Grade A, file-confirmed: all 14 slots decode (incl. robe + owner tags), all 33 mastery names byte-exact (singleton names and rank suffixes both right), weapon index correct, 595/600 verified; maxMag 4992 reproduced exactly with the correct 1.25 level term; INT 330 aligned under cap 335 with a deliberate helm swap to avoid overmax; Mantle quantified (worth 1650, curses honestly tied to the fire-camp problem); round-8's slot failures fully corrected; novel insight surfaced (Mage sign beats Apprentice for pool under the flat-carrier model once Mantle dominates). Nits: fire camp's -70 debuff not named (covered by 120 overcap slack); AR uncomputed (not asked). The transcript export clips code blocks - inline JSON verified via maintainer paste, second occurrence."
   }
  ]
 }
