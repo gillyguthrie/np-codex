@@ -331,6 +331,15 @@
    "area": "items",
    "added": "2026-08-25",
    "grade_last": null
+  },
+  {
+   "id": "eq:044",
+   "q": "can you build a char for me? khajiit unarmored hand to hand monk, steed sign, level 45 with about 500 mastery points so far. sneaky punch crits, max movement speed and big carry weight, no armor and no shield obviously. two questions - what will my armor rating actually be with nothing equipped, and if i take shadowstalker 3 how much extra crit damage is that in total?",
+   "expects": "Rank increments stack (Thick Skin 1-4 = +10 unarmored/+90 cap; costs 5+10+15+20). Shadowstalker 3 crit = 90% flat (Mug-style replacement, highest owned rank - never 180). Naked AR includes ALL 9 armor slots incl. the empty shield (weights sum 1.0): unarmored^2 x 0.0065, floored - 65 at skill 100, with any mastery bonus stated as effective-value arithmetic. FILE skill fields carry the BASE trained skill only (unarm 100, never the boosted 110 - the builder adds mastery bonuses itself). No master class at 500 points (can't clear the 500-spent gate). Iron Fist's gauntlet-AR damage rider is zero on bare fists. Steed Athl/Feather + Khajiit Acro/Athl/H2H fx used. Inline JSON, byte-exact names, ~10 calls.",
+   "area": "builds",
+   "added": "2026-08-25",
+   "grade_last": "A-",
+   "graded": "2026-08-25 charbuild6 (round 6, first run on v0.4.10/v1.22): 39 calls, complete inline delivery, 499/500 verified, all 40 mastery names + 6 items byte-exact, stacking/crit/shield-slot all correct, Natural Stance gate chain flagged. Docked: file wrote unarm 110 (effective) instead of base 100 - double-counts in the builder (SKILL.md base-field rule added in v0.4.12 in response); rank-4 attribute gates (Spd/Str/End 90) assumed unflagged; Iron Fist dead rider unmentioned."
   }
  ]
 }
