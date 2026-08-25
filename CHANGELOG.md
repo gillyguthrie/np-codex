@@ -1,5 +1,9 @@
 # Changelog
 
+## 2026-08-25 — v0.4.18 overmax check generalized to every stacked stat (follow-up-round eval)
+- **SKILL.md: any deliberately stacked stat gets a raw-vs-cap statement** — cap = base + that stat's Fortification Max; raw above it is overmaxed and must be flagged or aligned, and %-effects state whether they scale off raw or capped values. From the round-8 follow-up (eq:049, B+): an otherwise sharp iteration stacked Agility to 306 against a 250 cap, called it "under cap", and quoted a proc chance computed on the raw value. The INT-cap discipline round 9 was praised for is now required everywhere.
+- The follow-up round also demonstrated new loop capabilities worth recording: in-thread self-diagnosis of the prior round's slot-query bug, and a raw-text re-read that canceled a 275-MP master-class misallocation before purchase. `np-codex.skill` repackaged.
+
 ## 2026-08-25 — v0.4.17 round-8 eval: slot-sweep honesty + sequencing prose + apostrophe note
 - Round-8 blind test (eq:047, graded A-): the loadout file was PERFECT — 34 byte-exact mastery names including the data's mixed apostrophe styles, all slots decoding, 795/798 verified, every resist/AR/HP number reproducing exactly, the crit ruling and 500-gate sequencing both correct (the maintainer's suspected circular dependency was ambiguous prose, not a gate error — the pre-MC 520 correctly excluded the MC-gated Poisoned Blade).
 - **SKILL.md hardened from its two real errors**: an empty-slot claim must be backed by an actual listing of that slot's items ("no pauldrons in the catalog" was false — 25 exist); clothing slots are NEVER blocked by armor (shirt+pants coexist with cuirass+greaves). Plus: pre-master-class spend must be stated as explicit arithmetic naming the excluded purchases, and the file-format note now warns about the mixed apostrophe styles. `np-codex.skill` repackaged.

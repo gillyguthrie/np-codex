@@ -375,6 +375,15 @@
    "added": "2026-08-25",
    "grade_last": "A",
    "graded": "2026-08-25 charbuild9 (round 9, on v0.4.17): 12 min, 35 calls. Grade A, file-confirmed: all 14 slots decode (incl. robe + owner tags), all 33 mastery names byte-exact (singleton names and rank suffixes both right), weapon index correct, 595/600 verified; maxMag 4992 reproduced exactly with the correct 1.25 level term; INT 330 aligned under cap 335 with a deliberate helm swap to avoid overmax; Mantle quantified (worth 1650, curses honestly tied to the fire-camp problem); round-8's slot failures fully corrected; novel insight surfaced (Mage sign beats Apprentice for pool under the flat-carrier model once Mantle dominates). Nits: fire camp's -70 debuff not named (covered by 120 overcap slack); AR uncomputed (not asked). The transcript export clips code blocks - inline JSON verified via maintainer paste, second occurrence."
+  },
+  {
+   "id": "eq:049",
+   "q": "[FOLLOW-UP in an existing build thread] not bad. can you modify to fix a couple things: update for the path with the freezing/fiery strikes instead, which means optimizing for agility. agility max or at least close to max is as important as the resistances.",
+   "expects": "Iterative modification, not a rebuild: reuses fetched data (<15 calls), swaps the backstab package for Focused Strike 1-3 (the elemental toggles come from the RANKS directly - Ninja MC not required; verify from raw text before budgeting 275 MP for it), reallocates the freed budget to Agility. CRITICAL: raw-vs-cap check on the stacked stat - Agility cap = 100 + agi_cap sources (Nimbleness caps + Godborn), raw beyond it is OVERMAXED and must be flagged/aligned, and the proc-chance claim states whether it scales off raw or capped Agility. Clothing slots swept for agi (shirt/pants carry +30/+35). Resist caps re-verified after gear swaps (poison loses the removed path's +45 - gear must close it). Prior-round errors self-corrected and admitted. Updated inline JSON + file.",
+   "area": "builds",
+   "added": "2026-08-25",
+   "grade_last": "B+",
+   "graded": "2026-08-25 charbuild8-2 (follow-up round, same thread, pre-v0.4.17 snapshot): 9 commands. Verified exact: 790/798, all 39 names, all gear decodes, poison exactly 85 gear-only, FS gates incl. Destruction-100 flagged, Godborn 500-gate at 690. Strengths: self-diagnosed round-8's hands/pauldron query bug and recovered the +50 agi Firepit glove; discovered the strikes need only Focused Strike ranks, canceling a 275-MP Ninja MC plan; split-hands para-cap compromise. Defects: Agility 306 raw vs 250 cap - overmaxed by 56, unflagged, with a false 'under cap' claim, and the 91.8% proc computed on raw; shirt/pants left empty (65 free agi forfeited - inherited from the round-8 clothing-block belief, stale snapshot mitigates)."
   }
  ]
 }
