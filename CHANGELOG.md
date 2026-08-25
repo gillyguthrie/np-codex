@@ -1,5 +1,8 @@
 # Changelog
 
+## 2026-08-25 — v0.4.19 Melding Construct % SETTLED (maintainer-ruled; endpoint measured)
+- **const:melding-pct-per-rank upgraded provisional → measured**: the rank-5 endpoint (+20% total equipment AR) reconciled a rank-5 owner's armor readings exactly (archive-corroborated exchange, 2026-08-21); the +4%/rank split is the assumed-linear trajectory by analogy with the server's other linear mastery lines — only the split, not the total, rests on that assumption. q:melding-per-rank resolved. Builder already computes +4%/rank (no builder change). SKILL.md's provisional-values example updated; `np-codex.skill` repackaged.
+
 ## 2026-08-25 — v0.4.19 standing optimization principle: increase to cap, never waste points past it
 - **SKILL.md gains a standing build principle** (maintainer-ruled, "that should always be the case"): for any capped stat a build invests in, the target IS the capped effective value — buy Fortification Max cap-raisers when they pay off, align raw investment to land at the cap, and treat every point past the cap as wasted budget to reallocate, never as value or headroom. Resist overcap (deliberate slack against debuffs) remains the sole exception. Flow step 4b's raw-vs-cap check now enforces the principle (excess must be reallocated) instead of allowing an unqualified "justified" escape. `np-codex.skill` repackaged.
 

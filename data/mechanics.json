@@ -429,9 +429,9 @@
    "name": "Melding Construct AR bonus per rank",
    "value": 4,
    "unit": "%/rank",
-   "src": "s-prov",
-   "date": "2026-08-22",
-   "note": "PROVISIONAL — from a single item reading (+20% at rank 5). Applies to equipped-armor AR."
+   "src": "s-measured",
+   "date": "2026-08-25",
+   "note": "SETTLED (maintainer-ruled 2026-08-25): the rank-5 endpoint (+20% total equipment AR) is measured — it reconciled a rank-5 owner's armor readings exactly (archive-corroborated exchange, 2026-08-21). The per-rank split (+4% each, increments stack) is the assumed-linear trajectory by analogy with the server's other linear mastery lines; only the split, not the total, rests on that assumption. Applies to equipped-armor AR."
   },
   {
    "id": "const:anvil-armor-ar-multiplier",

@@ -4,7 +4,7 @@
 
 Known unknowns and provisional values. Check here before treating an absence as an oversight.
 
-- **Melding Construct AR % per rank** [provisional-value-in-use]: The +4%/rank (+20% at rank 5) figure comes from a single item reading. One fully-specced in-game reading validates or corrects it.
+- **Melding Construct AR % per rank** [resolved]: RESOLVED 2026-08-25 (maintainer-ruled): rank-5 total is +20% equipment AR, measured — it reconciled a rank-5 owner's armor readings (archive-corroborated, 2026-08-21). Per-rank +4% is the assumed-linear split by analogy with other linear mastery lines. See const:melding-pct-per-rank.
 - **Health-Factor mastery interaction with the L60 HP ratio** [open]: How +0.2-class Health Factor lines combine with the effective spec ratio (additive to the ratio per dev structure, but magnitude unvalidated at L60).
 - **Combat HP ratio 3.6 unvalidated** [open]: Stealth 2.8 validated exact and Magic 2.2 within 1 HP; no Combat-spec L60 measurement on file. Also: Magic 2.2 vs 2.19 rounding.
 - **Piece AR at armor skill above 100** [open-anomaly]: Item-fortified skill scales linearly (verified at 105/118), but one observed character with mastery-raised skill 125 shows a piece reading as if the +25 counts double (250 vs linear 208). Candidate causes: CM-sourced skill points scaling differently, another skill contributing, or an unidentified mechanic. Linear is the well-verified model; tools may underestimate for cap-raised characters until resolved.

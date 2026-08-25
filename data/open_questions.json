@@ -7,9 +7,9 @@
   {
    "id": "q:melding-per-rank",
    "topic": "Melding Construct AR % per rank",
-   "status": "provisional-value-in-use",
-   "detail": "The +4%/rank (+20% at rank 5) figure comes from a single item reading. One fully-specced in-game reading validates or corrects it.",
-   "date": "2026-08-22"
+   "status": "resolved",
+   "detail": "RESOLVED 2026-08-25 (maintainer-ruled): rank-5 total is +20% equipment AR, measured — it reconciled a rank-5 owner's armor readings (archive-corroborated, 2026-08-21). Per-rank +4% is the assumed-linear split by analogy with other linear mastery lines. See const:melding-pct-per-rank.",
+   "date": "2026-08-25"
   },
   {
    "id": "q:health-factor-stacking",
