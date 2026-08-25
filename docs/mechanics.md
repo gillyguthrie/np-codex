@@ -75,7 +75,7 @@ CONVENTION: all item AR values in this KB are stated at the skill-100 tooltip ba
 
 ### Unarmored slot AR  
 `AR_per_slot = unarmoredSkill^2 x 0.0065`  
-Skill 100 -> 65; empty or clothing-filled armor slots count at this value. Consequence: with high Unarmored, equipping a LOW-AR piece can lower sheet AR.
+Skill 100 -> 65; EVERY armor slot not holding an armor item counts at this value x its slot weight - empty slots, clothing-filled slots, AND the empty shield slot (engine-confirmed 2026-08-25: OpenMW getArmorRating gives any slot without an armor item, the shield/carried-left slot included, the unarmored rating (fUnarmoredBase1 x skill) x (fUnarmoredBase2 x skill) = 0.0065 x skill^2; UESP Combat states the same; maintainer-questioned, settled from engine source). Consequence: with high Unarmored, equipping a LOW-AR piece can lower sheet AR, and going shieldless still yields shield-slot AR from Unarmored.
 
 ### Character sheet AR  
 `sheetAR = floor(sum(slot_tooltip_AR x slot_weight)) [+ flat Shield effects + flat Armor Bonus masteries]`  

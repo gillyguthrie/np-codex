@@ -8,7 +8,8 @@
   },
   "conventions": [
    "'500 Points Spent' prerequisites: the gate checks mastery points ALREADY spent on OTHER masteries at the moment of purchase — the gated mastery's own cost never counts toward its own gate (a 200-cost master class with a '500 Points Spent' requirement needs 500 spent first, 700 total). Spent is a lifetime running total, so points sunk into one gated mastery do count toward a later purchase's gate. (maintainer-stated 2026-08-24)",
-   "'Fortification Max' effects (e.g. '+15 Strength Fortification Max') raise that stat's per-character cap; a stat pushed above its cap is overmaxed — see mechanics.json fact:overmax-system and fact:overmax-magicka-bug."
+   "'Fortification Max' effects (e.g. '+15 Strength Fortification Max') raise that stat's per-character cap; a stat pushed above its cap is overmaxed — see mechanics.json fact:overmax-system and fact:overmax-magicka-bug.",
+   "RANK STEP-UP SEMANTICS (maintainer-ruled 2026-08-25): in multi-rank families, each rank's stated magnitudes (raw_text and per-rank effects) are RUNNING TOTALS at that rank, not per-rank additions — Shadowstalker 3's '+90% critical strike damage' means 90% total, never 30+60+90. This applies to every escalating per-rank sequence (+1/+2/+3 skill, 15/20/25 Fort. Max, 4/6/8 resist, crit %). A magnitude that repeats identically across ranks ('Adds Passive: Feather +15' every rank) is a genuine per-rank addition and does sum. COSTS always sum — every rank is bought separately, and all count toward '500 Points Spent' gates."
   ]
  },
  "sources": {

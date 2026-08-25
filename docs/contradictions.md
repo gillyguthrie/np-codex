@@ -79,3 +79,11 @@ Both values are kept, dated. Never state an unresolved entry flatly.
 - Cap-relative: magicka scales with INT up to the effective cap (175 base + Intelligence Fortification Max); 175 is just the un-raised base (2026-08-24 — maintainer-stated game mechanic)
 
 **Resolution:** Cap-relative adopted (maintainer ruling 2026-08-24): formula:magicka uses min(INT, INT_cap). The 2026-08-21 flat-cap reading is attributed to that session's unstable pool readings.
+
+## Ancient Shrouded glove AR: 46, 46.5, or a 49-reading normalized? — **OPEN**
+
+- 46 (as-posted wiki tooltip; capture skill unknown) (2026-08-25 — Both wiki tooltip images (left and right glove) read Armor Rating 46.)
+- 46.5 (curated skill-100 value carried by the codex and, until v1.21, one builder record pair) (2026-08-22 — Origin of the .5 not reconstructed; possibly a normalization of a non-100-skill capture.)
+- 49 (maintainer's own in-game tooltip capture, 2026-08-19; capture Light Armor skill unrecorded) (2026-08-25 — Normalizes to ~46-46.5 if the capturing character's Light Armor was ~106-107; the capturing character's Light Armor value at capture settles this.)
+
+*Builder v1.21 carries 46 (dedup kept the wiki-image pair) pending resolution; one Light Armor reading from the capturing character normalizes the 49 and closes this.*
