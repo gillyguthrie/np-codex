@@ -5,7 +5,7 @@
 NP server-unique items. AR values follow the skill-100 tooltip convention (see mechanics formula:ar-capture-normalization); values marked 'as-posted' came from public tooltip screenshots at unknown armor skill and should be normalized when verified. Player self-enchanted items are excluded by policy.
 
 
-Total: 704 items.
+Total: 705 items.
 
 
 | name | cat | slot/side | AR@100 | wt | effects | hidden |
@@ -533,6 +533,7 @@ Total: 704 items.
 | Robe of the Drake's Pride | server-unique · vanilla | robe | — (unknown) | 3.0 | int 10; fire 25 | unknown |
 | Robe of Thormanil | server-unique | robe | — (unknown) | 3.0 | int 15 | none |
 | Robe of Thornamil | server-unique | robe | — (unknown) |  | int 15 | unknown |
+| Rose of Renewal | server-unique | other | None |  |  | unknown |
 | Rotweave Tunic | server-unique | other | 30 | 9.0 | Damage Health 6 pts for 15 secs on Touch [timed]; Restore Magicka 4 pts for 15 secs on Self [timed] | none |
 | Round Shield | server-unique | other | 33 | 10.0 |  | unknown |
 | Ruin's Edge | server-unique | weapon | — (unknown) | 14.0 | Demoralize Humanoid 100 pts for 20 secs on Target [timed]; Demoralize Creature 100 pts for 20 secs on Target [timed]; mag -1000 [timed]; Frenzy Humanoid 100 pts for 20 secs on Target [timed]; Frenzy Creature 100 pts for 20 secs on Target [timed]; Frost Damage 25 pts for 20 secs on Target [timed]; Paralyze for 1 sec on Target [timed]; Paralyze for 15 secs on Target [timed] | The hidden effects are the listed enchantments witht he various effects each having their own chance to proc. The bow does not have any cast on strike enchantments. | No cast on strike, all enchants have separate chance to proc |
@@ -714,3 +715,7 @@ Total: 704 items.
 | Wraithguard | server-unique · vanilla | hands | 133 | 15.0 | shield 10; blight 50; shock 10; fire 10; frost 10; rmag 10; poison 10; reflect 10 | unknown |
 | Yinsor Ring | server-unique | ring | — (unknown) | 0.1 | agi 20; mag 100 | unknown |
 | Zephyr | server-unique | weapon | — (unknown) | 12.0 |  | Not that I could see | Fastest Bow |
+
+## Known but not yet captured
+
+- Rose of Renewal

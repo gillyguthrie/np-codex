@@ -1,5 +1,8 @@
 # Changelog
 
+## 2026-08-25 — v0.4.23 Rose of Renewal function recorded (demo dry-run found the gap)
+- **New item:rose-of-renewal**: consumable that refunds ALL mastery points and resets all mastery skills — a full mastery respec in item form, used by dragging it onto your character in the inventory screen (maintainer-attested 2026-08-25). Highly prized; a rare grind drop (players report roses 'dropping naturally' at end-game camps, Aug 2026) and redeemable for 600 Login Points at the Docks of Suran exchange. The exchange row in services.json now cross-references the item. No tooltip capture on file yet.
+
 ## 2026-08-25 — v0.4.22 grind-camp sweep of the August Discord troves
 - **camps_events.json enriched from the public Aug-2026 channels**: Dreugh absorb ALL magicka — melee only (upgrades the old speculation) + Murk Ring 160/215 + Siphon-XP leeching from 54+; 2026 Fire Camp — Cinder respawn seen at ~1h40m, nukes weak there, frost optimal; Winged Twilight boss dies fastest to Reflect, frost optimal; Ogrims post-update cast nasty new spells at unchanged XP, still AOE-nukeable and low-level farmable; Frost Giants — very low Reflect, slowable by damage-speed nukes, ~66k sorcerer spear+Thundering Fury wipe; Red Wolf camp = armor-skill training spot, Kagouti camp = weapon-skill training spot.
 - New facts: fire is the default best element at camps (frost only for Twilights/flame atronachs); don't-AFK-at-camps etiquette.

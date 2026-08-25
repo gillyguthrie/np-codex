@@ -217,7 +217,8 @@
       },
       {
        "name": "Rose of Renewal",
-       "cost_points": 600
+       "cost_points": 600,
+       "note": "Consumable full mastery respec: refunds all mastery points and resets all mastery skills (drag onto your character in the inventory screen). See item:rose-of-renewal."
       },
       {
        "name": "Odd Dwemer Device",

@@ -55,6 +55,14 @@
    "date": "2026-08",
    "confidence": "measured",
    "note": "maintainer in-game tooltip capture at a recorded armor skill, normalized to AR@100 via formula:ar-capture-normalization"
+  },
+  "s-maint": {
+   "origin": "player-reported",
+   "channel": null,
+   "url": null,
+   "date": "2026-08-25",
+   "confidence": "player-reported",
+   "note": "maintainer-attested game function, 2026-08-25"
   }
  },
  "items": [
@@ -48215,6 +48223,45 @@
    },
    "xref": {
     "np-server-items": "Charlatan's Right Glove"
+   },
+   "origin_game": "np-custom"
+  },
+  {
+   "id": "item:rose-of-renewal",
+   "name": "Rose of Renewal",
+   "aliases": [
+    "Rose"
+   ],
+   "captured": false,
+   "item_kind": "server-unique",
+   "category": "other",
+   "slot": null,
+   "armor_class": null,
+   "side": null,
+   "pair_group": null,
+   "req": {
+    "level": null,
+    "class": null
+   },
+   "weight": {
+    "value": null,
+    "status": "unknown"
+   },
+   "value_gold": {
+    "value": null,
+    "status": "unknown"
+   },
+   "condition": null,
+   "location": "Rare drop while grinding (players report roses 'start dropping naturally' at end-game camps, 2026-08); also redeemable for 600 Login Points from the Login Points exchange at the Docks of Suran (see services.json)",
+   "drop_notes": "Highly prized.",
+   "image": null,
+   "src": "s-maint",
+   "notes": "CONSUMABLE: refunds ALL mastery points and resets all mastery skills (a full mastery respec in item form). Used by dragging the rose onto the player character in the inventory screen and dropping it. Function is maintainer-attested (2026-08-25); no tooltip capture on file yet.",
+   "effects": [],
+   "effects_raw_posted": [],
+   "hidden_effects": {
+    "status": "unknown",
+    "raw_text": null
    },
    "origin_game": "np-custom"
   }
