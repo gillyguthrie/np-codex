@@ -1,5 +1,10 @@
 # Changelog
 
+## 2026-08-25 — v0.4.13 vampclan file field + Health-Factor flagging (round-7 eval)
+- **SKILL.md file format: vampire builds must set `vampclan`** ("Aundae"|"Berne"|"Quarra") — the builder has a clan selector and a file without the field silently loads as Aundae. From round-7 blind test charbuild7 (eq:038 regraded **C → A-**): an otherwise excellent Quarra tank folded the clan bonuses into its arithmetic but omitted the field and wrongly claimed the tool has no clan selector — the primitives list here had never documented it.
+- **HP projections with Health Factor masteries must name the stacking assumption**: how HF stacks against the specialization ratio is still the KB's open fix-list question; round 7 presented 4,284 HP on an unflagged hf-adds-to-ratio reading.
+- Round 7 otherwise landed every prior fix in one run: NW resist built cap-aware (bought only Stendarr 1–4 for 103 raw vs the 100 cap), Volendrung found via wskill with "Daedric Crusher" plainly ruled nonexistent, Enhancement jewelry used for 166 flat AR, file skill fields kept at base, 845/850 verified, Level-60 gates excluded at 58, 500-gate sequenced. `np-codex.skill` repackaged.
+
 ## 2026-08-25 — v0.4.12 base-vs-effective skill fields in loadout files + round-6 eval
 - **SKILL.md build flow: loadout-file skill fields (`skl`/`skm`/`skh`/`unarm`) carry the BASE trained skill only, never the mastery/gear-boosted effective value** — the builder adds every fortification itself on its "Modified" line, so a boosted number double-counts on load. From round-6 blind test charbuild6 (graded A-): an otherwise excellent run wrote unarm 110 (base 100 + Thick Skin 10) and shipped a file reading 15 AR high against its own chat arithmetic. `np-codex.skill` repackaged.
 - Round-6 result otherwise validates v0.4.10-0.4.11 end to end: rank stacking summed correctly (Thick Skin 1-4 = +10/+90 cap), Shadowstalker crit answered 90% flat (Mug-style, highest rank), naked AR included all nine armor slots (empty shield included) at unarmored²×0.0065, 499/500 points verified, all names byte-exact, inline JSON delivered. Eval bank +1 (eq:044).
