@@ -1,5 +1,8 @@
 # Changelog
 
+## 2026-08-25 — v0.4.18b stat-scaled effects read the CAPPED value (maintainer-ruled)
+- **fact:overmax-system extended**: effects that scale off a stat (e.g. Focused Strike's Agility-scaled proc chance) read the capped effective value, never the raw overmaxed value — that is the point of caps. Raw points above the cap are wasted for scaling as well as overmax-unstable. SKILL.md's raw-vs-cap rule updated from "say which" to the settled reading; the round-8-follow-up's 91.8% proc claim was in truth 75% (0.3 × capped 250). `np-codex.skill` repackaged.
+
 ## 2026-08-25 — v0.4.18 overmax check generalized to every stacked stat (follow-up-round eval)
 - **SKILL.md: any deliberately stacked stat gets a raw-vs-cap statement** — cap = base + that stat's Fortification Max; raw above it is overmaxed and must be flagged or aligned, and %-effects state whether they scale off raw or capped values. From the round-8 follow-up (eq:049, B+): an otherwise sharp iteration stacked Agility to 306 against a 250 cap, called it "under cap", and quoted a proc chance computed on the raw value. The INT-cap discipline round 9 was praised for is now required everywhere.
 - The follow-up round also demonstrated new loop capabilities worth recording: in-thread self-diagnosis of the prior round's slot-query bug, and a raw-text re-read that canceled a 275-MP master-class misallocation before purchase. `np-codex.skill` repackaged.

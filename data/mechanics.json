@@ -719,7 +719,7 @@
   },
   {
    "id": "fact:overmax-system",
-   "statement": "Overmaxing is a general server system covering attributes AND skills: each stat's allowed maximum = its base cap + that stat's 'Fortification Max' mastery bonuses, and a stat pushed above that cap is 'overmaxed'. The server detects and handles overmaxed stats — historically via a visible drain effect, removed from the effects list in the 1/16/2026 update; /inspect displays overmaxed values since that update. Overmax behavior in werewolf form is dev-acknowledged as still quirky.",
+   "statement": "Overmaxing is a general server system covering attributes AND skills: each stat's allowed maximum = its base cap + that stat's 'Fortification Max' mastery bonuses, and a stat pushed above that cap is 'overmaxed'. The server detects and handles overmaxed stats — historically via a visible drain effect, removed from the effects list in the 1/16/2026 update; /inspect displays overmaxed values since that update. Overmax behavior in werewolf form is dev-acknowledged as still quirky. Effects that scale off a stat (e.g. Focused Strike's Agility-scaled proc chance) read the CAPPED effective value, never the raw overmaxed value - that is the point of caps (maintainer-ruled 2026-08-25). Raw points above the cap are wasted for scaling purposes as well as being overmax-unstable.",
    "src": "s-dev",
    "date": "2026-01-16",
    "note": "Server-update patch notes reference overmax fixes across eras (9/18/2023, 10/7/2023, 1/16/2026). Cap-relative threshold semantics maintainer-stated 2026-08-24."
