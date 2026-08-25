@@ -294,11 +294,11 @@
   {
    "id": "eq:039",
    "q": "can you build a char for me? bosmer stealth archer, thief sign, level 32 with only 240 mastery points, sneaky crits with a good bow, light armor or no armor whichever works out better, movement speed and carry weight matter, some poison resist. also is windshear any good for this build?",
-   "expects": "COMPLETE two-format delivery including the .nplb.json — the file is written by ~call 18, before verified-totals polish (two prior runs delivered everything except the file by saving it for last; platform turns hard-stop near 50 tool calls). Batched download first, NO structure-inspection round (schemas are in the skill), no web searches, well under the call ceiling. Level-32 gates respected (master classes excluded with a one-line why), budget arithmetic shown, light-vs-unarmored decided by computed comparison. Windshear: melee per its damage types, weapon class unrecorded in the data, ruled out for a bow build — no lore guess. Carry-weight formula gap stated honestly; feather vs gear weight computed; poison resist reported with cap semantics. Named build + blurb + tables + load instructions. v0.4.8 additions: the .nplb.json appears INLINE in the final message as a fenced code block (file attachment is a bonus, not the deliverable); the download is EXACTLY three files (builder data.json + mechanics.json + enchanting.json - no codex catalogs); ambiguities resolved decide-once with a single flagged assumption line.",
+   "expects": "COMPLETE two-format delivery including the .nplb.json — the file is written by ~call 18, before verified-totals polish (two prior runs delivered everything except the file by saving it for last; platform turns hard-stop near 50 tool calls). Batched download first, NO structure-inspection round (schemas are in the skill), no web searches, well under the call ceiling. Level-32 gates respected (master classes excluded with a one-line why), budget arithmetic shown, light-vs-unarmored decided by computed comparison. Windshear: melee per its damage types, weapon class unrecorded in the data, ruled out for a bow build — no lore guess. Carry-weight formula gap stated honestly; feather vs gear weight computed; poison resist reported with cap semantics. Named build + blurb + tables + load instructions. v0.4.8 additions: the .nplb.json appears INLINE in the final message as a fenced code block (file attachment is a bonus, not the deliverable); the download is EXACTLY three files (builder data.json + mechanics.json + enchanting.json - no codex catalogs); ambiguities resolved decide-once with a single flagged assumption line. Shadowstalker crit at rank 3 is 90% (highest owned rank, Mug-style replacement - never 30+60+90 summed).",
    "area": "builds",
    "added": "2026-08-24",
    "grade_last": "A",
-   "graded": "2026-08-25 charbuild5 (round 5, first run on v0.4.8): 33 calls, ~8 min, complete delivery - chat build AND inline .nplb.json code block AND file attachment (first run ever to deliver the loadout; inline block confirmed by maintainer, every slot/owner/mastery/weapon validated against data). All arithmetic verified (239/240 pts, marks +86, sneak +76, speed +88, poison 149 raw vs 85 cap, AR 38 at LA 80); Windshear ruled out correctly; honest flags (Bosmer sneak label-only, crit-stacking assumption - later maintainer-ruled cumulative, see rank step-up convention). Remaining nits: empty-shield AR treatment and set-bonus assumption unflagged."
+   "graded": "2026-08-25 charbuild5 (round 5, first run on v0.4.8): 33 calls, ~8 min, complete delivery - chat build AND inline .nplb.json code block AND file attachment (first run ever to deliver the loadout; inline block confirmed by maintainer, every slot/owner/mastery/weapon validated against data). All arithmetic verified (239/240 pts, marks +86, sneak +76, speed +88, poison 149 raw vs 85 cap, AR 38 at LA 80); Windshear ruled out correctly; honest flags (Bosmer sneak label-only, crit-stacking assumption - rank semantics later settled: fx increments stack; Shadowstalker crit % is Mug-style replacement, highest owned rank). Remaining nits: empty-shield AR treatment and set-bonus assumption unflagged."
   },
   {
    "id": "eq:040",
@@ -312,6 +312,14 @@
    "id": "eq:041",
    "q": "i have atronach sign, protected faith 1-5, and the necromancer's amulet — what's my total spell absorption? and does sanctuary stack multiplicatively?",
    "expects": "Absorption sources are ONLY Atronach 15 and the amulet's Spell Absorption 25: total = 1-(0.85x0.75) = 36.25% (multiplicative). Protected Faith's +50 Sanctuary is EXCLUDED — Sanctuary is a separate flat-additive effect, not absorption, reported separately if at all. States that Spell Absorption and Spell Reflect are the game's only two multiplicative effects; everything else is flat additive.",
+   "area": "mechanics",
+   "added": "2026-08-25",
+   "grade_last": null
+  },
+  {
+   "id": "eq:042",
+   "q": "if i buy deadeye 1 through 3 and shadowstalker 1 through 3, what do i get in total? and how much extra critical strike damage is that?",
+   "expects": "Rank increments STACK: Deadeye 1-3 = +6 Marksman, +60 Marksman Fortification Max (1+2+3 / 15+20+25); Shadowstalker 1-3 = +6 Sneak, +60 Sneak Fortification Max. EXCEPTION stated for the crit rider: Shadowstalker's critical-strike-damage % is Mug-style replacement - 90% total at rank 3 (the rank-3 value, never 30+60+90=180). Costs 30 per family (5+10+15). No hedging or 'unconfirmed' language.",
    "area": "mechanics",
    "added": "2026-08-25",
    "grade_last": null
