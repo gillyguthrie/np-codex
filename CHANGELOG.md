@@ -1,5 +1,10 @@
 # Changelog
 
+## 2026-08-25 — v0.4.22 grind-camp sweep of the August Discord troves
+- **camps_events.json enriched from the public Aug-2026 channels**: Dreugh absorb ALL magicka — melee only (upgrades the old speculation) + Murk Ring 160/215 + Siphon-XP leeching from 54+; 2026 Fire Camp — Cinder respawn seen at ~1h40m, nukes weak there, frost optimal; Winged Twilight boss dies fastest to Reflect, frost optimal; Ogrims post-update cast nasty new spells at unchanged XP, still AOE-nukeable and low-level farmable; Frost Giants — very low Reflect, slowable by damage-speed nukes, ~66k sorcerer spear+Thundering Fury wipe; Red Wolf camp = armor-skill training spot, Kagouti camp = weapon-skill training spot.
+- New facts: fire is the default best element at camps (frost only for Twilights/flame atronachs); don't-AFK-at-camps etiquette.
+- Builder v1.29 (pub repo): the Fire resist row now also shows effective resist under the fire camp's -70 Weakness to Fire debuff, flagged against the 85 cap (raw 155+ stays capped while debuffed).
+
 ## 2026-08-25 — v0.4.21 NEW data/services.json: housing, Login Points, glamours (in-game capture ingest)
 - **New file `data/services.json`** (+ generated `docs/services.md`), from the maintainer's 2026-08-25 in-game capture sweep:
   - **Player Housing** — vendor north of the Bank of Vivec; flat purchase fee by size/amenities; warp-gate travel; BIWEEKLY upkeep payable a week ahead; a lapse never forfeits the home or contents (entry locked until paid); unpaid upkeep never stacks. Nine-home price list captured (350k to 2m gold).

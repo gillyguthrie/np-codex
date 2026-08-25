@@ -175,6 +175,10 @@
     {
      "statement": "Rated entry/novice level in community difficulty tiering.",
      "src": "np-player-notes"
+    },
+    {
+     "statement": "One of the best places to farm light/medium/heavy armor skills by taking hits (2026-08-11); a community training hall lends constant-effect healing rings for safe armor training.",
+     "src": "igc-2026-08"
     }
    ],
    "era": null,
@@ -219,6 +223,10 @@
     {
      "statement": "Color-coded red on the shared community camp map.",
      "src": "np-player-notes"
+    },
+    {
+     "statement": "A good spot to train weapon skills to 100 by repeatedly hitting camp mobs (2026-08-11).",
+     "src": "igc-2026-08"
     }
    ],
    "era": null,
@@ -310,6 +318,14 @@
     {
      "statement": "Assurnabitashpi is a hub of Clannfears and Ogrims - possibly a separate/earlier ogrim-mob location from this camp.",
      "src": "np-player-notes"
+    },
+    {
+     "statement": "Post-update 2026-08: Ogrims now cast 'some nasty spells'; their XP is unchanged (2026-08-13). Before the update they were considered way too easy for their XP.",
+     "src": "igc-2026-08"
+    },
+    {
+     "statement": "Farmable at very low level with some resists and magicka potions; vanilla AOE nuking shreds the whole camp in seconds (2026-08-03/07).",
+     "src": "igc-2026-08"
     }
    ],
    "era": null,
@@ -342,6 +358,14 @@
     {
      "statement": "Along with the Hunger camp, this camp is much harder than the other creature camps (Kagouti, Skeleton, Ogrim, Mudcrab).",
      "src": "np-player-tested"
+    },
+    {
+     "statement": "The fastest way to kill the Winged Twilight boss is Reflect (player-stated 2026-08-03).",
+     "src": "igc-2026-08"
+    },
+    {
+     "statement": "Frost is the optimal damage element at this camp (2026-08-14).",
+     "src": "igc-2026-08"
     }
    ],
    "era": null,
@@ -510,6 +534,18 @@
     {
      "statement": "As of 2026, the dreugh cave remains the XP meta (approx. best XP camp) versus the new fire camp, which is a drops camp.",
      "src": "igc-2026-08"
+    },
+    {
+     "statement": "Dreugh absorb all magicka — magic is ineffective against them; melee is the only thing that works (player-stated 2026-08-18, upgrading the earlier melee-meta speculation).",
+     "src": "server-general-2026"
+    },
+    {
+     "statement": "Dreugh Murk Ring drop: 160 base, 215 upgraded (2026-08-08).",
+     "src": "igc-2026-08"
+    },
+    {
+     "statement": "Group XP leeching is a recognized pattern: from level 54+ a player can leech XP from a dreugh team via Siphon XP, massively accelerating CM gain (2026-08-04).",
+     "src": "igc-2026-08"
     }
    ],
    "era": null,
@@ -554,6 +590,14 @@
     {
      "statement": "Decrepit Cage rare-drop source is contested: after farming billions of xp at the Frost Giant camp (and watching another player farm 100 billion xp there) without a single drop, one player eventually obtained one from the boss Cursebone; a second player also only ever saw Decrepit Cage drop once, from Cursebone. A third player farmed roughly half a dozen Ravenback Prophet bosses without seeing it, ruling out Ravenback Prophet but not further confirming Cursebone.",
      "src": "np-contested"
+    },
+    {
+     "statement": "Frost giant Reflect is very low (2026-08-02); they can be slowed with a damage-speed nuke (2026-08-02).",
+     "src": "igc-2026-08"
+    },
+    {
+     "statement": "A sorcerer chain-casting a spear into a Thundering Fury for approximately 66k damage wipes frost giants out (2026-08-04).",
+     "src": "igc-2026-08"
     }
    ],
    "era": null,
@@ -981,6 +1025,14 @@
     },
     {
      "statement": "The camp drops its own +80 Short Blade gear; farming Cinder between Blaze spawn windows is a viable pattern.",
+     "src": "igc-2026-08"
+    },
+    {
+     "statement": "Cinder respawn observed at approximately 1h40m on 2026-08-04 — notably shorter than the earlier under-4-hours observation; the timer is random.",
+     "src": "igc-2026-08"
+    },
+    {
+     "statement": "Nukes are not particularly effective on the camp's mobs (player-stated 2026-08-04); frost is the optimal element here (2026-08-14).",
      "src": "igc-2026-08"
     }
    ],
@@ -1637,6 +1689,18 @@
    "statement": "A January 2026 rebalance added the combat AoE Combat Masteries Rend and Cleave (post-wiki - a masteries catalog gap; check /cm in game), and free CM resets were issued.",
    "src": "server-general-2026",
    "era": "2026-08"
+  },
+  {
+   "id": "cfact:camp-element-effectiveness",
+   "statement": "Fire is typically the most effective damage element at server camps; frost is only optimal at the Winged Twilight camp and the flame atronach camps (player-stated 2026-08-14).",
+   "src": "igc-2026-08",
+   "topic": "Best damage element at camps"
+  },
+  {
+   "id": "cfact:camp-afk-etiquette",
+   "statement": "Community etiquette: do not AFK at camps — AFKing/freezing in camps disrupts the spawns for everyone (2026-08-08).",
+   "src": "igc-2026-08",
+   "topic": "Camp etiquette (no AFK)"
   }
  ],
  "camp_xp_comparison": {

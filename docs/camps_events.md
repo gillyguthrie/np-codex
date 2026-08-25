@@ -25,6 +25,7 @@ Mobs: Red Wolf
 - Level range 12-20 (Low End); quest-giver Corison Dalvilu at the Halfway Tavern in Pelagiad trades 4 Chipped Wolf Claws for 56,000 EXP; approx. 1-3k EXP per mob.
 - Per the community wiki, Red Wolves are intended for levels 12-20 via the Corison Dalvilu quest at the Halfway Tavern in Pelagiad.
 - Rated entry/novice level in community difficulty tiering.
+- One of the best places to farm light/medium/heavy armor skills by taking hits (2026-08-11); a community training hall lends constant-effect healing rings for safe armor training.
 
 ## Kagouti Camp
 
@@ -37,6 +38,7 @@ Mobs: Kagouti
 - Camp mobs give the same MP (experience) as normal overworld Kagouti despite having much more HP, and suffer from the same desync issues seen at other camps.
 - Shalk and Kagouti camps drop quest items that can be turned in for 3 tokens a pop, or 6 with a todd's boon.
 - Color-coded red on the shared community camp map.
+- A good spot to train weapon skills to 100 by repeatedly hitting camp mobs (2026-08-11).
 
 ## Shalk Camp
 
@@ -64,6 +66,8 @@ Mobs: Ogrim
 - Can generally be cleared with a default nuke method.
 - Color-coded green on the shared community camp map.
 - Assurnabitashpi is a hub of Clannfears and Ogrims - possibly a separate/earlier ogrim-mob location from this camp.
+- Post-update 2026-08: Ogrims now cast 'some nasty spells'; their XP is unchanged (2026-08-13). Before the update they were considered way too easy for their XP.
+- Farmable at very low level with some resists and magicka potions; vanilla AOE nuking shreds the whole camp in seconds (2026-08-03/07).
 
 ## Winged Twilight Camp (Bird Camp)
 
@@ -73,6 +77,8 @@ Mobs: Winged Twilight
 - Camp mobs cast Paralyze (duration unknown).
 - High End level range; approx. 90k EXP per mob.
 - Along with the Hunger camp, this camp is much harder than the other creature camps (Kagouti, Skeleton, Ogrim, Mudcrab).
+- The fastest way to kill the Winged Twilight boss is Reflect (player-stated 2026-08-03).
+- Frost is the optimal damage element at this camp (2026-08-14).
 
 ## Hunger Camp
 
@@ -122,6 +128,9 @@ Mobs: Dreugh
 - Ghost-like weapon items sometimes visible (but not lootable) at the cave are weapons the Dreugh NPCs internally use; they appear when the server desyncs, are not intended as player loot, and one that was successfully looted disappeared immediately.
 - Expert-level difficulty; drops level 50/60 items.
 - As of 2026, the dreugh cave remains the XP meta (approx. best XP camp) versus the new fire camp, which is a drops camp.
+- Dreugh absorb all magicka — magic is ineffective against them; melee is the only thing that works (player-stated 2026-08-18, upgrading the earlier melee-meta speculation).
+- Dreugh Murk Ring drop: 160 base, 215 upgraded (2026-08-08).
+- Group XP leeching is a recognized pattern: from level 54+ a player can leech XP from a dreugh team via Siphon XP, massively accelerating CM gain (2026-08-04).
 
 ## Frost Giant Camp
 
@@ -134,6 +143,8 @@ Mobs: Frost Giant
 - Suggested tactics (speculative): use Banish/Reflect and Arcana Overload to strip the boss's defenses, then apply movement-denial effects; or spam healing potions while keeping a Dispel potion hotkeyed.
 - Frost Giants are farmed as werewolf or via chain-cast.
 - Decrepit Cage rare-drop source is contested: after farming billions of xp at the Frost Giant camp (and watching another player farm 100 billion xp there) without a single drop, one player eventually obtained one from the boss Cursebone; a second player also only ever saw Decrepit Cage drop once, from Cursebone. A third player farmed roughly half a dozen Ravenback Prophet bosses without seeing it, ruling out Ravenback Prophet but not further confirming Cursebone.
+- Frost giant Reflect is very low (2026-08-02); they can be slowed with a damage-speed nuke (2026-08-02).
+- A sorcerer chain-casting a spear into a Thundering Fury for approximately 66k damage wipes frost giants out (2026-08-04).
 
 ## Blood Matron's Crypt
 
@@ -230,6 +241,8 @@ Mobs: Infernal Flame Atronach
 - Known drops over 3 weeks of chat: Flame Mail set, Lava set, a stealth set, Scorched pieces (Lv.60 Combat tags), Incandescent Dagger (Blaze), Infernal Blade (Blaze), top sorcerer staff (Blaze), Flame Atronach summon tome (approx. 100k trade value), effigies, elemental flame dust, and fire salts (flooding the market).
 - Attack profile: the atronach mobs do not hit like a truck in melee - the threat is fire spell spam, which hits at any range; melee range is not the main risk, so dagger closeness costs little at this camp. Resist stack plus over-cap slack against the -70 debuff is the defense. A reach alternative if melee retaliation ever matters: Arm of the Sun, 175%/10.8ft.
 - The camp drops its own +80 Short Blade gear; farming Cinder between Blaze spawn windows is a viable pattern.
+- Cinder respawn observed at approximately 1h40m on 2026-08-04 — notably shorter than the earlier under-4-hours observation; the timer is random.
+- Nukes are not particularly effective on the camp's mobs (player-stated 2026-08-04); frost is the optimal element here (2026-08-14).
 
 # Events
 
@@ -389,3 +402,5 @@ Schedule: 2019-01
 - **combat meta 2025-2026**: Stealth bravo/minstrel AoE dreugh-cave pairs (approx. 100 Sanctuary / 300 Agility) clear every ~30s, which is the best XP.
 - **combat meta 2025-2026**: Fast-weapon combo melee achieves 2K+ combo crits; a vampire Frenzy+Feed+Focused Strike setup was measured at 1,686 per hit.
 - **combat meta 2025-2026**: A January 2026 rebalance added the combat AoE Combat Masteries Rend and Cleave (post-wiki - a masteries catalog gap; check /cm in game), and free CM resets were issued.
+- **Best damage element at camps**: Fire is typically the most effective damage element at server camps; frost is only optimal at the Winged Twilight camp and the flame atronach camps (player-stated 2026-08-14).
+- **Camp etiquette (no AFK)**: Community etiquette: do not AFK at camps — AFKing/freezing in camps disrupts the spawns for everyone (2026-08-08).
