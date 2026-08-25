@@ -1,0 +1,332 @@
+{
+ "_meta": {
+  "description": "NP player services and world systems: purchasable housing, the Login Points currency and its exchange, and the appearance systems (Dwemer Glamour Analyzer, passive robe/skirt endowment). Captured from in-game dialog and menus.",
+  "conventions": "Prices are verbatim from the in-game menus. Housing prices were displayed in shorthand ('1.250m gold', '350k gold') — price_gold is the numeric reading, price_as_displayed the raw string. Login Points exchange costs are in Login Points, not gold. NPC names are in-game service NPCs (game content, not persons).",
+  "added": "2026-08-25",
+  "community_resources": []
+ },
+ "services": [
+  {
+   "id": "svc:housing",
+   "name": "Player Housing",
+   "captured": true,
+   "vendor_npc": "Bim Joonie",
+   "vendor_location": "Just north of the Bank of Vivec (warp gate beside him); offers a full explanation and viewable display models",
+   "src": "s-measured",
+   "date": "2026-08-25",
+   "origin": "in-game-tooltip",
+   "mechanics": [
+    {
+     "key": "purchase",
+     "statement": "Homes are purchased for a flat fee dependent on home size and included amenities."
+    },
+    {
+     "key": "travel",
+     "statement": "Travel to a purchased home by interacting with a warp gate (one stands next to the housing vendor)."
+    },
+    {
+     "key": "upkeep",
+     "statement": "Purchased homes have an upkeep cost paid BIWEEKLY; it can be paid up to one week in advance."
+    },
+    {
+     "key": "upkeep-lapse",
+     "statement": "Failing to pay upkeep never forfeits the home or anything inside it — you simply cannot enter again until the upkeep cost is paid."
+    },
+    {
+     "key": "upkeep-no-stack",
+     "statement": "Unpaid upkeep does not stack: you never owe more than the one flat upkeep cost, regardless of how long it takes to pay."
+    }
+   ],
+   "catalog": [
+    {
+     "name": "Stoneflower Cottage",
+     "price_gold": 1250000,
+     "price_as_displayed": "1.250m gold"
+    },
+    {
+     "name": "Weaver's Cistern",
+     "price_gold": 1250000,
+     "price_as_displayed": "1.250m gold"
+    },
+    {
+     "name": "Rose Hilt Hall",
+     "price_gold": 1250000,
+     "price_as_displayed": "1.250m gold"
+    },
+    {
+     "name": "Hlaalu Tower",
+     "price_gold": 350000,
+     "price_as_displayed": "350k gold"
+    },
+    {
+     "name": "Hlaalu Outfitter",
+     "price_gold": 350000,
+     "price_as_displayed": "350k gold"
+    },
+    {
+     "name": "Hlaalo Manor",
+     "price_gold": 1000000,
+     "price_as_displayed": "1m gold"
+    },
+    {
+     "name": "Nerano Manor",
+     "price_gold": 1000000,
+     "price_as_displayed": "1m gold"
+    },
+    {
+     "name": "Tyravel Manor",
+     "price_gold": 1000000,
+     "price_as_displayed": "1m gold"
+    },
+    {
+     "name": "Hlaalu Council Manor",
+     "price_gold": 2000000,
+     "price_as_displayed": "2m gold"
+    }
+   ],
+   "notes": "Upkeep amounts per home were not captured. House building/customization exists beyond purchase but is uncaptured — see open_questions."
+  },
+  {
+   "id": "svc:login-points",
+   "name": "Login Points",
+   "captured": true,
+   "vendor_npc": "Duharr",
+   "vendor_location": "Docks of Suran (Khajiit trader with a pack guar) — 'This one trades goods to those who visit Vvardenfell often.'",
+   "src": "s-measured",
+   "date": "2026-08-25",
+   "origin": "in-game-tooltip",
+   "mechanics": [
+    {
+     "key": "earn-rate",
+     "statement": "Each normal login grants 18 Login Points."
+    },
+    {
+     "key": "event-boost",
+     "statement": "Login points may be boosted during events.",
+     "status": "provisional",
+     "note": "Maintainer speculation at capture time, unconfirmed."
+    }
+   ],
+   "exchange": [
+    {
+     "category": "Imported Goods",
+     "items": [
+      {
+       "name": "[Loot Cache]: Jiub Care Package",
+       "cost_points": 140
+      },
+      {
+       "name": "[Loot Cache]: Jiubsmas Imports",
+       "cost_points": 90
+      },
+      {
+       "name": "[Loot Cache]: Morroween Imports",
+       "cost_points": 70
+      },
+      {
+       "name": "[Loot Cache]: Skyrim Imports",
+       "cost_points": 70
+      }
+     ]
+    },
+    {
+     "category": "Potions",
+     "items": [
+      {
+       "name": "Alchemie's Secret Brew",
+       "cost_points": 70
+      },
+      {
+       "name": "Flin",
+       "cost_points": 30
+      },
+      {
+       "name": "Greef",
+       "cost_points": 60
+      },
+      {
+       "name": "Mazte",
+       "cost_points": 30
+      },
+      {
+       "name": "Shein",
+       "cost_points": 30
+      },
+      {
+       "name": "Skooma",
+       "cost_points": 70
+      },
+      {
+       "name": "Sujamma",
+       "cost_points": 60
+      }
+     ]
+    },
+    {
+     "category": "Tradeskill Resources",
+     "items": [
+      {
+       "name": "Black Lichen",
+       "cost_points": 70
+      },
+      {
+       "name": "Kresh Fibers",
+       "cost_points": 70
+      },
+      {
+       "name": "Scrap Metal",
+       "cost_points": 70
+      },
+      {
+       "name": "Raw Iron",
+       "cost_points": 70
+      }
+     ]
+    },
+    {
+     "category": "Soul Gems",
+     "items": [
+      {
+       "name": "Grand Soul Gem",
+       "cost_points": 200
+      },
+      {
+       "name": "Greater Soul Gem",
+       "cost_points": 160
+      },
+      {
+       "name": "Common Soul Gem",
+       "cost_points": 120
+      },
+      {
+       "name": "Lesser Soul Gem",
+       "cost_points": 80
+      },
+      {
+       "name": "Petty Soul Gem",
+       "cost_points": 40
+      }
+     ]
+    },
+    {
+     "category": "Miscellaneous Items",
+     "items": [
+      {
+       "name": "Black Soul Gem",
+       "cost_points": 150
+      },
+      {
+       "name": "Rose of Renewal",
+       "cost_points": 600
+      },
+      {
+       "name": "Odd Dwemer Device",
+       "cost_points": 400
+      }
+     ]
+    },
+    {
+     "category": "Mannequins",
+     "note": "20 mannequins: male and female of all ten playable races (Altmer, Argonian, Bosmer, Breton, Dunmer, Imperial, Khajiit, Nord, Orsimer, Redguard), every one at 40 points.",
+     "items": [
+      {
+       "name": "Mannequin: <race> <sex>",
+       "cost_points": 40,
+       "count": 20
+      }
+     ]
+    }
+   ],
+   "notes": "Category counts as shown in the menu: Imported Goods (4), Potions (7), Tradeskill Resources (4), Soul Gems (5), Miscellaneous Items (3), Mannequins (20)."
+  },
+  {
+   "id": "svc:glamour-analyzer",
+   "name": "Dwemer Glamour Analyzer",
+   "captured": true,
+   "vendor_npc": null,
+   "vendor_location": {
+    "value": null,
+    "status": "unknown",
+    "note": "The machine stands where Enchantress Tessarina lives (coastal site in the captures); cell name not captured."
+   },
+   "src": "s-measured",
+   "date": "2026-08-25",
+   "origin": "in-game-tooltip",
+   "mechanics": [
+    {
+     "key": "purpose",
+     "statement": "Alters the appearance of equipment — applies a different appearance to most weapons, clothing, and armor."
+    },
+    {
+     "key": "glamour-storage",
+     "statement": "Glamour Storage holds items used as base glamours; their visual appearance can be applied onto other items of the same type. Stored items can be freely removed whenever desired."
+    },
+    {
+     "key": "storage-capacity",
+     "statement": "Maximum Storage Capacity: 10. Capacity can be increased when certain prerequisites are met.",
+     "note": "Prerequisites not captured."
+    },
+    {
+     "key": "transmogrification",
+     "statement": "The Transmogrification Chamber is where an item is prepared to have a glamour applied or removed. Items must be of similar type to successfully apply glamours."
+    },
+    {
+     "key": "untradeable",
+     "statement": "Glamoured items become UNTRADEABLE until the applied glamour is cleared."
+    },
+    {
+     "key": "enchant-lock",
+     "statement": "Non-enchanted glamoured items cannot be enchanted until the applied glamour is cleared."
+    },
+    {
+     "key": "complexity-limit",
+     "statement": "Some items are too complex and either cannot be used as a base glamour or cannot have a glamour applied to them."
+    }
+   ],
+   "notes": "Menu: Explanation / Glamour Storage / Transmogrification Chamber."
+  },
+  {
+   "id": "svc:passive-endowment",
+   "name": "Passive Robe/Skirt Endowment",
+   "captured": true,
+   "vendor_npc": "Enchantress Tessarina",
+   "vendor_location": "Beside the Dwemer Glamour Analyzer (coastal site in the captures; cell name not captured)",
+   "src": "s-measured",
+   "date": "2026-08-25",
+   "origin": "in-game-tooltip",
+   "mechanics": [
+    {
+     "key": "service",
+     "statement": "Endows you with a passive Robe or Skirt enchantment: hand over a Constant Effect enchanted robe or skirt, and as long as you are not wearing an item of that type, you are endowed with the Constant Effects of the item she holds."
+    },
+    {
+     "key": "item-custody",
+     "statement": "The handed-over item leaves your inventory and is kept safe by her until you retrieve it or switch the endowment to another item."
+    },
+    {
+     "key": "cost",
+     "statement": "10,000 gold per service. The gold is taken immediately when 'Set Passive Enchants' is clicked — no warning or confirmation dialog first."
+    },
+    {
+     "key": "unlock",
+     "statement": "She asks for the Ravenback Robe as a prerequisite before offering her services ('Think of the robe as a prerequisite to me offering my services')."
+    },
+    {
+     "key": "purpose",
+     "statement": "Lets you carry robe/skirt constant effects without the appearance — e.g. benefits of a robe without it covering your armor."
+    }
+   ],
+   "notes": null
+  }
+ ],
+ "sources": {
+  "s-measured": {
+   "origin": "in-game-tooltip",
+   "channel": null,
+   "url": null,
+   "date": "2026-08-25",
+   "confidence": "measured",
+   "note": "in-game service-NPC dialog and menu captures, 2026-08-25"
+  }
+ }
+}

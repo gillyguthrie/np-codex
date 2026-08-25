@@ -47,6 +47,14 @@
    "date": "2026-08-22",
    "confidence": "player-reported",
    "note": "OCR/hand-typed tooltip dataset; ingested at commit 8002bb6c06d6f6ea9f2b75f410de8446e879900c with the author's permission"
+  },
+  "s-measured": {
+   "origin": "in-game-measured",
+   "channel": null,
+   "url": null,
+   "date": "2026-08",
+   "confidence": "measured",
+   "note": "maintainer in-game tooltip capture at a recorded armor skill, normalized to AR@100 via formula:ar-capture-normalization"
   }
  },
  "items": [
@@ -4481,9 +4489,9 @@
    "src": "s-posted",
    "notes": null,
    "ar": {
-    "value": 46.5,
-    "src": "s-verified",
-    "note": "skill-100 tooltip convention (curated/corrected) — CONTESTED: see c:ancient-shrouded-glove-ar (readings of 46, 46.5, 49 across captures; capture skills unknown)"
+    "value": 46,
+    "src": "s-measured",
+    "note": "skill-100 tooltip convention — RESOLVED 2026-08-25 (maintainer): the 8/19 in-game capture read 49 at Light Armor 105, giving base AR 14 exactly (49 = 14 x 105/30); AR@100 = floor(14 x 100/30) = 46, matching the posted wiki tooltips exactly. The former curated 46.5 was a normalization artifact. See c:ancient-shrouded-glove-ar (resolved)."
    },
    "effects": [
     {
@@ -4537,9 +4545,9 @@
    "src": "s-posted",
    "notes": null,
    "ar": {
-    "value": 46.5,
-    "src": "s-verified",
-    "note": "skill-100 tooltip convention (curated/corrected) — CONTESTED: see c:ancient-shrouded-glove-ar (readings of 46, 46.5, 49 across captures; capture skills unknown)"
+    "value": 46,
+    "src": "s-measured",
+    "note": "skill-100 tooltip convention — RESOLVED 2026-08-25 (maintainer): the 8/19 in-game capture read 49 at Light Armor 105, giving base AR 14 exactly (49 = 14 x 105/30); AR@100 = floor(14 x 100/30) = 46, matching the posted wiki tooltips exactly. The former curated 46.5 was a normalization artifact. See c:ancient-shrouded-glove-ar (resolved)."
    },
    "effects": [
     {

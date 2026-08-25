@@ -1,5 +1,16 @@
 # Changelog
 
+## 2026-08-25 — v0.4.21 NEW data/services.json: housing, Login Points, glamours (in-game capture ingest)
+- **New file `data/services.json`** (+ generated `docs/services.md`), from the maintainer's 2026-08-25 in-game capture sweep:
+  - **Player Housing** — vendor north of the Bank of Vivec; flat purchase fee by size/amenities; warp-gate travel; BIWEEKLY upkeep payable a week ahead; a lapse never forfeits the home or contents (entry locked until paid); unpaid upkeep never stacks. Nine-home price list captured (350k to 2m gold).
+  - **Login Points** — 18 points per normal login; exchange vendor at the Docks of Suran. Full catalog: Imported Goods loot caches (70-140), Potions (30-70), Tradeskill Resources (70), Soul Gems (40-200), Miscellaneous incl. Black Soul Gem 150 / Odd Dwemer Device 400 / Rose of Renewal 600, and 20 race/sex Mannequins at 40.
+  - **Dwemer Glamour Analyzer** — appearance-change system: Glamour Storage (capacity 10, raisable) + Transmogrification Chamber; same-type requirement; glamoured items untradeable and (if unenchanted) unenchantable until cleared; some items too complex.
+  - **Passive Robe/Skirt Endowment** — 10,000 gold; hand over a CE robe/skirt, gain its constant effects while not wearing that slot type; item held in custody and retrievable; gold is taken instantly on 'Set Passive Enchants' with no confirmation; unlocked by handing over the Ravenback Robe.
+- q:services-uncaptured-details added (per-home upkeep amounts, house customization, Analyzer location/capacity prerequisites, event login-boost). SKILL.md file map extended; `np-codex.skill` repackaged.
+
+## 2026-08-25 — v0.4.20 Ancient Shrouded glove AR RESOLVED at 46 (capture skill supplied)
+- **c:ancient-shrouded-glove-ar resolved**: the capturing character's Light Armor on 8/19 was 105 — the 49 reading is 14 x 105/30 exactly, so base AR 14 and AR@100 = floor(14 x 100/30) = 46, in exact agreement with the posted wiki tooltips. All three readings were one value at different skills; the curated 46.5 was a normalization artifact and is retired. Both glove records upgraded to 46 (measured). Builder already carried 46 — no builder change.
+
 ## 2026-08-25 — v0.4.19 Melding Construct % SETTLED (maintainer-ruled; endpoint measured)
 - **const:melding-pct-per-rank upgraded provisional → measured**: the rank-5 endpoint (+20% total equipment AR) reconciled a rank-5 owner's armor readings exactly (archive-corroborated exchange, 2026-08-21); the +4%/rank split is the assumed-linear trajectory by analogy with the server's other linear mastery lines — only the split, not the total, rests on that assumption. q:melding-per-rank resolved. Builder already computes +4%/rank (no builder change). SKILL.md's provisional-values example updated; `np-codex.skill` repackaged.
 

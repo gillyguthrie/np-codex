@@ -190,6 +190,32 @@ def enchanting():
         out.append(f"- {f['statement']}")
     w("enchanting.md", "enchanting.json", "\n".join(out) + "\n")
 
+def services():
+    d = load("services.json")
+    out = ["# NP Player Services\n", f"{d['_meta']['description']}\n"]
+    for svc in d["services"]:
+        out.append(f"\n## {svc['name']}\n")
+        if svc.get("vendor_npc"):
+            out.append(f"**Service NPC:** {svc['vendor_npc']} — {svc['vendor_location'] if isinstance(svc.get('vendor_location'), str) else ''}\n")
+        elif isinstance(svc.get("vendor_location"), dict):
+            out.append(f"**Location:** — ({svc['vendor_location'].get('status','unknown')}){(' ' + svc['vendor_location']['note']) if svc['vendor_location'].get('note') else ''}\n")
+        for m in svc.get("mechanics", []):
+            flag = f" *[{m['status']}]*" if m.get("status") else ""
+            out.append(f"- {m['statement']}{flag}")
+        if svc.get("catalog"):
+            out.append("\n| Home | Price |\n|---|---|")
+            for c in svc["catalog"]:
+                out.append(f"| {c['name']} | {c['price_gold']:,} gold ({c['price_as_displayed']}) |")
+        for cat in svc.get("exchange", []):
+            out.append(f"\n### {cat['category']}\n")
+            if cat.get("note"): out.append(cat["note"] + "\n")
+            out.append("| Item | Cost (Login Points) |\n|---|---|")
+            for i in cat["items"]:
+                out.append(f"| {i['name']} | {i['cost_points']} |")
+        if svc.get("notes"):
+            out.append(f"\n*{svc['notes']}*")
+    w("services.md", "services.json", "\n".join(out) + "\n")
+
 def contradictions_oq():
     d = load("contradictions.json")
     out = ["# Known Contradictions\n", "Both values are kept, dated. Never state an unresolved entry flatly.\n"]
@@ -208,5 +234,5 @@ def contradictions_oq():
 
 if __name__ == "__main__":
     DOCS.mkdir(exist_ok=True)
-    mechanics(); items(); masteries(); signs_races(); camps(); lore(); archetypes(); rules(); enchanting(); contradictions_oq()
+    mechanics(); items(); masteries(); signs_races(); camps(); lore(); archetypes(); rules(); enchanting(); services(); contradictions_oq()
     print("docs generated.")

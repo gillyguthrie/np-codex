@@ -49,9 +49,9 @@ Total: 704 items.
 | Ancient Shrouded Cowl | server-unique | helm | 55 | 1.0 | fortify-skill 35 [skill-only] | unknown |
 | Ancient Shrouded Cowl (Maskless) | server-unique | helm | 55 | 1.0 | fortify-skill 35 [skill-only] | unknown |
 | Ancient Shrouded Greaves | server-unique | greaves | 47 | 3.0 | fortify-skill 35.0 [skill-only] | unknown |
-| Ancient Shrouded Left Glove | server-unique | hands /left | 46.5 | 1.0 | fortify-skill 17.0 [skill-only] | unknown |
+| Ancient Shrouded Left Glove | server-unique | hands /left | 46 | 1.0 | fortify-skill 17.0 [skill-only] | unknown |
 | Ancient Shrouded Left Pauldron | server-unique | pauldron /left | 46 | 1.0 | fortify-skill 17.0 [skill-only] | unknown |
-| Ancient Shrouded Right Glove | server-unique | hands /right | 46.5 | 1.0 | fortify-skill 17.0 [skill-only] | unknown |
+| Ancient Shrouded Right Glove | server-unique | hands /right | 46 | 1.0 | fortify-skill 17.0 [skill-only] | unknown |
 | Ancient Shrouded Right Pauldron | server-unique | pauldron /right | 46 | 1.0 | fortify-skill 17.0 [skill-only] | unknown |
 | Anklet of Leaping | server-unique | other | — (unknown) | 0.1 | fortify-skill 25 [skill-only] | none |
 | Anklet of Traversing | server-unique | other | — (unknown) | 0.1 | fortify-skill 25 [skill-only] | unknown |
