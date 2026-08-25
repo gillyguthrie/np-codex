@@ -1,5 +1,8 @@
 # Changelog
 
+## 2026-08-25 — v0.4.13b respec paths disambiguated (maintainer-verified in-game)
+- **`fact:respec-paths` corrected from an in-game dialogue screenshot**: Socucius Ergalla's one-time free level-60 respec changes the CHARACTER BUILD (his 'Release Identification' — birthsign, class, or race), NOT mastery points. Mastery refunds are Rehabilitator Anja's paid service only (~450k gold, community-reported). The old 'possibly one mechanism' hedge is resolved; upgraded to measured.
+
 ## 2026-08-25 — v0.4.13 vampclan file field + Health-Factor flagging (round-7 eval)
 - **SKILL.md file format: vampire builds must set `vampclan`** ("Aundae"|"Berne"|"Quarra") — the builder has a clan selector and a file without the field silently loads as Aundae. From round-7 blind test charbuild7 (eq:038 regraded **C → A-**): an otherwise excellent Quarra tank folded the clan bonuses into its arithmetic but omitted the field and wrongly claimed the tool has no clan selector — the primitives list here had never documented it.
 - **HP projections with Health Factor masteries must name the stacking assumption**: how HF stacks against the specialization ratio is still the KB's open fix-list question; round 7 presented 4,284 HP on an unflagged hf-adds-to-ratio reading.
