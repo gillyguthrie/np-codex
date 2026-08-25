@@ -341,6 +341,14 @@
    "added": "2026-08-25",
    "grade_last": "A-",
    "graded": "2026-08-25 charbuild6 (round 6, first run on v0.4.10/v1.22): 39 calls, complete inline delivery, 499/500 verified, all 40 mastery names + 6 items byte-exact, stacking/crit/shield-slot all correct, Natural Stance gate chain flagged. Docked: file wrote unarm 110 (effective) instead of base 100 - double-counts in the builder (SKILL.md base-field rule added in v0.4.12 in response); rank-4 attribute gates (Spd/Str/End 90) assumed unflagged; Iron Fist dead rider unmentioned."
+  },
+  {
+   "id": "eq:045",
+   "q": "i'm a level 40 combat spec nord with the lady birthsign, int is 80, nothing equipped that boosts magicka - what's my max magicka? and how does that change if i respec to magic specialization?",
+   "expects": "Uses formula:magicka - maxMag = floor(INT x (spec factor + 0.025 x level + carriers)). Nord/Lady carry NO Fortify-Max-Magicka: Combat = floor(80 x (0.9 + 1.0)) = 152; Magic spec = floor(80 x (1.5 + 1.0)) = 200. NOT 1 x INT (80). States the spec factors are dev-stated and the formula is measured (2026-08-25). No vanilla base-1xINT reasoning.",
+   "area": "mechanics",
+   "added": "2026-08-25",
+   "grade_last": null
   }
  ]
 }

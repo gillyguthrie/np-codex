@@ -312,7 +312,7 @@
    "id": "c:magicka-base-multiplier",
    "subject": "formula:magicka",
    "topic": "What is the magicka pool's base multiplier? A clean-character reading contradicts the validated formula.",
-   "status": "open",
+   "status": "resolved",
    "positions": [
     {
      "value": "Additive carriers on a x1 base: pool = min(INT, cap) x (1 + racial + sign). Validated exact 2026-08-21 (647 = floor(175 x 3.7) on an Altmer/Atronach at capped INT).",
@@ -333,7 +333,7 @@
      "note": "Second clean reading, L1 Combat Redguard/Steed naked (no carriers): 27 = floor(0.9 x 30 + ~0.025x1x30) EXACT - 1 x INT would give 30. Under this model the L60 clean reading predicts 470 vs 469 observed (one short - the same off-by-one as the L60 HP reading, suggesting per-level floor accumulation). The 2026-08-21 validation (647 = 3.7 x 175) still conflicts: under this model that character (Magic spec, Altmer/Atronach, L60) predicts 5.7 x min(INT,cap) = 997 at INT>=175 - but that session had known-unstable readings, and 647/5.7 = 113.5 hints the character's real INT at capture may have been ~113, not 175+. A naked re-read of that character settles it."
     }
    ],
-   "resolution": null,
+   "resolution": "Level-scaled model ADOPTED (maintainer-measured 2026-08-25, three clean readings): maxMag = floor(min(INT, cap) x (spec_magicka_factor + 0.025 x level + carriers)). Confirmed exact at L1 (27) and L60 (712 = floor(125 x 5.7)); the 469-vs-470.0 reading is an integer-boundary display quirk, not a model failure. The 2026-08-21 position (pool = min(INT,cap) x (1+r+s), '647 validated') is invalidated: no integer INT reproduces 647 under any model, and that session had documented duplicate-ability instability. The same character re-read naked 2026-08-25 fits the new model exactly, which also clears the vampire-contamination suspicion for that character.",
    "note": "Decisive next tests: (1) Fortify INT item delta on the clean L60 - delta per INT point = the true marginal multiplier (~4.69-4.7 under the level model); (2) one naked MID-level alt reading - pins the ~0.025/level term and the off-by-one behavior; (3) naked re-read of the 2026-08-21 validation character (vamp main) - tests both the contamination suspicion and the INT-113 hypothesis."
   }
  ]

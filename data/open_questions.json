@@ -46,7 +46,7 @@
    "id": "q:hidden-passive-anomaly",
    "topic": "Unexplained magicka/fatigue surplus on one measured character",
    "status": "open",
-   "detail": "One measured L60 Dunmer werewolf character shows a stable 3.85x INT magicka slope (predicted 2.2 for race+sign) and +126 max fatigue over the model — likely one hidden passive package explains both. No matching mastery/racial found in the catalog; werewolf passives on file don't include magicka. Next step: read the character's active-effects Fortify Maximum Magicka lines."
+   "detail": "HALF-RESOLVED 2026-08-25: the '3.85x INT magicka slope' is EXACTLY what the decoded formula:magicka predicts (1.15 Stealth spec + 1.2 Atronach + 1.5 level term at L60) - the magicka anomaly was the old formula, not the character. REMAINING: the +126 max fatigue surplus is real and persists naked with zero masteries (581 observed vs 455 model, 2026-08-25). Candidates: a Stealth-spec or werewolf or custom-class fatigue term, or a character-specific hidden passive. Discriminator: one naked fatigue reading from any other Stealth-spec (non-WW) character - if it reads attrs+55, the surplus is character/WW-specific."
   },
   {
    "id": "q:low-level-magicka-base",
@@ -248,10 +248,10 @@
   },
   {
    "id": "q:magicka-pool-formula",
-   "status": "open",
+   "status": "resolved",
    "date": "2026-08-25",
    "topic": "True magicka pool formula: level-scaled multiplier suspected",
-   "detail": "Two clean naked readings (L1: 27 = 0.9 x INT 30 exact - dev spec factor live, base is NOT 1 x INT; L60: 469 vs 470 predicted under mult = spec + carriers + 0.025 x level) contradict the old pool = min(INT,cap) x (1+racial+sign). See c:magicka-base-multiplier for positions and the decisive test list. Consistent one-short offset at L60 in both magicka and HP suggests per-level floor accumulation."
+   "detail": "Two clean naked readings (L1: 27 = 0.9 x INT 30 exact - dev spec factor live, base is NOT 1 x INT; L60: 469 vs 470 predicted under mult = spec + carriers + 0.025 x level) contradict the old pool = min(INT,cap) x (1+racial+sign). See c:magicka-base-multiplier for positions and the decisive test list. Consistent one-short offset at L60 in both magicka and HP suggests per-level floor accumulation. RESOLVED 2026-08-25: level-scaled model adopted and encoded in formula:magicka after a third clean reading (L60 Altmer/Atronach 712 = floor(125 x 5.7) exact)."
   }
  ]
 }
