@@ -1,5 +1,12 @@
 # Changelog
 
+## 2026-08-25 — v0.4.14 HP and magicka decoded as LEVEL-SCALED (two clean naked readings)
+- **The HP spec ratio is level-scaled**: ratio(level) = dev spec health factor + 0.02 × level (Combat 2.4 / Stealth 1.6 / Magic 1.0 — fact:spec-hp-magicka-factors). Measured exact at L1 Combat (121 HP at END 50 = 2.42) and reproducing the established L60 values 3.6/2.8/2.2 precisely. New formula:hp-ratio-level (provisional, two readings).
+- **The magicka pool's base is NOT 1×INT — the dev-stated spec magicka factors are live**: a clean naked L1 Combat character reads 27 = floor(0.9 × INT 30), and the working model is maxMag = floor(INT × (spec factor + carriers + ~0.025 × level)). The clean L60 Magic reading (469 at INT 100 with 0.5x + 1.2x carriers displayed) sits ONE short of that model (470) — the same off-by-one as the L60 HP reading (219 vs 220), suggesting per-level floor accumulation. c:magicka-base-multiplier opened with all three positions; the 2026-08-21 validation (647 = 3.7×175, vamp main, unstable session) now looks contaminated or INT-misread (647/5.7 = 113.5).
+- Fatigue formula re-confirmed on clean characters at both ends: L1 term +1 (181 = 180+1) and L60 term +55 (470), racial/sign Fortify attributes counting in the sum.
+- Atronach 1.2 and Breton 0.5 carriers re-confirmed as displayed in-game effect strings; Magic ratio 2.2 restored as the L60 nominal (the 2.19 measurement is recorded as the off-by-one note, not a new constant).
+- Decisive remaining tests recorded in the contradiction: Fortify-INT delta on the clean L60, one mid-level naked reading, and a naked re-read of the vamp main.
+
 ## 2026-08-25 — v0.4.13b respec paths disambiguated (maintainer-verified in-game)
 - **`fact:respec-paths` corrected from an in-game dialogue screenshot**: Socucius Ergalla's one-time free level-60 respec changes the CHARACTER BUILD (his 'Release Identification' — birthsign, class, or race), NOT mastery points. Mastery refunds are Rehabilitator Anja's paid service only (~450k gold, community-reported). The old 'possibly one mechanism' hedge is resolved; upgraded to measured.
 

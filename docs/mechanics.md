@@ -12,9 +12,9 @@
 | `const:tick-length` | Regen tick length | **6** | seconds | Stopwatch-confirmed; supersedes the earlier ~7s community estimate. HoT/MoT/FoT effects tick every 6s. |
 | `const:level-cap` | Character level cap | **60** | level | Attribute multiplier gains are server-controlled so all attributes max by 60. |
 | `const:mp-cap-per-level` | Mastery points cap per level | **25** | points/level | 1500 total at level 60. Dev-stated accrual: all 1500 in roughly 44-46 days of logged playtime. |
-| `const:hp-ratio-combat` | L60 effective HP ratio — Combat | **3.6** | HP/END | From the community HP calculator; NOT yet validated by direct measurement (Stealth and Magic ratios are). |
-| `const:hp-ratio-stealth` | L60 effective HP ratio — Stealth | **2.8** | HP/END | Validated exact on an L60 character (100 END -> 280 HP). |
-| `const:hp-ratio-magic` | L60 effective HP ratio — Magic | **2.2** | HP/END | Validated within 1 HP (observed 219 vs predicted 220; 2.2-vs-2.19 rounding open). |
+| `const:hp-ratio-combat` | L60 effective HP ratio — Combat | **3.6** | HP/END | L60 nominal (2.4 dev factor + 0.02x60). L1 measured EXACT 2026-08-25: 121 HP at END 50 = 2.42 = 2.4 + 0.02x1, on a clean naked zero-mastery character - the ratio is level-scaled, see const:hp-ratio-magic note. |
+| `const:hp-ratio-stealth` | L60 effective HP ratio — Stealth | **2.8** | HP/END | Validated exact on an L60 character (100 END -> 280 HP). Consistent with the level-scaled model (1.6 dev factor + 0.02x60 = 2.8), unmeasured directly. |
+| `const:hp-ratio-magic` | L60 effective HP ratio — Magic | **2.2** | HP/END | L60 nominal value. DECODED 2026-08-25 from two clean naked readings: the HP ratio is level-scaled - ratio(level) = dev spec health factor + 0.02 x level (fact:spec-hp-magicka-factors: Combat 2.4 / Stealth 1.6 / Magic 1.0), giving exactly the KB's L60 values 3.6 / 2.8 / 2.2. Measured: L1 Combat 121 HP at END 50 (2.42 exact); L60 Magic reads 219 at END 100 where the model gives 220 - a consistent off-by-one at L60 (same offset seen in the magicka pool) suggests per-level floor accumulation; treat L60 effective Magic as 2.19-2.20 pending a mid-level reading. |
 | `const:hp-spec-mult-combat` | HP specialization multiplier (engine) — Combat | **1.14** | x | Dev-quoted engine script value. Relationship to the effective 3.6/2.8/2.2 ratios: the ratios fold in additional layers (see formula:hp). |
 | `const:hp-spec-mult-magic` | HP specialization multiplier (engine) — Magic | **1.033** | x |  |
 | `const:hp-spec-mult-stealth` | HP specialization multiplier (engine) — Stealth | **1.077** | x |  |
@@ -59,11 +59,11 @@ spec_ratio: see const:hp-ratio-*. Dev-stated structure: HP = Endurance x HP Fact
 
 ### Max Magicka (flat-stack model)  
 `maxMag = floor(min(INT, INT_cap) x (1 + sum(fortify_max_magicka_multipliers))) + flat_fortify_magicka, where INT_cap = 175 + sum(Intelligence Fortification Max mastery bonuses)`  
-Base 1x INT for everyone. The ONLY xINT carriers: signs Atronach 1.2 / Mage 1.0 / Apprentice 1.5; racials High Elf 1.5 / Breton 0.5 (see const:magicka-mult-*). No specialization factor. Items can also carry xINT multipliers. Validated exact at L60 (mult 3.7: floor(125x3.7)=462). INT_cap is per-character: 175 base + Intelligence Fortification Max (maintainer-stated 2026-08-24; supersedes the earlier flat-175 reading — see contradictions c:int-magicka-cap-flat-vs-raised). WARNING: in-game readings above the effective cap are unstable — see fact:overmax-magicka-bug. Spell Absorption/Reflect stack multiplicatively: total = 1 - prod(1 - each); resists stack additively.
+Base 1x INT for everyone. The ONLY xINT carriers: signs Atronach 1.2 / Mage 1.0 / Apprentice 1.5; racials High Elf 1.5 / Breton 0.5 (see const:magicka-mult-*). No specialization factor. Items can also carry xINT multipliers. Validated exact at L60 (mult 3.7: floor(125x3.7)=462). INT_cap is per-character: 175 base + Intelligence Fortification Max (maintainer-stated 2026-08-24; supersedes the earlier flat-175 reading — see contradictions c:int-magicka-cap-flat-vs-raised). WARNING: in-game readings above the effective cap are unstable — see fact:overmax-magicka-bug. Spell Absorption/Reflect stack multiplicatively: total = 1 - prod(1 - each); resists stack additively. UNDER RE-MEASUREMENT 2026-08-25: a clean L60 Breton/Atronach (naked, zero masteries, INT 100, displayed carriers 0.5x + 1.2x INT) reads max magicka 469 where this formula predicts 270 - see c:magicka-base-multiplier before using this formula for pool predictions.
 
 ### Max Fatigue  
 `maxFat = STR + WIL + AGI + END + level_bonus`  
-level_bonus: +55 at L60 (validated exact on two characters), +1 at L1; curve between unmeasured. One measured L60 character reads +126 above this model — same character carries an unexplained magicka surplus (q:hidden-passive-anomaly).
+level_bonus: +55 at L60 (validated exact on two characters), +1 at L1; curve between unmeasured. One measured L60 character reads +126 above this model — same character carries an unexplained magicka surplus (q:hidden-passive-anomaly). Re-confirmed exact 2026-08-25 on a clean L60 (naked, zero masteries): 100+115+100+100+55=470; a racial Fortify Willpower (+15) counts in the sum. L1 term +1 re-confirmed 2026-08-25 on a clean naked zero-mastery character (181 = 60+30+40+50+1).
 
 ### Armor piece tooltip AR  
 `tooltipAR = floor(baseAR x armorSkill / 30)`  
@@ -148,6 +148,10 @@ PROVISIONAL: the sheet's header states TotalResistance = max(100, ...) but its o
 ### Movement speed (walk/run/sneak/swim/fly)  
 `walk = (100 + Speed) x (1 - 0.3 x currentEncumbrance/maxEncumbrance); run = walk x (0.01 x Athletics + 1.75); sneak = walk x 0.75; swim = run x (1 + 0.01 x SwiftSwim) x (0.01 x Athletics x 0.1 + 0.5); fly = (5 + 0.01 x (Speed + LevitateMagnitude) x 295) x (1 - 0.3 x currentEncumbrance/maxEncumbrance)`  
 PROVISIONAL — the source tab labels itself 'possibly accurate'; engine-GMST structure (fMinWalkSpeed 100, fMaxWalkSpeed 200, fSneakSpeedMultiplier 0.75, fBaseRunMultiplier 1.75, fMinFlySpeed 5, fMaxFlySpeed 300, fEncumberedMoveEffect 0.3, fSwimRunAthleticsMult 0.1, fSwimRunBase 0.5). walk simplifies from fMin + 0.01xSpeed x (fMax-fMin). One in-game timing check would confirm or correct.
+
+### HP ratio level scaling  
+`spec_ratio(level) = spec_health_factor + 0.02 x level   (Combat 2.4 / Stealth 1.6 / Magic 1.0 base)`  
+PROVISIONAL (two clean readings): exact at L1 Combat (121 = floor(50 x 2.42)); L60 values reproduce the established 3.6/2.8/2.2; one L60 Magic reading sits one HP short (219 vs 220) - rounding/accumulation detail open. A mid-level naked reading pins the curve.
 
 
 ## Established facts
