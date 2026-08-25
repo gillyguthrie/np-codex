@@ -2,7 +2,7 @@
  "_meta": {
   "description": "NP 0.8 birthsigns — complete dev-authored rework, verbatim. All 13 signs differ from vanilla; vanilla text is preserved per record for orientation only (vanilla_note is NOT authoritative on NP).",
   "migrated": "2026-08-22",
-  "note": "The Atronach magicka multiplier is stored as 1.25 here exactly as the dev doc states it, but the in-game tooltip reads 1.2 — see mechanics const:magicka-mult-atronach and contradictions c:atronach-magmult. Tools should use the mechanics constant."
+  "note": "The Atronach magicka multiplier is stored as 1.2 — the in-game tooltip value, adopted as truth. The 0.8 dev doc printed 1.25; that superseded figure survives only as a dated position inside contradictions c:atronach-magmult. Tools use mechanics const:magicka-mult-atronach."
  },
  "sources": {
   "s-devdoc": {
@@ -62,7 +62,7 @@
     {
      "name": "Wombburn",
      "kind": "passive",
-     "raw_text": "Spell Absorption 15 pts on Self. Fortify Maximum Magicka 1.25x INT on Self. [Editorial: dev-doc verbatim; resolved to 1.2x per in-game tooltip — see c:atronach-magmult.] Stunted Magicka on Self. Damage Magicka on Self for 5% of total maximum magicka. All natural MoT removed. All bonus MoT reduced by half.",
+     "raw_text": "Spell Absorption 15 pts on Self. Fortify Maximum Magicka 1.2x INT on Self. Stunted Magicka on Self. Damage Magicka on Self for 5% of total maximum magicka. All natural MoT removed. All bonus MoT reduced by half. [Historical: the 0.8 dev doc printed the multiplier as 1.25x; superseded by the in-game tooltip 1.2x — c:atronach-magmult.]",
      "effects": [
       {
        "key": "absorb",
@@ -74,7 +74,7 @@
        "key": "magmult",
        "magnitude": 1.2,
        "delivery": "constant",
-       "raw_text": "Fortify Maximum Magicka 1.2x INT on Self (dev doc said 1.25x; resolved to 1.2 per in-game tooltip — c:atronach-magmult, const:magicka-mult-atronach)"
+       "raw_text": "Fortify Maximum Magicka 1.2x INT on Self"
       },
       {
        "key": "stunted-magicka",

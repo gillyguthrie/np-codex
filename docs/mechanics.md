@@ -123,7 +123,7 @@ specBonus = the spec's cast-chance CM perk value: Sorcerer +20, Channeler +40, m
 
 ### Spell Absorption / Reflect stacking  
 `total = 1 - product(1 - eff_i); each added source contributes eff_i x (1 - cumulative_before_it)`  
-Multiplicative/diminishing stacking across all sources (gear, potions, sign). Example from the sheet: eighteen sources -> 93% total. Confirms the KB's prior multiplicative-stacking note with the explicit formula.
+Multiplicative/diminishing stacking across all sources (gear, potions, sign). Example from the sheet: eighteen sources -> 93% total. APPLIES ONLY to Spell Absorption and Spell Reflect — the only two multiplicative effects in the game; everything else, Sanctuary included, is flat additive (fact:stacking-rules).
 
 ### Damage taken vs Armor Rating  
 `damageTakenFraction = max(0.25, incomingSwing / (incomingSwing + AR)); damageTaken = incomingSwing x damageTakenFraction`  
@@ -152,6 +152,7 @@ PROVISIONAL — the source tab labels itself 'possibly accurate'; engine-GMST st
 
 ## Established facts
 
+- **stacking-rules**: UNIVERSAL STACKING RULE: everything in the game stacks FLAT ADDITIVE — attributes, skills, resists, Sanctuary, Armor Bonus, Attack, Feather, all fortifications — with exactly TWO exceptions: Spell Absorption and Spell Reflect, which stack multiplicatively across sources (total = 1 - product(1 - each); see formula:absorb-reflect-stacking). Sanctuary is NOT Spell Absorption — it is a separate, additive effect and must never be fed into the absorption math.
 - **np-not-vanilla**: NP deliberately rewrites vanilla values: birthsigns and racials fully reworked in 0.8, item base stats differ from vanilla/UESP, and core formulas are server-custom. Vanilla knowledge must never be substituted for a missing NP value.
 - **restore-vs-tick**: Constant 'Restore Health/Magicka/Fatigue' effects apply per SECOND; 'over Time' (HoT/MoT/FoT) effects apply per 6-second tick.
 - **atronach-stunted-regen**: Stunted Magicka (Atronach) removes the native 1 magicka/tick regen AND halves all mastery-gained HoT/MoT/FoT tick regen; item-granted regen is not halved.

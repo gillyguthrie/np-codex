@@ -1,6 +1,9 @@
 {
  "_meta": {
-  "description": "Controlled vocabulary of effect types for the NP KB. Item/mastery/sign/race effects reference these keys. delivery classes: constant (always-on while equipped/owned), on-strike (cast when strikes), on-use (cast when used), timed (fixed duration), triggered-spell (grants a castable spell/power), skill-only (fortifies a skill; does not move computed HP/MP/AR/resists), unmodeled (server-custom effect with unknown mechanics)."
+  "description": "Controlled vocabulary of effect types for the NP KB. Item/mastery/sign/race effects reference these keys. delivery classes: constant (always-on while equipped/owned), on-strike (cast when strikes), on-use (cast when used), timed (fixed duration), triggered-spell (grants a castable spell/power), skill-only (fortifies a skill; does not move computed HP/MP/AR/resists), unmodeled (server-custom effect with unknown mechanics).",
+  "conventions": [
+   "Stacking: every effect key in this vocabulary stacks FLAT ADDITIVE except 'absorb' (Spell Absorption) and 'reflect' (Spell Reflect), the game's only two multiplicative effects (total = 1 - product(1 - each)). 'sanc' (Sanctuary) is additive and is NOT Spell Absorption — never fold it into the absorption roll."
+  ]
  },
  "effects": [
   {
@@ -121,17 +124,20 @@
   {
    "key": "reflect",
    "name": "Reflect",
-   "unit": "%"
+   "unit": "%",
+   "stacking": "multiplicative — one of the game's only two multiplicative effects (fact:stacking-rules)"
   },
   {
    "key": "absorb",
    "name": "Spell Absorption",
-   "unit": "%"
+   "unit": "%",
+   "stacking": "multiplicative — one of the game's only two multiplicative effects (fact:stacking-rules)"
   },
   {
    "key": "sanc",
    "name": "Sanctuary",
-   "unit": "pts"
+   "unit": "pts",
+   "stacking": "additive — separate effect, NOT Spell Absorption (fact:stacking-rules)"
   },
   {
    "key": "cham",

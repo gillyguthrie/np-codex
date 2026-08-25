@@ -625,7 +625,7 @@
    "expr": "total = 1 - product(1 - eff_i); each added source contributes eff_i x (1 - cumulative_before_it)",
    "src": "s-sheet",
    "date": "2026-08-23",
-   "note": "Multiplicative/diminishing stacking across all sources (gear, potions, sign). Example from the sheet: eighteen sources -> 93% total. Confirms the KB's prior multiplicative-stacking note with the explicit formula."
+   "note": "Multiplicative/diminishing stacking across all sources (gear, potions, sign). Example from the sheet: eighteen sources -> 93% total. APPLIES ONLY to Spell Absorption and Spell Reflect — the only two multiplicative effects in the game; everything else, Sanctuary included, is flat additive (fact:stacking-rules)."
   },
   {
    "id": "formula:armor-damage-mitigation",
@@ -677,6 +677,13 @@
   }
  ],
  "facts": [
+  {
+   "id": "fact:stacking-rules",
+   "statement": "UNIVERSAL STACKING RULE: everything in the game stacks FLAT ADDITIVE — attributes, skills, resists, Sanctuary, Armor Bonus, Attack, Feather, all fortifications — with exactly TWO exceptions: Spell Absorption and Spell Reflect, which stack multiplicatively across sources (total = 1 - product(1 - each); see formula:absorb-reflect-stacking). Sanctuary is NOT Spell Absorption — it is a separate, additive effect and must never be fed into the absorption math.",
+   "src": "s-measured",
+   "date": "2026-08-25",
+   "note": "Maintainer-stated 2026-08-25 after a build assistant wrongly folded Sanctuary masteries into the multiplicative absorption roll. When totaling absorption, count ONLY sources whose effect is literally Spell Absorption (or Reflect for reflect)."
+  },
   {
    "id": "fact:np-not-vanilla",
    "statement": "NP deliberately rewrites vanilla values: birthsigns and racials fully reworked in 0.8, item base stats differ from vanilla/UESP, and core formulas are server-custom. Vanilla knowledge must never be substituted for a missing NP value.",

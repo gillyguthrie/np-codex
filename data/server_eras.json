@@ -3161,13 +3161,13 @@
   },
   {
    "date": "2/12/2023",
-   "gist": "Follow-up birthsign tuning: Apprentice's Weakness to Magicka lowered to 25 (from 30); Atronach's Fortify Max Magicka lowered to x1.25 (from x1.5) and Atronach players now only receive half MoT from all sources (masteries, equipment, etc.) on top of their existing lack of natural MoT.",
+   "gist": "Follow-up birthsign tuning: Apprentice's Weakness to Magicka lowered to 25 (from 30); Atronach's Fortify Max Magicka lowered to x1.25 (from x1.5) and Atronach players now only receive half MoT from all sources (masteries, equipment, etc.) on top of their existing lack of natural MoT. [Superseded detail: the x1.25 Atronach figure here is the dev-doc value; the shipped in-game value measured 1.2 — c:atronach-magmult.]",
    "systems": [
     "birthsigns-races",
     "magic"
    ],
    "stated_values": [
-    "Atronach: Fortify Max Magicka x1.25 (down from x1.5); receives only 50% of all MoT from items/masteries"
+    "Atronach: Fortify Max Magicka x1.25 (down from x1.5); receives only 50% of all MoT from items/masteries [dev-doc figure; in-game value is 1.2 — c:atronach-magmult]"
    ],
    "era_marker": false
   },

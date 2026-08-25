@@ -298,6 +298,22 @@
    "area": "builds",
    "added": "2026-08-24",
    "grade_last": "B"
+  },
+  {
+   "id": "eq:040",
+   "q": "can you build a char for me? altmer mage, atronach sign, level 60, ~1400 mastery points, biggest magicka pool, spell absorption as high as it can go, can i fit two master classes? is the mantle of woe worth wearing? robes and clothes only",
+   "expects": "Two-master-class gate math correct (500 on others before the first; lifetime total covers the second; sequencing narrated). Magicka via min(INT, 175+INT Fortification Max) with Altmer 1.5 + Atronach 1.2 (never 1.25) + item xINT; overmax checked against the cap. Atronach absorption is 15 with the Stunted Magicka caveat. CRITICAL: absorption counts ONLY literal Spell Absorption sources (sign, absorb-stat gear) stacked multiplicatively — Sanctuary masteries (Protected Faith, Testament of Faith) are additive evasion and NEVER enter the absorption math (fact:stacking-rules). Mantle of Woe quantified vs the next-best robe with its curses stated. File delivered.",
+   "area": "builds",
+   "added": "2026-08-25",
+   "grade_last": "C+"
+  },
+  {
+   "id": "eq:041",
+   "q": "i have atronach sign, protected faith 1-5, and the necromancer's amulet — what's my total spell absorption? and does sanctuary stack multiplicatively?",
+   "expects": "Absorption sources are ONLY Atronach 15 and the amulet's Spell Absorption 25: total = 1-(0.85x0.75) = 36.25% (multiplicative). Protected Faith's +50 Sanctuary is EXCLUDED — Sanctuary is a separate flat-additive effect, not absorption, reported separately if at all. States that Spell Absorption and Spell Reflect are the game's only two multiplicative effects; everything else is flat additive.",
+   "area": "mechanics",
+   "added": "2026-08-25",
+   "grade_last": null
   }
  ]
 }
