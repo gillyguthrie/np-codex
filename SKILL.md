@@ -14,7 +14,7 @@ This skill is self-contained: you do NOT need a local copy of the knowledge base
 1. Pick the data file for the topic (map below).
 2. Fetch it from the data root (e.g. `.../main/data/mechanics.json`). Always fetch from the repo — it is the single source of truth, and fetching live means every answer reflects the current version. Do not answer from a local copy of the data unless the user explicitly directs you to one.
 3. Read or compute the answer from that JSON — with code, for anything multi-number.
-4. If a fetch of the data root is REFUSED (some clients only fetch URLs the user sent or that appeared in search results), recover in this order — never answer from memory at any step: (a) ask the user to reply with this link so you can fetch it: https://raw.githubusercontent.com/gillyguthrie/np-codex/main/ — a link the user sends is fetchable in every client; once they send it, append the data file path you need and fetch. (b) If fetching is unavailable entirely, ask the user to paste the relevant data file's contents, or to read the value themselves at https://github.com/gillyguthrie/np-codex. Do NOT burn turns web-searching for the repo — searches for 'np-codex' return unrelated projects. Tip for users: including the repo link in your first message guarantees lookups work.
+4. If web access is unavailable in the session, do NOT answer from memory: say so, and ask the user to paste the relevant data file or grab it from https://github.com/gillyguthrie/np-codex.
 
 ## The rules (binding — full text in GOVERNANCE.md at the repo root)
 

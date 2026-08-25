@@ -1,8 +1,5 @@
 # Changelog
 
-## 2026-08-25 — v0.4.23 fetch-refusal recovery path (field failure, same-day fix)
-- **SKILL.md rule 4 rewritten**: a live demo prompt failed because the client only fetches URLs the user sent or that search returned — the data-root URL inside the skill text did not qualify, and web-searching for the repo drowned in unrelated 'codex' projects. New recovery order: ask the user to reply with the data-root link (user-sent links are fetchable in every client), then fall back to pasted file contents; never answer from memory at any step, and never burn turns searching for the repo. Usage tip added: putting the repo link in the first message guarantees lookups. The old behavior refused correctly (no hallucinated numbers) but surrendered instead of recovering. `np-codex.skill` repackaged.
-
 ## 2026-08-25 — v0.4.22 grind-camp sweep of the August Discord troves
 - **camps_events.json enriched from the public Aug-2026 channels**: Dreugh absorb ALL magicka — melee only (upgrades the old speculation) + Murk Ring 160/215 + Siphon-XP leeching from 54+; 2026 Fire Camp — Cinder respawn seen at ~1h40m, nukes weak there, frost optimal; Winged Twilight boss dies fastest to Reflect, frost optimal; Ogrims post-update cast nasty new spells at unchanged XP, still AOE-nukeable and low-level farmable; Frost Giants — very low Reflect, slowable by damage-speed nukes, ~66k sorcerer spear+Thundering Fury wipe; Red Wolf camp = armor-skill training spot, Kagouti camp = weapon-skill training spot.
 - New facts: fire is the default best element at camps (frost only for Twilights/flame atronachs); don't-AFK-at-camps etiquette.
