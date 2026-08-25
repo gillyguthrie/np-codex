@@ -349,6 +349,14 @@
    "area": "mechanics",
    "added": "2026-08-25",
    "grade_last": null
+  },
+  {
+   "id": "eq:046",
+   "q": "i'm a combat spec character at level 60 with 250 endurance. if i buy hearty 1 and 2, how much extra hp is that?",
+   "expects": "Health Factor adds to the spec ratio: Hearty 1+2 = +0.6 HF (0.2+0.4, increments stack), delta = 0.6 x 250 = +150 HP (ratio 3.6 -> 4.2). NOT a percentage of total HP. Confident, settled answer citing the endurance-to-hp-ratio mechanic; retroactive.",
+   "area": "mechanics",
+   "added": "2026-08-25",
+   "grade_last": null
   }
  ]
 }

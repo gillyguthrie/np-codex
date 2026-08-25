@@ -1,5 +1,10 @@
 # Changelog
 
+## 2026-08-25 — v0.4.16 Health Factor SETTLED from the archives (fix-list #2 closed, zero MP spent)
+- **HF adds to the specialization ratio** — HP = floor(END × (spec_ratio + Σ HF)) + flats, confirmed by three dated public statements found in a Discord sweep, including a worked example from the community's most authoritative mechanics voice: ".4 hp factor at lv60 with 100end = 40hp … with 300 end it would be worth 120hp" (2025-03-06); "health factor improves the endurance to hp ratio" (2026-08-16); "increases how much endurance impacts max health" + retroactive (2026-08-21). The planned 25-MP in-game test is no longer needed. The builder already computed HF additively — its stale "do not wire" note corrected. SKILL.md's name-your-assumption rule replaced with the settled statement; `np-codex.skill` repackaged. Round 7's 4,284-HP projection is retroactively vindicated.
+- **New fact:native-hp-regen** (player-reported): native regeneration of 5% max health per 6-second tick — first evidence on a question that had none.
+- Eval bank +1 (eq:046 — the HF arithmetic probe).
+
 ## 2026-08-25 — v0.4.15b the +126 fatigue surplus ruled a character-specific bug (q:hidden-passive-anomaly closed)
 - **Maintainer ruling**: the one remaining vitals anomaly (+126 max fatigue on a single character) is presumed a character-specific backend bug — likely residue of a forced dev-side mastery respec while werewolf; the maintainer had separately reported the character to the dev. Not modeled as a mechanic; formula:fatigue stands as measured on every clean character. Reopen only if a second character ever shows a surplus.
 

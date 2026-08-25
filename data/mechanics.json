@@ -491,9 +491,9 @@
    "id": "formula:hp",
    "name": "Max Health (L60 effective)",
    "expr": "HP = floor(END x (spec_ratio + sum(health_factor_bonuses))) + flat_fortify_health",
-   "src": "s-measured",
-   "date": "2026-08-21",
-   "note": "spec_ratio: see const:hp-ratio-*. Dev-stated structure: HP = Endurance x HP Factor(s) x spec multiplier + flat fortify; every character starts with 1 innate HP Factor; Health-Factor perks add on (+1 HP Factor -> 1 END = 2 HP). Endurance is retroactive/real-time. How +0.2-class Health-Factor mastery lines interact with the L60 ratio is OPEN (q:health-factor-stacking). Independently corroborated 2026-08-23 by the community calculators sheet (HP = END x (specRatio + sum HF) + flat fortify), same structure."
+   "src": "s-player",
+   "date": "2026-08-25",
+   "note": "spec_ratio: see const:hp-ratio-*. Dev-stated structure: HP = Endurance x HP Factor(s) x spec multiplier + flat fortify; every character starts with 1 innate HP Factor; Health-Factor perks add on (+1 HP Factor -> 1 END = 2 HP). Endurance is retroactive/real-time. How +0.2-class Health-Factor mastery lines interact with the L60 ratio is OPEN (q:health-factor-stacking). Independently corroborated 2026-08-23 by the community calculators sheet (HP = END x (specRatio + sum HF) + flat fortify), same structure. HEALTH FACTOR STACKING SETTLED 2026-08-25 from three dated public statements, including a worked example from the community's most authoritative mechanics voice: '.4 hp factor at lv60 with 100end = 40hp ... with 300 end it would be worth 120hp' (2025-03-06, server-general - delta = HF x END, linear in Endurance, i.e. HF adds to the spec ratio); 'health factor improves the endurance to hp ratio' (2026-08-16, in-game); 'increases how much endurance impacts max health', and it is retroactive (2026-08-21, in-game). The additive model this formula encodes is confirmed; a controlled before/after purchase would upgrade to measured but is no longer needed."
   },
   {
    "id": "formula:magicka",
@@ -1048,6 +1048,14 @@
    "id": "fact:enhancement-effect",
    "name": "Enhancement item effect = flat Armor Rating",
    "statement": "The server-custom 'Enhancement N pts' constant effect on items (jewelry/clothing: Murk Claw Ring, Martial Band, Belt of Fish Scales, Glowing Heroic Band, Rune Etched Choker, Frost Etched Belt) adds N flat Armor Rating while equipped. The character sheet refreshes the value only after reopening the inventory. Corroborated three times independently (2025-12-21 owner reading; 2026-08-03; 2026-08-14). Note: one report links swapping Enhancement gear to armor-skill display fluctuation, suggesting an armor-skill-fortification implementation under the hood; the flat-AR outcome is the player-verified behavior.",
+   "src": "s-player",
+   "date": "2026-08-25",
+   "confidence": "player-reported"
+  },
+  {
+   "id": "fact:native-hp-regen",
+   "name": "Native health regeneration",
+   "statement": "Characters natively regenerate 5% of max health every 6-second tick ('you regen 5% of your max every 6sec', 2026-08-16, in-game chat; corroborated in-thread: 'Max hp also impacts regen'). As-stated by a veteran player; conditions (combat state, vampirism/Atronach interactions) unmeasured.",
    "src": "s-player",
    "date": "2026-08-25",
    "confidence": "player-reported"
