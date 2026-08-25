@@ -1,5 +1,9 @@
 # Changelog
 
+## 2026-08-25 — v0.4.24 Rose of Renewal tooltip captured; item pictures on every item question
+- **item:rose-of-renewal upgraded to captured**: tooltip on file (images/items/rose-of-renewal.png) - Weight 0.2; on-use Restore Health / Restore Magicka / Restore Fatigue (1 sec each, magnitudes not shown) + Dispel. The full-mastery-respec function is confirmed NOT shown on the tooltip and stays recorded in the item's notes.
+- **SKILL.md**: any question about a named item now always shows its tooltip screenshot (was: stat lookups only). When a record has no image or the fetch fails, the answer appends exactly "Image not found." - no verbosity. `np-codex.skill` repackaged.
+
 ## 2026-08-25 — v0.4.23 Rose of Renewal function recorded (demo dry-run found the gap)
 - **New item:rose-of-renewal**: consumable that refunds ALL mastery points and resets all mastery skills — a full mastery respec in item form, used by dragging it onto your character in the inventory screen (maintainer-attested 2026-08-25). Highly prized; a rare grind drop (players report roses 'dropping naturally' at end-game camps, Aug 2026) and redeemable for 600 Login Points at the Docks of Suran exchange. The exchange row in services.json now cross-references the item. No tooltip capture on file yet.
 

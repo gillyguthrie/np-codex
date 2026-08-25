@@ -48232,7 +48232,7 @@
    "aliases": [
     "Rose"
    ],
-   "captured": false,
+   "captured": true,
    "item_kind": "server-unique",
    "category": "other",
    "slot": null,
@@ -48244,8 +48244,8 @@
     "class": null
    },
    "weight": {
-    "value": null,
-    "status": "unknown"
+    "value": 0.2,
+    "src": "s-tooltip"
    },
    "value_gold": {
     "value": null,
@@ -48254,11 +48254,48 @@
    "condition": null,
    "location": "Rare drop while grinding (players report roses 'start dropping naturally' at end-game camps, 2026-08); also redeemable for 600 Login Points from the Login Points exchange at the Docks of Suran (see services.json)",
    "drop_notes": "Highly prized.",
-   "image": null,
-   "src": "s-maint",
-   "notes": "CONSUMABLE: refunds ALL mastery points and resets all mastery skills (a full mastery respec in item form). Used by dragging the rose onto the player character in the inventory screen and dropping it. Function is maintainer-attested (2026-08-25); no tooltip capture on file yet.",
-   "effects": [],
-   "effects_raw_posted": [],
+   "image": "items/rose-of-renewal.png",
+   "src": "s-tooltip",
+   "notes": "CONSUMABLE: refunds ALL mastery points and resets all mastery skills (a full mastery respec in item form). Used by dragging the rose onto the player character in the inventory screen and dropping it. The respec is the item's real function and is NOT shown on the tooltip - the tooltip lists only the on-use Restore Health/Magicka/Fatigue (1s each) and Dispel. Function maintainer-attested 2026-08-25; tooltip captured 2026-08-25.",
+   "effects": [
+    {
+     "key": "restore-hp",
+     "magnitude": null,
+     "delivery": "on-use",
+     "duration_sec": 1,
+     "raw_text": "Restore Health for 1 sec",
+     "note": "magnitude not shown on the tooltip"
+    },
+    {
+     "key": "restore-mag",
+     "magnitude": null,
+     "delivery": "on-use",
+     "duration_sec": 1,
+     "raw_text": "Restore Magicka for 1 sec",
+     "note": "magnitude not shown on the tooltip"
+    },
+    {
+     "key": "restore-fat",
+     "magnitude": null,
+     "delivery": "on-use",
+     "duration_sec": 1,
+     "raw_text": "Restore Fatigue for 1 sec",
+     "note": "magnitude not shown on the tooltip"
+    },
+    {
+     "key": "dispel",
+     "magnitude": null,
+     "delivery": "on-use",
+     "raw_text": "Dispel",
+     "note": "magnitude not shown on the tooltip"
+    }
+   ],
+   "effects_raw_posted": [
+    "Restore Health for 1 sec",
+    "Restore Magicka for 1 sec",
+    "Restore Fatigue for 1 sec",
+    "Dispel"
+   ],
    "hidden_effects": {
     "status": "unknown",
     "raw_text": null
