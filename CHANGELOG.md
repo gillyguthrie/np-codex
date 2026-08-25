@@ -1,5 +1,9 @@
 # Changelog
 
+## 2026-08-25 — v0.4.25 Dagger of Shielding is a WEAPON, not a shield-slot item (ruling reversed)
+- **item:dagger-of-shielding corrected**: the record carried slot "shield" and the "legitimately exists as BOTH a weapon and a shield-slot item" reading — reversed on the evidence: the upstream record says Type Short Blade / Slot Weapon - 1 Hand with full weapon stats, and the tooltip capture shows Chop 6-15 / Slash 6-15 / Thrust 6-12, Speed 250%, Range 6 ft, Weight 1.8, No Trade. No shield-slot witness exists anywhere; the name's "Shielding" refers to its seven-resist CE suite, and the shield-slot copy was a keyword-driven curation artifact. Record now slot null with a full weapon block. (Found by the maintainer spotting the dagger offered in the builder's shield slot.)
+- Builder v1.30 (pub repo) removes the phantom shield-slot copy and adds a build-time slot audit against this file, so name-keyword slot drift cannot recur silently.
+
 ## 2026-08-25 — v0.4.24 Rose of Renewal tooltip captured; item pictures on every item question
 - **item:rose-of-renewal upgraded to captured**: tooltip on file (images/items/rose-of-renewal.png) - Weight 0.2; on-use Restore Health / Restore Magicka / Restore Fatigue (1 sec each, magnitudes not shown) + Dispel. The full-mastery-respec function is confirmed NOT shown on the tooltip and stays recorded in the item's notes.
 - **SKILL.md**: any question about a named item now always shows its tooltip screenshot (was: stat lookups only). When a record has no image or the fetch fails, the answer appends exactly "Image not found." - no verbosity. `np-codex.skill` repackaged.

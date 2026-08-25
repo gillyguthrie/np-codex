@@ -16252,7 +16252,7 @@
    "captured": true,
    "item_kind": "server-unique",
    "category": "weapon",
-   "slot": "shield",
+   "slot": null,
    "armor_class": null,
    "side": null,
    "pair_group": null,
@@ -16262,18 +16262,18 @@
    },
    "weight": {
     "value": 1.8,
-    "src": "s-posted"
+    "src": "s-tooltip"
    },
    "value_gold": {
     "value": null,
     "status": "unknown"
    },
-   "condition": "758/760",
+   "condition": "760/760",
    "location": "Storyteller",
    "drop_notes": null,
    "image": "items/dagger-of-shielding.png",
    "src": "s-posted",
-   "notes": null,
+   "notes": "No Trade. One-hand short blade with a seven-resist constant-effect suite. RULING REVERSED 2026-08-25: the earlier 'exists as both a weapon and a shield-slot item' reading was a curation artifact — every witness (upstream record: Type Short Blade / Slot Weapon-1-Hand; the tooltip capture with full weapon stats; no shield-slot tooltip anywhere) shows a weapon only. The name's 'Shielding' refers to its resist suite.",
    "ar": {
     "value": null,
     "status": "unknown"
@@ -16356,7 +16356,7 @@
      "value": 250,
      "src": "s-tooltip"
     },
-    "range_ft": 6.0,
+    "range_ft": 6,
     "base_dmg": 15
    },
    "xref": {

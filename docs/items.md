@@ -178,7 +178,7 @@ Total: 705 items.
 | Daedric Longsword | server-unique · vanilla | weapon | — (unknown) | 60.0 |  | unknown |
 | Daedric Tanto | server-unique · vanilla | weapon | — (unknown) | 12.0 |  | unknown |
 | Daedric Wakizashi | server-unique · vanilla | weapon | — (unknown) | 30.0 |  | unknown |
-| Dagger of Shielding | server-unique | shield | — (unknown) | 1.8 | fire 10; frost 10; shock 10; rmag 10; poison 10; disease 10; blight 10 | none |
+| Dagger of Shielding | server-unique | weapon | — (unknown) | 1.8 | fire 10; frost 10; shock 10; rmag 10; poison 10; disease 10; blight 10 | none |
 | Dagger of Symmachus | server-unique · vanilla | weapon | — (unknown) | 1.4 | fortify-skill 10 [skill-only] | unknown |
 | Dagger of Vengeance | server-unique | weapon | — (unknown) | 2.4 | agi 40; hp 40; mag 75 | none |
 | Dancing Blade | server-unique | weapon | — (unknown) | 15.0 | end 15; agi 20; shock 5; rmag 10 | Unknown |
