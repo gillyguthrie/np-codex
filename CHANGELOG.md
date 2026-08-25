@@ -1,5 +1,10 @@
 # Changelog
 
+## 2026-08-25 — v0.4.11 Enhancement effect settled: flat Armor Rating
+- **The server-custom "Enhancement N pts" item effect adds N flat Armor Rating while equipped** — settled from three independent public statements found in a Discord sweep (2025-12-21: an owner read +50 AR from Enhancement 50; 2026-08-03: "Enhancement adds those raw numbers to your rating"; 2026-08-14: "adds 30 points of Armor", with the display quirk that the sheet updates only after reopening the inventory). effects_vocab note upgraded from "mechanics unknown"; new `fact:enhancement-effect` (player-reported). One report ties swapping Enhancement gear to armor-skill display fluctuation — possible under-the-hood implementation via armor-skill fortification, noted without changing the player-verified flat-AR outcome.
+- Frost Etched Belt gains its chat-attested `Enhancement 30 pts` effect (tooltip screenshot still wanted); the other five carriers (Murk Claw Ring, Martial Band, Belt of Fish Scales, Glowing Heroic Band, Rune Etched Choker) already had it captured.
+- Eval bank +1 (eq:043 — the "what does Enhancement do" probe).
+
 ## 2026-08-25 — v0.4.10 rank semantics corrected: increments STACK (v0.4.9's running-total ruling reversed)
 - **The v0.4.9 running-total reading was wrong and is reversed, on community-measured evidence surfaced by a Discord-trove sweep**: a player's documented mastery-only Strength (~330 with no gear, "overmaxed by 10") is arithmetically unreachable under running totals but lands correctly under summing; a second player annotated "Combat Readiness 1/2/3 +10 str/speed fort max (each rank)". **Ruling: each rank's stated magnitudes are increments that stack — owning ranks 1..N sums every rank's values.** Costs and 500-gate semantics unchanged.
 - **Shadowstalker's critical-strike-damage % is the ruled exception: Mug-style replacement** — the highest owned rank's % applies (rank 3 = 90%, rank 5 = 150%), never the sum.

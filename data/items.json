@@ -46188,6 +46188,12 @@
      "magnitude": 30,
      "delivery": "constant",
      "raw_text": "frost=30 (curated)"
+    },
+    {
+     "key": "enhancement",
+     "magnitude": 30.0,
+     "delivery": "constant",
+     "raw_text": "Enhancement 30 pts"
     }
    ],
    "hidden_effects": {
@@ -46198,7 +46204,7 @@
    "drop_notes": null,
    "image": "items/frost-etched-belt.png",
    "src": "s-tooltip",
-   "notes": "hand-captured from an in-game tooltip (absent from the public channel export)",
+   "notes": "hand-captured from an in-game tooltip (absent from the public channel export) Enhancement 30 player-stated in-game chat 2026-08-14 (no tooltip capture yet - screenshot wanted).",
    "xref": {
     "np-server-items": "Frost Etched Belt"
    },

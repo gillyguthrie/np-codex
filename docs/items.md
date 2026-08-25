@@ -268,7 +268,7 @@ Total: 704 items.
 | Forest Gi | server-unique | shirt | — (unknown) | 6.0 | agi 20; spe 15; hp 50; mag 40 | none |
 | Forgetful Club | server-unique | weapon | — (unknown) | 6.0 | wil 20; int -10; drain-attr 10.0 | unknown |
 | Froki's Bow | server-unique | weapon | — (unknown) | 7.0 | Damage Fatigue 10 pts for 1 sec on Target [timed]; Charge: 55/55 | Unknown |
-| Frost Etched Belt | server-unique | belt | — (unknown) | 1.0 | hp 115; frost 30 | unknown |
+| Frost Etched Belt | server-unique | belt | — (unknown) | 1.0 | hp 115; frost 30; enhancement 30.0 | unknown |
 | Frost Spiral Tunic | server-unique | cuirass | 27 | 9.0 | agi 15; int 10; mag 15 | unknown |
 | Frostiron Charm | server-unique | amulet | — (unknown) | 1.0 | agi 5; hp 50 | none |
 | Frostleaf Tunic | server-unique | cuirass | 21 | 21.0 | wil 5; per 15; mag 50 | none |

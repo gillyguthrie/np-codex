@@ -1034,6 +1034,14 @@
    "src": "s-sgen",
    "date": "2020-11",
    "note": "Community-reported Nov 2020 (public channel), maintainer-confirmed 2026-08-24. The community character builder models these values."
+  },
+  {
+   "id": "fact:enhancement-effect",
+   "name": "Enhancement item effect = flat Armor Rating",
+   "statement": "The server-custom 'Enhancement N pts' constant effect on items (jewelry/clothing: Murk Claw Ring, Martial Band, Belt of Fish Scales, Glowing Heroic Band, Rune Etched Choker, Frost Etched Belt) adds N flat Armor Rating while equipped. The character sheet refreshes the value only after reopening the inventory. Corroborated three times independently (2025-12-21 owner reading; 2026-08-03; 2026-08-14). Note: one report links swapping Enhancement gear to armor-skill display fluctuation, suggesting an armor-skill-fortification implementation under the hood; the flat-AR outcome is the player-verified behavior.",
+   "src": "s-player",
+   "date": "2026-08-25",
+   "confidence": "player-reported"
   }
  ]
 }

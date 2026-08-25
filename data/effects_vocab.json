@@ -396,7 +396,7 @@
    "key": "enhancement",
    "name": "Enhancement",
    "unit": "pts",
-   "note": "server-custom, mechanics unknown — delivery unmodeled"
+   "note": "server-custom: adds the magnitude as flat Armor Rating ('Enhancement 30' = +30 armor). Player-settled: item owner read +50 AR from Enhancement 50 (2025-12-21, server-general); 'Enhancement adds those raw numbers to your rating' (2026-08-03, in-game); 'adds 30 points of Armor' (2026-08-14, in-game, credited to a veteran player). Display quirk: the sheet updates only after reopening the inventory. One 2026-08-03 report ties swapping Enhancement gear to armor-SKILL display fluctuation, so the engine may implement it via armor-skill fortification - the AR outcome is what players verify."
   },
   {
    "key": "cap-raise",

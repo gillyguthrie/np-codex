@@ -323,6 +323,14 @@
    "area": "mechanics",
    "added": "2026-08-25",
    "grade_last": null
+  },
+  {
+   "id": "eq:043",
+   "q": "my belt of fish scales says 'Enhancement 63 pts' - what does that actually do? it doesn't look like anything happens when i put it on",
+   "expects": "Enhancement adds the magnitude as flat Armor Rating: +63 armor while the belt is equipped (server-custom effect, distinct from Enchantment). Mentions the display quirk - reopen the inventory to see the sheet update. Confident, no 'mechanics unknown' hedging; player-reported confidence at most a one-line trailing caveat.",
+   "area": "items",
+   "added": "2026-08-25",
+   "grade_last": null
   }
  ]
 }
