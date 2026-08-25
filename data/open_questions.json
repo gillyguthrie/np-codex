@@ -45,8 +45,8 @@
   {
    "id": "q:hidden-passive-anomaly",
    "topic": "Unexplained magicka/fatigue surplus on one measured character",
-   "status": "open",
-   "detail": "HALF-RESOLVED 2026-08-25: the '3.85x INT magicka slope' is EXACTLY what the decoded formula:magicka predicts (1.15 Stealth spec + 1.2 Atronach + 1.5 level term at L60) - the magicka anomaly was the old formula, not the character. REMAINING: the +126 max fatigue surplus is real and persists naked with zero masteries (581 observed vs 455 model, 2026-08-25). Candidates: a Stealth-spec or werewolf or custom-class fatigue term, or a character-specific hidden passive. Discriminator: one naked fatigue reading from any other Stealth-spec (non-WW) character - if it reads attrs+55, the surplus is character/WW-specific."
+   "status": "resolved",
+   "detail": "RESOLVED 2026-08-25 (maintainer-ruled): the magicka half was the old formula (see formula:magicka - 3.85x is exactly spec + sign + level). The +126 fatigue surplus on the one affected character is presumed a character-specific backend bug (likely from a forced dev-side mastery respec while werewolf; the maintainer had reported the character to the dev, who may also have fixed related backend state). It is NOT modeled as a mechanic; formula:fatigue stands as measured on all clean characters. If a second character ever shows a fatigue surplus, reopen."
   },
   {
    "id": "q:low-level-magicka-base",

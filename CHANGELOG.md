@@ -1,5 +1,8 @@
 # Changelog
 
+## 2026-08-25 — v0.4.15b the +126 fatigue surplus ruled a character-specific bug (q:hidden-passive-anomaly closed)
+- **Maintainer ruling**: the one remaining vitals anomaly (+126 max fatigue on a single character) is presumed a character-specific backend bug — likely residue of a forced dev-side mastery respec while werewolf; the maintainer had separately reported the character to the dev. Not modeled as a mechanic; formula:fatigue stands as measured on every clean character. Reopen only if a second character ever shows a surplus.
+
 ## 2026-08-25 — v0.4.15 magicka formula DECODED AND RESOLVED (four clean readings); the 3.85x "anomaly" was the formula
 - **`formula:magicka` rewritten and upgraded to measured**: maxMag = floor(min(INT, cap) × (spec_magicka_factor + 0.025 × level + carriers)). The dev-stated spec factors (Combat 0.9 / Stealth 1.15 / Magic 1.5) are live in the pool — the base was never 1×INT. Verified on four clean naked zero-mastery readings: L1 Combat 27 EXACT, L60 Magic Altmer/Atronach 712 = floor(125 × 5.7) EXACT, L60 Stealth Dunmer/Atronach 385 = 100 × 3.85 EXACT, L60 Magic Breton/Atronach 469 (a value-specific float quirk at the exact-integer product 470.0 — quirk map recorded, at most 1 low).
 - **The historic "3.85× magicka anomaly" is RESOLVED — it was the old formula, not the character**: 3.85 is precisely 1.15 (Stealth) + 1.2 (Atronach) + 1.5 (level 60). c:magicka-base-multiplier resolved; the 2026-08-21 "validated 647" reading invalidated (no integer INT reproduces it; that session had documented duplicate-ability instability). The same character re-read clean 2026-08-25 fits exactly — the vamp-main contamination suspicion is cleared.
