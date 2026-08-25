@@ -357,6 +357,15 @@
    "area": "mechanics",
    "added": "2026-08-25",
    "grade_last": null
+  },
+  {
+   "id": "eq:047",
+   "q": "create a build for me. Name: Ashfen. Dark Elf, Stealth Specialization, you pick the best birthsign. Goals: all magic resistances at highest possible levels with room for the stealth strikes for high damage, anything left over try to make him tanky with AR but that might not be doable. 798 MPs, lvl 60",
+   "expects": "Atronach picked with downside reasoning (Apprentice -25 rmag, Lord -65 fire disqualify). Six resists via gear-first stacking (Denstagmer's/Phynaster/Dagger of Shielding - a legitimate shield-SLOT item - Ebony Mail 75 fire + Shield 50 flat AR). Shadowstalker crit = highest rank only (+150% at rank 5, Mug-style); Assassin MC +35% stacks as a separate source. Assassin sequencing: pre-MC spend >= 500 EXCLUDING the MC and anything gated on it (Poisoned Blade needs 'Assassin Master Class' - bought last, never counted toward the 500); prose states the pre-MC sum unambiguously. Mixed apostrophes byte-exact (Assassin's Skill is CURLY in the data, blessings straight). NO false slot claims: 25 pauldron items exist (Skystrider [Lv.60 Stealth]), and clothing (shirt/pants) is NEVER blocked by cuirass/greaves. Assassin's 100 Str/Agi/Int/Short Blade stat gates flagged as training assumptions. Inline JSON + file.",
+   "area": "builds",
+   "added": "2026-08-25",
+   "grade_last": "A-",
+   "graded": "2026-08-25 charbuild8 (round 8, on v0.4.16): 40 calls. File PERFECT (9 slots, 34 names incl. curly-apostrophe handling, 795 verified, base skill fields clean); all six resist totals, AR decomposition (99+50+17=166) and HP 880 reproduce exactly; crit ruling and 500-gate sequencing both correct. Docked: two false slot-sweep claims ('pauldrons: none in catalog' - 25 exist incl. Skystrider Lv.60 Stealth; 'shirt/pants blocked by cuirass+greaves' - clothing layers under armor), ambiguous 'everything above' sequencing prose that read as a circular dependency on audit, unflagged Str/Int-100 stat-gate assumptions."
   }
  ]
 }
