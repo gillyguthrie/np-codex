@@ -6,7 +6,7 @@ The community knowledge base for the **Nerevarine Prophecies (NP)** TES3MP Morro
 
 - [What's in this repo](#whats-in-this-repo)
 - [How to use Claude with this Codex](#how-to-use-claude-with-this-codex)
-- [How to use ChatGPT with this Codex](#how-to-use-chatgpt-with-this-codex)
+- [How to use ChatGPT with this Codex (untested)](#how-to-use-chatgpt-with-this-codex-untested)
 - [Repo layout](#repo-layout)
 - [Using the data programmatically](#using-the-data-programmatically)
 - [Status](#status) · [Credits](#credits) · [License](#license)
@@ -32,14 +32,14 @@ You do **not** need to download this repo — just one small file.
 
 The skill fetches the data files it needs straight from this repo on every question, so answers always reflect the current version. The chat needs web access enabled — if Claude says it can't reach the web, that's the skill correctly refusing to guess from memory.
 
-## How to use ChatGPT with this Codex
+## How to use ChatGPT with this Codex (untested)
 
-The skill is plain text with public data URLs, so it works anywhere that can browse the web:
+**Use Claude for best results** — the Codex is built and continuously tested against Claude, and the ChatGPT route below is **untested**: it may work since the skill is plain text with public data URLs, but nobody has verified its accuracy there. If you try it, double-check important numbers against the data files in this repo.
 
 1. Open **[SKILL.md](SKILL.md)** in this repo and copy its full contents.
 2. In ChatGPT (with web browsing enabled), paste it with a message like: *"Follow these instructions for any question about the NP Morrowind server."*
    - Or, for a permanent setup: create a **Custom GPT** and paste SKILL.md into its Instructions.
-3. Ask your NP questions in the same chat — it will fetch the same live data files and behave the same way.
+3. Ask your NP questions in the same chat — in principle it fetches the same live data files.
 
 ## Repo layout
 
