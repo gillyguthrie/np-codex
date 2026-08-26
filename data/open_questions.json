@@ -259,6 +259,13 @@
    "status": "open",
    "detail": "Housing: per-home upkeep amounts and the house building/customization system beyond purchase. Glamours: the Analyzer's cell/location name and the prerequisites that raise Glamour Storage capacity above 10. Login Points: whether event periods boost the 18/login rate.",
    "date": "2026-08-25"
+  },
+  {
+   "id": "q:combo-focus-4-cost",
+   "topic": "Combo Focus 4 cost and level gate",
+   "status": "open",
+   "detail": "Rank 4 is confirmed real (the wiki added it 2026-08-19, after the KB's export; proc-frequency publicly measured) but its MP cost and level requirement are only on the bot-blocked wiki page. One manual export/screenshot of the current Mastery Points page closes this and lets the builder budget the rank.",
+   "date": "2026-08-25"
   }
  ]
 }
