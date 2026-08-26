@@ -138,6 +138,14 @@
    "date": "2022-11",
    "confidence": "dev-stated",
    "note": "Dev statements made in the public np-server-lore channel."
+  },
+  "s-maint": {
+   "origin": "player-reported",
+   "channel": null,
+   "url": null,
+   "date": "2026-08-26",
+   "confidence": "measured",
+   "note": "maintainer-attested game behavior"
   }
  },
  "constants": [
@@ -1063,6 +1071,13 @@
    "src": "s-player",
    "date": "2026-08-25",
    "confidence": "player-reported"
+  },
+  {
+   "id": "fact:clothing-armor-slots",
+   "statement": "Clothing and armor never interfere. Clothing that always coexists with armor: pants, belt, shirt, skirt, robe. Armor that never interferes with clothing: greaves, cuirass, pauldrons, helm. The only exclusive choices are the two shared body slots: gloves (clothing) OR gauntlets (armor) in the hands slot, and shoes (clothing) OR boots (armor) in the feet slot. No clothing piece conflicts with another clothing piece.",
+   "src": "s-maint",
+   "date": "2026-08-26",
+   "note": "Maintainer-ruled 2026-08-26, correcting a rule hedge ('only robe conflicts, and skirt vs pants') that had no witness — it was a softened survival of a round-8 build hallucination."
   }
  ]
 }

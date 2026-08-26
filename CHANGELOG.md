@@ -1,5 +1,9 @@
 # Changelog
 
+## 2026-08-26 — v0.4.32 clothing/armor slot canon corrected (a fix that had preserved the bug)
+- **Maintainer-ruled: clothing and armor NEVER interfere.** Pants, belt, shirt, skirt, AND robe all coexist with any armor (cuirass/greaves/pauldrons/helm block nothing), and no clothing piece conflicts with another. The only either/or choices are the shared body slots: gloves-vs-gauntlets (hands) and shoes-vs-boots (feet). New fact:clothing-armor-slots.
+- **Root cause worth recording**: round 8's build hallucinated "Robe blocked by Cuirass+Greaves"; the v0.4.17 corrective rule said "clothing never blocked by armor" but smuggled the hallucination back as an unwitnessed hedge — "(only robe conflicts, and skirt vs pants)" — which a later build then cited verbatim to leave robe and skirt empty. The hedge had no source in any data, capture, or chat. Rule text replaced; the eval-bank expectation that rewarded "skirt marked robe-covered" corrected; np-codex.skill repackaged (np-char-builder bundle refreshed separately).
+
 ## 2026-08-26 — v0.4.31 three era-flagged mechanics maintainer-confirmed current
 - **110-Enchant one-charge, 8-effects-per-enchant, and skills-not-potion-fortifiable are confirmed still accurate on the current (0.8) server** (maintainer, 2026-08-26) — provisional status removed; their pre-0.8 sourcing stays recorded as historical provenance only. The three engine-quirk records keep their softer era notes; Emperor Crab/Skree quarantines unchanged.
 
