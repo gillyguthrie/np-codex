@@ -457,8 +457,7 @@
    "value": 110,
    "unit": "skill",
    "src": "s-player",
-   "note": "At 110 Enchant, all enchanted items cost 1 charge per use (multiple corroborations 2019-2022). era-provenance: corroborations span 2019-2022 (boundary-straddling; whether any postdate the 2022-05-13 launch is unverified). Server-tunable value — treat as provisional until a current-era corroboration or test.",
-   "status": "provisional"
+   "note": "At 110 Enchant, all enchanted items cost 1 charge per use (multiple corroborations 2019-2022). Maintainer-confirmed still accurate on the current (0.8) server, 2026-08-26 — the pre-0.8 sourcing is historical provenance only, not a caveat."
   },
   {
    "id": "const:max-effects-per-enchant",
@@ -467,8 +466,7 @@
    "unit": "effects",
    "src": "s-player",
    "date": "2020-12-10",
-   "note": "Soul size raises magnitude/duration, never the effect count. era-provenance: sourced 2020-12 (pre-0.8). Menu-level limit, plausibly engine-stable, but server-tunable — provisional until current-era confirmation.",
-   "status": "provisional"
+   "note": "Soul size raises magnitude/duration, never the effect count. Maintainer-confirmed still accurate on the current (0.8) server, 2026-08-26 — the pre-0.8 sourcing is historical provenance only, not a caveat."
   },
   {
    "id": "const:vampire-daywalker-cost",
@@ -769,8 +767,7 @@
    "statement": "Skills cannot be fortified by potions on NP; fortifying a skill requires a spellmaking spell or enchant.",
    "src": "s-player",
    "date": "2019-01-19",
-   "status": "provisional",
-   "note": "era-provenance: sourced 2019-01 (pre-0.8). SERVER POLICY, could have changed at the 0.8 relaunch — provisional until current-era confirmation."
+   "note": "Maintainer-confirmed still accurate on the current (0.8) server, 2026-08-26 — the pre-0.8 sourcing is historical provenance only, not a caveat."
   },
   {
    "id": "fact:fort-caps-masteries",

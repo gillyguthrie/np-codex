@@ -1,5 +1,8 @@
 # Changelog
 
+## 2026-08-26 — v0.4.31 three era-flagged mechanics maintainer-confirmed current
+- **110-Enchant one-charge, 8-effects-per-enchant, and skills-not-potion-fortifiable are confirmed still accurate on the current (0.8) server** (maintainer, 2026-08-26) — provisional status removed; their pre-0.8 sourcing stays recorded as historical provenance only. The three engine-quirk records keep their softer era notes; Emperor Crab/Skree quarantines unchanged.
+
 ## 2026-08-26 — v0.4.30 pre-0.8 era audit COMPLETED across all discord-sourced ingests
 - **Systematic sweep** (every camp's evidence dated against the 2022-05-13 0.8.1 launch; every discord-sourced data file checked): archetypes.json CLEAN (all build threads post-launch — community builds/presets were never at risk), alchemy.json CLEAN, items.json CLEAN, lore.json already era-governed. Two further quarantines: **Skree (Cavern of the Incarnate)** — no mention after 2022-01 — and the **Emperor Crab boss details** (drop list, respawn behavior; latest 2021-10) — the mudcrab camp itself stays current (wiki-listed). Golden Saints, fishing bosses, atronach camps, and all wiki-roster camps have fresh current-era evidence.
 - **Six mechanics records annotated with pre-0.8 era-provenance**; the three server-tunable ones (110-Enchant one-charge, 8-effects-per-enchant, skills-not-potion-fortifiable) downgraded to provisional pending current-era confirmation; the three engine-level quirks (Cure school reclassification, Slow Fall, jump-teleport momentum) noted as likely era-stable but unverified on 0.8. fact:vampire-clan-bonuses exempt (maintainer-confirmed 2026-08-24).

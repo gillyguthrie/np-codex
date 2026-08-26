@@ -271,7 +271,7 @@
    "id": "q:pre-08-era-audit",
    "topic": "Systematic pre-0.8 era audit (old-server pollution sweep)",
    "status": "partially-resolved",
-   "detail": "SWEEP COMPLETED 2026-08-26 over every camp + the discord-sourced files: archetypes.json (all build threads post-launch), alchemy.json, and items.json audited CLEAN; lore.json already carries its 0.7-era convention. Quarantined as old-server-unverified: Roach/Kushtashpi, Shalk, and Skree (no evidence after the 2022-05-13 launch); Emperor Crab BOSS details flagged pre-0.8-sourced (the mudcrab camp itself is wiki-current). Six mechanics records annotated with pre-0.8 era-provenance (three server-tunable ones downgraded to provisional: 110-Enchant one-charge, 8-effects-per-enchant, skills-not-potion-fortifiable). REMAINING: current-era confirmation or in-game test for those six + Emperor Crab/Skree; capture the DRAUGR camp the 2026 XP sheet lists.",
+   "detail": "SWEEP COMPLETED 2026-08-26 over every camp + the discord-sourced files: archetypes.json (all build threads post-launch), alchemy.json, and items.json audited CLEAN; lore.json already carries its 0.7-era convention. Quarantined as old-server-unverified: Roach/Kushtashpi, Shalk, and Skree (no evidence after the 2022-05-13 launch); Emperor Crab BOSS details flagged pre-0.8-sourced (the mudcrab camp itself is wiki-current). Six mechanics records annotated with pre-0.8 era-provenance (three server-tunable ones were briefly provisional but are maintainer-confirmed current, 2026-08-26). REMAINING: current-era confirmation for the three engine-quirk records (Cure school, Slow Fall, jump momentum) + Emperor Crab/Skree; capture the DRAUGR camp the 2026 XP sheet lists.",
    "date": "2026-08-26"
   }
  ]
