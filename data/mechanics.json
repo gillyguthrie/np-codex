@@ -714,7 +714,7 @@
   },
   {
    "id": "fact:atronach-stunted-regen",
-   "statement": "Stunted Magicka (Atronach) removes the native 1 magicka/tick regen AND halves all mastery-gained HoT/MoT/FoT tick regen; item-granted regen is not halved.",
+   "statement": "Stunted Magicka (Atronach) removes the native 1 magicka/tick regen AND halves MASTERY-GRANTED HoT/MoT/FoT tick regen ONLY — item-granted regen is NOT halved (maintainer-confirmed 2026-08-26: no evidence of item or any other halving). There is no native HP/fatigue regen for it to affect (see the contested native-regen records).",
    "src": "s-expert",
    "date": "2026-08-21"
   },
@@ -1067,11 +1067,12 @@
   {
    "id": "fact:native-hp-regen",
    "name": "Native health regeneration",
-   "statement": "Characters natively regenerate 5% of max health every 6-second tick ('you regen 5% of your max every 6sec', 2026-08-16, in-game chat; corroborated in-thread: 'Max hp also impacts regen'). As-stated by a veteran player; conditions (combat state, vampirism/Atronach interactions) unmeasured.",
+   "statement": "CONTESTED — probably NO native HP regen. The maintainer (a daily player) has never observed universal native HP regeneration (ruled 2026-08-26). The two archive quotes that once suggested a native 5%-of-max rate ('you regen 5% of your max every 6sec', 2026-08-16; 'every 100 HP/MP/Fatigue also = +5 hot/mot/fot', 2025-03-23) sit in threads about CM picks and FoT item values — they most plausibly describe pool-scaled regen from specific SOURCES, not a baseline every character has. Treat as: no native HP regen unless a controlled in-game reading shows otherwise.",
    "src": "s-player",
    "date": "2026-08-25",
    "confidence": "player-reported",
-   "note": " Cross-corroborated by the 2025-03-23 statement covering HP/MP/Fatigue at +5 per 100 max per tick (see fact:native-fatigue-regen)."
+   "note": "Encoded as 'native' in v0.4.16 on an inference from thin context; reinterpreted v0.4.34.",
+   "status": "contested"
   },
   {
    "id": "fact:clothing-armor-slots",
@@ -1083,10 +1084,11 @@
   {
    "id": "fact:native-fatigue-regen",
    "name": "Native fatigue regeneration",
-   "statement": "Characters natively regenerate 5% of max fatigue every 6-second tick — from the community's most authoritative mechanics voice: 'you regen based on totals too so every 100 HP/MP/Fatigue also = +5 hot/mot/fot' (2025-03-23, public channel). The same statement covers HP (independently attested at 5%, 2026-08-16 — cross-corroboration). Stunted Magicka (Atronach) deletes base regen (2026-08-21).",
+   "statement": "CONTESTED — probably NO native fatigue regen (maintainer-ruled 2026-08-26, same reasoning and same source quotes as fact:native-hp-regen). Briefly encoded as 5% of max per tick (v0.4.33) from the 2025-03-23 quote; withdrawn the same day on maintainer review. Treat as: no native fatigue regen pending a controlled in-game timing check.",
    "src": "s-player",
    "date": "2025-03-23",
-   "note": "Rate is pool-scaled (5% of MAX), not flat. The statement's magicka half is superseded by the measured 1/tick GMST for MP (const:native-magicka-regen, 2026-08-21) — the 5%-of-max reading may predate a GMST change or apply only to HP/fatigue; fatigue's 5% stands as the best available figure pending an in-game timing check."
+   "note": "The 2025-03-23 quote sits in a FoT-item value discussion and most plausibly describes pool-scaled regen from regen sources.",
+   "status": "contested"
   }
  ]
 }

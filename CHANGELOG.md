@@ -1,5 +1,10 @@
 # Changelog
 
+## 2026-08-26 — v0.4.34 native HP/fatigue regen RETRACTED (maintainer review of the source quotes)
+- **Maintainer-ruled: there is probably NO native HP or fatigue regen.** Full-context reads of the two archive quotes behind fact:native-hp-regen (v0.4.16) and the hours-old fact:native-fatigue-regen (v0.4.33) show both sit in threads about CM picks and FoT item values — they most plausibly describe pool-scaled regen from specific sources, not a universal baseline; and the maintainer, playing daily, has never observed native HP/fatigue regen. Both records now CONTESTED with the reinterpretation and both dated positions kept; a controlled in-game timing check would settle either. Native magicka's measured 1/tick stands.
+- **fact:atronach-stunted-regen sharpened**: halves MASTERY-granted regen only (item regen NOT halved — maintainer-confirmed); deletes the native magicka 1/tick; nothing else.
+- Builder v1.36 reverts v1.35's native HP/fatigue regen wiring (the sectioned fatigue breakout stays).
+
 ## 2026-08-26 — v0.4.33 native fatigue regen found in the archives; README overhauled
 - **New fact:native-fatigue-regen**: 5% of max fatigue per 6s tick — 'every 100 HP/MP/Fatigue also = +5 hot/mot/fot' (community mechanics authority, 2025-03-23), the same statement that cross-corroborates HP's independently-attested 5%. Pool-scaled, deleted by Stunted Magicka (Atronach). For magicka the measured 1/tick GMST supersedes the statement's MP half (noted on both records). Builder v1.35 wires native HP+fatigue regen into its tiles (the wiki author's 8/21 'isn't taking base regen into account' report, closed).
 - **README rewritten**: coverage list now includes the player-services file, the server timeline, alchemy, the era discipline, and the full vanilla layer (lore, 449 books, NPCs, spells, locations — the codex answers base-game questions too); Claude how-to now says to invoke with /np-codex, with new example questions; the untested ChatGPT section removed.
