@@ -12,9 +12,9 @@ This skill is self-contained: you do NOT need a local copy of the knowledge base
 ## How to answer any NP question
 
 1. Pick the data file for the topic (map below).
-2. Fetch it from the data root (e.g. `.../main/data/mechanics.json`). Always fetch from the repo — it is the single source of truth, and fetching live means every answer reflects the current version. Do not answer from a local copy of the data unless the user explicitly directs you to one.
+2. Download it from the data root (e.g. `.../main/data/mechanics.json`) **with `curl` in bash, FIRST CHOICE — not the URL-fetch tool**: one batched curl command saving every file the question needs to local disk (`curl -s <url> -o <file>`). The URL-fetch tool intermittently refuses raw.githubusercontent and wastes a visible failed call; curl is reliable and leaves grep-able local copies for follow-ups. Use the URL-fetch tool only when bash is unavailable in the client. Always download from the repo — it is the single source of truth, and pulling live means every answer reflects the current version. Do not answer from a pre-existing local copy of the data unless the user explicitly directs you to one (your own just-downloaded files are of course fine to reuse within the session).
 3. Read or compute the answer from that JSON — with code, for anything multi-number.
-4. If web access is unavailable in the session, do NOT answer from memory: say so, and ask the user to paste the relevant data file or grab it from https://github.com/gillyguthrie/np-codex.
+4. If BOTH curl and the URL-fetch tool fail, do NOT answer from memory: say so, ask the user to reply with the data-root link (a user-sent link fetches in every client) or paste the relevant data file, or point them at https://github.com/gillyguthrie/np-codex.
 
 ## The rules (binding — full text in GOVERNANCE.md at the repo root)
 

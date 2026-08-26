@@ -1,5 +1,8 @@
 # Changelog
 
+## 2026-08-26 — v0.4.28 curl-first data access (fetch-tool flakiness, second field hit)
+- **SKILL.md rule 2: data files are downloaded with `curl` in bash as the FIRST choice, one batched command to local disk** — the URL-fetch tool intermittently refuses raw.githubusercontent (two live demo threads hit it this week; both recovered via the existing curl fallback, but the failed call is wasted time and an ugly transcript line). The fetch tool is now the fallback for clients without bash; rule 4's last resort (user-sent link / pasted file) unchanged. `np-codex.skill` repackaged.
+
 ## 2026-08-25 — v0.4.27 Combo Focus 4 confirmed real (wiki gained it after our export)
 - **mastery:combo-focus-4 upgraded from stub to confirmed**: four community builds take a rank the wiki export lacked. The archives settle it — the community wiki only added Combo Focus IV on 2026-08-19 ('Combo Focus IV is missing' / wiki author: 'its on the wiki now'), days after this KB's export. Public measurement (2025-12-31): proc-frequency only — one special per ~10.88 attacks vs rank 2's ~12.58, no damage rider. Cost and level gate still unknown (bot-blocked wiki page) — new q:combo-focus-4-cost; one manual page export closes it and lets the builder budget the rank.
 

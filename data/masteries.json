@@ -28,6 +28,14 @@
    "date": "2026-08",
    "confidence": "provisional",
    "note": "known-to-exist stub; awaiting in-game capture"
+  },
+  "s-posted": {
+   "origin": "discord-public",
+   "channel": "public channels (server-general / player-notes)",
+   "url": null,
+   "date": "2026-08",
+   "confidence": "player-reported",
+   "note": "public channel statements and measurements"
   }
  },
  "masteries": [
