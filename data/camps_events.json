@@ -144,10 +144,15 @@
     {
      "statement": "Because the boss is tough to solo for lower-level players, announcing it in chat and partying up shares the token drop; experienced players can solo it but it is tedious. World-boss difficulty scaling mainly manifests as resistances, and only the Emperor Crab has significant resistances.",
      "src": "np-player-notes"
+    },
+    {
+     "statement": "ERA NOTE 2026-08-26: the Mudcrab camp itself is CURRENT (listed on the wiki Creature Camp page, ed. 2026-05-15, 'East of Seyda Neen'). The Emperor Crab BOSS details (drop list incl. the 2020 Auriel's Shield sighting, respawn behavior) have no archive mention after 2021-10 under the searched names — treat the boss specifics as pre-0.8-sourced pending current verification.",
+     "src": "np-player-notes"
     }
    ],
    "era": null,
-   "src": "np-player-tested"
+   "src": "np-player-tested",
+   "status": "current-era (camp); boss details pre-0.8-sourced"
   },
   {
    "id": "camp:red-wolf-camp",
@@ -912,10 +917,15 @@
     {
      "statement": "The Valley of the Wind / Cavern of the Incarnate area is a good farming spot for gems and cliff racer plumes due to unusually high cliff racer density, worth visiting despite the danger.",
      "src": "np-player-notes"
+    },
+    {
+     "statement": "ERA RULING 2026-08-26 (systematic sweep): no archive mention of Skree postdates the 2022-05-13 NP 0.8.1 launch (latest: 2022-01). Same standard as Roach: treated as OLD-SERVER content pending any current-era sighting. The Cavern of the Incarnate cliff-racer farming note is likewise pre-0.8-sourced.",
+     "src": "np-player-notes"
     }
    ],
-   "era": null,
-   "src": "np-player-notes"
+   "era": "pre-0.8",
+   "src": "np-player-notes",
+   "status": "old-server-unverified"
   },
   {
    "id": "camp:fishing-boss-spawns",

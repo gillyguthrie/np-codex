@@ -270,8 +270,8 @@
   {
    "id": "q:pre-08-era-audit",
    "topic": "Systematic pre-0.8 era audit (old-server pollution sweep)",
-   "status": "open",
-   "detail": "Roach/Kushtashpi and Shalk camps were caught presented as live despite all evidence predating the 2022-05-13 0.8.1 launch (now tagged old-server-unverified). Remaining sweep: date-check every camps_events statement and the Golden Saint spawn record against the launch date; and the 2026 XP sheet lists a DRAUGR camp the KB has no record for — capture it.",
+   "status": "partially-resolved",
+   "detail": "SWEEP COMPLETED 2026-08-26 over every camp + the discord-sourced files: archetypes.json (all build threads post-launch), alchemy.json, and items.json audited CLEAN; lore.json already carries its 0.7-era convention. Quarantined as old-server-unverified: Roach/Kushtashpi, Shalk, and Skree (no evidence after the 2022-05-13 launch); Emperor Crab BOSS details flagged pre-0.8-sourced (the mudcrab camp itself is wiki-current). Six mechanics records annotated with pre-0.8 era-provenance (three server-tunable ones downgraded to provisional: 110-Enchant one-charge, 8-effects-per-enchant, skills-not-potion-fortifiable). REMAINING: current-era confirmation or in-game test for those six + Emperor Crab/Skree; capture the DRAUGR camp the 2026 XP sheet lists.",
    "date": "2026-08-26"
   }
  ]

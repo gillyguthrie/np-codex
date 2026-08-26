@@ -457,7 +457,8 @@
    "value": 110,
    "unit": "skill",
    "src": "s-player",
-   "note": "At 110 Enchant, all enchanted items cost 1 charge per use (multiple corroborations 2019-2022)."
+   "note": "At 110 Enchant, all enchanted items cost 1 charge per use (multiple corroborations 2019-2022). era-provenance: corroborations span 2019-2022 (boundary-straddling; whether any postdate the 2022-05-13 launch is unverified). Server-tunable value — treat as provisional until a current-era corroboration or test.",
+   "status": "provisional"
   },
   {
    "id": "const:max-effects-per-enchant",
@@ -466,7 +467,8 @@
    "unit": "effects",
    "src": "s-player",
    "date": "2020-12-10",
-   "note": "Soul size raises magnitude/duration, never the effect count."
+   "note": "Soul size raises magnitude/duration, never the effect count. era-provenance: sourced 2020-12 (pre-0.8). Menu-level limit, plausibly engine-stable, but server-tunable — provisional until current-era confirmation.",
+   "status": "provisional"
   },
   {
    "id": "const:vampire-daywalker-cost",
@@ -766,7 +768,9 @@
    "id": "fact:skills-not-potion-fortifiable",
    "statement": "Skills cannot be fortified by potions on NP; fortifying a skill requires a spellmaking spell or enchant.",
    "src": "s-player",
-   "date": "2019-01-19"
+   "date": "2019-01-19",
+   "status": "provisional",
+   "note": "era-provenance: sourced 2019-01 (pre-0.8). SERVER POLICY, could have changed at the 0.8 relaunch — provisional until current-era confirmation."
   },
   {
    "id": "fact:fort-caps-masteries",
@@ -864,7 +868,8 @@
    "id": "fact:cure-school-reclassification",
    "statement": "Adding a Cure effect to a custom spell reclassifies the whole spell as Restoration regardless of other effects (community-tested extensively) — enabling cheap casting of multi-school spells by training only Restoration. Cast chance for multi-school spells otherwise follows the effect with the lowest cast chance, which also sets the displayed school tag.",
    "src": "s-player",
-   "date": "2021-04-07"
+   "date": "2021-04-07",
+   "note": "era-provenance: community-tested 2021 (pre-0.8). Engine-level spell-school behavior, likely era-stable; unverified on 0.8."
   },
   {
    "id": "fact:leveled-loot",
@@ -896,13 +901,15 @@
    "id": "fact:fall-damage",
    "statement": "1 point of Slow Fall negates all fall damage; fortifying Acrobatics to ~126+ is also reported to negate it.",
    "src": "s-player",
-   "date": "2019-07-16"
+   "date": "2019-07-16",
+   "note": "era-provenance: sourced 2019 (pre-0.8). Engine-level behavior, likely era-stable; unverified on 0.8."
   },
   {
    "id": "fact:jump-teleport-momentum",
    "statement": "Casting Almsivi/Divine Intervention or Recall right after a strong Jump carries momentum through the teleport (both directions) — the basis of long-distance jump travel.",
    "src": "s-player",
-   "date": "2019-07-16"
+   "date": "2019-07-16",
+   "note": "era-provenance: sourced 2019 (pre-0.8). Engine-level quirk, likely era-stable; unverified on 0.8."
   },
   {
    "id": "fact:skill-check-structure",

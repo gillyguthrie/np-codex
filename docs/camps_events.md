@@ -16,6 +16,7 @@ Mobs: Mudcrab
 - The server dev speculated that levitation plus an aerial attack might help prevent the boss from resetting/escaping during the fight.
 - Recommended kill setups: exquisite rings enchanted with target frost damage 100pts on 10ft for as many seconds as the enchant can hold; or 110 Enchant skill plus around 10 rings enchanted with shock damage. A nuke ring setup of this kind works on every boss except Lavastorm, where a dedicated weakness ring might work better (untested).
 - Because the boss is tough to solo for lower-level players, announcing it in chat and partying up shares the token drop; experienced players can solo it but it is tedious. World-boss difficulty scaling mainly manifests as resistances, and only the Emperor Crab has significant resistances.
+- ERA NOTE 2026-08-26: the Mudcrab camp itself is CURRENT (listed on the wiki Creature Camp page, ed. 2026-05-15, 'East of Seyda Neen'). The Emperor Crab BOSS details (drop list incl. the 2020 Auriel's Shield sighting, respawn behavior) have no archive mention after 2021-10 under the searched names — treat the boss specifics as pre-0.8-sourced pending current verification.
 
 ## Red Wolf Camp
 
@@ -209,12 +210,13 @@ Mobs: Golden Saint
 - Golden Saints spawn fairly reliably at a few spots once players are a high enough level; some spots have a respawn timer of roughly 45 minutes. Repeated grinding confirmed the timer at this camp is 45 to an hour.
 - Golden Saints on this server are equipped with fixed Sun Shields (a weaker Auriel's Shield) and an unlootable sword.
 
-## Skree (Cavern of the Incarnate)
+## Skree (Cavern of the Incarnate) *(era pre-0.8)*
 
 Location: Cavern of the Incarnate, Valley of the Wind  
 Mobs: Cliff Racer  
 - Boss: **Skree** — drops: Skree's Plume (rarest, Short Blade 1H), Stormfang (Long Blade 2H), Racerbreak (Short Blade 1H), Haakon's Lucky Break (Blunt 2H), Whitewalker Robes, The Watchman's Eye, Cliffracer Tome, 25 Tokens (every time) — Tier 2 boss. The server dev noted Skree has a large-size reset/respawn issue similar to the Emperor Crab (wandering too far from spawn resets it).
 - The Valley of the Wind / Cavern of the Incarnate area is a good farming spot for gems and cliff racer plumes due to unusually high cliff racer density, worth visiting despite the danger.
+- ERA RULING 2026-08-26 (systematic sweep): no archive mention of Skree postdates the 2022-05-13 NP 0.8.1 launch (latest: 2022-01). Same standard as Roach: treated as OLD-SERVER content pending any current-era sighting. The Cavern of the Incarnate cliff-racer farming note is likewise pre-0.8-sourced.
 
 ## Fishing Bosses (Dreughnaught and Lil Snappa)
 

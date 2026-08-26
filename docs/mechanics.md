@@ -46,8 +46,8 @@
 | `const:melding-pct-per-rank` | Melding Construct AR bonus per rank | **4** | %/rank | SETTLED (maintainer-ruled 2026-08-25): the rank-5 endpoint (+20% total equipment AR) is measured — it reconciled a rank-5 owner's armor readings exactly (archive-corroborated exchange, 2026-08-21). The per-rank split (+4% each, increments stack) is the assumed-linear trajectory by analogy with the server's other linear mastery lines; only the split, not the total, rests on that assumption. Applies to equipped-armor AR. |
 | `const:anvil-armor-ar-multiplier` | Anvil max upgrade — armor piece AR multiplier | **1.54** | x | PROVISIONAL — one measured item pair (fresh 250 vs maxed 385 at matched skill/condition). A relayed '+42 AR flat' figure did not match — see contradictions. |
 | `const:native-magicka-regen` | Native magicka regen | **1** | magicka/tick | For all characters EXCEPT Stunted Magicka (Atronach). Deliberate NP GMST edit. |
-| `const:enchant-skill-one-charge` | Enchant skill for 1-charge casts | **110** | skill | At 110 Enchant, all enchanted items cost 1 charge per use (multiple corroborations 2019-2022). |
-| `const:max-effects-per-enchant` | Max effects per enchant/spell | **8** | effects | Soul size raises magnitude/duration, never the effect count. |
+| `const:enchant-skill-one-charge` | Enchant skill for 1-charge casts | **110** | skill | At 110 Enchant, all enchanted items cost 1 charge per use (multiple corroborations 2019-2022). era-provenance: corroborations span 2019-2022 (boundary-straddling; whether any postdate the 2022-05-13 launch is unverified). Server-tunable value — treat as provisional until a current-era corroboration or test. |
+| `const:max-effects-per-enchant` | Max effects per enchant/spell | **8** | effects | Soul size raises magnitude/duration, never the effect count. era-provenance: sourced 2020-12 (pre-0.8). Menu-level limit, plausibly engine-stable, but server-tunable — provisional until current-era confirmation. |
 | `const:vampire-daywalker-cost` | Daywalker perk cost | **50** | mastery points |  |
 | `const:vampire-ancient-bloodline-cost` | Ancient Bloodline perk cost | **75** | mastery points | Requires Daywalker first; both together 125 points. |
 
@@ -169,7 +169,7 @@ Four clean readings: exact at L1 Combat (121 = floor(50 x 2.42)); TWO L60 Magic 
 - **disenchanting**: The Disenchanting mastery extracts a player enchant using an empty black soul gem (which shatters), returning the item to its blank, re-enchantable state.
 - **player-goods-no-npc-value**: Player-made potions and player-enchanted items have no gold value to NPC merchants; they can only be sold to other players.
 - **potion-active-limit**: The number of potions active at once on a character is limited, scaling with Alchemy skill.
-- **skills-not-potion-fortifiable**: Skills cannot be fortified by potions on NP; fortifying a skill requires a spellmaking spell or enchant.
+- **skills-not-potion-fortifiable** **[provisional]**: Skills cannot be fortified by potions on NP; fortifying a skill requires a spellmaking spell or enchant.
 - **fort-caps-masteries**: Attribute/skill fortification caps can be raised via masteries ('Fortification Max' lines and certain racials).
 - **endurance-retroactive**: Endurance affects health in real time (retroactively) — no need to front-load END early.
 - **death-penalties**: On death: revival at the bound Spirit Master (or Seyda Neen), loss of some carried gold, and Mastery Point debt that halves mastery XP gain until paid.
