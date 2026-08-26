@@ -1,7 +1,8 @@
 {
  "_meta": {
   "description": "NP server camps, world bosses, and events",
-  "migrated": "2026-08-22"
+  "migrated": "2026-08-22",
+  "conventions": "ERA DISCIPLINE: NP 0.8.1 launched 2022-05-13 (the current server). A record or statement whose ONLY evidence predates that launch carries era 'pre-0.8' and status 'old-server-unverified' — such records are HISTORY: exclude them from any list of current camps/bosses, never present them as live content, and label them explicitly if the user asks about them."
  },
  "sources": {
   "np-dev": {
@@ -245,10 +246,15 @@
     {
      "statement": "Drops quest items that can be turned in for 3 tokens a pop, or 6 with a todd's boon.",
      "src": "np-player-notes"
+    },
+    {
+     "statement": "ERA RULING 2026-08-26: Shalk camp's archive mentions all predate the 2022-05-13 NP 0.8.1 launch (2021), and it is absent from the current wiki Creature Camp page and the 2026 XP-measurement sheet. Treated as OLD-SERVER content pending current-era evidence; the 'next to a newer Kagouti camp' phrasing in old posts is itself pre-0.8 and does not certify the current server.",
+     "src": "np-player-notes"
     }
    ],
-   "era": null,
-   "src": "np-player-tested"
+   "era": "pre-0.8",
+   "src": "np-player-tested",
+   "status": "old-server-unverified"
   },
   {
    "id": "camp:skeleton-camp",
@@ -846,10 +852,15 @@
     {
      "statement": "Daedric tower shields do not drop from the separate fishing-boss camp; at a high enough player level a Golden Saint spawns once per server reset at Kushtapi.",
      "src": "np-player-notes"
+    },
+    {
+     "statement": "ERA RULING 2026-08-26: every public mention of Roach/Kushtashpi in the archives predates the 2022-05-13 NP 0.8.1 launch (all 2021, incl. the entire drop list); the camp is absent from the current wiki Creature Camp page (ed. 2026-05-15) and from the 2026 community XP-measurement sheet, and the current-era channels contain no mention. Treated as OLD-SERVER content: not to be presented as live, pending any current-era sighting.",
+     "src": "np-player-notes"
     }
    ],
-   "era": null,
-   "src": "np-player-tested"
+   "era": "pre-0.8",
+   "src": "np-player-tested",
+   "status": "old-server-unverified"
   },
   {
    "id": "camp:golden-saint-daedric-camp",

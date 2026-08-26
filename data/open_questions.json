@@ -266,6 +266,13 @@
    "status": "open",
    "detail": "Rank 4 is confirmed real (the wiki added it 2026-08-19, after the KB's export; proc-frequency publicly measured) but its MP cost and level requirement are only on the bot-blocked wiki page. One manual export/screenshot of the current Mastery Points page closes this and lets the builder budget the rank.",
    "date": "2026-08-25"
+  },
+  {
+   "id": "q:pre-08-era-audit",
+   "topic": "Systematic pre-0.8 era audit (old-server pollution sweep)",
+   "status": "open",
+   "detail": "Roach/Kushtashpi and Shalk camps were caught presented as live despite all evidence predating the 2022-05-13 0.8.1 launch (now tagged old-server-unverified). Remaining sweep: date-check every camps_events statement and the Golden Saint spawn record against the launch date; and the 2026 XP sheet lists a DRAUGR camp the KB has no record for — capture it.",
+   "date": "2026-08-26"
   }
  ]
 }

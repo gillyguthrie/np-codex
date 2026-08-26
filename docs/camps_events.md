@@ -40,11 +40,12 @@ Mobs: Kagouti
 - Color-coded red on the shared community camp map.
 - A good spot to train weapon skills to 100 by repeatedly hitting camp mobs (2026-08-11).
 
-## Shalk Camp
+## Shalk Camp *(era pre-0.8)*
 
 Location: South-southwest of Vos, right next to a newer Kagouti camp  
 Mobs: Shalk  
 - Drops quest items that can be turned in for 3 tokens a pop, or 6 with a todd's boon.
+- ERA RULING 2026-08-26: Shalk camp's archive mentions all predate the 2022-05-13 NP 0.8.1 launch (2021), and it is absent from the current wiki Creature Camp page and the 2026 XP-measurement sheet. Treated as OLD-SERVER content pending current-era evidence; the 'next to a newer Kagouti camp' phrasing in old posts is itself pre-0.8 and does not certify the current server.
 
 ## Skeleton Camp
 
@@ -190,7 +191,7 @@ Mobs: Storm Atronach
 - The server dev confirmed the Storm Atronach camp is meant to have a mini-boss like the Fire and Frost camps, but said (2020-02-28) he did not think it was spawning correctly and needed to look into it.
 - Confirmed spawn areas (2020-05-02): Icy Jack and Gertrude both spawn near Addadshashanammu (Bitter Coast); Inferno and Matches both spawn north of Nchuleftingth (Molag Amur); Shadowgale and Bishop O-5 both spawn near Ebernanit (Ashlands).
 
-## Roach / Dremora Camp (Kushtashpi)
+## Roach / Dremora Camp (Kushtashpi) *(era pre-0.8)*
 
 Location: Kushtashpi (also written Kushtapi)  
 Mobs: Dremora  
@@ -199,6 +200,7 @@ Mobs: Dremora
 - Subligar Of Loathing, the Slayer's Set, and Breastplate of Disbelief can also drop from regular (non-boss) Dremora at the camp, not just from the Roach boss - camp uniques can drop from trash mobs, not only the named boss.
 - Camp uniques documented while the camp was WIP: a Rotting Hide armor set, Slayer's pauldrons and bracer, Deadroth Hide Tunic (Value 21300), Belt of Divine Power (Value 17500, Fortify Strength 60 pts), Ring of the Creator, Silken Ring (Fortify Magicka 200 pts but drains Strength/Endurance/Agility/Willpower 15 pts each), and Staff of Secrets (Fortify Speed 30 pts, Fortify Magicka 150 pts).
 - Daedric tower shields do not drop from the separate fishing-boss camp; at a high enough player level a Golden Saint spawns once per server reset at Kushtapi.
+- ERA RULING 2026-08-26: every public mention of Roach/Kushtashpi in the archives predates the 2022-05-13 NP 0.8.1 launch (all 2021, incl. the entire drop list); the camp is absent from the current wiki Creature Camp page (ed. 2026-05-15) and from the 2026 community XP-measurement sheet, and the current-era channels contain no mention. Treated as OLD-SERVER content: not to be presented as live, pending any current-era sighting.
 
 ## Golden Saint Spawns (Daedric Camp NNW of Cavern of the Incarnate)
 

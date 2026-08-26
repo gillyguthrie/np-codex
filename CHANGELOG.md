@@ -1,5 +1,10 @@
 # Changelog
 
+## 2026-08-26 — v0.4.29 old-server pollution caught: Roach and Shalk camps quarantined (era discipline hardened)
+- **A field lookup listed the Roach/Dremora Camp (Kushtashpi) as a current grind camp — the owner flagged it as old-server, and the audit agrees**: every archive mention of Roach/Kushtashpi (and its whole drop list) predates the 2022-05-13 NP 0.8.1 launch; the camp is absent from the current wiki Creature Camp page (ed. 2026-05-15), the 2026 community XP-measurement sheet, and all current-era channels. Shalk camp fails the same test. Both records now carry era `pre-0.8` + status `old-server-unverified` with dated rulings — kept as history, never deletable per governance, never presentable as live.
+- **Era discipline is now a written convention** (camps _meta) and a binding SKILL.md rule: old-server-unverified records are excluded from any current-content listing. Items were audited clean — none of Roach's drops ever entered items.json.
+- q:pre-08-era-audit opened: systematic date-check of remaining camp statements (Golden Saint spawns next) and capture of the DRAUGR camp the 2026 XP sheet lists but the KB lacks. `np-codex.skill` repackaged.
+
 ## 2026-08-26 — v0.4.28 curl-first data access (fetch-tool flakiness, second field hit)
 - **SKILL.md rule 2: data files are downloaded with `curl` in bash as the FIRST choice, one batched command to local disk** — the URL-fetch tool intermittently refuses raw.githubusercontent (two live demo threads hit it this week; both recovered via the existing curl fallback, but the failed call is wasted time and an ugly transcript line). The fetch tool is now the fallback for clients without bash; rule 4's last resort (user-sent link / pasted file) unchanged. `np-codex.skill` repackaged.
 
