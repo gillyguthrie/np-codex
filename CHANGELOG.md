@@ -1,5 +1,8 @@
 # Changelog
 
+## 2026-08-26 — v0.4.35 no-native-regen settled FLAT (owner ruling)
+- fact:native-hp-regen and fact:native-fatigue-regen are no longer contested: **there is NO native HP or fatigue regeneration on NP** — stated flatly per the maintainer. The misread archive snippets remain in the notes as history, not as live positions.
+
 ## 2026-08-26 — v0.4.34 native HP/fatigue regen RETRACTED (maintainer review of the source quotes)
 - **Maintainer-ruled: there is probably NO native HP or fatigue regen.** Full-context reads of the two archive quotes behind fact:native-hp-regen (v0.4.16) and the hours-old fact:native-fatigue-regen (v0.4.33) show both sit in threads about CM picks and FoT item values — they most plausibly describe pool-scaled regen from specific sources, not a universal baseline; and the maintainer, playing daily, has never observed native HP/fatigue regen. Both records now CONTESTED with the reinterpretation and both dated positions kept; a controlled in-game timing check would settle either. Native magicka's measured 1/tick stands.
 - **fact:atronach-stunted-regen sharpened**: halves MASTERY-granted regen only (item regen NOT halved — maintainer-confirmed); deletes the native magicka 1/tick; nothing else.

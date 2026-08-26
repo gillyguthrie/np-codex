@@ -1066,13 +1066,12 @@
   },
   {
    "id": "fact:native-hp-regen",
-   "name": "Native health regeneration",
-   "statement": "CONTESTED — probably NO native HP regen. The maintainer (a daily player) has never observed universal native HP regeneration (ruled 2026-08-26). The two archive quotes that once suggested a native 5%-of-max rate ('you regen 5% of your max every 6sec', 2026-08-16; 'every 100 HP/MP/Fatigue also = +5 hot/mot/fot', 2025-03-23) sit in threads about CM picks and FoT item values — they most plausibly describe pool-scaled regen from specific SOURCES, not a baseline every character has. Treat as: no native HP regen unless a controlled in-game reading shows otherwise.",
-   "src": "s-player",
-   "date": "2026-08-25",
+   "name": "No native health regeneration",
+   "statement": "There is NO native HP regeneration on NP. HP recovers only through actual sources: Restore Health effects, HoT masteries/items, potions, and spells.",
+   "src": "s-maint",
+   "date": "2026-08-26",
    "confidence": "player-reported",
-   "note": "Encoded as 'native' in v0.4.16 on an inference from thin context; reinterpreted v0.4.34.",
-   "status": "contested"
+   "note": "Maintainer-ruled flatly, 2026-08-26. History: v0.4.16 encoded a native 5%-of-max rate from two archive snippets; full-context review showed both sit in CM-pick/FoT-value threads describing pool-scaled regen SOURCES, and the maintainer (daily player) has never observed native regen. Retracted v0.4.34, settled flat here."
   },
   {
    "id": "fact:clothing-armor-slots",
@@ -1083,12 +1082,11 @@
   },
   {
    "id": "fact:native-fatigue-regen",
-   "name": "Native fatigue regeneration",
-   "statement": "CONTESTED — probably NO native fatigue regen (maintainer-ruled 2026-08-26, same reasoning and same source quotes as fact:native-hp-regen). Briefly encoded as 5% of max per tick (v0.4.33) from the 2025-03-23 quote; withdrawn the same day on maintainer review. Treat as: no native fatigue regen pending a controlled in-game timing check.",
-   "src": "s-player",
-   "date": "2025-03-23",
-   "note": "The 2025-03-23 quote sits in a FoT-item value discussion and most plausibly describes pool-scaled regen from regen sources.",
-   "status": "contested"
+   "name": "No native fatigue regeneration",
+   "statement": "There is NO native fatigue regeneration on NP. Fatigue recovers only through actual sources: Restore Fatigue effects, FoT masteries/items, potions, and resting.",
+   "src": "s-maint",
+   "date": "2026-08-26",
+   "note": "Maintainer-ruled flatly, 2026-08-26 (same review as the HP record; the 2025-03-23 quote describes pool-scaled regen sources)."
   }
  ]
 }
