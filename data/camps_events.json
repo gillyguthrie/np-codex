@@ -984,7 +984,7 @@
      "src": "np-dev"
     },
     {
-     "statement": "Loot: activating the boss corpse after defeat distributes loot to all online participants (update notes 2025-06-02); since 2025-08-12 active participation is required to receive loot. The drop pool holds over 20 unique rare items 'depending on your archetype and race' (dev-stated 2025-07-14). The Reticulated Bracer drop intentionally exists only as a left-side piece (dev-stated 2025-07-24). Clothing (e.g. a fortify-magicka shirt) and at least one one-handed weapon are among reported drops.",
+     "statement": "Loot: activating the boss corpse after defeat distributes loot to all online participants (update notes 2025-06-02); since 2025-08-12 active participation is required to receive loot. The drop pool holds over 20 unique rare items 'depending on your archetype and race' (dev-stated 2025-07-14). The Reticulated Bracer drop intentionally exists only as a left-side piece (dev-stated 2025-07-24). Clothing (e.g. a fortify-magicka shirt) and at least one one-handed weapon are among reported drops. Player-stated 2026-08-27: a single tag does not qualify — 'you need to get some hits in, one tab is not enough.'",
      "src": "np-updates"
     }
    ],
@@ -1741,9 +1741,10 @@
   },
   {
    "id": "cfact:boss-loot-per-participant",
-   "statement": "World boss loot is per-participant: every player who contributes damage to the kill receives their own drop. One hit is enough ('people usually hit the boss and take off', 2025-02-18), and separate characters each get their own loot even if they hit once and die ('log 3 alts, hit it, die and wait? Still get lewt?' — 'yep', 2025-07-17). Players report losing boss loot only to server crashes, never to other players taking it (2025-08-04).",
+   "statement": "Per-participant boss loot applies ONLY to specific bosses — the fishing bosses (Lil Snappa, Dreughnaught) and event world bosses such as Jack and the Quamaqueen during Easter (player-listed 2026-08-27; the lister was unsure the roster was complete). For those bosses every player who contributes damage receives their own drop, and separate characters each get their own loot ('log 3 alts, hit it, die and wait? Still get lewt?' — 'yep', 2025-07-17, fish-boss context). For fish bosses a single tag is NOT enough: 'you need to get some hits in, one tab is not enough' (2026-08-27). Players report losing participation-boss loot only to server crashes (2025-08-04).",
    "src": "server-general-2026",
-   "topic": "boss loot rules"
+   "topic": "boss loot rules",
+   "note": "Scoped 2026-08-27 after a community correction: the original encoding overgeneralized per-participant loot to all world bosses."
   },
   {
    "id": "cfact:boss-kill-credit-pets",
@@ -1753,7 +1754,7 @@
   },
   {
    "id": "cfact:boss-loot-etiquette",
-   "statement": "There is no claim, roll, or dibs system for boss drops — none is needed, because every participant gets their own loot. The community norm is the opposite of claiming: whoever finds a world boss announces it, holds the kill, and gives a 'last call' so everyone who wants the drop can arrive and tag it before it dies. Player-stated rule (in-game, 2026-08-04, fish boss): 'If a player has the potential of joining in to get hits, we stop the killing so that player can make the choice' … 'We will always hold off if theres a chance someone wants in.' The same pattern is visible across 2025-2026: finders waiting with the boss and @-pinging regulars (2025-04-26, 2025-07-16), players arriving mid-fight 'to get a first hit' (2025-07-22), and 'last call everyone' at low boss HP (2026-08-04, 2026-08-17). The only faux pas is killing the boss before interested players have tagged in.",
+   "statement": "For the per-participant bosses (fishing and event bosses — see cfact:boss-loot-per-participant) there is no claim, roll, or dibs system — none is needed, because every participant who gets hits in receives their own loot. The community norm is the opposite of claiming: whoever finds a world boss announces it, holds the kill, and gives a 'last call' so everyone who wants the drop can arrive and tag it before it dies. Player-stated rule (in-game, 2026-08-04, fish boss): 'If a player has the potential of joining in to get hits, we stop the killing so that player can make the choice' … 'We will always hold off if theres a chance someone wants in.' The same pattern is visible across 2025-2026: finders waiting with the boss and @-pinging regulars (2025-04-26, 2025-07-16), players arriving mid-fight 'to get a first hit' (2025-07-22), and 'last call everyone' at low boss HP (2026-08-04, 2026-08-17). The only faux pas is killing the boss before interested players have tagged in.",
    "src": "igc-2026-08",
    "topic": "boss loot rules",
    "note": "Upgraded 2026-08-27 from observed-pattern to player-stated rule after the in-game-chat sweep; earlier server-general 2025 evidence kept as corroboration."
@@ -1762,6 +1763,12 @@
    "id": "cfact:ground-loot-trading-customs",
    "statement": "Adjacent loot customs: items a player deliberately leaves out in the world are fair game to everyone by stated player custom (2026-08-16), and no-trade drops are shared by calling the recipient to the loot's location so they can loot it themselves rather than by trading (2026-08-16).",
    "src": "igc-2026-08",
+   "topic": "boss loot rules"
+  },
+  {
+   "id": "cfact:camp-boss-loot-last-hit",
+   "statement": "Camp bosses are NOT per-participant: a camp boss drops its loot for the player who kills it (the killing blow), not for everyone who hit it (player-stated 2026-08-27, correcting the codex's earlier generalization).",
+   "src": "server-general-2026",
    "topic": "boss loot rules"
   }
  ],

@@ -1,5 +1,8 @@
 # Changelog
 
+## 2026-08-27 — v0.4.38 boss-loot scope corrected by the community (fast follow)
+- **Community correction, hours after v0.4.36 shipped**: per-participant loot is NOT universal — it applies only to specific bosses (fishing bosses Lil Snappa/Dreughnaught, event bosses like Jack and the Easter Quamaqueen; roster possibly incomplete). **Camp bosses drop loot for whoever lands the killing blow** (new cfact:camp-boss-loot-last-hit). Fish bosses also need real hits — 'one tab is not enough.' cfact:boss-loot-per-participant and cfact:boss-loot-etiquette rescoped accordingly.
+
 ## 2026-08-27 — v0.4.37 the Fishing system ingested (patch notes + archives + measured logs)
 - **New svc:fishing in services.json**: the full current-era system — 2025-06-02 launch, Fishing Guru at Khuul, rod/bait/sneak-cast loop, exteriors-only, bait tiers (crafted > raw, dev-stated; Master Bait top), measured XP model (~520-550 XP/catch over ~2,200 logged casts, ~26s reels, ~10% escapes, +35% move boost), Fishing Points economy, regional crates and their uniques, buckets, housing permits. Four new sources registered incl. s-flog (the OCR'd 2025-06 fishing session logs). Old-server 2021 fishing (tournaments, Surge Protectors) recorded as pre-0.8 era_history.
 - **camp:fishing-boss-spawns refined with dev-stated evidence**: location pinned to the constant north-of-Khuul/west-of-Ald-Redaynia announce spot; spawn-factor claims split into player theory vs the dev's '3 of 5 factors correct, unspecified' (q:fish-boss-spawn-factors); >24h droughts confirmed not bugs; no global spawn announcement; corpse-activation loot to all online participants, active participation required since 2025-08-12; 20+ archetype/race-dependent uniques; Reticulated Bracer intentionally left-only.
