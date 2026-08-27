@@ -1745,9 +1745,10 @@
   },
   {
    "id": "cfact:boss-loot-etiquette",
-   "statement": "There is no claim, roll, or dibs system for boss drops — none is needed, because every participant gets their own loot. The community norm is the opposite of claiming: whoever finds a world boss holds it and pings the server so everyone who wants the drop can arrive and tag it before it dies (finders waiting with the boss and @-pinging regulars, 2025-04-26 and 2025-07-16; players arriving mid-fight 'to get a first hit', 2025-07-22). The only faux pas is killing the boss before interested players have tagged in.",
-   "src": "server-general-2026",
-   "topic": "boss loot rules"
+   "statement": "There is no claim, roll, or dibs system for boss drops — none is needed, because every participant gets their own loot. The community norm is the opposite of claiming: whoever finds a world boss announces it, holds the kill, and gives a 'last call' so everyone who wants the drop can arrive and tag it before it dies. Player-stated rule (in-game, 2026-08-04, fish boss): 'If a player has the potential of joining in to get hits, we stop the killing so that player can make the choice' … 'We will always hold off if theres a chance someone wants in.' The same pattern is visible across 2025-2026: finders waiting with the boss and @-pinging regulars (2025-04-26, 2025-07-16), players arriving mid-fight 'to get a first hit' (2025-07-22), and 'last call everyone' at low boss HP (2026-08-04, 2026-08-17). The only faux pas is killing the boss before interested players have tagged in.",
+   "src": "igc-2026-08",
+   "topic": "boss loot rules",
+   "note": "Upgraded 2026-08-27 from observed-pattern to player-stated rule after the in-game-chat sweep; earlier server-general 2025 evidence kept as corroboration."
   },
   {
    "id": "cfact:ground-loot-trading-customs",
