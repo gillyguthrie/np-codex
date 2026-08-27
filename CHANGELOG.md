@@ -1,5 +1,8 @@
 # Changelog
 
+## 2026-08-27 — v0.4.36 boss-loot rules and etiquette captured from the archives
+- **Four new camps_events facts under topic "boss loot rules"**: boss loot is per-participant (one hit is enough; alts each get their own drop; loot lost only to crashes — server-general 2025); player pets never steal kill credit when the player contributes damage (update notes 2022-09-27, new `np-updates` source registered); there is NO claim/roll/dibs system — the community norm is the finder holds the boss and pings the server so everyone can tag it before it dies; and adjacent customs: deliberately-left ground items are fair game, no-trade drops are shared by escorting the recipient to loot them (in-game chat 2026-08-16).
+
 ## 2026-08-26 — v0.4.35 no-native-regen settled FLAT (owner ruling)
 - fact:native-hp-regen and fact:native-fatigue-regen are no longer contested: **there is NO native HP or fatigue regeneration on NP** — stated flatly per the maintainer. The misread archive snippets remain in the notes as history, not as live positions.
 
