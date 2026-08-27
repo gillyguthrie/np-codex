@@ -2,7 +2,7 @@
 
 # NP Player Services
 
-NP player services and world systems: purchasable housing, the Login Points currency and its exchange, and the appearance systems (Dwemer Glamour Analyzer, passive robe/skirt endowment). Captured from in-game dialog and menus.
+NP player services and world systems: purchasable housing, the Login Points currency and its exchange, and the appearance systems (Dwemer Glamour Analyzer, passive robe/skirt endowment). Captured from in-game dialog and menus, plus the Fishing tradeskill system (Fishing Guru, bait, Fishing Points, crates, fishing bosses).
 
 
 ## Player Housing
@@ -117,3 +117,21 @@ NP player services and world systems: purchasable housing, the Login Points curr
 - 10,000 gold per service. The gold is taken immediately when 'Set Passive Enchants' is clicked — no warning or confirmation dialog first.
 - She asks for the Ravenback Robe as a prerequisite before offering her services ('Think of the robe as a prerequisite to me offering my services').
 - Lets you carry robe/skirt constant effects without the appearance — e.g. benefits of a robe without it covering your armor.
+
+## Fishing
+
+**Service NPC:** Fishing Guru — Khuul (fishing rods can also be found/stolen from houses in Khuul)
+
+- Fishing launched on the current server 2025-06-02 ('Adventurers are now able to fish! Seek out the Fishing Guru in Khuul'). There are over 2,000 unique fish with various weights and ingredient effects; fish are server-generated ingredient items (dev-stated 2026-01-02), so a fishing-caught 'Small Slaughterfish' is a distinct item from the creature corpse's loot.
+- Equip a fishing rod, attach bait via the /bait menu, aim the bobber at a body of water, then activate sneak mode to cast the line (in-game tutorial text, log-captured). The /fish command gives fishing info and functionality. Reeling a catch takes ~26s on average (measured range 10-382s).
+- Exteriors only (dev-stated 2025-06-02). Players report no fishing in Mournhold, dungeons, or lava; whether player-home fishing is blocked or was only bugged at launch is unresolved (see q:player-home-fishing).
+- Crafted bait always beats raw ingredients: 'anything with bait in its name is going to be significantly better than their required ingredients' (dev-stated 2025-07-14). Tiers run from lower/average/beginner up through expert to Master Bait. Bait is consumed; a fish escapes with the bait on roughly 10% of catches (measured). Starter bait: crab meat from the mudcrab camp; ogrims drop master-bait ingredients. Meteor Slime doubles as average-tier bait but is a leftover from a scrapped bait plan and is explicitly bad for boss-spawning (dev-stated 2025-07-15).
+- Measured over ~2,200 catches (2025-06): average 520-552 fishing XP per catch, range 12-3,441; XP scales with fish weight (~60 XP/lb rough fit). Crafting above your tradeskill level gives bonus XP; fishing XP counts as tradeskill XP for guild perks (dev-stated). Level 10 is community-estimated at 750+ hours; leveling unlocks better bait and Guru stock.
+- When fish stop biting, moving a short distance away resumes fishing and grants a decaying fish-XP boost scaled by distance moved, up to +35% (update notes 2025-07-22). The earlier change-cells requirement (2025-06-10) and the periodic-movement requirement were both later removed (update notes, early 2026: an AFK-kick fix replaced the anti-AFK fishing script).
+- The Fishing Guru exchanges caught fish for Fishing Points (update notes 2025-06-04), spendable on bait, 30-minute fishing-benefit potions (fishing XP, crate boosting), recipes, and novelty items. Higher fishing level unlocks more of the Guru's stock.
+- Fishing also catches regional crates whose loot tables are region-specific (players catalog Frost Crates on Solstheim, Ashwood Crates in the Ashlands, Stonehewn Crates, Costal Drift Crates on Azura's Coast, Ascadian Wine Crates), plus jars and message-in-a-bottle notes. Reported crate uniques include the Captain's Leg, Cotidal Hammer, Frozenmourn, the Bog Rune armor pieces, Fishbone Tunic, and stalhrim fishing longswords. An orange-text catch with a howl sound is the rarest tier (player-reported 2025-06-05).
+- Fishing Buckets store caught fish in several sizes (small ~500, medium ~2,000 per player reports); all fish containers had capacity quadrupled 2025-08-12. Only the largest bucket has a deposit-all button (dev-stated 2026-07-25).
+- Fishing Permits obtainable through fishing raise a player home's item cap by 50 items each, once per permit per home; with the biggest houses the practical cap reported is 2,000 items (player-reported 2026).
+- Two bosses (Lil Snappa and the Dreughnaught) are spawnable through certain conditions while fishing; activating their corpse distributes loot to all online participants (update notes 2025-06-02), tightened 2025-08-12 to require active participation. See camp:fishing-boss-spawns for the boss records.
+
+*Compiled 2026-08-27 from server-updates patch notes (2021-2026), server-general and in-game-chat archives, and two OCR'd fishing session logs (2025-06-15/16).*

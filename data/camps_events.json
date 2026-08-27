@@ -939,7 +939,7 @@
    "id": "camp:fishing-boss-spawns",
    "name": "Fishing Bosses (Dreughnaught and Lil Snappa)",
    "camp_type": "fishing-summoned world bosses",
-   "location": "Summoned while fishing during rain/storm; observed at Suran (2021) and in the wilderness region between Khuul and Solstheim (2025); a known fish-boss spot is at approximately map coordinates -22, -13 in the Wilderness region, west of Ebonheart and south of Fort Frost",
+   "location": "Summoned while fishing; on the current server all 2025-2026 spawns are announced at the same spot north of Khuul, west of Ald Redaynia ('Every time. If i announce the boss, it will always be this spot' — in-game 2026-08-17); the region between Khuul and Solstheim matches the 2025 observations and the known wilderness spot at approximately -22, -13. A 2021 Suran spawn is old-server history.",
    "mobs": [],
    "bosses": [
     {
@@ -968,7 +968,7 @@
    ],
    "mechanics": [
     {
-     "statement": "Both fishing bosses appear to respawn roughly every 5 hours and seem to only spawn during dawn/dusk (about 6-9 AM/PM); the invert-controls effect can sometimes bug out and leave the player unable to move, and occasionally seems to trigger just from being near the boss rather than only from being hit.",
+     "statement": "Spawn timing is semi-random: observed gaps of ~2-5 hours during active hunting, but a >24h drought was dev-confirmed as working as intended ('Nothing has changed', 2025-07-18). An earlier player pattern-guess of ~5h respawns clustered at dawn/dusk (6-9 AM/PM) remains unconfirmed. The invert-controls effect can bug out and leave the player unable to move, occasionally triggering from proximity rather than a hit.",
      "src": "np-speculation"
     },
     {
@@ -976,8 +976,16 @@
      "src": "np-player-tested"
     },
     {
-     "statement": "Per in-game chat, a fish boss spawn requires being a high-level fisherman using Master Bait and a good rod plus a special rod wiggle technique.",
+     "statement": "Player theory (unconfirmed): spawning requires a high-level fisherman using Master Bait and a good rod plus a special rod wiggle technique. The dev's only confirmations: of the guessed factors {weather, location, time of day, bait, skill level}, 'i can confirm 3 of these are correct assumptions' — which three was never specified (dev-stated 2025-07-14; see q:fish-boss-spawn-factors) — and bait quality matters: 'if you want a big bad fishy, you wanna use bait' (dev-stated 2025-07-15).",
      "src": "np-player-notes"
+    },
+    {
+     "statement": "There is no global announcement when a fish boss spawns: 'if you're near when it appears, you'll definitely know if you're not afk' (dev-stated 2025-07-14). Community practice is that the finder announces it in chat and holds the kill (see cfact:boss-loot-etiquette).",
+     "src": "np-dev"
+    },
+    {
+     "statement": "Loot: activating the boss corpse after defeat distributes loot to all online participants (update notes 2025-06-02); since 2025-08-12 active participation is required to receive loot. The drop pool holds over 20 unique rare items 'depending on your archetype and race' (dev-stated 2025-07-14). The Reticulated Bracer drop intentionally exists only as a left-side piece (dev-stated 2025-07-24). Clothing (e.g. a fortify-magicka shirt) and at least one one-handed weapon are among reported drops.",
+     "src": "np-updates"
     }
    ],
    "era": null,
