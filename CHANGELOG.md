@@ -1,5 +1,8 @@
 # Changelog
 
+## 2026-08-28 — v0.4.40 the Neverending Adventure set captured (first documentation anywhere)
+- **Five new items**: Robe/Shirt/Pants/Belt/Amulet of Neverending Adventure — the anniversary-event 'XP equipment' set, tooltip-captured by the maintainer (weights 3/2/2/1/1, all [No Trade]). The XP bonus is tooltip-hidden with no published magnitude; set rules encoded from the archives: zero EV, no endowing, no armor value, unwearable as werewolf, dev-cautioned against anvil upgrades ('they may break'). Tooltip images added for all five. Neither the wiki nor the upstream dataset lists these — the codex is the first written record.
+
 ## 2026-08-27 — v0.4.39 Combo Focus 4 captured (maintainer wiki screenshot)
 - **mastery:combo-focus-4 completed**: 40 MP, gated Level 60 + Combo Focus 3 + **Combo Master's Quest Completed** (the only quest-gated Combo Focus rank); effect 'chances to unleash a powerful combo attack greatly increased.' Source: maintainer screenshot of the current wiki page — our export predated the wiki's 2026-08-19 addition. q:combo-focus-4-cost resolved; builder v1.39 budgets the rank.
 

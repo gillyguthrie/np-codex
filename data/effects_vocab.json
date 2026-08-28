@@ -435,6 +435,12 @@
    "key": "drain-fat",
    "name": "Drain Fatigue",
    "unit": "pts"
+  },
+  {
+   "key": "xp-bonus",
+   "name": "XP Bonus (worn)",
+   "unit": "pct",
+   "note": "Tooltip-hidden XP multiplier on the Neverending Adventure event set; magnitude unpublished. Not an enchant effect — carries no EV and cannot be endowed."
   }
  ]
 }

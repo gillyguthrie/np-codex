@@ -5,7 +5,7 @@
 NP server-unique items. AR values follow the skill-100 tooltip convention (see mechanics formula:ar-capture-normalization); values marked 'as-posted' came from public tooltip screenshots at unknown armor skill and should be normalized when verified. Player self-enchanted items are excluded by policy.
 
 
-Total: 705 items.
+Total: 710 items.
 
 
 | name | cat | slot/side | AR@100 | wt | effects | hidden |
@@ -36,6 +36,7 @@ Total: 705 items.
 | Amulet of Loathing | server-unique | amulet | — (unknown) | 0.1 | end 10; wil 25; hp 210; shock 30 | unknown |
 | Amulet of Mara | server-unique | jewelry | — (unknown) | 1.0 | fortify-skill 10 [skill-only] | unknown |
 | Amulet of Necropotence | server-unique | amulet | — (unknown) | 1.0 | int 70; hp -100; rmag 15; drain-hp 100.0 | unknown |
+| Amulet of Neverending Adventure | server-unique | amulet | None | 1.0 | xp-bonus |  |
 | Amulet of Stendarr | server-unique | jewelry | — (unknown) | 1.0 | fortify-skill 10 [skill-only] | unknown |
 | Amulet of Talos | server-unique | jewelry | — (unknown) | 1.0 | fortify-skill 10 [skill-only] | unknown |
 | Amulet of Terror | server-unique | amulet | — (unknown) | 0.1 | agi 25; spe 25; hp 80; mag 80; fire 30; per -50; drain-attr 50.0 | unknown |
@@ -86,6 +87,7 @@ Total: 705 items.
 | Belt of Fire | server-unique | belt | — (unknown) | 1.0 | agi 35; hp 170 | - |
 | Belt of Fish Scales | server-unique | belt | — (unknown) | 1.0 | hp 125; enhancement 63.0 | unknown |
 | Belt of Flowing Ice | server-unique | belt | — (unknown) | 1.0 | spe 5; int 10; hp 25; frost 10 | None |
+| Belt of Neverending Adventure | server-unique | belt | None | 1.0 | xp-bonus |  |
 | Belt of Sanguine Smiting | server-unique · vanilla | belt | — (unknown) | 1 |  | unknown |
 | Belt of the Desiccator | server-unique | belt | — (unknown) | 1.0 | end 15; hp 68; fortify-skill 14 [skill-only]; fire 8; frost 7 | unkown |
 | Belt of the Desiccator | server-unique | belt | — (unknown) | 1.0 | end 15; hp 68; fortify-skill 14 [skill-only]; fire 8; frost 7 | unknown |
@@ -459,6 +461,7 @@ Total: 705 items.
 | Okin | server-unique | weapon | — (unknown) | 24.0 | Frost Damage 10 pts for 1 sec on Touch [timed]; Drain Attribute Speed 50 pts for 3 secs on Touch [timed] | unknown |
 | Omnipotent Robe | server-unique | robe | — (unknown) | 3.0 | int 20; mag 20 | 8 Mot | +8 MoT |
 | Ouch | server-unique | weapon | — (unknown) |  |  | unknown |
+| Pants of Neverending Adventure | server-unique | pants | None | 2.0 | xp-bonus |  |
 | Paws of the Wolf-Runner | server-unique · vanilla | hands | 25 | 4.0 | fortify-skill 10 [skill-only]; spe 10 | unknown |
 | Pendant of Darkness | server-unique | amulet | — (unknown) | 1.0 | str 13; hp 100; fortify-skill 13 [skill-only] | unknown |
 | Pendant of Wisdom | server-unique | amulet | — (unknown) | 1.0 | wil 20; hp 50; mag 110; fire 5; shock 5; rmag 5 | none |
@@ -529,6 +532,7 @@ Total: 705 items.
 | Robe of Awe | server-unique | robe | — (unknown) | 3.0 | int 30; per 15; mag 25; rmag 15 | none |
 | Robe of Evocation | server-unique | robe | — (unknown) | 3.0 | spe 15; int 15; fire 5; shock 10; rmag 10 | none |
 | Robe of Eyes | server-unique | robe | — (unknown) | 3.0 | agi 30 | none |
+| Robe of Neverending Adventure | server-unique | robe | None | 3.0 | xp-bonus |  |
 | Robe of the Deep One | server-unique | robe | — (unknown) | 3.0 | end 10; int 35; mag 115; rmag 5 | unknown |
 | Robe of the Drake's Pride | server-unique · vanilla | robe | — (unknown) | 3.0 | int 10; fire 25 | unknown |
 | Robe of Thormanil | server-unique | robe | — (unknown) | 3.0 | int 15 | none |
@@ -572,6 +576,7 @@ Total: 705 items.
 | Shiny Leather Boots | server-unique | feet | 25 | 8.0 | end 2; wil 2 | unknown |
 | Shiny Leather Left Bracer | server-unique | hands /left | 11.0 | 1.5 | wil 2.0; disease 1.0 | unknown |
 | Shiny Leather Right Bracer | server-unique | hands /right | 11.0 | 1.5 | wil 2.0; disease 1.0 | unknown |
+| Shirt of Neverending Adventure | server-unique | shirt | None | 2.0 | xp-bonus |  |
 | Shrouded Anklet | server-unique | feet | 29 | 2.0 |  | unknown |
 | Shrouded Armor | server-unique | cuirass | 47 | 6.0 | poison 45 | unknown |
 | Shrouded Boots | server-unique | feet | 29 | 2.0 | fortify-skill 20.0 [skill-only] | unknown |

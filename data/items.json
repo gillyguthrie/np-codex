@@ -48301,6 +48301,221 @@
     "raw_text": null
    },
    "origin_game": "np-custom"
+  },
+  {
+   "id": "item:robe-of-neverending-adventure",
+   "name": "Robe of Neverending Adventure",
+   "aliases": [
+    "XP robe",
+    "XP gear (robe)"
+   ],
+   "captured": true,
+   "item_kind": "server-unique",
+   "category": "clothing",
+   "slot": "robe",
+   "armor_class": null,
+   "side": null,
+   "pair_group": "neverending-adventure-set",
+   "req": {
+    "level": null,
+    "class": null
+   },
+   "weight": {
+    "value": 3.0,
+    "src": "s-tooltip"
+   },
+   "value_gold": {
+    "value": null,
+    "status": "unknown"
+   },
+   "condition": null,
+   "no_trade": true,
+   "location": "Anniversary event reward (the server's XP-clothes event; also handed out at Easter-era events per 2025 chat)",
+   "drop_notes": "No trade.",
+   "image": "items/robe-of-neverending-adventure.png",
+   "src": "s-tooltip",
+   "notes": "One of the five 'XP equipment' pieces — the Neverending Adventure set from the anniversary event. The tooltip shows NAME [No Trade] and weight ONLY: the per-piece XP bonus is tooltip-hidden, and no magnitude has ever been published. Set rules (community-attested 2025-2026): grants bonus XP while worn; zero enchant capacity ('no EV and their XP bonus doesn't count as an enchant — no endowing', 2025-04-09); no armor value; cannot be worn in werewolf form; dev-cautioned against putting them through the upgrade anvil ('they may break if you upgrade them' — dev-stated 2026-01-14). Core of the XP-stacking meta alongside the Luck event item, Happy Hour, and cheer potions. Tooltips captured by the maintainer 2026-08-28.",
+   "effects": [
+    {
+     "key": "xp-bonus",
+     "magnitude": null,
+     "delivery": "constant",
+     "raw_text": "Grants bonus XP while worn (tooltip-hidden; magnitude unpublished)",
+     "note": "not an enchant — does not endow, zero EV"
+    }
+   ]
+  },
+  {
+   "id": "item:shirt-of-neverending-adventure",
+   "name": "Shirt of Neverending Adventure",
+   "aliases": [
+    "XP shirt",
+    "XP gear (shirt)"
+   ],
+   "captured": true,
+   "item_kind": "server-unique",
+   "category": "clothing",
+   "slot": "shirt",
+   "armor_class": null,
+   "side": null,
+   "pair_group": "neverending-adventure-set",
+   "req": {
+    "level": null,
+    "class": null
+   },
+   "weight": {
+    "value": 2.0,
+    "src": "s-tooltip"
+   },
+   "value_gold": {
+    "value": null,
+    "status": "unknown"
+   },
+   "condition": null,
+   "no_trade": true,
+   "location": "Anniversary event reward (the server's XP-clothes event; also handed out at Easter-era events per 2025 chat)",
+   "drop_notes": "No trade.",
+   "image": "items/shirt-of-neverending-adventure.png",
+   "src": "s-tooltip",
+   "notes": "One of the five 'XP equipment' pieces — the Neverending Adventure set from the anniversary event. The tooltip shows NAME [No Trade] and weight ONLY: the per-piece XP bonus is tooltip-hidden, and no magnitude has ever been published. Set rules (community-attested 2025-2026): grants bonus XP while worn; zero enchant capacity ('no EV and their XP bonus doesn't count as an enchant — no endowing', 2025-04-09); no armor value; cannot be worn in werewolf form; dev-cautioned against putting them through the upgrade anvil ('they may break if you upgrade them' — dev-stated 2026-01-14). Core of the XP-stacking meta alongside the Luck event item, Happy Hour, and cheer potions. Tooltips captured by the maintainer 2026-08-28.",
+   "effects": [
+    {
+     "key": "xp-bonus",
+     "magnitude": null,
+     "delivery": "constant",
+     "raw_text": "Grants bonus XP while worn (tooltip-hidden; magnitude unpublished)",
+     "note": "not an enchant — does not endow, zero EV"
+    }
+   ]
+  },
+  {
+   "id": "item:pants-of-neverending-adventure",
+   "name": "Pants of Neverending Adventure",
+   "aliases": [
+    "XP pants",
+    "XP gear (pants)"
+   ],
+   "captured": true,
+   "item_kind": "server-unique",
+   "category": "clothing",
+   "slot": "pants",
+   "armor_class": null,
+   "side": null,
+   "pair_group": "neverending-adventure-set",
+   "req": {
+    "level": null,
+    "class": null
+   },
+   "weight": {
+    "value": 2.0,
+    "src": "s-tooltip"
+   },
+   "value_gold": {
+    "value": null,
+    "status": "unknown"
+   },
+   "condition": null,
+   "no_trade": true,
+   "location": "Anniversary event reward (the server's XP-clothes event; also handed out at Easter-era events per 2025 chat)",
+   "drop_notes": "No trade.",
+   "image": "items/pants-of-neverending-adventure.png",
+   "src": "s-tooltip",
+   "notes": "One of the five 'XP equipment' pieces — the Neverending Adventure set from the anniversary event. The tooltip shows NAME [No Trade] and weight ONLY: the per-piece XP bonus is tooltip-hidden, and no magnitude has ever been published. Set rules (community-attested 2025-2026): grants bonus XP while worn; zero enchant capacity ('no EV and their XP bonus doesn't count as an enchant — no endowing', 2025-04-09); no armor value; cannot be worn in werewolf form; dev-cautioned against putting them through the upgrade anvil ('they may break if you upgrade them' — dev-stated 2026-01-14). Core of the XP-stacking meta alongside the Luck event item, Happy Hour, and cheer potions. Tooltips captured by the maintainer 2026-08-28.",
+   "effects": [
+    {
+     "key": "xp-bonus",
+     "magnitude": null,
+     "delivery": "constant",
+     "raw_text": "Grants bonus XP while worn (tooltip-hidden; magnitude unpublished)",
+     "note": "not an enchant — does not endow, zero EV"
+    }
+   ]
+  },
+  {
+   "id": "item:belt-of-neverending-adventure",
+   "name": "Belt of Neverending Adventure",
+   "aliases": [
+    "XP belt",
+    "XP gear (belt)"
+   ],
+   "captured": true,
+   "item_kind": "server-unique",
+   "category": "clothing",
+   "slot": "belt",
+   "armor_class": null,
+   "side": null,
+   "pair_group": "neverending-adventure-set",
+   "req": {
+    "level": null,
+    "class": null
+   },
+   "weight": {
+    "value": 1.0,
+    "src": "s-tooltip"
+   },
+   "value_gold": {
+    "value": null,
+    "status": "unknown"
+   },
+   "condition": null,
+   "no_trade": true,
+   "location": "Anniversary event reward (the server's XP-clothes event; also handed out at Easter-era events per 2025 chat)",
+   "drop_notes": "No trade.",
+   "image": "items/belt-of-neverending-adventure.png",
+   "src": "s-tooltip",
+   "notes": "One of the five 'XP equipment' pieces — the Neverending Adventure set from the anniversary event. The tooltip shows NAME [No Trade] and weight ONLY: the per-piece XP bonus is tooltip-hidden, and no magnitude has ever been published. Set rules (community-attested 2025-2026): grants bonus XP while worn; zero enchant capacity ('no EV and their XP bonus doesn't count as an enchant — no endowing', 2025-04-09); no armor value; cannot be worn in werewolf form; dev-cautioned against putting them through the upgrade anvil ('they may break if you upgrade them' — dev-stated 2026-01-14). Core of the XP-stacking meta alongside the Luck event item, Happy Hour, and cheer potions. Tooltips captured by the maintainer 2026-08-28.",
+   "effects": [
+    {
+     "key": "xp-bonus",
+     "magnitude": null,
+     "delivery": "constant",
+     "raw_text": "Grants bonus XP while worn (tooltip-hidden; magnitude unpublished)",
+     "note": "not an enchant — does not endow, zero EV"
+    }
+   ]
+  },
+  {
+   "id": "item:amulet-of-neverending-adventure",
+   "name": "Amulet of Neverending Adventure",
+   "aliases": [
+    "XP amulet",
+    "XP gear (amulet)"
+   ],
+   "captured": true,
+   "item_kind": "server-unique",
+   "category": "jewelry",
+   "slot": "amulet",
+   "armor_class": null,
+   "side": null,
+   "pair_group": "neverending-adventure-set",
+   "req": {
+    "level": null,
+    "class": null
+   },
+   "weight": {
+    "value": 1.0,
+    "src": "s-tooltip"
+   },
+   "value_gold": {
+    "value": null,
+    "status": "unknown"
+   },
+   "condition": null,
+   "no_trade": true,
+   "location": "Anniversary event reward (the server's XP-clothes event; also handed out at Easter-era events per 2025 chat)",
+   "drop_notes": "No trade.",
+   "image": "items/amulet-of-neverending-adventure.png",
+   "src": "s-tooltip",
+   "notes": "One of the five 'XP equipment' pieces — the Neverending Adventure set from the anniversary event. The tooltip shows NAME [No Trade] and weight ONLY: the per-piece XP bonus is tooltip-hidden, and no magnitude has ever been published. Set rules (community-attested 2025-2026): grants bonus XP while worn; zero enchant capacity ('no EV and their XP bonus doesn't count as an enchant — no endowing', 2025-04-09); no armor value; cannot be worn in werewolf form; dev-cautioned against putting them through the upgrade anvil ('they may break if you upgrade them' — dev-stated 2026-01-14). Core of the XP-stacking meta alongside the Luck event item, Happy Hour, and cheer potions. Tooltips captured by the maintainer 2026-08-28.",
+   "effects": [
+    {
+     "key": "xp-bonus",
+     "magnitude": null,
+     "delivery": "constant",
+     "raw_text": "Grants bonus XP while worn (tooltip-hidden; magnitude unpublished)",
+     "note": "not an enchant — does not endow, zero EV"
+    }
+   ]
   }
  ]
 }
