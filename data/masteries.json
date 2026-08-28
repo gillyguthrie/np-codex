@@ -30067,24 +30067,26 @@
   {
    "id": "mastery:combo-focus-4",
    "name": "Combo Focus 4",
-   "captured": false,
-   "section": "Combat Masteries (post-wiki)",
+   "captured": true,
+   "section": "General Masteries",
    "family": "combo-focus",
    "rank": 4,
    "affinity": null,
    "cost": {
-    "value": null,
-    "status": "unknown"
+    "value": 40,
+    "src": "s-wiki"
    },
    "requires": {
+    "level": 60,
     "masteries": [
      "mastery:combo-focus-3"
-    ]
+    ],
+    "other": "Combo Master's Quest Completed"
    },
-   "raw_text": "",
+   "raw_text": "Those who own this mastery will have their chances to unleash a powerful combo attack greatly increased.",
    "effects": [],
-   "src": "s-posted",
-   "note": "CONFIRMED REAL 2026-08-25 (was a stub): absent from the KB's wiki export because the community wiki only added Combo Focus IV on 2026-08-19 — a player flagged 'Combo Focus IV is missing' and the wiki author replied 'its on the wiki now', days after this KB's export. Effect per public measurement (2025-12-31, staff test): proc-frequency only — one special attack per ~10.88 attacks (rank 2: ~12.58; earlier readings 11.42 vs 13.33), no damage rider. Community verdict mixed. COST AND LEVEL GATE still unknown (bot-blocked wiki page) — see q:combo-focus-4-cost."
+   "src": "s-wiki",
+   "note": "Cost/gate captured 2026-08-27 from a maintainer screenshot of the current wiki Mastery Points page (the KB's own wiki export predates the wiki's 2026-08-19 addition of this rank). Unique among Combo Focus ranks: gated on a quest (Combo Master's Quest), not just level+prior rank. CONFIRMED REAL 2026-08-25 (was a stub): absent from the KB's wiki export because the community wiki only added Combo Focus IV on 2026-08-19 — a player flagged 'Combo Focus IV is missing' and the wiki author replied 'its on the wiki now', days after this KB's export. Effect per public measurement (2025-12-31, staff test): proc-frequency only — one special attack per ~10.88 attacks (rank 2: ~12.58; earlier readings 11.42 vs 13.33), no damage rider. Community verdict mixed. COST AND LEVEL GATE still unknown (bot-blocked wiki page) — see q:combo-focus-4-cost."
   },
   {
    "id": "mastery:champion-master-class",

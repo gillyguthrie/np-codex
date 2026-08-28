@@ -161,6 +161,7 @@ NP masteries (Class Masteries / mastery points system). raw_text is the verbatim
 | Stendarr's Blessing 4 | 20 | L40, stendarr-s-blessing-3 | +10 Normal Weapon Resistance |
 | Stendarr's Blessing 5 | 25 | L50, stendarr-s-blessing-4 | +12 Normal Weapon Resistance |
 | God Touched | 75 | L50, 500 Mastery Points Spent | +15 All Resistances |
+| Combo Focus 4 | 40 | L60, combo-focus-3, Combo Master's Quest Completed | Those who own this mastery will have their chances to unleash a powerful combo attack greatly increased. |
 
 ## Skill Masteries
 
@@ -1013,4 +1014,3 @@ NP masteries (Class Masteries / mastery points system). raw_text is the verbatim
 |---|---|---|---|
 | Rend **(not yet captured)** | — (unknown) |  |  |
 | Cleave **(not yet captured)** | — (unknown) |  |  |
-| Combo Focus 4 **(not yet captured)** | — (unknown) | combo-focus-3 |  |

@@ -1,5 +1,8 @@
 # Changelog
 
+## 2026-08-27 — v0.4.39 Combo Focus 4 captured (maintainer wiki screenshot)
+- **mastery:combo-focus-4 completed**: 40 MP, gated Level 60 + Combo Focus 3 + **Combo Master's Quest Completed** (the only quest-gated Combo Focus rank); effect 'chances to unleash a powerful combo attack greatly increased.' Source: maintainer screenshot of the current wiki page — our export predated the wiki's 2026-08-19 addition. q:combo-focus-4-cost resolved; builder v1.39 budgets the rank.
+
 ## 2026-08-27 — v0.4.38 boss-loot scope corrected by the community (fast follow)
 - **Community correction, hours after v0.4.36 shipped**: per-participant loot is NOT universal — it applies only to specific bosses (fishing bosses Lil Snappa/Dreughnaught, event bosses like Jack and the Easter Quamaqueen; roster possibly incomplete). **Camp bosses drop loot for whoever lands the killing blow** (new cfact:camp-boss-loot-last-hit). Fish bosses also need real hits — 'one tab is not enough.' cfact:boss-loot-per-participant and cfact:boss-loot-etiquette rescoped accordingly.
 

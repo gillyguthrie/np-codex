@@ -263,9 +263,9 @@
   {
    "id": "q:combo-focus-4-cost",
    "topic": "Combo Focus 4 cost and level gate",
-   "status": "open",
-   "detail": "Rank 4 is confirmed real (the wiki added it 2026-08-19, after the KB's export; proc-frequency publicly measured) but its MP cost and level requirement are only on the bot-blocked wiki page. One manual export/screenshot of the current Mastery Points page closes this and lets the builder budget the rank.",
-   "date": "2026-08-25"
+   "status": "resolved",
+   "detail": "RESOLVED 2026-08-27: maintainer screenshot of the current wiki Mastery Points page — Combo Focus 4 costs 40 MP, gated Level 60 + Combo Focus 3 + Combo Master's Quest Completed. Effect text: 'chances to unleash a powerful combo attack greatly increased.' Encoded in mastery:combo-focus-4; builder v1.39 budgets the rank.",
+   "date": "2026-08-27"
   },
   {
    "id": "q:pre-08-era-audit",
