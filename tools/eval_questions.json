@@ -389,6 +389,11 @@
    "id": "eq:050",
    "q": "build me a character. dark elf, fighteer, light magic user, prioritize a medium magicka pool and medium armor. put the rest into HP but don't neglect armor. I have around 450 mastery points (follow-ups: Long Blade; Destruction; birthsign optimizer's call)",
    "expects": "SPEC GATING is the crux: every weapon and item pick's clsreq must admit Combat — the catalog's tempting picks (a Magic-locked long blade with big magicka/Destruction riders, Stealth-locked high-AR helm/cuirass, a Magic-locked shirt) are all ILLEGAL and must be filtered before stat comparison; a legal build uses Combat/unrestricted gear only. Skill fields skl/skm/skh/unarm all \"100\" (or omitted) — never 0/20. Weapon referenced by exact name (v1.31+). Mastery budget sums to <=450 with byte-exact names; raw-vs-cap statements on deliberately stacked stats; magicka labeled honestly for a Combat spec (0.9 factor + level term); no magicka/Destruction totals counted from spec-illegal gear. File loads in the builder with zero empty armor slots and a weapon equipped."
+  },
+  {
+   "id": "eq:051",
+   "q": "What's the max fatigue for a level 60 Stealth character with Strength, Willpower, Agility and Endurance all at 100, no gear or masteries?",
+   "expects": "581 = 400 (STR+WIL+AGI+END) + 181 level term, where 181 = floor(60 x (0.02 + 3.0)) from the Stealth specialization fatigue factor (formula:fatigue / fact:spec-fatigue-factors). Must NOT answer 455 (the old universal +55 — that term is Magic-only: Combat 109 / Magic 55 / Stealth 181 at L60). Terse; value + confidence (measured)."
   }
  ]
 }

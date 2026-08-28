@@ -146,6 +146,14 @@
    "date": "2026-08-26",
    "confidence": "measured",
    "note": "maintainer-attested game behavior"
+  },
+  "s-wiki-diffs": {
+   "origin": "wiki",
+   "channel": "wiki.nerevarineprophecies.com — 'List of notable differences from Morrowind' (maintainer manual export 2026-08-28; page last edited 2026-05-06)",
+   "url": "https://wiki.nerevarineprophecies.com/index.php?title=List_of_notable_differences_from_Morrowind",
+   "date": "2026-05-06",
+   "confidence": "player-reported",
+   "note": "Community-maintained page collated from the NP Discord. Used here for the specialization fatigue factors, which reconcile exactly with the 2026-08 clean-character measurements."
   }
  },
  "constants": [
@@ -283,13 +291,31 @@
    "note": "Attribute sheet clamps at 175 without a Fortification-Max mastery; raised per-attribute by such masteries."
   },
   {
-   "id": "const:fatigue-level-bonus-l60",
-   "name": "NP fatigue flat bonus at L60",
-   "value": 55,
-   "unit": "pts",
-   "src": "s-measured",
-   "date": "2026-08-21",
-   "note": "Validated exact on two independent L60 characters; +1 at L1; curve between unmeasured."
+   "id": "const:fatigue-factor-combat",
+   "name": "Specialization fatigue factor — Combat",
+   "value": 1.8,
+   "unit": "x level (plus 0.02)",
+   "src": "s-wiki-diffs",
+   "date": "2026-08-28",
+   "note": "Level term = floor(level x (0.02 + 1.8)): +1 at L1 (measured exact on a clean L1 Combat character), +109 at L60 (unmeasured directly; follows the formula)."
+  },
+  {
+   "id": "const:fatigue-factor-magic",
+   "name": "Specialization fatigue factor — Magic",
+   "value": 0.9,
+   "unit": "x level (plus 0.02)",
+   "src": "s-wiki-diffs",
+   "date": "2026-08-28",
+   "note": "Level term = floor(level x (0.02 + 0.9)) = +55 at L60 — measured exact on two independent clean L60 Magic characters (the value previously recorded as a universal '+55 at L60')."
+  },
+  {
+   "id": "const:fatigue-factor-stealth",
+   "name": "Specialization fatigue factor — Stealth",
+   "value": 3.0,
+   "unit": "x level (plus 0.02)",
+   "src": "s-wiki-diffs",
+   "date": "2026-08-28",
+   "note": "Level term = floor(level x (0.02 + 3.0)) = +181 at L60 — measured exact on a clean naked zero-mastery L60 Stealth character (581 = 400 + 181), the reading previously misread as a +126 'character-specific bug'."
   },
   {
    "id": "const:dodge-penalty-magic",
@@ -514,10 +540,10 @@
   {
    "id": "formula:fatigue",
    "name": "Max Fatigue",
-   "expr": "maxFat = STR + WIL + AGI + END + level_bonus",
+   "expr": "maxFat = STR + WIL + AGI + END + floor(level x (0.02 + spec_fatigue_factor)) + flat_fortify_fatigue",
    "src": "s-measured",
-   "date": "2026-08-21",
-   "note": "level_bonus: +55 at L60 (validated exact on two characters), +1 at L1; curve between unmeasured. One L60 Stealth character reads +126 above this model EVEN NAKED WITH ZERO MASTERIES (581 vs 455, re-measured 2026-08-25) - maintainer-ruled 2026-08-25: presumed a character-specific backend bug (forced dev-side mastery respec while werewolf), NOT a mechanic - the formula stands as measured on all clean characters (q:hidden-passive-anomaly resolved; reopen only if a second character shows a surplus). Re-confirmed exact 2026-08-25 on a clean L60 (naked, zero masteries): 100+115+100+100+55=470; a racial Fortify Willpower (+15) counts in the sum. L1 term +1 re-confirmed 2026-08-25 on a clean naked zero-mastery character (181 = 60+30+40+50+1). L60 term +55 re-confirmed 2026-08-25 on a second character (515 = 120+120+120+100+55, vampirism attribute fortifies counting)."
+   "date": "2026-08-28",
+   "note": "Spec fatigue factors (fact:spec-fatigue-factors): Combat 1.8 / Magic 0.9 / Stealth 3.0 — L60 level terms 109 / 55 / 181. Decoded 2026-08-28 from the community wiki's formula, which reconciles EXACTLY with all four clean naked zero-mastery readings: L1 Combat 181 = 60+30+40+50 + floor(1.82)=1; L60 Magic 470 = 100+115+100+100 + 55 (a racial Fortify Willpower +15 counts in the sum) and 515 = 120+120+120+100 + 55 (vampirism attribute fortifies counting); L60 Stealth 581 = 100+100+100+100 + floor(181.2)=181. The Stealth reading was previously recorded as an unexplained +126 surplus — it was the Stealth factor all along (181-55=126), not a bug. Attribute fortifies (racial, vampiric, gear) count in the sum; flat Fortify Fatigue effects add after."
   },
   {
    "id": "formula:piece-ar",
@@ -1087,6 +1113,14 @@
    "src": "s-maint",
    "date": "2026-08-26",
    "note": "Maintainer-ruled flatly, 2026-08-26 (same review as the HP record; the 2025-03-23 quote describes pool-scaled regen sources)."
+  },
+  {
+   "id": "fact:spec-fatigue-factors",
+   "statement": "Specialization fatigue factors (community wiki, 'List of notable differences'): Combat 1.8, Magic 0.9, Stealth 3.0. The per-level fatigue term is level x (0.02 + factor), floored — +109 / +55 / +181 at L60. There are no fatigue-factor masteries analogous to the Health Factor line.",
+   "src": "s-wiki-diffs",
+   "date": "2026-05-06",
+   "confidence": "measured",
+   "note": "Confirmed exact by four clean-character measurements (see formula:fatigue). Confidence raised to measured on that basis."
   }
  ]
 }

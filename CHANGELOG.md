@@ -1,5 +1,9 @@
 # Changelog
 
+## 2026-08-28 — v0.4.41 fatigue level term is specialization-scaled (the +126 'bug' was Stealth all along)
+- **formula:fatigue corrected**: `maxFat = STR+WIL+AGI+END + floor(level × (0.02 + spec fatigue factor)) + flat Fortify Fatigue`, factors Combat 1.8 / Magic 0.9 / Stealth 3.0 (new fact:spec-fatigue-factors, from the community wiki's 'List of notable differences from Morrowind' page — new source s-wiki-diffs). The old universal '+55 at L60' had only ever been measured on Magic characters (60 × 0.92 = 55.2 → 55); the formula reconciles EXACTLY with all four clean readings, including the L60 Stealth character's 581 = 400 + 181 that had been filed as a character-specific backend bug. const:fatigue-level-bonus-l60 retired in favor of const:fatigue-factor-{combat,magic,stealth}; q:hidden-passive-anomaly's fatigue half rewritten (the respec-bug theory withdrawn). L60 level terms: Combat 109 / Magic 55 / Stealth 181.
+- Eval bank: eq:051 (Stealth L60 fatigue). Builder v1.43 computes the spec-scaled term.
+
 ## 2026-08-28 — v0.4.40 the Neverending Adventure set captured (first documentation anywhere)
 - **Five new items**: Robe/Shirt/Pants/Belt/Amulet of Neverending Adventure — the anniversary-event 'XP equipment' set, tooltip-captured by the maintainer (weights 3/2/2/1/1, all [No Trade]). The XP bonus is tooltip-hidden with no published magnitude; set rules encoded from the archives: zero EV, no endowing, no armor value, unwearable as werewolf, dev-cautioned against anvil upgrades ('they may break'). Tooltip images added for all five. Neither the wiki nor the upstream dataset lists these — the codex is the first written record.
 

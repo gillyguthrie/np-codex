@@ -46,7 +46,7 @@
    "id": "q:hidden-passive-anomaly",
    "topic": "Unexplained magicka/fatigue surplus on one measured character",
    "status": "resolved",
-   "detail": "RESOLVED 2026-08-25 (maintainer-ruled): the magicka half was the old formula (see formula:magicka - 3.85x is exactly spec + sign + level). The +126 fatigue surplus on the one affected character is presumed a character-specific backend bug (likely from a forced dev-side mastery respec while werewolf; the maintainer had reported the character to the dev, who may also have fixed related backend state). It is NOT modeled as a mechanic; formula:fatigue stands as measured on all clean characters. If a second character ever shows a fatigue surplus, reopen."
+   "detail": "RESOLVED, both halves. Magicka (2026-08-25, maintainer-ruled): the surplus was the old formula (see formula:magicka - 3.85x is exactly spec + sign + level). Fatigue (2026-08-28): the +126 surplus on the L60 Stealth character was NOT a bug — it is the Stealth specialization fatigue factor (3.0): level term floor(60 x 3.02) = 181, versus the 55 of the Magic characters the old '+55' had been measured on; 400 + 181 = 581 exact. The 2026-08-25 'character-specific backend bug / forced respec' theory is withdrawn. See formula:fatigue and fact:spec-fatigue-factors."
   },
   {
    "id": "q:low-level-magicka-base",
